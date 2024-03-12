@@ -1,0 +1,23 @@
+name: shell脚本
+
+on:
+  # push:
+  schedule:
+  # 每天6点10分（utc+8为北京时间）
+    - cron: 10 22 * * *
+  watch:
+    types: started
+  workflow_dispatch:
+        
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 检查分支
+        uses: actions/checkout@v3
+        
+      - name: 执行shell脚本
+        run: |
+         #科学签到
+         bash ./scripts/dotunnel_science_chekin.sh

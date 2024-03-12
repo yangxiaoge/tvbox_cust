@@ -1,0 +1,369 @@
+##############   注意:该配置文件为meta内核专用,不适合其他clash内核   #################
+################# ipv6支持： https://github.com/yangxiaoge/TVBoxOSC_workflow/blob/master/clash/ipv6_set.jpg #################
+##############   配置来源：https://t.me/openclash_open/106164   #################
+
+###############################   建立锚点   #####################################
+pp: &pp {type: http, interval: 43200, health-check: {enable: true, url: https://www.gstatic.com/generate_204, interval: 600, format: yaml}}    #####   订阅锚点   #####
+pc: &pc {type: http, behavior: classical, interval: 86400, format: yaml}    #####   rule-providers锚点   #####
+pd: &pd {type: http, behavior: domain, interval: 86400, format: yaml}    #####   rule-providers锚点   #####
+pi: &pi {type: http, behavior: ipcidr, interval: 86400, format: yaml}    #####   rule-providers锚点   #####
+o1: &o1 {type: select, proxies: [🚀 节点选择, ♻️ 自动选择, 🛠️ 手动选择, 🇭🇰 香港节点, 🇨🇳 台湾节点, 🇸🇬 狮城节点, 🇯🇵 日本节点, 🇰🇷 韩国节点, 🇺🇸 美国节点, WARP, 💠 其他地区, DIRECT]}    ######  策略组描点   ######
+o2: &o2 {type: select, proxies: [DIRECT, 🚀 节点选择, ♻️ 自动选择, 🛠️ 手动选择, 🇭🇰 香港节点, 🇨🇳 台湾节点, 🇸🇬 狮城节点, 🇯🇵 日本节点, 🇰🇷 韩国节点, 🇺🇸 美国节点, WARP, 💠 其他地区]}    ######  策略组描点   ######
+###############################   建立锚点   #####################################
+
+########################################################################分隔符
+# url 里填写自己的订阅,订阅名称不能重复
+proxy-providers:
+  白嫖节点1:    ###订阅名称###
+    <<: *pp
+    url: "https://cdn.jsdelivr.net/gh/yangxiaoge/TVBoxOSC_workflow@master/clash/Clash3.yml"
+
+  白嫖节点2:    ###订阅名称###
+    <<: *pp
+    url: "https://cdn.jsdelivr.net/gh/yangxiaoge/TVBoxOSC_workflow@master/clash/Clash.yml"
+
+    
+
+########################################################################分隔符
+
+mixed-port: 7890
+allow-lan: true
+ipv6: true      ###接受 IPv6 流量
+mode: Rule
+log-level: debug
+external-controller: 0.0.0.0:9090
+secret: "123456"
+find-process-mode: strict
+global-client-fingerprint: chrome
+profile:
+  store-selected: true
+  store-fake-ip: true
+
+dns:
+  enable: true
+  ipv6: true      ###开启IPV6 dns解析
+  enhanced-mode: fake-ip ###Clash 的 DNS 处理模式
+  fake-ip-range: 198.18.0.1/16 ###fakeip 过滤，以下地址不会下发 fakeip 映射用于连接
+  listen: 0.0.0.0:7874 ###DNS 服务监听
+  nameserver:  ###默认的域名解析服务器，具体：https://wiki.metacubex.one/config/dns/#use-hosts
+    - tls://223.5.5.5
+    - tls://119.29.29.29
+  default-nameserver: ###默认 DNS, 用于解析 DNS 服务器 的域名
+    - 223.5.5.5
+    - 114.114.114.114
+    - 8.8.8.8
+    - tls://223.5.5.5:853
+    - https://223.5.5.5/dns-query
+  proxy-server-nameserver: ###代理节点域名解析服务器，仅用于解析代理节点的域名
+    - https://dns.alidns.com/dns-query
+    - https://dns.pub/dns-query
+  nameserver-policy: ###指定域名查询的解析服务器
+    'rule-set:Bahamut':
+      - 'https://dns.google/dns-query#📽️ 巴哈姆特'
+      - 'https://dns.cloudflare.com/dns-query#📽️ 巴哈姆特'
+    'rule-set:Geolocation-!cn': ###非中国大陆的dns查询服务器设置 
+     - 'https://dns.google/dns-query#🚀 节点选择'
+     - 'https://dns.cloudflare.com/dns-query#🚀 节点选择'
+
+  fake-ip-filter: ###fakeip 过滤，以下地址不会下发 fakeip 映射用于连接
+    - "*.lan"
+    - "*.localdomain"
+    - "*.example"
+    - "*.invalid"
+    - "*.localhost"
+    - "*.test"
+    - "*.local"
+    - "*.home.arpa"
+    - time.*.com
+    - time.*.gov
+    - time.*.edu.cn
+    - time.*.apple.com
+    - time-ios.apple.com
+    - time1.*.com
+    - time2.*.com
+    - time3.*.com
+    - time4.*.com
+    - time5.*.com
+    - time6.*.com
+    - time7.*.com
+    - ntp.*.com
+    - ntp1.*.com
+    - ntp2.*.com
+    - ntp3.*.com
+    - ntp4.*.com
+    - ntp5.*.com
+    - ntp6.*.com
+    - ntp7.*.com
+    - "*.time.edu.cn"
+    - "*.ntp.org.cn"
+    - "+.pool.ntp.org"
+    - time1.cloud.tencent.com
+    - music.163.com
+    - "*.music.163.com"
+    - "*.126.net"
+    - musicapi.taihe.com
+    - music.taihe.com
+    - songsearch.kugou.com
+    - trackercdn.kugou.com
+    - "*.kuwo.cn"
+    - api-jooxtt.sanook.com
+    - api.joox.com
+    - joox.com
+    - y.qq.com
+    - "*.y.qq.com"
+    - streamoc.music.tc.qq.com
+    - mobileoc.music.tc.qq.com
+    - isure.stream.qqmusic.qq.com
+    - dl.stream.qqmusic.qq.com
+    - aqqmusic.tc.qq.com
+    - amobile.music.tc.qq.com
+    - "*.xiami.com"
+    - "*.music.migu.cn"
+    - music.migu.cn
+    - "+.msftconnecttest.com"
+    - "+.msftncsi.com"
+    - localhost.ptlogin2.qq.com
+    - localhost.sec.qq.com
+    - "+.qq.com"
+    - "+.tencent.com"
+    - "+.srv.nintendo.net"
+    - "*.n.n.srv.nintendo.net"
+    - "+.stun.playstation.net"
+    - xbox.*.*.microsoft.com
+    - "*.*.xboxlive.com"
+    - xbox.*.microsoft.com
+    - xnotify.xboxlive.com
+    - "+.battlenet.com.cn"
+    - "+.wotgame.cn"
+    - "+.wggames.cn"
+    - "+.wowsgame.cn"
+    - "+.wargaming.net"
+    - proxy.golang.org
+    - stun.*.*
+    - stun.*.*.*
+    - "+.stun.*.*"
+    - "+.stun.*.*.*"
+    - "+.stun.*.*.*.*"
+    - "+.stun.*.*.*.*.*"
+    - heartbeat.belkin.com
+    - "*.linksys.com"
+    - "*.linksyssmartwifi.com"
+    - "*.router.asus.com"
+    - mesu.apple.com
+    - swscan.apple.com
+    - swquery.apple.com
+    - swdownload.apple.com
+    - swcdn.apple.com
+    - swdist.apple.com
+    - lens.l.google.com
+    - stun.l.google.com
+    - na.b.g-tun.com
+    - "+.nflxvideo.net"
+    - "*.square-enix.com"
+    - "*.finalfantasyxiv.com"
+    - "*.ffxiv.com"
+    - "*.ff14.sdo.com"
+    - ff.dorado.sdo.com
+    - "*.mcdn.bilivideo.cn"
+    - "+.media.dssott.com"
+    - shark007.net
+    - Mijia Cloud
+    - "+.cmbchina.com"
+    - "+.cmbimg.com"
+    - local.adguard.org
+    - "+.sandai.net"
+    - "+.n0808.com"
+
+#####   自建节点   #####
+#（白嫖WARP，如果流量用完了，可以搜索youtue相关教程）
+proxies:
+  # - name: "WARP"
+  #   type: wireguard
+  #   server: 162.159.195.236
+  #   port: 934
+  #   ip: "172.16.0.2"
+  #   private-key: "2BRV6OmpaiQ1g5q3tzOJ/0cuEHUK1lYmIWZB1g+/mEs=" # 自行替换
+  #   public-key: "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo="   # 自行替换
+  #   udp: true
+  #   mtu: 1280
+  - {name: WARP, type: wireguard, server: 162.159.195.236, port: 934, ip: 172.16.0.2, private-key: 2BRV6OmpaiQ1g5q3tzOJ/0cuEHUK1lYmIWZB1g+/mEs=, public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=, udp: true, mtu: 1280}
+
+proxy-groups:
+  - {name: 🚀 节点选择, type: select, proxies: [♻️ 自动选择, 🛠️ 手动选择, 🇭🇰 香港节点, 🇨🇳 台湾节点, 🇸🇬 狮城节点, 🇯🇵 日本节点, 🇰🇷 韩国节点, 🇺🇸 美国节点, 💠 其他地区, DIRECT]}
+  - {name: 🛠️ 手动选择, type: select, include-all-providers: true}
+  - {name: ♻️ 自动选择, type: url-test, interval: 600, tolerance: 100, lazy: true, url: https://www.gstatic.com/generate_204, include-all-providers: true}
+  - {name: 📲 电报信息, <<: *o1}
+  - {name: 📱 Twitter, <<: *o1}
+  - {name: 💬 OpenAi, <<: *o1}
+  - {name: 🎬 油管视频, <<: *o1}
+  - {name: 🎥 奈飞视频, <<: *o1}
+  - {name: 📽️ 巴哈姆特, type: select, proxies: [🇨🇳 台湾节点, 🇭🇰 香港节点, 🚀 节点选择, 🛠️ 手动选择]}
+  - {name: 📺 哔哩哔哩, type: select, proxies: [🎯 全球直连, 🇨🇳 台湾节点, 🇭🇰 香港节点]}
+  - {name: 🌎 国外媒体, <<: *o1}
+  - {name: 🌏 国内媒体, type: select, proxies: [🎯 全球直连, 🇨🇳 台湾节点, 🇭🇰 香港节点, 🚀 节点选择, 🛠️ 手动选择]}
+  - {name: 📢 谷歌FCM, <<: *o2}
+  - {name: Ⓜ️ 微软服务, <<: *o2}
+  - {name: 🍎 苹果服务, <<: *o2}
+  - {name: 🎮 游戏平台, <<: *o2}
+  - {name: 🔰 下载平台, <<: *o2}
+  - {name: 🎯 全球直连, type: select, proxies: [DIRECT,REJECT]}
+  - {name: 🍃 广告拦截, type: select, proxies: [REJECT,DIRECT]}
+  - {name: 🐟 漏网之鱼, <<: *o2}
+#地区策略组
+  - {name: 🇭🇰 香港节点, type: select, include-all-providers: true, filter: "(?i)港|hk|hongkong|hong kong"}
+  - {name: 🇨🇳 台湾节点, type: select, include-all-providers: true, filter: "(?i)台|tw|taiwan|tai wan"}
+  - {name: 🇸🇬 狮城节点, type: select, include-all-providers: true, filter: "(?i)新加坡|sg|singapore|狮城"}
+  - {name: 🇯🇵 日本节点, type: select, include-all-providers: true, filter: "(?i)日|jp|japan"}
+  - {name: 🇺🇸 美国节点, type: select, include-all-providers: true, filter: "(?i)美|us|unitedstates|united states"}
+  - {name: 🇰🇷 韩国节点, type: select, include-all-providers: true, filter: "(?i)韩国|kr|korea"}
+  - {name: 💠 其他地区, type: select, include-all-providers: true, filter: "(?i)^(?!.*(?:🇭🇰|🇯🇵|🇺🇸|🇸🇬|🇨🇳|港|hk|hongkong|台|tw|taiwan|日|jp|japan|新|sg|singapore|美|us|unitedstates|韩|kr|korea)).*"}
+
+rules:
+  # 注意以下规则的先后顺序，是依次判断名中执行的
+  - RULE-SET,LocalAreaNetwork,🎯 全球直连
+  - RULE-SET,Unban,🎯 全球直连
+  - RULE-SET,MyDirect,🎯 全球直连
+  - RULE-SET,BanEasyListChina,🍃 广告拦截
+  - RULE-SET,BanAD,🍃 广告拦截
+  - RULE-SET,BanEasyList,🍃 广告拦截
+  - RULE-SET,BanEasyPrivacy,🍃 广告拦截
+  # 广告误删过多！没必要追求极致去广告，有弊端！
+  # - RULE-SET,MyAD,🍃 广告拦截
+  # - RULE-SET,MyForbidden,🍃 广告拦截
+  - RULE-SET,MyProxy,🚀 节点选择
+  - RULE-SET,Bing,🚀 节点选择
+  - RULE-SET,GFW,🚀 节点选择
+  - RULE-SET,Telegram,📲 电报信息
+  - RULE-SET,Twitter,📱 Twitter
+  - RULE-SET,OpenAi,💬 OpenAi
+  - RULE-SET,YouTube,🎬 油管视频
+  - RULE-SET,Netflix,🎥 奈飞视频
+  - RULE-SET,Bahamut,📽️ 巴哈姆特
+  - RULE-SET,ProxyMedia,🌎 国外媒体
+  - RULE-SET,Category-games,🎮 游戏平台
+  - RULE-SET,Bilibili,📺 哔哩哔哩
+  - RULE-SET,Download,🔰 下载平台
+  - RULE-SET,ChinaMedia,🌏 国内媒体
+  - RULE-SET,GoogleFCM,📢 谷歌FCM
+  - RULE-SET,Microsoft,Ⓜ️ 微软服务
+  - RULE-SET,Apple,🍎 苹果服务
+  - RULE-SET,Geosite_cn,🎯 全球直连
+  - RULE-SET,Geosite_private,🎯 全球直连
+  - RULE-SET,ChinaDomain,🎯 全球直连
+  - RULE-SET,Geoip_cn,🎯 全球直连
+  - RULE-SET,Geoip_private,🎯 全球直连
+  - RULE-SET,ChinaCompanyIp,🎯 全球直连
+  - RULE-SET,ChinaIp,🎯 全球直连
+  - MATCH,🐟 漏网之鱼
+
+rule-providers:
+  Geolocation-!cn:
+    <<: *pd
+    url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/geolocation-!cn.yaml"  
+  LocalAreaNetwork:
+    <<: *pc
+    url: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/LocalAreaNetwork.yaml"
+  Unban:
+    <<: *pc
+    url: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/UnBan.yaml" 
+  BanEasyListChina:
+    <<: *pc
+    url: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/BanEasyListChina.yaml"
+  BanAD:
+    <<: *pc
+    url: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/BanAD.yaml"
+  BanEasyList:
+    <<: *pc
+    url: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/BanEasyList.yaml"
+  BanEasyPrivacy:
+    <<: *pc
+    url: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/BanEasyPrivacy.yaml"
+  GFW:
+    <<: *pd
+    url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/gfw.txt"
+  Google:
+    <<: *pc
+    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Google/Google.yaml"
+  Telegram:
+    <<: *pc
+    url: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/Ruleset/Telegram.yaml"
+  Twitter:
+    <<: *pc
+    url: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/Ruleset/Twitter.yaml"
+  OpenAi:
+    <<: *pc
+    url: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/Ruleset/OpenAi.yaml"
+  YouTube:
+    <<: *pc
+    url: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/Ruleset/YouTube.yaml"
+  Netflix:
+    <<: *pc
+    url: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/Ruleset/Netflix.yaml"
+  Bahamut:
+    <<: *pc
+    url: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/Ruleset/Bahamut.yaml"
+  ProxyMedia:
+    <<: *pc
+    url: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/ProxyMedia.yaml"
+  Category-games:
+    <<: *pc
+    url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/category-games.yaml"
+  Bilibili:
+    <<: *pc
+    url: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/Ruleset/Bilibili.yaml" 
+  Download:
+    <<: *pc
+    url: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/Download.yaml"
+  ChinaMedia:
+    <<: *pc
+    url: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/ChinaMedia.yaml"   
+  GoogleFCM:
+    <<: *pc
+    url: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/Ruleset/GoogleFCM.yaml"  
+  Bing:
+    <<: *pc
+    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Bing/Bing.yaml"
+  Microsoft:
+    <<: *pc
+    url: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/Ruleset/Microsoft.yaml"
+  Apple:
+    <<: *pc
+    url: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/Ruleset/Apple.yaml"
+  Geosite_cn:
+    <<: *pd
+    url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/cn.yaml"
+  Geosite_private:
+    <<: *pd
+    url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/private.yaml"
+  ChinaDomain:
+    <<: *pc
+    url: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/ChinaDomain.yaml"
+  Geoip_cn:
+    <<: *pi
+    url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/cn.yaml"
+  Geoip_private:
+    <<: *pi
+    url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/private.yaml"
+  ChinaCompanyIp:
+    <<: *pi
+    url: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/ChinaCompanyIp.yaml"
+  ChinaIp:
+    <<: *pi
+    url: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/ChinaIp.yaml"
+  ##############   自定义规则   #################
+  MyAD:
+    <<: *pd
+    # url: "https://cdn.jsdelivr.net/gh/yangxiaoge/adblockfilters@main/rules/adblockfilters.txt"
+    url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/reject.txt"
+  MyProxy:
+    <<: *pd
+    url: "https://github.com/yangxiaoge/TVBoxOSC_workflow/raw/master/clash/custRule/myProxy.yaml"
+  #例如一些成人网站~ 
+  MyForbidden:
+    <<: *pd
+    url: "https://github.com/yangxiaoge/TVBoxOSC_workflow/raw/master/clash/custRule/myForbidden.yaml"
+  MyDirect:
+    <<: *pd
+    url: "https://github.com/yangxiaoge/TVBoxOSC_workflow/raw/master/clash/custRule/myDirect.yaml"
+  ##############   自定义规则   #################
+
