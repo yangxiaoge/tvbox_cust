@@ -2847,6 +2847,129 @@ proxies:
     headers:
       Host: soe.cheeshon.cyou
     path: /
+- alterId: 64
+  cipher: auto
+  name: 美国 112
+  network: ws
+  port: 37000
+  server: 198.2.215.155
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-opts:
+    headers:
+      Host: www.88016387.xyz
+    path: /path/153428133302
+- alterId: 64
+  cipher: auto
+  name: 美国 113
+  network: ws
+  port: 38000
+  server: 38.173.196.14
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-opts:
+    headers:
+      Host: www.47643999.xyz
+    path: /path/153428133302
+- alterId: 64
+  cipher: auto
+  name: 美国 114
+  network: ws
+  port: 36000
+  server: 198.2.215.109
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-opts:
+    headers:
+      Host: www.59977650.xyz
+    path: /path/153428133302
+- alterId: 64
+  cipher: auto
+  name: 荷兰 021
+  network: ws
+  port: 41000
+  server: 156.249.18.171
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-opts:
+    headers:
+      Host: www.34668845.xyz
+    path: /path/153428133302
+- alterId: 64
+  cipher: auto
+  name: 美国 115
+  network: ws
+  port: 38000
+  server: 198.2.196.227
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-opts:
+    headers:
+      Host: www.12630069.xyz
+    path: /path/153428133302
+- alterId: 64
+  cipher: auto
+  name: 美国 116
+  network: ws
+  port: 37000
+  server: 38.14.124.112
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-opts:
+    headers:
+      Host: www.39179186.xyz
+    path: /path/153428133302
+- alterId: 0
+  cipher: auto
+  name: 加拿大 047
+  network: ws
+  port: 2095
+  server: 104.26.4.57
+  skip-cert-verify: true
+  type: vmess
+  uuid: 6658a3a6-225a-4d33-a5d2-82cfde565b4e
+  ws-opts:
+    headers:
+      Host: ssrsub.v03.ssrsub.com
+    path: /api/v3/download.getFile
+- alterId: 0
+  cipher: auto
+  name: 越南 001
+  network: ws
+  port: 80
+  server: free.mang5g.me
+  skip-cert-verify: true
+  type: vmess
+  uuid: 8a2a7b92-b65d-4155-91fc-7b7be52ca598
+  ws-opts:
+    headers:
+      Host: free.mang5g.me
+    path: /mang5g.me
+- alterId: 0
+  cipher: auto
+  name: 美国 117
+  network: ws
+  port: 36801
+  server: 20.6.161.252
+  skip-cert-verify: true
+  type: vmess
+  uuid: c0ad0b4b-5372-3ab8-9d43-5f8022a0f1ec
+  ws-opts:
+    headers:
+      Host: annie50.ceoiii.com
+    path: /hls/cctv5phd.m3u8
 proxy-groups:
 - name: PROXY
   type: select
@@ -3065,6 +3188,15 @@ proxy-groups:
   - 美国 109
   - 美国 110
   - 美国 111
+  - 美国 112
+  - 美国 113
+  - 美国 114
+  - 荷兰 021
+  - 美国 115
+  - 美国 116
+  - 加拿大 047
+  - 越南 001
+  - 美国 117
 - name: LOAD-BALANCE
   type: load-balance
   url: http://www.gstatic.com/generate_204
