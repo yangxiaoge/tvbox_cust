@@ -1,9 +1,9 @@
 # TVBoxOSC fork from [o0HalfLife0o](https://github.com/o0HalfLife0o/TVBoxOSC)
 
-![Build](https://shields.io/github/actions/workflow/status/yangxiaoge/TVBoxOSC_workflow/tvbox_app_action.yml?branch=master&logo=github&label=Build)
+![Build](https://shields.io/github/actions/workflow/status/yangxiaoge/tvbox_cust/tvbox_app_action.yml?branch=master&logo=github&label=Build)
 [![Channel](https://img.shields.io/badge/Follow-Telegram-blue.svg?logo=telegram)](https://t.me/TVBoxOSC)
-[![Download](https://img.shields.io/github/v/release/yangxiaoge/TVBoxOSC_workflow?color=orange&logoColor=orange&label=Download&logo=DocuSign)](https://github.com/yangxiaoge/TVBoxOSC_workflow/releases/latest) 
-[![Total](https://shields.io/github/downloads/yangxiaoge/TVBoxOSC_workflow/total?logo=Bookmeter&label=Counts&logoColor=yellow&color=yellow)](https://github.com/yangxiaoge/TVBoxOSC_workflow/releases)
+[![Download](https://img.shields.io/github/v/release/yangxiaoge/tvbox_cust?color=orange&logoColor=orange&label=Download&logo=DocuSign)](https://github.com/yangxiaoge/tvbox_cust/releases/latest) 
+[![Total](https://shields.io/github/downloads/yangxiaoge/tvbox_cust/total?logo=Bookmeter&label=Counts&logoColor=yellow&color=yellow)](https://github.com/yangxiaoge/tvbox_cust/releases)
 
 ## Credits
 This repo relies on the following third-party projects:
@@ -26,8 +26,8 @@ https://yangxiaoge.github.io/
 ## TVBox源
 - 源解析：https://www.lige.fit/ua
 - 多仓
-  - 链接：https://raw.githubusercontent.com/yangxiaoge/TVBoxOSC_workflow/master/tvbox/多仓.json
-  - 加速链接：https://cdn.jsdelivr.net/gh/yangxiaoge/TVBoxOSC_workflow@master/tvbox/多仓.json
+  - 链接：https://raw.githubusercontent.com/yangxiaoge/tvbox_cust/master/tvbox/多仓.json
+  - 加速链接：https://cdn.jsdelivr.net/gh/yangxiaoge/tvbox_cust@master/tvbox/多仓.json
 
 ## Clash
-- https://cdn.jsdelivr.net/gh/yangxiaoge/TVBoxOSC_workflow@master/clash/Clash2.yml
+- https://cdn.jsdelivr.net/gh/yangxiaoge/tvbox_cust@master/clash/Clash2.yml

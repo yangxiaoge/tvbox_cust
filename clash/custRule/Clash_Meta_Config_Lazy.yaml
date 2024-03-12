@@ -1,5 +1,5 @@
 ##############   注意:该配置文件为meta内核专用,不适合其他clash内核   #################
-################# ipv6支持： https://github.com/yangxiaoge/TVBoxOSC_workflow/blob/master/clash/ipv6_set.jpg #################
+################# ipv6支持： https://github.com/yangxiaoge/tvbox_cust/blob/master/clash/ipv6_set.jpg #################
 ##############   配置来源：https://t.me/openclash_open/106164   #################
 
 ###############################   建立锚点   #####################################
@@ -16,11 +16,11 @@ o2: &o2 {type: select, proxies: [DIRECT, 🚀 节点选择, ♻️ 自动选择,
 proxy-providers:
   白嫖节点1:    ###订阅名称###
     <<: *pp
-    url: "https://cdn.jsdelivr.net/gh/yangxiaoge/TVBoxOSC_workflow@master/clash/Clash3.yml"
+    url: "https://cdn.jsdelivr.net/gh/yangxiaoge/tvbox_cust@master/clash/Clash3.yml"
 
   白嫖节点2:    ###订阅名称###
     <<: *pp
-    url: "https://cdn.jsdelivr.net/gh/yangxiaoge/TVBoxOSC_workflow@master/clash/Clash.yml"
+    url: "https://cdn.jsdelivr.net/gh/yangxiaoge/tvbox_cust@master/clash/Clash.yml"
 
     
 
@@ -357,13 +357,13 @@ rule-providers:
     url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/reject.txt"
   MyProxy:
     <<: *pd
-    url: "https://github.com/yangxiaoge/TVBoxOSC_workflow/raw/master/clash/custRule/myProxy.yaml"
+    url: "https://github.com/yangxiaoge/tvbox_cust/raw/master/clash/custRule/myProxy.yaml"
   #例如一些成人网站~ 
   MyForbidden:
     <<: *pd
-    url: "https://github.com/yangxiaoge/TVBoxOSC_workflow/raw/master/clash/custRule/myForbidden.yaml"
+    url: "https://github.com/yangxiaoge/tvbox_cust/raw/master/clash/custRule/myForbidden.yaml"
   MyDirect:
     <<: *pd
-    url: "https://github.com/yangxiaoge/TVBoxOSC_workflow/raw/master/clash/custRule/myDirect.yaml"
+    url: "https://github.com/yangxiaoge/tvbox_cust/raw/master/clash/custRule/myDirect.yaml"
   ##############   自定义规则   #################
 
