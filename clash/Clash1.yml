@@ -1339,6 +1339,162 @@ proxies:
   type: vmess
   udp: true
   uuid: 01a7ed92-3ff7-4872-84a8-fcb4757783c7
+- alterId: 0
+  cipher: auto
+  name: 韩国 009
+  network: ws
+  port: 21203
+  server: 64.110.78.246
+  servername: data-hk-3.cn-db.top
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 414365d6-12fb-3530-8135-ad14b8ad7726
+  ws-opts:
+    headers:
+      Host: data-hk-3.cn-db.top
+    path: /db00
+- alterId: 64
+  cipher: auto
+  name: 美国 019
+  network: ws
+  port: 37000
+  server: 198.2.215.156
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-opts:
+    headers:
+      Host: www.88016387.xyz
+    path: /path/153428133302
+- alterId: 64
+  cipher: auto
+  name: 美国 020
+  network: ws
+  port: 38000
+  server: 38.48.166.231
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-opts:
+    headers:
+      Host: www.87137277.xyz
+    path: /path/153428133302
+- alterId: 64
+  cipher: auto
+  name: 美国 021
+  network: ws
+  port: 37000
+  server: 38.174.164.91
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-opts:
+    headers:
+      Host: www.50979398.xyz
+    path: /path/153428133302
+- alterId: 64
+  cipher: auto
+  name: 美国 022
+  network: ws
+  port: 36000
+  server: 38.14.121.172
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-opts:
+    headers:
+      Host: www.19414772.xyz
+    path: /path/153428133302
+- alterId: 64
+  cipher: auto
+  name: 美国 023
+  network: ws
+  port: 38000
+  server: 142.4.104.170
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-opts:
+    headers:
+      Host: www.87140386.xyz
+    path: /path/153428133302
+- alterId: 64
+  cipher: auto
+  name: 美国 024
+  network: ws
+  port: 38000
+  server: 38.11.217.201
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-opts:
+    headers:
+      Host: www.72649000.xyz
+    path: /path/153428133302
+- alterId: 64
+  cipher: auto
+  name: 美国 025
+  network: ws
+  port: 37000
+  server: 38.14.124.113
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-opts:
+    headers:
+      Host: www.39179186.xyz
+    path: /path/153428133302
+- alterId: 64
+  cipher: auto
+  name: 加拿大 046
+  network: ws
+  port: 37001
+  server: 74.48.156.203
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-opts:
+    headers:
+      Host: www.60493269.xyz
+    path: /path/153428133302
+- alterId: 64
+  cipher: auto
+  name: 荷兰 004
+  network: ws
+  port: 41000
+  server: 156.249.18.100
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: b8df3ef1-887f-4ee4-855f-4f80416c2464
+  ws-opts:
+    headers:
+      Host: www.39803953.xyz
+    path: /path/153428133302
+- alterId: 64
+  cipher: auto
+  name: 美国 026
+  network: ws
+  port: 38000
+  server: 142.0.131.149
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-opts:
+    headers:
+      Host: www.72594139.xyz
+    path: /path/153428133302
 proxy-groups:
 - name: PROXY
   type: select
@@ -1440,6 +1596,17 @@ proxy-groups:
   - 美国 017
   - 美国 018
   - 加拿大 045
+  - 韩国 009
+  - 美国 019
+  - 美国 020
+  - 美国 021
+  - 美国 022
+  - 美国 023
+  - 美国 024
+  - 美国 025
+  - 加拿大 046
+  - 荷兰 004
+  - 美国 026
 - name: LOAD-BALANCE
   type: load-balance
   url: http://www.gstatic.com/generate_204
@@ -1488,90 +1655,90 @@ rule-providers:
   icloud:
     type: http
     behavior: classical
-    url: "https://anaer.github.io/Sub/rules/classical/icloud.yaml"
+    url: "https://cdn.jsdelivr.net/gh/anaer/Sub@main/rules/classical/icloud.yaml"
     path: ./rules/classical/icloud.yaml
     interval: 86400
 
   apple:
     type: http
     behavior: classical
-    url: "https://anaer.github.io/Sub/rules/classical/apple.yaml"
+    url: "https://cdn.jsdelivr.net/gh/anaer/Sub@main/rules/classical/apple.yaml"
     path: ./rules/classical/apple.yaml
     interval: 86400
 
   gfw:
     type: http
     behavior: domain
-    url: "https://anaer.github.io/Sub/rules/domain/gfw.yaml"
+    url: "https://cdn.jsdelivr.net/gh/anaer/Sub@main/rules/domain/gfw.yaml"
     path: ./rules/domain/gfw.yaml
     interval: 86400
 
   youtube:
     type: http
     behavior: classical
-    url: "https://anaer.github.io/Sub/rules/classical/youtube.yaml"
+    url: "https://cdn.jsdelivr.net/gh/anaer/Sub@main/rules/classical/youtube.yaml"
     path: ./rules/classical/youtube.yaml
     interval: 86400
     
   google:
     type: http
     behavior: classical
-    url: "https://anaer.github.io/Sub/rules/classical/google.yaml"
+    url: "https://cdn.jsdelivr.net/gh/anaer/Sub@main/rules/classical/google.yaml"
     path: ./rules/classical/google.yaml
     interval: 86400
 
   github:
     type: http
     behavior: classical
-    url: "https://anaer.github.io/Sub/rules/classical/github.yaml"
+    url: "https://cdn.jsdelivr.net/gh/anaer/Sub@main/rules/classical/github.yaml"
     path: ./rules/classical/github.yaml
     interval: 86400
 
   openai:
     type: http
     behavior: classical
-    url: "https://anaer.github.io/Sub/rules/classical/openai.yaml"
+    url: "https://cdn.jsdelivr.net/gh/anaer/Sub@main/rules/classical/openai.yaml"
     path: ./rules/classical/openai.yaml
     interval: 86400
 
   telegram:
     type: http
     behavior: classical
-    url: "https://anaer.github.io/Sub/rules/classical/telegram.yaml"
+    url: "https://cdn.jsdelivr.net/gh/anaer/Sub@main/rules/classical/telegram.yaml"
     path: ./rules/classical/telegram.yaml
     interval: 86400
 
   spotify:
     type: http
     behavior: classical
-    url: "https://anaer.github.io/Sub/rules/classical/spotify.yaml"
+    url: "https://cdn.jsdelivr.net/gh/anaer/Sub@main/rules/classical/spotify.yaml"
     path: ./rules/classical/spotify.yaml
     interval: 86400
 
   applications:
     type: http
     behavior: classical
-    url: "https://anaer.github.io/Sub/rules/classical/applications.yaml"
+    url: "https://cdn.jsdelivr.net/gh/anaer/Sub@main/rules/classical/applications.yaml"
     path: ./rules/classical/applications.yaml
     interval: 86400
     
   block:
     type: http
     behavior: classical
-    url: "https://anaer.github.io/Sub/rules/classical/block.yaml"
+    url: "https://cdn.jsdelivr.net/gh/anaer/Sub@main/rules/classical/block.yaml"
     path: ./rules/classical/block.yaml
     interval: 86400
 
   direct-classical:
     type: http
     behavior: classical
-    url: "https://anaer.github.io/Sub/rules/classical/direct.yaml"
+    url: "https://cdn.jsdelivr.net/gh/anaer/Sub@main/rules/classical/direct.yaml"
     path: ./rules/classical/direct.yaml
     interval: 86400
   proxy-classical:
     type: http
     behavior: classical
-    url: "https://anaer.github.io/Sub/rules/classical/proxy.yaml"
+    url: "https://cdn.jsdelivr.net/gh/anaer/Sub@main/rules/classical/proxy.yaml"
     path: ./rules/classical/proxy.yaml
     interval: 86400
 
