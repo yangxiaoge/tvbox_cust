@@ -1,12 +1,12 @@
 # coding:utf-8
-import smtplib
-from email.mime.text import MIMEText
-from email.header import Header
-import smtplib
 import urllib.request
 from json import load
 import os
 import re
+import argparse
+import smtplib
+from email.mime.text import MIMEText
+from email.utils import formataddr
 
 # https://github.com/wineast/manuall-dns/blob/main/ip2.py
 __author__ = 'Wineast'
@@ -52,67 +52,75 @@ def ip3():
 processor_list = [ip1, ip2, ip3]
 ipAddress = ''
 
-for processor in processor_list:
-    try:
-        process_result = processor()
-    except:
-        # print("error on: " + processor.__name__)
-        process_result = ''
 
-    if process_result != '':
-        # print("bingo:" + process_result)
-        # print("print func: " + processor.__name__)
-        ipAddress = process_result
-        break
+def getIp():
+    for processor in processor_list:
+        try:
+            process_result = processor()
+        except:
+            # print("error on: " + processor.__name__)
+            process_result = ''
+
+        if process_result != '':
+            # print("bingo:" + process_result)
+            # print("print func: " + processor.__name__)
+            ipAddress = process_result
+            break
+        else:
+            print(processor.__name__ + " return empty, switch to next one")
+    if ipAddress != '':
+        print("bingo, ip is " + ipAddress)
+        result = sendEmail("ip地址", ipAddress)
+        if result:
+            print("发送成功！")
+        else:
+             print("发送失败！")
     else:
-        print(processor.__name__ + " return empty, switch to next one")
-if ipAddress != '':
-    print("bingo, ip is " + ipAddress)
-else:
-    print("ip not found")
-    os._exit(0)
+        print("ip not found")
+        os._exit(0)
+    
+
+# 发送邮件消息
+def sendEmail(title, errorMsg):
+    ret=True
+    try:
+        msg=MIMEText(errorMsg,'plain','utf-8')
+        msg['From']=formataddr(["GithubAction",my_sender])  # 括号里的对应发件人邮箱昵称、发件人邮箱账号
+        msg['To']=formataddr(["Bruce",my_user])              # 括号里的对应收件人邮箱昵称、收件人邮箱账号
+        msg['Subject']=title                # 邮件的主题，也可以说是标题
+ 
+        server=smtplib.SMTP_SSL("smtp.163.com", 465)  # 发件人邮箱中的SMTP服务器，端口是25
+        server.login(my_sender, my_pass)  # 括号中对应的是发件人邮箱账号、邮箱密码
+        server.sendmail(my_sender,[my_user,],msg.as_string())  # 括号中对应的是发件人邮箱账号、收件人邮箱账号、发送邮件
+        server.quit()  # 关闭连接
+    except Exception as e:  # 如果 try 中的语句没有执行，则会执行下面的 ret=False
+        print("sendEmail failed: " +str(e))
+        ret=False
+    return ret
 
 
-# 创建文件夹
-# if not os.path.exists('d:\pythonWork'):
-#     os.mkdir('d:\pythonWork')
+# 全局变量
+my_sender=''    # 发件人邮箱账号
+my_pass = ''    # 发件人邮箱密码
+my_user=''      # 收件人邮箱账号，我这边发送给自己
+telegram_bot_token=''  #telegram_bot_token
+telegram_bot_id='' #telegram_bot_id
 
-# file_object = open('d:\pythonWork\ip.txt')
-# try:
-#     preIp = file_object.read()
-# finally:
-#     file_object.close()
-# if preIp == ipAddress:
-#     os._exit(0)
-# else:
-#     file_object = open('d:\pythonWork\ip.txt', 'w+')
-#     file_object.write(ipAddress)
-#     file_object.close()
+if __name__ == "__main__":
+    # 读取github环境变量值
+    parser = argparse.ArgumentParser(description='读取secrets')
+    parser.add_argument('--telegram_bot_token', type=str, help='telegram_bot_token')
+    parser.add_argument('--telegram_bot_id', type=str, help='telegram_bot_id')
+    parser.add_argument('--email_sender', type=str, help='email_sender')
+    parser.add_argument('--email_pass', type=str, help='email_pass')
+    parser.add_argument('--email_receive', type=str, help='email_receive')
+    args = parser.parse_args()
 
-
-## Send to My email Address
-# 第三方 SMTP 服务
-key='xxxxxx'      #换成你的QQ邮箱SMTP的授权码(QQ邮箱设置里)
-EMAIL_ADDRESS='xxxxx@qq.com'      #换成你的邮箱地址
-EMAIL_PASSWORD=key
-
-import smtplib
-smtp=smtplib.SMTP('smtp.qq.com',25)
-
-import ssl
-context=ssl.create_default_context()
-sender=EMAIL_ADDRESS    #发件邮箱
-receiver=EMAIL_ADDRESS  #收件邮箱
-from email.message import EmailMessage
-subject='Manual_DNS_Service'
-# body="Hello,this is an email sent by python!"
-msg=EmailMessage()
-msg['subject']=subject   #邮件主题
-msg['From']=sender
-msg['To']=receiver
-msg.set_content('ip: ' + ipAddress)    #邮件内容
-
-with smtplib.SMTP_SSL("smtp.qq.com",465,context=context) as smtp:
-    smtp.login(EMAIL_ADDRESS,EMAIL_PASSWORD)
-    smtp.send_message(msg)
-    print(u"邮件发送成功")
+    # 赋值
+    my_sender=args.email_sender
+    my_pass=args.email_pass
+    my_user=args.email_receive
+    telegram_bot_token=args.telegram_bot_token
+    telegram_bot_id=args.telegram_bot_id
+    
+    getIp()
