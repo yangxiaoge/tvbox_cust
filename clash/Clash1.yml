@@ -1758,6 +1758,48 @@ proxies:
     headers:
       Host: clash6.ssr-free.xyz
     path: /dongtaiwang.com
+- alterId: 0
+  cipher: auto
+  name: 美国 035
+  network: ws
+  port: 443
+  server: 141.101.114.133
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: fcfaec91-6096-44d8-956c-7868d9e874b1
+  ws-opts:
+    headers:
+      Host: lg1.cfcdn1.xyz
+    path: /ray
+- alterId: 0
+  cipher: auto
+  name: 美国 036
+  network: ws
+  port: 443
+  server: cf-lt-dns.sharecentre.online
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 20e92881-5fb4-4b05-bc77-57929476dc69
+  ws-opts:
+    headers:
+      Host: cf-lt-dns.sharecentre.online
+    path: /shirker
+- alterId: 0
+  cipher: auto
+  name: 加拿大 054
+  network: ws
+  port: 443
+  server: 162.159.130.234
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: octavi.cfd
+    path: linkvws
 proxy-groups:
 - name: PROXY
   type: select
@@ -1889,6 +1931,9 @@ proxy-groups:
   - 美国 032
   - 美国 033
   - 美国 034
+  - 美国 035
+  - 美国 036
+  - 加拿大 054
 - name: LOAD-BALANCE
   type: load-balance
   url: http://www.gstatic.com/generate_204
