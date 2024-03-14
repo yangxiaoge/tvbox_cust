@@ -2155,19 +2155,19 @@ proxies:
     headers:
       Host: www.83008320.xyz
     path: /path/153428133302
-- name: 美国 056
-  type: vmess
+- alterId: 0
   cipher: auto
-  uuid: 36146255-3fec-45fe-aa53-e0c63c6c7ee1
-  server: achk.cloudflarest.link
-  port: 443
-  alterId: 0
-  tls: true
+  name: 美国 056
   network: ws
+  port: 443
+  server: achk.cloudflarest.link
+  tls: true
+  type: vmess
+  uuid: 36146255-3fec-45fe-aa53-e0c63c6c7ee1
   ws-opts:
-    path: /a3
     headers:
       Host: mg1.t1csyun.shop
+    path: /a3
 - alterId: 0
   cipher: auto
   name: 加拿大 058
@@ -2236,6 +2236,157 @@ proxies:
     headers:
       Host: cf-dx-dns.sharecentre.online
     path: /shirker
+- alterId: 2
+  cipher: auto
+  name: 香港 001
+  network: tcp
+  port: 1001
+  server: 62.216.92.70
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 0927b72f-8f1c-38f7-8a86-cb977dba6b83
+  ws-headers:
+    Host: 62.216.92.70
+- alterId: 64
+  cipher: auto
+  name: 美国 059
+  network: ws
+  port: 443
+  server: 148.135.31.174
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-opts:
+    headers:
+      Host: www.72672771.xyz
+    path: /path/153428133302
+- alterId: 64
+  cipher: auto
+  name: 美国 060
+  network: ws
+  port: 38000
+  server: 38.48.166.232
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-opts:
+    headers:
+      Host: www.87137277.xyz
+    path: /path/153428133302
+- alterId: 64
+  cipher: auto
+  name: 美国 061
+  network: ws
+  port: 38001
+  server: 142.4.116.168
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-opts:
+    headers:
+      Host: www.33586067.xyz
+    path: /path/153428133302
+- alterId: 64
+  cipher: auto
+  name: 美国 062
+  network: ws
+  port: 37000
+  server: 38.38.165.106
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-opts:
+    headers:
+      Host: www.84056064.xyz
+    path: /path/153428133302
+- alterId: 64
+  cipher: auto
+  name: 美国 063
+  network: ws
+  port: 38001
+  server: 38.14.107.243
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-opts:
+    headers:
+      Host: www.23179753.xyz
+    path: /path/153428133302
+- alterId: 0
+  cipher: auto
+  name: 美国 064
+  network: ws
+  port: 21859
+  server: 149.248.3.130
+  skip-cert-verify: true
+  type: vmess
+  uuid: f654c428-dc1d-47b9-b9ba-7c5fac15eeed
+  ws-opts:
+    headers:
+      Host: www.tmall.com
+    path: /live/UKPZrSI3K7dtNJmn
+- alterId: 0
+  cipher: auto
+  name: 美国 065
+  network: ws
+  port: 33441
+  server: 23.27.103.75
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 4a68304e-32e5-46ca-b298-52acb5c54f3b
+  ws-opts:
+    headers:
+      Host: sjc001.sfrae.net
+    path: /negotiate
+- alterId: 0
+  cipher: auto
+  name: 美国 066
+  network: ws
+  port: 33446
+  server: 104.164.191.195
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 4a68304e-32e5-46ca-b298-52acb5c54f3b
+  ws-opts:
+    headers:
+      Host: sjc006.sfrae.net
+    path: /negotiate
+- alterId: 0
+  cipher: auto
+  name: 美国 067
+  network: ws
+  port: 443
+  server: 47.76.92.191
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: a3aeff37-7a5d-4e2b-82fc-8daf44b216c2
+  ws-opts:
+    headers:
+      Host: aliyunhk01.caliburnonline.work
+    path: /oscarspy
+- alterId: 2
+  cipher: auto
+  name: 美国 068
+  network: ws
+  port: 443
+  server: lc-hk01-direct01.lc-hk01.lc-node.com
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: ec736482-173e-3eff-9114-b49df8056e7d
+  ws-opts:
+    headers:
+      Host: lc-hk01-direct01.lc-hk01.lc-node.com
+    path: /
 proxy-groups:
 - name: PROXY
   type: select
@@ -2402,6 +2553,17 @@ proxy-groups:
   - 美国 057
   - 美国 058
   - 加拿大 060
+  - 香港 001
+  - 美国 059
+  - 美国 060
+  - 美国 061
+  - 美国 062
+  - 美国 063
+  - 美国 064
+  - 美国 065
+  - 美国 066
+  - 美国 067
+  - 美国 068
 - name: LOAD-BALANCE
   type: load-balance
   url: http://www.gstatic.com/generate_204
