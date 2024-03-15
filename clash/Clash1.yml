@@ -2387,6 +2387,63 @@ proxies:
     headers:
       Host: lc-hk01-direct01.lc-hk01.lc-node.com
     path: /
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 韩国 011
+  network: ws
+  port: 45719
+  server: kr-seoul-oracle-d9ce50.ip1.shop
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: ee32b2fe-f66e-4f7f-874c-a5b979c9444b
+  ws-opts:
+    headers:
+      Host: kr-seoul-oracle-d9ce50.ip1.shop
+    path: /name
+- alterId: 0
+  cipher: auto
+  name: 美国 069
+  network: ws
+  port: 80
+  server: lms.uin-antasari.ac.id
+  skip-cert-verify: true
+  type: vmess
+  uuid: 46bfdb59-83c6-4710-877e-c809b5a90dff
+  ws-opts:
+    headers:
+      Host: exa.nextvpn.cc
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 美国 070
+  network: ws
+  port: 443
+  server: series-v1.samanehha.co
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 0b65bb06-6b28-487a-8e3c-820dda51e977
+  ws-opts:
+    headers:
+      Host: series-v1.samanehha.co
+    path: /dT9s3HqgZeD3eApzDAfhOHq
+- alterId: 0
+  cipher: auto
+  name: 美国 071
+  network: ws
+  port: 443
+  server: nestle.ir
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: b3a21def-5fcc-47a8-a6a0-a34e29d5288a
+  ws-opts:
+    headers:
+      Host: nestle.ir
+    path: /wss51068
 proxy-groups:
 - name: PROXY
   type: select
@@ -2564,6 +2621,10 @@ proxy-groups:
   - 美国 066
   - 美国 067
   - 美国 068
+  - 韩国 011
+  - 美国 069
+  - 美国 070
+  - 美国 071
 - name: LOAD-BALANCE
   type: load-balance
   url: http://www.gstatic.com/generate_204
