@@ -2572,6 +2572,48 @@ proxies:
     headers:
       Host: www.88186618.xyz
     path: /path/153428133302
+- alterId: 64
+  cipher: auto
+  name: 美国 079
+  network: ws
+  port: 38000
+  server: 38.165.72.140
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-opts:
+    headers:
+      Host: www.22103619.xyz
+    path: /path/153428133302
+- alterId: 64
+  cipher: auto
+  name: 美国 080
+  network: ws
+  port: 38000
+  server: 38.48.166.233
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-opts:
+    headers:
+      Host: www.87137277.xyz
+    path: /path/153428133302
+- name: 加拿大 062
+  type: vmess
+  cipher: auto
+  uuid: 6b87d84b-8c82-4795-81ee-5a808c856839
+  server: 104.21.25.44
+  port: 2053
+  alterId: 0
+  skip-cert-verify: true
+  tls: true
+  network: ws
+  ws-opts:
+    path: /vmess
+    headers:
+      Host: pt1-vmess.sshmax.xyz
 proxy-groups:
 - name: PROXY
   type: select
@@ -2762,6 +2804,9 @@ proxy-groups:
   - 美国 076
   - 美国 077
   - 美国 078
+  - 美国 079
+  - 美国 080
+  - 加拿大 062
 - name: LOAD-BALANCE
   type: load-balance
   url: http://www.gstatic.com/generate_204
