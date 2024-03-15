@@ -2444,6 +2444,134 @@ proxies:
     headers:
       Host: nestle.ir
     path: /wss51068
+- alterId: 0
+  cipher: auto
+  name: 加拿大 061
+  network: ws
+  port: 8080
+  server: cf.openxai.link
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: c18beb85-c67b-46ed-b8cc-4cbfeae5f194
+  ws-opts:
+    headers:
+      host: eu1.openxai.link
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 日本 009
+  network: ws
+  port: 62193
+  server: jp.littleqqq.co
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 27871516-88fe-4a7a-9d70-8c7b340b2519
+  ws-opts:
+    headers:
+      Host: www.tmall.com
+    path: /live/UKPZrSI3K7dtNJmn
+- alterId: 0
+  cipher: auto
+  name: 美国 072
+  network: ws
+  port: 33448
+  server: sjc008.sfrae.net
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 602eefe5-6eb6-4731-bbbc-6180dd2266d7
+  ws-opts:
+    headers:
+      Host: sjc008.sfrae.net
+    path: /negotiate
+- alterId: 64
+  cipher: auto
+  name: 美国 073
+  network: ws
+  port: 38000
+  server: 38.173.196.16
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-opts:
+    headers:
+      Host: www.47643999.xyz
+    path: /path/153428133302
+- alterId: 64
+  cipher: auto
+  name: 美国 074
+  network: ws
+  port: 37000
+  server: 198.200.56.42
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-opts:
+    headers:
+      Host: www.98382183.xyz
+    path: /path/153428133302
+- alterId: 64
+  cipher: auto
+  name: 美国 075
+  network: ws
+  port: 38000
+  server: 192.74.237.58
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-opts:
+    headers:
+      Host: www.51291807.xyz
+    path: /path/153428133302
+- alterId: 64
+  cipher: auto
+  name: 美国 076
+  network: ws
+  port: 37000
+  server: 38.38.153.206
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-opts:
+    headers:
+      Host: www.78310250.xyz
+    path: /path/153428133302
+- alterId: 64
+  cipher: auto
+  name: 美国 077
+  network: ws
+  port: 37000
+  server: 38.174.164.92
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-opts:
+    headers:
+      Host: www.50979398.xyz
+    path: /path/153428133302
+- alterId: 64
+  cipher: auto
+  name: 美国 078
+  network: ws
+  port: 37000
+  server: 38.38.148.243
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-opts:
+    headers:
+      Host: www.88186618.xyz
+    path: /path/153428133302
 proxy-groups:
 - name: PROXY
   type: select
@@ -2625,6 +2753,15 @@ proxy-groups:
   - 美国 069
   - 美国 070
   - 美国 071
+  - 加拿大 061
+  - 日本 009
+  - 美国 072
+  - 美国 073
+  - 美国 074
+  - 美国 075
+  - 美国 076
+  - 美国 077
+  - 美国 078
 - name: LOAD-BALANCE
   type: load-balance
   url: http://www.gstatic.com/generate_204
