@@ -5,18 +5,12 @@
 # 日期：2024年03月16日
 #############版权信息#################
 #############pushplus信息#############
-echo 这是第5个参数: $5
-echo 这是第6个参数: $6
-echo 这是第10个参数: "${10}"
-echo 这是第11个参数: "${11}"
-echo 这是第12个参数: "${12}"
-
 #文本的标题
-title=$1                                             #①推送文本的标题可以自定义
+title="${1}"                                             #①推送文本的标题可以自定义
 #pushplus的token
-token=$2                                             #②改成自己的pushplus的token(读取github入参)
+token="${2}"                                             #②改成自己的pushplus的token(读取github入参)
 # 群组编码
-topic=$3                                             #③改成自己pushplus的群组编码(读取github入参)
+topic="${3}"                                             #③改成自己pushplus的群组编码(读取github入参)
 #############pushplus信息#############
 
 # 删除临时天气文件数据
@@ -24,11 +18,11 @@ rm -rf weather_data.json
 
 #############天气信息#############
 #城市
-city=$4                                                  #④改成自己需要设置的城市(读取github入参)
+city="${4}"                                                  #④改成自己需要设置的城市(读取github入参)
 #城市天气代码
-city_code=$5                                             #⑤改成自己需要查询的和风天气的城市代码打开 https://c1.ywsj.link/s/m1Sv/doc?name=China-City-List-latest.xlsx 查询 (读取github入参)
+city_code="${5}"                                             #⑤改成自己需要查询的和风天气的城市代码打开 https://c1.ywsj.link/s/m1Sv/doc?name=China-City-List-latest.xlsx 查询 (读取github入参)
 #和风天气key
-hefeng_key=$6                                            #⑥改成自己的和风天气的key (读取github入参)
+hefeng_key="${6}"                                            #⑥改成自己的和风天气的key (读取github入参)
 # 发送HTTP请求并将JSON响应存储到临时文件中
 curl -s -o weather_data.json "https://devapi.qweather.com/v7/weather/3d?location=${city_code}&key=${hefeng_key}" --compressed --header "Accept-Charset: UTF-8"
 # 检查文件是否存在
@@ -88,7 +82,7 @@ rm weather_data.json
 current_year=$(date +'%Y')
 
 #姓名1
-name1=$7                                              #⑦ 姓名1(读取github入参)
+name1="${7}"                                              #⑦ 姓名1(读取github入参)
 #姓名1的生日日期（只支持1900年-2100年出生的阴历日期）注意如果你是一月初一生日就写1-1不要写01-01
 name1_birthdate_yinli="${8}"                              #⑧ 姓名1的阴历生日(读取github入参)
 # 将用户输入的阴历生日转换为阳历日期
@@ -101,7 +95,7 @@ rm -rf date_of_birth_1
 
 
 #姓名2
-name2=$9                                             #⑨ 姓名2(读取github入参)
+name2="${9}"                                             #⑨ 姓名2(读取github入参)
 #姓名2的生日日期（只支持1900年-2100年出生的阴历日期）注意如果你是三月初九生日就写3-9不要写03-09
 name2_birthdate_yinli="${10}"                            #10 姓名2的阴历生日(读取github入参)
 
@@ -193,7 +187,7 @@ OneDayEnglish_hanzi=$(cat OneDayEnglish.json | jq -r '.result.note')
 rm -rf OneDayEnglish.json
 
 
-content="今天是: $(date +'%Y年%m月%d日')<br>地区：${city}<br>天气数据更新时间：${today_updateTime}<br>日出时间：${time_sunrise}<br>日落时间：${time_sunset}<br>月相：${today_moonPhase}<br>白天天气：${day_weather_text}<br>夜晚天气：${night_weather_text}<br>最高气温：${max_temperature}<br>最低气温：${min_temperature}<br>相对湿度：${today_humidity}<br>降水量：${today_precip}<br>气压：${today_pressure}<br>紫外线指数：${today_uvIndex}<br>白天风向：${winddirection_day}<br>夜晚风向：${winddirection_night}<br>今天是我们恋爱❤️的：第${lovedays}天<br>今天是宝宝出生❤️的：第${fanfan_born_days}天<br>距离${name1}的生日🍰还有：${days1}天<br>距离${name2}的生日🍰还有：${days2}天<br>今日英语：《${OneDayEnglish_yingyu}<br>${OneDayEnglish_hanzi}》"
+content="今天是: $(date +'%Y年%m月%d日')<br>地区：${city}<br>天气数据更新时间：${today_updateTime}<br>日出时间：${time_sunrise}<br>日落时间：${time_sunset}<br>月相：${today_moonPhase}<br>白天天气：${day_weather_text}<br>夜晚天气：${night_weather_text}<br>最高气温：${max_temperature}<br>最低气温：${min_temperature}<br>相对湿度：${today_humidity}<br>降水量：${today_precip}<br>气压：${today_pressure}<br>紫外线指数：${today_uvIndex}<br>白天风向：${winddirection_day}<br>夜晚风向：${winddirection_night}<br>今天是我们恋爱❤️的：第${lovedays}天<br>今天是${name1}出生❤️的：第${fanfan_born_days}天<br>距离${name1}的生日🍰还有：${days1}天<br>距离${name2}的生日🍰还有：${days2}天<br>今日英语：《${OneDayEnglish_yingyu}<br>${OneDayEnglish_hanzi}》"
 template="html"
 
 echo "${content}"
@@ -202,4 +196,4 @@ echo "${content}"
 url="https://www.pushplus.plus/send"
 
 # 发送请求
-# curl --data-urlencode "token=$token" --data-urlencode "title=$title" --data-urlencode "content=$content" --data-urlencode "template=$template" --data-urlencode "topic=$topic"  "$url"
+curl --data-urlencode "token=$token" --data-urlencode "title=$title" --data-urlencode "content=$content" --data-urlencode "template=$template" --data-urlencode "topic=$topic"  "$url"
