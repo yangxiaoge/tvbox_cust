@@ -79,7 +79,7 @@ night_weather_text="$weather_text_night"
 rm weather_data.json
 #############天气信息#############
 # 获取当前日期的年份
-current_year=$(date +'%Y')
+current_year=$(TZ=UTC+8 date +'%Y')
 
 #姓名1
 name1="${7}"                                              #⑦ 姓名1(读取github入参)
@@ -122,11 +122,11 @@ full_name2_birthdate="$name2_birthdate"
 
 
 # 获取当前日期
-current_date=$(date +'%Y-%m-%d')
+current_date=$(TZ=UTC+8 date +'%Y-%m-%d')
 # 使用 'date' 命令将日期转换为秒级时间戳
-birthday_timestamp1=$(date -d "$full_name1_birthdate" +%s)
-birthday_timestamp2=$(date -d "$full_name2_birthdate" +%s)
-current_timestamp=$(date -d "$current_date" +%s)
+birthday_timestamp1=$(TZ=UTC+8 date -d "$full_name1_birthdate" +%s)
+birthday_timestamp2=$(TZ=UTC+8 date -d "$full_name2_birthdate" +%s)
+current_timestamp=$(TZ=UTC+8 date -d "$current_date" +%s)
 
 # name1如果生日已经过去，则计算距离下一个生日的天数
 if [[ $birthday_timestamp1 -lt $current_timestamp ]]; then
@@ -134,7 +134,7 @@ if [[ $birthday_timestamp1 -lt $current_timestamp ]]; then
  grep "@${next_birthday1}" ./scripts/notification/1900-2100.txt | awk -F'@' '{print $1}'| head -n 1 > date_of_birth_1_1
  name1_birthdate1_1=$(cat date_of_birth_1_1)
  rm -rf date_of_birth_1_1
-  next_birthday_timestamp1=$(date -d "$name1_birthdate1_1" +%s)
+  next_birthday_timestamp1=$(TZ=UTC+8 date -d "$name1_birthdate1_1" +%s)
   days1=$(( (next_birthday_timestamp1 - current_timestamp) / 86400 ))
 
 else
@@ -149,7 +149,7 @@ if [[ $birthday_timestamp2 -lt $current_timestamp ]]; then
   grep "@${next_birthday2}" ./scripts/notification/1900-2100.txt | awk -F'@' '{print $1}'| head -n 1 > date_of_birth_1_2
   name2_birthdate2_2=$(cat date_of_birth_1_2)
   rm -rf date_of_birth_1_2
-  next_birthday_timestamp2=$(date -d "$name2_birthdate2_2" +%s)
+  next_birthday_timestamp2=$(TZ=UTC+8 date -d "$name2_birthdate2_2" +%s)
   days2=$(( (next_birthday_timestamp2 - current_timestamp) / 86400 ))
 
 else
@@ -159,12 +159,12 @@ else
 fi
 
 # 使用 'date' 命令将恋爱开始日期转换为秒级时间戳
-birthdate_timestamp=$(date -d "$birthdate" +%s)
+birthdate_timestamp=$(TZ=UTC+8 date -d "$birthdate" +%s)
 # 计算天数差
 lovedays=$(( (current_timestamp - birthdate_timestamp) / 86400 + 1))
 
 # 使用 'date' 命令将宝宝出生日期转换为秒级时间戳
-baby_birthdate_timestamp=$(date -d "$baby_birthdate" +%s)
+baby_birthdate_timestamp=$(TZ=UTC+8 date -d "$baby_birthdate" +%s)
 # 计算天数差
 fanfan_born_days=$(( (current_timestamp - baby_birthdate_timestamp) / 86400 + 1))
 
@@ -187,7 +187,7 @@ OneDayEnglish_hanzi=$(cat OneDayEnglish.json | jq -r '.result.note')
 rm -rf OneDayEnglish.json
 
 
-content="今天是: $(date +'%Y年%m月%d日')<br>地区：${city}<br>天气数据更新时间：${today_updateTime}<br>日出时间：${time_sunrise}<br>日落时间：${time_sunset}<br>月相：${today_moonPhase}<br>白天天气：${day_weather_text}<br>夜晚天气：${night_weather_text}<br>最高气温：${max_temperature}<br>最低气温：${min_temperature}<br>相对湿度：${today_humidity}<br>降水量：${today_precip}<br>气压：${today_pressure}<br>紫外线指数：${today_uvIndex}<br>白天风向：${winddirection_day}<br>夜晚风向：${winddirection_night}<br>今天是我们恋爱❤️的：第${lovedays}天<br>今天是${name1}出生❤️的：第${fanfan_born_days}天<br>距离${name1}的生日🍰还有：${days1}天<br>距离${name2}的生日🍰还有：${days2}天<br>今日英语：《${OneDayEnglish_yingyu}<br>${OneDayEnglish_hanzi}》"
+content="今天是: $(TZ=UTC+8 date +'%Y年%m月%d日')<br>地区：${city}<br>天气数据更新时间：${today_updateTime}<br>日出时间：${time_sunrise}<br>日落时间：${time_sunset}<br>月相：${today_moonPhase}<br>白天天气：${day_weather_text}<br>夜晚天气：${night_weather_text}<br>最高气温：${max_temperature}<br>最低气温：${min_temperature}<br>相对湿度：${today_humidity}<br>降水量：${today_precip}<br>气压：${today_pressure}<br>紫外线指数：${today_uvIndex}<br>白天风向：${winddirection_day}<br>夜晚风向：${winddirection_night}<br>今天是我们恋爱❤️的：第${lovedays}天<br>今天是${name1}出生❤️的：第${fanfan_born_days}天<br>距离${name1}的生日🍰还有：${days1}天<br>距离${name2}的生日🍰还有：${days2}天<br>今日英语：《${OneDayEnglish_yingyu}<br>${OneDayEnglish_hanzi}》"
 template="html"
 
 # echo "${content}"
