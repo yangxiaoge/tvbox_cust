@@ -5,14 +5,10 @@
 # 日期：2024年03月16日
 #############版权信息#################
 #############pushplus信息#############
-echo 这是第一个参数: $1
-echo 这是第一个参数: $3
-echo 这是第一个参数: $4
-echo 这是第一个参数: $5
 #文本的标题
 title=$1                                             #①推送文本的标题可以自定义
 #pushplus的token
-total=$2                                             #②改成自己的pushplus的token(读取github入参)
+token=$2                                             #②改成自己的pushplus的token(读取github入参)
 # 群组编码
 topic=$3                                             #③改成自己pushplus的群组编码(读取github入参)
 #############pushplus信息#############
@@ -90,7 +86,7 @@ name1=$7                                              #⑦ 姓名1(读取github�
 #姓名1的生日日期（只支持1900年-2100年出生的阴历日期）注意如果你是一月初一生日就写1-1不要写01-01
 name1_birthdate_yinli=$8                              #⑧ 姓名1的阴历生日(读取github入参)
 # 将用户输入的阴历生日转换为阳历日期
-grep "@${current_year}-${name1_birthdate_yinli}" 1900-2100.txt | awk -F'@' '{print $1}'| head -n 1 > date_of_birth_1
+grep "@${current_year}-${name1_birthdate_yinli}" ./scripts/notification/1900-2100.txt | awk -F'@' '{print $1}'| head -n 1 > date_of_birth_1
 
 name1_birthdate=$(cat date_of_birth_1)
 
@@ -104,7 +100,7 @@ name2=$9                                             #⑨ 姓名2(读取github�
 name2_birthdate_yinli=$10                            #10 姓名2的阴历生日(读取github入参)
 
 # 将用户输入的阴历生日转换为阳历日期
-grep "@${current_year}-${name2_birthdate_yinli}" 1900-2100.txt | awk -F'@' '{print $1}'| head -n 1 > date_of_birth_2
+grep "@${current_year}-${name2_birthdate_yinli}" ./scripts/notification/1900-2100.txt | awk -F'@' '{print $1}'| head -n 1 > date_of_birth_2
 
 name2_birthdate=$(cat date_of_birth_2)
 
@@ -135,7 +131,7 @@ current_timestamp=$(date -d "$current_date" +%s)
 # name1如果生日已经过去，则计算距离下一个生日的天数
 if [[ $birthday_timestamp1 -lt $current_timestamp ]]; then
   next_birthday1="$((current_year + 1))-$name1_birthdate_yinli"
- grep "@${next_birthday1}" 1900-2100.txt | awk -F'@' '{print $1}'| head -n 1 > date_of_birth_1_1
+ grep "@${next_birthday1}" ./scripts/notification/1900-2100.txt | awk -F'@' '{print $1}'| head -n 1 > date_of_birth_1_1
  name1_birthdate1_1=$(cat date_of_birth_1_1)
  rm -rf date_of_birth_1_1
   next_birthday_timestamp1=$(date -d "$name1_birthdate1_1" +%s)
@@ -150,7 +146,7 @@ fi
 # name2如果生日已经过去，则计算距离下一个生日的天数
 if [[ $birthday_timestamp2 -lt $current_timestamp ]]; then
   next_birthday2="$((current_year + 1))-$name2_birthdate_yinli"
-  grep "@${next_birthday2}" 1900-2100.txt | awk -F'@' '{print $1}'| head -n 1 > date_of_birth_1_2
+  grep "@${next_birthday2}" ./scripts/notification/1900-2100.txt | awk -F'@' '{print $1}'| head -n 1 > date_of_birth_1_2
   name2_birthdate2_2=$(cat date_of_birth_1_2)
   rm -rf date_of_birth_1_2
   next_birthday_timestamp2=$(date -d "$name2_birthdate2_2" +%s)
@@ -200,4 +196,4 @@ template="html"
 url="https://www.pushplus.plus/send"
 
 # 发送请求
-curl --data-urlencode "token=$token" --data-urlencode "title=$title" --data-urlencode "content=$content" --data-urlencode "template=$template" --data-urlencode "topic=$topic"  "$url"
+# curl --data-urlencode "token=$token" --data-urlencode "title=$title" --data-urlencode "content=$content" --data-urlencode "template=$template" --data-urlencode "topic=$topic"  "$url"
