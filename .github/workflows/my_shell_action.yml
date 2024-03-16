@@ -36,3 +36,4 @@ jobs:
          name1date='${{secrets.wechat_notification_name1date}}'
          #通知脚本
          bash ./scripts/notification/wechat_notification.sh title token group cityname citycode weatherkey name1 name1birth name2 name2birth lovedate name1date
+         bash ./scripts/notification/wechat_notification.sh ${title} ${token} ${group} ${cityname} ${citycode} ${weatherkey} ${name1} ${name1birth} ${name2} ${name2birth} ${lovedate} ${name1date}
