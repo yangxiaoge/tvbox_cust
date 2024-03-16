@@ -190,7 +190,7 @@ rm -rf OneDayEnglish.json
 content="今天是: $(date +'%Y年%m月%d日')<br>地区：${city}<br>天气数据更新时间：${today_updateTime}<br>日出时间：${time_sunrise}<br>日落时间：${time_sunset}<br>月相：${today_moonPhase}<br>白天天气：${day_weather_text}<br>夜晚天气：${night_weather_text}<br>最高气温：${max_temperature}<br>最低气温：${min_temperature}<br>相对湿度：${today_humidity}<br>降水量：${today_precip}<br>气压：${today_pressure}<br>紫外线指数：${today_uvIndex}<br>白天风向：${winddirection_day}<br>夜晚风向：${winddirection_night}<br>今天是我们恋爱❤️的：第${lovedays}天<br>今天是${name1}出生❤️的：第${fanfan_born_days}天<br>距离${name1}的生日🍰还有：${days1}天<br>距离${name2}的生日🍰还有：${days2}天<br>今日英语：《${OneDayEnglish_yingyu}<br>${OneDayEnglish_hanzi}》"
 template="html"
 
-echo "${content}"
+# echo "${content}"
 
 # 构造请求 URL
 url="https://www.pushplus.plus/send"
