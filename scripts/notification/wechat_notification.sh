@@ -7,10 +7,9 @@
 #############pushplus信息#############
 echo 这是第5个参数: $5
 echo 这是第6个参数: $6
-echo 这是第7个参数: $7
-echo 这是第12个参数: $12
-echo 这是第122个参数: "${12}"
-echo 这是第123个参数: "$12"
+echo 这是第10个参数: "${10}"
+echo 这是第11个参数: "${11}"
+echo 这是第12个参数: "${12}"
 
 #文本的标题
 title=$1                                             #①推送文本的标题可以自定义
@@ -91,7 +90,7 @@ current_year=$(date +'%Y')
 #姓名1
 name1=$7                                              #⑦ 姓名1(读取github入参)
 #姓名1的生日日期（只支持1900年-2100年出生的阴历日期）注意如果你是一月初一生日就写1-1不要写01-01
-name1_birthdate_yinli=$8                              #⑧ 姓名1的阴历生日(读取github入参)
+name1_birthdate_yinli="${8}"                              #⑧ 姓名1的阴历生日(读取github入参)
 # 将用户输入的阴历生日转换为阳历日期
 grep "@${current_year}-${name1_birthdate_yinli}" ./scripts/notification/1900-2100.txt | awk -F'@' '{print $1}'| head -n 1 > date_of_birth_1
 
@@ -104,7 +103,7 @@ rm -rf date_of_birth_1
 #姓名2
 name2=$9                                             #⑨ 姓名2(读取github入参)
 #姓名2的生日日期（只支持1900年-2100年出生的阴历日期）注意如果你是三月初九生日就写3-9不要写03-09
-name2_birthdate_yinli=$10                            #10 姓名2的阴历生日(读取github入参)
+name2_birthdate_yinli="${10}"                            #10 姓名2的阴历生日(读取github入参)
 
 # 将用户输入的阴历生日转换为阳历日期
 grep "@${current_year}-${name2_birthdate_yinli}" ./scripts/notification/1900-2100.txt | awk -F'@' '{print $1}'| head -n 1 > date_of_birth_2
@@ -116,11 +115,11 @@ rm -rf date_of_birth_2
 
 
 # 恋爱开始日期
-birthdate=$11                                   #11  恋爱开始时间
+birthdate="${11}"                                   #11  恋爱开始时间
 
 
 # 宝宝出生日期
-baby_birthdate=$12                              #12  宝宝出生日期
+baby_birthdate="${12}"                          #12  宝宝出生日期
 
 # 构造name1完整的生日日期（当前年份 + 生日日期）
 full_name1_birthdate="$name1_birthdate"
