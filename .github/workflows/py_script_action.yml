@@ -3,7 +3,11 @@ name: py脚本
 on:
   # push:
   schedule:
-    - cron: 59 0-18,22-23 * * *
+    # - cron: 59 0-18,22-23 * * *
+    # 该cron指定的是格林尼治时间（UTC），如果需要换算成北京时间，要在该cron的基础上增加八小时得到北京时间。
+    # 例如 0 0 * * * 表示在每天 格林尼治时间的 0:00 AM，也就是在北京时间的 8:00 AM 自动运行。
+    # 每天8点（utc+8后为北京时间）
+    - cron: 0 0 * * *
   watch:
     types: started
   workflow_dispatch:
@@ -55,7 +59,7 @@ jobs:
           export TZ='Asia/Shanghai'
           git add .
           git commit -m "update" -a
-      - name: 推送🐔场
+      - name: 推送到github
         # 是否有文件状态发生变化，判断部分字符串"git add <file>..."
         if: contains(env.gitStatus, 'git add <file>...')
         uses: ad-m/github-push-action@master
