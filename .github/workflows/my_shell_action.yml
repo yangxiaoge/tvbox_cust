@@ -21,5 +21,18 @@ jobs:
         run: |
          #科学签到
          bash ./scripts/dotunnel_science_chekin.sh
+         # secrets读取
+         title='${{secrets.wechat_notification_title}}'
+         token='${{secrets.wechat_notification_pushtoken}}'
+         group='${{secrets.wechat_notification_group}}'
+         cityname='${{secrets.wechat_notification_cityname}}'
+         citycode='${{secrets.wechat_notification_citycode}}'
+         weatherkey='${{secrets.wechat_notification_weatherkey}}'
+         name1='${{secrets.wechat_notification_name1}}'
+         name1birth='${{secrets.wechat_notification_name1birth}}'
+         name2='${{secrets.wechat_notification_name2}}'
+         name2birth='${{secrets.wechat_notification_name2birth}}'
+         lovedate='${{secrets.wechat_notification_lovedate}}'
+         name1date='${{secrets.wechat_notification_name1date}}'
          #通知脚本
-         bash ./scripts/notification.sh "hahaha" 666
+         bash ./scripts/wechat_notification.sh ${title} ${token} ${group} ${cityname} ${citycode} ${weatherkey} ${name1} ${name1birth} ${name2} ${name2birth} ${lovedate} ${name1date}
