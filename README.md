@@ -30,3 +30,7 @@ https://yangxiaoge.github.io/
 
 ## Clash
 - https://cdn.jsdelivr.net/gh/yangxiaoge/tvbox_cust@master/clash/Clash2.yml
+
+## 工作日查询
+- 接口：https://cdn.jsdelivr.net/gh/yangxiaoge/tvbox_cust@master/holiday/isHoliday.json
+  
