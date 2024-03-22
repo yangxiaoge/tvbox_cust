@@ -16,8 +16,8 @@ This repo relies on the following third-party projects:
 ## TV 应用
 - 默认桌面：[EmotnUI](/apk/EmotnUI_com.oversea.aslauncher_1.0.9.0_5094.apk)
 - FongMi影视：[影视](https://github.com/FongMi/Release/tree/main/apk/release) 订阅源: [tvbox源](https://github.com/yangxiaoge/tvbox_cust?tab=readme-ov-file#tvbox源)
-- IPTV直播：[TiviMate](/apk/TiviMate-2.8.0_CMist_Premium破解版_小羊修改版.apk)  订阅源: [fanmingming](https://github.com/fanmingming/live)
-- 开机启动指定应用：[开机自启](/apk/开机自启_3.0_2024-03-11.apk) 源码: [autoclick](https://gitee.com/sheepyang_study/auto-click-slide)
+- IPTV直播：[TiviMate](/apk/TiviMate-2.8.0_CMist_Premium破解版_小羊修改版.apk)  订阅源官网: [fanmingming](https://github.com/fanmingming/live)  IPV6源：https://live.fanmingming.com/tv/m3u/ipv6.m3u
+- 开机启动指定应用：[开机自启](/apk/开机自启_3.0_2024-03-11.apk) 源码（自用闭源）: [autoclick](https://gitee.com/sheepyang_study/auto-click-slide)
 
 ## 影视TV
 https://yangxiaoge.github.io/
