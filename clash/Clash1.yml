@@ -65,9 +65,11 @@ proxies:
   cipher: auto
   http-opts:
     headers:
-      Host: internet.life.com.by
+      Host:
+      - internet.life.com.by
     method: GET
-    path: /
+    path:
+    - /
   name: 巴西 001
   network: http
   port: 3389
@@ -81,9 +83,11 @@ proxies:
   cipher: auto
   http-opts:
     headers:
-      Host: internet.life.com.by
+      Host:
+      - internet.life.com.by
     method: GET
-    path: /
+    path:
+    - /
   name: 加拿大 001
   network: http
   port: 3389
@@ -97,9 +101,11 @@ proxies:
   cipher: auto
   http-opts:
     headers:
-      Host: internet.life.com.by
+      Host:
+      - internet.life.com.by
     method: GET
-    path: /
+    path:
+    - /
   name: 哈萨克斯坦 001
   network: http
   port: 3389
@@ -122,30 +128,9 @@ proxies:
     headers:
       Host: de.sanfen002.top
     path: /?ed=2048
-- name: 新加坡 001
-  network: tcp
-  password: e85bfecf-62f5-4e92-b974-31dd953d15bf
-  port: 443
-  server: sg-full.privateip.net
-  skip-cert-verify: true
-  type: trojan
-  udp: true
 - alterId: 0
   cipher: auto
   name: 加拿大 002
-  network: ws
-  port: 2086
-  server: admin.arzonhost.ir
-  tls: false
-  type: vmess
-  uuid: 7d93e992-48cf-42d4-84f8-75768e815a4c
-  ws-opts:
-    headers:
-      Host: admin.arzonhost.ir
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 加拿大 003
   network: ws
   port: 2086
   server: mizban.arzonhost.ir
@@ -158,22 +143,8 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 加拿大 004
-  network: ws
-  port: 80
-  server: 104.21.235.140
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: f4c98b50-e614-11ee-b430-205c6d5f5d78
-  ws-opts:
-    headers:
-      host: m4p9q.cnbete.life
-    path: /?ed=2048
-- alterId: 0
-  cipher: auto
   client-fingerprint: chrome
-  name: 加拿大 005
+  name: 加拿大 003
   network: ws
   port: 2082
   server: s1c.v2.v001sss.xyz
@@ -189,19 +160,6 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 加拿大 006
-  network: ws
-  port: 80
-  server: 104.21.235.178
-  skip-cert-verify: true
-  type: vmess
-  uuid: f4c98b50-e614-11ee-b430-205c6d5f5d78
-  ws-opts:
-    headers:
-      Host: m4p9q.cnbete.life
-    path: /?ed=2048
-- alterId: 0
-  cipher: auto
   name: 美国 002
   network: ws
   port: 8080
@@ -213,367 +171,6 @@ proxies:
     headers:
       Host: technological-mel-fill-decide.trycloudflare.com
     path: 9b196b50-37f2-4f4b-b175-06273adc6207-vm
-- alterId: 0
-  cipher: auto
-  name: 美国 003
-  network: ws
-  port: 8080
-  server: 173.245.58.100
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 9b196b50-37f2-4f4b-b175-06273adc6207
-  ws-opts:
-    headers:
-      Host: technological-mel-fill-decide.trycloudflare.com
-    path: 9b196b50-37f2-4f4b-b175-06273adc6207-vm
-- alterId: 0
-  cipher: auto
-  name: 加拿大 007
-  network: ws
-  port: 80
-  server: 104.21.235.1
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: f4c98b50-e614-11ee-b430-205c6d5f5d78
-  ws-opts:
-    headers:
-      Host: m4p9q.cnbete.life
-    path: /?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 加拿大 008
-  network: ws
-  port: 80
-  server: 104.21.235.226
-  tls: false
-  type: vmess
-  uuid: f4c98b50-e614-11ee-b430-205c6d5f5d78
-  ws-opts:
-    headers:
-      Host: m4p9q.cnbete.life
-    path: /?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 加拿大 009
-  network: ws
-  port: 80
-  server: 104.21.235.123
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: f4c98b50-e614-11ee-b430-205c6d5f5d78
-  ws-opts:
-    headers:
-      Host: m4p9q.cnbete.life
-    path: /?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 加拿大 010
-  network: ws
-  port: 80
-  server: 104.21.235.46
-  tls: false
-  type: vmess
-  uuid: f4c98b50-e614-11ee-b430-205c6d5f5d78
-  ws-opts:
-    headers:
-      Host: m4p9q.cnbete.life
-    path: /?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 美国 004
-  network: tcp
-  port: 12842
-  server: 174.136.207.168
-  tls: false
-  type: vmess
-  uuid: d7e439a8-9cb4-4c62-9a6a-d36824689a04
-- alterId: 0
-  cipher: auto
-  name: 加拿大 011
-  network: ws
-  port: 8080
-  server: lanmaoyunvm.ksr.free.hr
-  skip-cert-verify: true
-  type: vmess
-  uuid: 3b52fe01-aa51-49f7-b4e7-31b683ffb2a7
-  ws-opts:
-    headers:
-      Host: lanmaoyunvm.ksr.free.hr
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 美国 005
-  network: ws
-  port: 8080
-  server: 162.159.7.226
-  skip-cert-verify: true
-  type: vmess
-  uuid: 9b196b50-37f2-4f4b-b175-06273adc6207
-  ws-opts:
-    headers:
-      Host: technological-mel-fill-decide.trycloudflare.com
-    path: 9b196b50-37f2-4f4b-b175-06273adc6207-vm
-- alterId: 0
-  cipher: auto
-  name: 加拿大 012
-  network: ws
-  port: 80
-  server: 104.21.235.172
-  tls: false
-  type: vmess
-  uuid: f4c98b50-e614-11ee-b430-205c6d5f5d78
-  ws-opts:
-    headers:
-      Host: m4p9q.cnbete.life
-    path: /?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 加拿大 013
-  network: ws
-  port: 80
-  server: 104.21.235.61
-  tls: false
-  type: vmess
-  uuid: f4c98b50-e614-11ee-b430-205c6d5f5d78
-  ws-opts:
-    headers:
-      Host: m4p9q.cnbete.life
-    path: /?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 加拿大 014
-  network: ws
-  port: 8080
-  server: lanmaoyun-fr.ksr.free.hr
-  skip-cert-verify: true
-  type: vmess
-  uuid: 3b52fe01-aa51-49f7-b4e7-31b683ffb2a7
-  ws-opts:
-    headers:
-      Host: lanmaoyun-fr.ksr.free.hr
-    path: /
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 加拿大 015
-  network: ws
-  port: 2095
-  server: onea.flha.ru
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
-  ws-opts:
-    headers:
-      Host: onea.flha.ru
-    path: /
-- alterId: 64
-  cipher: auto
-  client-fingerprint: chrome
-  name: 美国 006
-  network: ws
-  port: 443
-  server: 107.148.0.160
-  servername: www.25349182.xyz
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-opts:
-    headers:
-      Host: www.25349182.xyz
-    path: /path/311227222808
-- alterId: 64
-  cipher: auto
-  client-fingerprint: chrome
-  name: 日本 001
-  network: ws
-  port: 48000
-  server: 103.72.5.18
-  servername: www.17438016.xyz
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-opts:
-    headers:
-      Host: www.17438016.xyz
-    path: /path/311227222808
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 加拿大 016
-  network: ws
-  port: 2095
-  server: jpc.flha.ru
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
-  ws-opts:
-    headers:
-      Host: jpc.flha.ru
-    path: /
-- client-fingerprint: chrome
-  name: 英国 001
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 18.135.43.165
-  skip-cert-verify: false
-  sni: trojan.burgerip.co.uk
-  type: trojan
-  udp: false
-- client-fingerprint: chrome
-  name: 德国 001
-  network: tcp
-  password: telegram-id-directvpn
-  port: 22222
-  server: 35.156.248.148
-  skip-cert-verify: false
-  sni: trojan.burgerip.co.uk
-  type: trojan
-  udp: false
-- client-fingerprint: chrome
-  name: 美国 007
-  network: tcp
-  password: telegram-id-directvpn
-  port: 22222
-  server: 3.66.128.166
-  skip-cert-verify: false
-  sni: trojan.burgerip.co.uk
-  type: trojan
-  udp: false
-- client-fingerprint: chrome
-  name: 美国 008
-  network: tcp
-  password: telegram-id-directvpn
-  port: 22222
-  server: 44.239.71.206
-  skip-cert-verify: false
-  sni: trojan.burgerip.co.uk
-  type: trojan
-  udp: false
-- client-fingerprint: chrome
-  name: 爱尔兰 001
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 63.33.4.128
-  skip-cert-verify: false
-  sni: trojan.burgerip.co.uk
-  type: trojan
-  udp: false
-- client-fingerprint: chrome
-  name: 加拿大 017
-  network: tcp
-  password: a966a7ae-ac21-472d-be60-7726b724fc5d
-  port: 443
-  server: 104.21.68.153
-  skip-cert-verify: false
-  sni: erorbpn.arminhadadi.onflashdrive.app
-  type: trojan
-  udp: false
-- alterId: 0
-  cipher: auto
-  name: 新加坡 002
-  network: ws
-  port: 52175
-  server: 206.189.81.51
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: f1294e25-0242-47df-9a5a-2e011c4747c7
-  ws-opts:
-    headers:
-      host: m.zoom.us
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 加拿大 018
-  network: ws
-  port: 80
-  server: 104.21.235.206
-  skip-cert-verify: true
-  type: vmess
-  uuid: f4c98b50-e614-11ee-b430-205c6d5f5d78
-  ws-opts:
-    headers:
-      Host: m4p9q.cnbete.life
-    path: /?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 加拿大 019
-  network: ws
-  port: 80
-  server: 104.21.235.227
-  skip-cert-verify: true
-  type: vmess
-  uuid: f4c98b50-e614-11ee-b430-205c6d5f5d78
-  ws-opts:
-    headers:
-      Host: m4p9q.cnbete.life
-    path: /?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 加拿大 020
-  network: ws
-  port: 37302
-  server: 132.145.100.232
-  skip-cert-verify: true
-  type: vmess
-  uuid: 1a968778-72c9-4dce-be1b-65de17b05a6c
-  ws-opts:
-    headers:
-      Host: baidu.com
-    path: /?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 美国 009
-  network: ws
-  port: 2052
-  server: 162.159.240.139
-  skip-cert-verify: true
-  type: vmess
-  uuid: 160fdf6d-e27b-4763-bcef-22587c161a6e
-  ws-opts:
-    headers:
-      Host: tw1bQiWSE4x.fzbqfrse.xyz
-    path: /video/GQ2qE5Us9g
-- alterId: 0
-  cipher: auto
-  name: 美国 010
-  network: ws
-  port: 2086
-  server: 162.159.240.139
-  skip-cert-verify: true
-  type: vmess
-  uuid: 160fdf6d-e27b-4763-bcef-22587c161a6e
-  ws-opts:
-    headers:
-      Host: us77SmSk86j.fzbqfrse.xyz
-    path: /video/Z7qdcrAGRw
-- alterId: 0
-  cipher: auto
-  name: 加拿大 021
-  network: ws
-  port: 8080
-  server: fbi.gov
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: ef8c954e-014f-4b36-8273-9b5086afab34
-  ws-opts:
-    headers:
-      host: bibliographic-sword-sequence-advertisers.trycloudflare.com
-    path: ef8c954e-014f-4b36-8273-9b5086afab34-vm
 - alterId: 0
   cipher: auto
   name: 阿联酋 001
@@ -588,21 +185,7 @@ proxies:
     headers:
       host: food.zhaal.ir
     path: /
-- alterId: 0
-  cipher: auto
-  name: 加拿大 022
-  network: ws
-  port: 8080
-  server: 162.159.134.23
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 9b196b50-37f2-4f4b-b175-06273adc6207
-  ws-opts:
-    headers:
-      host: championship-bidding-oxygen-brochure.trycloudflare.com
-    path: 9b196b50-37f2-4f4b-b175-06273adc6207-vm
-- name: 美国 011
+- name: 美国 003
   network: tcp
   password: c2c76420-257f-492a-b20f-6560f3bfa78d
   port: 443
@@ -612,7 +195,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 加拿大 023
+  name: 加拿大 004
   network: ws
   port: 8080
   server: yh2.freeh1.xyz
@@ -626,227 +209,7 @@ proxies:
     path: d9c5ec6a-a8d8-4732-8447-56fbd2f93e96-vm
 - alterId: 0
   cipher: auto
-  name: 加拿大 024
-  network: ws
-  port: 80
-  server: 104.21.219.22
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-  ws-opts:
-    headers:
-      Host: a.prapt1.ir
-    path: /?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 加拿大 025
-  network: ws
-  port: 80
-  server: 104.21.220.172
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-  ws-opts:
-    headers:
-      Host: a.prapt1.ir
-    path: /?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 加拿大 026
-  network: ws
-  port: 80
-  server: 104.21.220.5
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-  ws-opts:
-    headers:
-      Host: a.prapt1.ir
-    path: /?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 加拿大 027
-  network: ws
-  port: 80
-  server: 104.21.220.217
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-  ws-opts:
-    headers:
-      Host: a.prapt1.ir
-    path: /?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 加拿大 028
-  network: ws
-  port: 80
-  server: 104.21.222.208
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-  ws-opts:
-    headers:
-      Host: a.prapt4.ir
-    path: /?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 加拿大 029
-  network: ws
-  port: 80
-  server: 104.21.220.30
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-  ws-opts:
-    headers:
-      Host: a.prapt1.ir
-    path: /?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 加拿大 030
-  network: ws
-  port: 8080
-  server: icook.hk
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 007ed733-b751-44fa-ae72-69dbc9aaeccb
-  ws-opts:
-    headers:
-      Host: us.mooon.top
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 加拿大 031
-  network: ws
-  port: 80
-  server: 104.21.223.249
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-  ws-opts:
-    headers:
-      Host: a.prapt1.ir
-    path: /?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 加拿大 032
-  network: ws
-  port: 80
-  server: 104.21.219.107
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-  ws-opts:
-    headers:
-      Host: a.prapt1.ir
-    path: /?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 加拿大 033
-  network: ws
-  port: 80
-  server: 104.21.220.168
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-  ws-opts:
-    headers:
-      Host: a.prapt1.ir
-    path: /?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 美国 012
-  network: ws
-  port: 2053
-  server: 172.67.150.173
-  servername: u04.tk3322.com
-  tls: true
-  type: vmess
-  uuid: bfccd2a4-a421-4d4f-f564-a081f4a12d7e
-  ws-opts:
-    headers:
-      Host: u04.tk3322.com
-    path: /u04
-- alterId: 0
-  cipher: auto
-  name: 美国 013
-  network: ws
-  port: 45979
-  server: 103.182.97.156
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 23bdf6df-c482-46d0-c0f4-5a98d534ea11
-  ws-opts:
-    headers:
-      Host: 103.182.97.156
-    path: /test
-- alterId: 0
-  cipher: auto
-  name: 加拿大 034
-  network: ws
-  port: 80
-  server: 104.21.219.7
-  skip-cert-verify: true
-  type: vmess
-  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-  ws-opts:
-    headers:
-      Host: a.prapt1.ir
-    path: /?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 加拿大 035
-  network: ws
-  port: 80
-  server: 104.21.236.230
-  skip-cert-verify: true
-  type: vmess
-  uuid: 1973e770-e615-11ee-b238-205c6d5f5d78
-  ws-opts:
-    headers:
-      Host: VKJi7.cnbete.life
-    path: /?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 加拿大 036
-  network: ws
-  port: 80
-  server: 104.21.224.49
-  skip-cert-verify: true
-  type: vmess
-  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-  ws-opts:
-    headers:
-      Host: a.prapt1.ir
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 加拿大 037
-  network: ws
-  port: 80
-  server: 104.21.223.245
-  skip-cert-verify: true
-  type: vmess
-  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-  ws-opts:
-    headers:
-      Host: a.prapt1.ir
-    path: /?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 加拿大 038
+  name: 加拿大 005
   network: ws
   port: 80
   server: cf.kfcvme50.life
@@ -859,76 +222,146 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 加拿大 039
+  country: CA
+  h2-opts: {}
+  http-opts: {}
+  name: 加拿大 006
   network: ws
-  port: 80
-  server: cm3-cdn.kfcvme50.life
+  port: 8080
+  server: 23.227.38.86
+  servername: dongtaiwang13.dtku47.xyz
   skip-cert-verify: true
   type: vmess
-  uuid: bc5e1ebf-9602-4177-b890-18e9d4cd23be
+  uuid: 969f1909-c0d3-4c30-813d-3aec5c838b7d
   ws-opts:
     headers:
-      Host: hkbn.kfcvme50.life
-    path: /
+      HOST: dongtaiwang13.dtku47.xyz
+    path: /1IKYjV0r/
 - alterId: 0
   cipher: auto
-  name: 加拿大 040
+  name: 加拿大 007
   network: ws
-  port: 80
-  server: cm2-cdn.kfcvme50.life
-  skip-cert-verify: true
-  type: vmess
-  uuid: bc5e1ebf-9602-4177-b890-18e9d4cd23be
-  ws-opts:
-    headers:
-      Host: hkbn.kfcvme50.life
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 美国 014
-  network: ws
-  port: 80
-  server: 13.212.249.29
-  skip-cert-verify: true
-  type: vmess
-  uuid: bc5e1ebf-9602-4177-b890-18e9d4cd23be
-  ws-opts:
-    headers:
-      Host: tms.dingtalk.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 美国 015
-  network: ws
-  port: 80
-  server: 3.112.251.81
-  skip-cert-verify: true
-  type: vmess
-  uuid: bc5e1ebf-9602-4177-b890-18e9d4cd23be
-  ws-opts:
-    headers:
-      Host: tms.dingtalk.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 美国 016
-  network: ws
-  port: 2053
-  server: 47.76.49.246
+  port: 443
+  server: cdn2_de.majutsu.top
   skip-cert-verify: true
   tls: true
   type: vmess
-  uuid: bc5e1ebf-9602-4177-b890-18e9d4cd23be
+  uuid: 61abbe9b-ac90-4dcc-99de-35e17f0ce847
   ws-opts:
     headers:
-      Host: hkbn.kfcvme50.life
+      Host: cdn2_de.majutsu.top
+    path: /acc
+- alterId: 0
+  cipher: auto
+  name: 加拿大 008
+  network: ws
+  port: 80
+  server: 104.21.220.186
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
+  ws-opts:
+    headers:
+      Host: a.prapt1.ir
+    path: /?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 加拿大 009
+  network: ws
+  port: 80
+  server: 104.21.227.38
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
+  ws-opts:
+    headers:
+      Host: a.prapt1.ir
     path: /
 - alterId: 0
   cipher: auto
-  name: 美国 017
+  name: 加拿大 010
   network: ws
   port: 80
-  server: 13.212.1.116
+  server: 104.21.221.181
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
+  ws-opts:
+    headers:
+      Host: a.prapt1.ir
+    path: /?ed=2048
+- client-fingerprint: chrome
+  name: 美国 004
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 13.43.26.49
+  skip-cert-verify: false
+  sni: trojan.burgerip.co.uk
+  type: trojan
+  udp: false
+- alterId: 0
+  cipher: auto
+  name: 加拿大 011
+  network: ws
+  port: 443
+  server: 172.67.174.63
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: nina.bond
+    path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: 加拿大 012
+  network: ws
+  port: 80
+  server: 104.21.224.22
+  skip-cert-verify: true
+  type: vmess
+  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
+  ws-opts:
+    headers:
+      Host: a.prapt4.ir
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 加拿大 013
+  network: ws
+  port: 80
+  server: 104.21.232.44
+  skip-cert-verify: true
+  type: vmess
+  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
+  ws-opts:
+    headers:
+      Host: a.prapt1.ir
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 美国 005
+  network: ws
+  port: 80
+  server: 13.212.25.50
+  skip-cert-verify: true
+  type: vmess
+  uuid: bc5e1ebf-9602-4177-b890-18e9d4cd23be
+  ws-opts:
+    headers:
+      Host: tms.dingtalk.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 日本 001
+  network: ws
+  port: 80
+  server: 13.230.16.5
   skip-cert-verify: true
   type: vmess
   uuid: bc5e1ebf-9602-4177-b890-18e9d4cd23be
@@ -941,7 +374,7 @@ proxies:
   name: 日本 002
   network: ws
   port: 80
-  server: 54.178.18.17
+  server: 52.69.13.75
   skip-cert-verify: true
   type: vmess
   uuid: bc5e1ebf-9602-4177-b890-18e9d4cd23be
@@ -949,294 +382,267 @@ proxies:
     headers:
       Host: tms.dingtalk.com
     path: /
+- alterId: 0
+  cipher: auto
+  name: 美国 006
+  network: ws
+  port: 33258
+  server: 149.104.27.34
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: bc5e1ebf-9602-4177-b890-18e9d4cd23be
+  ws-opts:
+    headers:
+      Host: hkbn.kfcvme50.life
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 新加坡 001
+  network: ws
+  port: 80
+  server: 54.169.82.160
+  skip-cert-verify: true
+  type: vmess
+  uuid: bc5e1ebf-9602-4177-b890-18e9d4cd23be
+  ws-opts:
+    headers:
+      Host: tms.dingtalk.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 美国 007
+  network: ws
+  port: 2053
+  server: 47.76.77.103
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: dd1a99fc-8080-4b6f-b255-20fe1a57d238
+  ws-opts:
+    headers:
+      Host: hk.pddf.buzz
+    path: /pdd?ed=2048
 - alterId: 0
   cipher: auto
   name: 日本 003
   network: ws
-  port: 80
-  server: 18.179.20.42
-  skip-cert-verify: true
-  type: vmess
-  uuid: bc5e1ebf-9602-4177-b890-18e9d4cd23be
-  ws-opts:
-    headers:
-      Host: tms.dingtalk.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 香港 001
-  network: ws
-  port: 2053
-  server: 45.78.32.104
+  port: 443
+  server: 176.126.114.97
   skip-cert-verify: true
   tls: true
   type: vmess
-  uuid: bc5e1ebf-9602-4177-b890-18e9d4cd23be
+  uuid: dd1a99fc-8080-4b6f-b255-20fe1a57d238
   ws-opts:
     headers:
-      Host: us1.kfcvme50.life
-    path: /
-- alterId: 0
+      Host: hk.pddf.buzz
+    path: /pdd?ed=2048
+- alterId: 1
   cipher: auto
   name: 日本 004
-  network: ws
-  port: 80
-  server: 43.207.97.208
+  network: tcp
+  port: 46484
+  server: en7a5-g03.jp05-6786-vm0.entry.fr0307a.art
   skip-cert-verify: true
+  tls: false
   type: vmess
-  uuid: bc5e1ebf-9602-4177-b890-18e9d4cd23be
-  ws-opts:
-    headers:
-      Host: tms.dingtalk.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 新加坡 003
-  network: ws
-  port: 80
-  server: 52.221.215.222
-  skip-cert-verify: true
-  type: vmess
-  uuid: bc5e1ebf-9602-4177-b890-18e9d4cd23be
-  ws-opts:
-    headers:
-      Host: tms.dingtalk.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 加拿大 041
-  network: ws
-  port: 80
-  server: 104.21.220.61
-  skip-cert-verify: true
-  type: vmess
-  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-  ws-opts:
-    headers:
-      Host: a.prapt1.ir
-    path: /?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 加拿大 042
-  network: ws
-  port: 2087
-  server: v013.583181.xyz
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 6bcb91d7-3d6b-40ad-93f4-b326d0ed20a4
-  ws-opts:
-    headers:
-      Host: v013.583181.xyz
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 加拿大 043
-  network: ws
-  port: 80
-  server: 104.21.224.76
-  skip-cert-verify: true
-  type: vmess
-  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-  ws-opts:
-    headers:
-      Host: a.prapt1.ir
-    path: /?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 加拿大 044
-  network: ws
-  port: 80
-  server: 104.21.221.109
-  skip-cert-verify: true
-  type: vmess
-  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-  ws-opts:
-    headers:
-      Host: a.prapt1.ir
-    path: /?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 加拿大 045
-  network: ws
-  port: 80
-  server: 104.21.222.135
-  skip-cert-verify: true
-  type: vmess
-  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-  ws-opts:
-    headers:
-      Host: a.prapt4.ir
-    path: /?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 加拿大 046
-  network: ws
-  port: 80
-  server: 104.21.220.177
-  skip-cert-verify: true
-  type: vmess
-  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-  ws-opts:
-    headers:
-      Host: a.prapt1.ir
-    path: /?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 加拿大 047
-  network: ws
-  port: 80
-  server: 104.21.220.146
-  skip-cert-verify: true
-  type: vmess
-  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-  ws-opts:
-    headers:
-      Host: a.prapt1.ir
-    path: /?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 加拿大 048
-  network: ws
-  port: 80
-  server: 104.21.219.6
-  skip-cert-verify: true
-  type: vmess
-  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-  ws-opts:
-    headers:
-      Host: a.prapt1.ir
-    path: /?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 加拿大 049
-  network: ws
-  port: 80
-  server: 104.21.220.97
-  skip-cert-verify: true
-  type: vmess
-  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-  ws-opts:
-    headers:
-      Host: a.prapt1.ir
-    path: /?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 加拿大 050
-  network: ws
-  port: 80
-  server: 104.21.235.57
-  skip-cert-verify: true
-  type: vmess
-  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-  ws-opts:
-    headers:
-      Host: a.prapt4.ir
-    path: /?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 加拿大 051
-  network: ws
-  port: 80
-  server: 104.21.220.254
-  skip-cert-verify: true
-  type: vmess
-  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-  ws-opts:
-    headers:
-      Host: a.prapt1.ir
-    path: /?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 加拿大 052
-  network: ws
-  port: 80
-  server: 104.21.220.241
-  skip-cert-verify: true
-  type: vmess
-  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-  ws-opts:
-    headers:
-      Host: a.prapt1.ir
-    path: /?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 新加坡 004
-  network: ws
-  port: 80
-  server: 54.255.199.33
-  skip-cert-verify: true
-  type: vmess
-  uuid: bc5e1ebf-9602-4177-b890-18e9d4cd23be
-  ws-opts:
-    headers:
-      Host: tms.dingtalk.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 新加坡 005
-  network: ws
-  port: 80
-  server: 52.77.248.103
-  skip-cert-verify: true
-  type: vmess
-  uuid: bc5e1ebf-9602-4177-b890-18e9d4cd23be
-  ws-opts:
-    headers:
-      Host: tms.dingtalk.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 美国 018
-  network: ws
-  port: 80
-  server: 13.212.100.15
-  skip-cert-verify: true
-  type: vmess
-  uuid: bc5e1ebf-9602-4177-b890-18e9d4cd23be
-  ws-opts:
-    headers:
-      Host: tms.dingtalk.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 新加坡 006
-  network: ws
-  port: 80
-  server: 13.228.21.68
-  skip-cert-verify: true
-  type: vmess
-  uuid: bc5e1ebf-9602-4177-b890-18e9d4cd23be
-  ws-opts:
-    headers:
-      Host: tms.dingtalk.com
-    path: /
-- alterId: 0
+  uuid: dd121fb6-3fbc-3a11-bf1d-5532a767af7e
+  ws-headers:
+    Host: en7a5-g03.jp05-6786-vm0.entry.fr0307a.art
+- alterId: 1
   cipher: auto
   name: 日本 005
-  network: ws
-  port: 80
-  server: 54.238.248.187
+  network: tcp
+  port: 46486
+  server: 9azvt-g05.jp05-6786-vm0.entry.fr0307a.art
   skip-cert-verify: true
+  tls: false
   type: vmess
-  uuid: bc5e1ebf-9602-4177-b890-18e9d4cd23be
-  ws-opts:
-    headers:
-      Host: tms.dingtalk.com
-    path: /
-- alterId: 0
+  uuid: 4b991d1c-f7a2-348e-b785-8daf386b6864
+  ws-headers:
+    Host: 9azvt-g05.jp05-6786-vm0.entry.fr0307a.art
+- alterId: 1
   cipher: auto
   name: 日本 006
+  network: tcp
+  port: 21585
+  server: 1dk1l-g05.jp03-7d22-vm0.entry.fr0307a.art
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 4b991d1c-f7a2-348e-b785-8daf386b6864
+- alterId: 1
+  cipher: auto
+  name: 日本 007
+  network: tcp
+  port: 21585
+  server: gyqdl-g05.jp01-0986-vm0.entry.fr0307a.art
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: e2f2f030-57c0-3849-8893-3898c46764d6
+- alterId: 1
+  cipher: auto
+  name: 日本 008
+  network: tcp
+  port: 28783
+  server: tfu6i-g01.jp06-7c5a-vm0.entry.fr0307a.art
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: daa811f7-7e7e-3089-9361-d2de712e59b6
+- alterId: 1
+  cipher: auto
+  name: 日本 009
+  network: tcp
+  port: 11777
+  server: tmq5u-g05.jp02-9a99-vm0.entry.fr0307a.art
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: e2f2f030-57c0-3849-8893-3898c46764d6
+- alterId: 1
+  cipher: auto
+  name: 日本 010
+  network: tcp
+  port: 21583
+  server: 0i4ui-g03.jp03-7d22-vm0.entry.fr0307a.art
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: b37b7415-1608-3fcd-aa25-d9cc4aae5ded
+- alterId: 0
+  cipher: auto
+  name: 加拿大 014
   network: ws
   port: 80
-  server: 52.198.96.46
-  skip-cert-verify: true
+  server: 104.21.222.11
+  servername: ''
+  tls: false
   type: vmess
-  uuid: bc5e1ebf-9602-4177-b890-18e9d4cd23be
+  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
   ws-opts:
     headers:
-      Host: tms.dingtalk.com
+      Host: a.prapt4.ir
+    path: /?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 加拿大 015
+  network: ws
+  port: 80
+  server: 104.21.220.34
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
+  ws-opts:
+    headers:
+      Host: a.prapt1.ir
+    path: /?ed=2048
+- alterId: 1
+  cipher: auto
+  name: 日本 011
+  network: tcp
+  port: 21581
+  server: b834o-g01.jp03-7d22-vm0.entry.fr0307a.art
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: daa811f7-7e7e-3089-9361-d2de712e59b6
+- alterId: 1
+  cipher: auto
+  name: 日本 012
+  network: tcp
+  port: 449
+  server: h3qa5-g06.jp04-3771-vm0.entry.fr0307a.art
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 2278146c-8fb0-3683-8300-342238f8a9d0
+- alterId: 1
+  cipher: auto
+  name: 日本 013
+  network: tcp
+  port: 46482
+  server: oe6wc-g01.jp05-6786-vm0.entry.fr0307a.art
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: b52da429-91a0-3834-a4e0-0ed299ba8121
+- alterId: 1
+  cipher: auto
+  name: 日本 014
+  network: tcp
+  port: 446
+  server: od7ld-g03.jp04-3771-vm0.entry.fr0307a.art
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: dd121fb6-3fbc-3a11-bf1d-5532a767af7e
+- alterId: 1
+  cipher: auto
+  name: 日本 015
+  network: tcp
+  port: 46482
+  server: 3wihp-g01.jp05-6786-vm0.entry.fr0307a.art
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: daa811f7-7e7e-3089-9361-d2de712e59b6
+- alterId: 1
+  cipher: auto
+  name: 日本 016
+  network: tcp
+  port: 448
+  server: cm5hi-g05.jp04-3771-vm0.entry.fr0307a.art
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 4b991d1c-f7a2-348e-b785-8daf386b6864
+- alterId: 1
+  cipher: auto
+  name: 日本 017
+  network: tcp
+  port: 46482
+  server: vt50k-g01.jp05-6786-vm0.entry.fr0307a.art
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 7a6cb59b-fbcd-3f50-b5f2-a2534326c4c8
+- alterId: 1
+  cipher: auto
+  name: 日本 018
+  network: tcp
+  port: 21581
+  server: 01eb6-g01.jp03-7d22-vm0.entry.fr0307a.art
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 7a6cb59b-fbcd-3f50-b5f2-a2534326c4c8
+- alterId: 0
+  cipher: auto
+  name: 加拿大 016
+  network: ws
+  port: 80
+  server: 104.21.225.26
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
+  ws-opts:
+    headers:
+      Host: a.prapt1.ir
     path: /
+- alterId: 1
+  cipher: auto
+  name: 日本 019
+  network: tcp
+  port: 11775
+  server: t45a7-g03.jp02-9a99-vm0.entry.fr0307a.art
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: b37b7415-1608-3fcd-aa25-d9cc4aae5ded
 proxy-groups:
 - name: PROXY
   type: select
@@ -1251,91 +657,48 @@ proxy-groups:
   - 加拿大 001
   - 哈萨克斯坦 001
   - 美国 001
-  - 新加坡 001
   - 加拿大 002
   - 加拿大 003
+  - 美国 002
+  - 阿联酋 001
+  - 美国 003
   - 加拿大 004
   - 加拿大 005
   - 加拿大 006
-  - 美国 002
-  - 美国 003
   - 加拿大 007
   - 加拿大 008
   - 加拿大 009
   - 加拿大 010
   - 美国 004
   - 加拿大 011
-  - 美国 005
   - 加拿大 012
   - 加拿大 013
-  - 加拿大 014
-  - 加拿大 015
-  - 美国 006
+  - 美国 005
   - 日本 001
-  - 加拿大 016
-  - 英国 001
-  - 德国 001
-  - 美国 007
-  - 美国 008
-  - 爱尔兰 001
-  - 加拿大 017
-  - 新加坡 002
-  - 加拿大 018
-  - 加拿大 019
-  - 加拿大 020
-  - 美国 009
-  - 美国 010
-  - 加拿大 021
-  - 阿联酋 001
-  - 加拿大 022
-  - 美国 011
-  - 加拿大 023
-  - 加拿大 024
-  - 加拿大 025
-  - 加拿大 026
-  - 加拿大 027
-  - 加拿大 028
-  - 加拿大 029
-  - 加拿大 030
-  - 加拿大 031
-  - 加拿大 032
-  - 加拿大 033
-  - 美国 012
-  - 美国 013
-  - 加拿大 034
-  - 加拿大 035
-  - 加拿大 036
-  - 加拿大 037
-  - 加拿大 038
-  - 加拿大 039
-  - 加拿大 040
-  - 美国 014
-  - 美国 015
-  - 美国 016
-  - 美国 017
   - 日本 002
+  - 美国 006
+  - 新加坡 001
+  - 美国 007
   - 日本 003
-  - 香港 001
   - 日本 004
-  - 新加坡 003
-  - 加拿大 041
-  - 加拿大 042
-  - 加拿大 043
-  - 加拿大 044
-  - 加拿大 045
-  - 加拿大 046
-  - 加拿大 047
-  - 加拿大 048
-  - 加拿大 049
-  - 加拿大 050
-  - 加拿大 051
-  - 加拿大 052
-  - 新加坡 004
-  - 新加坡 005
-  - 美国 018
-  - 新加坡 006
   - 日本 005
   - 日本 006
+  - 日本 007
+  - 日本 008
+  - 日本 009
+  - 日本 010
+  - 加拿大 014
+  - 加拿大 015
+  - 日本 011
+  - 日本 012
+  - 日本 013
+  - 日本 014
+  - 日本 015
+  - 日本 016
+  - 日本 017
+  - 日本 018
+  - 加拿大 016
+  - 日本 019
 - name: LOAD-BALANCE
   type: load-balance
   url: http://www.gstatic.com/generate_204
