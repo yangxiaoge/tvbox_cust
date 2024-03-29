@@ -643,6 +643,127 @@ proxies:
   tls: false
   type: vmess
   uuid: b37b7415-1608-3fcd-aa25-d9cc4aae5ded
+- alterId: 0
+  cipher: auto
+  name: 加拿大 017
+  network: ws
+  port: 80
+  server: 104.21.220.176
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
+  ws-opts:
+    headers:
+      Host: a.prapt1.ir
+    path: /?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 加拿大 018
+  network: ws
+  port: 8880
+  server: 600.outline-vpn.cloud
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: edbf317d-7671-4089-87ef-89dbc055f428
+  ws-opts:
+    headers:
+      host: eV2raysadErrrgVxu3pweMTmras.dalidom.com
+    path: /github
+- client-fingerprint: chrome
+  name: 法国 001
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 52.47.129.36
+  skip-cert-verify: false
+  sni: trojan.burgerip.co.uk
+  type: trojan
+  udp: false
+- client-fingerprint: chrome
+  name: 爱尔兰 001
+  network: tcp
+  password: telegram-id-directvpn
+  port: 22222
+  server: 34.255.65.76
+  skip-cert-verify: false
+  sni: trojan.burgerip.co.uk
+  type: trojan
+  udp: false
+- client-fingerprint: chrome
+  name: 美国 008
+  network: tcp
+  password: telegram-id-directvpn
+  port: 22222
+  server: 13.48.213.204
+  skip-cert-verify: false
+  sni: trojan.burgerip.co.uk
+  type: trojan
+  udp: false
+- client-fingerprint: chrome
+  name: 爱尔兰 002
+  network: tcp
+  password: telegram-id-directvpn
+  port: 22222
+  server: 52.48.95.63
+  skip-cert-verify: false
+  sni: trojan.burgerip.co.uk
+  type: trojan
+  udp: false
+- client-fingerprint: chrome
+  name: 英国 001
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 35.176.66.77
+  skip-cert-verify: false
+  sni: trojan.burgerip.co.uk
+  type: trojan
+  udp: false
+- client-fingerprint: chrome
+  name: 爱尔兰 003
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 52.17.1.216
+  skip-cert-verify: false
+  sni: trojan.burgerip.co.uk
+  type: trojan
+  udp: false
+- client-fingerprint: chrome
+  name: 英国 002
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 18.175.17.76
+  skip-cert-verify: false
+  sni: trojan.burgerip.co.uk
+  type: trojan
+  udp: false
+- client-fingerprint: chrome
+  name: 加拿大 019
+  network: tcp
+  password: 669d0ac7b5b64ebbb1abb75d5d540a5c
+  port: 443
+  server: 104.17.215.2
+  skip-cert-verify: false
+  sni: jobscareerforstudent.com
+  type: trojan
+  udp: false
+- alterId: 0
+  cipher: auto
+  name: 加拿大 020
+  network: ws
+  port: 2052
+  server: 104.19.129.191
+  skip-cert-verify: true
+  type: vmess
+  uuid: 67d8b1b9-1c9f-4a8b-8ddc-0b9ec2db2d6c
+  ws-opts:
+    headers:
+      Host: tw1bQiWSE4x.fzbqfrse.xyz
+    path: /video/GQ2qE5Us9g
 proxy-groups:
 - name: PROXY
   type: select
@@ -699,6 +820,17 @@ proxy-groups:
   - 日本 018
   - 加拿大 016
   - 日本 019
+  - 加拿大 017
+  - 加拿大 018
+  - 法国 001
+  - 爱尔兰 001
+  - 美国 008
+  - 爱尔兰 002
+  - 英国 001
+  - 爱尔兰 003
+  - 英国 002
+  - 加拿大 019
+  - 加拿大 020
 - name: LOAD-BALANCE
   type: load-balance
   url: http://www.gstatic.com/generate_204
