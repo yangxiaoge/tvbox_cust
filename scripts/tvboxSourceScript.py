@@ -53,7 +53,7 @@ result = httpGetText('https://api.lige.fit/getJson')
 if result:
     fp = open("tvbox/黎歌多仓.json", "w+", encoding='utf-8')
     # print("----" + result)
-    transfer2Yingshi = '{"urls":' result + '}'
+    transfer2Yingshi = '{"urls":' + result + '}'
     fp.write(transfer2Yingshi)
     fp.close()
 
