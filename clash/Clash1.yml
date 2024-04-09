@@ -1209,6 +1209,97 @@ proxies:
     headers:
       Host: foxus.fovi.tk
     path: /eisasqa
+- alterId: 0
+  cipher: auto
+  name: 加拿大 044
+  network: ws
+  port: 2053
+  server: 104.19.54.153
+  servername: data-2.cn-db.top
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 4f574408-dfef-338a-a7d9-f7d1e70ff8d9
+  ws-opts:
+    headers:
+      Host: data-2.cn-db.top
+    path: /db00
+- alterId: 0
+  cipher: auto
+  name: 加拿大 045
+  network: ws
+  port: 443
+  server: 104.18.14.19
+  servername: cache-2.cn-db.top
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 4f574408-dfef-338a-a7d9-f7d1e70ff8d9
+  ws-opts:
+    headers:
+      Host: cache-2.cn-db.top
+    path: /db00
+- alterId: 0
+  cipher: auto
+  name: 加拿大 046
+  network: ws
+  port: 443
+  server: 104.18.221.45
+  servername: cache-1.cn-db.top
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 4f574408-dfef-338a-a7d9-f7d1e70ff8d9
+  ws-opts:
+    headers:
+      Host: cache-1.cn-db.top
+    path: /db00
+- alterId: 0
+  cipher: auto
+  name: 加拿大 047
+  network: ws
+  port: 2083
+  server: 104.17.7.23
+  servername: data-1.cn-db.top
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 4f574408-dfef-338a-a7d9-f7d1e70ff8d9
+  ws-opts:
+    headers:
+      Host: data-1.cn-db.top
+    path: /db00
+- alterId: 0
+  cipher: auto
+  country: US
+  h2-opts: {}
+  http-opts: {}
+  name: 美国 014
+  network: ws
+  port: 443
+  server: 172.67.183.55
+  servername: de3-vmess.sshmax.xyz
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 7142b543-45a8-4274-b80d-f401e7892f5c
+  ws-opts:
+    headers:
+      HOST: de3-vmess.sshmax.xyz
+    path: /vmess
+- alterId: 0
+  cipher: auto
+  name: 德国 005
+  network: tcp
+  port: 26394
+  server: 5.75.192.247
+  skip-cert-verify: true
+  type: vmess
+  uuid: 5ddb534d-6b78-48e5-b948-d46458a03eab
 proxy-groups:
 - name: PROXY
   type: select
@@ -1290,6 +1381,12 @@ proxy-groups:
   - 加拿大 042
   - 美国 013
   - 加拿大 043
+  - 加拿大 044
+  - 加拿大 045
+  - 加拿大 046
+  - 加拿大 047
+  - 美国 014
+  - 德国 005
 - name: LOAD-BALANCE
   type: load-balance
   url: http://www.gstatic.com/generate_204
