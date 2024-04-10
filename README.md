@@ -11,7 +11,7 @@
 
 如果感兴趣,请复制项目后自行研究使用
 
-# TVBoxOSC fork from [zyqfork](https://github.com/zyqfork/TVBoxOSC)
+# TVBoxOSC fork from [o0HalfLife0o](https://github.com/o0HalfLife0o/TVBoxOSC) [zyqfork](https://github.com/zyqfork/TVBoxOSC) 
 
 ![Build](https://shields.io/github/actions/workflow/status/yangxiaoge/tvbox_cust/tvbox_app_action.yml?branch=master&logo=github&label=Build)
 [![Download](https://img.shields.io/github/v/release/yangxiaoge/tvbox_cust?color=orange&logoColor=orange&label=Download&logo=DocuSign)](https://github.com/yangxiaoge/tvbox_cust/releases/latest) 
