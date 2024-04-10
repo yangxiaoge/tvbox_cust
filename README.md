@@ -29,6 +29,8 @@ https://yangxiaoge.github.io/
 - 多仓
   - 链接：https://raw.githubusercontent.com/yangxiaoge/tvbox_cust/master/tvbox/多仓.json
   - 加速链接：https://cdn.jsdelivr.net/gh/yangxiaoge/tvbox_cust@master/tvbox/多仓.json
+  - 黎歌多仓：https://cdn.jsdelivr.net/gh/yangxiaoge/tvbox_cust@master/tvbox/黎歌多仓.json
+  - 18🈲：https://cdn.jsdelivr.net/gh/yangxiaoge/tvbox_cust@master/tvbox/多仓adult.json
 
 ## Clash
 - https://cdn.jsdelivr.net/gh/yangxiaoge/tvbox_cust@master/clash/Clash2.yml
