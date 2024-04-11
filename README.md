@@ -9,7 +9,7 @@
 
 因GitHub访问问题，所以将配置中的GitHub换成jsdelivr加速镜像源
 
-如果感兴趣,请复制项目后自行研究使用
+如果感兴趣，请复制项目后自行研究使用
 
 # TVBoxOSC fork from [o0HalfLife0o](https://github.com/o0HalfLife0o/TVBoxOSC) [zyqfork](https://github.com/zyqfork/TVBoxOSC) 
 
