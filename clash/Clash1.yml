@@ -1503,6 +1503,124 @@ proxies:
     headers:
       Host: tw.xlkjjs.top
     path: /
+- alterId: 0
+  cipher: auto
+  country: 🇺🇸US
+  delay: 1293
+  h2-opts: {}
+  http-opts: {}
+  name: 加拿大 061
+  network: ws
+  port: 443
+  server: 172.67.204.84
+  servername: fr1-vmess.sshmax.xyz
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 4d7307e7-e037-4353-8a8d-1ec0e8b87891
+  ws-opts:
+    headers:
+      HOST: fr1-vmess.sshmax.xyz
+    path: /vmess
+- alterId: 0
+  cipher: auto
+  country: 🏁ZZ
+  delay: 2464
+  h2-opts: {}
+  http-opts: {}
+  name: 加拿大 062
+  network: ws
+  port: 443
+  server: us-b.sbyt01.shop
+  servername: us-b.sbyt01.shop
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 9c9afd21-e3cf-4e6b-a342-51e4eb52f227
+  ws-opts:
+    headers:
+      HOST: us-b.sbyt01.shop
+    path: /v2ray
+- alterId: 0
+  cipher: auto
+  country: 🏁ZZ
+  delay: 1174
+  h2-opts: {}
+  http-opts: {}
+  name: 加拿大 063
+  network: ws
+  port: 80
+  server: 104.21.25.94
+  servername: pt1-vmess.sshmax.xyz
+  skip-cert-verify: true
+  type: vmess
+  uuid: 44e35bf1-6e80-4dd0-88d4-ed90fcfd19ca
+  ws-opts:
+    headers:
+      HOST: pt1-vmess.sshmax.xyz
+    path: /vmess
+- alterId: 0
+  cipher: auto
+  name: 加拿大 064
+  network: ws
+  port: 80
+  server: jd3.shabijichang.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: c458695d-6908-45c3-9512-e0c46418454c
+  ws-opts:
+    headers:
+      host: jd3.shabijichang.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 加拿大 065
+  network: ws
+  port: 2053
+  server: 104.17.50.181
+  servername: data-2.cn-db.top
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 4f574408-dfef-338a-a7d9-f7d1e70ff8d9
+  ws-opts:
+    headers:
+      Host: data-2.cn-db.top
+    path: /db00
+- alterId: 0
+  cipher: auto
+  name: 加拿大 066
+  network: ws
+  port: 443
+  server: 104.18.136.244
+  servername: cache-2.cn-db.top
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 4f574408-dfef-338a-a7d9-f7d1e70ff8d9
+  ws-opts:
+    headers:
+      Host: cache-2.cn-db.top
+    path: /db00
+- alterId: 0
+  cipher: auto
+  name: 加拿大 067
+  network: ws
+  port: 2053
+  server: 104.18.33.242
+  servername: cache-1.cn-db.top
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 4f574408-dfef-338a-a7d9-f7d1e70ff8d9
+  ws-opts:
+    headers:
+      Host: cache-1.cn-db.top
+    path: /db00
 proxy-groups:
 - name: PROXY
   type: select
@@ -1606,6 +1724,13 @@ proxy-groups:
   - 伊朗 001
   - 加拿大 059
   - 加拿大 060
+  - 加拿大 061
+  - 加拿大 062
+  - 加拿大 063
+  - 加拿大 064
+  - 加拿大 065
+  - 加拿大 066
+  - 加拿大 067
 - name: LOAD-BALANCE
   type: load-balance
   url: http://www.gstatic.com/generate_204
