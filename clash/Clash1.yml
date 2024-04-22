@@ -79,11 +79,35 @@ dns:
   - time.*.apple.com
   default-nameserver:
   - 223.5.5.5
+  - 119.29.29.29
   nameserver:
   - https://doh.pub/dns-query
   - https://dns.alidns.com/dns-query
   proxy-server-nameserver:
   - https://doh.pub/dns-query
+  fallback:
+  - https://1.1.1.2/dns-query
+  - https://1.0.0.2/dns-query
+  - https://208.67.222.222/dns-query
+  - https://208.67.220.220/dns-query
+  - https://9.9.9.9/dns-query
+  fallback-filter:
+    geoip: true
+    geoip-code: CN
+    geosite:
+    - gfw
+    ipcidr:
+    - 240.0.0.0/4
+    - 0.0.0.0/32
+    domain:
+    - +.google.com
+    - +.github.com
+    - +.facebook.com
+    - +.twitter.com
+    - +.youtube.com
+    - +.google.cn
+    - +.googleapis.cn
+    - +.googleapis.com
 proxies:
 - alterId: 0
   cipher: auto
@@ -1680,158 +1704,98 @@ proxy-groups:
   - PROXY
   - DIRECT
 rules:
-  - RULE-SET,proxy-classical,PROXY
-  - RULE-SET,direct-classical,DIRECT
-  - RULE-SET,block,BLOCK
-  - RULE-SET,applications,DIRECT
-  - RULE-SET,icloud,DIRECT
-  - RULE-SET,apple,DIRECT
-  - RULE-SET,github,GITHUB
-  - RULE-SET,openai,OPENAI
-  - RULE-SET,google,PROXY
-  - RULE-SET,youtube,PROXY
-  - RULE-SET,telegram,PROXY
-  - RULE-SET,spotify,PROXY
-  - RULE-SET,gfw,PROXY
-  - GEOIP,LAN,DIRECT,no-resolve
-  - GEOIP,CN,DIRECT
-  - MATCH,FINAL
-
+- RULE-SET,proxy-classical,PROXY
+- RULE-SET,direct-classical,DIRECT
+- RULE-SET,block,BLOCK
+- RULE-SET,applications,DIRECT
+- RULE-SET,icloud,DIRECT
+- RULE-SET,apple,DIRECT
+- RULE-SET,github,GITHUB
+- RULE-SET,openai,OPENAI
+- RULE-SET,google,PROXY
+- RULE-SET,youtube,PROXY
+- RULE-SET,telegram,PROXY
+- RULE-SET,spotify,PROXY
+- RULE-SET,gfw,PROXY
+- GEOIP,LAN,DIRECT,no-resolve
+- GEOIP,CN,DIRECT
+- MATCH,FINAL
 rule-providers:
   icloud:
     type: http
     behavior: classical
-    url: "https://cdn.jsdelivr.net/gh/anaer/Sub@main/rules/classical/icloud.yaml"
+    url: https://cdn.jsdelivr.net/gh/anaer/Sub@main/rules/classical/icloud.yaml
     path: ./rules/classical/icloud.yaml
     interval: 86400
-
   apple:
     type: http
     behavior: classical
-    url: "https://cdn.jsdelivr.net/gh/anaer/Sub@main/rules/classical/apple.yaml"
+    url: https://cdn.jsdelivr.net/gh/anaer/Sub@main/rules/classical/apple.yaml
     path: ./rules/classical/apple.yaml
     interval: 86400
-
   gfw:
     type: http
     behavior: domain
-    url: "https://cdn.jsdelivr.net/gh/anaer/Sub@main/rules/domain/gfw.yaml"
+    url: https://cdn.jsdelivr.net/gh/anaer/Sub@main/rules/domain/gfw.yaml
     path: ./rules/domain/gfw.yaml
     interval: 86400
-
   youtube:
     type: http
     behavior: classical
-    url: "https://cdn.jsdelivr.net/gh/anaer/Sub@main/rules/classical/youtube.yaml"
+    url: https://cdn.jsdelivr.net/gh/anaer/Sub@main/rules/classical/youtube.yaml
     path: ./rules/classical/youtube.yaml
     interval: 86400
-    
   google:
     type: http
     behavior: classical
-    url: "https://cdn.jsdelivr.net/gh/anaer/Sub@main/rules/classical/google.yaml"
+    url: https://cdn.jsdelivr.net/gh/anaer/Sub@main/rules/classical/google.yaml
     path: ./rules/classical/google.yaml
     interval: 86400
-
   github:
     type: http
     behavior: classical
-    url: "https://cdn.jsdelivr.net/gh/anaer/Sub@main/rules/classical/github.yaml"
+    url: https://cdn.jsdelivr.net/gh/anaer/Sub@main/rules/classical/github.yaml
     path: ./rules/classical/github.yaml
     interval: 86400
-
   openai:
     type: http
     behavior: classical
-    url: "https://cdn.jsdelivr.net/gh/anaer/Sub@main/rules/classical/openai.yaml"
+    url: https://cdn.jsdelivr.net/gh/anaer/Sub@main/rules/classical/openai.yaml
     path: ./rules/classical/openai.yaml
     interval: 86400
-
   telegram:
     type: http
     behavior: classical
-    url: "https://cdn.jsdelivr.net/gh/anaer/Sub@main/rules/classical/telegram.yaml"
+    url: https://cdn.jsdelivr.net/gh/anaer/Sub@main/rules/classical/telegram.yaml
     path: ./rules/classical/telegram.yaml
     interval: 86400
-
   spotify:
     type: http
     behavior: classical
-    url: "https://cdn.jsdelivr.net/gh/anaer/Sub@main/rules/classical/spotify.yaml"
+    url: https://cdn.jsdelivr.net/gh/anaer/Sub@main/rules/classical/spotify.yaml
     path: ./rules/classical/spotify.yaml
     interval: 86400
-
   applications:
     type: http
     behavior: classical
-    url: "https://cdn.jsdelivr.net/gh/anaer/Sub@main/rules/classical/applications.yaml"
+    url: https://cdn.jsdelivr.net/gh/anaer/Sub@main/rules/classical/applications.yaml
     path: ./rules/classical/applications.yaml
     interval: 86400
-    
   block:
     type: http
     behavior: classical
-    url: "https://cdn.jsdelivr.net/gh/anaer/Sub@main/rules/classical/block.yaml"
+    url: https://cdn.jsdelivr.net/gh/anaer/Sub@main/rules/classical/block.yaml
     path: ./rules/classical/block.yaml
     interval: 86400
-
   direct-classical:
     type: http
     behavior: classical
-    url: "https://cdn.jsdelivr.net/gh/anaer/Sub@main/rules/classical/direct.yaml"
+    url: https://cdn.jsdelivr.net/gh/anaer/Sub@main/rules/classical/direct.yaml
     path: ./rules/classical/direct.yaml
     interval: 86400
   proxy-classical:
     type: http
     behavior: classical
-    url: "https://cdn.jsdelivr.net/gh/anaer/Sub@main/rules/classical/proxy.yaml"
+    url: https://cdn.jsdelivr.net/gh/anaer/Sub@main/rules/classical/proxy.yaml
     path: ./rules/classical/proxy.yaml
     interval: 86400
-
-script:
-  code: >
-    def main(ctx, metadata):
-      # 规则列表定义(规则名:代理规则), 便于调整处理顺序, 暂时按照规则数量进行处理
-      ruleList = {
-        "proxy-classical":"PROXY",
-        "direct-classical":"DIRECT",
-
-        "github":"DIRECT",
-        "spotify":"DIRECT",
-
-        "telegram":"PROXY",
-        "google":"PROXY",
-        "gfw":"PROXY",
-
-        "advertising":"REJECT"
-      }
-
-      port = int(metadata['dst_port'])
-
-      if metadata['network'] == 'UDP' and port == 443:
-          ctx.log('[Script] matched QUIC traffic use reject')
-          return 'REJECT'
-
-      # 解析host->ip赋值到metadata中 用于后续判断
-      ip = metadata['dst_ip']
-      if ip == "":
-        ip = ctx.resolve_ip(metadata["host"])
-        metadata["dst_ip"] = ip
-
-      if ip == "":
-        return "DIRECT"
-
-      # 遍历规则策略, 有命中即返回
-      for rule,policy in ruleList.items():
-        if ctx.rule_providers[rule].match(metadata):
-          ctx.log("[match] {host} matched rule [{rule}] use {policy}".format(host=metadata["host"],rule=rule,policy=policy))
-          return policy
-
-      # 判断ip是否局域网以及中国, 是则直连 PS: 兜底走直连的话 这段逻辑可以注释
-      # code = ctx.geoip(ip)
-      # ctx.log('[geoip] {host} {ip} {code}'.format(host=metadata["host"],ip=ip,code=code))
-      # if code == "LAN" or code == "CN":
-      #   return "DIRECT"
-
-      # 漏网之鱼走直连
-      return "DIRECT"
