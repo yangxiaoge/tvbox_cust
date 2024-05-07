@@ -8,8 +8,8 @@ on:
     # 例如 0 16 * * * 表示在每天 格林尼治时间的 4:00 PM，也就是在北京时间的 00:00 AM 自动运行。
     # 每天8点（utc+8后为北京时间）
     - cron: 0 16 * * *
-  watch:
-    types: started
+  # watch:
+  #   types: started
   workflow_dispatch:
         
 jobs:
