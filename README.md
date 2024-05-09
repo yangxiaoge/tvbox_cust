@@ -19,9 +19,9 @@
 
 # Credits
 This repo relies on the following third-party projects:
-> update at 2024-05-07 01:00:36
+> update at 2024-05-09 00:59:12
 - [CatVodTVOfficial/TVBoxOSC](https://github.com/CatVodTVOfficial/TVBoxOSC)
-- [FongMi/TV](https://github.com/FongMi/TV)(Updated: f627c150355dc11b56a8a322d55fde20eb598a86)
+- [FongMi/TV](https://github.com/FongMi/TV)(Updated: c15cc657f2785ab20c45e5886b97f480a330303c)
 - [mlabalabala/box](https://github.com/mlabalabala/box)(Updated: 918ac3f26bc347250a1cd4938897040e2c277a60)
 
 
