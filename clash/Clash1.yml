@@ -1,7 +1,7 @@
 mixed-port: 7890
 tcp-concurrent: false
 allow-lan: true
-ipv6: true
+ipv6: false
 mode: Rule
 log-level: info
 global-client-fingerprint: chrome
@@ -48,7 +48,7 @@ tun:
   auto-detect-interface: true
 dns:
   enable: true
-  ipv6: true
+  ipv6: false
   prefer-h3: true
   listen: 0.0.0.0:53
   enhanced-mode: fake-ip
@@ -101,15 +101,13 @@ dns:
     +.internal.crop.com: 10.0.0.1
     www.baidu.com,+.google.cn: https://doh.pub/dns-query
     geosite:private,apple: https://dns.alidns.com/dns-query
-    rule-set:google: 8.8.8.8
+    GEOSITE:google: 8.8.8.8
   nameserver:
   - https://doh.pub/dns-query
   - https://dns.alidns.com/dns-query
   fallback:
   - https://1.1.1.2/dns-query
   - https://1.0.0.2/dns-query
-  - https://208.67.222.222/dns-query
-  - https://208.67.220.220/dns-query
   - https://9.9.9.9/dns-query
   fallback-filter:
     geoip: true
@@ -121,13 +119,13 @@ dns:
     - 0.0.0.0/32
     domain:
     - +.google.com
+    - +.google.cn
+    - +.googleapis.cn
+    - +.googleapis.com
     - +.github.com
     - +.facebook.com
     - +.twitter.com
     - +.youtube.com
-    - +.google.cn
-    - +.googleapis.cn
-    - +.googleapis.com
 proxies:
 - alterId: 0
   cipher: auto
@@ -427,33 +425,6 @@ proxies:
   cipher: auto
   name: 加拿大 020
   network: ws
-  port: 2095
-  server: 104.19.45.253
-  skip-cert-verify: true
-  type: vmess
-  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
-  ws-opts:
-    headers:
-      Host: onea.flha.ru
-    path: /
-- alterId: 2
-  cipher: auto
-  name: 加拿大 021
-  network: ws
-  port: 80
-  server: free.qdns.live
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: ad6afad6-5659-3f25-9477-029735d5401c
-  ws-opts:
-    headers:
-      host: free-us.qdns.live
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 加拿大 022
-  network: ws
   port: 8880
   server: 104.17.153.131
   servername: cache-us-1.cn-db.top
@@ -468,7 +439,7 @@ proxies:
     path: /dabai.in13115317
 - alterId: 0
   cipher: auto
-  name: 加拿大 023
+  name: 加拿大 021
   network: ws
   port: 80
   server: 104.17.222.39
@@ -484,7 +455,7 @@ proxies:
     path: /dabai.in3922217
 - alterId: 0
   cipher: auto
-  name: 加拿大 024
+  name: 加拿大 022
   network: ws
   port: 2086
   server: 104.20.151.77
@@ -500,7 +471,7 @@ proxies:
     path: /dabai.in7715120
 - alterId: 0
   cipher: auto
-  name: 加拿大 025
+  name: 加拿大 023
   network: ws
   port: 2052
   server: 104.16.124.194
@@ -516,22 +487,7 @@ proxies:
     path: /dabai.in19412416
 - alterId: 0
   cipher: auto
-  name: 加拿大 026
-  network: ws
-  port: 8080
-  server: 104.26.9.22
-  servername: dual-nothing-prep-exit.trycloudflare.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: ef8c954e-014f-4b36-8273-9b5086afab34
-  ws-opts:
-    headers:
-      host: dual-nothing-prep-exit.trycloudflare.com
-    path: ef8c954e-014f-4b36-8273-9b5086afab34-vm
-- alterId: 0
-  cipher: auto
-  name: 加拿大 027
+  name: 加拿大 024
   network: ws
   port: 2095
   server: 104.20.187.129
@@ -547,7 +503,7 @@ proxies:
     path: /dabai.in12918720
 - alterId: 0
   cipher: auto
-  name: 加拿大 028
+  name: 加拿大 025
   network: ws
   port: 2052
   server: 104.20.141.197
@@ -563,25 +519,10 @@ proxies:
     path: /dabai.in19714120
 - alterId: 0
   cipher: auto
-  name: 韩国 001
-  network: ws
-  port: 80
-  server: kr01.victorialouisa.online
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: e71bf91c-083b-4dc2-abd6-b0630d0a4515
-  ws-opts:
-    headers:
-      Host: kr01.victorialouisa.online
-    path: /
-- alterId: 0
-  cipher: auto
   delay: 2195
   h2-opts: {}
   http-opts: {}
-  name: 加拿大 029
+  name: 加拿大 026
   network: ws
   port: 8080
   server: 172.67.199.59
@@ -599,7 +540,7 @@ proxies:
   delay: 1100
   h2-opts: {}
   http-opts: {}
-  name: 加拿大 030
+  name: 加拿大 027
   network: ws
   port: 80
   server: 172.67.204.84
@@ -626,7 +567,7 @@ proxies:
       Host: trojan.classelivre.eu.org
     path: /?ed=2048
 - client-fingerprint: chrome
-  name: 韩国 002
+  name: 韩国 001
   network: ws
   password: CMLiu
   port: 34933
@@ -711,7 +652,7 @@ proxies:
     path: /?ed=2048
 - alterId: 0
   cipher: auto
-  name: 加拿大 031
+  name: 加拿大 028
   network: ws
   port: 2052
   server: 104.20.51.217
@@ -747,7 +688,7 @@ proxies:
   udp: false
 - alterId: 0
   cipher: auto
-  name: 加拿大 032
+  name: 加拿大 029
   network: ws
   port: 80
   server: 104.21.73.173
@@ -777,62 +718,6 @@ proxies:
     path: /vc
 - alterId: 0
   cipher: auto
-  name: 荷兰 002
-  network: ws
-  port: 443
-  server: ginson.efnten.top
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 673ba378-840f-4928-81f2-203148d07350
-  ws-opts:
-    headers:
-      Host: cowochtmtrkers.turbo021.link
-    path: /673ba378-840f-4928-81f2-203148d07350
-- alterId: 0
-  cipher: auto
-  name: 荷兰 003
-  network: ws
-  port: 443
-  server: 188.114.98.0
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: odelia.autos
-    path: linkvws
-- alterId: 1
-  cipher: auto
-  name: 荷兰 004
-  network: ws
-  port: 443
-  server: 188.114.99.0
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: ophelia.mom
-    path: linkvws
-- alterId: 1
-  cipher: auto
-  name: 荷兰 005
-  network: ws
-  port: 443
-  server: 188.114.96.7
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: octavi.cfd
-    path: linkvws
-- alterId: 0
-  cipher: auto
   name: 美国 007
   network: ws
   port: 80
@@ -846,7 +731,7 @@ proxies:
     path: /aries?ed=2560
 - alterId: 0
   cipher: auto
-  name: 加拿大 033
+  name: 加拿大 030
   network: ws
   port: 80
   server: 172.67.164.78
@@ -859,7 +744,7 @@ proxies:
     path: /cctv13/hd.m3u8
 - alterId: 0
   cipher: auto
-  name: 加拿大 034
+  name: 加拿大 031
   network: ws
   port: 2095
   server: 104.18.183.23
@@ -875,7 +760,7 @@ proxies:
     path: /dabai.in2318318
 - alterId: 0
   cipher: auto
-  name: 加拿大 035
+  name: 加拿大 032
   network: ws
   port: 2052
   server: 104.19.209.59
@@ -891,7 +776,7 @@ proxies:
     path: /dabai.in5920919
 - alterId: 0
   cipher: auto
-  name: 加拿大 036
+  name: 加拿大 033
   network: ws
   port: 2086
   server: 104.19.152.117
@@ -907,7 +792,7 @@ proxies:
     path: /dabai.in11715219
 - alterId: 0
   cipher: auto
-  name: 加拿大 037
+  name: 加拿大 034
   network: ws
   port: 2086
   server: 104.17.119.189
@@ -923,7 +808,7 @@ proxies:
     path: /dabai.in18911917
 - alterId: 0
   cipher: auto
-  name: 加拿大 038
+  name: 加拿大 035
   network: ws
   port: 8080
   server: 104.17.179.227
@@ -939,7 +824,7 @@ proxies:
     path: /dabai.in22717917
 - alterId: 0
   cipher: auto
-  name: 加拿大 039
+  name: 加拿大 036
   network: ws
   port: 2095
   server: 104.17.146.174
@@ -955,7 +840,7 @@ proxies:
     path: /dabai.in17414617
 - alterId: 0
   cipher: auto
-  name: 加拿大 040
+  name: 加拿大 037
   network: ws
   port: 8880
   server: 104.18.65.71
@@ -969,51 +854,9 @@ proxies:
     headers:
       Host: 100.100.17.65.db-link01.top
     path: /dabai.in716518
-- alterId: 1
-  cipher: auto
-  name: 荷兰 006
-  network: ws
-  port: 443
-  server: 188.114.97.1
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: odelia.autos
-    path: linkvws
-- alterId: 0
-  cipher: auto
-  name: 荷兰 007
-  network: ws
-  port: 443
-  server: 188.114.97.18
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: odelia.autos
-    path: linkvws
-- alterId: 0
-  cipher: auto
-  name: 荷兰 008
-  network: ws
-  port: 443
-  server: mbt.ircf.space
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 79770a32-9607-4919-9483-0f1794559390
-  ws-opts:
-    headers:
-      Host: mbt.ircf.space
-    path: /juYLyvNBpY0LBOAommy2aJE
 - country: 🇨🇦CA
   delay: 1143
-  name: 加拿大 041
+  name: 加拿大 038
   network: tcp
   password: telegram-id-directvpn
   port: 22222
@@ -1033,7 +876,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 加拿大 042
+  name: 加拿大 039
   network: ws
   port: 8080
   server: 104.19.35.151
@@ -1049,7 +892,7 @@ proxies:
     path: /dabai.in1513519
 - alterId: 0
   cipher: auto
-  name: 加拿大 043
+  name: 加拿大 040
   network: ws
   port: 80
   server: 104.16.68.51
@@ -1065,7 +908,7 @@ proxies:
     path: /dabai.in516816
 - alterId: 0
   cipher: auto
-  name: 加拿大 044
+  name: 加拿大 041
   network: ws
   port: 2095
   server: 104.18.185.149
@@ -1081,7 +924,7 @@ proxies:
     path: /dabai.in14918518
 - alterId: 0
   cipher: auto
-  name: 加拿大 045
+  name: 加拿大 042
   network: ws
   port: 8080
   server: 104.19.173.89
@@ -1097,7 +940,7 @@ proxies:
     path: /dabai.in8917319
 - alterId: 0
   cipher: auto
-  name: 加拿大 046
+  name: 加拿大 043
   network: ws
   port: 2086
   server: 104.19.56.160
@@ -1113,7 +956,7 @@ proxies:
     path: /dabai.in1605619
 - alterId: 0
   cipher: auto
-  name: 加拿大 047
+  name: 加拿大 044
   network: ws
   port: 2095
   server: 104.20.146.134
@@ -1129,7 +972,7 @@ proxies:
     path: /dabai.in13414620
 - alterId: 0
   cipher: auto
-  name: 加拿大 048
+  name: 加拿大 045
   network: ws
   port: 2052
   server: 104.17.229.133
@@ -1142,7 +985,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 加拿大 049
+  name: 加拿大 046
   network: ws
   port: 80
   server: 104.19.43.233
@@ -1156,7 +999,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 加拿大 050
+  name: 加拿大 047
   network: ws
   port: 80
   server: 104.19.43.115
@@ -1170,7 +1013,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 加拿大 051
+  name: 加拿大 048
   network: ws
   port: 80
   server: 104.19.43.16
@@ -1184,7 +1027,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 加拿大 052
+  name: 加拿大 049
   network: ws
   port: 80
   server: 104.19.43.243
@@ -1208,7 +1051,7 @@ proxies:
   udp: false
 - alterId: 0
   cipher: auto
-  name: 加拿大 053
+  name: 加拿大 050
   network: ws
   port: 80
   server: 104.19.43.213
@@ -1222,7 +1065,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 加拿大 054
+  name: 加拿大 051
   network: ws
   port: 80
   server: 104.19.43.205
@@ -1236,7 +1079,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 加拿大 055
+  name: 加拿大 052
   network: ws
   port: 80
   server: 104.19.43.99
@@ -1250,7 +1093,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 加拿大 056
+  name: 加拿大 053
   network: ws
   port: 2082
   server: s1c.v2.v001sss.xyz
@@ -1266,7 +1109,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 加拿大 057
+  name: 加拿大 054
   network: ws
   port: 2086
   server: 104.18.36.132
@@ -1282,7 +1125,7 @@ proxies:
     path: /dabai.in1323618
 - alterId: 0
   cipher: auto
-  name: 加拿大 058
+  name: 加拿大 055
   network: ws
   port: 2082
   server: 104.20.108.119
@@ -1298,7 +1141,7 @@ proxies:
     path: /dabai.in11910820
 - alterId: 0
   cipher: auto
-  name: 加拿大 059
+  name: 加拿大 056
   network: ws
   port: 8080
   server: 104.20.121.85
@@ -1314,7 +1157,7 @@ proxies:
     path: /dabai.in8512120
 - alterId: 0
   cipher: auto
-  name: 加拿大 060
+  name: 加拿大 057
   network: ws
   port: 8080
   server: 104.19.57.124
@@ -1330,7 +1173,7 @@ proxies:
     path: /dabai.in1245719
 - alterId: 0
   cipher: auto
-  name: 加拿大 061
+  name: 加拿大 058
   network: ws
   port: 2082
   server: 104.19.201.180
@@ -1346,7 +1189,7 @@ proxies:
     path: /dabai.in18020119
 - alterId: 0
   cipher: auto
-  name: 加拿大 062
+  name: 加拿大 059
   network: ws
   port: 2052
   server: 104.19.222.93
@@ -1362,7 +1205,7 @@ proxies:
     path: /dabai.in9322219
 - alterId: 0
   cipher: auto
-  name: 加拿大 063
+  name: 加拿大 060
   network: ws
   port: 8080
   server: 104.17.42.19
@@ -1378,7 +1221,7 @@ proxies:
     path: /dabai.in194217
 - alterId: 0
   cipher: auto
-  name: 加拿大 064
+  name: 加拿大 061
   network: ws
   port: 8080
   server: 104.18.5.57
@@ -1394,7 +1237,7 @@ proxies:
     path: /dabai.in57518
 - alterId: 0
   cipher: auto
-  name: 加拿大 065
+  name: 加拿大 062
   network: ws
   port: 2052
   server: 104.19.222.158
@@ -1410,21 +1253,7 @@ proxies:
     path: /dabai.in15822219
 - alterId: 0
   cipher: auto
-  name: 巴西 001
-  network: ws
-  port: 443
-  server: 188.114.97.210
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: edbb1059-1633-4271-b66e-ed4fba47a1bf
-  ws-opts:
-    headers:
-      host: linde06.indiavideo.sbs
-    path: /linkws
-- alterId: 0
-  cipher: auto
-  name: 加拿大 066
+  name: 加拿大 063
   network: ws
   port: 80
   server: 104.19.43.107
@@ -1438,7 +1267,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 加拿大 067
+  name: 加拿大 064
   network: ws
   port: 80
   server: 104.19.43.173
@@ -1452,7 +1281,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 加拿大 068
+  name: 加拿大 065
   network: ws
   port: 80
   server: 104.19.43.174
@@ -1466,7 +1295,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 加拿大 069
+  name: 加拿大 066
   network: ws
   port: 80
   server: 104.19.43.74
@@ -1478,19 +1307,9 @@ proxies:
     headers:
       host: osaka.xlb8.eu.org
     path: /
-- client-fingerprint: chrome
-  name: 美国 009
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 18.170.245.90
-  skip-cert-verify: false
-  sni: trojan.burgerip.co.uk
-  type: trojan
-  udp: false
 - alterId: 0
   cipher: auto
-  name: 加拿大 070
+  name: 加拿大 067
   network: ws
   port: 80
   server: 104.19.43.0
@@ -1504,7 +1323,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 加拿大 071
+  name: 加拿大 068
   network: ws
   port: 80
   server: 104.19.43.214
@@ -1518,102 +1337,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 韩国 003
-  network: ws
-  port: 80
-  server: kr04.victorialouisa.online
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 10b14b35-289c-4340-a50d-9c2946b40190
-  ws-opts:
-    headers:
-      Host: kr04.victorialouisa.online
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 加拿大 072
-  network: ws
-  port: 80
-  server: cf.wvw.mom
-  servername: ca.ccddos.link
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 41631bd2-4463-48a0-ab4c-15dcba237a90
-  ws-opts:
-    headers:
-      Host: cf.wvw.mom
-    path: /rongseven?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 加拿大 073
-  network: ws
-  port: 80
-  server: nexload.ir
-  servername: hu2.xv2ray.net
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 17ae8dc2-042a-4132-b494-b2f71be0abcc
-  ws-opts:
-    headers:
-      Host: nexload.ir
-    path: /vmess
-- alterId: 0
-  cipher: auto
-  name: 美国 010
-  network: ws
-  port: 46666
-  server: us-phoenix-oracle-3e4543.ip1.shop
-  servername: us-phoenix-oracle-3e4543.ip1.shop
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: f0f067fe-8e6d-4d95-816b-601038fd5876
-  ws-opts:
-    headers:
-      Host: us-phoenix-oracle-3e4543.ip1.shop
-    path: /rongseven?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 加拿大 074
-  network: ws
-  port: 8080
-  server: hk4.ddwdadk.xyz
-  servername: cdn.ddwdadk.xyz
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: a0fd3429-e62a-499f-a6ba-b026be770222
-  ws-opts:
-    headers:
-      Host: hk4.ddwdadk.xyz
-    path: /xx
-- alterId: 0
-  cipher: auto
-  name: 越南 002
-  network: ws
-  port: 80
-  server: max1.flash5g.com
-  servername: dl.aw.freefiremobile.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 4e25f91f-603c-4e83-b002-c26030757816
-  ws-opts:
-    headers:
-      Host: max1.flash5g.com
-    path: /AnhBin
-- alterId: 0
-  cipher: auto
-  name: 美国 011
+  name: 美国 009
   network: ws
   port: 80
   server: 104.19.43.254
@@ -1626,7 +1350,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 加拿大 075
+  name: 加拿大 069
   network: ws
   port: 80
   server: 104.19.43.244
@@ -1639,7 +1363,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 加拿大 076
+  name: 加拿大 070
   network: ws
   port: 80
   server: 104.19.43.188
@@ -1652,7 +1376,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 加拿大 077
+  name: 加拿大 071
   network: ws
   port: 80
   server: 104.19.43.172
@@ -1665,7 +1389,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 加拿大 078
+  name: 加拿大 072
   network: ws
   port: 80
   server: 104.19.43.122
@@ -1678,7 +1402,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 加拿大 079
+  name: 加拿大 073
   network: ws
   port: 80
   server: 104.19.43.100
@@ -1691,7 +1415,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 加拿大 080
+  name: 加拿大 074
   network: ws
   port: 80
   server: 104.19.43.237
@@ -1704,7 +1428,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 加拿大 081
+  name: 加拿大 075
   network: ws
   port: 80
   server: 104.19.43.161
@@ -1717,7 +1441,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 加拿大 082
+  name: 加拿大 076
   network: ws
   port: 80
   server: 104.19.43.20
@@ -1730,44 +1454,1153 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 加拿大 083
+  name: 美国 010
   network: ws
-  port: 8080
-  server: cfzl7.freeapp.buzz
+  port: 2052
+  server: t1.db-link.in
+  servername: cache-us-1.cn-db.top
   skip-cert-verify: true
+  tls: false
   type: vmess
-  uuid: eedfc125-cc91-4f47-bc7b-41157c200283
+  udp: true
+  uuid: 7ae32b19-ebf9-34b0-9145-c388797acacf
   ws-opts:
     headers:
-      Host: wz4.kcjs.me
-    path: /gd3245vd2S32cr
+      Host: t1.db-link.in
+    path: /dabai.in
+- alterId: 0
+  cipher: auto
+  name: 美国 011
+  network: ws
+  port: 33451
+  server: t1.db-link.in
+  servername: cache-us-4.db-link02.top
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 7ae32b19-ebf9-34b0-9145-c388797acacf
+  ws-opts:
+    headers:
+      Host: t1.db-link.in
+    path: /dabai.in
+- alterId: 0
+  cipher: auto
+  name: 美国 012
+  network: ws
+  port: 2082
+  server: t1.db-link.in
+  servername: data-us-1.db-link02.top
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 7ae32b19-ebf9-34b0-9145-c388797acacf
+  ws-opts:
+    headers:
+      Host: t1.db-link.in
+    path: /dabai.in
+- alterId: 0
+  cipher: auto
+  name: 加拿大 077
+  network: ws
+  port: 80
+  server: 104.19.43.60
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
+  ws-opts:
+    headers:
+      host: osaka.xlb8.eu.org
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 加拿大 078
+  network: ws
+  port: 80
+  server: 104.19.43.138
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
+  ws-opts:
+    headers:
+      host: osaka.xlb8.eu.org
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 加拿大 079
+  network: ws
+  port: 8080
+  server: 104.19.172.136
+  skip-cert-verify: true
+  type: vmess
+  uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d
+  ws-opts:
+    headers:
+      Host: oiictw.yydsii.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 加拿大 080
+  network: ws
+  port: 80
+  server: 104.19.45.60
+  skip-cert-verify: true
+  type: vmess
+  uuid: 34cb3f75-316d-362f-9210-a5f86453b0a4
+  ws-opts:
+    headers:
+      Host: tk-007.xiaoxiaobujidao.xyz
+    path: /xiaodao?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 加拿大 081
+  network: ws
+  port: 80
+  server: 104.19.43.103
+  skip-cert-verify: true
+  type: vmess
+  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
+  ws-opts:
+    headers:
+      Host: osaka.xlb8.eu.org
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 加拿大 082
+  network: ws
+  port: 80
+  server: 104.19.43.231
+  skip-cert-verify: true
+  type: vmess
+  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
+  ws-opts:
+    headers:
+      Host: osaka.xlb8.eu.org
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 加拿大 083
+  network: ws
+  port: 80
+  server: 104.19.43.197
+  skip-cert-verify: true
+  type: vmess
+  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
+  ws-opts:
+    headers:
+      Host: osaka.xlb8.eu.org
+    path: /
 - alterId: 0
   cipher: auto
   name: 加拿大 084
   network: ws
-  port: 8080
-  server: cfzl8.freeapp.buzz
+  port: 80
+  server: 104.19.43.220
   skip-cert-verify: true
   type: vmess
-  uuid: eedfc125-cc91-4f47-bc7b-41157c200283
+  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
   ws-opts:
     headers:
-      Host: wz4.kcjs.me
-    path: /gd3245vd2S32cr
+      Host: osaka.xlb8.eu.org
+    path: /
 - alterId: 0
   cipher: auto
   name: 加拿大 085
   network: ws
-  port: 2087
-  server: 104.21.55.250
+  port: 80
+  server: 104.19.43.97
+  skip-cert-verify: true
+  type: vmess
+  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
+  ws-opts:
+    headers:
+      Host: osaka.xlb8.eu.org
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 美国 013
+  network: ws
+  port: 80
+  server: 104.19.43.3
+  skip-cert-verify: true
+  type: vmess
+  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
+  ws-opts:
+    headers:
+      Host: osaka.xlb8.eu.org
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 加拿大 086
+  network: ws
+  port: 80
+  server: 104.19.43.66
+  skip-cert-verify: true
+  type: vmess
+  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
+  ws-opts:
+    headers:
+      Host: osaka.xlb8.eu.org
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 加拿大 087
+  network: ws
+  port: 80
+  server: 104.19.43.93
+  skip-cert-verify: true
+  type: vmess
+  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
+  ws-opts:
+    headers:
+      Host: osaka.xlb8.eu.org
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 加拿大 088
+  network: ws
+  port: 80
+  server: 104.19.43.61
+  skip-cert-verify: true
+  type: vmess
+  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
+  ws-opts:
+    headers:
+      Host: osaka.xlb8.eu.org
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 加拿大 089
+  network: ws
+  port: 80
+  server: 104.19.43.29
+  skip-cert-verify: true
+  type: vmess
+  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
+  ws-opts:
+    headers:
+      Host: osaka.xlb8.eu.org
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 加拿大 090
+  network: ws
+  port: 80
+  server: 104.19.43.162
+  skip-cert-verify: true
+  type: vmess
+  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
+  ws-opts:
+    headers:
+      Host: osaka.xlb8.eu.org
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 加拿大 091
+  network: ws
+  port: 80
+  server: 104.19.43.170
+  skip-cert-verify: true
+  type: vmess
+  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
+  ws-opts:
+    headers:
+      Host: osaka.xlb8.eu.org
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 加拿大 092
+  network: ws
+  port: 80
+  server: 104.19.43.28
+  skip-cert-verify: true
+  type: vmess
+  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
+  ws-opts:
+    headers:
+      Host: osaka.xlb8.eu.org
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 加拿大 093
+  network: ws
+  port: 80
+  server: 104.19.43.112
+  skip-cert-verify: true
+  type: vmess
+  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
+  ws-opts:
+    headers:
+      Host: osaka.xlb8.eu.org
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 加拿大 094
+  network: ws
+  port: 80
+  server: 104.19.43.240
+  skip-cert-verify: true
+  type: vmess
+  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
+  ws-opts:
+    headers:
+      Host: osaka.xlb8.eu.org
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 加拿大 095
+  network: ws
+  port: 80
+  server: 104.19.43.89
+  skip-cert-verify: true
+  type: vmess
+  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
+  ws-opts:
+    headers:
+      Host: osaka.xlb8.eu.org
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 加拿大 096
+  network: ws
+  port: 80
+  server: 104.19.43.1
+  skip-cert-verify: true
+  type: vmess
+  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
+  ws-opts:
+    headers:
+      Host: osaka.xlb8.eu.org
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 加拿大 097
+  network: ws
+  port: 80
+  server: 104.19.43.163
+  skip-cert-verify: true
+  type: vmess
+  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
+  ws-opts:
+    headers:
+      Host: osaka.xlb8.eu.org
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 加拿大 098
+  network: ws
+  port: 80
+  server: 104.19.43.123
+  skip-cert-verify: true
+  type: vmess
+  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
+  ws-opts:
+    headers:
+      Host: osaka.xlb8.eu.org
+    path: /
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 加拿大 099
+  network: ws
+  port: 80
+  server: cf.hy2.one
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: f9c18525-1efc-4b42-af47-c455455fa426
+  ws-opts:
+    headers:
+      Host: hk04.hy-2.top
+    path: /ggaga1213ff
+- alterId: 0
+  cipher: auto
+  name: 加拿大 100
+  network: ws
+  port: 2082
+  server: 104.20.35.169
+  servername: cache-us-1.cn-db.top
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 7ae32b19-ebf9-34b0-9145-c388797acacf
+  ws-opts:
+    headers:
+      Host: 100.100.17.35.cn-db.top
+    path: /dabai.in1693520
+- alterId: 0
+  cipher: auto
+  name: 加拿大 101
+  network: ws
+  port: 8880
+  server: 104.19.90.252
+  servername: data-us-3.db-link02.top
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 7ae32b19-ebf9-34b0-9145-c388797acacf
+  ws-opts:
+    headers:
+      Host: 100.100.17.90.db-link02.top
+    path: /dabai.in2529019
+- alterId: 0
+  cipher: auto
+  name: 加拿大 102
+  network: ws
+  port: 2082
+  server: 104.19.210.56
+  servername: data-us-3.cn-db.top
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 7ae32b19-ebf9-34b0-9145-c388797acacf
+  ws-opts:
+    headers:
+      Host: 100.100.17.210.cn-db.top
+    path: /dabai.in5621019
+- alterId: 0
+  cipher: auto
+  name: 加拿大 103
+  network: ws
+  port: 2086
+  server: 104.20.191.157
+  servername: data-us-1.db-link02.top
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 7ae32b19-ebf9-34b0-9145-c388797acacf
+  ws-opts:
+    headers:
+      Host: 100.100.17.191.db-link02.top
+    path: /dabai.in15719120
+- alterId: 0
+  cipher: auto
+  name: 加拿大 104
+  network: ws
+  port: 8880
+  server: 104.17.109.87
+  servername: data-us-2.cn-db.top
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 7ae32b19-ebf9-34b0-9145-c388797acacf
+  ws-opts:
+    headers:
+      Host: 100.100.17.109.cn-db.top
+    path: /dabai.in8710917
+- alterId: 0
+  cipher: auto
+  name: 加拿大 105
+  network: ws
+  port: 80
+  server: 104.20.88.72
+  servername: data-us-2.db-link02.top
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 7ae32b19-ebf9-34b0-9145-c388797acacf
+  ws-opts:
+    headers:
+      Host: 100.100.17.88.db-link02.top
+    path: /dabai.in728820
+- alterId: 0
+  cipher: auto
+  name: 美国 014
+  network: ws
+  port: 33451
+  server: t2.db-link.in
+  servername: data-us-1.db-link01.top
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 7ae32b19-ebf9-34b0-9145-c388797acacf
+  ws-opts:
+    headers:
+      Host: t2.db-link.in
+    path: /dabai.in
+- alterId: 0
+  cipher: auto
+  country: NL
+  h2-opts: {}
+  http-opts: {}
+  name: 荷兰 002
+  network: ws
+  port: 443
+  server: 188.114.97.43
+  servername: ua2-vmess.sshmax.xyz
   skip-cert-verify: true
   tls: true
   type: vmess
-  uuid: 2e94b93f-b7f4-40a7-a6c9-4561b9ea6cdb
+  uuid: 0e4d17ea-1332-481a-aae2-ef9b790201cf
   ws-opts:
     headers:
-      Host: gghk.duduskying.cf
-    path: /?ed=2048
+      HOST: ua2-vmess.sshmax.xyz
+    path: /vmess
+- alterId: 0
+  cipher: auto
+  name: 加拿大 106
+  network: ws
+  port: 2052
+  server: 104.18.131.224
+  tls: false
+  type: vmess
+  uuid: 3fdef482-3fba-47f9-af67-b3f5bf93ec4c
+  ws-opts:
+    headers:
+      Host: tw1bQiWSE4x.fzbqfrse.xyz
+    path: /video/GQ2qE5Us9g
+- alterId: 0
+  cipher: auto
+  name: 加拿大 107
+  network: ws
+  port: 2095
+  server: 104.17.229.133
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 3fdef482-3fba-47f9-af67-b3f5bf93ec4c
+  ws-opts:
+    headers:
+      host: us82pRzxDMb.fzbqfrse.xyz
+    path: /video/qYZue4zaWS
+- client-fingerprint: chrome
+  name: 法国 001
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 35.181.243.218
+  skip-cert-verify: false
+  sni: trojan.burgerip.co.uk
+  type: trojan
+  udp: false
+- client-fingerprint: chrome
+  name: 加拿大 108
+  network: tcp
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  port: 443
+  server: 104.16.192.1
+  skip-cert-verify: false
+  sni: sherasheba.com
+  type: trojan
+  udp: false
+- client-fingerprint: chrome
+  name: 德国 002
+  network: tcp
+  password: telegram-id-directvpn
+  port: 22222
+  server: 3.126.72.56
+  skip-cert-verify: false
+  sni: trojan.burgerip.co.uk
+  type: trojan
+  udp: false
+- client-fingerprint: chrome
+  name: 加拿大 109
+  network: tcp
+  password: dba20dcb635e430fa4d3bfc303a149d2
+  port: 443
+  server: 104.17.61.9
+  skip-cert-verify: false
+  sni: jobscareerforlawyers.com
+  type: trojan
+  udp: false
+- alterId: 0
+  cipher: auto
+  name: 加拿大 110
+  network: ws
+  port: 443
+  server: 172.67.167.103
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: df0a43ca-19b2-5a69-5213-9cba4f2e2c5e
+  ws-opts:
+    headers:
+      Host: l.olex.cf
+    path: /kgnpvws
+- alterId: 0
+  cipher: auto
+  name: 阿根廷 001
+  network: ws
+  port: 80
+  server: ar.jiedian.stream
+  type: vmess
+  udp: true
+  uuid: ece6750e-df24-48c9-8007-34451285f57e
+  ws-opts:
+    headers:
+      Host: gw.alicdn.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 日本 002
+  network: ws
+  port: 80
+  server: jp5.jiedian.stream
+  type: vmess
+  udp: true
+  uuid: ece6750e-df24-48c9-8007-34451285f57e
+  ws-opts:
+    headers:
+      Host: gw.alicdn.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 韩国 002
+  network: ws
+  port: 80
+  server: kr.jiedian.stream
+  type: vmess
+  udp: true
+  uuid: ece6750e-df24-48c9-8007-34451285f57e
+  ws-opts:
+    headers:
+      Host: gw.alicdn.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 韩国 003
+  network: ws
+  port: 80
+  server: 82.117.226.237
+  type: vmess
+  udp: true
+  uuid: ece6750e-df24-48c9-8007-34451285f57e
+  ws-opts:
+    headers:
+      Host: gw.alicdn.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 新加坡 001
+  network: ws
+  port: 80
+  server: sg1.jiedian.stream
+  type: vmess
+  udp: true
+  uuid: ece6750e-df24-48c9-8007-34451285f57e
+  ws-opts:
+    headers:
+      Host: gw.alicdn.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 新加坡 002
+  network: ws
+  port: 80
+  server: sg4.jiedian.stream
+  type: vmess
+  udp: true
+  uuid: ece6750e-df24-48c9-8007-34451285f57e
+  ws-opts:
+    headers:
+      Host: gw.alicdn.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 土耳其 001
+  network: ws
+  port: 80
+  server: tr.jiedian.stream
+  type: vmess
+  udp: true
+  uuid: ece6750e-df24-48c9-8007-34451285f57e
+  ws-opts:
+    headers:
+      Host: gw.alicdn.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 美国 015
+  network: ws
+  port: 80
+  server: us3.jiedian.stream
+  type: vmess
+  udp: true
+  uuid: ece6750e-df24-48c9-8007-34451285f57e
+  ws-opts:
+    headers:
+      Host: gw.alicdn.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 美国 016
+  network: ws
+  port: 80
+  server: us5.jiedian.stream
+  type: vmess
+  udp: true
+  uuid: ece6750e-df24-48c9-8007-34451285f57e
+  ws-opts:
+    headers:
+      Host: us.cdn01.top
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 加拿大 111
+  network: ws
+  port: 80
+  server: us6.jiedian.stream
+  type: vmess
+  udp: true
+  uuid: ece6750e-df24-48c9-8007-34451285f57e
+  ws-opts:
+    headers:
+      Host: us.cdn02.top
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 加拿大 112
+  network: ws
+  port: 80
+  server: us7.jiedian.stream
+  type: vmess
+  udp: true
+  uuid: ece6750e-df24-48c9-8007-34451285f57e
+  ws-opts:
+    headers:
+      Host: us.cdn01.top
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 加拿大 113
+  network: ws
+  port: 80
+  server: us8.jiedian.stream
+  type: vmess
+  udp: true
+  uuid: ece6750e-df24-48c9-8007-34451285f57e
+  ws-opts:
+    headers:
+      Host: us.cdn02.top
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 美国 017
+  network: ws
+  port: 80
+  server: 192.9.241.40
+  type: vmess
+  udp: true
+  uuid: ece6750e-df24-48c9-8007-34451285f57e
+  ws-opts:
+    headers:
+      Host: gw.alicdn.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 美国 018
+  network: ws
+  port: 80
+  server: 129.153.126.128
+  type: vmess
+  udp: true
+  uuid: ece6750e-df24-48c9-8007-34451285f57e
+  ws-opts:
+    headers:
+      Host: gw.alicdn.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 美国 019
+  network: ws
+  port: 33450
+  server: t1.db-link.in
+  servername: cache-us-1.cn-db.top
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 7648993c-806d-318b-b187-d80139f15fe0
+  ws-opts:
+    headers:
+      Host: t1.db-link.in
+    path: /dabai.in
+- alterId: 0
+  cipher: auto
+  name: 美国 020
+  network: ws
+  port: 2082
+  server: t2.db-link.in
+  servername: data-us-3.db-link02.top
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 7648993c-806d-318b-b187-d80139f15fe0
+  ws-opts:
+    headers:
+      Host: t2.db-link.in
+    path: /dabai.in
+- alterId: 0
+  cipher: auto
+  name: 加拿大 114
+  network: ws
+  port: 2052
+  server: 104.20.155.181
+  servername: cache-us-4.db-link02.top
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 7648993c-806d-318b-b187-d80139f15fe0
+  ws-opts:
+    headers:
+      Host: 100.100.17.155.cn-db.top
+    path: /dabai.in18115520
+- alterId: 0
+  cipher: auto
+  name: 加拿大 115
+  network: ws
+  port: 80
+  server: 104.17.226.111
+  servername: data-us-1.db-link02.top
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 7648993c-806d-318b-b187-d80139f15fe0
+  ws-opts:
+    headers:
+      Host: 100.100.17.226.db-link02.top
+    path: /dabai.in11122617
+- alterId: 0
+  cipher: auto
+  name: 加拿大 116
+  network: ws
+  port: 8080
+  server: 104.19.78.90
+  servername: data-us-2.cn-db.top
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 7648993c-806d-318b-b187-d80139f15fe0
+  ws-opts:
+    headers:
+      Host: 100.100.17.78.db-link01.top
+    path: /dabai.in907819
+- alterId: 0
+  cipher: auto
+  name: 加拿大 117
+  network: ws
+  port: 80
+  server: 104.20.223.99
+  servername: data-us-2.db-link02.top
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 7648993c-806d-318b-b187-d80139f15fe0
+  ws-opts:
+    headers:
+      Host: 100.100.17.223.db-link02.top
+    path: /dabai.in9922320
+- alterId: 0
+  cipher: auto
+  name: 加拿大 118
+  network: ws
+  port: 80
+  server: 104.20.182.27
+  servername: data-us-1.db-link01.top
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 7648993c-806d-318b-b187-d80139f15fe0
+  ws-opts:
+    headers:
+      Host: 100.100.17.182.db-link01.top
+    path: /dabai.in2718220
+- client-fingerprint: chrome
+  name: 加拿大 119
+  network: tcp
+  password: f0eb8c92ce8946aaba856569cff1a16b
+  port: 443
+  server: 104.19.159.2
+  skip-cert-verify: false
+  sni: avianrecruit.com
+  type: trojan
+  udp: false
+- client-fingerprint: chrome
+  name: 美国 021
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 18.169.37.49
+  skip-cert-verify: false
+  sni: trojan.burgerip.co.uk
+  type: trojan
+  udp: false
+- alterId: 0
+  cipher: auto
+  name: 香港 001
+  network: tcp
+  port: 10010
+  server: 163.53.18.195
+  skip-cert-verify: true
+  type: vmess
+  uuid: 509d9b39-0def-4bcc-bebf-193c997f6bdf
+- alterId: 0
+  cipher: auto
+  name: 香港 002
+  network: tcp
+  port: 10010
+  server: 163.53.18.219
+  skip-cert-verify: true
+  type: vmess
+  uuid: 509d9b39-0def-4bcc-bebf-193c997f6bdf
+- alterId: 0
+  cipher: auto
+  name: 美国 022
+  network: ws
+  port: 80
+  server: 3.112.193.178
+  skip-cert-verify: true
+  type: vmess
+  uuid: ece6750e-df24-48c9-8007-34451285f57e
+  ws-opts:
+    headers:
+      Host: gw.alicdn.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 新加坡 003
+  network: ws
+  port: 80
+  server: 178.128.56.69
+  skip-cert-verify: true
+  type: vmess
+  uuid: ece6750e-df24-48c9-8007-34451285f57e
+  ws-opts:
+    headers:
+      Host: gw.alicdn.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 美国 023
+  network: ws
+  port: 80
+  server: 13.214.162.31
+  skip-cert-verify: true
+  type: vmess
+  uuid: ece6750e-df24-48c9-8007-34451285f57e
+  ws-opts:
+    headers:
+      Host: gw.alicdn.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 加拿大 120
+  network: ws
+  port: 80
+  server: 104.19.43.26
+  skip-cert-verify: true
+  type: vmess
+  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
+  ws-opts:
+    headers:
+      Host: osaka.xlb8.eu.org
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 加拿大 121
+  network: ws
+  port: 80
+  server: 104.19.43.210
+  skip-cert-verify: true
+  type: vmess
+  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
+  ws-opts:
+    headers:
+      Host: osaka.xlb8.eu.org
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 美国 024
+  network: ws
+  port: 2052
+  server: t2.db-link.in
+  servername: cache-us-4.db-link02.top
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 7648993c-806d-318b-b187-d80139f15fe0
+  ws-opts:
+    headers:
+      Host: t2.db-link.in
+    path: /dabai.in
+- alterId: 0
+  cipher: auto
+  name: 加拿大 122
+  network: ws
+  port: 80
+  server: 104.17.21.121
+  servername: cache-us-4.db-link02.top
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 7648993c-806d-318b-b187-d80139f15fe0
+  ws-opts:
+    headers:
+      Host: 100.100.17.21.db-link01.top
+    path: /dabai.in1212117
+- alterId: 0
+  cipher: auto
+  name: 加拿大 123
+  network: ws
+  port: 8080
+  server: 104.16.20.185
+  servername: data-us-1.db-link02.top
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 7648993c-806d-318b-b187-d80139f15fe0
+  ws-opts:
+    headers:
+      Host: 100.100.17.20.cn-db.top
+    path: /dabai.in1852016
+- alterId: 0
+  cipher: auto
+  name: 加拿大 124
+  network: ws
+  port: 8080
+  server: 104.20.99.6
+  servername: data-us-2.cn-db.top
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 7648993c-806d-318b-b187-d80139f15fe0
+  ws-opts:
+    headers:
+      Host: 100.100.17.99.cn-db.top
+    path: /dabai.in69920
+- alterId: 0
+  cipher: auto
+  name: 加拿大 125
+  network: ws
+  port: 2095
+  server: 104.19.248.137
+  servername: data-us-2.db-link02.top
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 7648993c-806d-318b-b187-d80139f15fe0
+  ws-opts:
+    headers:
+      Host: 100.100.17.248.db-link01.top
+    path: /dabai.in13724819
+- alterId: 0
+  cipher: auto
+  name: 加拿大 126
+  network: ws
+  port: 8080
+  server: 104.19.83.225
+  servername: data-us-1.db-link01.top
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 7648993c-806d-318b-b187-d80139f15fe0
+  ws-opts:
+    headers:
+      Host: 100.100.17.83.cn-db.top
+    path: /dabai.in2258319
+- alterId: 0
+  cipher: auto
+  name: 加拿大 127
+  network: ws
+  port: 8880
+  server: 104.16.25.161
+  servername: cache-us-4.db-link02.top
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 7648993c-806d-318b-b187-d80139f15fe0
+  ws-opts:
+    headers:
+      Host: 100.100.17.25.db-link02.top
+    path: /dabai.in1612516
+- alterId: 0
+  cipher: auto
+  name: 加拿大 128
+  network: ws
+  port: 2052
+  server: 104.17.217.127
+  servername: data-us-1.db-link02.top
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 7648993c-806d-318b-b187-d80139f15fe0
+  ws-opts:
+    headers:
+      Host: 100.100.17.217.cn-db.top
+    path: /dabai.in12721717
+- alterId: 0
+  cipher: auto
+  name: 加拿大 129
+  network: ws
+  port: 2052
+  server: 104.17.142.173
+  servername: data-us-2.cn-db.top
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 7648993c-806d-318b-b187-d80139f15fe0
+  ws-opts:
+    headers:
+      Host: 100.100.17.142.cn-db.top
+    path: /dabai.in17314217
+- alterId: 0
+  cipher: auto
+  name: 加拿大 130
+  network: ws
+  port: 2095
+  server: 104.17.201.56
+  servername: data-us-2.db-link02.top
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 7648993c-806d-318b-b187-d80139f15fe0
+  ws-opts:
+    headers:
+      Host: 100.100.17.201.cn-db.top
+    path: /dabai.in5620117
+- alterId: 0
+  cipher: auto
+  name: 加拿大 131
+  network: ws
+  port: 2086
+  server: 104.20.182.43
+  servername: data-us-1.db-link01.top
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 7648993c-806d-318b-b187-d80139f15fe0
+  ws-opts:
+    headers:
+      Host: 100.100.17.182.cn-db.top
+    path: /dabai.in4318220
 proxy-groups:
 - name: PROXY
   type: select
@@ -1808,40 +2641,32 @@ proxy-groups:
   - 加拿大 025
   - 加拿大 026
   - 加拿大 027
-  - 加拿大 028
-  - 韩国 001
-  - 加拿大 029
-  - 加拿大 030
   - 日本 001
-  - 韩国 002
+  - 韩国 001
   - 美国 002
   - 美国 003
   - 澳大利亚 001
   - 美国 004
   - 美国 005
-  - 加拿大 031
+  - 加拿大 028
   - 美国 006
   - 德国 001
-  - 加拿大 032
+  - 加拿大 029
   - 荷兰 001
-  - 荷兰 002
-  - 荷兰 003
-  - 荷兰 004
-  - 荷兰 005
   - 美国 007
+  - 加拿大 030
+  - 加拿大 031
+  - 加拿大 032
   - 加拿大 033
   - 加拿大 034
   - 加拿大 035
   - 加拿大 036
   - 加拿大 037
   - 加拿大 038
+  - 爱尔兰 001
   - 加拿大 039
   - 加拿大 040
-  - 荷兰 006
-  - 荷兰 007
-  - 荷兰 008
   - 加拿大 041
-  - 爱尔兰 001
   - 加拿大 042
   - 加拿大 043
   - 加拿大 044
@@ -1850,10 +2675,10 @@ proxy-groups:
   - 加拿大 047
   - 加拿大 048
   - 加拿大 049
+  - 美国 008
   - 加拿大 050
   - 加拿大 051
   - 加拿大 052
-  - 美国 008
   - 加拿大 053
   - 加拿大 054
   - 加拿大 055
@@ -1867,23 +2692,21 @@ proxy-groups:
   - 加拿大 063
   - 加拿大 064
   - 加拿大 065
-  - 巴西 001
   - 加拿大 066
   - 加拿大 067
   - 加拿大 068
-  - 加拿大 069
   - 美国 009
+  - 加拿大 069
   - 加拿大 070
   - 加拿大 071
-  - 韩国 003
   - 加拿大 072
   - 加拿大 073
-  - 美国 010
   - 加拿大 074
-  - 越南 002
-  - 美国 011
   - 加拿大 075
   - 加拿大 076
+  - 美国 010
+  - 美国 011
+  - 美国 012
   - 加拿大 077
   - 加拿大 078
   - 加拿大 079
@@ -1893,6 +2716,77 @@ proxy-groups:
   - 加拿大 083
   - 加拿大 084
   - 加拿大 085
+  - 美国 013
+  - 加拿大 086
+  - 加拿大 087
+  - 加拿大 088
+  - 加拿大 089
+  - 加拿大 090
+  - 加拿大 091
+  - 加拿大 092
+  - 加拿大 093
+  - 加拿大 094
+  - 加拿大 095
+  - 加拿大 096
+  - 加拿大 097
+  - 加拿大 098
+  - 加拿大 099
+  - 加拿大 100
+  - 加拿大 101
+  - 加拿大 102
+  - 加拿大 103
+  - 加拿大 104
+  - 加拿大 105
+  - 美国 014
+  - 荷兰 002
+  - 加拿大 106
+  - 加拿大 107
+  - 法国 001
+  - 加拿大 108
+  - 德国 002
+  - 加拿大 109
+  - 加拿大 110
+  - 阿根廷 001
+  - 日本 002
+  - 韩国 002
+  - 韩国 003
+  - 新加坡 001
+  - 新加坡 002
+  - 土耳其 001
+  - 美国 015
+  - 美国 016
+  - 加拿大 111
+  - 加拿大 112
+  - 加拿大 113
+  - 美国 017
+  - 美国 018
+  - 美国 019
+  - 美国 020
+  - 加拿大 114
+  - 加拿大 115
+  - 加拿大 116
+  - 加拿大 117
+  - 加拿大 118
+  - 加拿大 119
+  - 美国 021
+  - 香港 001
+  - 香港 002
+  - 美国 022
+  - 新加坡 003
+  - 美国 023
+  - 加拿大 120
+  - 加拿大 121
+  - 美国 024
+  - 加拿大 122
+  - 加拿大 123
+  - 加拿大 124
+  - 加拿大 125
+  - 加拿大 126
+  - 加拿大 127
+  - 加拿大 128
+  - 加拿大 129
+  - 加拿大 130
+  - 加拿大 131
 - name: LOAD-BALANCE
   type: load-balance
   url: https://cp.cloudflare.com/generate_204
@@ -1928,98 +2822,30 @@ proxy-groups:
 rules:
 - RULE-SET,proxy-classical,PROXY
 - RULE-SET,direct-classical,DIRECT
-- RULE-SET,block,BLOCK
 - RULE-SET,applications,DIRECT
-- RULE-SET,icloud,DIRECT
-- RULE-SET,apple,DIRECT
-- RULE-SET,github,GITHUB
-- RULE-SET,openai,OPENAI
-- RULE-SET,google,PROXY
-- RULE-SET,youtube,PROXY
-- RULE-SET,telegram,PROXY
-- RULE-SET,spotify,PROXY
-- RULE-SET,gfw,PROXY
-- GEOIP,LAN,DIRECT,no-resolve
-- GEOIP,CN,DIRECT
+- GEOSITE,github,GITHUB
+- GEOSITE,openai,OPENAI
+- GEOSITE,category-ads-all,REJECT
+- GEOSITE,bing,PROXY
+- GEOSITE,private,DIRECT
+- GEOSITE,youtube,PROXY
+- GEOSITE,google,PROXY
+- GEOSITE,twitter,PROXY
+- GEOSITE,category-scholar-!cn,PROXY
+- GEOSITE,biliintl,PROXY
+- GEOSITE,onedrive,DIRECT
+- GEOSITE,microsoft@cn,DIRECT
+- GEOSITE,apple-cn,DIRECT
+- GEOSITE,steam@cn,DIRECT
+- GEOSITE,category-games@cn,DIRECT
+- GEOSITE,geolocation-!cn,PROXY
+- GEOSITE,spotify,PROXY
+- GEOSITE,cn,DIRECT
+- GEOIP,private,DIRECT,no-resolve
+- GEOIP,telegram,PROXY
+- GEOIP,cn,DIRECT
 - MATCH,FINAL
 rule-providers:
-  icloud:
-    type: http
-    behavior: classical
-    url: https://cdn.jsdelivr.net/gh/anaer/Sub@main/rules/classical/icloud.yaml
-    path: ./rules/classical/icloud.yaml
-    interval: 86400
-    proxy: DIRECT
-  apple:
-    type: http
-    behavior: classical
-    url: https://cdn.jsdelivr.net/gh/anaer/Sub@main/rules/classical/apple.yaml
-    path: ./rules/classical/apple.yaml
-    interval: 86400
-    proxy: DIRECT
-  gfw:
-    type: http
-    behavior: domain
-    url: https://cdn.jsdelivr.net/gh/anaer/Sub@main/rules/domain/gfw.yaml
-    path: ./rules/domain/gfw.yaml
-    interval: 86400
-    proxy: DIRECT
-  youtube:
-    type: http
-    behavior: classical
-    url: https://cdn.jsdelivr.net/gh/anaer/Sub@main/rules/classical/youtube.yaml
-    path: ./rules/classical/youtube.yaml
-    interval: 86400
-    proxy: DIRECT
-  google:
-    type: http
-    behavior: classical
-    url: https://cdn.jsdelivr.net/gh/anaer/Sub@main/rules/classical/google.yaml
-    path: ./rules/classical/google.yaml
-    interval: 86400
-    proxy: DIRECT
-  github:
-    type: http
-    behavior: classical
-    url: https://cdn.jsdelivr.net/gh/anaer/Sub@main/rules/classical/github.yaml
-    path: ./rules/classical/github.yaml
-    interval: 86400
-    proxy: DIRECT
-  openai:
-    type: http
-    behavior: classical
-    url: https://cdn.jsdelivr.net/gh/anaer/Sub@main/rules/classical/openai.yaml
-    path: ./rules/classical/openai.yaml
-    interval: 86400
-    proxy: DIRECT
-  telegram:
-    type: http
-    behavior: classical
-    url: https://cdn.jsdelivr.net/gh/anaer/Sub@main/rules/classical/telegram.yaml
-    path: ./rules/classical/telegram.yaml
-    interval: 86400
-    proxy: DIRECT
-  spotify:
-    type: http
-    behavior: classical
-    url: https://cdn.jsdelivr.net/gh/anaer/Sub@main/rules/classical/spotify.yaml
-    path: ./rules/classical/spotify.yaml
-    interval: 86400
-    proxy: DIRECT
-  applications:
-    type: http
-    behavior: classical
-    url: https://cdn.jsdelivr.net/gh/anaer/Sub@main/rules/classical/applications.yaml
-    path: ./rules/classical/applications.yaml
-    interval: 86400
-    proxy: DIRECT
-  block:
-    type: http
-    behavior: classical
-    url: https://cdn.jsdelivr.net/gh/anaer/Sub@main/rules/classical/block.yaml
-    path: ./rules/classical/block.yaml
-    interval: 86400
-    proxy: DIRECT
   direct-classical:
     type: http
     behavior: classical
@@ -2032,5 +2858,12 @@ rule-providers:
     behavior: classical
     url: https://cdn.jsdelivr.net/gh/anaer/Sub@main/rules/classical/proxy.yaml
     path: ./rules/classical/proxy.yaml
+    interval: 86400
+    proxy: DIRECT
+  applications:
+    type: http
+    behavior: classical
+    url: https://cdn.jsdelivr.net/gh/anaer/Sub@main/rules/classical/applications.yaml
+    path: ./rules/classical/applications.yaml
     interval: 86400
     proxy: DIRECT
