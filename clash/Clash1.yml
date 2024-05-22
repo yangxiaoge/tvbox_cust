@@ -3781,7 +3781,7 @@ proxies:
   ws-opts:
     headers:
       Host: jp.xlb8.eu.org
-    path: /?ed=2048&amp;Telegram🇨🇳
+    path: /?ed=2048
 - alterId: 0
   cipher: auto
   name: 瑞典 007
@@ -4728,73 +4728,1825 @@ proxies:
   type: vless
   udp: true
   uuid: cf13832b-4ca0-4fee-8e85-2b2411104e75
-- name: 美国 097
-  type: vless
-  uuid: cf13832b-4ca0-4fee-8e85-2b2411104e75
-  server: us02.421421.xyz
-  port: 20230
-  udp: true
-  tls: true
-  tfo: false
-  skip-cert-verify: true
-  client-fingerprint: chrome
+- client-fingerprint: chrome
   flow: xtls-rprx-vision
+  name: 美国 097
+  network: tcp
+  port: 20230
   reality-opts:
     public-key: gKQ1iax36vjbOYLKLveiSn_OnlBVAf3ecHLpQnrC4jw
     short-id: a7464bff
-  network: tcp
-- name: 塞浦路斯 001
-  type: vless
-  uuid: b4909ebb-bed6-44c9-9ca2-918cf9cdd296
-  server: 77.75.199.163
-  port: 443
-  udp: true
-  tls: true
-  tfo: false
+  server: us02.421421.xyz
   skip-cert-verify: true
-  client-fingerprint: chrome
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: cf13832b-4ca0-4fee-8e85-2b2411104e75
+- client-fingerprint: chrome
+  name: 塞浦路斯 001
   network: ws
+  port: 443
+  server: 77.75.199.163
   servername: djjchk1.djjc.sbs
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: b4909ebb-bed6-44c9-9ca2-918cf9cdd296
   ws-opts:
     headers:
       host: djjchk1.djjc.sbs
     path: /djjc/hk1
-- name: 韩国 043
-  type: vless
-  uuid: b4909ebb-bed6-44c9-9ca2-918cf9cdd296
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 韩国 043
+  network: tcp
+  port: 443
   server: 152.67.219.54
-  port: 443
-  udp: true
-  tls: true
-  tfo: false
   skip-cert-verify: true
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  network: tcp
-- name: 香港 007
+  tfo: false
+  tls: true
   type: vless
+  udp: true
   uuid: b4909ebb-bed6-44c9-9ca2-918cf9cdd296
+- client-fingerprint: safari
+  flow: xtls-rprx-vision
+  name: 香港 007
+  network: tcp
+  port: 443
   server: 178.173.236.233
-  port: 443
-  udp: true
-  tls: true
-  tfo: false
   skip-cert-verify: true
-  client-fingerprint: safari
-  flow: xtls-rprx-vision
-  network: tcp
-- name: 德国 017
+  tfo: false
+  tls: true
   type: vless
-  uuid: b4909ebb-bed6-44c9-9ca2-918cf9cdd296
-  server: 5.104.107.143
-  port: 443
   udp: true
-  tls: true
-  tfo: false
-  skip-cert-verify: true
-  client-fingerprint: chrome
+  uuid: b4909ebb-bed6-44c9-9ca2-918cf9cdd296
+- client-fingerprint: chrome
   flow: xtls-rprx-vision
+  name: 德国 017
   network: tcp
+  port: 443
+  server: 5.104.107.143
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: b4909ebb-bed6-44c9-9ca2-918cf9cdd296
+- name: 美国 098
+  network: ws
+  port: 2053
+  server: 47.76.178.146
+  servername: jd.wxgqlfx.top
+  tls: true
+  type: vless
+  uuid: 38a2070d-a256-48f3-891b-c9b68b01c8f7
+  ws-opts:
+    headers:
+      host: jd.wxgqlfx.top
+    path: /
+- name: 香港 008
+  network: ws
+  port: 443
+  server: 159.138.131.240
+  servername: kk313.ylks.link
+  tls: true
+  type: vless
+  uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
+  ws-opts:
+    headers:
+      host: kk313.ylks.link
+    path: /
+- name: 香港 009
+  network: ws
+  port: 30958
+  server: 43.154.74.39
+  servername: v313.ylks.link
+  tls: true
+  type: vless
+  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
+  ws-opts:
+    headers:
+      host: v313.ylks.link
+    path: /
+- name: 韩国 044
+  network: ws
+  port: 10102
+  server: 221.162.188.134
+  servername: v313.ylks.link
+  tls: true
+  type: vless
+  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
+  ws-opts:
+    headers:
+      host: v313.ylks.link
+    path: /proxyip=proxyip.kr.fxxk.dedyn.io
+- name: 韩国 045
+  network: ws
+  port: 2087
+  server: 193.123.250.209
+  servername: zdy313.kpcloud.eu.org
+  tls: true
+  type: vless
+  uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
+  ws-opts:
+    headers:
+      host: zdy313.kpcloud.eu.org
+    path: /
+- name: 韩国 046
+  network: ws
+  port: 11180
+  server: 222.108.215.96
+  servername: kk313.ylks.link
+  tls: true
+  type: vless
+  uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
+  ws-opts:
+    headers:
+      host: kk313.ylks.link
+    path: /freecodes
+- name: 日本 012
+  network: tcp
+  password: 757b6db0-be90-40b1-8980-664bba40ae46
+  port: 443
+  server: sg.mjt000.com
+  skip-cert-verify: true
+  sni: sg.mjt000.com
+  type: trojan
+  udp: true
+- name: 韩国 047
+  network: ws
+  port: 443
+  server: 130.162.140.215
+  servername: kk313.ylks.link
+  tls: true
+  type: vless
+  uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
+  ws-opts:
+    headers:
+      host: kk313.ylks.link
+    path: /blue
+- name: 加拿大 110
+  network: ws
+  port: 8080
+  server: kk313.ylks.link
+  servername: kk313.ylks.link
+  tls: false
+  type: vless
+  uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
+  ws-opts:
+    headers:
+      host: kk313.ylks.link
+    path: /youtube-由零開始
+- name: 韩国 048
+  network: ws
+  port: 10776
+  server: 115.93.169.180
+  servername: cfed.tgzdyz2.top
+  tls: true
+  type: vless
+  uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
+  ws-opts:
+    headers:
+      host: cfed.tgzdyz2.top
+    path: tg
+- name: 新加坡 008
+  network: ws
+  port: 19081
+  server: 168.138.160.54
+  servername: xin313.ylks.link
+  tls: true
+  type: vless
+  uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869
+  ws-opts:
+    headers:
+      host: xin313.ylks.link
+    path: /proxyip=proxyip.sg.fxxk.dedyn.io
+- name: 韩国 049
+  network: ws
+  port: 39359
+  server: 61.85.69.73
+  servername: v313.ylks.link
+  tls: true
+  type: vless
+  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
+  ws-opts:
+    headers:
+      host: v313.ylks.link
+    path: /proxyip=proxyip.kr.fxxk.dedyn.io
+- name: 韩国 050
+  network: ws
+  port: 29133
+  server: 1.221.115.142
+  servername: cfed.tgzdyz2.top
+  tls: true
+  type: vless
+  uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
+  ws-opts:
+    headers:
+      host: cfed.tgzdyz2.top
+    path: tg
+- name: 日本 013
+  network: ws
+  port: 34237
+  server: 138.2.10.249
+  servername: v313.ylks.link
+  tls: true
+  type: vless
+  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
+  ws-opts:
+    headers:
+      host: v313.ylks.link
+    path: /?ed=2560
+- name: 韩国 051
+  network: ws
+  port: 47590
+  server: 146.56.141.168
+  servername: cfed.tgzdyz2.top
+  tls: true
+  type: vless
+  uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
+  ws-opts:
+    headers:
+      host: cfed.tgzdyz2.top
+    path: tg
+- name: 韩国 052
+  network: ws
+  port: 30671
+  server: 182.227.98.7
+  servername: cfed.tgzdyz2.top
+  tls: true
+  type: vless
+  uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
+  ws-opts:
+    headers:
+      host: cfed.tgzdyz2.top
+    path: tg
+- name: 韩国 053
+  network: ws
+  port: 55040
+  server: 129.154.192.228
+  servername: kk313.ylks.link
+  tls: true
+  type: vless
+  uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
+  ws-opts:
+    headers:
+      host: kk313.ylks.link
+    path: /blue
+- alterId: 0
+  cipher: auto
+  name: 加拿大 111
+  network: ws
+  port: 8080
+  server: 172.67.92.50
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: d930577a-2543-3f74-bd62-fda462fc8c18
+  ws-opts:
+    headers:
+      Host: 100-100-17-111.db-link01.top
+    path: /dabai.in172.67.92.50
+- alterId: 0
+  cipher: auto
+  name: 加拿大 112
+  network: ws
+  port: 80
+  server: 104.25.165.223
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: d930577a-2543-3f74-bd62-fda462fc8c18
+  ws-opts:
+    headers:
+      Host: 100-100-17-18.cn-db.top
+    path: /dabai.in104.25.165.223
+- alterId: 0
+  cipher: auto
+  name: 加拿大 113
+  network: ws
+  port: 2082
+  server: 104.21.42.170
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: d930577a-2543-3f74-bd62-fda462fc8c18
+  ws-opts:
+    headers:
+      Host: 100-100-17-109.db-link02.top
+    path: /dabai.in104.21.42.170
+- alterId: 0
+  cipher: auto
+  name: 加拿大 114
+  network: ws
+  port: 2053
+  server: 172.67.110.191
+  servername: 100-100-17-217.db-link01.top
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: d930577a-2543-3f74-bd62-fda462fc8c18
+  ws-opts:
+    headers:
+      Host: 100-100-17-217.db-link01.top
+    path: /dabai.in172.67.110.191
+- alterId: 0
+  cipher: auto
+  name: 加拿大 115
+  network: ws
+  port: 80
+  server: 104.24.203.111
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: d930577a-2543-3f74-bd62-fda462fc8c18
+  ws-opts:
+    headers:
+      Host: 100-100-17-492.db-link01.top
+    path: /dabai.in104.24.203.111
+- alterId: 0
+  cipher: auto
+  name: 加拿大 116
+  network: ws
+  port: 2096
+  server: 104.20.81.242
+  servername: 100-100-17-309.db-link01.top
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: d930577a-2543-3f74-bd62-fda462fc8c18
+  ws-opts:
+    headers:
+      Host: 100-100-17-309.db-link01.top
+    path: /dabai.in104.20.81.242
+- alterId: 0
+  cipher: auto
+  name: 美国 099
+  network: ws
+  port: 2053
+  server: 172.67.51.31
+  servername: 100-100-17-134.db-link02.top
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: d930577a-2543-3f74-bd62-fda462fc8c18
+  ws-opts:
+    headers:
+      Host: 100-100-17-134.db-link02.top
+    path: /dabai.in172.67.51.31
+- alterId: 0
+  cipher: auto
+  country: SE
+  h2-opts: {}
+  http-opts: {}
+  name: 瑞典 013
+  network: ws
+  port: 2052
+  server: 185.146.173.32
+  servername: V2ray-_-_-_-_-_-Seyyedmt.Yahazrtabbassblogfamooshakbalestik.Blog.
+  skip-cert-verify: true
+  type: vmess
+  uuid: 0c55ba35-b978-4324-a3e1-cf0f666aed00
+  ws-opts:
+    headers:
+      HOST: V2ray-_-_-_-_-_-Seyyedmt.Yahazrtabbassblogfamooshakbalestik.Blog.
+    path: /index.php/SeYeDMT
+- alterId: 0
+  cipher: auto
+  name: 伊朗 003
+  network: ws
+  port: 8080
+  server: 2.189.89.169
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 703c72a7-9ee7-40b6-b134-9f8fa513fa8a
+  ws-opts:
+    headers:
+      host: ExPlEtIvE-ImItAtE-TuBlEsS-RaMbLe-ElSeWhErE.0912.iR.cOM.My.OrG_-_-_-_-_-_.xn--Company.HaMiShElUxbEmoN.teCH.
+    path: /CAT,Extrude-Aside-Aware,Reusable-Partner-Panther,Gear-Posture-Sprig,Outfit-Natural-Absolve,Unshipped-Twilight-Reselect,Profane-Fancy-Ship,Nineteen-Slicer-Hence,Could-Unwary-Manual,Ardently-Browse-Subscribe-Expire?ed=2056
+- alterId: 0
+  cipher: auto
+  name: 伊朗 004
+  network: tcp
+  port: 12077
+  server: 188.75.92.107
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 99bf4fe7-f3bf-46b4-9b49-7960c54ad19d
+- client-fingerprint: chrome
+  name: 德国 018
+  network: ws
+  port: 22222
+  server: 18.199.212.91
+  servername: telegram-channel-vlessconfig.sohala.uk
+  tls: true
+  type: vless
+  udp: false
+  uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+  ws-opts:
+    headers:
+      host: telegram-channel-vlessconfig.sohala.uk
+    path: /telegram-channel-vlessconfig-ws
+- client-fingerprint: chrome
+  name: 美国 100
+  network: ws
+  port: 22222
+  server: 13.50.168.196
+  servername: telegram-channel-vlessconfig.sohala.uk
+  tls: true
+  type: vless
+  udp: false
+  uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+  ws-opts:
+    headers:
+      host: telegram-channel-vlessconfig.sohala.uk
+    path: /telegram-channel-vlessconfig-ws
+- client-fingerprint: chrome
+  name: 瑞典 014
+  network: ws
+  port: 22222
+  server: 51.21.28.85
+  servername: telegram-channel-vlessconfig.sohala.uk
+  tls: true
+  type: vless
+  udp: false
+  uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+  ws-opts:
+    headers:
+      host: telegram-channel-vlessconfig.sohala.uk
+    path: /telegram-channel-vlessconfig-ws
+- client-fingerprint: chrome
+  name: 加拿大 117
+  network: ws
+  port: 80
+  server: ahgdjs.digitalcity7.com
+  tls: false
+  type: vless
+  udp: false
+  uuid: ca516cd7-1679-423c-ad33-019b7ab3f229
+  ws-opts:
+    headers:
+      host: netflixv🥱🖕giufyduuvgguiigyquhoihtfxtopuihojV2rayolhgyfyvyvlknouvrdfed2s2svyhij22kkuogifjfkfifofotitirruye63467r8t8t8tgigjgjvnvmfsraew4w4w5e5e7t8y9u9uhoihopjjpkbbkvngnmcmchfyfdy6deuyeywueotogicih7uhihfyyydhdhfydfyjjhfdhfy1.1.naziitness.com.
+    path: /V2ray.motorcycles?ed=80
+- client-fingerprint: chrome
+  name: 瑞典 015
+  network: ws
+  port: 80
+  server: api.V2ray.re
+  tls: false
+  type: vless
+  udp: false
+  uuid: ca516cd7-1679-423c-ad33-019b7ab3f229
+  ws-opts:
+    headers:
+      host: netflixv🥱🖕giufyduuvgguiigyquhoihtfxtopuihojV2rayolhgyfyvyvlknouvrdfed2s2svyhij22kkuogifjfkfifofotitirruye63467r8t8t8tgigjgjvnvmfsraew4w4w5e5e7t8y9u9uhoihopjjpkbbkvngnmcmchfyfdy6deuyeywueotogicih7uhihfyyydhdhfydfyjjhfdhfy1.1.naziitness.com.
+    path: /V2ray.motorcycles?ed=80
+- client-fingerprint: chrome
+  name: 加拿大 118
+  network: ws
+  port: 80
+  server: mc.digitalcity7.com
+  tls: false
+  type: vless
+  udp: false
+  uuid: d30c35a7-c3fd-4cbb-8977-0e90319fa066
+  ws-opts:
+    headers:
+      host: CsgoV2ray.naziitness.cOm.
+    path: /V2ray.motorcycles?ed=80
+- client-fingerprint: chrome
+  name: 加拿大 119
+  network: ws
+  port: 443
+  server: 104.16.54.14
+  servername: xeeqi.kevani8800.workers.dev
+  tls: true
+  type: vless
+  udp: false
+  uuid: 3cdbc462-6272-4c2a-9a2d-1525a81c7dfa
+  ws-opts:
+    headers:
+      host: xeeqi.kevani8800.workers.dev
+    path: /?ed
+- client-fingerprint: chrome
+  name: 加拿大 120
+  network: ws
+  port: 443
+  server: 104.19.138.140
+  servername: mmdv2.pages.dev
+  tls: true
+  type: vless
+  udp: false
+  uuid: d9eb0df3-3190-4447-86b6-656fe5ff1119
+  ws-opts:
+    headers:
+      host: mmdv2.pages.dev
+    path: /?ed=2048
+- client-fingerprint: chrome
+  name: 美国 101
+  network: ws
+  port: 8880
+  server: 104.21.40.63
+  tls: false
+  type: vless
+  udp: false
+  uuid: b21813ba-c7c1-43e6-b51c-76f92bf66fd0
+  ws-opts:
+    headers:
+      host: ftp.debian.org.www.speedtest.net.免费上网67.Site.
+    path: /telegram-proxy-mtm-telegram-proxy-mtm-telegram-proxy-mtm?ed=2056
+- client-fingerprint: chrome
+  name: 加拿大 121
+  network: ws
+  port: 8880
+  server: 172.64.34.184
+  tls: false
+  type: vless
+  udp: false
+  uuid: 26f4a744-a092-413f-9b7d-25738f15a4ae
+  ws-opts:
+    headers:
+      host: 2.v2ray.debian.org.fxp.debian.org.speedtest.net.らわなさらわ.irdonald.click.
+    path: /telegram-donald?ed=2048
+- client-fingerprint: chrome
+  name: 加拿大 122
+  network: ws
+  port: 8080
+  server: 162.159.137.232
+  tls: false
+  type: vless
+  udp: false
+  uuid: a4edfb97-0d41-4393-a665-9e8945dd83c6
+  ws-opts:
+    headers:
+      host: de2.过滤器.store.
+    path: /melov2ray/melov2ray/melov2ray/melov2ray/melov2ray/melov2ray/melov2ray
+- client-fingerprint: chrome
+  name: 哥斯达黎加 003
+  network: ws
+  port: 80
+  server: 190.93.247.155
+  tls: false
+  type: vless
+  udp: false
+  uuid: f1fc0d3f-570c-4a02-85f6-fd26ea9e7e23
+  ws-opts:
+    headers:
+      host: 2.V2ray.debian.org.fxp.debian.org.speedtest.net.らわなさらわ.iroralph.monster.
+    path: /telegram-MinoVpnCh,telegram-MinoVpnCh,telegram-MinoVpnCh,telegram-MinoVpnCh,telegram-MinoVpnCh,telegram-MinoVpnCh,telegram-MinoVpnCh,telegram-MinoVpnCh,telegram-MinoVpnCh,telegram-MinoVpnCh,telegram-MinoVpnCh,telegram-MinoVpnCh?ed=2048
+- client-fingerprint: chrome
+  name: 瑞典 016
+  network: ws
+  port: 80
+  server: 185.146.173.77
+  tls: false
+  type: vless
+  udp: false
+  uuid: 36c4f39b-c4d6-47c0-82d8-98ec412e5630
+  ws-opts:
+    headers:
+      host: 1.v2ray.mihanyas.ir.mbj.farsroid.com.列列男事的事列上赛男78.coM.
+    path: /telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER?ed=2056
+- client-fingerprint: chrome
+  name: 瑞典 017
+  network: ws
+  port: 8443
+  server: 185.146.173.122
+  servername: shjhjb.servernet.cfd
+  tls: true
+  type: vless
+  udp: false
+  uuid: 9c5c65f0-698b-4731-95eb-7fb3050657b5
+  ws-opts:
+    headers:
+      host: shjhjb.servernet.cfd.
+    path: /
+- client-fingerprint: chrome
+  name: 加拿大 123
+  network: ws
+  port: 2095
+  server: 162.159.134.234
+  tls: false
+  type: vless
+  udp: false
+  uuid: ece26d7d-1d68-4cd9-996b-5f5cc4c649c9
+  ws-opts:
+    headers:
+      host: gvrfcvc.numall.xyz.
+    path: /
+- client-fingerprint: chrome
+  name: 英国 007
+  network: ws
+  port: 2052
+  server: 91.193.58.1
+  tls: false
+  type: vless
+  udp: false
+  uuid: f9bfe7bb-dc57-4223-8648-e3fbc12689f7
+  ws-opts:
+    headers:
+      host: 穆罕默德侯赛superspeed12.ff2ray.cfd.
+    path: /?ed=2053
+- client-fingerprint: chrome
+  name: 美国 102
+  network: ws
+  port: 2052
+  server: zula.ir
+  tls: false
+  type: vless
+  udp: false
+  uuid: f9bfe7bb-dc57-4223-8648-e3fbc12689f7
+  ws-opts:
+    headers:
+      host: 穆罕默德侯赛superspeed12.ff2ray.cfd.
+    path: /?ed=2053
+- client-fingerprint: chrome
+  name: 加拿大 124
+  network: ws
+  port: 80
+  server: 104.16.54.150
+  tls: false
+  type: vless
+  udp: false
+  uuid: a81b314c-3ab7-48d3-b8c0-584c89e5f616
+  ws-opts:
+    headers:
+      host: xswa.kevani8800.workers.dev
+    path: /Telegram
+- client-fingerprint: chrome
+  name: 瑞典 018
+  network: ws
+  port: 80
+  server: 185.146.173.32
+  tls: false
+  type: vless
+  udp: false
+  uuid: b0afa5de-9e49-4b59-b757-dde265b98046
+  ws-opts:
+    headers:
+      host: Reza_OFF.markazdl.ir.
+    path: /
+- client-fingerprint: chrome
+  name: 加拿大 125
+  network: ws
+  port: 443
+  server: 104.18.34.251
+  servername: B458aB02.cAa-CHANEL-WORKER-pAge-fREE-jhUiHnuJhpHJKL-nIHGKjn.PAges.Dev
+  tls: true
+  type: vless
+  udp: false
+  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
+  ws-opts:
+    headers:
+      host: b458ab02.CAa-cHANel-woRkEr-PaGE-FRee-jHUIhNUJhPhjkl-NiHGkjn.paGEs.dev
+    path: /
+- client-fingerprint: chrome
+  name: 加拿大 126
+  network: ws
+  port: 443
+  server: 172.66.47.2
+  servername: de4ecf6b.isvphp-4g8.pages.dev
+  tls: true
+  type: vless
+  udp: false
+  uuid: bcf50589-9654-4331-93a6-da896914ec47
+  ws-opts:
+    headers:
+      host: de4ecf6b.isvphp-4g8.pages.dev
+    path: telegram.
+- client-fingerprint: chrome
+  name: 瑞典 019
+  network: ws
+  port: 8080
+  server: 185.146.173.146
+  tls: false
+  type: vless
+  udp: false
+  uuid: 5ef7c8f8-d892-4e0d-9e58-fea410e247c8
+  ws-opts:
+    headers:
+      host: V2ray-_-_-_-_-_-MmD.net.V2rayNG6.6.6.6.ir.Co.MSite.xn--fHq0la447aac5504dea701Axr1G.ArviNBalucH.IR.
+    path: /telegram-
+- client-fingerprint: chrome
+  name: 瑞典 020
+  network: ws
+  port: 8080
+  server: 185.146.173.58
+  tls: false
+  type: vless
+  udp: false
+  uuid: 4ca031a8-5d29-45d3-bdd7-4465ac3e0d32
+  ws-opts:
+    headers:
+      host: 3.V2ray.mihanyas.ir.mbj.farsroid.com.列列男事的事列上赛男78.Store.
+    path: /telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER?ed=2048
+- client-fingerprint: chrome
+  name: 美国 103
+  network: ws
+  port: 8080
+  server: 172.64.150.28
+  tls: false
+  type: vless
+  udp: false
+  uuid: 42642f5b-50a9-4d81-854f-10ff790b8acc
+  ws-opts:
+    headers:
+      host: de.过滤器.store.
+    path: /melov2ray/melov2ray/melov2ray/melov2ray/melov2ray/melov2ray/melov2ray
+- client-fingerprint: chrome
+  name: 瑞典 021
+  network: ws
+  port: 2052
+  server: 185.146.173.58
+  tls: false
+  type: vless
+  udp: false
+  uuid: 16378894-0483-4190-a159-ab2ab8f0123c
+  ws-opts:
+    headers:
+      host: xn---qhantayawi--c-9wl9bqtr75a955a5b97asba44yjwac23607hkhja.xn--94q488fl6grlogzeo1h.cliffhanger24.lol.
+    path: '@mehrosaboran'
+- client-fingerprint: chrome
+  name: 加拿大 127
+  network: ws
+  port: 443
+  server: 104.18.27.94
+  servername: esetsecuritylicense.rcffvco.workers.dev
+  tls: true
+  type: vless
+  udp: false
+  uuid: dcc65397-34a5-4975-9ed7-c1f841b59ff8
+  ws-opts:
+    headers:
+      host: esetsecuritylicense.rcffvco.workers.dev
+    path: /
+- client-fingerprint: chrome
+  name: 美国 104
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 3.65.189.224
+  skip-cert-verify: false
+  sni: trojan.burgerip.co.uk
+  type: trojan
+  udp: false
+- client-fingerprint: chrome
+  name: 瑞典 022
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 16.16.137.155
+  skip-cert-verify: false
+  sni: trojan.burgerip.co.uk
+  type: trojan
+  udp: false
+- client-fingerprint: chrome
+  name: 加拿大 128
+  network: tcp
+  password: telegram-id-directvpn
+  port: 22222
+  server: 15.157.131.175
+  skip-cert-verify: false
+  sni: trojan.burgerip.co.uk
+  type: trojan
+  udp: false
+- client-fingerprint: chrome
+  name: 爱尔兰 001
+  network: tcp
+  password: telegram-id-directvpn
+  port: 22222
+  server: 54.73.142.124
+  skip-cert-verify: false
+  sni: trojan.burgerip.co.uk
+  type: trojan
+  udp: false
+- alterId: 0
+  cipher: auto
+  name: 加拿大 129
+  network: ws
+  port: 80
+  server: 104.16.45.182
+  skip-cert-verify: true
+  type: vmess
+  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
+  ws-opts:
+    headers:
+      Host: jp.xlb8.eu.org
+    path: /?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 加拿大 130
+  network: ws
+  port: 80
+  server: 104.16.45.212
+  skip-cert-verify: true
+  type: vmess
+  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
+  ws-opts:
+    headers:
+      Host: jp.xlb8.eu.org
+    path: /?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 加拿大 131
+  network: ws
+  port: 80
+  server: 104.16.45.131
+  skip-cert-verify: true
+  type: vmess
+  uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
+  ws-opts:
+    headers:
+      Host: jp.xlb8.eu.org
+    path: /?ed=2048
+- name: 日本 014
+  network: ws
+  port: 34237
+  server: 45.251.241.103
+  servername: cfed.tgzdyz2.top
+  tls: true
+  type: vless
+  uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
+  ws-opts:
+    headers:
+      host: cfed.tgzdyz2.top
+    path: tg
+- name: 日本 015
+  network: ws
+  port: 21010
+  server: 45.66.129.95
+  servername: jp313.ylks01.eu.org
+  tls: true
+  type: vless
+  uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
+  ws-opts:
+    headers:
+      host: jp313.ylks01.eu.org
+    path: /
+- name: 美国 105
+  network: ws
+  port: 23559
+  server: 158.178.240.232
+  servername: zdy313.kpcloud.eu.org
+  tls: true
+  type: vless
+  uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
+  ws-opts:
+    headers:
+      host: zdy313.kpcloud.eu.org
+    path: /
+- name: 韩国 054
+  network: ws
+  port: 17472
+  server: 140.238.29.212
+  servername: jd.wxgqlfx.top
+  tls: true
+  type: vless
+  uuid: 38a2070d-a256-48f3-891b-c9b68b01c8f7
+  ws-opts:
+    headers:
+      host: jd.wxgqlfx.top
+    path: /
+- name: 韩国 055
+  network: ws
+  port: 8443
+  server: 132.145.91.171
+  servername: xin333.ylks.link
+  tls: true
+  type: vless
+  uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869
+  ws-opts:
+    headers:
+      host: xin333.ylks.link
+    path: /
+- name: 日本 016
+  network: ws
+  port: 443
+  server: 131.186.62.248
+  servername: xin313.ylks.link
+  tls: true
+  type: vless
+  uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869
+  ws-opts:
+    headers:
+      host: xin313.ylks.link
+    path: /
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 美国 106
+  network: ws
+  port: 2052
+  server: visa.com
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: f405eff1-9372-4004-b204-ea6edade31cb
+  ws-opts:
+    headers:
+      Host: acmf.zhangyan56.pp.ua
+    path: /cdcxddd
+- alterId: 0
+  cipher: auto
+  name: 加拿大 132
+  network: ws
+  port: 2083
+  server: 172.67.2.57
+  servername: 100-100-17-76.db-link01.top
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: d930577a-2543-3f74-bd62-fda462fc8c18
+  ws-opts:
+    headers:
+      Host: 100-100-17-76.db-link01.top
+    path: /dabai.in172.67.2.57
+- alterId: 0
+  cipher: auto
+  name: 加拿大 133
+  network: ws
+  port: 2082
+  server: 172.67.15.183
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: d930577a-2543-3f74-bd62-fda462fc8c18
+  ws-opts:
+    headers:
+      Host: 100-100-17-62.cn-db.top
+    path: /dabai.in172.67.15.183
+- alterId: 0
+  cipher: auto
+  name: 加拿大 134
+  network: ws
+  port: 8880
+  server: 104.24.64.32
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: d930577a-2543-3f74-bd62-fda462fc8c18
+  ws-opts:
+    headers:
+      Host: 100-100-17-10.db-link02.top
+    path: /dabai.in104.24.64.32
+- alterId: 0
+  cipher: auto
+  name: 加拿大 135
+  network: ws
+  port: 2083
+  server: 104.19.198.0
+  servername: 100-100-17-132.cn-db.top
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: d930577a-2543-3f74-bd62-fda462fc8c18
+  ws-opts:
+    headers:
+      Host: 100-100-17-132.cn-db.top
+    path: /dabai.in104.19.198.0
+- alterId: 0
+  cipher: auto
+  name: 加拿大 136
+  network: ws
+  port: 443
+  server: 104.16.2.51
+  servername: 100-100-17-466.db-link02.top
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: d930577a-2543-3f74-bd62-fda462fc8c18
+  ws-opts:
+    headers:
+      Host: 100-100-17-466.db-link02.top
+    path: /dabai.in104.16.2.51
+- alterId: 0
+  cipher: auto
+  name: 加拿大 137
+  network: ws
+  port: 2083
+  server: 104.17.163.46
+  servername: 100-100-17-231.cn-db.top
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: d930577a-2543-3f74-bd62-fda462fc8c18
+  ws-opts:
+    headers:
+      Host: 100-100-17-231.cn-db.top
+    path: /dabai.in104.17.163.46
+- alterId: 0
+  cipher: auto
+  name: 加拿大 138
+  network: ws
+  port: 2086
+  server: 172.67.4.225
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: d930577a-2543-3f74-bd62-fda462fc8c18
+  ws-opts:
+    headers:
+      Host: 100-100-17-164.db-link02.top
+    path: /dabai.in172.67.4.225
+- alterId: 0
+  cipher: auto
+  name: 加拿大 139
+  network: ws
+  port: 80
+  server: 104.18.5.191
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 1ed3f9fd-7adb-4971-b8c0-3d4916290982
+  ws-opts:
+    headers:
+      Host: oA5FSz9Tjp1.yofnhkfc.xyz
+    path: /video/P7EExoE2
+- client-fingerprint: chrome
+  name: 德国 019
+  network: ws
+  port: 22222
+  server: 3.125.146.27
+  servername: telegram-channel-vlessconfig.sohala.uk
+  tls: true
+  type: vless
+  udp: false
+  uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+  ws-opts:
+    headers:
+      host: telegram-channel-vlessconfig.sohala.uk
+    path: /telegram-channel-vlessconfig-ws
+- client-fingerprint: chrome
+  name: 加拿大 140
+  network: ws
+  port: 80
+  server: check-host.net
+  tls: false
+  type: vless
+  udp: false
+  uuid: 475c7047-b27c-4a67-a821-5cfb992aae6a
+  ws-opts:
+    headers:
+      host: 1.ftp.debian.org.www.speedtest.net.免费上网67.Site.
+    path: //telegram-proxy-mtm-telegram-proxy-mtm-telegram-proxy-mtm?ed=2048
+- client-fingerprint: chrome
+  name: 加拿大 141
+  network: ws
+  port: 80
+  server: 104.19.247.91
+  tls: false
+  type: vless
+  udp: false
+  uuid: e9f1d58a-21ae-4af1-b463-beca8a7cabb6
+  ws-opts:
+    headers:
+      host: vmessorg1.xn--54qv00ez5ar77g.co.
+    path: '/Telegram:'
+- client-fingerprint: chrome
+  name: 加拿大 142
+  network: ws
+  port: 8080
+  server: 104.18.71.193
+  tls: false
+  type: vless
+  udp: false
+  uuid: 9cd6e660-fa72-415d-a60d-64aa16574ab0
+  ws-opts:
+    headers:
+      host: EnRheo.BALe.Bio
+    path: /
+- client-fingerprint: chrome
+  name: 加拿大 143
+  network: ws
+  port: 443
+  server: 172.67.163.103
+  servername: xswa.kevani8800.workers.dev
+  tls: true
+  type: vless
+  udp: false
+  uuid: a81b314c-3ab7-48d3-b8c0-584c89e5f616
+  ws-opts:
+    headers:
+      host: xswa.kevani8800.workers.dev
+    path: /Telegram
+- client-fingerprint: chrome
+  name: 美国 107
+  network: ws
+  port: 2096
+  server: 66.235.200.88
+  servername: eiiim.danesh-bonyan.Store
+  tls: true
+  type: vless
+  udp: false
+  uuid: 5a691646-82a2-4873-ba69-40cc048b4e88
+  ws-opts:
+    headers:
+      host: eiiim.danesh-bonyan.Store
+    path: join.----------------Telegram-EiiiM----------------Telegram-EiiiM---------------.Telegram-EiiiM.
+- client-fingerprint: chrome
+  name: 瑞典 023
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 13.53.58.7
+  skip-cert-verify: false
+  sni: trojan.burgerip.co.uk
+  type: trojan
+  udp: false
+- client-fingerprint: chrome
+  name: 爱尔兰 002
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 108.128.110.150
+  skip-cert-verify: false
+  sni: trojan.burgerip.co.uk
+  type: trojan
+  udp: false
+- alterId: 4
+  cipher: auto
+  name: 加拿大 144
+  network: ws
+  port: 443
+  server: 104.19.45.116
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: dbb1253f-c663-42b0-a3bf-ceae0e8d0e46
+  ws-opts:
+    headers:
+      Host: 35044ac9a120f4dd5.spbohk.com
+    path: /ceae0e8d0e46
+- alterId: 4
+  cipher: auto
+  name: 加拿大 145
+  network: ws
+  port: 443
+  server: 104.19.192.19
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 62af99c3-0874-40a8-bb0c-15708625d2bf
+  ws-opts:
+    headers:
+      Host: cf.souji.ga
+    path: /iue/l2vesav
+- client-fingerprint: random
+  name: 新加坡 009
+  network: ws
+  port: 41002
+  server: 138.2.79.21
+  servername: a17cabb5-3f13-4056-b0ce-476143491d4b.blackbeautifulman.cloudns.org
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 113dd109-540e-4497-9d47-eed30315260f
+  ws-opts:
+    headers:
+      Host: a17cabb5-3f13-4056-b0ce-476143491d4b.blackbeautifulman.cloudns.org
+    path: /edgetunnel.2424014450.workers.dev/proxyIP=proxyip.sg.fxxk.dedyn.io
+- client-fingerprint: chrome
+  name: 美国 108
+  network: ws
+  port: 2082
+  server: 130.250.137.142
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: 113dd109-540e-4497-9d47-eed30315260f
+  ws-opts:
+    headers:
+      Host: edgetunnel.2424014450.workers.dev
+    path: /proxyIP=proxyip.us.fxxk.dedyn.io
+- client-fingerprint: chrome
+  name: 美国 109
+  network: ws
+  port: 2052
+  server: 130.250.137.29
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: 113dd109-540e-4497-9d47-eed30315260f
+  ws-opts:
+    headers:
+      Host: edgetunnel.2424014450.workers.dev
+    path: /proxyIP=proxyip.us.fxxk.dedyn.io
+- client-fingerprint: chrome
+  name: 美国 110
+  network: ws
+  port: 2052
+  server: 130.250.137.190
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: 113dd109-540e-4497-9d47-eed30315260f
+  ws-opts:
+    headers:
+      Host: edgetunnel.2424014450.workers.dev
+    path: /proxyIP=proxyip.us.fxxk.dedyn.io
+- client-fingerprint: random
+  name: 韩国 056
+  network: ws
+  port: 33452
+  server: 210.126.38.13
+  servername: 8582b6f2-7192-4da8-a4cb-c480b71e6c58.e8e54e0f-6317-448a-9999-95f6e16f7117.ooguy.com
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 113dd109-540e-4497-9d47-eed30315260f
+  ws-opts:
+    headers:
+      Host: 8582b6f2-7192-4da8-a4cb-c480b71e6c58.e8e54e0f-6317-448a-9999-95f6e16f7117.ooguy.com
+    path: /edgetunnel.2424014450.workers.dev/proxyIP=proxyip.kr.fxxk.dedyn.io
+- client-fingerprint: chrome
+  name: 美国 111
+  network: ws
+  port: 2082
+  server: 130.250.137.17
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: 113dd109-540e-4497-9d47-eed30315260f
+  ws-opts:
+    headers:
+      Host: edgetunnel.2424014450.workers.dev
+    path: /proxyIP=proxyip.us.fxxk.dedyn.io
+- client-fingerprint: random
+  name: 韩国 057
+  network: ws
+  port: 17057
+  server: 125.139.249.241
+  servername: e8b99cbe-9ebd-4a20-a497-38f4b29f2c98.83b11782-ecae-411f-90c3-2a01bb33260a.gleeze.com
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 113dd109-540e-4497-9d47-eed30315260f
+  ws-opts:
+    headers:
+      Host: e8b99cbe-9ebd-4a20-a497-38f4b29f2c98.83b11782-ecae-411f-90c3-2a01bb33260a.gleeze.com
+    path: /edgetunnel.2424014450.workers.dev/proxyIP=proxyip.kr.fxxk.dedyn.io
+- client-fingerprint: chrome
+  name: 美国 112
+  network: ws
+  port: 2082
+  server: 130.250.137.246
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: 113dd109-540e-4497-9d47-eed30315260f
+  ws-opts:
+    headers:
+      Host: edgetunnel.2424014450.workers.dev
+    path: /proxyIP=proxyip.us.fxxk.dedyn.io
+- client-fingerprint: random
+  name: 俄罗斯 005
+  network: ws
+  port: 443
+  server: 141.105.70.114
+  servername: 3ca919ae-4e52-48cb-9f79-f920f0c234bd.b6071df2-af24-4fe5-a53c-5482f4bf5bce.kozow.com
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 113dd109-540e-4497-9d47-eed30315260f
+  ws-opts:
+    headers:
+      Host: 3ca919ae-4e52-48cb-9f79-f920f0c234bd.b6071df2-af24-4fe5-a53c-5482f4bf5bce.kozow.com
+    path: /edgetunnel.2424014450.workers.dev/proxyIP=proxyip.oracle.fxxk.dedyn.io
+- client-fingerprint: chrome
+  name: 美国 113
+  network: ws
+  port: 2052
+  server: 130.250.137.233
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: 113dd109-540e-4497-9d47-eed30315260f
+  ws-opts:
+    headers:
+      Host: edgetunnel.2424014450.workers.dev
+    path: /proxyIP=proxyip.us.fxxk.dedyn.io
+- alterId: 0
+  cipher: auto
+  name: 加拿大 146
+  network: ws
+  port: 2053
+  server: 104.17.53.119
+  servername: 100-100-17-160.db-link02.top
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: d930577a-2543-3f74-bd62-fda462fc8c18
+  ws-opts:
+    headers:
+      Host: 100-100-17-160.db-link02.top
+    path: /dabai.in104.17.53.119
+- alterId: 0
+  cipher: auto
+  name: 加拿大 147
+  network: ws
+  port: 443
+  server: 172.67.36.87
+  servername: 100-100-17-348.db-link02.top
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: d930577a-2543-3f74-bd62-fda462fc8c18
+  ws-opts:
+    headers:
+      Host: 100-100-17-348.db-link02.top
+    path: /dabai.in172.67.36.87
+- alterId: 0
+  cipher: auto
+  name: 加拿大 148
+  network: ws
+  port: 8080
+  server: 104.20.165.44
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: d930577a-2543-3f74-bd62-fda462fc8c18
+  ws-opts:
+    headers:
+      Host: 100-100-17-304.db-link02.top
+    path: /dabai.in104.20.165.44
+- alterId: 0
+  cipher: auto
+  name: 加拿大 149
+  network: ws
+  port: 2052
+  server: 172.67.96.129
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: d930577a-2543-3f74-bd62-fda462fc8c18
+  ws-opts:
+    headers:
+      Host: 100-100-17-169.cn-db.top
+    path: /dabai.in172.67.96.129
+- alterId: 0
+  cipher: auto
+  name: 加拿大 150
+  network: ws
+  port: 2086
+  server: 172.67.28.136
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: d930577a-2543-3f74-bd62-fda462fc8c18
+  ws-opts:
+    headers:
+      Host: 100-100-17-282.db-link01.top
+    path: /dabai.in172.67.28.136
+- alterId: 0
+  cipher: auto
+  name: 加拿大 151
+  network: ws
+  port: 2082
+  server: 104.21.37.52
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: d930577a-2543-3f74-bd62-fda462fc8c18
+  ws-opts:
+    headers:
+      Host: 100-100-17-25.cn-db.top
+    path: /dabai.in104.21.37.52
+- alterId: 0
+  cipher: auto
+  name: 加拿大 152
+  network: ws
+  port: 2095
+  server: 104.24.193.175
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: d930577a-2543-3f74-bd62-fda462fc8c18
+  ws-opts:
+    headers:
+      Host: 100-100-17-385.db-link01.top
+    path: /dabai.in104.24.193.175
+- alterId: 0
+  cipher: auto
+  name: 加拿大 153
+  network: ws
+  port: 2095
+  server: 104.17.214.124
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: d930577a-2543-3f74-bd62-fda462fc8c18
+  ws-opts:
+    headers:
+      Host: 100-100-17-477.db-link02.top
+    path: /dabai.in104.17.214.124
+- alterId: 0
+  cipher: auto
+  name: 泰国 001
+  network: ws
+  port: 443
+  server: th1.no-pro.online
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 42f977c2-b269-4489-b21b-44ea5ffd3310
+  ws-opts:
+    headers:
+      Host: th1.no-pro.online
+    path: /vmess
+- alterId: 0
+  cipher: auto
+  name: 泰国 002
+  network: ws
+  port: 80
+  server: th1.no-pro.online
+  skip-cert-verify: true
+  type: vmess
+  uuid: 42f977c2-b269-4489-b21b-44ea5ffd3310
+  ws-opts:
+    headers:
+      Host: th1.no-pro.online
+    path: /vmess
+- client-fingerprint: randomized
+  name: 美国 114
+  network: ws
+  port: 80
+  server: 162.159.252.135
+  servername: worker-snowy-flower-75f0.qq976955017.workers.dev
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: c5d1e036-69f0-4d50-b4d0-bd9c9c73928d
+  ws-opts:
+    headers:
+      host: worker-snowy-flower-75f0.qq976955017.workers.dev
+    path: /?ed=2048
+- client-fingerprint: randomized
+  name: 加拿大 154
+  network: ws
+  port: 80
+  server: 162.159.152.60
+  servername: worker-snowy-flower-75f0.qq976955017.workers.dev
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: c5d1e036-69f0-4d50-b4d0-bd9c9c73928d
+  ws-opts:
+    headers:
+      host: worker-snowy-flower-75f0.qq976955017.workers.dev
+    path: /?ed=2048
+- client-fingerprint: randomized
+  name: 美国 115
+  network: ws
+  port: 80
+  server: 172.64.130.59
+  servername: worker-snowy-flower-75f0.qq976955017.workers.dev
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: c5d1e036-69f0-4d50-b4d0-bd9c9c73928d
+  ws-opts:
+    headers:
+      host: worker-snowy-flower-75f0.qq976955017.workers.dev
+    path: /?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 美国 116
+  network: ws
+  port: 34052
+  server: us-sanfrancisco-01.t3csyun.buzz
+  skip-cert-verify: true
+  type: vmess
+  uuid: 44da7d38-864f-4bc1-90b9-b09a2facf4c2
+  ws-opts:
+    headers:
+      Host: us-sanfrancisco-01.t3csyun.buzz
+    path: /us1
+- client-fingerprint: safari
+  flow: xtls-rprx-vision
+  name: 荷兰 007
+  network: tcp
+  port: 9086
+  reality-opts:
+    public-key: pNa6mwccmfgVtQnBKjkkSCYJUqzJZIZqFJ7-k2cnJxQ
+    short-id: '25058561'
+  server: yxhk.efnwgood.top
+  servername: hkust.edu.hk
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: e990e864-eaa7-45bb-ba59-2dc4b05d5e10
+- client-fingerprint: safari
+  flow: xtls-rprx-vision
+  name: 新加坡 010
+  network: tcp
+  port: 20055
+  reality-opts:
+    public-key: i0Kwh5LpN5pcuJVPkfAKwHUpDxxsGEGCFfW5TsiRGSg
+    short-id: 440f03e7
+  server: aksg.6bnw.top
+  servername: smu.edu.sg
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: e990e864-eaa7-45bb-ba59-2dc4b05d5e10
+- client-fingerprint: ios
+  flow: xtls-rprx-vision
+  name: 日本 017
+  network: tcp
+  port: 9082
+  reality-opts:
+    public-key: fr5BfhhICuIAHYNGGI6_SzZ6_lY0HSjbFfGbJHTKij8
+    short-id: 0327cd4c
+  server: mugenjp.jueduibupao.top
+  servername: www.tesla.com
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: e990e864-eaa7-45bb-ba59-2dc4b05d5e10
+- client-fingerprint: ios
+  flow: xtls-rprx-vision
+  name: 美国 117
+  network: tcp
+  port: 19080
+  reality-opts:
+    public-key: taCP9So8jQoyN7AntIMp7ctxpJQrIewnfB_PstdSxnc
+    short-id: b06a7432
+  server: azcus.6bnw.top
+  servername: www.tesla.com
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: e990e864-eaa7-45bb-ba59-2dc4b05d5e10
+- name: 加拿大 155
+  network: ws
+  port: 2052
+  server: 33.6bnw.top
+  servername: gghkt.6bnw.top
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: e990e864-eaa7-45bb-ba59-2dc4b05d5e10
+  ws-opts:
+    headers:
+      host: gghkt.6bnw.top
+    path: /?ed=2560
+- alterId: 0
+  cipher: auto
+  name: 加拿大 156
+  network: ws
+  port: 2082
+  server: sg1.6bnw.top
+  skip-cert-verify: true
+  type: vmess
+  uuid: e990e864-eaa7-45bb-ba59-2dc4b05d5e10
+  ws-opts:
+    headers:
+      Host: aksg.6bnw.top
+    path: /cctv?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 加拿大 157
+  network: ws
+  port: 2082
+  server: 33.6bnw.top
+  skip-cert-verify: true
+  type: vmess
+  uuid: e990e864-eaa7-45bb-ba59-2dc4b05d5e10
+  ws-opts:
+    headers:
+      Host: aksg.6bnw.top
+    path: /cctv?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 加拿大 158
+  network: ws
+  port: 2086
+  server: mugen22.6bnw.top
+  skip-cert-verify: true
+  type: vmess
+  uuid: e990e864-eaa7-45bb-ba59-2dc4b05d5e10
+  ws-opts:
+    headers:
+      Host: buyvmus.6bnw.top
+    path: /cctv?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 加拿大 159
+  network: ws
+  port: 2086
+  server: mugen44.6bnw.top
+  skip-cert-verify: true
+  type: vmess
+  uuid: e990e864-eaa7-45bb-ba59-2dc4b05d5e10
+  ws-opts:
+    headers:
+      Host: buyvmus.6bnw.top
+    path: /cctv?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 加拿大 160
+  network: ws
+  port: 2083
+  server: 104.21.111.148
+  servername: 100-100-17-379.cn-db.top
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: d930577a-2543-3f74-bd62-fda462fc8c18
+  ws-opts:
+    headers:
+      Host: 100-100-17-379.cn-db.top
+    path: /dabai.in104.21.111.148
+- alterId: 0
+  cipher: auto
+  name: 加拿大 161
+  network: ws
+  port: 2087
+  server: 172.67.11.113
+  servername: 100-100-17-170.cn-db.top
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: d930577a-2543-3f74-bd62-fda462fc8c18
+  ws-opts:
+    headers:
+      Host: 100-100-17-170.cn-db.top
+    path: /dabai.in172.67.11.113
+- alterId: 0
+  cipher: auto
+  name: 美国 118
+  network: ws
+  port: 2096
+  server: 104.25.149.175
+  servername: 100-100-17-473.db-link02.top
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: d930577a-2543-3f74-bd62-fda462fc8c18
+  ws-opts:
+    headers:
+      Host: 100-100-17-473.db-link02.top
+    path: /dabai.in104.25.149.175
+- alterId: 0
+  cipher: auto
+  name: 加拿大 162
+  network: ws
+  port: 443
+  server: 104.19.191.50
+  servername: 100-100-17-166.db-link02.top
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: d930577a-2543-3f74-bd62-fda462fc8c18
+  ws-opts:
+    headers:
+      Host: 100-100-17-166.db-link02.top
+    path: /dabai.in104.19.191.50
+- alterId: 0
+  cipher: auto
+  name: 加拿大 163
+  network: ws
+  port: 2082
+  server: 104.16.143.127
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: d930577a-2543-3f74-bd62-fda462fc8c18
+  ws-opts:
+    headers:
+      Host: 100-100-17-480.db-link02.top
+    path: /dabai.in104.16.143.127
+- alterId: 0
+  cipher: auto
+  name: 德国 020
+  network: ws
+  port: 8080
+  server: 172.64.24.100
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: d930577a-2543-3f74-bd62-fda462fc8c18
+  ws-opts:
+    headers:
+      Host: 100-100-17-187.db-link01.top
+    path: /dabai.in172.64.24.100
+- alterId: 0
+  cipher: auto
+  name: 加拿大 164
+  network: ws
+  port: 2083
+  server: 104.24.162.35
+  servername: 100-100-17-265.cn-db.top
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: d930577a-2543-3f74-bd62-fda462fc8c18
+  ws-opts:
+    headers:
+      Host: 100-100-17-265.cn-db.top
+    path: /dabai.in104.24.162.35
+- alterId: 0
+  cipher: auto
+  name: 法国 010
+  network: ws
+  port: 80
+  server: 172.64.20.179
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: d930577a-2543-3f74-bd62-fda462fc8c18
+  ws-opts:
+    headers:
+      Host: 100-100-17-396.db-link01.top
+    path: /dabai.in172.64.20.179
+- alterId: 0
+  cipher: auto
+  name: 加拿大 165
+  network: ws
+  port: 443
+  server: 172.67.121.91
+  servername: 100-100-17-75.db-link02.top
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: d930577a-2543-3f74-bd62-fda462fc8c18
+  ws-opts:
+    headers:
+      Host: 100-100-17-75.db-link02.top
+    path: /dabai.in172.67.121.91
 proxy-groups:
 - name: PROXY
   type: select
@@ -5153,6 +6905,133 @@ proxy-groups:
   - 韩国 043
   - 香港 007
   - 德国 017
+  - 美国 098
+  - 香港 008
+  - 香港 009
+  - 韩国 044
+  - 韩国 045
+  - 韩国 046
+  - 日本 012
+  - 韩国 047
+  - 加拿大 110
+  - 韩国 048
+  - 新加坡 008
+  - 韩国 049
+  - 韩国 050
+  - 日本 013
+  - 韩国 051
+  - 韩国 052
+  - 韩国 053
+  - 加拿大 111
+  - 加拿大 112
+  - 加拿大 113
+  - 加拿大 114
+  - 加拿大 115
+  - 加拿大 116
+  - 美国 099
+  - 瑞典 013
+  - 伊朗 003
+  - 伊朗 004
+  - 德国 018
+  - 美国 100
+  - 瑞典 014
+  - 加拿大 117
+  - 瑞典 015
+  - 加拿大 118
+  - 加拿大 119
+  - 加拿大 120
+  - 美国 101
+  - 加拿大 121
+  - 加拿大 122
+  - 哥斯达黎加 003
+  - 瑞典 016
+  - 瑞典 017
+  - 加拿大 123
+  - 英国 007
+  - 美国 102
+  - 加拿大 124
+  - 瑞典 018
+  - 加拿大 125
+  - 加拿大 126
+  - 瑞典 019
+  - 瑞典 020
+  - 美国 103
+  - 瑞典 021
+  - 加拿大 127
+  - 美国 104
+  - 瑞典 022
+  - 加拿大 128
+  - 爱尔兰 001
+  - 加拿大 129
+  - 加拿大 130
+  - 加拿大 131
+  - 日本 014
+  - 日本 015
+  - 美国 105
+  - 韩国 054
+  - 韩国 055
+  - 日本 016
+  - 美国 106
+  - 加拿大 132
+  - 加拿大 133
+  - 加拿大 134
+  - 加拿大 135
+  - 加拿大 136
+  - 加拿大 137
+  - 加拿大 138
+  - 加拿大 139
+  - 德国 019
+  - 加拿大 140
+  - 加拿大 141
+  - 加拿大 142
+  - 加拿大 143
+  - 美国 107
+  - 瑞典 023
+  - 爱尔兰 002
+  - 加拿大 144
+  - 加拿大 145
+  - 新加坡 009
+  - 美国 108
+  - 美国 109
+  - 美国 110
+  - 韩国 056
+  - 美国 111
+  - 韩国 057
+  - 美国 112
+  - 俄罗斯 005
+  - 美国 113
+  - 加拿大 146
+  - 加拿大 147
+  - 加拿大 148
+  - 加拿大 149
+  - 加拿大 150
+  - 加拿大 151
+  - 加拿大 152
+  - 加拿大 153
+  - 泰国 001
+  - 泰国 002
+  - 美国 114
+  - 加拿大 154
+  - 美国 115
+  - 美国 116
+  - 荷兰 007
+  - 新加坡 010
+  - 日本 017
+  - 美国 117
+  - 加拿大 155
+  - 加拿大 156
+  - 加拿大 157
+  - 加拿大 158
+  - 加拿大 159
+  - 加拿大 160
+  - 加拿大 161
+  - 美国 118
+  - 加拿大 162
+  - 加拿大 163
+  - 德国 020
+  - 加拿大 164
+  - 法国 010
+  - 加拿大 165
 - name: LOAD-BALANCE
   type: load-balance
   url: https://cp.cloudflare.com/generate_204
