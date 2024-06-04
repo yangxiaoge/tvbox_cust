@@ -23,7 +23,6 @@ This repo relies on the following third-party projects:
 - [CatVodTVOfficial/TVBoxOSC](https://github.com/CatVodTVOfficial/TVBoxOSC)
 - [FongMi/TV](https://github.com/FongMi/TV)(Updated: a0ee2191127f807fd57dfb193312e54e651f6a5c)
 - [mlabalabala/box](https://github.com/mlabalabala/box)(Updated: 918ac3f26bc347250a1cd4938897040e2c277a60)
-- [takagen99/Box](https://github.com/mlabalabala/box)(Updated: dwwac3f26bc347250a1cd4938897040e2c277a54)
 
 
 # Custom Spider
