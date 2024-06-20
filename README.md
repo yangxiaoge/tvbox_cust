@@ -42,8 +42,7 @@ https://yangxiaoge.github.io/
 # TVBox源
 - 源解析：https://www.lige.fit/ua
 - 多仓
-  - 链接：https://raw.githubusercontent.com/yangxiaoge/tvbox_cust/master/tvbox/多仓.json
-  - 加速链接：https://cdn.jsdelivr.net/gh/yangxiaoge/tvbox_cust@master/tvbox/多仓.json
+  - 自用：https://cdn.jsdelivr.net/gh/yangxiaoge/tvbox_cust@master/tvbox/多仓.json
   - 高天流云多仓：https://cdn.jsdelivr.net/gh/gaotianliuyun/gao@master/0707.json
   - 黎歌多仓：https://cdn.jsdelivr.net/gh/yangxiaoge/tvbox_cust@master/tvbox/黎歌多仓.json
   - 18🈲：https://cdn.jsdelivr.net/gh/yangxiaoge/tvbox_cust@master/tvbox/多仓adult.json
