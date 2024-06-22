@@ -607,21 +607,6 @@ proxies:
     headers:
       Host: ccs.443888.xyz
     path: /vless?ed=2560
-- name: 台湾 001
-  type: vless
-  network: ws
-  server: 61.221.116.146
-  port: 34237
-  uuid: 7509f896-2115-4420-b487-501c9103bebd
-  skip-cert-verify: true
-  tls: true
-  client-fingerprint: chrome
-  tfo: false
-  delay: 1108
-  ws-opts:
-    headers:
-      Host: ccs.443888.xyz
-    path: /vless?ed=2560
 - name: 香港 001
   type: vless
   network: ws
@@ -663,51 +648,6 @@ proxies:
   client-fingerprint: chrome
   tfo: false
   delay: 2212
-  ws-opts:
-    headers:
-      Host: ccs.443888.xyz
-    path: /vless?ed=2560
-- name: 台湾 002
-  type: vless
-  network: ws
-  server: 103.137.63.3
-  port: 443
-  uuid: 7509f896-2115-4420-b487-501c9103bebd
-  skip-cert-verify: true
-  tls: true
-  client-fingerprint: chrome
-  tfo: false
-  delay: 2258
-  ws-opts:
-    headers:
-      Host: ccs.443888.xyz
-    path: /vless?ed=2560
-- name: 香港 004
-  type: vless
-  network: ws
-  server: 18.163.74.30
-  port: 34237
-  uuid: 7509f896-2115-4420-b487-501c9103bebd
-  skip-cert-verify: true
-  tls: true
-  client-fingerprint: chrome
-  tfo: false
-  delay: 1749
-  ws-opts:
-    headers:
-      Host: ccs.443888.xyz
-    path: /vless?ed=2560
-- name: 香港 005
-  type: vless
-  network: ws
-  server: 156.251.176.109
-  port: 46010
-  uuid: 7509f896-2115-4420-b487-501c9103bebd
-  skip-cert-verify: true
-  tls: true
-  client-fingerprint: chrome
-  tfo: false
-  delay: 1519
   ws-opts:
     headers:
       Host: ccs.443888.xyz
@@ -833,34 +773,6 @@ proxies:
   network: ws
   server: 132.226.229.248
   port: 34237
-  uuid: 7509f896-2115-4420-b487-501c9103bebd
-  skip-cert-verify: true
-  tls: true
-  client-fingerprint: chrome
-  tfo: false
-  ws-opts:
-    headers:
-      Host: ccs.443888.xyz
-    path: /vless?ed=2560
-- name: 香港 008
-  type: vless
-  network: ws
-  server: 156.251.176.112
-  port: 38337
-  uuid: 7509f896-2115-4420-b487-501c9103bebd
-  skip-cert-verify: true
-  tls: true
-  client-fingerprint: chrome
-  tfo: false
-  ws-opts:
-    headers:
-      Host: ccs.443888.xyz
-    path: /vless?ed=2560
-- name: 香港 009
-  type: vless
-  network: ws
-  server: 156.251.176.108
-  port: 43786
   uuid: 7509f896-2115-4420-b487-501c9103bebd
   skip-cert-verify: true
   tls: true
@@ -1492,19 +1404,6 @@ proxies:
     headers:
       Host: De2.vmess.site.
     path: /
-- name: 加拿大 047
-  type: vmess
-  network: grpc
-  server: 104.18.74.164
-  port: 443
-  uuid: 13932f17-6d18-3254-8c8f-9de140c5a64c
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  alterId: 0
-  cipher: auto
-  grpc-opts:
-    grpc-service-name: dabai
 - name: 加拿大 048
   type: vmess
   network: ws
@@ -2022,22 +1921,6 @@ proxies:
     headers:
       Host: c543a30d-e872-49ad-8be6-2836890f3d20.b9caf607-1ef7-4fd2-be07-224869a92bdf.accesscam.org
     path: /edgetunnel.2424014450.workers.dev/?proxyip=sg.ipdb.rr.nu
-- name: 香港 020
-  type: vless
-  network: ws
-  server: 47.243.18.199
-  port: 2083
-  uuid: 113dd109-540e-4497-9d47-eed30315260f
-  servername: a17cabb5-3f13-4056-b0ce-476143491d4b.blackbeautifulman.cloudns.org
-  skip-cert-verify: false
-  tls: true
-  udp: true
-  client-fingerprint: random
-  tfo: false
-  ws-opts:
-    headers:
-      Host: a17cabb5-3f13-4056-b0ce-476143491d4b.blackbeautifulman.cloudns.org
-    path: /edgetunnel.2424014450.workers.dev/?proxyip=sg.ipdb.rr.nu
 - name: 韩国 017
   type: vless
   network: ws
@@ -2070,19 +1953,6 @@ proxies:
     headers:
       Host: e130917c-1b58-4136-b2d9-76dc920e0add.add97ee8-0f14-48a3-b2cd-979c56742e64.loseyourip.com
     path: /edgetunnel.2424014450.workers.dev/?proxyip=proxyip.kr.fxxk.dedyn.io
-- name: 加拿大 067
-  type: trojan
-  network: ws
-  server: 104.19.53.186
-  port: 2096
-  password: 8557692d-c228-48f0-b6f9-50d44d4a2096
-  skip-cert-verify: true
-  udp: true
-  sni: tjjd.yzyx1.v6.army
-  ws-opts:
-    headers:
-      Host: tjjd.yzyx1.v6.army
-    path: /?ed=2048
 - name: 加拿大 068
   type: trojan
   network: ws
@@ -2406,18 +2276,6 @@ proxies:
     headers:
       Host: ru2.vless.site
     path: /vless
-- name: 加拿大 081
-  type: vless
-  network: ws
-  server: 104.24.196.20
-  port: 80
-  uuid: a35017af-d228-44bd-885c-e5951ce09df6
-  client-fingerprint: chrome
-  delay: 1814
-  ws-opts:
-    headers:
-      Host: dl6.heykakenakhshanemvaberanakhshanemkhadijeomanigakobraoaminfatema.com
-    path: Mmdv2rayng-V2rayngmmd-telegram-mmd_v2rayng?ed=80
 - name: 新加坡 002
   type: vmess
   network: ws
@@ -3756,18 +3614,6 @@ proxies:
     headers:
       Host: ch1.dontbow.store.
     path: /melov2ray/melov2ray/melov2ray/melov2ray/melov2ray/melov2ray/melov2ray
-- name: 香港 039
-  type: vless
-  network: ws
-  server: 47.242.125.241
-  port: 2053
-  uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-  servername: zdy555.kpcloud.eu.org
-  tls: true
-  ws-opts:
-    headers:
-      Host: zdy555.kpcloud.eu.org
-    path: /freecodes
 - name: 加拿大 127
   type: vless
   network: ws
@@ -3874,19 +3720,6 @@ proxies:
     headers:
       Host: us3.rtacg.com
     path: /
-- name: 加拿大 131
-  type: vless
-  network: ws
-  server: 162.159.134.234
-  port: 80
-  uuid: 84c25499-66a9-4fcb-be62-bc9aea114dfe
-  tls: false
-  udp: false
-  client-fingerprint: chrome
-  ws-opts:
-    headers:
-      Host: nrttne.numallas.sbs.
-    path: /
 - name: 加拿大 132
   type: vless
   network: ws
@@ -3979,20 +3812,6 @@ proxies:
     headers:
       Host: continuity.sasuke.ir
     path: /ws
-- name: 加拿大 140
-  type: vless
-  network: ws
-  server: 188.114.97.167
-  port: 2087
-  uuid: 8e62ae0c-efee-4a80-905c-fc06c768ff2a
-  servername: de2ocean.mohamadphp.ir
-  tls: true
-  udp: false
-  client-fingerprint: chrome
-  ws-opts:
-    headers:
-      Host: de2ocean.mohamadphp.ir
-    path: /vless
 - name: 美国 032
   type: vless
   network: ws
@@ -4153,19 +3972,6 @@ proxies:
     headers:
       Host: 穆罕默德侯赛superspeed12.ff2ray.cfd.
     path: /?ed=2053
-- name: 瑞典 015
-  type: vless
-  network: ws
-  server: 185.146.173.146
-  port: 80
-  uuid: 1ba939cd-b055-43bb-a35d-e011cb7c3ac8
-  tls: false
-  udp: false
-  client-fingerprint: chrome
-  ws-opts:
-    headers:
-      Host: HaJiMaMaDVpN.GoLdEn-PiNg.Ir.
-    path: /Join--HAJIMAMADVPN?ed=2048
 - name: 加拿大 147
   type: vless
   network: ws
@@ -4768,20 +4574,6 @@ proxies:
   ws-opts:
     headers:
       Host: kk600.ylks.link
-    path: /blue
-- name: 美国 036
-  type: vless
-  network: ws
-  server: 47.236.165.25
-  port: 2083
-  uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-  servername: hk600.ylks.link
-  tls: true
-  client-fingerprint: chrome
-  delay: 1666
-  ws-opts:
-    headers:
-      Host: hk600.ylks.link
     path: /blue
 - name: 新加坡 005
   type: vless
@@ -6249,6 +6041,320 @@ proxies:
     headers:
       Host: edgetunnel.2424014450.workers.dev
     path: /proxyIP=proxyip.oracle.fxxk.dedyn.io
+- name: 美国 055
+  type: vmess
+  network: tcp
+  server: bgroup.node3.v.nodelist-gfwairport2.top
+  port: 41001
+  uuid: 2155145a-b1b5-443a-8977-670f6bd10f02
+  tls: false
+  alterId: 0
+  cipher: auto
+- name: 加拿大 047
+  type: vmess
+  network: grpc
+  server: 108.162.192.154
+  port: 2087
+  uuid: 2a3263e2-891c-4446-b474-a8c63acb6e25
+  servername: 1fdSNA119228928OpS2smTaB228aAsDDsd1ea114928249159.zigolao-leon-04.net
+  tls: true
+  alterId: 0
+  cipher: auto
+  grpc-opts:
+    grpc-service-name: ''
+- name: 美国 056
+  type: vmess
+  network: ws
+  server: 172.64.150.8
+  port: 2052
+  uuid: 60bcbd52-0c88-4da3-aee2-cc1f9d5ca224
+  tls: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: ybr.redbullplus.xyz
+    path: /
+- name: 伊朗 002
+  type: vmess
+  network: tcp
+  server: 95.38.248.217
+  port: 2966
+  uuid: e80a8064-740e-4b90-8423-ce82a725e53c
+  tls: false
+  alterId: 0
+  cipher: auto
+- name: 保加利亚 001
+  type: vmess
+  network: ws
+  server: 147.78.140.68
+  port: 443
+  uuid: f584de15-2034-4170-a723-f48c2bae5e0f
+  servername: 6c47-butterfly-6c47.yexoji3749.workers.dev
+  tls: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: 6c47-butterfly-6c47.yexoji3749.workers.dev
+    path: /afrhms16v.bestxray.buzz/linkws
+- name: 美国 057
+  type: trojan
+  network: ws
+  server: 172.64.150.8
+  port: 2096
+  password: Ck0nkbbsur
+  skip-cert-verify: true
+  udp: true
+  sni: tls.redbullplus.xyz
+  ws-opts:
+    headers:
+      Host: tls.redbullplus.xyz
+    path: /wsss
+- name: 香港 004
+  type: vless
+  network: tcp
+  server: 47.76.44.200
+  port: 14566
+  uuid: f2d8cde4-ef7d-49e8-f518-33497f61be35
+  servername: swdist.apple.com
+  tls: true
+  udp: true
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  delay: 459
+  reality-opts:
+    public-key: g1f1wLjim5gOVGnI5LGUV0dL4iFXPoiepOPZfSxJe14
+- name: 韩国 037
+  type: vless
+  network: ws
+  server: 146.56.141.168
+  port: 47590
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  servername: a.ssll.gay
+  tls: true
+  delay: 1856
+  ws-opts:
+    headers:
+      Host: a.ssll.gay
+    path: /
+- name: 加拿大 067
+  type: vless
+  network: ws
+  server: 104.18.22.19
+  port: 443
+  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
+  servername: 56897854.PaGeS.DEv
+  tls: true
+  client-fingerprint: randomized
+  delay: 1273
+  ws-opts:
+    headers:
+      Host: 56897854.PaGeS.DEv
+    path: /
+- name: 加拿大 184
+  type: vless
+  network: ws
+  server: 104.17.249.203
+  port: 443
+  uuid: 14165b8b-17ee-4c86-808c-9d6afd4f3b69
+  servername: api3.htve.ir
+  tls: true
+  client-fingerprint: chrome
+  delay: 2339
+  ws-opts:
+    headers:
+      Host: api3.htve.ir
+    path: /
+- name: 加拿大 185
+  type: vless
+  network: ws
+  server: 172.67.171.42
+  port: 80
+  uuid: 84441a15-0ebc-4362-9217-606929cd8c5b
+  servername: ru2.vless.site
+  client-fingerprint: chrome
+  delay: 1540
+  ws-opts:
+    headers:
+      Host: ru2.vless.site
+    path: /vless
+- name: 哈萨克斯坦 003
+  type: vmess
+  network: tcp
+  server: kz-v2ray.ipracevpn.com
+  port: 2083
+  uuid: f2623be1-b7b9-41d6-a3df-34c5338e3748
+  tls: true
+  alterId: 0
+  cipher: auto
+- name: 加拿大 081
+  type: vmess
+  network: ws
+  server: yx3.gyyun.top
+  port: 2052
+  uuid: 9d4d2803-cbf8-4c49-afeb-3ce17ae0007a
+  tls: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: lrb1.gyyun.top
+    path: /?ed=2048
+- name: 加拿大 131
+  type: vmess
+  network: ws
+  server: yx1.gyyun.top
+  port: 2052
+  uuid: 9d4d2803-cbf8-4c49-afeb-3ce17ae0007a
+  tls: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: lrb1.gyyun.top
+    path: /?ed=2048
+- name: 加拿大 140
+  type: vmess
+  network: ws
+  server: baobaojichang.bbjc.xyz
+  port: 80
+  uuid: c3572b9c-db66-4656-91b2-853750a422ef
+  tls: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: xianggang.mojc.xyz
+    path: /?ed=2048
+- name: 加拿大 186
+  type: vmess
+  network: ws
+  server: yx2.gyyun.top
+  port: 2052
+  uuid: 9d4d2803-cbf8-4c49-afeb-3ce17ae0007a
+  tls: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: lrb1.gyyun.top
+    path: /?ed=2048
+- name: 加拿大 187
+  type: trojan
+  network: ws
+  server: 104.26.14.85
+  port: 2096
+  password: d3e663d2-5cce-56e1-a199-2fec6078fcb4
+  sni: mailbox.CpIfOrperSiA.UK
+  ws-opts:
+    headers:
+      Host: mailbox.CpIfOrperSiA.UK
+    path: trojan-ws/
+- name: 加拿大 188
+  type: trojan
+  network: ws
+  server: 104.18.185.80
+  port: 8443
+  password: d3e663d2-5cce-56e1-a199-2fec6078fcb4
+  sni: mailbox.CPIforPERSiA.uk
+  ws-opts:
+    headers:
+      Host: mailbox.CPIforPERSiA.uk
+    path: trojan-ws/
+- name: 加拿大 189
+  type: trojan
+  network: ws
+  server: 104.18.185.80
+  port: 2096
+  password: d3e663d2-5cce-56e1-a199-2fec6078fcb4
+  sni: mailbox.CpiForPersia.Uk
+  ws-opts:
+    headers:
+      Host: mailbox.CpiForPersia.Uk
+    path: trojan-ws/
+- name: 加拿大 190
+  type: trojan
+  network: ws
+  server: 172.67.73.163
+  port: 2083
+  password: d3e663d2-5cce-56e1-a199-2fec6078fcb4
+  sni: mailbox.CPIFOrpersiA.UK
+  ws-opts:
+    headers:
+      Host: mailbox.CPIFOrpersiA.UK
+    path: trojan-ws/
+- name: 加拿大 191
+  type: trojan
+  network: ws
+  server: 172.67.73.163
+  port: 2096
+  password: d3e663d2-5cce-56e1-a199-2fec6078fcb4
+  sni: mailbox.CpIfOrperSiA.UK
+  ws-opts:
+    headers:
+      Host: mailbox.CpIfOrperSiA.UK
+    path: trojan-ws/
+- name: 加拿大 192
+  type: trojan
+  network: ws
+  server: 104.16.201.94
+  port: 2096
+  password: d3e663d2-5cce-56e1-a199-2fec6078fcb4
+  sni: mailbox.CpiForPersia.Uk
+  ws-opts:
+    headers:
+      Host: mailbox.CpiForPersia.Uk
+    path: trojan-ws/
+- name: 美国 036
+  type: vmess
+  network: grpc
+  server: 173.245.58.154
+  port: 2087
+  uuid: 2a3263e2-891c-4446-b474-a8c63acb6e25
+  servername: /
+  tls: true
+  alterId: 0
+  cipher: auto
+  grpc-opts:
+    grpc-service-name: /
+- name: 加拿大 193
+  type: vmess
+  network: ws
+  server: 104.18.25.92
+  port: 2052
+  uuid: f584de15-2034-4170-a723-f48c2bae5e0f
+  tls: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: mysan2.jaquay22.workers.dev
+    path: /afrhms16v.bestxray.buzz/linkws
+- name: 加拿大 194
+  type: trojan
+  network: ws
+  server: 104.16.201.94
+  port: 8443
+  password: d3e663d2-5cce-56e1-a199-2fec6078fcb4
+  sni: mailbox.CPIforPERSiA.uk
+  ws-opts:
+    headers:
+      Host: mailbox.CPIforPERSiA.uk
+    path: trojan-ws/
+- name: 加拿大 195
+  type: vmess
+  network: ws
+  server: 104.16.61.8
+  port: 2082
+  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
+  tls: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: y-old-mode-9c0diab.wiriy73548.workers.dev
+    path: /obdii.cfd/linkws
 proxy-groups:
 - name: PROXY
   type: select
@@ -6292,13 +6398,9 @@ proxy-groups:
   - 日本 001
   - 新加坡 001
   - 日本 003
-  - 台湾 001
   - 香港 001
   - 香港 002
   - 香港 003
-  - 台湾 002
-  - 香港 004
-  - 香港 005
   - 韩国 010
   - 韩国 011
   - 加拿大 011
@@ -6308,8 +6410,6 @@ proxy-groups:
   - 韩国 012
   - 韩国 013
   - 韩国 014
-  - 香港 008
-  - 香港 009
   - 加拿大 013
   - 加拿大 014
   - 加拿大 015
@@ -6350,7 +6450,6 @@ proxy-groups:
   - 美国 010
   - 香港 010
   - 加拿大 046
-  - 加拿大 047
   - 加拿大 048
   - 加拿大 049
   - 加拿大 050
@@ -6387,10 +6486,8 @@ proxy-groups:
   - 香港 017
   - 香港 018
   - 香港 019
-  - 香港 020
   - 韩国 017
   - 韩国 018
-  - 加拿大 067
   - 加拿大 068
   - 香港 021
   - 加拿大 069
@@ -6415,7 +6512,6 @@ proxy-groups:
   - 法国 002
   - 加拿大 078
   - 美国 018
-  - 加拿大 081
   - 新加坡 002
   - 加拿大 082
   - 加拿大 083
@@ -6512,7 +6608,6 @@ proxy-groups:
   - 加拿大 126
   - 瑞典 005
   - 瑞典 006
-  - 香港 039
   - 加拿大 127
   - 瑞典 007
   - 瑞典 008
@@ -6521,7 +6616,6 @@ proxy-groups:
   - 加拿大 128
   - 加拿大 129
   - 加拿大 130
-  - 加拿大 131
   - 加拿大 132
   - 加拿大 133
   - 加拿大 135
@@ -6529,7 +6623,6 @@ proxy-groups:
   - 加拿大 137
   - 加拿大 138
   - 加拿大 139
-  - 加拿大 140
   - 美国 032
   - 加拿大 141
   - 瑞典 011
@@ -6542,7 +6635,6 @@ proxy-groups:
   - 瑞典 013
   - 瑞典 014
   - 加拿大 146
-  - 瑞典 015
   - 加拿大 147
   - 加拿大 148
   - 瑞典 016
@@ -6588,7 +6680,6 @@ proxy-groups:
   - 新加坡 003
   - 新加坡 004
   - 美国 035
-  - 美国 036
   - 新加坡 005
   - 加拿大 167
   - 加拿大 168
@@ -6693,6 +6784,32 @@ proxy-groups:
   - 西班牙 002
   - 英国 008
   - 美国 054
+  - 美国 055
+  - 加拿大 047
+  - 美国 056
+  - 伊朗 002
+  - 保加利亚 001
+  - 美国 057
+  - 香港 004
+  - 韩国 037
+  - 加拿大 067
+  - 加拿大 184
+  - 加拿大 185
+  - 哈萨克斯坦 003
+  - 加拿大 081
+  - 加拿大 131
+  - 加拿大 140
+  - 加拿大 186
+  - 加拿大 187
+  - 加拿大 188
+  - 加拿大 189
+  - 加拿大 190
+  - 加拿大 191
+  - 加拿大 192
+  - 美国 036
+  - 加拿大 193
+  - 加拿大 194
+  - 加拿大 195
 - name: LOAD-BALANCE
   type: load-balance
   url: https://cp.cloudflare.com/generate_204
