@@ -129,16 +129,6 @@ dns:
     - +.googleapis.cn
     - +.googleapis.com
 proxies:
-- name: 加拿大 001
-  type: vless
-  network: tcp
-  server: 103.98.215.248
-  port: 443
-  uuid: c54dd620-fa5f-46de-82c2-9d1492ee74e4
-  servername: tor2.jarviskit.com
-  tls: true
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
 - name: 加拿大 002
   type: vmess
   network: ws
@@ -758,21 +748,6 @@ proxies:
     headers:
       Host: oiictw.yydsii.com
     path: /?ed=2048
-- name: 加拿大 041
-  type: vmess
-  network: ws
-  server: 104.19.47.223
-  port: 8080
-  uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d
-  servername: oiictw.yydsii.com
-  skip-cert-verify: true
-  alterId: 0
-  cipher: auto
-  delay: 2106
-  ws-opts:
-    headers:
-      Host: oiictw.yydsii.com
-    path: /?ed=2048
 - name: 加拿大 042
   type: vmess
   network: ws
@@ -930,36 +905,6 @@ proxies:
     headers:
       Host: a.ssll.gay
     path: Twitterfreecodes
-- name: 加拿大 056
-  type: vmess
-  network: ws
-  server: 104.19.51.232
-  port: 2086
-  uuid: 29eebb60-b27b-4a9d-bba5-947763d9205e
-  servername: ip002.dtku47.xyz
-  udp: true
-  alterId: 0
-  cipher: auto
-  delay: 758
-  ws-opts:
-    headers:
-      Host: ip002.dtku47.xyz
-    path: 29eebb60-b27b-4a9d-bba5-947763d9205e-vm
-- name: 加拿大 057
-  type: vmess
-  network: ws
-  server: 104.19.38.62
-  port: 2086
-  uuid: 29eebb60-b27b-4a9d-bba5-947763d9205e
-  servername: ip002.dtku47.xyz
-  udp: true
-  alterId: 0
-  cipher: auto
-  delay: 813
-  ws-opts:
-    headers:
-      Host: ip002.dtku47.xyz
-    path: 29eebb60-b27b-4a9d-bba5-947763d9205e-vm
 - name: 美国 015
   type: vless
   network: ws
@@ -1239,21 +1184,6 @@ proxies:
     headers:
       Host: ru2.vless.site
     path: /vless
-- name: 新加坡 002
-  type: vmess
-  network: ws
-  server: 47.236.237.90
-  port: 2096
-  uuid: f62c5668-ef76-47fd-8f91-86eed7ccd81b
-  skip-cert-verify: true
-  tls: true
-  alterId: 0
-  cipher: auto
-  delay: 1092
-  ws-opts:
-    headers:
-      Host: sg.baijia.cfd
-    path: /fdsffgfdgdfgdf
 - name: 加拿大 082
   type: vless
   network: ws
@@ -1475,20 +1405,6 @@ proxies:
     headers:
       Host: mmdv2.pages.dev
     path: /
-- name: 加拿大 092
-  type: vless
-  network: ws
-  server: www.speedtest.net
-  port: 2053
-  uuid: 538ec70c-b386-51ad-8155-aeaed37a22b6
-  servername: newus.sspeednetokala.uS.Kg
-  tls: true
-  client-fingerprint: safari
-  delay: 878
-  ws-opts:
-    headers:
-      Host: newus.sspeednetokala.uS.Kg
-    path: vless-ws/?ed=2048
 - name: 加拿大 093
   type: vless
   network: ws
@@ -1587,16 +1503,6 @@ proxies:
     headers:
       Host: a.ssll.gay
     path: Twitterfreecodes
-- name: 美国 024
-  type: vmess
-  network: tcp
-  server: 107.148.192.157
-  port: 41911
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  skip-cert-verify: true
-  alterId: 64
-  cipher: auto
-  delay: 609
 - name: 韩国 019
   type: vless
   network: ws
@@ -1683,19 +1589,6 @@ proxies:
     headers:
       Host: V2ray-_-_-_-_-_-ShhProxy.TelegramChannelJoinBede.com.
     path: /
-- name: 加拿大 132
-  type: vless
-  network: ws
-  server: 104.18.202.232
-  port: 80
-  uuid: c8aa3dce-77b8-4cca-b313-89ce5c015137
-  tls: false
-  udp: false
-  client-fingerprint: chrome
-  ws-opts:
-    headers:
-      Host: 369.xn--cr8haa.V2ray.xn--1ug4145pija8k.freeV2ray.onflashdrive.app.
-    path: /xmrdark
 - name: 加拿大 141
   type: vless
   network: ws
@@ -1856,20 +1749,6 @@ proxies:
     headers:
       Host: kk600.ylks.link
     path: /blue
-- name: 美国 035
-  type: vless
-  network: ws
-  server: 47.236.180.51
-  port: 2053
-  uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-  servername: kk600.ylks.link
-  tls: true
-  client-fingerprint: chrome
-  delay: 1773
-  ws-opts:
-    headers:
-      Host: kk600.ylks.link
-    path: /blue
 - name: 新加坡 005
   type: vless
   network: ws
@@ -1926,35 +1805,6 @@ proxies:
     headers:
       Host: 698Aa4AA.Swz-UUz-316.PageS.Dev
     path: /
-- name: 德国 007
-  type: vless
-  network: ws
-  server: 188.244.122.57
-  port: 443
-  uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-  servername: jp600.ylks01.eu.org
-  tls: true
-  client-fingerprint: chrome
-  delay: 1770
-  ws-opts:
-    headers:
-      Host: jp600.ylks01.eu.org
-    path: /blue
-- name: 美国 043
-  type: vless
-  network: ws
-  server: 47.76.94.15
-  port: 8443
-  uuid: a27dedf5-5e63-48ec-8239-e256b1b3d310
-  servername: 3555.aespa.dynv6.net
-  tls: true
-  client-fingerprint: random
-  alpn:
-  - http/1.1
-  ws-opts:
-    headers:
-      Host: 3555.aespa.dynv6.net
-    path: /?proxyip=proxyip.aliyun.fxxk.dedyn.io
 - name: 美国 045
   type: vless
   network: ws
@@ -1967,18 +1817,6 @@ proxies:
     headers:
       Host: cfed.tgzdyz2.top
     path: /tg
-- name: 爱沙尼亚 007
-  type: vless
-  network: ws
-  server: 45.80.110.161
-  port: 2083
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  servername: a.ssll.gay
-  tls: true
-  ws-opts:
-    headers:
-      Host: a.ssll.gay
-    path: Twitterfreecodes
 - name: 法国 005
   type: vless
   network: ws
@@ -2143,19 +1981,6 @@ proxies:
     headers:
       Host: y-old-mode-9c0diab.wiriy73548.workers.dev
     path: /obdii.cfd/linkws
-- name: 加拿大 197
-  type: vmess
-  network: ws
-  server: cfcdn1.sanfencdn9.com
-  port: 2086
-  uuid: 3f09c198-da80-44ce-a72b-40bc600b2321
-  tls: false
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: us77SmSk86j.fzbqfrse.xyz
-    path: /video/Z7qdcrAGRw
 - name: 加拿大 205
   type: vmess
   network: ws
@@ -2335,22 +2160,6 @@ proxies:
     headers:
       Host: mositr.freenods.sbs
     path: Twitterfreecodes
-- name: 加拿大 124
-  type: vmess
-  network: ws
-  server: cfcdn1.sanfencdn9.com
-  port: 2052
-  uuid: fec25e7b-3e30-4702-9b93-62ed3849a9d7
-  skip-cert-verify: false
-  tls: false
-  tfo: false
-  alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  ws-opts:
-    headers:
-      Host: us1cPZiz8nb.fzbqfrse.xyz
-    path: /video/6VBhAkCtV4/
 - name: 法国 011
   type: vmess
   network: ws
@@ -2661,297 +2470,11 @@ proxies:
     headers:
       Host: c.2025vless.cloudns.be
     path: /?ed=2056
-- name: 加拿大 052
-  type: vmess
-  network: ws
-  server: 104.19.46.212
-  port: 2082
-  uuid: 19f11a24-7867-443e-b615-fe08772547db
-  tls: false
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: tw2.6bkc.top
-    path: /?ed=2048
-- name: 加拿大 099
-  type: vmess
-  network: ws
-  server: 104.19.46.243
-  port: 2082
-  uuid: 19f11a24-7867-443e-b615-fe08772547db
-  tls: false
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: tw2.6bkc.top
-    path: /?ed=2048
-- name: 加拿大 100
-  type: vmess
-  network: ws
-  server: 104.19.46.17
-  port: 2082
-  uuid: 19f11a24-7867-443e-b615-fe08772547db
-  tls: false
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: tw2.6bkc.top
-    path: /?ed=2048
-- name: 加拿大 101
-  type: vmess
-  network: ws
-  server: 104.19.46.240
-  port: 2082
-  uuid: 19f11a24-7867-443e-b615-fe08772547db
-  tls: false
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: tw2.6bkc.top
-    path: /?ed=2048
-- name: 加拿大 102
-  type: vmess
-  network: ws
-  server: 104.19.46.87
-  port: 2082
-  uuid: 19f11a24-7867-443e-b615-fe08772547db
-  tls: false
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: tw2.6bkc.top
-    path: /?ed=2048
-- name: 加拿大 104
-  type: vmess
-  network: ws
-  server: 104.18.101.37
-  port: 8080
-  uuid: ac3a3e47-47d5-347c-a7c7-fc692a486a0c
-  tls: false
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: 100-100-17-13.cn-db.top
-    path: /dabai.in104.18.101.37
-- name: 加拿大 105
-  type: vmess
-  network: ws
-  server: 104.19.47.77
-  port: 8880
-  uuid: 19f11a24-7867-443e-b615-fe08772547db
-  tls: false
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: tw2.6bkc.top
-    path: /?ed=2048
-- name: 加拿大 106
-  type: vmess
-  network: ws
-  server: 104.19.46.114
-  port: 2082
-  uuid: 19f11a24-7867-443e-b615-fe08772547db
-  tls: false
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: tw2.6bkc.top
-    path: /?ed=2048
-- name: 加拿大 107
-  type: vmess
-  network: ws
-  server: 104.19.46.21
-  port: 2082
-  uuid: 19f11a24-7867-443e-b615-fe08772547db
-  tls: false
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: tw2.6bkc.top
-    path: /?ed=2048
-- name: 加拿大 108
-  type: vmess
-  network: ws
-  server: 104.19.46.47
-  port: 2082
-  uuid: 19f11a24-7867-443e-b615-fe08772547db
-  tls: false
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: tw2.6bkc.top
-    path: /?ed=2048
-- name: 加拿大 109
-  type: vmess
-  network: ws
-  server: 104.19.47.39
-  port: 8880
-  uuid: 19f11a24-7867-443e-b615-fe08772547db
-  tls: false
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: tw2.6bkc.top
-    path: /?ed=2048
-- name: 加拿大 110
-  type: vmess
-  network: ws
-  server: 104.19.46.181
-  port: 2082
-  uuid: 19f11a24-7867-443e-b615-fe08772547db
-  tls: false
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: tw2.6bkc.top
-    path: /?ed=2048
-- name: 加拿大 111
-  type: vmess
-  network: ws
-  server: 104.19.46.36
-  port: 2082
-  uuid: 19f11a24-7867-443e-b615-fe08772547db
-  tls: false
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: tw2.6bkc.top
-    path: /?ed=2048
 - name: 加拿大 112
   type: vmess
   network: ws
   server: 104.19.47.132
   port: 8880
-  uuid: 19f11a24-7867-443e-b615-fe08772547db
-  tls: false
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: tw2.6bkc.top
-    path: /?ed=2048
-- name: 加拿大 113
-  type: vmess
-  network: ws
-  server: 104.19.46.145
-  port: 2082
-  uuid: 19f11a24-7867-443e-b615-fe08772547db
-  tls: false
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: tw2.6bkc.top
-    path: /?ed=2048
-- name: 加拿大 114
-  type: vmess
-  network: ws
-  server: 104.19.46.55
-  port: 2082
-  uuid: 19f11a24-7867-443e-b615-fe08772547db
-  tls: false
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: tw2.6bkc.top
-    path: /?ed=2048
-- name: 加拿大 115
-  type: vmess
-  network: ws
-  server: 104.19.78.96
-  port: 8080
-  uuid: ac3a3e47-47d5-347c-a7c7-fc692a486a0c
-  tls: false
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: 100-100-17-426.cn-db.top
-    path: /dabai.in104.19.78.96
-- name: 加拿大 116
-  type: vmess
-  network: ws
-  server: 104.19.46.30
-  port: 2082
-  uuid: 19f11a24-7867-443e-b615-fe08772547db
-  tls: false
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: tw2.6bkc.top
-    path: /?ed=2048
-- name: 加拿大 117
-  type: vmess
-  network: ws
-  server: 104.19.46.222
-  port: 2082
-  uuid: 19f11a24-7867-443e-b615-fe08772547db
-  tls: false
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: tw2.6bkc.top
-    path: /?ed=2048
-- name: 加拿大 118
-  type: vmess
-  network: ws
-  server: 104.19.46.237
-  port: 2082
-  uuid: 19f11a24-7867-443e-b615-fe08772547db
-  tls: false
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: tw2.6bkc.top
-    path: /?ed=2048
-- name: 加拿大 120
-  type: vmess
-  network: ws
-  server: 104.19.46.170
-  port: 2082
-  uuid: 19f11a24-7867-443e-b615-fe08772547db
-  tls: false
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: tw2.6bkc.top
-    path: /?ed=2048
-- name: 加拿大 121
-  type: vmess
-  network: ws
-  server: 104.19.46.12
-  port: 2082
-  uuid: 19f11a24-7867-443e-b615-fe08772547db
-  tls: false
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: tw2.6bkc.top
-    path: /?ed=2048
-- name: 加拿大 122
-  type: vmess
-  network: ws
-  server: 104.19.46.115
-  port: 2082
   uuid: 19f11a24-7867-443e-b615-fe08772547db
   tls: false
   alterId: 0
@@ -2986,45 +2509,6 @@ proxies:
     headers:
       Host: 127.0.0.1.furiosacага0безумномmaксефуриосе.反了.馬哈拉吉.mойочень.suonycars.buzz.
     path: /RACEVPN
-- name: 加拿大 023
-  type: vmess
-  network: ws
-  server: 104.25.226.50
-  port: 80
-  uuid: 078c86a6-8dde-4dcc-a08e-378990a8b3b2
-  tls: false
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: 127.0.0.1.furiosacага0безумномmaксефуриосе.反了.馬哈拉吉.mойочень.suonycars.buzz.
-    path: /RACEVPN
-- name: 加拿大 026
-  type: vmess
-  network: ws
-  server: 104.25.242.64
-  port: 80
-  uuid: 078c86a6-8dde-4dcc-a08e-378990a8b3b2
-  tls: false
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: 127.0.0.1.furiosacага0безумномmaксефуриосе.反了.馬哈拉吉.mойочень.suonycars.buzz.
-    path: /RACEVPN
-- name: 加拿大 027
-  type: vmess
-  network: ws
-  server: 104.17.184.120
-  port: 80
-  uuid: 078c86a6-8dde-4dcc-a08e-378990a8b3b2
-  tls: false
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: 127.0.0.1.furiosacага0безумномmaксефуриосе.反了.馬哈拉吉.mойочень.suonycars.buzz.
-    path: /RACEVPN
 - name: 哈萨克斯坦 002
   type: vmess
   network: tcp
@@ -3034,32 +2518,6 @@ proxies:
   tls: true
   alterId: 0
   cipher: auto
-- name: 俄罗斯 003
-  type: vmess
-  network: ws
-  server: 46.29.166.162
-  port: 54321
-  uuid: a889551b-4fc5-4216-9164-e0aeda64ffe8
-  tls: false
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: www.apple.com
-    path: /iphone
-- name: 加拿大 031
-  type: vmess
-  network: ws
-  server: 104.20.103.155
-  port: 80
-  uuid: 078c86a6-8dde-4dcc-a08e-378990a8b3b2
-  tls: false
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: 127.0.0.1.furiosacага0безумномmaксефуриосе.反了.馬哈拉吉.mойочень.suonycars.buzz.
-    path: /RACEVPN
 - name: 哈萨克斯坦 003
   type: vmess
   network: tcp
@@ -3070,33 +2528,628 @@ proxies:
   tls: true
   alterId: 0
   cipher: auto
-- name: 美国 001
+- name: 加拿大 045
   type: vmess
   network: ws
-  server: 173.245.58.5
-  port: 443
-  uuid: 76221bfb-e92f-4e80-81c5-6fe48f50ac0b
-  servername: worker-bitter-math-2af8.waxoha3621.workers.dev
-  tls: true
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: worker-bitter-math-2af8.waxoha3621.workers.dev
-    path: /glweidf.sbs/linkws
-- name: 加拿大 005
-  type: vmess
-  network: ws
-  server: 104.19.42.187
-  port: 2052
-  uuid: 424b3be8-0825-4746-92ab-a94be932ee84
+  server: 104.19.34.71
+  port: 80
+  uuid: d25f2826-129e-411b-ab3c-71152fa3df73
   tls: false
   alterId: 0
   cipher: auto
   ws-opts:
     headers:
-      Host: ca-cdncdn.syjd.xyz
-    path: /index?ed=2048
+      Host: m2-sg3.m2network.icu
+    path: /ws?ed=2048
+- name: 加拿大 133
+  type: vmess
+  network: ws
+  server: 104.19.35.63
+  port: 80
+  uuid: b720e0b2-aa39-4633-90d8-489ed91038b0
+  tls: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: m2-sg3.m2network.icu
+    path: /ws?ed=2048
+- name: 加拿大 142
+  type: vmess
+  network: ws
+  server: cfcdn1.sanfencdn9.com
+  port: 8880
+  uuid: c750f7b8-1080-4881-9d4f-7e74b2c56660
+  skip-cert-verify: false
+  tls: false
+  tfo: false
+  alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  ws-opts:
+    headers:
+      Host: us6gzxQRrE4.fzbqfrse.xyz
+    path: /video/bYdJ7Vc2We
+- name: 加拿大 156
+  type: vmess
+  network: ws
+  server: 104.19.160.67
+  port: 8880
+  uuid: c750f7b8-1080-4881-9d4f-7e74b2c56660
+  tls: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: us6gzxQRrE4.fzbqfrse.xyz
+    path: /video/bYdJ7Vc2We
+- name: 加拿大 001
+  type: vmess
+  network: ws
+  server: 104.19.35.19
+  port: 80
+  uuid: b720e0b2-aa39-4633-90d8-489ed91038b0
+  tls: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: m2-sg3.m2network.icu
+    path: /ws?ed=2048
+- name: 加拿大 005
+  type: vmess
+  network: ws
+  server: 104.19.33.112
+  port: 80
+  uuid: 596cf967-3824-4a7c-a008-d65b5f9b5382
+  tls: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: m2-sg3.m2network.icu
+    path: /ws?ed=2048
+- name: 加拿大 018
+  type: vmess
+  network: ws
+  server: 104.19.34.25
+  port: 80
+  uuid: d25f2826-129e-411b-ab3c-71152fa3df73
+  tls: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: m2-sg3.m2network.icu
+    path: /ws?ed=2048
+- name: 加拿大 019
+  type: vmess
+  network: ws
+  server: 104.19.33.34
+  port: 80
+  uuid: 596cf967-3824-4a7c-a008-d65b5f9b5382
+  tls: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: m2-sg3.m2network.icu
+    path: /ws?ed=2048
+- name: 加拿大 020
+  type: vmess
+  network: ws
+  server: 104.19.33.20
+  port: 80
+  uuid: 596cf967-3824-4a7c-a008-d65b5f9b5382
+  tls: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: m2-sg3.m2network.icu
+    path: /ws?ed=2048
+- name: 加拿大 023
+  type: vmess
+  network: ws
+  server: 104.19.34.41
+  port: 80
+  uuid: d25f2826-129e-411b-ab3c-71152fa3df73
+  tls: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: m2-sg3.m2network.icu
+    path: /ws?ed=2048
+- name: 加拿大 026
+  type: vmess
+  network: ws
+  server: 104.19.34.63
+  port: 80
+  uuid: d25f2826-129e-411b-ab3c-71152fa3df73
+  tls: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: m2-sg3.m2network.icu
+    path: /ws?ed=2048
+- name: 加拿大 027
+  type: vmess
+  network: ws
+  server: 104.19.33.82
+  port: 80
+  uuid: 596cf967-3824-4a7c-a008-d65b5f9b5382
+  tls: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: m2-sg3.m2network.icu
+    path: /ws?ed=2048
+- name: 加拿大 028
+  type: vmess
+  network: ws
+  server: 104.19.34.184
+  port: 80
+  uuid: d25f2826-129e-411b-ab3c-71152fa3df73
+  tls: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: m2-sg3.m2network.icu
+    path: /ws?ed=2048
+- name: 加拿大 029
+  type: vmess
+  network: ws
+  server: 104.19.34.212
+  port: 80
+  uuid: d25f2826-129e-411b-ab3c-71152fa3df73
+  tls: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: m2-sg3.m2network.icu
+    path: /ws?ed=2048
+- name: 加拿大 031
+  type: vmess
+  network: ws
+  server: 104.19.33.14
+  port: 80
+  uuid: 596cf967-3824-4a7c-a008-d65b5f9b5382
+  tls: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: m2-sg3.m2network.icu
+    path: /ws?ed=2048
+- name: 加拿大 032
+  type: vmess
+  network: ws
+  server: 104.19.34.202
+  port: 80
+  uuid: d25f2826-129e-411b-ab3c-71152fa3df73
+  tls: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: m2-sg3.m2network.icu
+    path: /ws?ed=2048
+- name: 加拿大 033
+  type: vmess
+  network: ws
+  server: 104.19.33.231
+  port: 80
+  uuid: 596cf967-3824-4a7c-a008-d65b5f9b5382
+  tls: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: m2-sg3.m2network.icu
+    path: /ws?ed=2048
+- name: 加拿大 034
+  type: vmess
+  network: ws
+  server: 104.19.34.29
+  port: 80
+  uuid: d25f2826-129e-411b-ab3c-71152fa3df73
+  tls: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: m2-sg3.m2network.icu
+    path: /ws?ed=2048
+- name: 加拿大 035
+  type: vmess
+  network: ws
+  server: 104.19.34.171
+  port: 80
+  uuid: d25f2826-129e-411b-ab3c-71152fa3df73
+  tls: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: m2-sg3.m2network.icu
+    path: /ws?ed=2048
+- name: 英国 002
+  type: vmess
+  network: tcp
+  server: 46.226.163.104
+  port: 1234
+  uuid: fc450843-a156-496e-8e3e-cc9ca1a2b8d7
+  tls: false
+  alterId: 0
+  cipher: auto
+- name: 加拿大 036
+  type: vmess
+  network: ws
+  server: cfcdn3.sanfencdn9.com
+  port: 2052
+  uuid: c750f7b8-1080-4881-9d4f-7e74b2c56660
+  skip-cert-verify: false
+  tls: false
+  tfo: false
+  alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  ws-opts:
+    headers:
+      Host: wtywwcrzjp5.yofnhkfc.xyz
+    path: /video/9TfVEyku
+- name: 加拿大 039
+  type: vmess
+  network: ws
+  server: az05.beyondy.cfd
+  port: 443
+  uuid: 3f638f34-8dba-4186-bc43-2716a7ddd4be
+  tls: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: az05.beyondy.cfd
+    path: /link
+- name: 加拿大 040
+  type: vmess
+  network: ws
+  server: 104.17.166.121
+  port: 80
+  uuid: 078c86a6-8dde-4dcc-a08e-378990a8b3b2
+  tls: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: 127.0.0.1.furiosacага0безумномmaксефуриосе.反了.馬哈拉吉.mойочень.suonycars.buzz.
+    path: /RACEVPN
+- name: 伊朗 002
+  type: vmess
+  network: tcp
+  server: 46.36.102.5
+  port: 52461
+  uuid: 89c6e380-ccb1-4370-5909-96c589dd2cda
+  tls: false
+  alterId: 0
+  cipher: auto
+- name: 加拿大 037
+  type: vmess
+  network: ws
+  server: 104.19.34.22
+  port: 80
+  uuid: d25f2826-129e-411b-ab3c-71152fa3df73
+  tls: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: m2-sg3.m2network.icu
+    path: /ws?ed=2048
+- name: 加拿大 041
+  type: vmess
+  network: ws
+  server: 104.19.33.24
+  port: 80
+  uuid: 596cf967-3824-4a7c-a008-d65b5f9b5382
+  tls: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: m2-sg3.m2network.icu
+    path: /ws?ed=2048
+- name: 加拿大 043
+  type: vmess
+  network: ws
+  server: 104.19.34.68
+  port: 80
+  uuid: d25f2826-129e-411b-ab3c-71152fa3df73
+  tls: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: m2-sg3.m2network.icu
+    path: /ws?ed=2048
+- name: 加拿大 044
+  type: vmess
+  network: ws
+  server: 104.19.33.102
+  port: 80
+  uuid: 596cf967-3824-4a7c-a008-d65b5f9b5382
+  tls: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: m2-sg3.m2network.icu
+    path: /ws?ed=2048
+- name: 加拿大 046
+  type: vmess
+  network: ws
+  server: 104.19.33.25
+  port: 80
+  uuid: 596cf967-3824-4a7c-a008-d65b5f9b5382
+  tls: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: m2-sg3.m2network.icu
+    path: /ws?ed=2048
+- name: 加拿大 047
+  type: vmess
+  network: ws
+  server: 104.19.33.75
+  port: 80
+  uuid: 596cf967-3824-4a7c-a008-d65b5f9b5382
+  tls: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: m2-sg3.m2network.icu
+    path: /ws?ed=2048
+- name: 加拿大 052
+  type: vmess
+  network: ws
+  server: 104.19.35.227
+  port: 80
+  uuid: b720e0b2-aa39-4633-90d8-489ed91038b0
+  tls: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: m2-sg3.m2network.icu
+    path: /ws?ed=2048
+- name: 加拿大 053
+  type: vmess
+  network: ws
+  server: 104.19.34.99
+  port: 80
+  uuid: d25f2826-129e-411b-ab3c-71152fa3df73
+  tls: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: m2-sg3.m2network.icu
+    path: /ws?ed=2048
+- name: 加拿大 056
+  type: vmess
+  network: ws
+  server: 104.19.34.106
+  port: 80
+  uuid: d25f2826-129e-411b-ab3c-71152fa3df73
+  tls: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: m2-sg3.m2network.icu
+    path: /ws?ed=2048
+- name: 加拿大 057
+  type: vmess
+  network: ws
+  server: 104.19.35.226
+  port: 80
+  uuid: b720e0b2-aa39-4633-90d8-489ed91038b0
+  tls: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: m2-sg3.m2network.icu
+    path: /ws?ed=2048
+- name: 加拿大 058
+  type: vmess
+  network: ws
+  server: 104.19.33.68
+  port: 80
+  uuid: 596cf967-3824-4a7c-a008-d65b5f9b5382
+  tls: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: m2-sg3.m2network.icu
+    path: /ws?ed=2048
+- name: 加拿大 060
+  type: vmess
+  network: ws
+  server: 104.19.33.144
+  port: 80
+  uuid: 596cf967-3824-4a7c-a008-d65b5f9b5382
+  tls: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: m2-sg3.m2network.icu
+    path: /ws?ed=2048
+- name: 加拿大 062
+  type: vmess
+  network: ws
+  server: 104.19.34.129
+  port: 80
+  uuid: d25f2826-129e-411b-ab3c-71152fa3df73
+  tls: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: m2-sg3.m2network.icu
+    path: /ws?ed=2048
+- name: 加拿大 065
+  type: vmess
+  network: ws
+  server: 104.19.35.160
+  port: 80
+  uuid: b720e0b2-aa39-4633-90d8-489ed91038b0
+  tls: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: m2-sg3.m2network.icu
+    path: /ws?ed=2048
+- name: 加拿大 067
+  type: vmess
+  network: ws
+  server: 104.19.34.95
+  port: 80
+  uuid: d25f2826-129e-411b-ab3c-71152fa3df73
+  tls: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: m2-sg3.m2network.icu
+    path: /ws?ed=2048
+- name: 加拿大 069
+  type: vmess
+  network: ws
+  server: 104.19.33.105
+  port: 80
+  uuid: 596cf967-3824-4a7c-a008-d65b5f9b5382
+  tls: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: m2-sg3.m2network.icu
+    path: /ws?ed=2048
+- name: 加拿大 070
+  type: vmess
+  network: ws
+  server: 104.19.35.204
+  port: 80
+  uuid: b720e0b2-aa39-4633-90d8-489ed91038b0
+  tls: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: m2-sg3.m2network.icu
+    path: /ws?ed=2048
+- name: 加拿大 080
+  type: vmess
+  network: ws
+  server: 104.19.33.7
+  port: 80
+  uuid: 596cf967-3824-4a7c-a008-d65b5f9b5382
+  tls: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: m2-sg3.m2network.icu
+    path: /ws?ed=2048
+- name: 加拿大 092
+  type: vmess
+  network: ws
+  server: 104.19.33.84
+  port: 80
+  uuid: 596cf967-3824-4a7c-a008-d65b5f9b5382
+  tls: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: m2-sg3.m2network.icu
+    path: /ws?ed=2048
+- name: 加拿大 097
+  type: vmess
+  network: ws
+  server: 104.19.58.175
+  port: 2052
+  uuid: d6b6d982-d52f-465a-b988-85670b23f64a
+  tls: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: cdn1.freegradely.xyz
+    path: github.com/Alvin9999
+- name: 美国 001
+  type: vmess
+  network: ws
+  server: p1.v2raybrasil.cloud
+  port: 2052
+  uuid: fbac5c1a-9190-4c48-af29-f8f3c47cb90c
+  tls: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: ybr.redbullplus.xyz
+    path: /
+- name: 加拿大 098
+  type: vmess
+  network: ws
+  server: c1.v2raybrasil.cloud
+  port: 2082
+  uuid: fbac5c1a-9190-4c48-af29-f8f3c47cb90c
+  tls: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: ybr.redbullplus.xyz
+    path: /
+- name: 加拿大 099
+  type: vmess
+  network: ws
+  server: 104.18.57.121
+  port: 2052
+  uuid: d6b6d982-d52f-465a-b988-85670b23f64a
+  tls: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: cdn1.freegradely.xyz
+    path: github.com/Alvin9999
+- name: 加拿大 100
+  type: vmess
+  network: ws
+  server: acsg3.cloudflarest.link
+  port: 8080
+  uuid: f990bb63-8fb3-43d0-b89f-61fe8713a461
+  tls: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: helan.jidexufei.top
+    path: /cctv13/hd.m3u8
 proxy-groups:
 - name: PROXY
   type: select
@@ -3108,7 +3161,6 @@ proxy-groups:
 - name: SELECT
   type: select
   proxies: &id001
-  - 加拿大 001
   - 加拿大 002
   - 加拿大 006
   - 加拿大 007
@@ -3152,7 +3204,6 @@ proxy-groups:
   - 俄罗斯 001
   - 加拿大 030
   - 加拿大 038
-  - 加拿大 041
   - 加拿大 042
   - 美国 010
   - 加拿大 048
@@ -3165,8 +3216,6 @@ proxy-groups:
   - 美国 011
   - 爱沙尼亚 001
   - 香港 016
-  - 加拿大 056
-  - 加拿大 057
   - 美国 015
   - 加拿大 059
   - 加拿大 061
@@ -3188,7 +3237,6 @@ proxy-groups:
   - 法国 002
   - 加拿大 078
   - 美国 018
-  - 新加坡 002
   - 加拿大 082
   - 加拿大 083
   - 加拿大 084
@@ -3205,7 +3253,6 @@ proxy-groups:
   - 加拿大 090
   - 瑞典 001
   - 加拿大 091
-  - 加拿大 092
   - 加拿大 093
   - 加拿大 094
   - 加拿大 095
@@ -3213,14 +3260,12 @@ proxy-groups:
   - 加拿大 103
   - 美国 020
   - 爱沙尼亚 003
-  - 美国 024
   - 韩国 019
   - 加拿大 119
   - 瑞典 003
   - 瑞典 004
   - 瑞典 005
   - 瑞典 010
-  - 加拿大 132
   - 加拿大 141
   - 瑞典 013
   - 瑞典 014
@@ -3233,15 +3278,11 @@ proxy-groups:
   - 加拿大 003
   - 加拿大 162
   - 新加坡 004
-  - 美国 035
   - 新加坡 005
   - 法国 003
   - 荷兰 010
   - 美国 041
-  - 德国 007
-  - 美国 043
   - 美国 045
-  - 爱沙尼亚 007
   - 法国 005
   - 加拿大 051
   - 香港 049
@@ -3255,7 +3296,6 @@ proxy-groups:
   - 加拿大 191
   - 加拿大 194
   - 加拿大 195
-  - 加拿大 197
   - 加拿大 205
   - 瑞典 015
   - 新加坡 008
@@ -3269,7 +3309,6 @@ proxy-groups:
   - 加拿大 223
   - 美国 073
   - 韩国 045
-  - 加拿大 124
   - 法国 011
   - 加拿大 252
   - 美国 080
@@ -3291,40 +3330,59 @@ proxy-groups:
   - 美国 091
   - 加拿大 010
   - 加拿大 079
-  - 加拿大 052
-  - 加拿大 099
-  - 加拿大 100
-  - 加拿大 101
-  - 加拿大 102
-  - 加拿大 104
-  - 加拿大 105
-  - 加拿大 106
-  - 加拿大 107
-  - 加拿大 108
-  - 加拿大 109
-  - 加拿大 110
-  - 加拿大 111
   - 加拿大 112
-  - 加拿大 113
-  - 加拿大 114
-  - 加拿大 115
-  - 加拿大 116
-  - 加拿大 117
-  - 加拿大 118
-  - 加拿大 120
-  - 加拿大 121
-  - 加拿大 122
   - 加拿大 004
   - 加拿大 012
+  - 哈萨克斯坦 002
+  - 哈萨克斯坦 003
+  - 加拿大 045
+  - 加拿大 133
+  - 加拿大 142
+  - 加拿大 156
+  - 加拿大 001
+  - 加拿大 005
+  - 加拿大 018
+  - 加拿大 019
+  - 加拿大 020
   - 加拿大 023
   - 加拿大 026
   - 加拿大 027
-  - 哈萨克斯坦 002
-  - 俄罗斯 003
+  - 加拿大 028
+  - 加拿大 029
   - 加拿大 031
-  - 哈萨克斯坦 003
+  - 加拿大 032
+  - 加拿大 033
+  - 加拿大 034
+  - 加拿大 035
+  - 英国 002
+  - 加拿大 036
+  - 加拿大 039
+  - 加拿大 040
+  - 伊朗 002
+  - 加拿大 037
+  - 加拿大 041
+  - 加拿大 043
+  - 加拿大 044
+  - 加拿大 046
+  - 加拿大 047
+  - 加拿大 052
+  - 加拿大 053
+  - 加拿大 056
+  - 加拿大 057
+  - 加拿大 058
+  - 加拿大 060
+  - 加拿大 062
+  - 加拿大 065
+  - 加拿大 067
+  - 加拿大 069
+  - 加拿大 070
+  - 加拿大 080
+  - 加拿大 092
+  - 加拿大 097
   - 美国 001
-  - 加拿大 005
+  - 加拿大 098
+  - 加拿大 099
+  - 加拿大 100
 - name: LOAD-BALANCE
   type: load-balance
   url: https://cp.cloudflare.com/generate_204
