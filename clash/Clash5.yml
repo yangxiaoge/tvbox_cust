@@ -16,6 +16,15 @@ dns:
     - tls://dns.google:853
 proxies:
   - {name: 🇬🇧 高性价比机场:https://kfyun.uk, server: 127.0.0.1, port: 443, client-fingerprint: chrome, type: ss, cipher: aes-128-gcm, password: 6601fb90e9b3, tfo: false, udp: true}
+  - {name: 🇺🇸 美国 CloudFlare节点, server: 104.19.58.175, port: 2052, client-fingerprint: chrome, type: vmess, uuid: d6b6d982-d52f-465a-b988-85670b23f64a, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: cdn1.freegradely.xyz}}, udp: true}
+  - {name: 🇩🇪 德国 黑森州法兰克福Amazon数据中心, server: 35.159.180.44, port: 22222, client-fingerprint: chrome, type: trojan, password: telegram-id-privatevpns, sni: trojan.burgerip.co.uk, skip-cert-verify: false, udp: true}
+  - {name: 🇮🇪 爱尔兰 都柏林Amazon数据中心, server: 34.254.122.51, port: 22222, client-fingerprint: chrome, type: trojan, password: telegram-id-privatevpns, sni: trojan.burgerip.co.uk, skip-cert-verify: false, udp: true}
+  - {name: 🇨🇭 瑞士+v2rayfree.eu.org, server: 195.15.243.171, port: 2048, client-fingerprint: chrome, type: ss, cipher: chacha20-poly1305, password: FDfrXXL5TYb3LfBUFSAgDp46/BCAzQZFronMWDV5J54=, tfo: false, udp: true}
+  - {name: 🇺🇸 美国 CloudFlare节点 2, server: 104.20.19.168, port: 443, client-fingerprint: chrome, type: trojan, password: 50e10abd-3920-42a6-ad0c-6ec731d8c826, sni: golinkwuxian.top, skip-cert-verify: false, network: ws, ws-opts: {path: /apple, headers: {Host: golinkwuxian.top}}, udp: true}
+  - {name: 🇺🇸 美国+惠普HP, server: 15.204.87.222, port: 7001, client-fingerprint: chrome, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, tfo: false, udp: true}
+  - {name: 🇸🇬 美国 新泽西州皮特卡维Choopa数据中心, server: 140.82.2.66, port: 443, client-fingerprint: chrome, type: trojan, password: sharevpn, sni: mynode.work.gd, skip-cert-verify: false, udp: true}
+  - {name: 🇺🇸 北美地区+v2rayfree.eu.org, server: 169.197.142.216, port: 6679, client-fingerprint: chrome, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, tfo: false, udp: true}
+  - {name: 🇺🇸 美国 加利福尼亚州洛杉矶市SharkTech数据中心, server: 107.167.20.178, port: 30000, client-fingerprint: chrome, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, tfo: false, skip-cert-verify: false, servername: www.15314695.xyz, network: ws, ws-opts: {path: /path/191019072927, headers: {Host: 107.167.20.178}}, udp: true}
   - {name: 🇷🇺 俄罗斯  1, server: 185.242.86.156, port: 54170, client-fingerprint: chrome, type: ss, cipher: chacha20-ietf-poly1305, password: 36ZCHeabUSfKjfQEvJ4HDV, tfo: false, udp: true}
   - {name: 🇮🇳 印度  2, server: 202.78.162.5, port: 443, client-fingerprint: chrome, type: vmess, uuid: 2ff97c6d-8557-42a4-b43f-19c77c5959ea, alterId: 0, cipher: auto, tls: true, tfo: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: irsoft.sytes.net}}, udp: true}
   - {name: 🇮🇳 印度  3, server: 202.78.162.5, port: 443, client-fingerprint: chrome, type: vmess, uuid: 118287d2-e968-42e1-80d0-12fa2f5d38d6, alterId: 0, cipher: auto, tls: true, tfo: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: sahand.serveminecraft.net}}, udp: true}
@@ -37,6 +46,15 @@ proxy-groups:
       - ♻️ 自动选择
       - 🎯 全球直连
       - 🇬🇧 高性价比机场:https://kfyun.uk
+      - 🇺🇸 美国 CloudFlare节点
+      - 🇩🇪 德国 黑森州法兰克福Amazon数据中心
+      - 🇮🇪 爱尔兰 都柏林Amazon数据中心
+      - 🇨🇭 瑞士+v2rayfree.eu.org
+      - 🇺🇸 美国 CloudFlare节点 2
+      - 🇺🇸 美国+惠普HP
+      - 🇸🇬 美国 新泽西州皮特卡维Choopa数据中心
+      - 🇺🇸 北美地区+v2rayfree.eu.org
+      - 🇺🇸 美国 加利福尼亚州洛杉矶市SharkTech数据中心
       - 🇷🇺 俄罗斯  1
       - 🇮🇳 印度  2
       - 🇮🇳 印度  3
@@ -57,6 +75,15 @@ proxy-groups:
     interval: 300
     proxies:
       - 🇬🇧 高性价比机场:https://kfyun.uk
+      - 🇺🇸 美国 CloudFlare节点
+      - 🇩🇪 德国 黑森州法兰克福Amazon数据中心
+      - 🇮🇪 爱尔兰 都柏林Amazon数据中心
+      - 🇨🇭 瑞士+v2rayfree.eu.org
+      - 🇺🇸 美国 CloudFlare节点 2
+      - 🇺🇸 美国+惠普HP
+      - 🇸🇬 美国 新泽西州皮特卡维Choopa数据中心
+      - 🇺🇸 北美地区+v2rayfree.eu.org
+      - 🇺🇸 美国 加利福尼亚州洛杉矶市SharkTech数据中心
       - 🇷🇺 俄罗斯  1
       - 🇮🇳 印度  2
       - 🇮🇳 印度  3
@@ -78,6 +105,15 @@ proxy-groups:
       - ♻️ 自动选择
       - 🎯 全球直连
       - 🇬🇧 高性价比机场:https://kfyun.uk
+      - 🇺🇸 美国 CloudFlare节点
+      - 🇩🇪 德国 黑森州法兰克福Amazon数据中心
+      - 🇮🇪 爱尔兰 都柏林Amazon数据中心
+      - 🇨🇭 瑞士+v2rayfree.eu.org
+      - 🇺🇸 美国 CloudFlare节点 2
+      - 🇺🇸 美国+惠普HP
+      - 🇸🇬 美国 新泽西州皮特卡维Choopa数据中心
+      - 🇺🇸 北美地区+v2rayfree.eu.org
+      - 🇺🇸 美国 加利福尼亚州洛杉矶市SharkTech数据中心
       - 🇷🇺 俄罗斯  1
       - 🇮🇳 印度  2
       - 🇮🇳 印度  3
@@ -111,6 +147,15 @@ proxy-groups:
       - ♻️ 自动选择
       - 🎯 全球直连
       - 🇬🇧 高性价比机场:https://kfyun.uk
+      - 🇺🇸 美国 CloudFlare节点
+      - 🇩🇪 德国 黑森州法兰克福Amazon数据中心
+      - 🇮🇪 爱尔兰 都柏林Amazon数据中心
+      - 🇨🇭 瑞士+v2rayfree.eu.org
+      - 🇺🇸 美国 CloudFlare节点 2
+      - 🇺🇸 美国+惠普HP
+      - 🇸🇬 美国 新泽西州皮特卡维Choopa数据中心
+      - 🇺🇸 北美地区+v2rayfree.eu.org
+      - 🇺🇸 美国 加利福尼亚州洛杉矶市SharkTech数据中心
       - 🇷🇺 俄罗斯  1
       - 🇮🇳 印度  2
       - 🇮🇳 印度  3
@@ -136,6 +181,15 @@ proxy-groups:
       - 🎯 全球直连
       - 🔰 节点选择
       - 🇬🇧 高性价比机场:https://kfyun.uk
+      - 🇺🇸 美国 CloudFlare节点
+      - 🇩🇪 德国 黑森州法兰克福Amazon数据中心
+      - 🇮🇪 爱尔兰 都柏林Amazon数据中心
+      - 🇨🇭 瑞士+v2rayfree.eu.org
+      - 🇺🇸 美国 CloudFlare节点 2
+      - 🇺🇸 美国+惠普HP
+      - 🇸🇬 美国 新泽西州皮特卡维Choopa数据中心
+      - 🇺🇸 北美地区+v2rayfree.eu.org
+      - 🇺🇸 美国 加利福尼亚州洛杉矶市SharkTech数据中心
       - 🇷🇺 俄罗斯  1
       - 🇮🇳 印度  2
       - 🇮🇳 印度  3
@@ -156,6 +210,15 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - 🇬🇧 高性价比机场:https://kfyun.uk
+      - 🇺🇸 美国 CloudFlare节点
+      - 🇩🇪 德国 黑森州法兰克福Amazon数据中心
+      - 🇮🇪 爱尔兰 都柏林Amazon数据中心
+      - 🇨🇭 瑞士+v2rayfree.eu.org
+      - 🇺🇸 美国 CloudFlare节点 2
+      - 🇺🇸 美国+惠普HP
+      - 🇸🇬 美国 新泽西州皮特卡维Choopa数据中心
+      - 🇺🇸 北美地区+v2rayfree.eu.org
+      - 🇺🇸 美国 加利福尼亚州洛杉矶市SharkTech数据中心
       - 🇷🇺 俄罗斯  1
       - 🇮🇳 印度  2
       - 🇮🇳 印度  3
@@ -177,6 +240,15 @@ proxy-groups:
       - 🎯 全球直连
       - ♻️ 自动选择
       - 🇬🇧 高性价比机场:https://kfyun.uk
+      - 🇺🇸 美国 CloudFlare节点
+      - 🇩🇪 德国 黑森州法兰克福Amazon数据中心
+      - 🇮🇪 爱尔兰 都柏林Amazon数据中心
+      - 🇨🇭 瑞士+v2rayfree.eu.org
+      - 🇺🇸 美国 CloudFlare节点 2
+      - 🇺🇸 美国+惠普HP
+      - 🇸🇬 美国 新泽西州皮特卡维Choopa数据中心
+      - 🇺🇸 北美地区+v2rayfree.eu.org
+      - 🇺🇸 美国 加利福尼亚州洛杉矶市SharkTech数据中心
       - 🇷🇺 俄罗斯  1
       - 🇮🇳 印度  2
       - 🇮🇳 印度  3
@@ -207,6 +279,15 @@ proxy-groups:
       - 🎯 全球直连
       - ♻️ 自动选择
       - 🇬🇧 高性价比机场:https://kfyun.uk
+      - 🇺🇸 美国 CloudFlare节点
+      - 🇩🇪 德国 黑森州法兰克福Amazon数据中心
+      - 🇮🇪 爱尔兰 都柏林Amazon数据中心
+      - 🇨🇭 瑞士+v2rayfree.eu.org
+      - 🇺🇸 美国 CloudFlare节点 2
+      - 🇺🇸 美国+惠普HP
+      - 🇸🇬 美国 新泽西州皮特卡维Choopa数据中心
+      - 🇺🇸 北美地区+v2rayfree.eu.org
+      - 🇺🇸 美国 加利福尼亚州洛杉矶市SharkTech数据中心
       - 🇷🇺 俄罗斯  1
       - 🇮🇳 印度  2
       - 🇮🇳 印度  3
