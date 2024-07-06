@@ -710,18 +710,6 @@ proxies:
     headers:
       Host: a.ssll.gay
     path: twitterfreecodes
-- name: 爱沙尼亚 002
-  type: vless
-  network: ws
-  server: 45.80.110.245
-  port: 8443
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  servername: a.ssll.gay
-  tls: true
-  ws-opts:
-    headers:
-      Host: a.ssll.gay
-    path: twitter苏小柠
 - name: 俄罗斯 002
   type: vless
   network: ws
@@ -872,20 +860,6 @@ proxies:
     headers:
       Host: pardazesh18.pages.dev
     path: /TELEGRAM-MARAMBASHI/?ed=2048
-- name: 加拿大 090
-  type: vless
-  network: ws
-  server: 104.16.163.6
-  port: 443
-  uuid: d9eb0df3-3190-4447-86b6-656fe5ff1119
-  servername: mmdv2.pages.dev
-  tls: true
-  client-fingerprint: chrome
-  delay: 1090
-  ws-opts:
-    headers:
-      Host: mmdv2.pages.dev
-    path: /?ed=2048
 - name: 加拿大 091
   type: vless
   network: ws
@@ -900,20 +874,6 @@ proxies:
     headers:
       Host: mmdv2.pages.dev
     path: /
-- name: 加拿大 093
-  type: vless
-  network: ws
-  server: 104.18.12.229
-  port: 2096
-  uuid: f3dc958a-1f2c-4d10-b781-b2deeaabecce
-  servername: free1.fylink.tech
-  tls: true
-  client-fingerprint: chrome
-  delay: 1044
-  ws-opts:
-    headers:
-      Host: free1.fylink.tech
-    path: /Telegram
 - name: 加拿大 095
   type: vless
   network: ws
@@ -1062,19 +1022,6 @@ proxies:
   ws-opts:
     headers:
       Host: hanguo.mojc.xyz
-    path: /?ed=2048
-- name: 加拿大 003
-  type: vmess
-  network: ws
-  server: baobaojichang.bbjc.xyz
-  port: 8080
-  uuid: 5ad59c1e-617c-407b-ad62-1bd16f6c20d4
-  tls: false
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: riben.mojc.xyz
     path: /?ed=2048
 - name: 加拿大 162
   type: vmess
@@ -1505,20 +1452,6 @@ proxies:
     headers:
       Host: c.2025vless.cloudns.be
     path: /?ed=2056
-- name: 加拿大 010
-  type: vmess
-  network: ws
-  server: 104.16.61.8
-  port: 2083
-  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
-  servername: 6ba6-sound-6ba6.siliy37818.workers.dev
-  tls: true
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: 6ba6-sound-6ba6.siliy37818.workers.dev
-    path: /obdii.cfd/linkws
 - name: 加拿大 079
   type: vless
   network: ws
@@ -2171,20 +2104,6 @@ proxies:
     headers:
       Host: ip1.1457230.xyz
     path: /
-- name: 加拿大 052
-  type: vmess
-  network: ws
-  server: 104.25.228.174
-  port: 80
-  uuid: 5ea4a644-07e9-4ad0-860d-50bd9b6e7f94
-  skip-cert-verify: false
-  tls: false
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: dl2.升級.3скалация.mальчикицапля.男孩與蒼鷺.wonkacapitano.buzz.
-    path: /
 - name: 加拿大 053
   type: vmess
   network: ws
@@ -2238,6 +2157,49 @@ proxies:
     headers:
       Host: ip14.freegradely.xyz
     path: github.com/Alvin9999
+- name: 加拿大 003
+  type: vmess
+  network: ws
+  server: 104.19.45.11
+  port: 8443
+  uuid: 39135a39-e6ca-43df-a360-d859eea58d86
+  servername: hk01.leleles.us
+  skip-cert-verify: false
+  tls: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: hk01.leleles.us
+    path: /
+- name: 美国 002
+  type: vmess
+  network: ws
+  server: 172.64.198.249
+  port: 2086
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  skip-cert-verify: false
+  tls: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: ip1.1457230.xyz
+    path: /
+- name: 加拿大 010
+  type: vmess
+  network: ws
+  server: 104.19.46.59
+  port: 2086
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  skip-cert-verify: false
+  tls: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: ip13.freegradely.xyz
+    path: /
 proxy-groups:
 - name: PROXY
   type: select
@@ -2291,7 +2253,6 @@ proxy-groups:
   - 法国 001
   - 加拿大 072
   - 加拿大 073
-  - 爱沙尼亚 002
   - 俄罗斯 002
   - 加拿大 074
   - 加拿大 076
@@ -2303,9 +2264,7 @@ proxy-groups:
   - 美国 022
   - 加拿大 086
   - 加拿大 089
-  - 加拿大 090
   - 加拿大 091
-  - 加拿大 093
   - 加拿大 095
   - 加拿大 096
   - 加拿大 103
@@ -2317,7 +2276,6 @@ proxy-groups:
   - 瑞典 019
   - 加拿大 153
   - 加拿大 151
-  - 加拿大 003
   - 加拿大 162
   - 新加坡 004
   - 新加坡 005
@@ -2349,7 +2307,6 @@ proxy-groups:
   - 加拿大 278
   - 加拿大 281
   - 加拿大 289
-  - 加拿大 010
   - 加拿大 079
   - 加拿大 045
   - 加拿大 097
@@ -2398,11 +2355,13 @@ proxy-groups:
   - 加拿大 046
   - 加拿大 047
   - 加拿大 048
-  - 加拿大 052
   - 加拿大 053
   - 加拿大 054
   - 加拿大 055
   - 加拿大 056
+  - 加拿大 003
+  - 美国 002
+  - 加拿大 010
 - name: LOAD-BALANCE
   type: load-balance
   url: https://cp.cloudflare.com/generate_204
