@@ -442,18 +442,6 @@ proxies:
     headers:
       Host: square-snowflake-486a.beshir-beisel.workers.dev
     path: /linde06.indiavideo.sbs/linkws
-- name: 香港 011
-  type: vless
-  network: ws
-  server: 47.243.120.239
-  port: 2096
-  uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869
-  servername: xin333.ylks.link
-  tls: true
-  ws-opts:
-    headers:
-      Host: xin333.ylks.link
-    path: /?proxyip=proxyip.aliyun.fxxk.dedyn.io
 - name: 美国 011
   type: vless
   network: ws
@@ -570,20 +558,6 @@ proxies:
     headers:
       Host: ircp-617.pages.dev.
     path: /?ed=2048
-- name: 加拿大 096
-  type: vless
-  network: ws
-  server: www.speedtest.net
-  port: 2096
-  uuid: b41e1631-ceb3-47c9-ba87-c65a46f2f5a8
-  servername: vpNeRor.SAjadHADadi.WEbsiTe
-  tls: true
-  client-fingerprint: chrome
-  delay: 1080
-  ws-opts:
-    headers:
-      Host: vpNeRor.SAjadHADadi.WEbsiTe
-    path: /eOwMtmADY6cWup8R?ed=2560
 - name: 爱沙尼亚 003
   type: vless
   network: ws
@@ -672,19 +646,6 @@ proxies:
   type: vmess
   network: ws
   server: yx3.gyyun.top
-  port: 2052
-  uuid: 9d4d2803-cbf8-4c49-afeb-3ce17ae0007a
-  tls: false
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: lrb1.gyyun.top
-    path: /?ed=2048
-- name: 加拿大 131
-  type: vmess
-  network: ws
-  server: yx1.gyyun.top
   port: 2052
   uuid: 9d4d2803-cbf8-4c49-afeb-3ce17ae0007a
   tls: false
@@ -1720,20 +1681,6 @@ proxies:
     headers:
       Host: d396-flower-d396.megare7260.workers.dev
     path: /
-- name: 加拿大 009
-  type: vmess
-  network: ws
-  server: 104.19.32.226
-  port: 2052
-  uuid: d6b6d982-d52f-465a-b988-85670b23f64a
-  skip-cert-verify: false
-  tls: false
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: cdn2.freegradely.xyz
-    path: /
 - name: 美国 002
   type: vmess
   network: ws
@@ -1748,6 +1695,49 @@ proxies:
   ws-opts:
     headers:
       Host: nezuko.raidenshogun.cloudns.org
+    path: /
+- name: 美国 003
+  type: vmess
+  network: ws
+  server: 172.67.192.57
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  servername: max.mankadmu.com
+  skip-cert-verify: false
+  tls: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: max.mankadmu.com
+    path: /
+- name: 美国 013
+  type: vmess
+  network: ws
+  server: 172.64.175.213
+  port: 2052
+  uuid: d6b6d982-d52f-465a-b988-85670b23f64a
+  skip-cert-verify: false
+  tls: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: cdn1.freegradely.xyz
+    path: /
+- name: 加拿大 009
+  type: vmess
+  network: ws
+  server: 104.19.32.226
+  port: 2052
+  uuid: d6b6d982-d52f-465a-b988-85670b23f64a
+  skip-cert-verify: false
+  tls: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: cdn3.freegradely.xyz
     path: /
 proxy-groups:
 - name: PROXY
@@ -1782,7 +1772,6 @@ proxy-groups:
   - 加拿大 022
   - 加拿大 024
   - 加拿大 050
-  - 香港 011
   - 美国 011
   - 香港 016
   - 加拿大 063
@@ -1792,7 +1781,6 @@ proxy-groups:
   - 加拿大 089
   - 加拿大 091
   - 加拿大 095
-  - 加拿大 096
   - 爱沙尼亚 003
   - 加拿大 119
   - 新加坡 004
@@ -1800,7 +1788,6 @@ proxy-groups:
   - 法国 003
   - 美国 041
   - 加拿大 081
-  - 加拿大 131
   - 加拿大 189
   - 加拿大 208
   - 荷兰 006
@@ -1876,8 +1863,10 @@ proxy-groups:
   - 加拿大 002
   - 加拿大 007
   - 加拿大 008
-  - 加拿大 009
   - 美国 002
+  - 美国 003
+  - 美国 013
+  - 加拿大 009
 - name: LOAD-BALANCE
   type: load-balance
   url: https://cp.cloudflare.com/generate_204
