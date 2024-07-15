@@ -317,35 +317,6 @@ proxies:
     headers:
       Host: ccs.443888.xyz
     path: /vless?ed=2560
-- name: 韩国 010
-  type: vless
-  network: ws
-  server: 59.23.158.27
-  port: 18621
-  uuid: 7509f896-2115-4420-b487-501c9103bebd
-  skip-cert-verify: true
-  tls: true
-  tfo: false
-  client-fingerprint: chrome
-  delay: 1293
-  ws-opts:
-    headers:
-      Host: ccs.443888.xyz
-    path: /vless?ed=2560
-- name: 香港 006
-  type: vless
-  network: ws
-  server: 156.251.180.176
-  port: 21698
-  uuid: 7509f896-2115-4420-b487-501c9103bebd
-  skip-cert-verify: true
-  tls: true
-  tfo: false
-  client-fingerprint: chrome
-  ws-opts:
-    headers:
-      Host: ccs.443888.xyz
-    path: /vless?ed=2560
 - name: 韩国 012
   type: vless
   network: ws
@@ -454,18 +425,6 @@ proxies:
     headers:
       Host: 78345.pages.dev
     path: /?ed
-- name: 香港 016
-  type: vless
-  network: ws
-  server: 204.93.210.208
-  port: 8443
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  servername: a.ssll.gay
-  tls: true
-  ws-opts:
-    headers:
-      Host: a.ssll.gay
-    path: Twitterfreecodes
 - name: 加拿大 063
   type: vless
   network: ws
@@ -652,32 +611,6 @@ proxies:
     headers:
       Host: c.2025vless.cloudns.be
     path: /?ed=2056
-- name: 荷兰 006
-  type: vless
-  network: ws
-  server: 45.159.217.54
-  port: 2087
-  uuid: 775213ac-3976-439a-8977-3277c0e4735d
-  servername: fq521.6789.cloudns.be
-  tls: true
-  delay: 1339
-  ws-opts:
-    headers:
-      Host: fq521.6789.cloudns.be
-    path: Twitter苏小柠
-- name: 美国 067
-  type: vless
-  network: ws
-  server: 209.46.30.217
-  port: 8443
-  uuid: 775213ac-3976-439a-8977-3277c0e4735d
-  servername: fq521.6789.cloudns.be
-  tls: true
-  delay: 1298
-  ws-opts:
-    headers:
-      Host: fq521.6789.cloudns.be
-    path: Twitter苏小柠
 - name: 加拿大 222
   type: vless
   network: ws
@@ -706,21 +639,6 @@ proxies:
     headers:
       Host: tESt-tEst-TesT-Test.paGEs.DEV
     path: /telegram-
-- name: 美国 073
-  type: vless
-  network: ws
-  server: 47.76.178.146
-  port: 2053
-  uuid: a27dedf5-5e63-48ec-8239-e256b1b3d310
-  servername: 3555.aespa.dynv6.net
-  tls: true
-  client-fingerprint: random
-  alpn:
-  - http/1.1
-  ws-opts:
-    headers:
-      Host: 3555.aespa.dynv6.net
-    path: /?proxyip=proxyip.us.fxxk.dedyn.io
 - name: 美国 080
   type: vless
   network: ws
@@ -735,21 +653,6 @@ proxies:
     headers:
       Host: vahem.minusober.com
     path: /vahem
-- name: 香港 017
-  type: vless
-  network: ws
-  server: 156.251.176.109
-  port: 46010
-  uuid: 7509f896-2115-4420-b487-501c9103bebd
-  skip-cert-verify: true
-  tls: true
-  tfo: false
-  client-fingerprint: chrome
-  delay: 898
-  ws-opts:
-    headers:
-      Host: ccs.443888.xyz
-    path: /vless?ed=2560
 - name: 加拿大 264
   type: vmess
   network: ws
@@ -824,19 +727,6 @@ proxies:
   ws-opts:
     headers:
       Host: ip11.freegradely.xyz
-    path: github.com/Alvin9999
-- name: 加拿大 097
-  type: vmess
-  network: ws
-  server: 104.19.58.175
-  port: 2052
-  uuid: d6b6d982-d52f-465a-b988-85670b23f64a
-  tls: false
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: cdn1.freegradely.xyz
     path: github.com/Alvin9999
 - name: 美国 001
   type: vmess
@@ -1432,19 +1322,6 @@ proxies:
     headers:
       Host: ip2.1457230.xyz
     path: github.com/Alvin9999
-- name: 加拿大 115
-  type: vmess
-  network: ws
-  server: 104.19.47.136
-  port: 8080
-  uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d
-  tls: false
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: oiictw.yydsii.com
-    path: /?ed=2048
 - name: 美国 009
   type: vmess
   network: ws
@@ -1554,36 +1431,6 @@ proxies:
     headers:
       Host: hk01.leleles.us
     path: /
-- name: 加拿大 004
-  type: vmess
-  network: ws
-  server: 104.16.60.8
-  port: 2083
-  uuid: 441da342-ce90-441e-bff9-d2ceb55e68ca
-  servername: ep-sunset-9b11.kekic13319.workers.dev
-  skip-cert-verify: false
-  tls: true
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: ep-sunset-9b11.kekic13319.workers.dev
-    path: /
-- name: 美国 004
-  type: vmess
-  network: ws
-  server: 104.19.47.35
-  port: 8443
-  uuid: 39135a39-e6ca-43df-a360-d859eea58d86
-  servername: hk01.linkitnow.net
-  skip-cert-verify: false
-  tls: true
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: hk01.linkitnow.net
-    path: /
 - name: 加拿大 010
   type: vmess
   network: ws
@@ -1626,50 +1473,6 @@ proxies:
     headers:
       Host: cdn1.freegradely.xyz
     path: /
-- name: 加拿大 008
-  type: vmess
-  network: ws
-  server: 104.16.61.8
-  port: 80
-  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
-  skip-cert-verify: false
-  tls: false
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: d396-flower-d396.megare7260.workers.dev
-    path: /
-- name: 美国 002
-  type: vmess
-  network: ws
-  server: 172.67.191.45
-  port: 443
-  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
-  servername: nezuko.raidenshogun.cloudns.org
-  skip-cert-verify: false
-  tls: true
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: nezuko.raidenshogun.cloudns.org
-    path: /
-- name: 美国 003
-  type: vmess
-  network: ws
-  server: 172.67.192.57
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  servername: max.mankadmu.com
-  skip-cert-verify: false
-  tls: true
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: max.mankadmu.com
-    path: /
 - name: 美国 013
   type: vmess
   network: ws
@@ -1698,6 +1501,77 @@ proxies:
     headers:
       Host: cdn3.freegradely.xyz
     path: /
+- name: 美国 014
+  type: vmess
+  network: ws
+  server: hcaptcha.com
+  port: 80
+  uuid: e7f05a4a-0032-325b-b421-a1c25b428ce0
+  skip-cert-verify: false
+  tls: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: BAIUS1.ssl12.xyz
+    path: /
+- name: 美国 002
+  type: vmess
+  network: ws
+  server: 104.21.82.17
+  port: 443
+  uuid: bc864078-dcf3-4bf4-8dbf-ca9f200b56be
+  skip-cert-verify: false
+  tls: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: gwdef.sbs
+    path: /
+- name: 加拿大 004
+  type: vmess
+  network: ws
+  server: 104.16.148.244
+  port: 2086
+  uuid: 29eebb60-b27b-4a9d-bba5-947763d9205e
+  servername: ip006.freegradely.xyz
+  skip-cert-verify: false
+  tls: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: ip006.freegradely.xyz
+    path: /
+- name: 加拿大 008
+  type: vmess
+  network: ws
+  server: 104.19.58.175
+  port: 2052
+  uuid: d6b6d982-d52f-465a-b988-85670b23f64a
+  skip-cert-verify: false
+  tls: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: cdn1.freegradely.xyz
+    path: /
+- name: 美国 003
+  type: vmess
+  network: ws
+  server: 172.66.47.86
+  port: 2095
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  skip-cert-verify: false
+  tls: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: sany0116.donovan-a79.workers.dev
+    path: /
 proxy-groups:
 - name: PROXY
   type: select
@@ -1722,8 +1596,6 @@ proxy-groups:
   - 香港 001
   - 香港 002
   - 香港 003
-  - 韩国 010
-  - 香港 006
   - 韩国 012
   - 加拿大 015
   - 加拿大 017
@@ -1732,7 +1604,6 @@ proxy-groups:
   - 加拿大 024
   - 加拿大 050
   - 美国 011
-  - 香港 016
   - 加拿大 063
   - 加拿大 073
   - 哈萨克斯坦 001
@@ -1747,19 +1618,14 @@ proxy-groups:
   - 美国 041
   - 加拿大 189
   - 加拿大 208
-  - 荷兰 006
-  - 美国 067
   - 加拿大 222
   - 加拿大 223
-  - 美国 073
   - 美国 080
-  - 香港 017
   - 加拿大 264
   - 加拿大 265
   - 美国 082
   - 加拿大 278
   - 加拿大 281
-  - 加拿大 097
   - 美国 001
   - 加拿大 134
   - 加拿大 012
@@ -1804,7 +1670,6 @@ proxy-groups:
   - 加拿大 110
   - 加拿大 111
   - 美国 006
-  - 加拿大 115
   - 美国 009
   - 美国 010
   - 加拿大 117
@@ -1813,16 +1678,16 @@ proxy-groups:
   - 加拿大 106
   - 加拿大 109
   - 加拿大 121
-  - 加拿大 004
-  - 美国 004
   - 加拿大 010
   - 加拿大 002
   - 加拿大 007
-  - 加拿大 008
-  - 美国 002
-  - 美国 003
   - 美国 013
   - 加拿大 009
+  - 美国 014
+  - 美国 002
+  - 加拿大 004
+  - 加拿大 008
+  - 美国 003
 - name: LOAD-BALANCE
   type: load-balance
   url: https://cp.cloudflare.com/generate_204
