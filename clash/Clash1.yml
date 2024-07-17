@@ -129,21 +129,6 @@ dns:
     - +.googleapis.cn
     - +.googleapis.com
 proxies:
-- name: 加拿大 006
-  type: vmess
-  network: ws
-  server: 104.16.67.38
-  port: 2086
-  uuid: edbb1059-1633-4271-b66e-ed4fba47a1bf
-  servername: snowy-river-f497.turkeys-radford.workers.dev
-  skip-cert-verify: true
-  alterId: 0
-  cipher: auto
-  delay: 1242
-  ws-opts:
-    headers:
-      Host: snowy-river-f497.turkeys-radford.workers.dev
-    path: /linde06.indiavideo.sbs/linkws
 - name: 美国 007
   type: vless
   network: ws
@@ -154,20 +139,6 @@ proxies:
   tls: true
   tfo: false
   client-fingerprint: chrome
-  ws-opts:
-    headers:
-      Host: ccs.443888.xyz
-    path: /vless?ed=2560
-- name: 韩国 003
-  type: vless
-  network: ws
-  server: 132.226.22.106
-  port: 34237
-  uuid: 7509f896-2115-4420-b487-501c9103bebd
-  skip-cert-verify: true
-  tls: true
-  client-fingerprint: chrome
-  delay: 1430
   ws-opts:
     headers:
       Host: ccs.443888.xyz
@@ -210,20 +181,6 @@ proxies:
   tls: true
   client-fingerprint: chrome
   delay: 1170
-  ws-opts:
-    headers:
-      Host: ccs.443888.xyz
-    path: /vless?ed=2560
-- name: 韩国 007
-  type: vless
-  network: ws
-  server: 193.123.225.106
-  port: 34237
-  uuid: 7509f896-2115-4420-b487-501c9103bebd
-  skip-cert-verify: true
-  tls: true
-  client-fingerprint: chrome
-  delay: 1089
   ws-opts:
     headers:
       Host: ccs.443888.xyz
@@ -282,21 +239,6 @@ proxies:
   tfo: false
   client-fingerprint: chrome
   delay: 1393
-  ws-opts:
-    headers:
-      Host: ccs.443888.xyz
-    path: /vless?ed=2560
-- name: 香港 003
-  type: vless
-  network: ws
-  server: 47.76.194.234
-  port: 34237
-  uuid: 7509f896-2115-4420-b487-501c9103bebd
-  skip-cert-verify: true
-  tls: true
-  tfo: false
-  client-fingerprint: chrome
-  delay: 2212
   ws-opts:
     headers:
       Host: ccs.443888.xyz
@@ -409,18 +351,6 @@ proxies:
     headers:
       Host: 78345.pages.dev
     path: /?ed
-- name: 加拿大 063
-  type: vless
-  network: ws
-  server: 172.67.198.111
-  port: 443
-  uuid: 11e5b771-1d4d-4362-b4b5-e39e75981f01
-  servername: 3e8B07A5.PUb000bpB.PAGes.Dev
-  tls: true
-  ws-opts:
-    headers:
-      Host: 3e8B07A5.PUb000bpB.PAGes.Dev
-    path: /
 - name: 加拿大 073
   type: vless
   network: ws
@@ -609,20 +539,6 @@ proxies:
     headers:
       Host: MARgBarsefASEd-MOlA-CHapI-MOJaheD.PAGes.deV
     path: /TELEGRAM-MARAMBASHI/?ed=2048
-- name: 加拿大 223
-  type: vless
-  network: ws
-  server: sefarat24.com
-  port: 443
-  uuid: 6a89dc04-7781-46fe-b35c-e14a6b6e60b8
-  servername: tESt-tEst-TesT-Test.paGEs.DEV
-  tls: true
-  client-fingerprint: randomized
-  delay: 1816
-  ws-opts:
-    headers:
-      Host: tESt-tEst-TesT-Test.paGEs.DEV
-    path: /telegram-
 - name: 美国 080
   type: vless
   network: ws
@@ -1038,20 +954,6 @@ proxies:
     headers:
       Host: cdn1.freegradely.xyz
     path: /
-- name: 加拿大 051
-  type: vmess
-  network: ws
-  server: 104.19.123.11
-  port: 2052
-  uuid: d6b6d982-d52f-465a-b988-85670b23f64a
-  skip-cert-verify: false
-  tls: false
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: cdn1.freegradely.xyz
-    path: /
 - name: 加拿大 069
   type: vmess
   network: ws
@@ -1391,20 +1293,6 @@ proxies:
     headers:
       Host: cdn1.freegradely.xyz
     path: /
-- name: 美国 014
-  type: vmess
-  network: ws
-  server: hcaptcha.com
-  port: 80
-  uuid: e7f05a4a-0032-325b-b421-a1c25b428ce0
-  skip-cert-verify: false
-  tls: false
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: BAIUS1.ssl12.xyz
-    path: /
 - name: 加拿大 008
   type: vmess
   network: ws
@@ -1419,6 +1307,63 @@ proxies:
     headers:
       Host: cdn1.freegradely.xyz
     path: /
+- name: 加拿大 001
+  type: vmess
+  network: ws
+  server: 104.19.55.79
+  port: 2052
+  uuid: d6b6d982-d52f-465a-b988-85670b23f64a
+  skip-cert-verify: false
+  tls: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: cdn3.freegradely.xyz
+    path: /
+- name: 加拿大 004
+  type: vmess
+  network: ws
+  server: 104.20.25.146
+  port: 2052
+  uuid: d6b6d982-d52f-465a-b988-85670b23f64a
+  skip-cert-verify: false
+  tls: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: cdn1.freegradely.xyz
+    path: /
+- name: 加拿大 006
+  type: vmess
+  network: ws
+  server: 104.16.61.8
+  port: 2082
+  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
+  skip-cert-verify: false
+  tls: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: y-old-mode-9c0diab.wiriy73548.workers.dev
+    path: /
+- name: 加拿大 009
+  type: vmess
+  network: ws
+  server: 104.16.67.38
+  port: 2086
+  uuid: edbb1059-1633-4271-b66e-ed4fba47a1bf
+  servername: snowy-river-f497.turkeys-radford.workers.dev
+  skip-cert-verify: false
+  tls: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: snowy-river-f497.turkeys-radford.workers.dev
+    path: /
 proxy-groups:
 - name: PROXY
   type: select
@@ -1430,18 +1375,14 @@ proxy-groups:
 - name: SELECT
   type: select
   proxies: &id001
-  - 加拿大 006
   - 美国 007
-  - 韩国 003
   - 韩国 004
   - 韩国 005
   - 韩国 006
-  - 韩国 007
   - 韩国 009
   - 日本 003
   - 香港 001
   - 香港 002
-  - 香港 003
   - 韩国 012
   - 加拿大 015
   - 加拿大 017
@@ -1450,7 +1391,6 @@ proxy-groups:
   - 加拿大 024
   - 加拿大 050
   - 美国 011
-  - 加拿大 063
   - 加拿大 073
   - 哈萨克斯坦 001
   - 加拿大 082
@@ -1465,7 +1405,6 @@ proxy-groups:
   - 加拿大 189
   - 加拿大 208
   - 加拿大 222
-  - 加拿大 223
   - 美国 080
   - 加拿大 264
   - 加拿大 265
@@ -1496,7 +1435,6 @@ proxy-groups:
   - 加拿大 100
   - 加拿大 105
   - 加拿大 005
-  - 加拿大 051
   - 加拿大 069
   - 加拿大 020
   - 加拿大 058
@@ -1522,8 +1460,11 @@ proxy-groups:
   - 加拿大 002
   - 加拿大 007
   - 美国 013
-  - 美国 014
   - 加拿大 008
+  - 加拿大 001
+  - 加拿大 004
+  - 加拿大 006
+  - 加拿大 009
 - name: LOAD-BALANCE
   type: load-balance
   url: https://cp.cloudflare.com/generate_204
