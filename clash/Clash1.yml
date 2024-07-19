@@ -771,21 +771,6 @@ proxies:
     headers:
       Host: ip13.freegradely.xyz
     path: github.com/Alvin9999
-- name: 加拿大 061
-  type: vmess
-  network: ws
-  server: 104.19.45.17
-  port: 2086
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  servername: ip1.1457230.xyz
-  skip-cert-verify: false
-  tls: false
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: ip1.1457230.xyz
-    path: /
 - name: 加拿大 070
   type: vmess
   network: ws
@@ -1153,34 +1138,6 @@ proxies:
   ws-opts:
     headers:
       Host: hk01.linkitnow.net
-    path: /
-- name: 加拿大 106
-  type: vmess
-  network: ws
-  server: 104.26.7.132
-  port: 2052
-  uuid: d6b6d982-d52f-465a-b988-85670b23f64a
-  skip-cert-verify: false
-  tls: false
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: cdn1.freegradely.xyz
-    path: /
-- name: 加拿大 121
-  type: vmess
-  network: ws
-  server: 104.19.45.17
-  port: 8443
-  uuid: 39135a39-e6ca-43df-a360-d859eea58d86
-  skip-cert-verify: false
-  tls: true
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: hk01.leleles.us
     path: /
 - name: 加拿大 010
   type: vmess
@@ -1621,6 +1578,288 @@ proxies:
     headers:
       Host: b3.ludou.us.kg
     path: /?ed=2048
+- name: 美国 027
+  type: vmess
+  network: ws
+  server: 999.bitaiyun.tech
+  port: 8880
+  uuid: c98e0da1-eeb0-449b-b173-5afc0d2d74de
+  tls: false
+  udp: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: 877.bitaiyun.tech
+    path: /?ed=2048
+- name: 美国 028
+  type: vmess
+  network: ws
+  server: sg1.ludou.us.kg
+  port: 80
+  uuid: dcce2089-334a-41d3-b117-99075aa65774
+  tls: false
+  udp: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: sg.ludou.us.kg
+    path: /?ed=2048
+- name: 美国 029
+  type: vmess
+  network: ws
+  server: m2-by1.m2network.icu
+  port: 80
+  uuid: 27682278-393e-4a80-8ad0-bf08bbc27833
+  tls: false
+  udp: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: m2-by1.m2network.icu
+    path: /ws?ed=2560
+- name: 广东省 001
+  type: vmess
+  network: ws
+  server: gzo2.runjustfast.com
+  port: 30006
+  uuid: 3eeda9c3-f765-478b-9f97-ca9beec55afa
+  servername: us1.runjustfast.com
+  tls: true
+  udp: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: us1.runjustfast.com
+    path: /4su6gxksa11c
+- name: 广东省 002
+  type: vmess
+  network: ws
+  server: nco.runjustfast.com
+  port: 30004
+  uuid: 5f3bf422-a064-4e5a-ac63-f59ad9cf28c4
+  servername: hk1.runjustfast.com
+  tls: true
+  udp: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: hk1.runjustfast.com
+    path: /31k64xkea01x
+- name: 加拿大 018
+  type: vmess
+  network: ws
+  server: m2-fl1.m2network.icu
+  port: 80
+  uuid: ef05c5a5-ee19-4fec-acfa-4b0d691f80f8
+  tls: false
+  udp: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: m2-fl1.m2network.icu
+    path: /ws?ed=2560
+- name: 加拿大 022
+  type: vmess
+  network: ws
+  server: m2-ca1.m2network.icu
+  port: 80
+  uuid: 27682278-393e-4a80-8ad0-bf08bbc27833
+  tls: false
+  udp: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: m2-ca1.m2network.icu
+    path: /ws?ed=2560
+- name: 加拿大 023
+  type: vmess
+  network: ws
+  server: m2-lv1.m2network.icu
+  port: 80
+  uuid: c186d80d-ba97-4622-9e09-128d7065f020
+  tls: false
+  udp: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: m2-lv1.m2network.icu
+    path: /ws?ed=2560
+- name: 加拿大 025
+  type: vmess
+  network: ws
+  server: a6.ludou.us.kg
+  port: 80
+  uuid: dcce2089-334a-41d3-b117-99075aa65774
+  tls: false
+  udp: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: b6.ludou.us.kg
+    path: /?ed=2048
+- name: 加拿大 027
+  type: vmess
+  network: ws
+  server: m2-es1.m2network.icu
+  port: 80
+  uuid: c186d80d-ba97-4622-9e09-128d7065f020
+  tls: false
+  udp: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: m2-es1.m2network.icu
+    path: /ws?ed=2560
+- name: 加拿大 028
+  type: vmess
+  network: ws
+  server: 1111.bitaiyun.tech
+  port: 80
+  uuid: c9604ca0-f1f5-4066-8ab1-ee2dbaf6d83a
+  tls: false
+  udp: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: 1321.bitaiyun.tech
+    path: /?ed=2048
+- name: 加拿大 029
+  type: vmess
+  network: ws
+  server: 01.bitaiyun.tech
+  port: 80
+  uuid: c9604ca0-f1f5-4066-8ab1-ee2dbaf6d83a
+  tls: false
+  udp: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: 02.bitaiyun.tech
+    path: /vccmn
+- name: 加拿大 030
+  type: vmess
+  network: ws
+  server: a1.ludou.us.kg
+  port: 80
+  uuid: c98e0da1-eeb0-449b-b173-5afc0d2d74de
+  tls: false
+  udp: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: b1.ludou.us.kg
+    path: /?ed=2048
+- name: 加拿大 031
+  type: vmess
+  network: ws
+  server: m2-pt1.m2network.icu
+  port: 80
+  uuid: 1bec7ea7-7ad3-422a-8035-e0499fde6790
+  tls: false
+  udp: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: m2-pt1.m2network.icu
+    path: /ws?ed=2560
+- name: 加拿大 034
+  type: vmess
+  network: ws
+  server: m2-us3.m2network.icu
+  port: 80
+  uuid: 27682278-393e-4a80-8ad0-bf08bbc27833
+  tls: false
+  udp: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: m2-us3.m2network.icu
+    path: /ws?ed=2560
+- name: 香港 003
+  type: vmess
+  network: ws
+  server: hk-05.264879.xyz
+  port: 31198
+  uuid: 1c001612-207c-4f20-853c-1c12f43c6335
+  tls: false
+  udp: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: youku.com
+    path: /
+- name: 加拿大 036
+  type: vmess
+  network: ws
+  server: sg0214551.ludou.us.kg
+  port: 80
+  uuid: c9604ca0-f1f5-4066-8ab1-ee2dbaf6d83a
+  tls: false
+  udp: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: sg002afa.ludou.us.kg
+    path: /?ed=2048
+- name: 加拿大 038
+  type: vmess
+  network: ws
+  server: a4.ludou.us.kg
+  port: 80
+  uuid: 0eeb9661-a7dc-4c94-abed-911107fef6b0
+  tls: false
+  udp: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: b4.ludou.us.kg
+    path: /?ed=2048
+- name: 加拿大 040
+  type: vmess
+  network: ws
+  server: m2-it1.m2network.icu
+  port: 80
+  uuid: ef05c5a5-ee19-4fec-acfa-4b0d691f80f8
+  tls: false
+  udp: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: m2-it1.m2network.icu
+    path: /ws?ed=2560
+- name: 加拿大 042
+  type: vmess
+  network: ws
+  server: usll1.ludou.us.kg
+  port: 80
+  uuid: dcce2089-334a-41d3-b117-99075aa65774
+  tls: false
+  udp: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: usll.ludou.us.kg
+    path: /?ed=2048
 proxy-groups:
 - name: PROXY
   type: select
@@ -1679,7 +1918,6 @@ proxy-groups:
   - 加拿大 041
   - 加拿大 044
   - 加拿大 049
-  - 加拿大 061
   - 加拿大 070
   - 加拿大 075
   - 加拿大 043
@@ -1707,8 +1945,6 @@ proxy-groups:
   - 美国 010
   - 美国 012
   - 加拿大 092
-  - 加拿大 106
-  - 加拿大 121
   - 加拿大 010
   - 加拿大 002
   - 加拿大 007
@@ -1740,6 +1976,26 @@ proxy-groups:
   - 美国 024
   - 美国 025
   - 美国 026
+  - 美国 027
+  - 美国 028
+  - 美国 029
+  - 广东省 001
+  - 广东省 002
+  - 加拿大 018
+  - 加拿大 022
+  - 加拿大 023
+  - 加拿大 025
+  - 加拿大 027
+  - 加拿大 028
+  - 加拿大 029
+  - 加拿大 030
+  - 加拿大 031
+  - 加拿大 034
+  - 香港 003
+  - 加拿大 036
+  - 加拿大 038
+  - 加拿大 040
+  - 加拿大 042
 - name: LOAD-BALANCE
   type: load-balance
   url: https://cp.cloudflare.com/generate_204
