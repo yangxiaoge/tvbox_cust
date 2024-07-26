@@ -86,7 +86,7 @@ def download_clash():
         fp.close()
         
     # 免费节点7
-    result = httpGetText('https://raw.githubusercontent.com/Flik6/getNode/main/clash.yaml')
+    result = httpGetText('https://raw.githubusercontent.com/ermaozi/get_subscribe/main/subscribe/clash.yml')
     if result:
         fp = open("clash/Clash7.yml", "w+", encoding='utf-8')
         # print("----" + result)
