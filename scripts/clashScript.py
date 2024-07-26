@@ -62,7 +62,7 @@ def download_clash():
         fp.close()
         
     # 免费节点4
-    result = httpGetText("https://raw.githubusercontent.com/vxiaov/free_proxy_ss/main/clash/clash.provider.yaml")
+    result = httpGetText("https://raw.githubusercontent.com/ssrsub/ssr/master/Clash.yml")
     if result:
         fp = open("clash/Clash4.yml", "w+", encoding='utf-8')
         # print("----" + result)
