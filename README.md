@@ -26,7 +26,7 @@ https://yangxiaoge.github.io/
 - 多仓
   - 自用：https://cdn.jsdelivr.net/gh/yangxiaoge/tvbox_cust@master/tvbox/多仓.json
   - 高天流云多仓：https://cdn.jsdelivr.net/gh/gaotianliuyun/gao@master/0707.json
-  - 黎歌多仓：https://cdn.jsdelivr.net/gh/yangxiaoge/tvbox_cust@master/tvbox/黎歌多仓.json
+  - ~黎歌多仓：https://cdn.jsdelivr.net/gh/yangxiaoge/tvbox_cust@master/tvbox/黎歌多仓.json~
   - 18🈲：https://cdn.jsdelivr.net/gh/yangxiaoge/tvbox_cust@master/tvbox/多仓adult.json
 
 # Clash
