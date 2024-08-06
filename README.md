@@ -22,7 +22,6 @@
 https://yangxiaoge.github.io/
 
 # TVBox源
-- 源解析：https://www.lige.fit/ua
 - 多仓
   - 自用：https://cdn.jsdelivr.net/gh/yangxiaoge/tvbox_cust@master/tvbox/多仓.json
   - 高天流云多仓：https://cdn.jsdelivr.net/gh/gaotianliuyun/gao@master/0707.json
@@ -64,3 +63,7 @@ https://yangxiaoge.github.io/
 本仓库内容中涉及的第三方硬件、软件等，与本仓库内容没有任何直接或间接的关系。本仓库内容仅对部署和使用过程进行客观描述，不代表支持使用任何第三方硬件、软件。使用任何第三方硬件、软件，所造成的一切后果由使用的个人或组织承担，与本仓库内容无关。
 
 所有直接或间接使用本仓库内容的个人和组织，应 24 小时内完成学习和研究，并及时删除本仓库内容。如对本仓库内容的功能有需求，应自行开发相关功能。所有基于本仓库内容的源代码，进行的任何修改，为其他个人或组织的自发行为，与本仓库内容没有任何直接或间接的关系，所造成的一切后果亦与本仓库内容和本仓库管理者无关 
+
+# Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=yangxiaoge/tvbox_cust&type=Date)](https://star-history.com/#yangxiaoge/tvbox_cust&Date)
