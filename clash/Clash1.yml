@@ -402,19 +402,6 @@ proxies:
     headers:
       Host: xini.ylks.xyz
     path: /?proxyip=proxyip.sg.fxxk.dedyn.io
-- name: 加拿大 004
-  type: vless
-  network: ws
-  server: ip.sb
-  port: 2096
-  uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-  servername: jpi.ylks01.eu.org
-  tls: true
-  delay: 2034
-  ws-opts:
-    headers:
-      Host: jpi.ylks01.eu.org
-    path: /blue
 - name: 加拿大 021
   type: vless
   network: ws
@@ -1444,20 +1431,6 @@ proxies:
     headers:
       Host: xr.ylks.xyz
     path: /?proxyip=proxyip.sg.fxxk.dedyn.io
-- name: 韩国 003
-  type: vless
-  network: ws
-  server: 146.56.171.182
-  port: 11659
-  uuid: d7dd3a35-b68b-4992-b319-a85b8a1fc8e5
-  servername: dns68.putata.eu.org
-  tls: true
-  client-fingerprint: chrome
-  delay: 2188
-  ws-opts:
-    headers:
-      Host: dns68.putata.eu.org
-    path: /
 - name: 加拿大 006
   type: vmess
   network: ws
@@ -2052,20 +2025,6 @@ proxies:
     headers:
       Host: bdfgfrtt7.azurewebsites.net
     path: /
-- name: 加拿大 114
-  type: vless
-  network: ws
-  server: 104.18.12.229
-  port: 8443
-  uuid: 14124dda-c8de-46fb-8a0c-69c7635fc0c8
-  servername: pardazeshvpn-tg78.pages.dev
-  tls: true
-  client-fingerprint: random
-  delay: 1583
-  ws-opts:
-    headers:
-      Host: pardazeshvpn-tg78.pages.dev
-    path: '/Telegram:'
 - name: 加拿大 116
   type: vless
   network: ws
@@ -2610,21 +2569,6 @@ proxies:
     headers:
       Host: onea.flha.ru
     path: /
-- name: 美国 009
-  type: vmess
-  network: ws
-  server: 172.64.99.22
-  port: 2052
-  uuid: d6b6d982-d52f-465a-b988-85670b23f64a
-  skip-cert-verify: true
-  tls: false
-  udp: true
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: cdn1.freegradely.xyz
-    path: github.com/Alvin9999
 - name: 加拿大 013
   type: vmess
   network: ws
@@ -3066,19 +3010,6 @@ proxies:
     headers:
       Host: cdn1.freegradely.xyz
     path: github.com/Alvin9999
-- name: 美国 027
-  type: vless
-  network: ws
-  server: 47.236.130.95
-  port: 443
-  uuid: bd7d2c5c-86bc-4d5c-8c6b-a5c58981e68c
-  servername: page-us-qg0.pages.dev
-  tls: true
-  delay: 1505
-  ws-opts:
-    headers:
-      Host: page-us-qg0.pages.dev
-    path: /
 - name: 新加坡 001
   type: vmess
   network: ws
@@ -3138,6 +3069,113 @@ proxies:
     headers:
       Host: hk01.xfxnode.top
     path: /hk01
+- name: 韩国 003
+  type: vmess
+  network: ws
+  server: usd8.uuuuu.fn-node.shop
+  port: 30058
+  uuid: 87a3ec4e-9000-4ab1-b2a4-aa28f25db530
+  skip-cert-verify: false
+  tls: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: us08.fnnoda.shop
+    path: /
+- name: 加拿大 009
+  type: vmess
+  network: ws
+  server: 104.19.45.15
+  port: 2086
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  skip-cert-verify: false
+  tls: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: ip13.freegradely.xyz
+    path: /
+- name: 瑞典 003
+  type: vmess
+  network: ws
+  server: 185.146.173.227
+  port: 80
+  uuid: 2ced7332-31d2-4b62-b098-fb31ea120359
+  skip-cert-verify: false
+  tls: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: 5e1ace082c1f1632.5e1ace082c1f1632knock.hihi.5e1ace082c1f1632.dE-DaRGAh.oFFdARSAd.iR.
+    path: /
+- name: 韩国 005
+  type: trojan
+  network: ws
+  server: 14.56.54.62
+  port: 15443
+  password: CMLiu
+  skip-cert-verify: true
+  udp: true
+  sni: aliorg.filegear-sg.me
+  ws-opts:
+    headers:
+      Host: aliorg.filegear-sg.me
+    path: /?ed=2048
+- name: 美国 009
+  type: vless
+  network: ws
+  server: 47.236.144.208
+  port: 2052
+  uuid: 05fc5a1e-d306-4e14-9781-ba563fa3aca9
+  servername: vless1.xiaomayi0804.workers.dev
+  tls: false
+  udp: true
+  ws-opts:
+    headers:
+      Host: vless1.xiaomayi0804.workers.dev
+    path: /?ed=2048
+- name: 香港 006
+  type: vless
+  network: ws
+  server: 8.218.211.17
+  port: 2052
+  uuid: 05fc5a1e-d306-4e14-9781-ba563fa3aca9
+  servername: vless1.xiaomayi0804.workers.dev
+  tls: false
+  udp: true
+  ws-opts:
+    headers:
+      Host: vless1.xiaomayi0804.workers.dev
+    path: /?ed=2048
+- name: 日本 002
+  type: vless
+  network: ws
+  server: bestproxy.onecf.eu.org
+  port: 2052
+  uuid: 05fc5a1e-d306-4e14-9781-ba563fa3aca9
+  servername: vless1.xiaomayi0804.workers.dev
+  tls: false
+  udp: true
+  ws-opts:
+    headers:
+      Host: vless1.xiaomayi0804.workers.dev
+    path: /?ed=2048
+- name: 加拿大 004
+  type: vless
+  network: ws
+  server: q.achen.link
+  port: 80
+  uuid: 05fc5a1e-d306-4e14-9781-ba563fa3aca9
+  servername: vless1.xiaomayi0804.workers.dev
+  tls: false
+  udp: true
+  ws-opts:
+    headers:
+      Host: vless1.xiaomayi0804.workers.dev
+    path: /?ed=2048
 proxy-groups:
 - name: PROXY
   type: select
@@ -3169,7 +3207,6 @@ proxy-groups:
   - 加拿大 063
   - 加拿大 071
   - 美国 028
-  - 加拿大 004
   - 加拿大 021
   - 加拿大 042
   - 加拿大 088
@@ -3244,7 +3281,6 @@ proxy-groups:
   - 美国 029
   - 加拿大 005
   - 美国 010
-  - 韩国 003
   - 加拿大 006
   - 加拿大 030
   - 加拿大 041
@@ -3287,7 +3323,6 @@ proxy-groups:
   - 加拿大 111
   - 韩国 001
   - 澳大利亚 002
-  - 加拿大 114
   - 加拿大 116
   - 加拿大 118
   - 加拿大 119
@@ -3327,7 +3362,6 @@ proxy-groups:
   - 瑞典 001
   - 加拿大 068
   - 加拿大 007
-  - 美国 009
   - 加拿大 013
   - 美国 013
   - 美国 012
@@ -3359,11 +3393,18 @@ proxy-groups:
   - 美国 025
   - 加拿大 067
   - 加拿大 081
-  - 美国 027
   - 新加坡 001
   - 新加坡 003
   - 美国 023
   - 香港 003
+  - 韩国 003
+  - 加拿大 009
+  - 瑞典 003
+  - 韩国 005
+  - 美国 009
+  - 香港 006
+  - 日本 002
+  - 加拿大 004
 - name: LOAD-BALANCE
   type: load-balance
   url: https://cp.cloudflare.com/generate_204
