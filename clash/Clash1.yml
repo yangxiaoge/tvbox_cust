@@ -267,20 +267,6 @@ proxies:
     headers:
       Host: kke.ylks.xyz
     path: /blue
-- name: 新加坡 002
-  type: vless
-  network: ws
-  server: 47.236.232.148
-  port: 2083
-  uuid: b9011be4-b7d5-428e-a4cc-be5cc8768ba4
-  servername: go.jp980.cloudns.org
-  tls: true
-  udp: true
-  delay: 1491
-  ws-opts:
-    headers:
-      Host: go.jp980.cloudns.org
-    path: /?ed=2560
 - name: 加拿大 138
   type: vmess
   network: ws
@@ -1431,20 +1417,6 @@ proxies:
     headers:
       Host: xr.ylks.xyz
     path: /?proxyip=proxyip.sg.fxxk.dedyn.io
-- name: 加拿大 006
-  type: vmess
-  network: ws
-  server: 104.19.47.45
-  port: 2086
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  skip-cert-verify: false
-  tls: false
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: ip14.freegradely.xyz
-    path: /
 - name: 加拿大 030
   type: vmess
   network: ws
@@ -2223,21 +2195,6 @@ proxies:
     headers:
       Host: ip13.freegradely.xyz
     path: github.com/Alvin9999
-- name: 美国 039
-  type: vmess
-  network: ws
-  server: 172.64.175.88
-  port: 2052
-  uuid: d6b6d982-d52f-465a-b988-85670b23f64a
-  skip-cert-verify: false
-  tls: false
-  alterId: 0
-  cipher: auto
-  delay: 968
-  ws-opts:
-    headers:
-      Host: cdn1.freegradely.xyz
-    path: github.com/Alvin9999
 - name: 加拿大 133
   type: vmess
   network: ws
@@ -2249,21 +2206,6 @@ proxies:
   alterId: 0
   cipher: auto
   delay: 937
-  ws-opts:
-    headers:
-      Host: cdn1.freegradely.xyz
-    path: github.com/Alvin9999
-- name: 美国 040
-  type: vmess
-  network: ws
-  server: 172.64.198.249
-  port: 2052
-  uuid: d6b6d982-d52f-465a-b988-85670b23f64a
-  skip-cert-verify: false
-  tls: false
-  alterId: 0
-  cipher: auto
-  delay: 907
   ws-opts:
     headers:
       Host: cdn1.freegradely.xyz
@@ -2630,20 +2572,6 @@ proxies:
     headers:
       Host: www.59795160.xyz
     path: /path/011410073331
-- name: 美国 011
-  type: vmess
-  network: ws
-  server: 172.64.150.8
-  port: 2095
-  uuid: a5dc7082-3433-48ad-9216-ddc9768e5160
-  skip-cert-verify: false
-  tls: false
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: ybr.redbullplus.xyz
-    path: /
 - name: 荷兰 002
   type: vmess
   network: ws
@@ -2703,20 +2631,6 @@ proxies:
   alterId: 0
   cipher: auto
   delay: 576
-- name: 美国 015
-  type: vmess
-  network: ws
-  server: malaysia.com
-  port: 2086
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  skip-cert-verify: false
-  tls: false
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: ip1.1789034.xyz
-    path: /
 - name: 韩国 004
   type: vmess
   network: ws
@@ -3150,19 +3064,6 @@ proxies:
     headers:
       Host: vless1.xiaomayi0804.workers.dev
     path: /?ed=2048
-- name: 日本 002
-  type: vless
-  network: ws
-  server: bestproxy.onecf.eu.org
-  port: 2052
-  uuid: 05fc5a1e-d306-4e14-9781-ba563fa3aca9
-  servername: vless1.xiaomayi0804.workers.dev
-  tls: false
-  udp: true
-  ws-opts:
-    headers:
-      Host: vless1.xiaomayi0804.workers.dev
-    path: /?ed=2048
 - name: 加拿大 004
   type: vless
   network: ws
@@ -3176,6 +3077,33 @@ proxies:
     headers:
       Host: vless1.xiaomayi0804.workers.dev
     path: /?ed=2048
+- name: 日本 002
+  type: vless
+  network: ws
+  server: bestproxy.onecf.eu.org
+  port: 2052
+  uuid: 05fc5a1e-d306-4e14-9781-ba563fa3aca9
+  servername: vless1.xiaomayi0804.workers.dev
+  tls: false
+  udp: true
+  ws-opts:
+    headers:
+      Host: vless1.xiaomayi0804.workers.dev
+    path: /?ed=2048
+- name: 加拿大 006
+  type: vmess
+  network: ws
+  server: 104.16.67.38
+  port: 80
+  uuid: 2a8a10fb-9ca3-367e-a234-cf09f841be4f
+  skip-cert-verify: false
+  tls: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: us3e-mmnnfr9dop0.v2freevpn.com
+    path: /
 proxy-groups:
 - name: PROXY
   type: select
@@ -3197,7 +3125,6 @@ proxy-groups:
   - 加拿大 014
   - 香港 005
   - 美国 044
-  - 新加坡 002
   - 加拿大 138
   - 加拿大 140
   - 加拿大 151
@@ -3281,7 +3208,6 @@ proxy-groups:
   - 美国 029
   - 加拿大 005
   - 美国 010
-  - 加拿大 006
   - 加拿大 030
   - 加拿大 041
   - 加拿大 053
@@ -3337,9 +3263,7 @@ proxy-groups:
   - 美国 036
   - 美国 037
   - 加拿大 130
-  - 美国 039
   - 加拿大 133
-  - 美国 040
   - 加拿大 134
   - 香港 001
   - 加拿大 061
@@ -3366,13 +3290,11 @@ proxy-groups:
   - 美国 013
   - 美国 012
   - 香港 002
-  - 美国 011
   - 荷兰 002
   - 爱尔兰 001
   - 韩国 002
   - 美国 020
   - 美国 021
-  - 美国 015
   - 韩国 004
   - 加拿大 016
   - 加拿大 018
@@ -3403,8 +3325,9 @@ proxy-groups:
   - 韩国 005
   - 美国 009
   - 香港 006
-  - 日本 002
   - 加拿大 004
+  - 日本 002
+  - 加拿大 006
 - name: LOAD-BALANCE
   type: load-balance
   url: https://cp.cloudflare.com/generate_204
