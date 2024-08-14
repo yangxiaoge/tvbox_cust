@@ -291,19 +291,6 @@ proxies:
     headers:
       Host: jpi.ylks01.eu.org
     path: /blue
-- name: 加拿大 062
-  type: vless
-  network: ws
-  server: russia.com
-  port: 2087
-  uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-  servername: jpi.ylks01.eu.org
-  tls: true
-  delay: 1699
-  ws-opts:
-    headers:
-      Host: jpi.ylks01.eu.org
-    path: /blue
 - name: 加拿大 063
   type: vless
   network: ws
@@ -1221,20 +1208,6 @@ proxies:
     headers:
       Host: cdn1.freegradely.xyz
     path: github.com/Alvin9999
-- name: 加拿大 046
-  type: vmess
-  network: ws
-  server: 104.19.38.12
-  port: 2052
-  uuid: d6b6d982-d52f-465a-b988-85670b23f64a
-  skip-cert-verify: false
-  tls: false
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: cdn1.freegradely.xyz
-    path: /
 - name: 加拿大 047
   type: vless
   network: ws
@@ -1263,19 +1236,6 @@ proxies:
     headers:
       Host: De1.vmess.site.
     path: /vmess
-- name: 美国 029
-  type: vless
-  network: ws
-  server: 47.236.167.231
-  port: 2083
-  uuid: c82f8880-bdd8-4a35-b8e7-ad5aa880f7d0
-  servername: vr.ylkszy.eu.org
-  tls: true
-  delay: 2193
-  ws-opts:
-    headers:
-      Host: vr.ylkszy.eu.org
-    path: /?proxyip=proxyip.sg.fxxk.dedyn.io
 - name: 加拿大 005
   type: vmess
   network: ws
@@ -1784,20 +1744,6 @@ proxies:
     headers:
       Host: worker-lingering-fog-c021.gesofog870.workers.dev
     path: /glweidf.sbs/linkws
-- name: 加拿大 072
-  type: vmess
-  network: ws
-  server: 104.19.55.79
-  port: 2052
-  uuid: d6b6d982-d52f-465a-b988-85670b23f64a
-  servername: cdn3.freegradely.xyz
-  tls: false
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: cdn3.freegradely.xyz
-    path: github.com/Alvin9999
 - name: 加拿大 076
   type: vmess
   network: ws
@@ -1916,21 +1862,6 @@ proxies:
   alterId: 0
   cipher: auto
   delay: 1354
-- name: 瑞典 001
-  type: vmess
-  network: ws
-  server: Back.MsV2ray.online
-  port: 80
-  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
-  skip-cert-verify: true
-  tls: false
-  udp: true
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: d396-flower-d396.megare7260.workers.dev
-    path: /obdii.cfd/linkws
 - name: 美国 013
   type: vmess
   network: ws
@@ -2083,10 +2014,51 @@ proxies:
     headers:
       Host: us3e-mmnnfr9dop0.v2freevpn.com
     path: /
-- name: 加拿大 019
+- name: 香港 003
+  type: vless
+  network: ws
+  server: 47.242.125.241
+  port: 2052
+  uuid: 688ee9a9-087b-4d02-ad23-c0b01c9671af
+  servername: vless.leo726china.workers.dev
+  tls: false
+  udp: true
+  ws-opts:
+    headers:
+      Host: vless.leo726china.workers.dev
+    path: /?ed=2048
+- name: 日本 002
+  type: vless
+  network: ws
+  server: bestproxy.onecf.eu.org
+  port: 2052
+  uuid: 5603909e-cb20-4f4f-a4c7-07a666f83394
+  servername: vless1.xiaomayi0804.workers.dev
+  tls: false
+  udp: true
+  ws-opts:
+    headers:
+      Host: vless1.xiaomayi0804.workers.dev
+    path: /?ed=2048
+- name: 加拿大 001
   type: vmess
   network: ws
-  server: 104.19.47.45
+  server: 104.16.61.8
+  port: 2095
+  uuid: 441da342-ce90-441e-bff9-d2ceb55e68ca
+  servername: ep-sunset-9b11.kekic13319.workers.dev
+  skip-cert-verify: false
+  tls: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: ep-sunset-9b11.kekic13319.workers.dev
+    path: /
+- name: 加拿大 004
+  type: vmess
+  network: ws
+  server: 23.227.38.3
   port: 2086
   uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
   skip-cert-verify: false
@@ -2095,20 +2067,79 @@ proxies:
   cipher: auto
   ws-opts:
     headers:
-      Host: ip14.freegradely.xyz
+      Host: ip1.1457230.xyz
     path: /
-- name: 加拿大 027
+- name: 加拿大 007
   type: vmess
   network: ws
-  server: 172.67.130.140
-  port: 2082
-  uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
+  server: japan.com
+  port: 2086
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  skip-cert-verify: false
   tls: false
   alterId: 0
   cipher: auto
   ws-opts:
     headers:
-      Host: s1c.v2.v001sss.xyz
+      Host: ip1.1789034.xyz
+    path: /
+- name: 美国 011
+  type: vmess
+  network: ws
+  server: malaysia.com
+  port: 2086
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  skip-cert-verify: false
+  tls: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: ip1.1789034.xyz
+    path: /
+- name: 美国 001
+  type: vless
+  network: grpc
+  server: 104.168.43.162
+  port: 14821
+  uuid: 089723ba-0ac0-469f-99a9-cd4465f66ae6
+  servername: gateway.icloud.com
+  tls: true
+  udp: true
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: c9dv7BAp3MtNH8SuaE-yBIKteVxefVO7LB9fbVKq2Ww
+    short-id: 6ba85179e30d4fc2
+  grpc-opts:
+    grpc-service-name: grpc
+- name: 加拿大 013
+  type: vmess
+  network: ws
+  server: russia.com
+  port: 2086
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  skip-cert-verify: false
+  tls: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: ip1.1789034.xyz
+    path: /
+- name: 加拿大 016
+  type: vmess
+  network: ws
+  server: 104.19.55.49
+  port: 2086
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  servername: ip2.1457230.xyz
+  skip-cert-verify: false
+  tls: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: ip2.1457230.xyz
     path: /
 proxy-groups:
 - name: PROXY
@@ -2133,7 +2164,6 @@ proxy-groups:
   - 加拿大 140
   - 加拿大 151
   - 加拿大 060
-  - 加拿大 062
   - 加拿大 063
   - 加拿大 071
   - 加拿大 021
@@ -2200,10 +2230,8 @@ proxy-groups:
   - 加拿大 012
   - 俄罗斯 004
   - 加拿大 035
-  - 加拿大 046
   - 加拿大 047
   - 美国 024
-  - 美国 029
   - 加拿大 005
   - 美国 016
   - 加拿大 036
@@ -2240,7 +2268,6 @@ proxy-groups:
   - 加拿大 133
   - 香港 001
   - 加拿大 061
-  - 加拿大 072
   - 加拿大 076
   - 加拿大 078
   - 加拿大 079
@@ -2250,7 +2277,6 @@ proxy-groups:
   - 美国 002
   - 美国 007
   - 美国 018
-  - 瑞典 001
   - 美国 013
   - 香港 002
   - 美国 020
@@ -2262,8 +2288,15 @@ proxy-groups:
   - 加拿大 009
   - 美国 009
   - 加拿大 006
-  - 加拿大 019
-  - 加拿大 027
+  - 香港 003
+  - 日本 002
+  - 加拿大 001
+  - 加拿大 004
+  - 加拿大 007
+  - 美国 011
+  - 美国 001
+  - 加拿大 013
+  - 加拿大 016
 - name: LOAD-BALANCE
   type: load-balance
   url: https://cp.cloudflare.com/generate_204
