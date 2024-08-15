@@ -1166,20 +1166,6 @@ proxies:
     headers:
       Host: xv2.pages.dev
     path: /
-- name: 加拿大 012
-  type: vless
-  network: ws
-  server: russia.com
-  port: 2096
-  uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-  servername: jq.ylks01.eu.org
-  tls: true
-  delay: 2398
-  packet-encoding: ''
-  ws-opts:
-    headers:
-      Host: jq.ylks01.eu.org
-    path: /blue
 - name: 俄罗斯 004
   type: vless
   network: ws
@@ -1320,20 +1306,6 @@ proxies:
   ws-opts:
     headers:
       Host: 7hss-butterfly-d4c3.fijetem432.workers.dev
-    path: /
-- name: 加拿大 083
-  type: vmess
-  network: ws
-  server: kt01.898965.xyz
-  port: 2052
-  uuid: 1b7eac5b-476b-4433-bb43-720e659e01ae
-  skip-cert-verify: false
-  tls: false
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: kt01.898965.xyz
     path: /
 - name: 加拿大 084
   type: vmess
@@ -1832,26 +1804,6 @@ proxies:
     headers:
       Host: dns68.putata.eu.org
     path: /?ed=2048
-- name: 美国 002
-  type: vmess
-  network: tcp
-  server: MI.HUY.OVH
-  port: 38402
-  uuid: 8114cffb-928f-4ce1-a376-d48546573fcb
-  skip-cert-verify: true
-  alterId: 0
-  cipher: auto
-  delay: 351
-- name: 美国 007
-  type: vmess
-  network: tcp
-  server: MI.HUY.OVH
-  port: 38401
-  uuid: 8114cffb-928f-4ce1-a376-d48546573fcb
-  skip-cert-verify: true
-  alterId: 0
-  cipher: auto
-  delay: 382
 - name: 美国 018
   type: vmess
   network: tcp
@@ -1877,23 +1829,6 @@ proxies:
     headers:
       Host: ip2.1457230.xyz
     path: github.com/Alvin9999
-- name: 香港 002
-  type: vmess
-  network: ws
-  server: 103.212.98.234
-  port: 443
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  servername: www.59795160.xyz
-  skip-cert-verify: false
-  tls: true
-  tfo: false
-  alterId: 64
-  cipher: auto
-  client-fingerprint: chrome
-  ws-opts:
-    headers:
-      Host: www.59795160.xyz
-    path: /path/011410073331
 - name: 美国 020
   type: vmess
   network: tcp
@@ -1914,20 +1849,6 @@ proxies:
   alterId: 0
   cipher: auto
   delay: 576
-- name: 加拿大 020
-  type: vmess
-  network: ws
-  server: 172.67.74.112
-  port: 2052
-  uuid: d6b6d982-d52f-465a-b988-85670b23f64a
-  skip-cert-verify: false
-  tls: false
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: cdn1.freegradely.xyz
-    path: /
 - name: 加拿大 049
   type: vmess
   network: ws
@@ -2014,32 +1935,6 @@ proxies:
     headers:
       Host: us3e-mmnnfr9dop0.v2freevpn.com
     path: /
-- name: 香港 003
-  type: vless
-  network: ws
-  server: 47.242.125.241
-  port: 2052
-  uuid: 688ee9a9-087b-4d02-ad23-c0b01c9671af
-  servername: vless.leo726china.workers.dev
-  tls: false
-  udp: true
-  ws-opts:
-    headers:
-      Host: vless.leo726china.workers.dev
-    path: /?ed=2048
-- name: 日本 002
-  type: vless
-  network: ws
-  server: bestproxy.onecf.eu.org
-  port: 2052
-  uuid: 5603909e-cb20-4f4f-a4c7-07a666f83394
-  servername: vless1.xiaomayi0804.workers.dev
-  tls: false
-  udp: true
-  ws-opts:
-    headers:
-      Host: vless1.xiaomayi0804.workers.dev
-    path: /?ed=2048
 - name: 加拿大 001
   type: vmess
   network: ws
@@ -2141,6 +2036,111 @@ proxies:
     headers:
       Host: ip2.1457230.xyz
     path: /
+- name: 韩国 002
+  type: trojan
+  network: ws
+  server: 59.3.3.161
+  port: 443
+  password: CMLiu
+  sni: aliorg.filegear-sg.me
+  ws-opts:
+    headers:
+      Host: aliorg.filegear-sg.me
+    path: /
+- name: 加拿大 017
+  type: vmess
+  network: ws
+  server: 104.19.45.5
+  port: 2095
+  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
+  tls: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: onea.flha.ru
+    path: /
+- name: 新加坡 001
+  type: trojan
+  network: ws
+  server: 47.236.180.24
+  port: 8443
+  password: CMLiu
+  sni: aliorg.filegear-sg.me
+  ws-opts:
+    headers:
+      Host: aliorg.filegear-sg.me
+    path: /
+- name: 韩国 003
+  type: trojan
+  network: ws
+  server: 218.158.87.155
+  port: 11423
+  password: CMLiu
+  sni: aliorg.filegear-sg.me
+  ws-opts:
+    headers:
+      Host: aliorg.filegear-sg.me
+    path: /
+- name: 加拿大 019
+  type: vmess
+  network: ws
+  server: 162.159.140.66
+  port: 2086
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  tls: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: ip1.1789034.xyz
+    path: github.com/Alvin9999
+- name: 韩国 004
+  type: trojan
+  network: ws
+  server: 222.97.95.239
+  port: 10443
+  password: CMLiu
+  sni: aliorg.filegear-sg.me
+  ws-opts:
+    headers:
+      Host: aliorg.filegear-sg.me
+    path: /
+- name: 拉脱维亚 001
+  type: trojan
+  network: ws
+  server: 85.159.228.23
+  port: 8443
+  password: CMLiu
+  sni: aliorg.filegear-sg.me
+  ws-opts:
+    headers:
+      Host: aliorg.filegear-sg.me
+    path: /
+- name: 澳大利亚 003
+  type: trojan
+  network: ws
+  server: 43.153.80.208
+  port: 443
+  password: CMLiu
+  sni: aliorg.filegear-sg.me
+  ws-opts:
+    headers:
+      Host: aliorg.filegear-sg.me
+    path: /
+- name: 加拿大 012
+  type: vmess
+  network: ws
+  server: 104.19.47.77
+  port: 2086
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  tls: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: ip14.freegradely.xyz
+    path: github.com/Alvin9999
 proxy-groups:
 - name: PROXY
   type: select
@@ -2227,7 +2227,6 @@ proxy-groups:
   - 爱沙尼亚 008
   - 法国 003
   - 加拿大 002
-  - 加拿大 012
   - 俄罗斯 004
   - 加拿大 035
   - 加拿大 047
@@ -2238,7 +2237,6 @@ proxy-groups:
   - 加拿大 070
   - 加拿大 073
   - 加拿大 015
-  - 加拿大 083
   - 加拿大 084
   - 加拿大 090
   - 加拿大 011
@@ -2274,22 +2272,16 @@ proxy-groups:
   - 加拿大 080
   - 加拿大 064
   - 香港 004
-  - 美国 002
-  - 美国 007
   - 美国 018
   - 美国 013
-  - 香港 002
   - 美国 020
   - 美国 021
-  - 加拿大 020
   - 加拿大 049
   - 美国 025
   - 加拿大 081
   - 加拿大 009
   - 美国 009
   - 加拿大 006
-  - 香港 003
-  - 日本 002
   - 加拿大 001
   - 加拿大 004
   - 加拿大 007
@@ -2297,6 +2289,15 @@ proxy-groups:
   - 美国 001
   - 加拿大 013
   - 加拿大 016
+  - 韩国 002
+  - 加拿大 017
+  - 新加坡 001
+  - 韩国 003
+  - 加拿大 019
+  - 韩国 004
+  - 拉脱维亚 001
+  - 澳大利亚 003
+  - 加拿大 012
 - name: LOAD-BALANCE
   type: load-balance
   url: https://cp.cloudflare.com/generate_204
