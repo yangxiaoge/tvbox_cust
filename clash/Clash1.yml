@@ -1350,21 +1350,6 @@ proxies:
     headers:
       Host: ip13.freegradely.xyz
     path: github.com/Alvin9999
-- name: 加拿大 055
-  type: vmess
-  network: ws
-  server: 104.19.21.71
-  port: 2052
-  uuid: d6b6d982-d52f-465a-b988-85670b23f64a
-  skip-cert-verify: true
-  tls: false
-  udp: true
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: cdn1.freegradely.xyz
-    path: github.com/Alvin9999
 - name: 加拿大 085
   type: vmess
   network: ws
@@ -1908,19 +1893,6 @@ proxies:
     headers:
       Host: ip13.freegradely.xyz
     path: /
-- name: 美国 009
-  type: vless
-  network: ws
-  server: 47.236.144.208
-  port: 2052
-  uuid: 05fc5a1e-d306-4e14-9781-ba563fa3aca9
-  servername: vless1.xiaomayi0804.workers.dev
-  tls: false
-  udp: true
-  ws-opts:
-    headers:
-      Host: vless1.xiaomayi0804.workers.dev
-    path: /?ed=2048
 - name: 加拿大 006
   type: vmess
   network: ws
@@ -2240,7 +2212,6 @@ proxy-groups:
   - 加拿大 084
   - 加拿大 090
   - 加拿大 011
-  - 加拿大 055
   - 加拿大 085
   - 加拿大 091
   - 加拿大 092
@@ -2280,7 +2251,6 @@ proxy-groups:
   - 美国 025
   - 加拿大 081
   - 加拿大 009
-  - 美国 009
   - 加拿大 006
   - 加拿大 001
   - 加拿大 004
