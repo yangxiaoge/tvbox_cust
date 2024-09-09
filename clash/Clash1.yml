@@ -2798,21 +2798,6 @@ proxies:
     headers:
       Host: a.ssll.gay
     path: /?ed=2048
-- name: 韩国 036
-  type: vless
-  network: ws
-  server: 124.80.75.68
-  port: 12654
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  servername: a.ssll.gay
-  skip-cert-verify: false
-  tls: true
-  udp: true
-  delay: 1352
-  ws-opts:
-    headers:
-      Host: a.ssll.gay
-    path: /?ed=2048
 - name: 韩国 038
   type: vless
   network: ws
@@ -4014,19 +3999,6 @@ proxies:
     headers:
       Host: ip1.1457230.xyz
     path: github.com/Alvin9999
-- name: 加拿大 089
-  type: vmess
-  network: ws
-  server: japan.com
-  port: 2086
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  tls: false
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: ip1.1789034.xyz
-    path: github.com/Alvin9999
 - name: 加拿大 090
   type: vmess
   network: ws
@@ -4416,18 +4388,6 @@ proxies:
     headers:
       Host: falcunargo.c2259d7c10.workers.dev
     path: /?ed=2048
-- name: 加拿大 126
-  type: vless
-  network: ws
-  server: 172.67.168.93
-  port: 8080
-  uuid: 8169cd18-e824-47a4-a4d4-96433b1a519d
-  servername: testdvpnhub69.95f425b718.workers.dev
-  tls: false
-  ws-opts:
-    headers:
-      Host: testdvpnhub69.95f425b718.workers.dev
-    path: /?ed=2048
 - name: 加拿大 127
   type: vless
   network: ws
@@ -4696,6 +4656,136 @@ proxies:
     headers:
       Host: worker-damp-duadwans.jevesoj131.workers.dev
     path: /
+- name: 新加坡 001
+  type: vmess
+  network: ws
+  server: hkcft01.xqc.best
+  port: 443
+  uuid: 5601e7b3-d9b2-4f81-a1b5-59118a7c326d
+  servername: d84zxlca209ol.cloudfront.net
+  tls: true
+  udp: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: d84zxlca209ol.cloudfront.net
+    path: /stream
+- name: 新加坡 002
+  type: vmess
+  network: ws
+  server: jpcft01.xqc.best
+  port: 443
+  uuid: 8433e640-96c0-493b-8fba-afd9474d3429
+  servername: dd7xps5fj6dfo.cloudfront.net
+  tls: true
+  udp: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: dd7xps5fj6dfo.cloudfront.net
+    path: /stream
+- name: 加拿大 144
+  type: vmess
+  network: ws
+  server: me.kalakatha.org
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  skip-cert-verify: false
+  tls: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: me.kalakatha.org
+    path: /
+- name: 加拿大 145
+  type: vmess
+  network: ws
+  server: 104.19.47.27
+  port: 2086
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  skip-cert-verify: false
+  tls: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: ip14.freegradely.xyz
+    path: /
+- name: 美国 026
+  type: vmess
+  network: ws
+  server: 23.156.152.106
+  port: 80
+  uuid: 2d9a81f6-e86e-48e6-9646-b3b1325f8d61
+  skip-cert-verify: false
+  tls: false
+  tfo: false
+  alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  ws-opts:
+    headers:
+      Host: syjsq.us4.flyidc.top
+    path: /syjsq/data
+- name: 加拿大 126
+  type: vmess
+  network: ws
+  server: 172.67.196.112
+  port: 443
+  uuid: edbb1059-1633-4271-b66e-ed4fba47a1bf
+  skip-cert-verify: false
+  tls: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: linde06.indiavideo.sbs
+    path: /
+- name: 巴西 001
+  type: vmess
+  network: ws
+  server: 188.114.97.7
+  port: 443
+  uuid: 441da342-ce90-441e-bff9-d2ceb55e68ca
+  skip-cert-verify: false
+  tls: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: ivideos.sbs
+    path: /
+- name: 美国 027
+  type: vmess
+  network: ws
+  server: 173.245.58.37
+  port: 443
+  uuid: a1655f51-1e20-4a92-8a11-b7ca30a7a353
+  skip-cert-verify: false
+  tls: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: 7wih-darkness-f0af.jivegoh116.workers.dev
+    path: /
+- name: 加拿大 147
+  type: vmess
+  network: ws
+  server: 104.16.165.228
+  port: 8080
+  uuid: e6d76927-edd1-442b-92a4-fa031f522c42
+  skip-cert-verify: false
+  tls: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: sssub.v2.001.ssrsub.com
+    path: /
 proxy-groups:
 - name: PROXY
   type: select
@@ -4894,7 +4984,6 @@ proxy-groups:
   - 加拿大 074
   - 韩国 031
   - 韩国 034
-  - 韩国 036
   - 韩国 038
   - 韩国 041
   - 韩国 042
@@ -4979,7 +5068,6 @@ proxy-groups:
   - 加拿大 084
   - 加拿大 087
   - 美国 019
-  - 加拿大 089
   - 加拿大 090
   - 香港 003
   - 爱尔兰 001
@@ -5010,7 +5098,6 @@ proxy-groups:
   - 加拿大 123
   - 加拿大 124
   - 加拿大 125
-  - 加拿大 126
   - 加拿大 127
   - 加拿大 128
   - 荷兰 007
@@ -5032,6 +5119,15 @@ proxy-groups:
   - 香港 005
   - 加拿大 131
   - 加拿大 143
+  - 新加坡 001
+  - 新加坡 002
+  - 加拿大 144
+  - 加拿大 145
+  - 美国 026
+  - 加拿大 126
+  - 巴西 001
+  - 美国 027
+  - 加拿大 147
 - name: LOAD-BALANCE
   type: load-balance
   url: https://cp.cloudflare.com/generate_204
