@@ -542,21 +542,6 @@ proxies:
     headers:
       Host: ip1.1789034.xyz
     path: github.com/Alvin9999
-- name: 加拿大 014
-  type: vmess
-  network: ws
-  server: 104.16.61.8
-  port: 8080
-  uuid: 950db6aa-4926-4616-816e-ec0312dcb87b
-  servername: hyfhhg.jadovah977.workers.dev
-  skip-cert-verify: false
-  tls: false
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: hyfhhg.jadovah977.workers.dev
-    path: /
 - name: 香港 007
   type: vless
   network: ws
@@ -769,21 +754,6 @@ proxies:
     headers:
       Host: ip13.freegradely.xyz
     path: /
-- name: 加拿大 104
-  type: vmess
-  network: ws
-  server: 104.18.14.19
-  port: 2086
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  servername: ip1.1789034.xyz
-  skip-cert-verify: true
-  alterId: 0
-  cipher: auto
-  delay: 2461
-  ws-opts:
-    headers:
-      Host: ip1.1789034.xyz
-    path: github.com/Alvin9999
 - name: 加拿大 108
   type: vmess
   network: ws
@@ -959,19 +929,6 @@ proxies:
   ws-opts:
     headers:
       Host: ip5-10.freegradely.xyz
-    path: github.com/Alvin9999
-- name: 加拿大 008
-  type: vmess
-  network: ws
-  server: fbi.gov
-  port: 2086
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  tls: false
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: ip1.1789034.xyz
     path: github.com/Alvin9999
 - name: 加拿大 086
   type: vmess
@@ -2878,19 +2835,6 @@ proxies:
     headers:
       Host: 77h2quiet-dream-5c34.foratay741.workers.dev
     path: /
-- name: 加拿大 009
-  type: vmess
-  network: ws
-  server: japan.com
-  port: 2086
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  tls: false
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: ip1.1789034.xyz
-    path: github.com/Alvin9999
 - name: 加拿大 010
   type: vmess
   network: ws
@@ -2991,6 +2935,19 @@ proxies:
     headers:
       Host: jp2.1vpn.sbs
     path: /kiulujunuqs
+- name: 加拿大 008
+  type: vmess
+  network: ws
+  server: fbi.gov
+  port: 2086
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  tls: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: ip1.1789034.xyz
+    path: github.com/Alvin9999
 proxy-groups:
 - name: PROXY
   type: select
@@ -3033,7 +2990,6 @@ proxy-groups:
   - 拉脱维亚 001
   - 澳大利亚 003
   - 加拿大 003
-  - 加拿大 014
   - 香港 007
   - 香港 008
   - 香港 010
@@ -3049,7 +3005,6 @@ proxy-groups:
   - 加拿大 063
   - 加拿大 078
   - 加拿大 099
-  - 加拿大 104
   - 加拿大 108
   - 爱沙尼亚 002
   - 俄罗斯 001
@@ -3062,7 +3017,6 @@ proxy-groups:
   - 加拿大 012
   - 加拿大 057
   - 加拿大 164
-  - 加拿大 008
   - 加拿大 086
   - 加拿大 149
   - 加拿大 016
@@ -3195,7 +3149,6 @@ proxy-groups:
   - 加拿大 006
   - 美国 001
   - 加拿大 007
-  - 加拿大 009
   - 加拿大 010
   - 加拿大 011
   - 加拿大 013
@@ -3204,6 +3157,7 @@ proxy-groups:
   - 台湾 003
   - 台湾 004
   - 加拿大 019
+  - 加拿大 008
 - name: LOAD-BALANCE
   type: load-balance
   url: https://cp.cloudflare.com/generate_204
