@@ -726,20 +726,6 @@ proxies:
     headers:
       Host: vpn-aryoo-bo4.pages.dev
     path: /?ed=2560
-- name: 加拿大 078
-  type: vless
-  network: ws
-  server: www.gov.ua
-  port: 8080
-  uuid: 4c9541c7-5fa1-403c-84af-175e3b25a27f
-  servername: 201.58vtg99l.workers.dev
-  client-fingerprint: randomized
-  packet-encoding: ''
-  delay: 2325
-  ws-opts:
-    headers:
-      Host: 201.58vtg99l.workers.dev
-    path: /?ed=2048
 - name: 加拿大 099
   type: vmess
   network: ws
@@ -2227,21 +2213,6 @@ proxies:
     headers:
       Host: a.ssll.gay
     path: /?ed=2048
-- name: 韩国 034
-  type: vless
-  network: ws
-  server: 124.80.75.68
-  port: 26658
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  servername: a.ssll.gay
-  skip-cert-verify: false
-  tls: true
-  udp: true
-  delay: 1270
-  ws-opts:
-    headers:
-      Host: a.ssll.gay
-    path: /?ed=2048
 - name: 韩国 042
   type: vless
   network: ws
@@ -2519,21 +2490,6 @@ proxies:
     headers:
       Host: a.ssll.gay
     path: /?ed=2048
-- name: 韩国 007
-  type: vless
-  network: ws
-  server: 119.207.86.66
-  port: 12209
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  servername: a.ssll.gay
-  skip-cert-verify: false
-  tls: true
-  udp: true
-  delay: 1064
-  ws-opts:
-    headers:
-      Host: a.ssll.gay
-    path: /?ed=2048
 - name: 韩国 009
   type: vless
   network: ws
@@ -2573,21 +2529,6 @@ proxies:
     headers:
       Host: WORker-LUCKY-SOUND-244a.VOdabaJ775.worKeRS.deV
     path: /3d4gHs5YyJDolcB0?ed=2560
-- name: 香港 003
-  type: vless
-  network: ws
-  server: 103.255.208.216
-  port: 443
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  servername: a.ssll.gay
-  skip-cert-verify: false
-  tls: true
-  udp: true
-  delay: 2547
-  ws-opts:
-    headers:
-      Host: a.ssll.gay
-    path: /?ed=2048
 - name: 瑞典 003
   type: vless
   network: ws
@@ -2935,7 +2876,48 @@ proxies:
     headers:
       Host: jp2.1vpn.sbs
     path: /kiulujunuqs
+- name: 台湾 005
+  type: vmess
+  network: ws
+  server: 36.228.195.81
+  port: 16790
+  uuid: f6a44be4-3a7a-42ed-936f-3ff0427d405c
+  tls: false
+  udp: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: duoduotw.cdn-sgp.xyz
+    path: /
 - name: 加拿大 008
+  type: vmess
+  network: ws
+  server: 104.16.61.8
+  port: 8080
+  uuid: 441da342-ce90-441e-bff9-d2ceb55e68ca
+  skip-cert-verify: false
+  tls: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: vmess.taxar71054.workers.dev
+    path: /
+- name: 加拿大 009
+  type: vmess
+  network: ws
+  server: japan.com
+  port: 2086
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  tls: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: ip1.1789034.xyz
+    path: github.com/Alvin9999
+- name: 加拿大 014
   type: vmess
   network: ws
   server: fbi.gov
@@ -2948,6 +2930,34 @@ proxies:
     headers:
       Host: ip1.1789034.xyz
     path: github.com/Alvin9999
+- name: 瑞典 001
+  type: vmess
+  network: ws
+  server: 185.146.173.59
+  port: 80
+  uuid: 1052f24e-7b09-45eb-b0c5-d858eb124192
+  skip-cert-verify: false
+  tls: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: freevpn878.hamidimorteza680.workers.dev
+    path: /
+- name: 台湾 006
+  type: vmess
+  network: ws
+  server: 61.228.90.35
+  port: 19600
+  uuid: e837ebe9-95bf-48d0-8b4a-30a3ba5894ef
+  tls: false
+  udp: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: duoduotw.cdn-sgp.xyz
+    path: /
 proxy-groups:
 - name: PROXY
   type: select
@@ -3003,7 +3013,6 @@ proxy-groups:
   - 加拿大 028
   - 加拿大 050
   - 加拿大 063
-  - 加拿大 078
   - 加拿大 099
   - 加拿大 108
   - 爱沙尼亚 002
@@ -3106,7 +3115,6 @@ proxy-groups:
   - 韩国 023
   - 加拿大 074
   - 韩国 031
-  - 韩国 034
   - 韩国 042
   - 美国 024
   - 加拿大 005
@@ -3126,11 +3134,9 @@ proxy-groups:
   - 爱沙尼亚 031
   - 英国 006
   - 韩国 006
-  - 韩国 007
   - 韩国 009
   - 加拿大 080
   - 荷兰 006
-  - 香港 003
   - 瑞典 003
   - 加拿大 094
   - 加拿大 102
@@ -3157,7 +3163,12 @@ proxy-groups:
   - 台湾 003
   - 台湾 004
   - 加拿大 019
+  - 台湾 005
   - 加拿大 008
+  - 加拿大 009
+  - 加拿大 014
+  - 瑞典 001
+  - 台湾 006
 - name: LOAD-BALANCE
   type: load-balance
   url: https://cp.cloudflare.com/generate_204
