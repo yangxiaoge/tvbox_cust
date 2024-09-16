@@ -496,17 +496,6 @@ proxies:
     headers:
       Host: aliorg.filegear-sg.me
     path: /
-- name: 韩国 004
-  type: trojan
-  network: ws
-  server: 222.97.95.239
-  port: 10443
-  password: CMLiu
-  sni: aliorg.filegear-sg.me
-  ws-opts:
-    headers:
-      Host: aliorg.filegear-sg.me
-    path: /
 - name: 拉脱维亚 001
   type: trojan
   network: ws
@@ -2302,20 +2291,6 @@ proxies:
     headers:
       Host: sssub.v2.001.ssrsub.com
     path: /api/v3/download.getFile
-- name: 加拿大 066
-  type: vless
-  network: ws
-  server: 172.66.46.220
-  port: 443
-  uuid: 64dd9b50-54ec-4c6a-9cae-654db04f2171
-  servername: 6f2B310D.ippscaNexopOWErRytTl.pagES.dEv
-  tls: true
-  client-fingerprint: randomized
-  delay: 1455
-  ws-opts:
-    headers:
-      Host: 6f2B310D.ippscaNexopOWErRytTl.pagES.dEv
-    path: /Telegram
 - name: 俄罗斯 002
   type: vless
   network: ws
@@ -2447,20 +2422,6 @@ proxies:
     headers:
       Host: a.ssll.gay
     path: /
-- name: 爱沙尼亚 031
-  type: vless
-  network: ws
-  server: 45.80.110.13
-  port: 8443
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  servername: a.ssll.gay
-  tls: true
-  client-fingerprint: chrome
-  delay: 1135
-  ws-opts:
-    headers:
-      Host: a.ssll.gay
-    path: twitterfreecodes
 - name: 英国 006
   type: vless
   network: ws
@@ -2944,12 +2905,53 @@ proxies:
     headers:
       Host: freevpn878.hamidimorteza680.workers.dev
     path: /
+- name: 德国 004
+  type: vmess
+  network: ws
+  server: 91.149.232.50
+  port: 80
+  uuid: e5987bb7-3ed3-4e79-a4fe-00bf7fa12c01
+  tls: false
+  udp: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: duoguo.cdn-sgp.xyz
+    path: /
+- name: 加拿大 020
+  type: vmess
+  network: ws
+  server: 172.67.64.120
+  port: 80
+  uuid: d646fd8c-3405-40c4-8df8-fb85d6bf8b24
+  skip-cert-verify: false
+  tls: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: 58892877706648357761980405045364.chrsjfklsdjfkljoierfdjklfjlkefeojsdlkfjeoifjsdlkfjweoifjlsdchrs.cyou
+    path: /
+- name: 加拿大 021
+  type: trojan
+  network: ws
+  server: 104.16.192.1
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  udp: true
+  sni: sherasheba.com
+  alterId: -1
+  ws-opts:
+    headers:
+      Host: sherasheba.com
+    path: /6b777a91
 - name: 台湾 006
   type: vmess
   network: ws
-  server: 61.228.90.35
-  port: 19600
-  uuid: e837ebe9-95bf-48d0-8b4a-30a3ba5894ef
+  server: 61.228.87.148
+  port: 16301
+  uuid: 75320f1d-c261-45b5-b67d-9b2dd64fab30
   tls: false
   udp: true
   alterId: 0
@@ -2996,7 +2998,6 @@ proxy-groups:
   - 香港 004
   - 美国 021
   - 韩国 002
-  - 韩国 004
   - 拉脱维亚 001
   - 澳大利亚 003
   - 加拿大 003
@@ -3121,7 +3122,6 @@ proxy-groups:
   - 加拿大 029
   - 加拿大 036
   - 加拿大 045
-  - 加拿大 066
   - 俄罗斯 002
   - 德国 003
   - 美国 007
@@ -3131,7 +3131,6 @@ proxy-groups:
   - 美国 012
   - 英国 003
   - 爱沙尼亚 030
-  - 爱沙尼亚 031
   - 英国 006
   - 韩国 006
   - 韩国 009
@@ -3168,6 +3167,9 @@ proxy-groups:
   - 加拿大 009
   - 加拿大 014
   - 瑞典 001
+  - 德国 004
+  - 加拿大 020
+  - 加拿大 021
   - 台湾 006
 - name: LOAD-BALANCE
   type: load-balance
