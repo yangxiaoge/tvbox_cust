@@ -518,19 +518,6 @@ proxies:
     headers:
       Host: aliorg.filegear-sg.me
     path: /
-- name: 加拿大 003
-  type: vmess
-  network: ws
-  server: russia.com
-  port: 2086
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  tls: false
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: ip1.1789034.xyz
-    path: github.com/Alvin9999
 - name: 香港 007
   type: vless
   network: ws
@@ -1145,21 +1132,6 @@ proxies:
     headers:
       Host: 936a99B4.Vde5-MlX81LANeo.pAgES.dEv
     path: /
-- name: 美国 062
-  type: vless
-  network: ws
-  server: 34.117.254.68
-  port: 80
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  skip-cert-verify: false
-  tls: false
-  tfo: false
-  client-fingerprint: chrome
-  delay: 837
-  ws-opts:
-    headers:
-      Host: a.ssll.gay
-    path: Telegram🇨🇳
 - name: 美国 065
   type: vless
   network: ws
@@ -2157,21 +2129,6 @@ proxies:
     headers:
       Host: a.ssll.gay
     path: /?ed=2048
-- name: 韩国 023
-  type: vless
-  network: ws
-  server: 117.123.72.132
-  port: 19374
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  servername: a.ssll.gay
-  skip-cert-verify: false
-  tls: true
-  udp: true
-  delay: 1644
-  ws-opts:
-    headers:
-      Host: a.ssll.gay
-    path: /?ed=2048
 - name: 加拿大 074
   type: vmess
   network: ws
@@ -2946,19 +2903,32 @@ proxies:
     headers:
       Host: sherasheba.com
     path: /6b777a91
-- name: 台湾 006
+- name: 加拿大 003
   type: vmess
   network: ws
-  server: 61.228.87.148
-  port: 16301
-  uuid: 75320f1d-c261-45b5-b67d-9b2dd64fab30
+  server: russia.com
+  port: 2086
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
   tls: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: ip1.1789034.xyz
+    path: github.com/Alvin9999
+- name: 加拿大 022
+  type: vmess
+  network: ws
+  server: lanlan.lancdn.vip
+  port: 443
+  uuid: 40bb08db-d656-4b26-a8c0-3abc2731be6c
+  tls: true
   udp: true
   alterId: 0
   cipher: auto
   ws-opts:
     headers:
-      Host: duoduotw.cdn-sgp.xyz
+      Host: lanlan.lancdn.vip
     path: /
 proxy-groups:
 - name: PROXY
@@ -3000,7 +2970,6 @@ proxy-groups:
   - 韩国 002
   - 拉脱维亚 001
   - 澳大利亚 003
-  - 加拿大 003
   - 香港 007
   - 香港 008
   - 香港 010
@@ -3044,7 +3013,6 @@ proxy-groups:
   - 爱沙尼亚 003
   - 荷兰 001
   - 加拿大 238
-  - 美国 062
   - 美国 065
   - 美国 066
   - 美国 067
@@ -3113,7 +3081,6 @@ proxy-groups:
   - 韩国 011
   - 韩国 018
   - 韩国 022
-  - 韩国 023
   - 加拿大 074
   - 韩国 031
   - 韩国 042
@@ -3170,7 +3137,8 @@ proxy-groups:
   - 德国 004
   - 加拿大 020
   - 加拿大 021
-  - 台湾 006
+  - 加拿大 003
+  - 加拿大 022
 - name: LOAD-BALANCE
   type: load-balance
   url: https://cp.cloudflare.com/generate_204
