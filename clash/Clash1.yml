@@ -251,21 +251,6 @@ proxies:
     headers:
       Host: juzibaipiao.5112233.xyz
     path: /?ed
-- name: 爱沙尼亚 007
-  type: vless
-  network: ws
-  server: 45.80.110.173
-  port: 80
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  servername: a.ssll.gay
-  skip-cert-verify: false
-  tls: false
-  udp: true
-  delay: 1079
-  ws-opts:
-    headers:
-      Host: a.ssll.gay
-    path: Twitterfreecodes
 - name: 加拿大 106
   type: vless
   network: ws
@@ -2283,36 +2268,6 @@ proxies:
     headers:
       Host: onea.flha.ru
     path: /
-- name: 加拿大 049
-  type: vless
-  network: ws
-  server: time.is
-  port: 8443
-  uuid: 500e1c54-c2b5-49fe-a70a-792970f8c8e8
-  servername: server20.aibox.tv
-  skip-cert-verify: false
-  tls: true
-  tfo: false
-  client-fingerprint: chrome
-  ws-opts:
-    headers:
-      Host: server20.aibox.tv
-    path: /TG-AiLuMao/
-- name: 加拿大 059
-  type: vless
-  network: ws
-  server: icook.tw
-  port: 8443
-  uuid: 500e1c54-c2b5-49fe-a70a-792970f8c8e8
-  servername: server20.aibox.tv
-  skip-cert-verify: false
-  tls: true
-  tfo: false
-  client-fingerprint: chrome
-  ws-opts:
-    headers:
-      Host: server20.aibox.tv
-    path: /TG-AiLuMao/
 - name: 美国 009
   type: vless
   network: ws
@@ -2332,36 +2287,6 @@ proxies:
   type: vless
   network: ws
   server: shopify.com
-  port: 2096
-  uuid: 67caf0a6-2cab-4f2e-81f5-1664e4813709
-  servername: server18.aibox.tv
-  skip-cert-verify: false
-  tls: true
-  tfo: false
-  client-fingerprint: chrome
-  ws-opts:
-    headers:
-      Host: server18.aibox.tv
-    path: /TG-AiLuMao/
-- name: 加拿大 065
-  type: vless
-  network: ws
-  server: time.is
-  port: 2096
-  uuid: 67caf0a6-2cab-4f2e-81f5-1664e4813709
-  servername: server18.aibox.tv
-  skip-cert-verify: false
-  tls: true
-  tfo: false
-  client-fingerprint: chrome
-  ws-opts:
-    headers:
-      Host: server18.aibox.tv
-    path: /TG-AiLuMao/
-- name: 加拿大 066
-  type: vless
-  network: ws
-  server: icook.hk
   port: 2096
   uuid: 67caf0a6-2cab-4f2e-81f5-1664e4813709
   servername: server18.aibox.tv
@@ -2434,6 +2359,54 @@ proxies:
     headers:
       Host: server20.aibox.tv
     path: /TG-AiLuMao/
+- name: 意大利 001
+  type: vmess
+  network: http
+  server: f41.maryam1500.top
+  port: 2098
+  uuid: 83876222-64a4-4912-aa18-b7d9d34959de
+  skip-cert-verify: true
+  tls: false
+  udp: true
+  alterId: 0
+  cipher: auto
+  http-opts:
+    headers:
+      Host:
+      - wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+    method: GET
+    path:
+    - /
+- name: 加拿大 006
+  type: vless
+  network: ws
+  server: time.is
+  port: 2096
+  uuid: 67caf0a6-2cab-4f2e-81f5-1664e4813709
+  servername: server18.aibox.tv
+  skip-cert-verify: false
+  tls: true
+  tfo: false
+  client-fingerprint: chrome
+  ws-opts:
+    headers:
+      Host: server18.aibox.tv
+    path: /TG-AiLuMao/
+- name: 加拿大 007
+  type: vless
+  network: ws
+  server: icook.hk
+  port: 2096
+  uuid: 67caf0a6-2cab-4f2e-81f5-1664e4813709
+  servername: server18.aibox.tv
+  skip-cert-verify: false
+  tls: true
+  tfo: false
+  client-fingerprint: chrome
+  ws-opts:
+    headers:
+      Host: server18.aibox.tv
+    path: /TG-AiLuMao/
 proxy-groups:
 - name: PROXY
   type: select
@@ -2454,7 +2427,6 @@ proxy-groups:
   - 美国 006
   - 爱沙尼亚 001
   - 俄罗斯 003
-  - 爱沙尼亚 007
   - 加拿大 106
   - 澳大利亚 001
   - 法国 001
@@ -2597,16 +2569,15 @@ proxy-groups:
   - 加拿大 003
   - 加拿大 039
   - 加拿大 043
-  - 加拿大 049
-  - 加拿大 059
   - 美国 009
   - 加拿大 062
-  - 加拿大 065
-  - 加拿大 066
   - 加拿大 067
   - 美国 014
   - 加拿大 068
   - 加拿大 070
+  - 意大利 001
+  - 加拿大 006
+  - 加拿大 007
 - name: LOAD-BALANCE
   type: load-balance
   url: https://cp.cloudflare.com/generate_204
