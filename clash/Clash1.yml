@@ -756,22 +756,6 @@ proxies:
     headers:
       Host: ip2.1457230.xyz
     path: github.com/Alvin9999
-- name: 加拿大 033
-  type: vmess
-  network: ws
-  server: 104.19.55.49
-  port: 2086
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  servername: ip2.1457230.xyz
-  skip-cert-verify: false
-  tls: false
-  alterId: 0
-  cipher: auto
-  delay: 894
-  ws-opts:
-    headers:
-      Host: ip2.1457230.xyz
-    path: github.com/Alvin9999
 - name: 加拿大 085
   type: vmess
   network: ws
@@ -1722,21 +1706,6 @@ proxies:
     headers:
       Host: onea.flha.ru
     path: /
-- name: 韩国 031
-  type: vless
-  network: ws
-  server: 124.80.75.68
-  port: 39658
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  servername: a.ssll.gay
-  skip-cert-verify: false
-  tls: true
-  udp: true
-  delay: 1015
-  ws-opts:
-    headers:
-      Host: a.ssll.gay
-    path: /?ed=2048
 - name: 美国 024
   type: vless
   network: ws
@@ -1941,21 +1910,6 @@ proxies:
     headers:
       Host: juzibaipiao.5112233.xyz
     path: /?ed=2048
-- name: 韩国 006
-  type: vless
-  network: ws
-  server: 124.199.44.146
-  port: 30013
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  servername: a.ssll.gay
-  skip-cert-verify: false
-  tls: true
-  udp: true
-  delay: 1024
-  ws-opts:
-    headers:
-      Host: a.ssll.gay
-    path: /?ed=2048
 - name: 韩国 009
   type: vless
   network: ws
@@ -1983,18 +1937,6 @@ proxies:
     headers:
       Host: private-codmhttp.teqqlzdw.workers.dev
     path: /?ed=2048
-- name: 荷兰 006
-  type: vless
-  network: ws
-  server: 188.114.96.3
-  port: 2095
-  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-  servername: WORker-LUCKY-SOUND-244a.VOdabaJ775.worKeRS.deV
-  tls: false
-  ws-opts:
-    headers:
-      Host: WORker-LUCKY-SOUND-244a.VOdabaJ775.worKeRS.deV
-    path: /3d4gHs5YyJDolcB0?ed=2560
 - name: 瑞典 003
   type: vless
   network: ws
@@ -2161,20 +2103,6 @@ proxies:
     headers:
       Host: ip14.freegradely.xyz
     path: github.com/Alvin9999
-- name: 加拿大 019
-  type: vmess
-  network: ws
-  server: jp2.1vpn.sbs
-  port: 80
-  uuid: 249daf1c-0cef-4772-b9f1-dadfaf989c56
-  tls: false
-  udp: true
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: jp2.1vpn.sbs
-    path: /kiulujunuqs
 - name: 加拿大 008
   type: vmess
   network: ws
@@ -2189,19 +2117,6 @@ proxies:
     headers:
       Host: vmess.taxar71054.workers.dev
     path: /
-- name: 加拿大 009
-  type: vmess
-  network: ws
-  server: japan.com
-  port: 2086
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  tls: false
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: ip1.1789034.xyz
-    path: github.com/Alvin9999
 - name: 加拿大 014
   type: vmess
   network: ws
@@ -2377,10 +2292,10 @@ proxies:
     method: GET
     path:
     - /
-- name: 加拿大 006
+- name: 加拿大 007
   type: vless
   network: ws
-  server: time.is
+  server: icook.hk
   port: 2096
   uuid: 67caf0a6-2cab-4f2e-81f5-1664e4813709
   servername: server18.aibox.tv
@@ -2392,10 +2307,40 @@ proxies:
     headers:
       Host: server18.aibox.tv
     path: /TG-AiLuMao/
-- name: 加拿大 007
+- name: 加拿大 009
   type: vless
   network: ws
-  server: icook.hk
+  server: time.is
+  port: 8443
+  uuid: 500e1c54-c2b5-49fe-a70a-792970f8c8e8
+  servername: server20.aibox.tv
+  skip-cert-verify: false
+  tls: true
+  tfo: false
+  client-fingerprint: chrome
+  ws-opts:
+    headers:
+      Host: server20.aibox.tv
+    path: /TG-AiLuMao/
+- name: 加拿大 010
+  type: vless
+  network: ws
+  server: icook.tw
+  port: 8443
+  uuid: 500e1c54-c2b5-49fe-a70a-792970f8c8e8
+  servername: server20.aibox.tv
+  skip-cert-verify: false
+  tls: true
+  tfo: false
+  client-fingerprint: chrome
+  ws-opts:
+    headers:
+      Host: server20.aibox.tv
+    path: /TG-AiLuMao/
+- name: 加拿大 006
+  type: vless
+  network: ws
+  server: time.is
   port: 2096
   uuid: 67caf0a6-2cab-4f2e-81f5-1664e4813709
   servername: server18.aibox.tv
@@ -2464,7 +2409,6 @@ proxy-groups:
   - 加拿大 149
   - 加拿大 016
   - 加拿大 032
-  - 加拿大 033
   - 加拿大 085
   - 加拿大 204
   - 加拿大 219
@@ -2530,7 +2474,6 @@ proxy-groups:
   - 韩国 011
   - 韩国 022
   - 加拿大 074
-  - 韩国 031
   - 美国 024
   - 加拿大 005
   - 加拿大 029
@@ -2545,10 +2488,8 @@ proxy-groups:
   - 英国 003
   - 爱沙尼亚 030
   - 英国 006
-  - 韩国 006
   - 韩国 009
   - 加拿大 080
-  - 荷兰 006
   - 瑞典 003
   - 加拿大 102
   - 加拿大 103
@@ -2561,9 +2502,7 @@ proxy-groups:
   - 加拿大 002
   - 加拿大 004
   - 加拿大 017
-  - 加拿大 019
   - 加拿大 008
-  - 加拿大 009
   - 加拿大 014
   - 瑞典 001
   - 加拿大 003
@@ -2576,8 +2515,10 @@ proxy-groups:
   - 加拿大 068
   - 加拿大 070
   - 意大利 001
-  - 加拿大 006
   - 加拿大 007
+  - 加拿大 009
+  - 加拿大 010
+  - 加拿大 006
 - name: LOAD-BALANCE
   type: load-balance
   url: https://cp.cloudflare.com/generate_204
