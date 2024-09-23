@@ -486,20 +486,6 @@ proxies:
     headers:
       Host: kk.ylks.xyz
     path: /blue
-- name: 印度 002
-  type: vless
-  network: ws
-  server: 156.67.111.64
-  port: 2053
-  uuid: d7dd3a35-b68b-4992-b319-a85b8a1fc8e5
-  servername: dns68.putata.eu.org
-  tls: true
-  client-fingerprint: randomized
-  delay: 1720
-  ws-opts:
-    headers:
-      Host: dns68.putata.eu.org
-    path: /?ed=2048
 - name: 加拿大 015
   type: vmess
   network: ws
@@ -1910,21 +1896,6 @@ proxies:
     headers:
       Host: juzibaipiao.5112233.xyz
     path: /?ed=2048
-- name: 韩国 009
-  type: vless
-  network: ws
-  server: 124.199.44.146
-  port: 30064
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  servername: a.ssll.gay
-  skip-cert-verify: false
-  tls: true
-  udp: true
-  delay: 1075
-  ws-opts:
-    headers:
-      Host: a.ssll.gay
-    path: /?ed=2048
 - name: 加拿大 080
   type: vless
   network: ws
@@ -2352,6 +2323,22 @@ proxies:
     headers:
       Host: server18.aibox.tv
     path: /TG-AiLuMao/
+- name: 德国 004
+  type: vmess
+  network: ws
+  server: sgdo.vipcasper.com
+  port: 443
+  uuid: 4dad8ee1-9a55-4674-9c5b-69b66f4ddcdc
+  servername: sgdo.vipcasper.com
+  skip-cert-verify: true
+  tls: true
+  udp: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: sgdo.vipcasper.com
+    path: /vmess
 proxy-groups:
 - name: PROXY
   type: select
@@ -2390,7 +2377,6 @@ proxy-groups:
   - 澳大利亚 003
   - 香港 007
   - 奥地利 001
-  - 印度 002
   - 加拿大 015
   - 加拿大 018
   - 加拿大 026
@@ -2488,7 +2474,6 @@ proxy-groups:
   - 英国 003
   - 爱沙尼亚 030
   - 英国 006
-  - 韩国 009
   - 加拿大 080
   - 瑞典 003
   - 加拿大 102
@@ -2519,6 +2504,7 @@ proxy-groups:
   - 加拿大 009
   - 加拿大 010
   - 加拿大 006
+  - 德国 004
 - name: LOAD-BALANCE
   type: load-balance
   url: https://cp.cloudflare.com/generate_204
