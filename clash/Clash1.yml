@@ -2278,21 +2278,6 @@ proxies:
     headers:
       Host: server18.aibox.tv
     path: /TG-AiLuMao/
-- name: 加拿大 009
-  type: vless
-  network: ws
-  server: time.is
-  port: 8443
-  uuid: 500e1c54-c2b5-49fe-a70a-792970f8c8e8
-  servername: server20.aibox.tv
-  skip-cert-verify: false
-  tls: true
-  tfo: false
-  client-fingerprint: chrome
-  ws-opts:
-    headers:
-      Host: server20.aibox.tv
-    path: /TG-AiLuMao/
 - name: 加拿大 010
   type: vless
   network: ws
@@ -2339,6 +2324,36 @@ proxies:
     headers:
       Host: sgdo.vipcasper.com
     path: /vmess
+- name: 韩国 003
+  type: vmess
+  network: ws
+  server: 11.v2-ray.cyou
+  port: 23611
+  uuid: 8dd05086-bb85-3ae5-91ff-231510969d73
+  skip-cert-verify: true
+  tls: false
+  udp: true
+  alterId: 2
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: 11.v2-ray.cyou
+    path: /
+- name: 加拿大 009
+  type: vless
+  network: ws
+  server: time.is
+  port: 8443
+  uuid: 500e1c54-c2b5-49fe-a70a-792970f8c8e8
+  servername: server20.aibox.tv
+  skip-cert-verify: false
+  tls: true
+  tfo: false
+  client-fingerprint: chrome
+  ws-opts:
+    headers:
+      Host: server20.aibox.tv
+    path: /TG-AiLuMao/
 proxy-groups:
 - name: PROXY
   type: select
@@ -2501,10 +2516,11 @@ proxy-groups:
   - 加拿大 070
   - 意大利 001
   - 加拿大 007
-  - 加拿大 009
   - 加拿大 010
   - 加拿大 006
   - 德国 004
+  - 韩国 003
+  - 加拿大 009
 - name: LOAD-BALANCE
   type: load-balance
   url: https://cp.cloudflare.com/generate_204
