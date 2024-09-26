@@ -3055,22 +3055,6 @@ proxies:
   tls: true
   udp: true
   tfo: false
-- name: 新加坡 001
-  type: vless
-  network: tcp
-  server: sg.maple.icu
-  port: 24021
-  uuid: 83512b4a-64a9-4058-80df-53d95e2fbaa0
-  servername: www.apple.com
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  tfo: false
-  client-fingerprint: edge
-  reality-opts:
-    public-key: RpeUUI-GjeFRNOOUBauRNYvvM7yVk5yihRI9Tig4jxc
-    short-id: 23aae802
-  flow: xtls-rprx-vision
 - name: 韩国 004
   type: vless
   network: tcp
@@ -3103,6 +3087,74 @@ proxies:
     public-key: kKB-jjAA58dRdROFi4JrB5i0ETHIOyHK1HwYbff8lnk
     short-id: afb60060
   flow: xtls-rprx-vision
+- name: 加拿大 065
+  type: vless
+  network: ws
+  server: icook.tw
+  port: 8443
+  uuid: 500e1c54-c2b5-49fe-a70a-792970f8c8e8
+  servername: server20.aibox.tv
+  skip-cert-verify: false
+  tls: true
+  tfo: false
+  client-fingerprint: chrome
+  ws-opts:
+    headers:
+      Host: server20.aibox.tv
+    path: /TG-AiLuMao/
+- name: 加拿大 066
+  type: vless
+  network: ws
+  server: 172.66.44.83
+  port: 443
+  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
+  servername: 80acf9Da.EhSaN-PAnEL.PAGES.dEv
+  skip-cert-verify: true
+  tls: true
+  udp: true
+  tfo: false
+  ws-opts:
+    headers:
+      Host: 80acf9Da.EhSaN-PAnEL.PAGES.dEv
+    path: /yg2rz1apovtkjpov?ed=2560
+- name: 加拿大 069
+  type: vless
+  network: ws
+  server: 172.66.46.224
+  port: 443
+  uuid: a8a09765-7681-47ba-9ea0-e0ae79d51088
+  servername: t-netplus-4vx.pages.dev
+  skip-cert-verify: true
+  tls: true
+  udp: true
+  tfo: false
+  ws-opts:
+    headers:
+      Host: t-netplus-4vx.pages.dev
+    path: /
+- name: 加拿大 071
+  type: vmess
+  network: ws
+  server: 104.16.60.8
+  port: 2086
+  uuid: 76221bfb-e92f-4e80-81c5-6fe48f50ac0b
+  skip-cert-verify: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: 1c11-muddy-rice-1c11.vetanex501.workers.dev
+    path: /glweidf.sbs/linkws
+- name: 美国 026
+  type: vless
+  network: httpupgrade
+  server: 172.64.111.69
+  port: 8080
+  uuid: 4ee50f98-d646-4491-b5a5-339fd79153a4
+  skip-cert-verify: true
+  tls: true
+  udp: true
+  tfo: false
 proxy-groups:
 - name: PROXY
   type: select
@@ -3322,9 +3374,13 @@ proxy-groups:
   - 加拿大 058
   - 加拿大 059
   - 美国 019
-  - 新加坡 001
   - 韩国 004
   - 美国 025
+  - 加拿大 065
+  - 加拿大 066
+  - 加拿大 069
+  - 加拿大 071
+  - 美国 026
 - name: LOAD-BALANCE
   type: load-balance
   url: https://cp.cloudflare.com/generate_204
