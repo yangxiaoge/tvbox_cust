@@ -444,20 +444,6 @@ proxies:
     headers:
       Host: aliorg.filegear-sg.me
     path: /
-- name: 香港 007
-  type: vless
-  network: ws
-  server: 58.176.95.46
-  port: 443
-  uuid: d7dd3a35-b68b-4992-b319-a85b8a1fc8e5
-  servername: dns68.putata.eu.org
-  tls: true
-  client-fingerprint: randomized
-  delay: 526
-  ws-opts:
-    headers:
-      Host: dns68.putata.eu.org
-    path: /?ed=2048
 - name: 奥地利 001
   type: vless
   network: ws
@@ -1650,21 +1636,6 @@ proxies:
     headers:
       Host: onea.flha.ru
     path: /
-- name: 美国 024
-  type: vless
-  network: ws
-  server: 166.0.188.128
-  port: 41443
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  servername: a.ssll.gay
-  skip-cert-verify: false
-  tls: true
-  udp: true
-  delay: 895
-  ws-opts:
-    headers:
-      Host: a.ssll.gay
-    path: /?ed=2048
 - name: 加拿大 005
   type: vmess
   network: ws
@@ -1962,20 +1933,6 @@ proxies:
     headers:
       Host: 99806388192980142300309475767578.chrsjfklsdjfkljoierfdjklfjlkefeojsdlkfjeoifjsdlkfjweoifjlsdchrs.cyou
     path: /
-- name: 加拿大 001
-  type: vmess
-  network: ws
-  server: cf.hy2.one
-  port: 2082
-  uuid: 0cb97333-4ac6-41c1-936e-67747f10af33
-  tls: false
-  udp: true
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: sg01.hy-2.top
-    path: /
 - name: 加拿大 002
   type: vmess
   network: ws
@@ -2128,21 +2085,6 @@ proxies:
     headers:
       Host: server18.aibox.tv
     path: /TG-AiLuMao/
-- name: 美国 014
-  type: vless
-  network: ws
-  server: ip.sb
-  port: 2096
-  uuid: 67caf0a6-2cab-4f2e-81f5-1664e4813709
-  servername: server18.aibox.tv
-  skip-cert-verify: false
-  tls: true
-  tfo: false
-  client-fingerprint: chrome
-  ws-opts:
-    headers:
-      Host: server18.aibox.tv
-    path: /TG-AiLuMao/
 - name: 加拿大 068
   type: vmess
   network: ws
@@ -2174,24 +2116,6 @@ proxies:
     headers:
       Host: server20.aibox.tv
     path: /TG-AiLuMao/
-- name: 意大利 001
-  type: vmess
-  network: http
-  server: f41.maryam1500.top
-  port: 2098
-  uuid: 83876222-64a4-4912-aa18-b7d9d34959de
-  skip-cert-verify: true
-  tls: false
-  udp: true
-  alterId: 0
-  cipher: auto
-  http-opts:
-    headers:
-      Host:
-      - wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
-    method: GET
-    path:
-    - /
 - name: 加拿大 007
   type: vless
   network: ws
@@ -3162,6 +3086,31 @@ proxies:
     headers:
       Host: telgram-xv2ray--xv2ray--xv2ray--xv2ray--xv2ray2.pages.dev
     path: /Telegram-XV2ry2?ed=512
+- name: 美国 023
+  type: vless
+  network: httpupgrade
+  server: 172.64.111.69
+  port: 8080
+  uuid: 4ee50f98-d646-4491-b5a5-339fd79153a4
+  skip-cert-verify: true
+  tls: true
+  udp: true
+  tfo: false
+- name: 美国 014
+  type: vless
+  network: ws
+  server: 151.101.66.219
+  port: 443
+  uuid: '%33%64%63%30%30%66%66%34%2d%61%63%34%62%2d%34%35%37%36%2d%62%31%65%63%2d%66%33%34%31%38%65%34%33%38%38%34%34'
+  servername: barkatc3.ir
+  skip-cert-verify: true
+  tls: true
+  udp: true
+  tfo: false
+  ws-opts:
+    headers:
+      Host: barkatc3.ir
+    path: /Telegram-ipV2Ray-Telegram-ipV2Ray-Telegram-ipV2Ray?ed=2048
 proxy-groups:
 - name: PROXY
   type: select
@@ -3197,7 +3146,6 @@ proxy-groups:
   - 韩国 002
   - 拉脱维亚 001
   - 澳大利亚 003
-  - 香港 007
   - 奥地利 001
   - 加拿大 015
   - 加拿大 018
@@ -3280,7 +3228,6 @@ proxy-groups:
   - 韩国 011
   - 韩国 022
   - 加拿大 074
-  - 美国 024
   - 加拿大 005
   - 加拿大 036
   - 俄罗斯 002
@@ -3302,7 +3249,6 @@ proxy-groups:
   - 加拿大 143
   - 加拿大 146
   - 加拿大 151
-  - 加拿大 001
   - 加拿大 002
   - 加拿大 004
   - 加拿大 017
@@ -3314,10 +3260,8 @@ proxy-groups:
   - 美国 009
   - 加拿大 062
   - 加拿大 067
-  - 美国 014
   - 加拿大 068
   - 加拿大 070
-  - 意大利 001
   - 加拿大 007
   - 加拿大 006
   - 德国 004
@@ -3388,6 +3332,8 @@ proxy-groups:
   - 加拿大 029
   - 加拿大 031
   - 加拿大 075
+  - 美国 023
+  - 美国 014
 - name: LOAD-BALANCE
   type: load-balance
   url: https://cp.cloudflare.com/generate_204
