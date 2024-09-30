@@ -401,16 +401,6 @@ proxies:
     headers:
       Host: dns68.putata.eu.org
     path: /?ed=2048
-- name: 美国 021
-  type: vmess
-  network: tcp
-  server: MI.HUY.OVH
-  port: 38406
-  uuid: 8114cffb-928f-4ce1-a376-d48546573fcb
-  skip-cert-verify: true
-  alterId: 0
-  cipher: auto
-  delay: 576
 - name: 韩国 002
   type: trojan
   network: ws
@@ -2177,21 +2167,6 @@ proxies:
     headers:
       Host: 11.v2-ray.cyou
     path: /
-- name: 加拿大 009
-  type: vless
-  network: ws
-  server: time.is
-  port: 8443
-  uuid: 500e1c54-c2b5-49fe-a70a-792970f8c8e8
-  servername: server20.aibox.tv
-  skip-cert-verify: false
-  tls: true
-  tfo: false
-  client-fingerprint: chrome
-  ws-opts:
-    headers:
-      Host: server20.aibox.tv
-    path: /TG-AiLuMao/
 - name: 美国 001
   type: vless
   network: ws
@@ -2232,21 +2207,6 @@ proxies:
   ws-opts:
     headers:
       Host: wWw.SpEeDtEsT.NeT.ZuLa.Ir.IkCoSaLeS.iR.D662599.v24.com
-    path: /
-- name: 美国 004
-  type: vless
-  network: ws
-  server: SpeedTest.net
-  port: 80
-  uuid: 349ece52-713d-4955-b8c7-5874b4906235
-  servername: wWw.SpEeDtEsT.NeT.ZuLa.Ir.IkCoSaLeS.iR.D662599.v14.com
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  tfo: false
-  ws-opts:
-    headers:
-      Host: wWw.SpEeDtEsT.NeT.ZuLa.Ir.IkCoSaLeS.iR.D662599.v14.com
     path: /
 - name: 瑞典 002
   type: vless
@@ -3010,22 +2970,6 @@ proxies:
     headers:
       Host: sg1.1vpn.sbs
     path: /oihuih6788
-- name: 美国 002
-  type: vless
-  network: ws
-  server: speedtest.net
-  port: 443
-  uuid: telegram-id-ArV2ray
-  servername: aloy5.ir
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  tfo: false
-  client-fingerprint: chrome
-  ws-opts:
-    headers:
-      Host: aloy5.ir
-    path: /telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray?ed=2048
 - name: 加拿大 013
   type: vless
   network: ws
@@ -3111,6 +3055,125 @@ proxies:
     headers:
       Host: barkatc3.ir
     path: /Telegram-ipV2Ray-Telegram-ipV2Ray-Telegram-ipV2Ray?ed=2048
+- name: 美国 002
+  type: vless
+  network: ws
+  server: ip.sb
+  port: 2096
+  uuid: 67caf0a6-2cab-4f2e-81f5-1664e4813709
+  servername: server18.aibox.tv
+  skip-cert-verify: false
+  tls: true
+  tfo: false
+  client-fingerprint: chrome
+  ws-opts:
+    headers:
+      Host: server18.aibox.tv
+    path: /TG-AiLuMao/
+- name: 越南 001
+  type: vmess
+  network: grpc
+  server: ls.wvw.mom
+  port: 34237
+  uuid: ebace182-ad9a-4044-92fd-ad48adf52779
+  servername: ls.wvw.mom
+  skip-cert-verify: true
+  tls: true
+  udp: true
+  alterId: 0
+  cipher: auto
+  grpc-opts:
+    grpc-service-name: aeyydsrongseven
+- name: 加拿大 001
+  type: vmess
+  network: ws
+  server: cf.877771.xyz
+  port: 80
+  uuid: ebace182-ad9a-4044-92fd-ad48adf52779
+  skip-cert-verify: true
+  tls: false
+  udp: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: 33.bycf.us.kg
+    path: /rongseven?ed=2048
+- name: 美国 021
+  type: vmess
+  network: ws
+  server: 172.64.167.19
+  port: 2086
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  skip-cert-verify: true
+  tls: false
+  udp: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: ip2.1457230.xyz
+    path: github.com/Alvin9999
+- name: 美国 024
+  type: vmess
+  network: ws
+  server: 172.64.166.2
+  port: 2086
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  skip-cert-verify: true
+  tls: false
+  udp: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: ip2.1457230.xyz
+    path: github.com/Alvin9999
+- name: 美国 026
+  type: vmess
+  network: ws
+  server: 172.64.166.28
+  port: 2086
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  skip-cert-verify: true
+  tls: false
+  udp: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: ip2.1457230.xyz
+    path: github.com/Alvin9999
+- name: 加拿大 009
+  type: vmess
+  network: ws
+  server: cfip.1323123.xyz
+  port: 80
+  uuid: ebace182-ad9a-4044-92fd-ad48adf52779
+  skip-cert-verify: true
+  tls: false
+  udp: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: kr.freegpt.filegear-sg.me
+    path: /rongseven?ed=2048
+- name: 加拿大 076
+  type: vless
+  network: ws
+  server: time.is
+  port: 8443
+  uuid: 500e1c54-c2b5-49fe-a70a-792970f8c8e8
+  servername: server20.aibox.tv
+  skip-cert-verify: false
+  tls: true
+  tfo: false
+  client-fingerprint: chrome
+  ws-opts:
+    headers:
+      Host: server20.aibox.tv
+    path: /TG-AiLuMao/
 proxy-groups:
 - name: PROXY
   type: select
@@ -3142,7 +3205,6 @@ proxy-groups:
   - 美国 008
   - 加拿大 133
   - 香港 004
-  - 美国 021
   - 韩国 002
   - 拉脱维亚 001
   - 澳大利亚 003
@@ -3266,11 +3328,9 @@ proxy-groups:
   - 加拿大 006
   - 德国 004
   - 韩国 003
-  - 加拿大 009
   - 美国 001
   - 加拿大 011
   - 美国 003
-  - 美国 004
   - 瑞典 002
   - 加拿大 019
   - 瑞典 004
@@ -3327,13 +3387,20 @@ proxy-groups:
   - 加拿大 071
   - 加拿大 072
   - 加拿大 073
-  - 美国 002
   - 加拿大 013
   - 加拿大 029
   - 加拿大 031
   - 加拿大 075
   - 美国 023
   - 美国 014
+  - 美国 002
+  - 越南 001
+  - 加拿大 001
+  - 美国 021
+  - 美国 024
+  - 美国 026
+  - 加拿大 009
+  - 加拿大 076
 - name: LOAD-BALANCE
   type: load-balance
   url: https://cp.cloudflare.com/generate_204
