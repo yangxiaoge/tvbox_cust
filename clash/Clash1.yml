@@ -1908,20 +1908,6 @@ proxies:
     headers:
       Host: 99806388192980142300309475767578.chrsjfklsdjfkljoierfdjklfjlkefeojsdlkfjeoifjsdlkfjweoifjlsdchrs.cyou
     path: /
-- name: 加拿大 002
-  type: vmess
-  network: ws
-  server: 104.16.61.8
-  port: 2082
-  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
-  skip-cert-verify: false
-  tls: false
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: y-old-mode-9c0diab.wiriy73548.workers.dev
-    path: /
 - name: 加拿大 004
   type: vmess
   network: ws
@@ -2060,37 +2046,6 @@ proxies:
     headers:
       Host: server18.aibox.tv
     path: /TG-AiLuMao/
-- name: 加拿大 068
-  type: vmess
-  network: ws
-  server: www.speedtest.net
-  port: 2095
-  uuid: e4ce2e2e-98a9-4cfd-b89e-8d322837edcb
-  servername: 22d.irvn.debian.🤣6.6.1b🫡71.8.fxp.debian.org.speedtshest.net.列列男事的事列上赛男.boland-sho-tokhm-sag.cyou.
-  skip-cert-verify: true
-  tls: false
-  udp: true
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: www.speedtest.net
-    path: /
-- name: 加拿大 070
-  type: vless
-  network: ws
-  server: www.visa.com
-  port: 8443
-  uuid: 500e1c54-c2b5-49fe-a70a-792970f8c8e8
-  servername: server20.aibox.tv
-  skip-cert-verify: false
-  tls: true
-  tfo: false
-  client-fingerprint: chrome
-  ws-opts:
-    headers:
-      Host: server20.aibox.tv
-    path: /TG-AiLuMao/
 - name: 加拿大 007
   type: vless
   network: ws
@@ -2137,21 +2092,6 @@ proxies:
     headers:
       Host: sgdo.vipcasper.com
     path: /vmess
-- name: 韩国 003
-  type: vmess
-  network: ws
-  server: 11.v2-ray.cyou
-  port: 23611
-  uuid: 8dd05086-bb85-3ae5-91ff-231510969d73
-  skip-cert-verify: true
-  tls: false
-  udp: true
-  alterId: 2
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: 11.v2-ray.cyou
-    path: /
 - name: 美国 001
   type: vless
   network: ws
@@ -2400,21 +2340,6 @@ proxies:
     headers:
       Host: tw1eskJpKcA.inivtrak.xyz
     path: /video/WNMicnDh
-- name: 加拿大 038
-  type: vless
-  network: ws
-  server: 104.17.147.22
-  port: 2082
-  uuid: 905be079-93ff-4078-c3d0-20a496d19422
-  servername: download.ir.shad.ir.bmi.ir.www.speedtest.net.zula.com.aparat.com.spikevpn.cfd
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  tfo: false
-  ws-opts:
-    headers:
-      Host: download.ir.shad.ir.bmi.ir.www.speedtest.net.zula.com.aparat.com.spikevpn.cfd
-    path: /
 - name: 美国 015
   type: vmess
   network: ws
@@ -2519,22 +2444,6 @@ proxies:
     headers:
       Host: pages.teasalo.cloudns.org
     path: /?proxyip=proxyip.us.fxxk.dedyn.io
-- name: 美国 016
-  type: vless
-  network: ws
-  server: 173.245.58.100
-  port: 443
-  uuid: b8d718c6-7516-4259-b4e6-253e280bc6b6
-  servername: bia-2-vip-programs.hsjsak.ir
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  tfo: false
-  client-fingerprint: random
-  ws-opts:
-    headers:
-      Host: bia-2-vip-programs.hsjsak.ir
-    path: /?ed=2048
 - name: 加拿大 046
   type: vless
   server: 104.16.251.13
@@ -3298,6 +3207,103 @@ proxies:
     headers:
       Host: server20.aibox.tv
     path: /TG-AiLuMao/
+- name: 加拿大 002
+  type: vmess
+  network: ws
+  server: bycf1.netcar.live
+  port: 8080
+  uuid: e2c91ac8-1805-43d8-aede-80af4957aa6f
+  skip-cert-verify: true
+  tls: false
+  udp: true
+  alterId: 0
+  cipher: auto
+  mux:
+    concurrency: 8
+    enable: true
+  ws-opts:
+    headers:
+      Host: hk1.netcar.live
+    path: /proxy
+- name: 加拿大 038
+  type: vmess
+  network: ws
+  server: bycf2.netcar.live
+  port: 8080
+  uuid: 7c3f777e-42cb-448b-bc7f-7928ed6ec304
+  skip-cert-verify: true
+  tls: false
+  udp: true
+  alterId: 0
+  cipher: auto
+  mux:
+    concurrency: 8
+    enable: true
+  ws-opts:
+    headers:
+      Host: hk1.netcar.live
+    path: /proxy
+- name: 加拿大 070
+  type: vmess
+  network: ws
+  server: bycf4.netcar.live
+  port: 8080
+  uuid: 8ecbd879-6ef0-431a-a3c4-3ad0b9f9e159
+  skip-cert-verify: true
+  tls: false
+  udp: true
+  alterId: 0
+  cipher: auto
+  mux:
+    concurrency: 8
+    enable: true
+  ws-opts:
+    headers:
+      Host: singapore2.netcar.live
+    path: /proxy
+- name: 加拿大 084
+  type: vmess
+  network: ws
+  server: 104.26.15.148
+  port: 80
+  uuid: f1fb28e5-e5b6-450c-972c-13235c94285c
+  skip-cert-verify: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: 50907082685942059876387799824779.chrsjfklsdjfkljoierfdjklfjlkefeojsdlkfjeoifjsdlkfjweoifjlsdchrs.cyou
+    path: /V2LINE-TELEGRAM-CHANNEL-VMESS-WS
+- name: 荷兰 004
+  type: vless
+  network: ws
+  server: 188.114.97.141
+  port: 443
+  uuid: d7bbfe83-b037-48ae-996c-b98ed0441ba2
+  servername: e10c0e4b.oodaeq2.pages.dev
+  skip-cert-verify: true
+  tls: true
+  udp: true
+  tfo: false
+  ws-opts:
+    headers:
+      Host: e10c0e4b.oodaeq2.pages.dev
+    path: TELEGRAM-PROXY_MTM/?ed=2048
+- name: 加拿大 068
+  type: vless
+  network: ws
+  server: www.visa.com
+  port: 8443
+  uuid: 500e1c54-c2b5-49fe-a70a-792970f8c8e8
+  servername: server20.aibox.tv
+  skip-cert-verify: false
+  tls: true
+  tfo: false
+  client-fingerprint: chrome
+  ws-opts:
+    headers:
+      Host: server20.aibox.tv
+    path: /TG-AiLuMao/
 proxy-groups:
 - name: PROXY
   type: select
@@ -3434,7 +3440,6 @@ proxy-groups:
   - 加拿大 143
   - 加拿大 146
   - 加拿大 151
-  - 加拿大 002
   - 加拿大 004
   - 加拿大 017
   - 加拿大 008
@@ -3445,12 +3450,9 @@ proxy-groups:
   - 美国 009
   - 加拿大 062
   - 加拿大 067
-  - 加拿大 068
-  - 加拿大 070
   - 加拿大 007
   - 加拿大 006
   - 德国 004
-  - 韩国 003
   - 美国 001
   - 加拿大 011
   - 美国 003
@@ -3468,7 +3470,6 @@ proxy-groups:
   - 加拿大 033
   - 加拿大 035
   - 加拿大 037
-  - 加拿大 038
   - 美国 015
   - 加拿大 040
   - 瑞典 005
@@ -3476,7 +3477,6 @@ proxy-groups:
   - 加拿大 042
   - 加拿大 044
   - 加拿大 045
-  - 美国 016
   - 加拿大 046
   - 美国 018
   - 加拿大 047
@@ -3533,6 +3533,12 @@ proxy-groups:
   - 加拿大 081
   - 加拿大 082
   - 加拿大 083
+  - 加拿大 002
+  - 加拿大 038
+  - 加拿大 070
+  - 加拿大 084
+  - 荷兰 004
+  - 加拿大 068
 - name: LOAD-BALANCE
   type: load-balance
   url: https://cp.cloudflare.com/generate_204
