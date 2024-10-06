@@ -434,19 +434,6 @@ proxies:
     headers:
       Host: aliorg.filegear-sg.me
     path: /
-- name: 奥地利 001
-  type: vless
-  network: ws
-  server: 94.177.8.26
-  port: 443
-  uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-  servername: kk.ylks.xyz
-  tls: true
-  delay: 1798
-  ws-opts:
-    headers:
-      Host: kk.ylks.xyz
-    path: /blue
 - name: 加拿大 015
   type: vmess
   network: ws
@@ -1495,21 +1482,6 @@ proxies:
     headers:
       Host: gcnwoegp2rjvyl7qmmy3ltqtaf3q22.pages.dev
     path: /proxyip=62.3.12.185
-- name: 韩国 011
-  type: vless
-  network: ws
-  server: 117.123.72.132
-  port: 21979
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  servername: a.ssll.gay
-  skip-cert-verify: false
-  tls: true
-  udp: true
-  delay: 862
-  ws-opts:
-    headers:
-      Host: a.ssll.gay
-    path: /?ed=2048
 - name: 韩国 022
   type: vless
   network: ws
@@ -2911,37 +2883,6 @@ proxies:
     headers:
       Host: ip2.1457230.xyz
     path: github.com/Alvin9999
-- name: 美国 027
-  type: vless
-  network: ws
-  server: speedtest.net
-  port: 443
-  uuid: telegram-id-ArV2ray
-  servername: aloy5.ir
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  tfo: false
-  client-fingerprint: chrome
-  ws-opts:
-    headers:
-      Host: aloy5.ir
-    path: /telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray?ed=2048
-- name: 美国 028
-  type: vless
-  network: ws
-  server: SpeedTest.net
-  port: 80
-  uuid: 349ece52-713d-4955-b8c7-5874b4906235
-  servername: wWw.SpEeDtEsT.NeT.ZuLa.Ir.IkCoSaLeS.iR.D662599.v14.com
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  tfo: false
-  ws-opts:
-    headers:
-      Host: wWw.SpEeDtEsT.NeT.ZuLa.Ir.IkCoSaLeS.iR.D662599.v14.com
-    path: /
 - name: 加拿大 077
   type: vless
   network: ws
@@ -3212,7 +3153,6 @@ proxy-groups:
   - 韩国 002
   - 拉脱维亚 001
   - 澳大利亚 003
-  - 奥地利 001
   - 加拿大 015
   - 加拿大 018
   - 加拿大 026
@@ -3285,7 +3225,6 @@ proxy-groups:
   - 爱沙尼亚 029
   - 英国 013
   - 加拿大 054
-  - 韩国 011
   - 韩国 022
   - 加拿大 074
   - 加拿大 005
@@ -3387,8 +3326,6 @@ proxy-groups:
   - 加拿大 076
   - 加拿大 065
   - 美国 004
-  - 美国 027
-  - 美国 028
   - 加拿大 077
   - 加拿大 078
   - 加拿大 079
