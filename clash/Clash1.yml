@@ -1119,20 +1119,6 @@ proxies:
     headers:
       Host: juzibaipiao.5112233.xyz
     path: /
-- name: 加拿大 025
-  type: vless
-  network: ws
-  server: fbi.gov
-  port: 443
-  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-  servername: B458ab02.caa-chANel-WoRkER-PAge-freE-jhUihNUjhPHjkl-nIhgKjn.paGeS.DeV
-  tls: true
-  client-fingerprint: randomized
-  delay: 1082
-  ws-opts:
-    headers:
-      Host: B458ab02.caa-chANel-WoRkER-PAge-freE-jhUihNUjhPHjkl-nIhgKjn.paGeS.DeV
-    path: /AJIJ0ioGDhNXcifL?ed=2560
 - name: 英国 001
   type: vless
   network: ws
@@ -1681,21 +1667,6 @@ proxies:
     headers:
       Host: node.vauth.workers.dev
     path: /?ed=2048
-- name: 韩国 001
-  type: vless
-  network: ws
-  server: 220.121.62.236
-  port: 14443
-  uuid: 113dd109-540e-4497-9d47-eed30315260f
-  servername: 159d770e-fd74-4069-a73b-fe6ececa7951.f82aee4c-752c-4b0c-9793-380d4d76435c.ddnsgeek.com
-  skip-cert-verify: false
-  tls: true
-  tfo: false
-  client-fingerprint: random
-  ws-opts:
-    headers:
-      Host: 159d770e-fd74-4069-a73b-fe6ececa7951.f82aee4c-752c-4b0c-9793-380d4d76435c.ddnsgeek.com
-    path: /edgetunnel.2424014450.workers.dev/?proxyip=proxyip.kr.fxxk.dedyn.io
 - name: 加拿大 143
   type: vmess
   network: ws
@@ -1710,20 +1681,6 @@ proxies:
     headers:
       Host: worker-damp-duadwans.jevesoj131.workers.dev
     path: /
-- name: 加拿大 146
-  type: vmess
-  network: ws
-  server: cf.hy2.one
-  port: 80
-  uuid: 90934f88-2465-4384-8f75-22eeef208fd8
-  tls: false
-  udp: true
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: tw02.hy2.one
-    path: /af323d
 - name: 加拿大 151
   type: vmess
   network: ws
@@ -2619,21 +2576,6 @@ proxies:
   tls: true
   udp: true
   tfo: false
-- name: 加拿大 002
-  type: vless
-  network: ws
-  server: ip.sb
-  port: 2096
-  uuid: 67caf0a6-2cab-4f2e-81f5-1664e4813709
-  servername: server18.aibox.tv
-  skip-cert-verify: false
-  tls: true
-  tfo: false
-  client-fingerprint: chrome
-  ws-opts:
-    headers:
-      Host: server18.aibox.tv
-    path: /TG-AiLuMao/
 - name: 越南 001
   type: vmess
   network: grpc
@@ -2882,24 +2824,6 @@ proxies:
     headers:
       Host: hk1.netcar.live
     path: /proxy
-- name: 加拿大 070
-  type: vmess
-  network: ws
-  server: bycf4.netcar.live
-  port: 8080
-  uuid: 8ecbd879-6ef0-431a-a3c4-3ad0b9f9e159
-  skip-cert-verify: true
-  tls: false
-  udp: true
-  alterId: 0
-  cipher: auto
-  mux:
-    concurrency: 8
-    enable: true
-  ws-opts:
-    headers:
-      Host: singapore2.netcar.live
-    path: /proxy
 - name: 加拿大 084
   type: vmess
   network: ws
@@ -2989,21 +2913,6 @@ proxies:
     headers:
       Host: server18.aibox.tv
     path: /TG-AiLuMao/
-- name: 加拿大 064
-  type: vless
-  network: ws
-  server: icook.tw
-  port: 8443
-  uuid: 500e1c54-c2b5-49fe-a70a-792970f8c8e8
-  servername: server20.aibox.tv
-  skip-cert-verify: false
-  tls: true
-  tfo: false
-  client-fingerprint: chrome
-  ws-opts:
-    headers:
-      Host: server20.aibox.tv
-    path: /TG-AiLuMao/
 - name: 美国 014
   type: vmess
   network: ws
@@ -3049,6 +2958,36 @@ proxies:
     headers:
       Host: ip14.freegradely.xyz
     path: github.com/Alvin9999
+- name: 美国 025
+  type: vmess
+  network: ws
+  server: 172.64.166.20
+  port: 2086
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  skip-cert-verify: true
+  tls: false
+  udp: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: ip2.1457230.xyz
+    path: github.com/Alvin9999
+- name: 加拿大 003
+  type: vless
+  network: ws
+  server: icook.tw
+  port: 8443
+  uuid: 500e1c54-c2b5-49fe-a70a-792970f8c8e8
+  servername: server20.aibox.tv
+  skip-cert-verify: false
+  tls: true
+  tfo: false
+  client-fingerprint: chrome
+  ws-opts:
+    headers:
+      Host: server20.aibox.tv
+    path: /TG-AiLuMao/
 proxy-groups:
 - name: PROXY
   type: select
@@ -3130,7 +3069,6 @@ proxy-groups:
   - 法国 005
   - 爱沙尼亚 021
   - 哈萨克斯坦 005
-  - 加拿大 025
   - 英国 001
   - 爱沙尼亚 022
   - 德国 006
@@ -3169,9 +3107,7 @@ proxy-groups:
   - 加拿大 080
   - 加拿大 103
   - 加拿大 120
-  - 韩国 001
   - 加拿大 143
-  - 加拿大 146
   - 加拿大 151
   - 加拿大 004
   - 加拿大 017
@@ -3238,7 +3174,6 @@ proxy-groups:
   - 加拿大 031
   - 加拿大 075
   - 美国 023
-  - 加拿大 002
   - 越南 001
   - 加拿大 006
   - 美国 021
@@ -3255,17 +3190,17 @@ proxy-groups:
   - 加拿大 082
   - 加拿大 008
   - 加拿大 038
-  - 加拿大 070
   - 加拿大 084
   - 荷兰 004
   - 加拿大 068
   - 加拿大 041
   - 加拿大 044
   - 加拿大 083
-  - 加拿大 064
   - 美国 014
   - 加拿大 028
   - 美国 016
+  - 美国 025
+  - 加拿大 003
 - name: LOAD-BALANCE
   type: load-balance
   url: https://cp.cloudflare.com/generate_204
