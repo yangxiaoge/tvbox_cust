@@ -2988,6 +2988,101 @@ proxies:
     headers:
       Host: server20.aibox.tv
     path: /TG-AiLuMao/
+- name: 美国 027
+  type: vmess
+  network: ws
+  server: anycast.cf.030419.xyz
+  port: 80
+  uuid: ebace182-ad9a-4044-92fd-ad48adf52779
+  skip-cert-verify: true
+  tls: false
+  udp: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: jp.ggbycf.ggff.net
+    path: /rongseven?ed=2048
+- name: 美国 028
+  type: vmess
+  network: ws
+  server: 104.18.112.107
+  port: 443
+  uuid: 09d5805c-7a22-47c1-b1c3-f090df0a98ed
+  servername: rac.679888.xyz
+  skip-cert-verify: true
+  tls: true
+  udp: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: rac.679888.xyz
+    path: /lfljvws
+- name: 美国 029
+  type: vmess
+  network: ws
+  server: 104.24.59.213
+  port: 443
+  uuid: 09d5805c-7a22-47c1-b1c3-f090df0a98ed
+  servername: rac.679888.xyz
+  skip-cert-verify: true
+  tls: true
+  udp: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: rac.679888.xyz
+    path: /lfljvws
+- name: 美国 030
+  type: vmess
+  network: ws
+  server: 104.25.127.240
+  port: 443
+  uuid: 09d5805c-7a22-47c1-b1c3-f090df0a98ed
+  servername: rac.679888.xyz
+  skip-cert-verify: true
+  tls: true
+  udp: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: rac.679888.xyz
+    path: /lfljvws
+- name: 美国 031
+  type: vmess
+  network: ws
+  server: 104.25.112.185
+  port: 443
+  uuid: 09d5805c-7a22-47c1-b1c3-f090df0a98ed
+  servername: rac.679888.xyz
+  skip-cert-verify: true
+  tls: true
+  udp: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: rac.679888.xyz
+    path: /lfljvws
+- name: 英国 007
+  type: vmess
+  network: ws
+  server: 141.101.122.109
+  port: 443
+  uuid: 09d5805c-7a22-47c1-b1c3-f090df0a98ed
+  servername: rac.679888.xyz
+  skip-cert-verify: true
+  tls: true
+  udp: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: rac.679888.xyz
+    path: /lfljvws
 proxy-groups:
 - name: PROXY
   type: select
@@ -3201,6 +3296,12 @@ proxy-groups:
   - 美国 016
   - 美国 025
   - 加拿大 003
+  - 美国 027
+  - 美国 028
+  - 美国 029
+  - 美国 030
+  - 美国 031
+  - 英国 007
 - name: LOAD-BALANCE
   type: load-balance
   url: https://cp.cloudflare.com/generate_204
