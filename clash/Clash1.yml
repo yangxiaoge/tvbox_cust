@@ -2422,15 +2422,6 @@ proxies:
   tls: true
   udp: true
   tfo: false
-- name: 美国 019
-  type: vless
-  server: 151.101.130.219
-  port: 80
-  uuid: 25102a1a-e0ea-4a0d-a40d-c68f74d2fe9f
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  tfo: false
 - name: 韩国 004
   type: vless
   network: tcp
@@ -2566,16 +2557,6 @@ proxies:
     headers:
       Host: telgram-xv2ray--xv2ray--xv2ray--xv2ray--xv2ray2.pages.dev
     path: /Telegram-XV2ry2?ed=512
-- name: 美国 023
-  type: vless
-  network: httpupgrade
-  server: 172.64.111.69
-  port: 8080
-  uuid: 4ee50f98-d646-4491-b5a5-339fd79153a4
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  tfo: false
 - name: 越南 001
   type: vmess
   network: grpc
@@ -3258,7 +3239,6 @@ proxy-groups:
   - 德国 005
   - 加拿大 058
   - 加拿大 059
-  - 美国 019
   - 韩国 004
   - 加拿大 066
   - 加拿大 069
@@ -3268,7 +3248,6 @@ proxy-groups:
   - 加拿大 013
   - 加拿大 031
   - 加拿大 075
-  - 美国 023
   - 越南 001
   - 加拿大 006
   - 美国 021
