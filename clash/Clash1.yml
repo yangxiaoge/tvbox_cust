@@ -632,20 +632,6 @@ proxies:
     headers:
       Host: worker-divine-hat-02d6.savofir317.workers.dev
     path: /
-- name: 加拿大 157
-  type: vless
-  network: ws
-  server: 104.18.15.19
-  port: 443
-  uuid: c1978266-958c-4aa3-ba34-7eacac75aca1
-  servername: bpb-worker-panel3.pages.dev
-  tls: true
-  client-fingerprint: chrome
-  delay: 1520
-  ws-opts:
-    headers:
-      Host: bpb-worker-panel3.pages.dev
-    path: /
 - name: 爱沙尼亚 003
   type: vless
   network: ws
@@ -1380,21 +1366,6 @@ proxies:
     headers:
       Host: gcnwoegp2rjvyl7qmmy3ltqtaf3q22.pages.dev
     path: /proxyip=62.3.12.185
-- name: 韩国 022
-  type: vless
-  network: ws
-  server: 124.80.75.68
-  port: 35810
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  servername: a.ssll.gay
-  skip-cert-verify: false
-  tls: true
-  udp: true
-  delay: 1575
-  ws-opts:
-    headers:
-      Host: a.ssll.gay
-    path: /?ed=2048
 - name: 美国 002
   type: vmess
   network: ws
@@ -1763,16 +1734,6 @@ proxies:
     headers:
       Host: speedtest.net.6.v2rpds.ir
     path: /telegram-ArV2ry,telegram-ArV2ry,telegram-ArV2ry,telegram-ArV2ry,telegram-ArV2ry,telegram-ArV2ry,telegram-ArV2ry,telegram-ArV2ry,telegram-ArV2ry,telegram-ArV2ry,telegram-ArV2ry?ed=80
-- name: 加拿大 011
-  type: vless
-  network: httpupgrade
-  server: www.speedtest.net
-  port: 8080
-  uuid: telegram-id-ArV2ray
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  tfo: false
 - name: 美国 004
   type: vless
   network: ws
@@ -2077,15 +2038,6 @@ proxies:
     headers:
       Host: monvip.com
     path: /telegram-
-- name: 加拿大 047
-  type: vmess
-  network: httpupgrade
-  server: www.speedtest.net
-  port: 2082
-  uuid: 691d7622-44cd-4a99-9f0a-34e3b6b9b115
-  skip-cert-verify: true
-  alterId: 0
-  cipher: auto
 - name: 加拿大 048
   type: vmess
   network: httpupgrade
@@ -2865,21 +2817,6 @@ proxies:
     headers:
       Host: ip2.1457230.xyz
     path: github.com/Alvin9999
-- name: 加拿大 003
-  type: vless
-  network: ws
-  server: icook.tw
-  port: 8443
-  uuid: 500e1c54-c2b5-49fe-a70a-792970f8c8e8
-  servername: server20.aibox.tv
-  skip-cert-verify: false
-  tls: true
-  tfo: false
-  client-fingerprint: chrome
-  ws-opts:
-    headers:
-      Host: server20.aibox.tv
-    path: /TG-AiLuMao/
 - name: 美国 027
   type: vmess
   network: ws
@@ -3166,6 +3103,21 @@ proxies:
     headers:
       Host: vpnsupportfast.vpnsuortfast.workers.dev
     path: /afrhms07.xfixedfloat.cfd/linkws
+- name: 美国 035
+  type: vmess
+  network: ws
+  server: 104.18.3.2
+  port: 80
+  uuid: cb1d03f1-693a-42dc-9dd2-0369a413fe55
+  skip-cert-verify: true
+  tls: false
+  udp: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: sshsg1.cloudtik.biz.id
+    path: /vmess-ntls
 proxy-groups:
 - name: PROXY
   type: select
@@ -3214,7 +3166,6 @@ proxy-groups:
   - 加拿大 149
   - 美国 001
   - 加拿大 085
-  - 加拿大 157
   - 爱沙尼亚 003
   - 荷兰 001
   - 美国 065
@@ -3265,7 +3216,6 @@ proxy-groups:
   - 爱沙尼亚 029
   - 英国 013
   - 加拿大 054
-  - 韩国 022
   - 美国 002
   - 加拿大 036
   - 俄罗斯 002
@@ -3292,7 +3242,6 @@ proxy-groups:
   - 加拿大 067
   - 德国 004
   - 美国 003
-  - 加拿大 011
   - 美国 004
   - 瑞典 002
   - 加拿大 019
@@ -3314,7 +3263,6 @@ proxy-groups:
   - 加拿大 045
   - 加拿大 046
   - 美国 018
-  - 加拿大 047
   - 加拿大 048
   - 伊朗 002
   - 加拿大 049
@@ -3370,7 +3318,6 @@ proxy-groups:
   - 加拿大 028
   - 美国 016
   - 美国 025
-  - 加拿大 003
   - 美国 027
   - 美国 028
   - 美国 029
@@ -3389,6 +3336,7 @@ proxy-groups:
   - 加拿大 016
   - 美国 034
   - 美国 023
+  - 美国 035
 - name: LOAD-BALANCE
   type: load-balance
   url: https://cp.cloudflare.com/generate_204
