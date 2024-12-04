@@ -2011,19 +2011,6 @@ proxies:
     headers:
       Host: caaa.colacloud.free.hr
     path: /xxxzzz
-- name: 美国 031
-  type: vmess
-  network: ws
-  server: 104.254.140.141
-  port: 2082
-  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
-  tls: false
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: ip18.6929198.xyz
-    path: /github.com/Alvin9999
 - name: 美国 032
   type: vmess
   network: ws
@@ -2115,6 +2102,46 @@ proxies:
     headers:
       Host: m1.106778.xyz
     path: github.com/Alvin9999
+- name: 加拿大 005
+  type: vmess
+  network: ws
+  server: 162.159.136.98
+  port: 80
+  uuid: 5820093a-bb7d-4e15-8575-1a529f2d8282
+  udp: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: rn2.hostmjj.com
+    path: /
+- name: 加拿大 006
+  type: vmess
+  network: ws
+  server: cf.hy2.one
+  port: 2052
+  uuid: d3eb36f7-b0f2-4a79-bdc0-90d80462367e
+  tls: false
+  udp: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: sg0002.hy-2.top
+    path: /0
+- name: 美国 031
+  type: vless
+  network: tcp
+  server: phx-plus-1ddns.faforex.eu.org
+  port: 18443
+  uuid: 596940b0-1c0e-4686-9f8f-f4b0ee4c2ef7
+  servername: www.tesla.com
+  tls: true
+  udp: true
+  client-fingerprint: ios
+  reality-opts:
+    public-key: 8233FxCRw1a_aCJ8d1HwHBMD_fABUNNW7rsrFe3vK0s
+    short-id: e6658462
 proxy-groups:
 - name: PROXY
   type: select
@@ -2263,7 +2290,6 @@ proxy-groups:
   - 加拿大 002
   - 加拿大 003
   - 美国 030
-  - 美国 031
   - 美国 032
   - 美国 034
   - 美国 035
@@ -2271,6 +2297,9 @@ proxy-groups:
   - 美国 038
   - 美国 039
   - 美国 041
+  - 加拿大 005
+  - 加拿大 006
+  - 美国 031
 - name: LOAD-BALANCE
   type: load-balance
   url: https://cp.cloudflare.com/generate_204
