@@ -1521,19 +1521,6 @@ proxies:
     headers:
       Host: p2.613055.xyz
     path: github.com/Alvin9999
-- name: 美国 013
-  type: vmess
-  network: ws
-  server: 162.159.45.247
-  port: 2095
-  uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde
-  udp: true
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: c3.6016725.xyz
-    path: github.com/Alvin9999
 - name: 美国 014
   type: vmess
   network: ws
@@ -1665,20 +1652,6 @@ proxies:
     headers:
       Host: p1.613055.xyz
     path: github.com/Alvin9999
-- name: 加拿大 001
-  type: vmess
-  network: ws
-  server: us-new03.daluquan.top
-  port: 8880
-  uuid: 302fe943-4bbe-4cd6-bdbd-4446aeb72b1e
-  tls: false
-  udp: true
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: us-new03.daluquan.top
-    path: /itdog?ed=2560
 - name: 加拿大 002
   type: vmess
   network: ws
@@ -2164,6 +2137,117 @@ proxies:
     headers:
       Host: hms02.fxiaomi.sbs
     path: /
+- name: 美国 013
+  type: vmess
+  network: ws
+  server: 104.18.114.117
+  port: 8880
+  uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
+  servername: m1.106778.xyz
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: m1.106778.xyz
+    path: github.com/Alvin9999
+- name: 美国 094
+  type: vmess
+  network: ws
+  server: it2.127414.xyz
+  port: 80
+  uuid: 75254130-d819-49f3-b5ce-9543b3b47056
+  tls: false
+  udp: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: it2.127414.xyz
+    path: /
+- name: 加拿大 001
+  type: vmess
+  network: ws
+  server: au2.127414.xyz
+  port: 80
+  uuid: 75254130-d819-49f3-b5ce-9543b3b47056
+  tls: false
+  udp: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: au2.127414.xyz
+    path: /
+- name: 美国 095
+  type: vmess
+  network: ws
+  server: ae2.127414.xyz
+  port: 80
+  uuid: 75254130-d819-49f3-b5ce-9543b3b47056
+  tls: false
+  udp: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: ae2.127414.xyz
+    path: /
+- name: 美国 096
+  type: vmess
+  network: ws
+  server: de2.127414.xyz
+  port: 80
+  uuid: 75254130-d819-49f3-b5ce-9543b3b47056
+  tls: false
+  udp: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: de2.127414.xyz
+    path: /
+- name: 美国 097
+  type: vmess
+  network: ws
+  server: de-new01.daluquan.top
+  port: 8080
+  uuid: 302fe943-4bbe-4cd6-bdbd-4446aeb72b1e
+  tls: false
+  udp: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: de-new01.daluquan.top
+    path: /
+- name: 美国 098
+  type: vmess
+  network: ws
+  server: in2.127414.xyz
+  port: 80
+  uuid: 75254130-d819-49f3-b5ce-9543b3b47056
+  tls: false
+  udp: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: in2.127414.xyz
+    path: /
+- name: 加拿大 019
+  type: vmess
+  network: ws
+  server: jp2.127414.xyz
+  port: 80
+  uuid: 75254130-d819-49f3-b5ce-9543b3b47056
+  tls: false
+  udp: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: jp2.127414.xyz
+    path: /
 proxy-groups:
 - name: PROXY
   type: select
@@ -2277,7 +2361,6 @@ proxy-groups:
   - 美国 231
   - 美国 008
   - 美国 012
-  - 美国 013
   - 美国 014
   - 美国 015
   - 美国 020
@@ -2288,7 +2371,6 @@ proxy-groups:
   - 美国 027
   - 美国 028
   - 美国 029
-  - 加拿大 001
   - 加拿大 002
   - 加拿大 003
   - 美国 030
@@ -2325,6 +2407,14 @@ proxy-groups:
   - 加拿大 018
   - 美国 091
   - 美国 092
+  - 美国 013
+  - 美国 094
+  - 加拿大 001
+  - 美国 095
+  - 美国 096
+  - 美国 097
+  - 美国 098
+  - 加拿大 019
 - name: LOAD-BALANCE
   type: load-balance
   url: https://cp.cloudflare.com/generate_204
