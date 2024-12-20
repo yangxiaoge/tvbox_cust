@@ -568,21 +568,6 @@ proxies:
       User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
         like Gecko) Chrome/58.0.3029.110 Safari/537.36
     path: /
-- name: 加拿大 044
-  type: vless
-  network: ws
-  server: 162.159.142.65
-  port: 2052
-  uuid: b0a63ba3-6cb0-48de-a19d-12babdb0ba4d
-  skip-cert-verify: true
-  udp: true
-  xudp: true
-  ws-opts:
-    headers:
-      Host: 23tg.fh19yh0z.workers.dev
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/50.0.2661.94 Safari/537.36
-    path: /?ed=2560
 - name: 加拿大 046
   type: vless
   network: ws
@@ -599,21 +584,6 @@ proxies:
         AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/59.0.3071.125 Mobile
         Safari/537.36
     path: /?ed=2560
-- name: 加拿大 049
-  type: vless
-  network: ws
-  server: 162.159.153.2
-  port: 80
-  uuid: f846c7b2-eca6-496a-9716-134e1b253be5
-  skip-cert-verify: true
-  udp: true
-  xudp: true
-  ws-opts:
-    headers:
-      Host: a.b.c.d.e.f.g.h.i.j.k.l.m.n.o.p.q.r.s.t.u.v.w.x.y.z.spdtest.com.x.x.x.x.x.x.x.x.x.x.x.x.x.hqmobin.ir
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/46.0.2490.80 Safari/537.36
-    path: /
 - name: 美国 112
   type: vless
   network: ws
@@ -2813,6 +2783,197 @@ proxies:
     headers:
       Host: www.arashiphone.com.
     path: /?ed=2560fp=chrome
+- name: 加拿大 044
+  type: vmess
+  network: ws
+  server: cf.hy2.one
+  port: 2052
+  uuid: 950a4fcd-dd58-48af-bf0b-ff66f1b899ca
+  tls: false
+  udp: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: sg0002.hy-2.top
+    path: /0
+- name: 加拿大 049
+  type: vmess
+  network: ws
+  server: 104.17.156.224
+  port: 2052
+  uuid: c286daa2-59de-455c-8de8-ec032b6ce2e8
+  tls: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: in4.wish.ml
+    path: /
+- name: 加拿大 059
+  type: vmess
+  network: ws
+  server: 172.67.164.78
+  port: 2052
+  uuid: c286daa2-59de-455c-8de8-ec032b6ce2e8
+  tls: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: in3.wish.ml
+    path: /
+- name: 加拿大 060
+  type: vmess
+  network: ws
+  server: 104.21.8.157
+  port: 2082
+  uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
+  tls: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: s1c.v2.v001sss.xyz
+    path: /
+- name: 加拿大 062
+  type: vmess
+  network: ws
+  server: www.darkroom.lol
+  port: 8080
+  uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0
+  tls: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: www.darkroom.lol
+    path: /
+- name: 加拿大 064
+  type: vmess
+  network: ws
+  server: server31.beheshtbaneh.com
+  port: 8880
+  uuid: 4154143c-bbba-47a4-9f79-c2ed087cbcc9
+  tls: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: server31.beheshtbaneh.com
+    path: /
+- name: 加拿大 065
+  type: vmess
+  network: ws
+  server: 104.21.82.183
+  port: 8880
+  uuid: 5a7021e0-26b4-45d6-b175-fe551601ca97
+  tls: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: server26.beheshtbaneh.com
+    path: /
+- name: 美国 067
+  type: vmess
+  network: ws
+  server: gov.uk
+  port: 443
+  uuid: 77848824-93b7-4b89-ffd0-e91afff406ce
+  tls: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: zheshiscp.com
+    path: /77848824
+- name: 哈萨克斯坦 001
+  type: trojan
+  network: ws
+  server: 194.76.18.129
+  port: 443
+  password: tg-fq521free
+  skip-cert-verify: true
+  udp: true
+  tfo: false
+  sni: torjan.xn--xhq44j.eu.org
+  ws-opts:
+    headers:
+      Host: torjan.xn--xhq44j.eu.org
+    path: /
+- name: 美国 068
+  type: trojan
+  network: ws
+  server: 216.24.57.30
+  port: 443
+  password: tg-fq521free
+  skip-cert-verify: true
+  udp: true
+  tfo: false
+  sni: torjan.xn--xhq44j.eu.org
+  ws-opts:
+    headers:
+      Host: torjan.xn--xhq44j.eu.org
+    path: /
+- name: 加拿大 066
+  type: vmess
+  network: ws
+  server: cdncdncdn.aikunapp.com
+  port: 443
+  uuid: e9ff847b-e8ff-4690-bd68-d024c63c381e
+  servername: cdn-ca.sm-node.com
+  skip-cert-verify: true
+  tls: true
+  alterId: 0
+  cipher: auto
+  delay: 1295
+  ws-opts:
+    headers:
+      Host: cdn-ca.sm-node.com
+    path: /vmess_ws/smjc/index?ed=8192
+- name: 新加坡 002
+  type: vmess
+  network: tcp
+  server: 57.155.30.207
+  port: 80
+  uuid: b831381d-6324-4d53-ad4f-8cda48b30812
+  skip-cert-verify: true
+  tls: false
+  alterId: 0
+  cipher: auto
+  ws-headers:
+    Host: 57.155.30.207
+- name: 美国 069
+  type: vless
+  network: ws
+  server: 199.232.125.43
+  port: 443
+  uuid: ec1540bf-39b1-5901-bc00-4aa9c81e27af
+  servername: ELI-V2-RAY.COM
+  skip-cert-verify: false
+  tls: false
+  tfo: false
+  client-fingerprint: chrome
+  ws-opts:
+    headers:
+      Host: ELI-V2-RAY.COM
+    path: /security=tls
+- name: 加拿大 068
+  type: vless
+  network: ws
+  server: 172.67.160.44
+  port: 443
+  uuid: 1aae9657-c653-495d-e8ad-8ca52916cea8
+  servername: de.bolagskontaktstockholm.se
+  skip-cert-verify: false
+  tls: true
+  tfo: false
+  client-fingerprint: chrome
+  ws-opts:
+    headers:
+      Host: de.bolagskontaktstockholm.se
+    path: /wsfp=chrome
 proxy-groups:
 - name: PROXY
   type: select
@@ -2854,9 +3015,7 @@ proxy-groups:
   - 加拿大 039
   - 加拿大 042
   - 加拿大 043
-  - 加拿大 044
   - 加拿大 046
-  - 加拿大 049
   - 美国 112
   - 美国 113
   - 加拿大 056
@@ -3021,6 +3180,20 @@ proxy-groups:
   - 加拿大 055
   - 加拿大 058
   - 哥斯达黎加 005
+  - 加拿大 044
+  - 加拿大 049
+  - 加拿大 059
+  - 加拿大 060
+  - 加拿大 062
+  - 加拿大 064
+  - 加拿大 065
+  - 美国 067
+  - 哈萨克斯坦 001
+  - 美国 068
+  - 加拿大 066
+  - 新加坡 002
+  - 美国 069
+  - 加拿大 068
 - name: LOAD-BALANCE
   type: load-balance
   url: https://cp.cloudflare.com/generate_204
