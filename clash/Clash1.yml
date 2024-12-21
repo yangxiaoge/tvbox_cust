@@ -312,18 +312,6 @@ proxies:
     headers:
       Host: tw02.xn--io0a7iw0ab67b.xyz
     path: /
-- name: 美国 030
-  type: vless
-  network: ws
-  server: ccy.colacloud.free.hr
-  port: 2086
-  uuid: cad177f1-8ec2-4fa1-acde-ef3560effef1
-  tls: false
-  udp: true
-  ws-opts:
-    headers:
-      Host: caaa.colacloud.free.hr
-    path: /xxxzzz
 - name: 加拿大 011
   type: vmess
   network: ws
@@ -814,21 +802,6 @@ proxies:
     headers:
       Host: p1.613055.xyz
     path: /
-- name: 美国 158
-  type: vmess
-  network: ws
-  server: root.mid.al
-  port: 443
-  uuid: a983c698-cae4-4254-d047-51898ccd8ee7
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: kim.gov.kp
-    path: /aries?ed=2048
 - name: 美国 181
   type: vmess
   network: ws
@@ -1170,20 +1143,6 @@ proxies:
     headers:
       Host: 100-158-80-199.s2.cn-db.top
     path: /dabai.in104.25.31.219
-- name: 加拿大 089
-  type: vmess
-  network: ws
-  server: 3.clarity168.com
-  port: 443
-  uuid: 48f837fa-12d0-498d-b5f6-94f9979736a4
-  skip-cert-verify: false
-  tls: true
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: 3.clarity168.com
-    path: /
 - name: 加拿大 001
   type: vmess
   network: ws
@@ -1198,21 +1157,6 @@ proxies:
   ws-opts:
     headers:
       Host: vu-mumbai-01.vnode.info
-    path: /
-- name: 美国 003
-  type: vmess
-  network: ws
-  server: 107.167.30.126
-  port: 30000
-  uuid: 57f93e92-ebb9-4f16-9bdc-8225d2010995
-  servername: www.83645422.xyz
-  skip-cert-verify: false
-  tls: true
-  alterId: 64
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: www.83645422.xyz
     path: /
 - name: 荷兰 001
   type: vmess
@@ -1588,29 +1532,6 @@ proxies:
     headers:
       Host: mmdserver.us.kg
     path: /?ed=2048fp=ios
-- name: 加拿大 006
-  type: trojan
-  network: ws
-  server: 172.67.193.36
-  port: 443
-  password: CMLiussss
-  skip-cert-verify: true
-  udp: true
-  sni: xn--ihqr6fry8avpdn79betc.xn--cm-nk7c025a9uua2635cesu.us.kg
-  delay: 1411
-  ws-opts:
-    headers:
-      Host: xn--ihqr6fry8avpdn79betc.xn--cm-nk7c025a9uua2635cesu.us.kg
-    path: /?ed=2560
-- name: 英国 001
-  type: trojan
-  network: tcp
-  server: 18.133.105.230
-  port: 22222
-  password: telegram-id-privatevpns
-  udp: true
-  sni: trojan.burgerip.co.uk
-  delay: 2423
 - name: 哥斯达黎加 001
   type: vless
   network: ws
@@ -2916,22 +2837,6 @@ proxies:
     headers:
       Host: torjan.xn--xhq44j.eu.org
     path: /
-- name: 加拿大 066
-  type: vmess
-  network: ws
-  server: cdncdncdn.aikunapp.com
-  port: 443
-  uuid: e9ff847b-e8ff-4690-bd68-d024c63c381e
-  servername: cdn-ca.sm-node.com
-  skip-cert-verify: true
-  tls: true
-  alterId: 0
-  cipher: auto
-  delay: 1295
-  ws-opts:
-    headers:
-      Host: cdn-ca.sm-node.com
-    path: /vmess_ws/smjc/index?ed=8192
 - name: 新加坡 002
   type: vmess
   network: tcp
@@ -2959,21 +2864,62 @@ proxies:
     headers:
       Host: ELI-V2-RAY.COM
     path: /security=tls
-- name: 加拿大 068
-  type: vless
+- name: 加拿大 006
+  type: vmess
   network: ws
-  server: 172.67.160.44
-  port: 443
-  uuid: 1aae9657-c653-495d-e8ad-8ca52916cea8
-  servername: de.bolagskontaktstockholm.se
-  skip-cert-verify: false
-  tls: true
-  tfo: false
-  client-fingerprint: chrome
+  server: yx.sulink.one
+  port: 80
+  uuid: f4b58947-09f1-44d6-9f9d-23efb9ecb0e3
+  tls: false
+  udp: true
+  alterId: 0
+  cipher: auto
   ws-opts:
     headers:
-      Host: de.bolagskontaktstockholm.se
-    path: /wsfp=chrome
+      Host: us5.sulink.one
+    path: /
+- name: 美国 003
+  type: vmess
+  network: ws
+  server: jp2.1vpn.sbs
+  port: 80
+  uuid: df4a2a93-6717-4f90-9856-36d7a44639cc
+  tls: false
+  udp: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: jp2.1vpn.sbs
+    path: /kiulujunuqs
+- name: 加拿大 066
+  type: vmess
+  network: ws
+  server: jx.jixingnetwork.sbs
+  port: 80
+  uuid: c94530f5-b616-44ab-a61f-83f32c502179
+  tls: false
+  udp: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: mg01.jixingwangluo.top
+    path: /
+- name: 加拿大 068
+  type: vmess
+  network: ws
+  server: fr-a.yuji2022.eu.org
+  port: 8880
+  uuid: 4b5e4565-322f-4223-a891-78a84f189726
+  skip-cert-verify: false
+  tls: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: fr-a.yuji2022.eu.org
+    path: /
 proxy-groups:
 - name: PROXY
   type: select
@@ -2998,7 +2944,6 @@ proxy-groups:
   - 美国 033
   - 加拿大 037
   - 加拿大 003
-  - 美国 030
   - 加拿大 011
   - 加拿大 020
   - 加拿大 021
@@ -3031,7 +2976,6 @@ proxy-groups:
   - 美国 148
   - 美国 151
   - 美国 153
-  - 美国 158
   - 美国 181
   - 美国 131
   - 美国 190
@@ -3056,9 +3000,7 @@ proxy-groups:
   - 美国 235
   - 美国 001
   - 加拿大 048
-  - 加拿大 089
   - 加拿大 001
-  - 美国 003
   - 荷兰 001
   - 阿联酋 001
   - 库拉索岛 001
@@ -3084,8 +3026,6 @@ proxy-groups:
   - 爱沙尼亚 001
   - 印尼 003
   - 库拉索岛 003
-  - 加拿大 006
-  - 英国 001
   - 哥斯达黎加 001
   - 印度 001
   - 新加坡 001
@@ -3190,9 +3130,11 @@ proxy-groups:
   - 美国 067
   - 哈萨克斯坦 001
   - 美国 068
-  - 加拿大 066
   - 新加坡 002
   - 美国 069
+  - 加拿大 006
+  - 美国 003
+  - 加拿大 066
   - 加拿大 068
 - name: LOAD-BALANCE
   type: load-balance
