@@ -1115,18 +1115,6 @@ proxies:
     headers:
       Host: irvideo.cfd
     path: /linkws
-- name: 加拿大 009
-  type: vless
-  network: ws
-  server: 162.159.153.219
-  port: 443
-  uuid: 71ed6628-5870-4d19-8a52-f2a3ba3d4898
-  servername: vbbb.ylks2024.us.kg
-  tls: true
-  ws-opts:
-    headers:
-      Host: vbbb.ylks2024.us.kg
-    path: /youlingkaishi
 - name: 加拿大 007
   type: vmess
   network: ws
@@ -1803,15 +1791,6 @@ proxies:
     headers:
       Host: worker-bitter-math-2af8.waxoha3621.workers.dev
     path: /
-- name: 韩国 002
-  type: vmess
-  network: tcp
-  server: 45.94.68.206
-  port: 35384
-  uuid: b3e95701-dbd0-4a2f-a701-6ec815fb5ad2
-  tls: false
-  alterId: 0
-  cipher: auto
 - name: 俄罗斯 001
   type: vmess
   network: ws
@@ -2034,34 +2013,6 @@ proxies:
     headers:
       Host: gi7ip5kbae7a.libreone.com
     path: /njbvhfgxdgthj
-- name: 美国 003
-  type: vmess
-  network: ws
-  server: us.aik.mom
-  port: 8049
-  uuid: 15486dcc-f6e5-411b-acac-d1409375585a
-  tls: false
-  udp: true
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: tms.dingtalk.com
-    path: /wada12222
-- name: 美国 004
-  type: vmess
-  network: ws
-  server: 156.229.162.206
-  port: 8007
-  uuid: 15486dcc-f6e5-411b-acac-d1409375585a
-  tls: false
-  udp: true
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: tms.dingtalk.com
-    path: /wada12222
 - name: 加拿大 018
   type: vmess
   network: ws
@@ -2094,32 +2045,6 @@ proxies:
     headers:
       Host: banknabi-mahdi313.Ir.
     path: /telegram-
-- name: 新加坡 002
-  type: vless
-  network: ws
-  server: 8.222.247.175
-  port: 443
-  uuid: 1aae9657-c653-495d-e8ad-8ca52916cea8
-  servername: de.bolagskontaktstockholm.se
-  tls: true
-  delay: 2429
-  ws-opts:
-    headers:
-      Host: de.bolagskontaktstockholm.se
-    path: /ws
-- name: 新加坡 003
-  type: vless
-  network: ws
-  server: 8.219.55.76
-  port: 443
-  uuid: 31f81de4-c0c3-4aa0-9b1d-dea8906a2ed1
-  servername: lhxt.xiaomi.win
-  tls: true
-  delay: 897
-  ws-opts:
-    headers:
-      Host: lhxt.xiaomi.win
-    path: /?ed=2560
 - name: 奥地利 001
   type: vless
   network: ws
@@ -2285,6 +2210,99 @@ proxies:
     headers:
       Host: kb.lii2010.us.kg
     path: /?ed=2560security=tls
+- name: 美国 003
+  type: vmess
+  network: ws
+  server: 156.229.162.206
+  port: 8008
+  uuid: 3bb947a3-573b-4d5b-9a5c-43e6577a1730
+  tls: false
+  udp: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: tms.dingtalk.com
+    path: /wada12222
+- name: 新加坡 002
+  type: vmess
+  network: ws
+  server: 103.106.229.29
+  port: 47930
+  uuid: ec7dd23d-d03b-4262-9793-def9c849a01d
+  tls: false
+  udp: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: tms.dingtalk.com
+    path: /wada12222
+- name: 加拿大 009
+  type: vmess
+  network: ws
+  server: 104.16.68.38
+  port: 8080
+  uuid: edbb1059-1633-4271-b66e-ed4fba47a1bf
+  skip-cert-verify: false
+  tls: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: square-snowflake-486a.beshir-beisel.workers.dev
+    path: /
+- name: 加拿大 027
+  type: vmess
+  network: ws
+  server: 104.16.60.8
+  port: 2052
+  uuid: f584de15-2034-4170-a723-f48c2bae5e0f
+  skip-cert-verify: false
+  tls: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: worker-mute-bar-1719.nifotok993.workers.dev
+    path: /
+- name: 日本 001
+  type: vmess
+  network: ws
+  server: tls.94.node-for-bigairport.win
+  port: 443
+  uuid: ef5fca10-41bc-4623-87a3-1170a7b51827
+  skip-cert-verify: true
+  tls: true
+  udp: true
+  tfo: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: tls.94.node-for-bigairport.win
+    path: /
+- name: 爱尔兰 001
+  type: trojan
+  network: tcp
+  server: 34.247.208.132
+  port: 22222
+  password: telegram-id-privatevpns
+  udp: true
+  sni: trojan.burgerip.co.uk
+  delay: 1012
+- name: 美国 004
+  type: vless
+  network: ws
+  server: 69.84.182.140
+  port: 443
+  uuid: 71ed6628-5870-4d19-8a52-f2a3ba3d4898
+  servername: vbbb.ylks2024.us.kg
+  tls: true
+  ws-opts:
+    headers:
+      Host: vbbb.ylks2024.us.kg
+    path: /vbba.ylks2024.us.kg
 proxy-groups:
 - name: PROXY
   type: select
@@ -2363,7 +2381,6 @@ proxy-groups:
   - 美国 235
   - 美国 001
   - 法国 002
-  - 加拿大 009
   - 加拿大 007
   - 加拿大 019
   - 美国 013
@@ -2412,7 +2429,6 @@ proxy-groups:
   - 西班牙 001
   - 美国 005
   - 美国 006
-  - 韩国 002
   - 俄罗斯 001
   - 加拿大 005
   - 加拿大 006
@@ -2429,12 +2445,8 @@ proxy-groups:
   - 美国 012
   - 加拿大 015
   - 加拿大 017
-  - 美国 003
-  - 美国 004
   - 加拿大 018
   - 美国 014
-  - 新加坡 002
-  - 新加坡 003
   - 奥地利 001
   - 奥地利 002
   - 奥地利 003
@@ -2446,6 +2458,13 @@ proxy-groups:
   - 印度 001
   - 韩国 001
   - 哈萨克斯坦 001
+  - 美国 003
+  - 新加坡 002
+  - 加拿大 009
+  - 加拿大 027
+  - 日本 001
+  - 爱尔兰 001
+  - 美国 004
 - name: LOAD-BALANCE
   type: load-balance
   url: https://cp.cloudflare.com/generate_204
