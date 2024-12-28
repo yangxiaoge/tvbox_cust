@@ -161,62 +161,6 @@ proxies:
     headers:
       Host: irvideo.cfd
     path: /linkws
-- name: 加拿大 002
-  type: vmess
-  network: ws
-  server: 104.21.13.222
-  port: 8443
-  uuid: e88b85c6-93b4-47f6-b3fb-2c55dcb1289f
-  servername: lax2.ibgfw.top
-  skip-cert-verify: false
-  tls: true
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: lax2.ibgfw.top
-    path: /
-- name: 加拿大 004
-  type: vmess
-  network: ws
-  server: lax2.ibgfw.top
-  port: 8443
-  uuid: e88b85c6-93b4-47f6-b3fb-2c55dcb1289f
-  servername: lax2.ibgfw.top
-  skip-cert-verify: false
-  tls: true
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: lax2.ibgfw.top
-    path: /
-- name: 西班牙 001
-  type: vmess
-  network: ws
-  server: 185.251.83.248
-  port: 8443
-  uuid: 191babc5-2aaf-4fe5-a563-f14244aefb4e
-  skip-cert-verify: false
-  tls: true
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: lax1.ibgfw.top
-    path: /
-- name: 加拿大 015
-  type: vless
-  network: ws
-  server: 162.159.153.57
-  port: 443
-  uuid: 71ed6628-5870-4d19-8a52-f2a3ba3d4898
-  servername: vbbb.ylks2024.us.kg
-  tls: true
-  ws-opts:
-    headers:
-      Host: vbbb.ylks2024.us.kg
-    path: /vbba.ylks2024.us.kg
 - name: 加拿大 018
   type: vmess
   network: ws
@@ -233,22 +177,6 @@ proxies:
     headers:
       Host: jddn.xmnet.us.kg
     path: /13ff895d
-- name: 美国 014
-  type: vmess
-  network: ws
-  server: 151.101.194.133
-  port: 443
-  uuid: 2c281c45-393f-4c56-acd9-a2b797346a71
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  tfo: false
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: banknabi-mahdi313.Ir.
-    path: /telegram-
 - name: 奥地利 001
   type: vless
   network: ws
@@ -279,21 +207,6 @@ proxies:
     headers:
       Host: kb.lii2010.us.kg
     path: /?ed=2560security=tls
-- name: 奥地利 003
-  type: vless
-  network: ws
-  server: 212.183.88.242
-  port: 443
-  uuid: 71ed6628-5870-4d19-8a52-f2a3ba3d4898
-  servername: kb.lii2010.us.kg
-  skip-cert-verify: false
-  tls: false
-  tfo: false
-  client-fingerprint: chrome
-  ws-opts:
-    headers:
-      Host: kb.lii2010.us.kg
-    path: /?ed=2560security=tls
 - name: 巴西 001
   type: vless
   network: ws
@@ -313,21 +226,6 @@ proxies:
   type: vless
   network: ws
   server: 204.216.105.106
-  port: 8443
-  uuid: 71ed6628-5870-4d19-8a52-f2a3ba3d4898
-  servername: kb.lii2010.us.kg
-  skip-cert-verify: false
-  tls: false
-  tfo: false
-  client-fingerprint: chrome
-  ws-opts:
-    headers:
-      Host: kb.lii2010.us.kg
-    path: /?ed=2560security=tls
-- name: 法国 001
-  type: vless
-  network: ws
-  server: 129.151.225.228
   port: 8443
   uuid: 71ed6628-5870-4d19-8a52-f2a3ba3d4898
   servername: kb.lii2010.us.kg
@@ -1085,18 +983,11 @@ proxy-groups:
   proxies: &id001
   - 美国 233
   - 法国 002
-  - 加拿大 002
-  - 加拿大 004
-  - 西班牙 001
-  - 加拿大 015
   - 加拿大 018
-  - 美国 014
   - 奥地利 001
   - 奥地利 002
-  - 奥地利 003
   - 巴西 001
   - 加拿大 025
-  - 法国 001
   - 英国 002
   - 印度 001
   - 韩国 001
