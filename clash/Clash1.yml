@@ -128,7 +128,1297 @@ dns:
     - +.google.cn
     - +.googleapis.cn
     - +.googleapis.com
-proxies: []
+proxies:
+- name: 美国 002
+  type: vmess
+  network: ws
+  server: mio.splashthat.com
+  port: 443
+  uuid: 545485da-9ff4-48c5-ae94-45e6e4ee7d26
+  servername: 6606.com
+  skip-cert-verify: true
+  tls: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: 6606.com
+    path: /racevpn
+- name: 美国 003
+  type: vmess
+  network: ws
+  server: 38.150.7.183
+  port: 8888
+  uuid: fb05a8fb-d3ad-4e3f-8676-d5a59d66b5e0
+  tls: false
+  udp: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: tms.dingtalk.com
+    path: /wada12222
+- name: 美国 004
+  type: vmess
+  network: ws
+  server: 156.229.162.206
+  port: 8013
+  uuid: fb05a8fb-d3ad-4e3f-8676-d5a59d66b5e0
+  tls: false
+  udp: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: tms.dingtalk.com
+    path: /wada12222
+- name: 英国 004
+  type: trojan
+  network: tcp
+  server: 18.135.213.190
+  port: 22222
+  password: telegram-id-privatevpns
+  udp: true
+  sni: trojan.burgerip.co.uk
+  delay: 1481
+- name: 美国 001
+  type: vmess
+  network: ws
+  server: www.aetv.com
+  port: 80
+  uuid: beb7d098-48ba-4be8-a47a-758bf3c470b8
+  skip-cert-verify: false
+  tls: false
+  tfo: false
+  alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  ws-opts:
+    headers:
+      Host: amd.al
+    path: /?ed=2048
+- name: 美国 005
+  type: vmess
+  network: ws
+  server: primer.ibilibi.li
+  port: 443
+  uuid: e5852393-ca52-4c90-a237-d63cbbb57f21
+  servername: ameblo.jp
+  skip-cert-verify: false
+  tls: true
+  tfo: false
+  alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  ws-opts:
+    headers:
+      Host: loki.oracle
+    path: /farcry?ed=2560
+- name: 美国 006
+  type: vmess
+  network: ws
+  server: 151.101.2.216
+  port: 80
+  uuid: 545485da-9ff4-48c5-ae94-45e6e4ee7d26
+  servername: 6606.com
+  skip-cert-verify: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: 6606.com
+    path: /racevpn
+- name: 加拿大 001
+  type: vmess
+  network: ws
+  server: yx.sulink.one
+  port: 80
+  uuid: b2a6b53b-56e6-4396-9d3c-2f7335846379
+  tls: false
+  udp: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: us5.sulink.one
+    path: /
+- name: 加拿大 002
+  type: vmess
+  network: ws
+  server: cf.hy2.one
+  port: 2052
+  uuid: d20cec72-0ce3-4763-9d99-424beb1c55e2
+  tls: false
+  udp: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: sg0002.hy-2.top
+    path: /0
+- name: 美国 007
+  type: vmess
+  network: ws
+  server: de-new01.daluquan.top
+  port: 8080
+  uuid: 402e6de3-9dfc-480c-af0b-387cb6b85717
+  tls: false
+  udp: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: de-new01.daluquan.top
+    path: /
+- name: 加拿大 003
+  type: vmess
+  network: ws
+  server: visa.com
+  port: 443
+  uuid: d2cb55d9-2215-4c28-b121-ffdd09abeff5
+  servername: xjp.daluquan.top
+  skip-cert-verify: true
+  tls: true
+  udp: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: xjp.daluquan.top
+    path: /
+- name: 加拿大 004
+  type: vmess
+  network: ws
+  server: jx.jixingnetwork.sbs
+  port: 80
+  uuid: 499ce73a-af4b-436c-8443-4c65f249eb36
+  tls: false
+  udp: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: mg01.jixingwangluo.top
+    path: /
+- name: 加拿大 005
+  type: vmess
+  network: ws
+  server: denc36.xtooltech.cfd
+  port: 443
+  uuid: b321fd5d-e6ec-4293-a644-164e3885f52e
+  skip-cert-verify: false
+  tls: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: adenc36v.xtooltech.cfd
+    path: /
+- name: 美国 008
+  type: vmess
+  network: ws
+  server: 38.91.106.227
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  skip-cert-verify: false
+  tls: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+    path: /
+- name: 加拿大 006
+  type: vmess
+  network: ws
+  server: 23.162.200.94
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  skip-cert-verify: false
+  tls: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+    path: /
+- name: 法国 001
+  type: vmess
+  network: ws
+  server: 51.77.20.137
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  skip-cert-verify: false
+  tls: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: tilebani.com
+    path: /
+- name: 美国 009
+  type: vmess
+  network: ws
+  server: hms26.xpengmotors.sbs
+  port: 443
+  uuid: fb0a2de6-bf06-4ff0-97ce-c21abcdc2d55
+  skip-cert-verify: false
+  tls: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: hms26.xpengmotors.sbs
+    path: /
+- name: 德国 001
+  type: vmess
+  network: ws
+  server: 57.129.25.20
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  skip-cert-verify: false
+  tls: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: 57.129.25.20
+    path: /
+- name: 英国 001
+  type: vmess
+  network: ws
+  server: 172.99.190.50
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  skip-cert-verify: false
+  tls: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: 172.99.190.50
+    path: /
+- name: 德国 002
+  type: vmess
+  network: ws
+  server: 57.129.24.125
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  skip-cert-verify: false
+  tls: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+    path: /
+- name: 澳大利亚 001
+  type: vmess
+  network: ws
+  server: 172.105.172.209
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  skip-cert-verify: false
+  tls: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: 172.105.172.209
+    path: /
+- name: 加拿大 007
+  type: vmess
+  network: ws
+  server: us-ccs.yuji2022.eu.org
+  port: 8880
+  uuid: 4b5e4565-322f-4223-a891-78a84f189726
+  servername: us-ccs.yuji2022.eu.org
+  skip-cert-verify: false
+  tls: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: us-ccs.yuji2022.eu.org
+    path: /
+- name: 加拿大 008
+  type: vmess
+  network: ws
+  server: beyonddbc.sbs
+  port: 443
+  uuid: 8d90c129-4156-4d6c-9115-24df25f26a02
+  skip-cert-verify: false
+  tls: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: beyonddbc.sbs
+    path: /
+- name: 德国 003
+  type: vmess
+  network: ws
+  server: 23.158.56.227
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  skip-cert-verify: false
+  tls: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: 23.158.56.227
+    path: /
+- name: 加拿大 009
+  type: vmess
+  network: ws
+  server: az05.beyondy.cfd
+  port: 443
+  uuid: 3f638f34-8dba-4186-bc43-2716a7ddd4be
+  skip-cert-verify: false
+  tls: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: az05.beyondy.cfd
+    path: /
+- name: 加拿大 010
+  type: vmess
+  network: ws
+  server: 104.16.38.71
+  port: 2052
+  uuid: c286daa2-59de-455c-8de8-ec032b6ce2e8
+  tls: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: us6_0.wish.ml
+    path: /
+- name: 加拿大 011
+  type: vmess
+  network: ws
+  server: 104.17.156.224
+  port: 2052
+  uuid: c286daa2-59de-455c-8de8-ec032b6ce2e8
+  tls: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: in4.wish.ml
+    path: /
+- name: 加拿大 012
+  type: vmess
+  network: ws
+  server: 172.67.164.78
+  port: 2052
+  uuid: c286daa2-59de-455c-8de8-ec032b6ce2e8
+  tls: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: in3.wish.ml
+    path: /
+- name: 加拿大 013
+  type: vmess
+  network: ws
+  server: 104.21.8.157
+  port: 2082
+  uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
+  tls: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: s1c.v2.v001sss.xyz
+    path: /
+- name: 美国 010
+  type: vmess
+  network: ws
+  server: 38.75.137.21
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+  tls: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: harriscity.com
+    path: /linkvws
+- name: 卢森堡 001
+  type: vmess
+  network: ws
+  server: 202.78.162.5
+  port: 443
+  uuid: 2ff97c6d-8557-42a4-b43f-19c77c5959ea
+  tls: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: irsoft.sytes.net
+    path: /
+- name: 加拿大 014
+  type: vmess
+  network: ws
+  server: www.darkroom.lol
+  port: 8080
+  uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0
+  tls: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: www.darkroom.lol
+    path: /
+- name: 加拿大 015
+  type: vmess
+  network: ws
+  server: server31.beheshtbaneh.com
+  port: 8880
+  uuid: 4154143c-bbba-47a4-9f79-c2ed087cbcc9
+  tls: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: server31.beheshtbaneh.com
+    path: /
+- name: 加拿大 016
+  type: vmess
+  network: ws
+  server: 104.21.82.183
+  port: 8880
+  uuid: 5a7021e0-26b4-45d6-b175-fe551601ca97
+  tls: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: server26.beheshtbaneh.com
+    path: /
+- name: 美国 011
+  type: vmess
+  network: ws
+  server: gov.uk
+  port: 443
+  uuid: 77848824-93b7-4b89-ffd0-e91afff406ce
+  tls: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: zheshiscp.com
+    path: /77848824
+- name: 塞浦路斯 001
+  type: vmess
+  network: ws
+  server: www.csgo.com
+  port: 443
+  uuid: 33f6d8b0-81f8-4fce-b3df-79dc8fd6d8c5
+  skip-cert-verify: true
+  tls: true
+  udp: true
+  tfo: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: kr.cfyyds.filegear-sg.me
+    path: /rongseven?ed=2048
+- name: 美国 012
+  type: vmess
+  network: ws
+  server: 151.101.194.133
+  port: 443
+  uuid: 545485da-9ff4-48c5-ae94-45e6e4ee7d26
+  skip-cert-verify: true
+  tls: true
+  udp: true
+  tfo: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: 6606.com
+    path: /racevpn
+- name: 美国 013
+  type: vmess
+  network: ws
+  server: 152.70.155.147
+  port: 2053
+  uuid: aa704947-e163-4133-b485-f8032f8f1286
+  skip-cert-verify: true
+  tls: true
+  udp: true
+  tfo: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: nl.zhuk.us.kg
+    path: /ylks
+- name: 加拿大 017
+  type: vmess
+  network: ws
+  server: lamusa.daozhang.site
+  port: 8880
+  uuid: 1c1cb7fe-a929-4e47-b292-4073b63d2d4b
+  servername: lamusa.daozhang.site
+  skip-cert-verify: true
+  alterId: 0
+  cipher: auto
+  delay: 1496
+  ws-opts:
+    headers:
+      Host: lamusa.daozhang.site
+    path: /
+- name: 哈萨克斯坦 001
+  type: trojan
+  network: ws
+  server: 194.76.18.129
+  port: 443
+  password: tg-fq521free
+  skip-cert-verify: true
+  sni: torjan.xn--xhq44j.eu.org
+  delay: 987
+  ws-opts:
+    headers:
+      Host: torjan.xn--xhq44j.eu.org
+    path: /
+- name: 俄罗斯 001
+  type: trojan
+  network: ws
+  server: 45.67.215.95
+  port: 443
+  password: tg-fq521free
+  skip-cert-verify: true
+  sni: torjan.xn--xhq44j.eu.org
+  delay: 2206
+  ws-opts:
+    headers:
+      Host: torjan.xn--xhq44j.eu.org
+    path: /
+- name: 美国 014
+  type: trojan
+  network: ws
+  server: 198.62.62.67
+  port: 443
+  password: tg-fq521free
+  skip-cert-verify: true
+  sni: torjan.xn--xhq44j.eu.org
+  delay: 1055
+  ws-opts:
+    headers:
+      Host: torjan.xn--xhq44j.eu.org
+    path: /
+- name: 美国 015
+  type: trojan
+  network: ws
+  server: 216.24.57.30
+  port: 443
+  password: tg-fq521free
+  skip-cert-verify: true
+  udp: true
+  sni: torjan.xn--xhq44j.eu.org
+  delay: 1006
+  ws-opts:
+    headers:
+      Host: torjan.xn--xhq44j.eu.org
+    path: /
+- name: 日本 001
+  type: trojan
+  network: tcp
+  server: jp005.421421.xyz
+  port: 20230
+  password: d971ee7a-32d9-402a-8a4f-d2135d48a47b
+  skip-cert-verify: true
+  udp: true
+  sni: 421421.xyz
+- name: 美国 016
+  type: vless
+  network: ws
+  server: 192.200.160.86
+  port: 2052
+  uuid: 17b42a04-83b8-4b93-b9f3-285d256d87d8
+  skip-cert-verify: true
+  tls: false
+  tfo: false
+  ws-opts:
+    headers:
+      Host: shy-paper-dec6.congcong1412243609.workers.dev
+    path: /?ed=2560&proxyip=proxyip.us.fxxk.dedyn.io
+- name: 美国 017
+  type: vless
+  network: ws
+  server: 130.250.137.5
+  port: 2052
+  uuid: 17b42a04-83b8-4b93-b9f3-285d256d87d8
+  skip-cert-verify: true
+  tls: false
+  tfo: false
+  ws-opts:
+    headers:
+      Host: shy-paper-dec6.congcong1412243609.workers.dev
+    path: /?ed=2560&proxyip=proxyip.us.fxxk.dedyn.io
+- name: 加拿大 018
+  type: vless
+  network: ws
+  server: 104.16.151.47
+  port: 443
+  uuid: 71ed6628-5870-4d19-8a52-f2a3ba3d4898
+  servername: vbbb.ylks2024.us.kg
+  tls: true
+  ws-opts:
+    headers:
+      Host: vbbb.ylks2024.us.kg
+    path: /?ed=2560
+- name: 哥斯达黎加 001
+  type: vless
+  network: ws
+  server: 190.93.244.210
+  port: 443
+  uuid: 71ed6628-5870-4d19-8a52-f2a3ba3d4898
+  servername: vbbb.ylks2024.us.kg
+  tls: true
+  ws-opts:
+    headers:
+      Host: vbbb.ylks2024.us.kg
+    path: /?ed=2560
+- name: 加拿大 019
+  type: vless
+  network: ws
+  server: 104.16.23.178
+  port: 443
+  uuid: eebcdbce-4a2a-437e-9b30-f9d24793ebb1
+  servername: vbbb.lii2010.us.kg
+  tls: true
+  ws-opts:
+    headers:
+      Host: vbbb.lii2010.us.kg
+    path: /?ed=2560
+- name: 加拿大 020
+  type: vless
+  network: ws
+  server: 104.16.0.163
+  port: 443
+  uuid: eebcdbce-4a2a-437e-9b30-f9d24793ebb1
+  servername: vbbb.lii2010.us.kg
+  tls: true
+  ws-opts:
+    headers:
+      Host: vbbb.lii2010.us.kg
+    path: /?ed=2560
+- name: 加拿大 021
+  type: vless
+  network: ws
+  server: 172.64.94.40
+  port: 443
+  uuid: eebcdbce-4a2a-437e-9b30-f9d24793ebb1
+  servername: vbbb.lii2010.us.kg
+  tls: true
+  ws-opts:
+    headers:
+      Host: vbbb.lii2010.us.kg
+    path: /?ed=2560
+- name: 加拿大 022
+  type: vless
+  network: ws
+  server: 104.16.16.9
+  port: 443
+  uuid: eebcdbce-4a2a-437e-9b30-f9d24793ebb1
+  servername: vbbb.lii2010.us.kg
+  tls: true
+  ws-opts:
+    headers:
+      Host: vbbb.lii2010.us.kg
+    path: /?ed=2560
+- name: 美国 018
+  type: vless
+  network: ws
+  server: 205.233.181.36
+  port: 2053
+  uuid: b9dad5ed-74da-4a43-8145-90d06df1f890
+  servername: rix.tgzdyz2.top
+  skip-cert-verify: true
+  tls: true
+  tfo: false
+  client-fingerprint: random
+  ws-opts:
+    headers:
+      Host: rix.tgzdyz2.top
+    path: /?ed=2560
+- name: 加拿大 023
+  type: vless
+  network: ws
+  server: 172.64.87.11
+  port: 443
+  uuid: eebcdbce-4a2a-437e-9b30-f9d24793ebb1
+  servername: vbbb.lii2010.us.kg
+  tls: true
+  ws-opts:
+    headers:
+      Host: vbbb.lii2010.us.kg
+    path: /?ed=2560
+- name: 加拿大 024
+  type: vless
+  network: ws
+  server: 104.16.53.249
+  port: 443
+  uuid: eebcdbce-4a2a-437e-9b30-f9d24793ebb1
+  servername: vbbb.lii2010.us.kg
+  tls: true
+  ws-opts:
+    headers:
+      Host: vbbb.lii2010.us.kg
+    path: /?ed=2560
+- name: 美国 019
+  type: vless
+  network: ws
+  server: 172.64.135.134
+  port: 443
+  uuid: eebcdbce-4a2a-437e-9b30-f9d24793ebb1
+  servername: vbbb.lii2010.us.kg
+  tls: true
+  ws-opts:
+    headers:
+      Host: vbbb.lii2010.us.kg
+    path: /?ed=2560
+- name: 美国 020
+  type: vless
+  network: ws
+  server: 172.64.138.184
+  port: 443
+  uuid: eebcdbce-4a2a-437e-9b30-f9d24793ebb1
+  servername: vbbb.lii2010.us.kg
+  tls: true
+  ws-opts:
+    headers:
+      Host: vbbb.lii2010.us.kg
+    path: /?ed=2560
+- name: 哥斯达黎加 002
+  type: vless
+  network: ws
+  server: 190.93.246.207
+  port: 443
+  uuid: eebcdbce-4a2a-437e-9b30-f9d24793ebb1
+  servername: vbbb.lii2010.us.kg
+  tls: true
+  ws-opts:
+    headers:
+      Host: vbbb.lii2010.us.kg
+    path: /?ed=2560
+- name: 加拿大 025
+  type: vless
+  network: ws
+  server: 104.16.67.97
+  port: 443
+  uuid: eebcdbce-4a2a-437e-9b30-f9d24793ebb1
+  servername: vbbb.lii2010.us.kg
+  tls: true
+  ws-opts:
+    headers:
+      Host: vbbb.lii2010.us.kg
+    path: /?ed=2560
+- name: 加拿大 026
+  type: vless
+  network: ws
+  server: 104.16.152.232
+  port: 443
+  uuid: 71ed6628-5870-4d19-8a52-f2a3ba3d4898
+  servername: vbbb.ylks2024.us.kg
+  tls: true
+  ws-opts:
+    headers:
+      Host: vbbb.ylks2024.us.kg
+    path: /?ed=2560
+- name: 哥斯达黎加 003
+  type: trojan
+  network: ws
+  server: 190.93.246.80
+  port: 443
+  password: bpb-trojan
+  skip-cert-verify: true
+  udp: true
+  sni: zeming13.us.kg
+  ws-opts:
+    headers:
+      Host: zeming13.us.kg
+    path: /tr
+- name: 美国 021
+  type: vless
+  network: ws
+  server: 69.84.182.12
+  port: 443
+  uuid: 71ed6628-5870-4d19-8a52-f2a3ba3d4898
+  servername: vbbb.ylks2024.us.kg
+  tls: true
+  ws-opts:
+    headers:
+      Host: vbbb.ylks2024.us.kg
+    path: /vbba.ylks2024.us.kg
+- name: 美国 022
+  type: vless
+  network: ws
+  server: 198.62.62.42
+  port: 443
+  uuid: 71ed6628-5870-4d19-8a52-f2a3ba3d4898
+  servername: vbbb.ylks2024.us.kg
+  tls: true
+  ws-opts:
+    headers:
+      Host: vbbb.ylks2024.us.kg
+    path: /youlingkaishi
+- name: 哥斯达黎加 004
+  type: trojan
+  network: ws
+  server: 190.93.246.95
+  port: 443
+  password: bpb-trojan
+  skip-cert-verify: true
+  udp: true
+  sni: zeming13.us.kg
+  ws-opts:
+    headers:
+      Host: zeming13.us.kg
+    path: /tr
+- name: 美国 023
+  type: vless
+  network: ws
+  server: 69.84.182.43
+  port: 443
+  uuid: 71ed6628-5870-4d19-8a52-f2a3ba3d4898
+  servername: vbbb.ylks2024.us.kg
+  tls: true
+  ws-opts:
+    headers:
+      Host: vbbb.ylks2024.us.kg
+    path: /vbba.ylks2024.us.kg
+- name: 美国 024
+  type: vless
+  network: ws
+  server: 69.84.182.81
+  port: 443
+  uuid: 71ed6628-5870-4d19-8a52-f2a3ba3d4898
+  servername: vbbb.ylks2024.us.kg
+  tls: true
+  ws-opts:
+    headers:
+      Host: vbbb.ylks2024.us.kg
+    path: /vbba.ylks2024.us.kg
+- name: 美国 025
+  type: vless
+  network: ws
+  server: 198.62.62.251
+  port: 443
+  uuid: 71ed6628-5870-4d19-8a52-f2a3ba3d4898
+  servername: vbbb.ylks2024.us.kg
+  tls: true
+  ws-opts:
+    headers:
+      Host: vbbb.ylks2024.us.kg
+    path: /vbba.ylks2024.us.kg
+- name: 美国 026
+  type: vless
+  network: ws
+  server: 69.84.182.82
+  port: 443
+  uuid: 71ed6628-5870-4d19-8a52-f2a3ba3d4898
+  servername: vbbb.ylks2024.us.kg
+  tls: true
+  ws-opts:
+    headers:
+      Host: vbbb.ylks2024.us.kg
+    path: /vbba.ylks2024.us.kg
+- name: 加拿大 027
+  type: vless
+  network: ws
+  server: 162.159.153.98
+  port: 443
+  uuid: 71ed6628-5870-4d19-8a52-f2a3ba3d4898
+  servername: vbbb.ylks2024.us.kg
+  tls: true
+  ws-opts:
+    headers:
+      Host: vbbb.ylks2024.us.kg
+    path: /youlingkaishi
+- name: 美国 027
+  type: vless
+  network: ws
+  server: 198.62.62.171
+  port: 443
+  uuid: 71ed6628-5870-4d19-8a52-f2a3ba3d4898
+  servername: vbbb.ylks2024.us.kg
+  tls: true
+  ws-opts:
+    headers:
+      Host: vbbb.ylks2024.us.kg
+    path: /youlingkaishi
+- name: 加拿大 028
+  type: vless
+  network: ws
+  server: 162.159.153.219
+  port: 443
+  uuid: 71ed6628-5870-4d19-8a52-f2a3ba3d4898
+  servername: vbbb.ylks2024.us.kg
+  tls: true
+  ws-opts:
+    headers:
+      Host: vbbb.ylks2024.us.kg
+    path: /youlingkaishi
+- name: 加拿大 029
+  type: trojan
+  network: ws
+  server: 198.41.203.5
+  port: 443
+  password: blue2024
+  skip-cert-verify: true
+  udp: true
+  sni: ta.promote.icu
+  ws-opts:
+    headers:
+      Host: ta.promote.icu
+    path: /
+- name: 美国 028
+  type: vless
+  network: ws
+  server: 69.84.182.140
+  port: 443
+  uuid: 71ed6628-5870-4d19-8a52-f2a3ba3d4898
+  servername: vbbb.ylks2024.us.kg
+  tls: true
+  ws-opts:
+    headers:
+      Host: vbbb.ylks2024.us.kg
+    path: /vbba.ylks2024.us.kg
+- name: 美国 029
+  type: vless
+  network: ws
+  server: 198.62.62.192
+  port: 443
+  uuid: 71ed6628-5870-4d19-8a52-f2a3ba3d4898
+  servername: vbbb.ylks2024.us.kg
+  tls: true
+  ws-opts:
+    headers:
+      Host: vbbb.ylks2024.us.kg
+    path: /youlingkaishi
+- name: 美国 030
+  type: vless
+  network: ws
+  server: 198.62.62.91
+  port: 443
+  uuid: 71ed6628-5870-4d19-8a52-f2a3ba3d4898
+  servername: vbbb.ylks2024.us.kg
+  tls: true
+  ws-opts:
+    headers:
+      Host: vbbb.ylks2024.us.kg
+    path: /youlingkaishi
+- name: 美国 031
+  type: vless
+  network: ws
+  server: 198.62.62.81
+  port: 443
+  uuid: 71ed6628-5870-4d19-8a52-f2a3ba3d4898
+  servername: vbbb.ylks2024.us.kg
+  tls: true
+  ws-opts:
+    headers:
+      Host: vbbb.ylks2024.us.kg
+    path: /youlingkaishi
+- name: 美国 032
+  type: vless
+  network: ws
+  server: 69.84.182.89
+  port: 443
+  uuid: 71ed6628-5870-4d19-8a52-f2a3ba3d4898
+  servername: vbbb.ylks2024.us.kg
+  tls: true
+  ws-opts:
+    headers:
+      Host: vbbb.ylks2024.us.kg
+    path: /vbba.ylks2024.us.kg
+- name: 美国 033
+  type: vless
+  network: ws
+  server: 69.84.182.186
+  port: 443
+  uuid: 71ed6628-5870-4d19-8a52-f2a3ba3d4898
+  servername: vbbb.ylks2024.us.kg
+  tls: true
+  ws-opts:
+    headers:
+      Host: vbbb.ylks2024.us.kg
+    path: /vbba.ylks2024.us.kg
+- name: 美国 034
+  type: vless
+  network: ws
+  server: 198.62.62.127
+  port: 443
+  uuid: 71ed6628-5870-4d19-8a52-f2a3ba3d4898
+  servername: vbbb.ylks2024.us.kg
+  tls: true
+  ws-opts:
+    headers:
+      Host: vbbb.ylks2024.us.kg
+    path: /youlingkaishi
+- name: 美国 035
+  type: vless
+  network: ws
+  server: 198.62.62.193
+  port: 443
+  uuid: 71ed6628-5870-4d19-8a52-f2a3ba3d4898
+  servername: vbbb.ylks2024.us.kg
+  tls: true
+  ws-opts:
+    headers:
+      Host: vbbb.ylks2024.us.kg
+    path: /vbba.ylks2024.us.kg
+- name: 美国 036
+  type: vless
+  network: ws
+  server: 198.62.62.84
+  port: 443
+  uuid: 71ed6628-5870-4d19-8a52-f2a3ba3d4898
+  servername: vbbb.ylks2024.us.kg
+  tls: true
+  ws-opts:
+    headers:
+      Host: vbbb.ylks2024.us.kg
+    path: /youlingkaishi
+- name: 美国 037
+  type: vless
+  network: ws
+  server: 198.62.62.228
+  port: 443
+  uuid: 71ed6628-5870-4d19-8a52-f2a3ba3d4898
+  servername: vbbb.ylks2024.us.kg
+  tls: true
+  ws-opts:
+    headers:
+      Host: vbbb.ylks2024.us.kg
+    path: /youlingkaishi
+- name: 美国 038
+  type: vless
+  network: ws
+  server: 69.84.182.75
+  port: 443
+  uuid: 71ed6628-5870-4d19-8a52-f2a3ba3d4898
+  servername: vbbb.ylks2024.us.kg
+  tls: true
+  ws-opts:
+    headers:
+      Host: vbbb.ylks2024.us.kg
+    path: /vbba.ylks2024.us.kg
+- name: 美国 039
+  type: vless
+  network: ws
+  server: 69.84.182.202
+  port: 443
+  uuid: 71ed6628-5870-4d19-8a52-f2a3ba3d4898
+  servername: vbbb.ylks2024.us.kg
+  tls: true
+  ws-opts:
+    headers:
+      Host: vbbb.ylks2024.us.kg
+    path: /youlingkaishi
+- name: 加拿大 030
+  type: vless
+  network: ws
+  server: join.my.telegram.channel.cmliussss.to.unlock.more.premium.nodes.cf.090227.xyz
+  port: 443
+  uuid: 71ed6628-5870-4d19-8a52-f2a3ba3d4898
+  servername: vbbb.ylks2024.us.kg
+  tls: true
+  ws-opts:
+    headers:
+      Host: vbbb.ylks2024.us.kg
+    path: /vbba.ylks2024.us.kg
+- name: 美国 040
+  type: vless
+  network: ws
+  server: 69.84.182.176
+  port: 443
+  uuid: 71ed6628-5870-4d19-8a52-f2a3ba3d4898
+  servername: vbbb.ylks2024.us.kg
+  tls: true
+  ws-opts:
+    headers:
+      Host: vbbb.ylks2024.us.kg
+    path: /youlingkaishi
+- name: 美国 041
+  type: vless
+  network: ws
+  server: 198.62.62.111
+  port: 443
+  uuid: 71ed6628-5870-4d19-8a52-f2a3ba3d4898
+  servername: vbbb.ylks2024.us.kg
+  tls: true
+  ws-opts:
+    headers:
+      Host: vbbb.ylks2024.us.kg
+    path: /vbba.ylks2024.us.kg
+- name: 美国 042
+  type: vless
+  network: ws
+  server: 198.62.62.49
+  port: 443
+  uuid: 71ed6628-5870-4d19-8a52-f2a3ba3d4898
+  servername: vbbb.ylks2024.us.kg
+  tls: true
+  ws-opts:
+    headers:
+      Host: vbbb.ylks2024.us.kg
+    path: /vbba.ylks2024.us.kg
+- name: 美国 043
+  type: vless
+  network: ws
+  server: 69.84.182.209
+  port: 443
+  uuid: 71ed6628-5870-4d19-8a52-f2a3ba3d4898
+  servername: vbbb.ylks2024.us.kg
+  tls: true
+  ws-opts:
+    headers:
+      Host: vbbb.ylks2024.us.kg
+    path: /vbba.ylks2024.us.kg
+- name: 美国 044
+  type: vless
+  network: ws
+  server: 69.84.182.61
+  port: 443
+  uuid: 71ed6628-5870-4d19-8a52-f2a3ba3d4898
+  servername: vbbb.ylks2024.us.kg
+  tls: true
+  ws-opts:
+    headers:
+      Host: vbbb.ylks2024.us.kg
+    path: /youlingkaishi
+- name: 美国 045
+  type: vless
+  network: ws
+  server: 69.84.182.233
+  port: 443
+  uuid: 71ed6628-5870-4d19-8a52-f2a3ba3d4898
+  servername: vbbb.ylks2024.us.kg
+  tls: true
+  ws-opts:
+    headers:
+      Host: vbbb.ylks2024.us.kg
+    path: /youlingkaishi
+- name: 美国 046
+  type: vless
+  network: ws
+  server: 69.84.182.29
+  port: 443
+  uuid: 71ed6628-5870-4d19-8a52-f2a3ba3d4898
+  servername: vbbb.ylks2024.us.kg
+  tls: true
+  ws-opts:
+    headers:
+      Host: vbbb.ylks2024.us.kg
+    path: /youlingkaishi
+- name: 加拿大 031
+  type: vless
+  network: ws
+  server: 162.159.153.249
+  port: 443
+  uuid: 71ed6628-5870-4d19-8a52-f2a3ba3d4898
+  servername: vbbb.ylks2024.us.kg
+  tls: true
+  ws-opts:
+    headers:
+      Host: vbbb.ylks2024.us.kg
+    path: /vbba.ylks2024.us.kg
+- name: 美国 047
+  type: vless
+  network: ws
+  server: 198.62.62.47
+  port: 443
+  uuid: 71ed6628-5870-4d19-8a52-f2a3ba3d4898
+  servername: vbbb.ylks2024.us.kg
+  tls: true
+  ws-opts:
+    headers:
+      Host: vbbb.ylks2024.us.kg
+    path: /youlingkaishi
+- name: 美国 048
+  type: vless
+  network: ws
+  server: 198.62.62.64
+  port: 443
+  uuid: 71ed6628-5870-4d19-8a52-f2a3ba3d4898
+  servername: vbbb.ylks2024.us.kg
+  tls: true
+  ws-opts:
+    headers:
+      Host: vbbb.ylks2024.us.kg
+    path: /vbba.ylks2024.us.kg
+- name: 美国 049
+  type: vless
+  network: ws
+  server: 69.84.182.164
+  port: 443
+  uuid: 71ed6628-5870-4d19-8a52-f2a3ba3d4898
+  servername: vbbb.ylks2024.us.kg
+  tls: true
+  ws-opts:
+    headers:
+      Host: vbbb.ylks2024.us.kg
+    path: /youlingkaishi
+- name: 加拿大 032
+  type: vless
+  network: ws
+  server: 162.159.153.234
+  port: 443
+  uuid: 71ed6628-5870-4d19-8a52-f2a3ba3d4898
+  servername: vbbb.ylks2024.us.kg
+  tls: true
+  ws-opts:
+    headers:
+      Host: vbbb.ylks2024.us.kg
+    path: /youlingkaishi
+- name: 美国 050
+  type: vless
+  network: ws
+  server: 69.84.182.119
+  port: 443
+  uuid: 71ed6628-5870-4d19-8a52-f2a3ba3d4898
+  servername: vbbb.ylks2024.us.kg
+  tls: true
+  ws-opts:
+    headers:
+      Host: vbbb.ylks2024.us.kg
+    path: /youlingkaishi
+- name: 美国 051
+  type: vless
+  network: ws
+  server: 69.84.182.215
+  port: 443
+  uuid: 71ed6628-5870-4d19-8a52-f2a3ba3d4898
+  servername: vbbb.ylks2024.us.kg
+  tls: true
+  ws-opts:
+    headers:
+      Host: vbbb.ylks2024.us.kg
+    path: /vbba.ylks2024.us.kg
+- name: 美国 052
+  type: vless
+  network: ws
+  server: 198.62.62.211
+  port: 443
+  uuid: 71ed6628-5870-4d19-8a52-f2a3ba3d4898
+  servername: vbbb.ylks2024.us.kg
+  tls: true
+  ws-opts:
+    headers:
+      Host: vbbb.ylks2024.us.kg
+    path: /youlingkaishi
 proxy-groups:
 - name: PROXY
   type: select
@@ -139,7 +1429,107 @@ proxy-groups:
   - DIRECT
 - name: SELECT
   type: select
-  proxies: &id001 []
+  proxies: &id001
+  - 美国 002
+  - 美国 003
+  - 美国 004
+  - 英国 004
+  - 美国 001
+  - 美国 005
+  - 美国 006
+  - 加拿大 001
+  - 加拿大 002
+  - 美国 007
+  - 加拿大 003
+  - 加拿大 004
+  - 加拿大 005
+  - 美国 008
+  - 加拿大 006
+  - 法国 001
+  - 美国 009
+  - 德国 001
+  - 英国 001
+  - 德国 002
+  - 澳大利亚 001
+  - 加拿大 007
+  - 加拿大 008
+  - 德国 003
+  - 加拿大 009
+  - 加拿大 010
+  - 加拿大 011
+  - 加拿大 012
+  - 加拿大 013
+  - 美国 010
+  - 卢森堡 001
+  - 加拿大 014
+  - 加拿大 015
+  - 加拿大 016
+  - 美国 011
+  - 塞浦路斯 001
+  - 美国 012
+  - 美国 013
+  - 加拿大 017
+  - 哈萨克斯坦 001
+  - 俄罗斯 001
+  - 美国 014
+  - 美国 015
+  - 日本 001
+  - 美国 016
+  - 美国 017
+  - 加拿大 018
+  - 哥斯达黎加 001
+  - 加拿大 019
+  - 加拿大 020
+  - 加拿大 021
+  - 加拿大 022
+  - 美国 018
+  - 加拿大 023
+  - 加拿大 024
+  - 美国 019
+  - 美国 020
+  - 哥斯达黎加 002
+  - 加拿大 025
+  - 加拿大 026
+  - 哥斯达黎加 003
+  - 美国 021
+  - 美国 022
+  - 哥斯达黎加 004
+  - 美国 023
+  - 美国 024
+  - 美国 025
+  - 美国 026
+  - 加拿大 027
+  - 美国 027
+  - 加拿大 028
+  - 加拿大 029
+  - 美国 028
+  - 美国 029
+  - 美国 030
+  - 美国 031
+  - 美国 032
+  - 美国 033
+  - 美国 034
+  - 美国 035
+  - 美国 036
+  - 美国 037
+  - 美国 038
+  - 美国 039
+  - 加拿大 030
+  - 美国 040
+  - 美国 041
+  - 美国 042
+  - 美国 043
+  - 美国 044
+  - 美国 045
+  - 美国 046
+  - 加拿大 031
+  - 美国 047
+  - 美国 048
+  - 美国 049
+  - 加拿大 032
+  - 美国 050
+  - 美国 051
+  - 美国 052
 - name: LOAD-BALANCE
   type: load-balance
   url: https://cp.cloudflare.com/generate_204
