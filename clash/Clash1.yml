@@ -129,21 +129,6 @@ dns:
     - +.googleapis.cn
     - +.googleapis.com
 proxies:
-- name: 美国 002
-  type: vless
-  network: ws
-  server: 104.18.14.19
-  port: 2082
-  uuid: 131387aa-4b2a-43aa-bf7c-d94306ba55fb
-  servername: 13tg.jpl8xmqb.workers.dev
-  skip-cert-verify: false
-  tls: false
-  tfo: false
-  client-fingerprint: chrome
-  ws-opts:
-    headers:
-      Host: 13tg.jpl8xmqb.workers.dev
-    path: /?ed=2560
 - name: 德国 006
   type: vless
   network: http
@@ -192,22 +177,6 @@ proxies:
     method: GET
     path:
     - /
-- name: 伊朗 006
-  type: vless
-  network: http
-  server: p1.daryashopvip.site
-  port: 443
-  uuid: 944c6cec-9763-4852-bb7c-023ca7d8603d
-  servername: fast.com
-  skip-cert-verify: false
-  tls: false
-  http-opts:
-    headers:
-      Host:
-      - fast.com
-    method: GET
-    path:
-    - /
 - name: 土耳其 002
   type: vless
   network: ws
@@ -235,50 +204,6 @@ proxies:
     headers:
       Host: domg.pmy666.xyz
     path: /?ed=2048
-- name: 加拿大 001
-  type: vmess
-  network: ws
-  server: 198.41.209.70
-  port: 2052
-  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
-  servername: 100-102-247-92.s1.db-link02.top
-  skip-cert-verify: true
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: 100-102-247-92.s1.db-link02.top
-    path: /dabai.in104.25.175.137
-- name: 德国 001
-  type: vmess
-  network: ws
-  server: 57.129.25.22
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
-  tls: true
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: o.metuji.com
-    path: /linkvws
-- name: 加拿大 002
-  type: vmess
-  network: ws
-  server: s1.db-link01.top
-  port: 2086
-  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
-  skip-cert-verify: true
-  tls: false
-  udp: true
-  tfo: false
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: 100-191-129-167.s1.db-link01.top
-    path: /dabai.in172.64.32.189
 - name: 加拿大 003
   type: vmess
   network: ws
@@ -295,96 +220,6 @@ proxies:
     headers:
       Host: te.wordclass.top
     path: /vmessprotocol-vmessprotocol-vmessprotocol-vmessprotocol
-- name: 加拿大 004
-  type: vmess
-  network: grpc
-  server: 173.245.58.217
-  port: 2087
-  uuid: db5afae4-ac23-41a6-8378-f307a9a47436
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  tfo: false
-  alterId: 0
-  cipher: auto
-  grpc-opts:
-    grpc-service-name: /
-- name: 加拿大 005
-  type: vmess
-  network: ws
-  server: s5.cn-db.top
-  port: 2052
-  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
-  skip-cert-verify: true
-  tls: false
-  udp: true
-  tfo: false
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: 100-186-247-174.s5.cn-db.top
-    path: /dabai.in104.18.247.169
-- name: 德国 002
-  type: vmess
-  network: ws
-  server: de1.sdwan.day
-  port: 443
-  uuid: fade2b35-7872-442e-a54e-6ccf9b970476
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  tfo: false
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: de1.sdwan.day
-    path: /name
-- name: 美国 003
-  type: vmess
-  network: ws
-  server: 142.4.96.69
-  port: 31001
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  tfo: false
-  alterId: 64
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: www.29675080.xyz
-    path: /path/1736415657076
-- name: 美国 004
-  type: vmess
-  network: ws
-  server: 199.188.105.57
-  port: 31004
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  skip-cert-verify: true
-  tls: true
-  alterId: 64
-  cipher: auto
-  delay: 1154
-  ws-opts:
-    headers:
-      Host: www.46554484.xyz
-    path: /path/1736415675034
-- name: 美国 005
-  type: vless
-  network: ws
-  server: 151.101.193.6
-  port: 80
-  uuid: 881c2728-f294-539e-adec-7d4b7201c751
-  servername: PABLO-MOSTAFAA.COM
-  tls: false
-  delay: 2483
-  ws-opts:
-    headers:
-      Host: PABLO-MOSTAFAA.COM
-    path: /
 - name: 美国 006
   type: vless
   network: ws
@@ -463,48 +298,6 @@ proxies:
     headers:
       Host: edge.validbv3528.ir
     path: /
-- name: 加拿大 006
-  type: vmess
-  network: ws
-  server: s3.db-link01.top
-  port: 80
-  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
-  skip-cert-verify: true
-  alterId: 0
-  cipher: auto
-  delay: 1734
-  ws-opts:
-    headers:
-      Host: 100-233-177-234.s3.db-link01.top
-    path: /dabai.in172.67.97.32
-- name: 加拿大 007
-  type: vmess
-  network: ws
-  server: s3.db-link01.top
-  port: 8080
-  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
-  skip-cert-verify: true
-  alterId: 0
-  cipher: auto
-  delay: 1278
-  ws-opts:
-    headers:
-      Host: 100-147-253-240.s3.db-link01.top
-    path: /dabai.in172.67.39.176
-- name: 加拿大 008
-  type: vmess
-  network: ws
-  server: s3.db-link01.top
-  port: 2052
-  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
-  skip-cert-verify: true
-  alterId: 0
-  cipher: auto
-  delay: 2106
-  ws-opts:
-    headers:
-      Host: 100-194-255-32.s3.db-link01.top
-    path: /dabai.in172.67.18.127
 - name: 加拿大 009
   type: vmess
   network: ws
@@ -519,209 +312,6 @@ proxies:
     headers:
       Host: 100-78-250-146.s4.cn-db.top
     path: /dabai.in104.25.36.93
-- name: 加拿大 010
-  type: vmess
-  network: ws
-  server: s3.cn-db.top
-  port: 2095
-  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
-  skip-cert-verify: true
-  alterId: 0
-  cipher: auto
-  delay: 2391
-  ws-opts:
-    headers:
-      Host: 100-32-243-214.s3.cn-db.top
-    path: /dabai.in104.19.196.151
-- name: 加拿大 011
-  type: vmess
-  network: ws
-  server: s3.cn-db.top
-  port: 2052
-  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
-  skip-cert-verify: true
-  alterId: 0
-  cipher: auto
-  delay: 1590
-  ws-opts:
-    headers:
-      Host: 100-28-116-101.s3.cn-db.top
-    path: /dabai.in172.64.48.5
-- name: 加拿大 012
-  type: vmess
-  network: ws
-  server: s4.db-link01.top
-  port: 2052
-  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
-  skip-cert-verify: true
-  alterId: 0
-  cipher: auto
-  delay: 1576
-  ws-opts:
-    headers:
-      Host: 100-28-41-45.s4.db-link01.top
-    path: /dabai.in172.64.33.183
-- name: 美国 012
-  type: vmess
-  network: ws
-  server: 104.17.221.248
-  port: 8080
-  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
-  servername: 100-166-76-245.s5.cn-db.top
-  skip-cert-verify: true
-  alterId: 0
-  cipher: auto
-  delay: 2361
-  ws-opts:
-    headers:
-      Host: 100-166-76-245.s5.cn-db.top
-    path: /dabai.in172.67.26.191
-- name: 美国 013
-  type: vmess
-  network: ws
-  server: 104.17.213.241
-  port: 8880
-  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
-  servername: 100-44-229-26.s4.db-link01.top
-  skip-cert-verify: true
-  alterId: 0
-  cipher: auto
-  delay: 2514
-  ws-opts:
-    headers:
-      Host: 100-44-229-26.s4.db-link01.top
-    path: /dabai.in172.67.5.70
-- name: 加拿大 013
-  type: vmess
-  network: ws
-  server: 198.41.209.70
-  port: 2086
-  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
-  skip-cert-verify: true
-  alterId: 0
-  cipher: auto
-  delay: 2507
-  ws-opts:
-    headers:
-      Host: 100-74-179-50.s4.db-link01.top
-    path: /dabai.in172.67.42.220
-- name: 加拿大 014
-  type: vmess
-  network: ws
-  server: s4.db-link01.top
-  port: 2086
-  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
-  skip-cert-verify: true
-  alterId: 0
-  cipher: auto
-  delay: 1586
-  ws-opts:
-    headers:
-      Host: 100-74-179-50.s4.db-link01.top
-    path: /dabai.in172.67.42.220
-- name: 美国 014
-  type: vmess
-  network: ws
-  server: s2.db-link02.top
-  port: 8880
-  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
-  skip-cert-verify: true
-  tls: false
-  alterId: 0
-  cipher: auto
-  delay: 1727
-  ws-opts:
-    headers:
-      Host: 100-40-188-237.s2.db-link02.top
-    path: /dabai.in172.64.36.170
-- name: 美国 015
-  type: vmess
-  network: ws
-  server: s2.db-link02.top
-  port: 2082
-  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
-  skip-cert-verify: true
-  alterId: 0
-  cipher: auto
-  delay: 911
-  ws-opts:
-    headers:
-      Host: 100-4-20-123.s2.db-link02.top
-    path: /dabai.in104.21.83.57
-- name: 加拿大 015
-  type: vmess
-  network: ws
-  server: s2.cn-db.top
-  port: 2095
-  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
-  skip-cert-verify: true
-  tls: false
-  alterId: 0
-  cipher: auto
-  delay: 1185
-  ws-opts:
-    headers:
-      Host: 100-105-115-119.s2.cn-db.top
-    path: /dabai.in104.21.15.107
-- name: 加拿大 016
-  type: vmess
-  network: ws
-  server: s2.cn-db.top
-  port: 8080
-  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
-  skip-cert-verify: true
-  alterId: 0
-  cipher: auto
-  delay: 1182
-  ws-opts:
-    headers:
-      Host: 100-134-56-190.s2.cn-db.top
-    path: /dabai.in104.21.93.35
-- name: 美国 016
-  type: vmess
-  network: ws
-  server: 104.19.48.236
-  port: 2095
-  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
-  servername: 100-209-47-141.s2.db-link02.top
-  skip-cert-verify: true
-  alterId: 0
-  cipher: auto
-  delay: 1671
-  ws-opts:
-    headers:
-      Host: 100-209-47-141.s2.db-link02.top
-    path: /dabai.in104.20.27.115
-- name: 加拿大 017
-  type: vmess
-  network: ws
-  server: 104.16.155.10
-  port: 2095
-  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
-  servername: 100-209-47-141.s2.db-link02.top
-  skip-cert-verify: true
-  alterId: 0
-  cipher: auto
-  delay: 2495
-  ws-opts:
-    headers:
-      Host: 100-209-47-141.s2.db-link02.top
-    path: /dabai.in104.20.27.115
-- name: 加拿大 018
-  type: vmess
-  network: ws
-  server: s1.cn-db.top
-  port: 2052
-  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
-  skip-cert-verify: true
-  tls: false
-  alterId: 0
-  cipher: auto
-  delay: 950
-  ws-opts:
-    headers:
-      Host: 100-70-193-42.s1.cn-db.top
-    path: /dabai.in104.18.179.207
 - name: 美国 017
   type: vless
   network: ws
@@ -731,43 +321,6 @@ proxies:
   servername: edge.validbv3528.ir
   tls: false
   delay: 933
-  ws-opts:
-    headers:
-      Host: edge.validbv3528.ir
-    path: /vless-ws/
-- name: 美国 018
-  type: vmess
-  network: ws
-  server: 38.11.50.69
-  port: 31005
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  skip-cert-verify: true
-  tls: true
-  alterId: 64
-  cipher: auto
-  delay: 1246
-  ws-opts:
-    headers:
-      Host: www.65420682.xyz
-    path: /path/1736418711617
-- name: 日本 001
-  type: trojan
-  network: tcp
-  server: jp008.421421.xyz
-  port: 20230
-  password: b44da489-fc70-4fd0-8997-a83b51f59267
-  skip-cert-verify: true
-  udp: true
-  sni: 421421.xyz
-- name: 美国 019
-  type: vless
-  network: ws
-  server: 167.82.0.1
-  port: 80
-  uuid: 42f36835-730c-4ecc-9daf-20121ae7ba47
-  servername: edge.validbv3528.ir
-  skip-cert-verify: false
-  tls: false
   ws-opts:
     headers:
       Host: edge.validbv3528.ir
@@ -785,43 +338,6 @@ proxies:
     headers:
       Host: sstjj.esslh.filegear-sg.me
     path: /?ed=2560&proxyip=ts.hpc.tw
-- name: 美国 021
-  type: vless
-  network: ws
-  server: 167.82.1.111
-  port: 80
-  uuid: 253ef561-9e57-4336-befd-878ddd30df01
-  servername: teleirani.ir
-  tls: false
-  ws-opts:
-    headers:
-      Host: teleirani.ir
-    path: /?ed=2048
-- name: 美国 022
-  type: vless
-  network: ws
-  server: 167.82.1.136
-  port: 80
-  uuid: 253ef561-9e57-4336-befd-878ddd30df01
-  servername: teleirani.ir
-  tls: false
-  ws-opts:
-    headers:
-      Host: teleirani.ir
-    path: /?ed=2048
-- name: 美国 023
-  type: vless
-  network: ws
-  server: 167.82.1.103
-  port: 80
-  uuid: 42f36835-730c-4ecc-9daf-20121ae7ba47
-  servername: edge.validbv3528.ir
-  skip-cert-verify: false
-  tls: false
-  ws-opts:
-    headers:
-      Host: edge.validbv3528.ir
-    path: /?ed=2560
 - name: 美国 024
   type: vless
   network: ws
@@ -861,19 +377,6 @@ proxies:
     headers:
       Host: edge.validbv3528.ir
     path: /vless-ws/
-- name: 美国 027
-  type: vless
-  network: ws
-  server: 167.82.1.102
-  port: 80
-  uuid: 253ef561-9e57-4336-befd-878ddd30df01
-  servername: teleirani.ir
-  skip-cert-verify: false
-  tls: false
-  ws-opts:
-    headers:
-      Host: teleirani.ir
-    path: /?ed=2048
 - name: 日本 002
   type: trojan
   network: ws
@@ -887,20 +390,6 @@ proxies:
     headers:
       Host: sstjj.esslh.filegear-sg.me
     path: /?ed=2560&proxyip=ts.hpc.tw
-- name: 新加坡 001
-  type: vless
-  network: ws
-  server: 13.250.131.37
-  port: 443
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  servername: dsd.ylks.us.kg
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  ws-opts:
-    headers:
-      Host: dsd.ylks.us.kg
-    path: /?ed=2560
 - name: 美国 028
   type: vless
   network: ws
@@ -932,19 +421,6 @@ proxies:
   network: ws
   server: 121.174.111.147
   port: 10936
-  password: SSorg
-  skip-cert-verify: true
-  udp: true
-  sni: sstjj.esslh.filegear-sg.me
-  ws-opts:
-    headers:
-      Host: sstjj.esslh.filegear-sg.me
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- name: 韩国 002
-  type: trojan
-  network: ws
-  server: 218.147.114.82
-  port: 50000
   password: SSorg
   skip-cert-verify: true
   udp: true
@@ -1005,272 +481,6 @@ proxies:
     headers:
       Host: edge.validbv3528.ir
     path: /vless-ws/
-- name: 加拿大 019
-  type: vless
-  network: ws
-  server: 162.159.153.106
-  port: 443
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  servername: dsd.ylks.us.kg
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  ws-opts:
-    headers:
-      Host: dsd.ylks.us.kg
-    path: /?ed=2560
-- name: 美国 033
-  type: vless
-  network: ws
-  server: 160.79.104.195
-  port: 443
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  servername: dsd.ylks.us.kg
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  ws-opts:
-    headers:
-      Host: dsd.ylks.us.kg
-    path: /?ed=2560
-- name: 加拿大 020
-  type: vless
-  network: ws
-  server: 162.159.153.66
-  port: 443
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  servername: dsd.ylks.us.kg
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  ws-opts:
-    headers:
-      Host: dsd.ylks.us.kg
-    path: /?ed=2560
-- name: 美国 034
-  type: vless
-  network: ws
-  server: 130.250.137.81
-  port: 443
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  servername: dsd.ylks.us.kg
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  ws-opts:
-    headers:
-      Host: dsd.ylks.us.kg
-    path: /?ed=2560
-- name: 加拿大 021
-  type: vless
-  network: ws
-  server: 162.159.152.47
-  port: 443
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  servername: dsd.ylks.us.kg
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  ws-opts:
-    headers:
-      Host: dsd.ylks.us.kg
-    path: /?ed=2560
-- name: 美国 035
-  type: vless
-  network: ws
-  server: 130.250.137.94
-  port: 443
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  servername: dsd.ylks.us.kg
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  ws-opts:
-    headers:
-      Host: dsd.ylks.us.kg
-    path: /?ed=2560
-- name: 美国 036
-  type: vless
-  network: ws
-  server: 192.200.160.3
-  port: 443
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  servername: dsd.ylks.us.kg
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  ws-opts:
-    headers:
-      Host: dsd.ylks.us.kg
-    path: /?ed=2560
-- name: 南非 001
-  type: vless
-  network: ws
-  server: 160.123.255.41
-  port: 443
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  servername: dsd.ylks.us.kg
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  ws-opts:
-    headers:
-      Host: dsd.ylks.us.kg
-    path: /?ed=2560
-- name: 美国 037
-  type: vless
-  network: ws
-  server: 198.62.62.254
-  port: 443
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  servername: dsd.ylks.us.kg
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  ws-opts:
-    headers:
-      Host: dsd.ylks.us.kg
-    path: /?ed=2560
-- name: 美国 038
-  type: vless
-  network: ws
-  server: 47.88.24.237
-  port: 443
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  servername: dsd.ylks.us.kg
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  ws-opts:
-    headers:
-      Host: dsd.ylks.us.kg
-    path: /?ed=2560
-- name: 加拿大 022
-  type: vless
-  network: ws
-  server: 162.159.152.173
-  port: 443
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  servername: dsd.ylks.us.kg
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  ws-opts:
-    headers:
-      Host: dsd.ylks.us.kg
-    path: /?ed=2560
-- name: 美国 039
-  type: vless
-  network: ws
-  server: 206.238.236.101
-  port: 443
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  servername: dsd.ylks.us.kg
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  ws-opts:
-    headers:
-      Host: dsd.ylks.us.kg
-    path: /?ed=2560
-- name: 奥地利 001
-  type: vless
-  network: ws
-  server: 212.183.88.97
-  port: 443
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  servername: dsd.ylks.us.kg
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  ws-opts:
-    headers:
-      Host: dsd.ylks.us.kg
-    path: /?ed=2560
-- name: 美国 040
-  type: vless
-  network: ws
-  server: 63.141.128.102
-  port: 443
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  servername: dsd.ylks.us.kg
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  ws-opts:
-    headers:
-      Host: dsd.ylks.us.kg
-    path: /?ed=2560
-- name: 美国 041
-  type: vless
-  network: ws
-  server: 69.84.182.70
-  port: 443
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  servername: dsd.ylks.us.kg
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  ws-opts:
-    headers:
-      Host: dsd.ylks.us.kg
-    path: /?ed=2560
-- name: 加拿大 023
-  type: vless
-  network: ws
-  server: 162.159.153.34
-  port: 443
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  servername: dsd.ylks.us.kg
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  ws-opts:
-    headers:
-      Host: dsd.ylks.us.kg
-    path: /?ed=2560
-- name: 加拿大 024
-  type: vless
-  network: ws
-  server: 162.159.153.117
-  port: 443
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  servername: dsd.ylks.us.kg
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  ws-opts:
-    headers:
-      Host: dsd.ylks.us.kg
-    path: /?ed=2560
-- name: 加拿大 025
-  type: vless
-  network: ws
-  server: 162.159.153.192
-  port: 443
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  servername: dsd.ylks.us.kg
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  ws-opts:
-    headers:
-      Host: dsd.ylks.us.kg
-    path: /?ed=2560
-- name: 加拿大 026
-  type: vless
-  network: ws
-  server: 162.159.152.177
-  port: 443
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  servername: dsd.ylks.us.kg
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  ws-opts:
-    headers:
-      Host: dsd.ylks.us.kg
-    path: /?ed=2560
 - name: 加拿大 027
   type: vless
   network: ws
@@ -1284,160 +494,6 @@ proxies:
     headers:
       Host: a.mifeng.us.kg
     path: /telegram-_-_-_-_-__-free_shekan-_-_-_-/?ed=2048
-- name: 加拿大 028
-  type: vless
-  network: ws
-  server: 162.159.153.193
-  port: 443
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  servername: dsd.ylks.us.kg
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  ws-opts:
-    headers:
-      Host: dsd.ylks.us.kg
-    path: /?ed=2560
-- name: 美国 042
-  type: vless
-  network: ws
-  server: 160.79.105.109
-  port: 443
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  servername: dsd.ylks.us.kg
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  ws-opts:
-    headers:
-      Host: dsd.ylks.us.kg
-    path: /?ed=2560
-- name: 加拿大 029
-  type: vless
-  network: ws
-  server: 162.159.152.183
-  port: 443
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  servername: dsd.ylks.us.kg
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  ws-opts:
-    headers:
-      Host: dsd.ylks.us.kg
-    path: /?ed=2560
-- name: 美国 043
-  type: vless
-  network: ws
-  server: 170.39.66.155
-  port: 443
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  servername: dsd.ylks.us.kg
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  ws-opts:
-    headers:
-      Host: dsd.ylks.us.kg
-    path: /?ed=2560
-- name: 美国 044
-  type: vless
-  network: ws
-  server: 198.62.62.75
-  port: 443
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  servername: dsd.ylks.us.kg
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  ws-opts:
-    headers:
-      Host: dsd.ylks.us.kg
-    path: /?ed=2560
-- name: 加拿大 030
-  type: vless
-  network: ws
-  server: 104.18.176.26
-  port: 443
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  servername: dsd.ylks.us.kg
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  ws-opts:
-    headers:
-      Host: dsd.ylks.us.kg
-    path: /?ed=2560
-- name: 美国 045
-  type: vless
-  network: ws
-  server: 91.149.239.238
-  port: 443
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  servername: dsd.ylks.us.kg
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  ws-opts:
-    headers:
-      Host: dsd.ylks.us.kg
-    path: /?ed=2560
-- name: 加拿大 031
-  type: vless
-  network: ws
-  server: 162.159.153.135
-  port: 443
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  servername: dsd.ylks.us.kg
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  ws-opts:
-    headers:
-      Host: dsd.ylks.us.kg
-    path: /?ed=2560
-- name: 美国 046
-  type: vless
-  network: ws
-  server: 160.79.105.124
-  port: 443
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  servername: dsd.ylks.us.kg
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  ws-opts:
-    headers:
-      Host: dsd.ylks.us.kg
-    path: /?ed=2560
-- name: 加拿大 032
-  type: vless
-  network: ws
-  server: 162.159.152.101
-  port: 443
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  servername: dsd.ylks.us.kg
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  ws-opts:
-    headers:
-      Host: dsd.ylks.us.kg
-    path: /?ed=2560
-- name: 加拿大 033
-  type: vless
-  network: ws
-  server: 162.159.152.50
-  port: 443
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  servername: dsd.ylks.us.kg
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  ws-opts:
-    headers:
-      Host: dsd.ylks.us.kg
-    path: /?ed=2560
 - name: 加拿大 034
   type: vmess
   network: ws
@@ -1451,20 +507,6 @@ proxies:
     headers:
       Host: 100-1-101-250.s1.cn-db.top
     path: /dabai.in172.67.97.168
-- name: 加拿大 035
-  type: vless
-  network: ws
-  server: 162.159.152.182
-  port: 443
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  servername: dsd.ylks.us.kg
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  ws-opts:
-    headers:
-      Host: dsd.ylks.us.kg
-    path: /?ed=2560
 - name: 美国 047
   type: vmess
   network: ws
@@ -1478,118 +520,6 @@ proxies:
     headers:
       Host: 100-233-189-231.s2.db-link02.top
     path: /dabai.in104.24.56.123
-- name: 美国 048
-  type: vless
-  network: ws
-  server: 160.79.105.242
-  port: 443
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  servername: dsd.ylks.us.kg
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  ws-opts:
-    headers:
-      Host: dsd.ylks.us.kg
-    path: /?ed=2560
-- name: 美国 049
-  type: vless
-  network: ws
-  server: 198.62.62.9
-  port: 443
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  servername: dsd.ylks.us.kg
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  ws-opts:
-    headers:
-      Host: dsd.ylks.us.kg
-    path: /?ed=2560
-- name: 美国 050
-  type: vless
-  network: ws
-  server: 129.153.199.107
-  port: 9710
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  servername: dsd.ylks.us.kg
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  ws-opts:
-    headers:
-      Host: dsd.ylks.us.kg
-    path: /?ed=2560
-- name: 美国 051
-  type: vless
-  network: ws
-  server: 141.148.164.242
-  port: 2053
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  servername: dsd.ylks.us.kg
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  ws-opts:
-    headers:
-      Host: dsd.ylks.us.kg
-    path: /?ed=2560
-- name: 加拿大 036
-  type: vmess
-  network: ws
-  server: vip4.pmy666.xyz
-  port: 8080
-  uuid: 9cebe2dc-4cfd-4aa3-8392-91e1909eb76d
-  skip-cert-verify: true
-  tls: false
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: doyg.pmy666.xyz
-    path: /?ed=2048
-- name: 韩国 003
-  type: vless
-  network: ws
-  server: 193.122.115.67
-  port: 4434
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  servername: dsd.ylks.us.kg
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  ws-opts:
-    headers:
-      Host: dsd.ylks.us.kg
-    path: /?ed=2560
-- name: 美国 052
-  type: vless
-  network: ws
-  server: 144.24.20.92
-  port: 8443
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  servername: dsd.ylks.us.kg
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  ws-opts:
-    headers:
-      Host: dsd.ylks.us.kg
-    path: /?ed=2560
-- name: 美国 053
-  type: vless
-  network: ws
-  server: 52.32.90.142
-  port: 80
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  servername: dsd.ylks.us.kg
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  ws-opts:
-    headers:
-      Host: dsd.ylks.us.kg
-    path: /?ed=2560
 - name: 南非 002
   type: vless
   network: ws
@@ -1602,19 +532,6 @@ proxies:
     headers:
       Host: uxe.vs2024.us.kg
     path: / uxe.vs2024.us.kg
-- name: 日本 003
-  type: trojan
-  network: ws
-  server: 48.210.68.216
-  port: 443
-  password: SSorg
-  skip-cert-verify: true
-  udp: true
-  sni: sstjj.esslh.filegear-sg.me
-  ws-opts:
-    headers:
-      Host: sstjj.esslh.filegear-sg.me
-    path: /?ed=2560&proxyip=ts.hpc.tw
 - name: 韩国 004
   type: trojan
   network: ws
@@ -1654,6 +571,1056 @@ proxies:
     headers:
       Host: sstjj.esslh.filegear-sg.me
     path: /?ed=2560&proxyip=ts.hpc.tw
+- name: 日本 001
+  type: vmess
+  network: ws
+  server: tky1.sdwan.day
+  port: 443
+  uuid: fade2b35-7872-442e-a54e-6ccf9b970476
+  skip-cert-verify: false
+  tls: true
+  tfo: false
+  alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  ws-opts:
+    headers:
+      Host: tky1.sdwan.day
+    path: /name
+- name: 美国 002
+  type: vmess
+  network: ws
+  server: jp4.sdwan.day
+  port: 4431
+  uuid: fade2b35-7872-442e-a54e-6ccf9b970476
+  skip-cert-verify: false
+  tls: true
+  tfo: false
+  alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  ws-opts:
+    headers:
+      Host: jp4.sdwan.day
+    path: /stream
+- name: 美国 003
+  type: vmess
+  network: ws
+  server: 104.17.221.248
+  port: 2052
+  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
+  servername: 100-174-237-7.s3.db-link01.top
+  skip-cert-verify: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: 100-174-237-7.s3.db-link01.top
+    path: /dabai.in172.64.15.161
+- name: 美国 004
+  type: vmess
+  network: ws
+  server: 104.17.213.241
+  port: 2052
+  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
+  servername: 100-194-255-32.s3.db-link01.top
+  skip-cert-verify: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: 100-194-255-32.s3.db-link01.top
+    path: /dabai.in172.67.18.127
+- name: 加拿大 001
+  type: vmess
+  network: ws
+  server: 104.16.155.10
+  port: 2052
+  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
+  servername: 100-41-36-35.s2.db-link01.top
+  skip-cert-verify: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: 100-41-36-35.s2.db-link01.top
+    path: /dabai.in172.67.71.198
+- name: 加拿大 002
+  type: vmess
+  network: ws
+  server: afrhms16v.bestxray.buzz
+  port: 443
+  uuid: f584de15-2034-4170-a723-f48c2bae5e0f
+  servername: afrhms16v.bestxray.buzz
+  skip-cert-verify: true
+  tls: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: afrhms16v.bestxray.buzz
+    path: /linkws
+- name: 美国 005
+  type: vmess
+  network: ws
+  server: 104.17.221.248
+  port: 2095
+  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
+  servername: 100-206-104-218.s1.db-link01.top
+  skip-cert-verify: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: 100-206-104-218.s1.db-link01.top
+    path: /dabai.in172.67.93.174
+- name: 美国 012
+  type: vmess
+  network: ws
+  server: 104.17.213.241
+  port: 2095
+  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
+  servername: 100-206-104-218.s1.db-link01.top
+  skip-cert-verify: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: 100-206-104-218.s1.db-link01.top
+    path: /dabai.in172.67.93.174
+- name: 乌克兰 001
+  type: trojan
+  network: ws
+  server: 89.116.180.179
+  port: 443
+  password: 56e1f11c-1217-46ab-b127-6afbc23bafba
+  skip-cert-verify: true
+  udp: true
+  sni: p6us4.pqjc.buzz
+  ws-opts:
+    headers:
+      Host: p6us4.pqjc.buzz
+    path: /pq/us4
+- name: 美国 013
+  type: trojan
+  network: ws
+  server: 89.116.161.133
+  port: 443
+  password: 56e1f11c-1217-46ab-b127-6afbc23bafba
+  skip-cert-verify: true
+  udp: true
+  sni: p1us1.pqjc.buzz
+  ws-opts:
+    headers:
+      Host: p1us1.pqjc.buzz
+    path: /pq/us1
+- name: 德国 001
+  type: trojan
+  network: tcp
+  server: 5.104.108.120
+  port: 443
+  password: 56e1f11c-1217-46ab-b127-6afbc23bafba
+  skip-cert-verify: true
+  udp: true
+  sni: 20-24-33-134.nhost.00cdn.com
+- name: 加拿大 004
+  type: vmess
+  network: ws
+  server: 104.17.2.183
+  port: 80
+  uuid: f256a3ae-0f85-4a1d-d0cd-2d0b4b73f4f1
+  skip-cert-verify: true
+  tls: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: v3ra3do.wakeuptimerap.shop
+    path: /
+- name: 美国 014
+  type: trojan
+  network: ws
+  server: 167.68.5.183
+  port: 443
+  password: 56e1f11c-1217-46ab-b127-6afbc23bafba
+  skip-cert-verify: true
+  udp: true
+  sni: 6us3.pqjc.buzz
+  ws-opts:
+    headers:
+      Host: 6us3.pqjc.buzz
+    path: /pq/us3
+- name: 加拿大 005
+  type: vmess
+  network: ws
+  server: 104.21.32.215
+  port: 8880
+  uuid: ce9aadc8-8c6e-4867-d247-9a84b469ac27
+  skip-cert-verify: true
+  tls: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: a3.bcbot.in
+    path: /
+- name: 美国 015
+  type: vmess
+  network: ws
+  server: 142.171.134.126
+  port: 37007
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  skip-cert-verify: false
+  tls: true
+  alterId: 64
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: www.27006254.xyz
+    path: /
+- name: 美国 016
+  type: vmess
+  network: ws
+  server: 38.12.73.89
+  port: 37009
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  skip-cert-verify: false
+  tls: true
+  alterId: 64
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: www.82326368.xyz
+    path: /
+- name: 美国 018
+  type: vmess
+  network: ws
+  server: 38.11.216.165
+  port: 37004
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  skip-cert-verify: false
+  tls: true
+  alterId: 64
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: www.93976091.xyz
+    path: /
+- name: 加拿大 006
+  type: vmess
+  network: ws
+  server: s4.db-link01.top
+  port: 8880
+  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
+  skip-cert-verify: false
+  tls: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: 100-44-229-26.s4.db-link01.top
+    path: /
+- name: 美国 019
+  type: vmess
+  network: ws
+  server: 38.38.130.117
+  port: 37008
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  skip-cert-verify: false
+  tls: true
+  alterId: 64
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: www.42687098.xyz
+    path: /
+- name: 美国 021
+  type: vmess
+  network: ws
+  server: s2.db-link02.top
+  port: 2095
+  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
+  skip-cert-verify: false
+  tls: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: 100-209-47-141.s2.db-link02.top
+    path: /
+- name: 美国 022
+  type: vmess
+  network: ws
+  server: 142.171.24.42
+  port: 31005
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  skip-cert-verify: false
+  tls: true
+  alterId: 64
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: www.77632849.xyz
+    path: /
+- name: 美国 023
+  type: vmess
+  network: ws
+  server: 192.74.242.242
+  port: 38003
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  skip-cert-verify: false
+  tls: true
+  alterId: 64
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: www.62813234.xyz
+    path: /
+- name: 加拿大 007
+  type: vmess
+  network: ws
+  server: s4.db-link01.top
+  port: 2095
+  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
+  skip-cert-verify: false
+  tls: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: 100-114-107-221.s4.db-link01.top
+    path: /
+- name: 加拿大 008
+  type: vmess
+  network: ws
+  server: s2.db-link01.top
+  port: 8080
+  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
+  skip-cert-verify: false
+  tls: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: 100-54-182-233.s2.db-link01.top
+    path: /
+- name: 加拿大 010
+  type: vmess
+  network: ws
+  server: s5.db-link01.top
+  port: 2082
+  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
+  skip-cert-verify: false
+  tls: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: 100-241-177-44.s5.db-link01.top
+    path: /
+- name: 加拿大 011
+  type: vmess
+  network: ws
+  server: s3.db-link01.top
+  port: 8880
+  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
+  skip-cert-verify: false
+  tls: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: 100-171-48-108.s3.db-link01.top
+    path: /
+- name: 加拿大 012
+  type: vmess
+  network: ws
+  server: s5.db-link01.top
+  port: 2052
+  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
+  skip-cert-verify: false
+  tls: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: 100-62-189-118.s5.db-link01.top
+    path: /
+- name: 加拿大 013
+  type: vmess
+  network: ws
+  server: s4.db-link02.top
+  port: 2052
+  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
+  skip-cert-verify: false
+  tls: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: 100-85-3-146.s4.db-link02.top
+    path: /
+- name: 美国 027
+  type: vmess
+  network: ws
+  server: 199.180.103.23
+  port: 37007
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  skip-cert-verify: false
+  tls: true
+  alterId: 64
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: www.35743578.xyz
+    path: /
+- name: 加拿大 014
+  type: vmess
+  network: ws
+  server: s3.cn-db.top
+  port: 8080
+  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
+  skip-cert-verify: false
+  tls: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: 100-119-215-158.s3.cn-db.top
+    path: /
+- name: 美国 033
+  type: vmess
+  network: ws
+  server: 38.33.49.99
+  port: 37002
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  skip-cert-verify: false
+  tls: true
+  alterId: 64
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: www.43499599.xyz
+    path: /
+- name: 德国 002
+  type: vmess
+  network: ws
+  server: 57.129.24.124
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+  tls: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: aveiror.com
+    path: /linkvws
+- name: 加拿大 015
+  type: vmess
+  network: ws
+  server: vv.orangelightyo.us.kg
+  port: 80
+  uuid: 6a4bf596-cb12-4a2a-951c-f06e4aca9a59
+  skip-cert-verify: true
+  tls: false
+  udp: true
+  tfo: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: vv.orangelightyo.us.kg
+    path: /
+- name: 加拿大 016
+  type: vmess
+  network: ws
+  server: s5.db-link02.top
+  port: 2052
+  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
+  skip-cert-verify: true
+  tls: false
+  udp: true
+  tfo: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: 100-196-90-59.s5.db-link02.top
+    path: /dabai.in172.64.19.172
+- name: 加拿大 017
+  type: vmess
+  network: ws
+  server: jgw350m.pai50288.uk
+  port: 443
+  uuid: 3686f557-f0d7-4e9d-d281-b740f8f41393
+  skip-cert-verify: true
+  tls: true
+  udp: true
+  tfo: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: jgw350m.pai50288.uk
+    path: /3686f557
+- name: 加拿大 018
+  type: vmess
+  network: ws
+  server: s1.db-link02.top
+  port: 8080
+  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
+  skip-cert-verify: true
+  tls: false
+  udp: true
+  tfo: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: 100-213-61-102.s1.db-link02.top
+    path: /dabai.in104.21.151.202
+- name: 美国 034
+  type: vless
+  network: ws
+  server: 167.82.0.47
+  port: 80
+  uuid: 253ef561-9e57-4336-befd-878ddd30df01
+  servername: teleirani.ir
+  skip-cert-verify: false
+  tls: false
+  ws-opts:
+    headers:
+      Host: teleirani.ir
+    path: /vless-ws/
+- name: 加拿大 019
+  type: vless
+  network: ws
+  server: 198.41.216.118
+  port: 80
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  servername: a.mifeng.us.kg
+  skip-cert-verify: false
+  tls: false
+  ws-opts:
+    headers:
+      Host: a.mifeng.us.kg
+    path: /telegram-_-_-_-_-__-free_shekan-_-_-_-/?ed=2048
+- name: 韩国 002
+  type: vless
+  network: ws
+  server: 27.116.108.61
+  port: 30012
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  servername: uxe.vs2024.us.kg
+  tls: true
+  ws-opts:
+    headers:
+      Host: uxe.vs2024.us.kg
+    path: /?ed=2560
+- name: 美国 035
+  type: vless
+  network: ws
+  server: 167.82.66.165
+  port: 80
+  uuid: 253ef561-9e57-4336-befd-878ddd30df01
+  servername: teleirani.ir
+  skip-cert-verify: false
+  tls: false
+  ws-opts:
+    headers:
+      Host: teleirani.ir
+    path: /vless-ws/
+- name: 美国 036
+  type: trojan
+  network: tcp
+  server: 6afce49908aacb7a6131d234fb03a9bd.v1.cac.node-is.green
+  port: 47489
+  password: 3e5cb4f5-8dcf-492a-b4c8-06bc06f158bb
+  skip-cert-verify: true
+  udp: true
+  sni: hk12.bilibili.com
+- name: 韩国 003
+  type: vless
+  network: ws
+  server: 114.30.225.88
+  port: 30030
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  servername: uxe.vs2024.us.kg
+  tls: true
+  ws-opts:
+    headers:
+      Host: uxe.vs2024.us.kg
+    path: /uxe.vs2024.us.kg
+- name: 美国 037
+  type: vless
+  network: ws
+  server: 63.141.128.172
+  port: 443
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  servername: uxe.vs2024.us.kg
+  skip-cert-verify: true
+  tls: true
+  udp: true
+  ws-opts:
+    headers:
+      Host: uxe.vs2024.us.kg
+    path: /?ed=2560
+- name: 加拿大 020
+  type: vless
+  network: ws
+  server: 104.17.152.30
+  port: 443
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  servername: uxe.vs2024.us.kg
+  skip-cert-verify: true
+  tls: true
+  udp: true
+  ws-opts:
+    headers:
+      Host: uxe.vs2024.us.kg
+    path: /?ed=2560
+- name: 俄罗斯 001
+  type: vless
+  network: ws
+  server: 45.67.215.118
+  port: 443
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  servername: uxe.vs2024.us.kg
+  tls: true
+  ws-opts:
+    headers:
+      Host: uxe.vs2024.us.kg
+    path: /?ed=2560
+- name: 加拿大 021
+  type: vless
+  network: ws
+  server: 162.159.153.143
+  port: 443
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  servername: uxe.vs2024.us.kg
+  skip-cert-verify: true
+  tls: true
+  udp: true
+  ws-opts:
+    headers:
+      Host: uxe.vs2024.us.kg
+    path: /?ed=2560
+- name: 加拿大 022
+  type: vless
+  network: ws
+  server: 104.17.126.252
+  port: 443
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  servername: uxe.vs2024.us.kg
+  skip-cert-verify: true
+  tls: true
+  udp: true
+  ws-opts:
+    headers:
+      Host: uxe.vs2024.us.kg
+    path: /?ed=2560
+- name: 美国 038
+  type: vless
+  network: ws
+  server: 63.141.128.122
+  port: 443
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  servername: uxe.vs2024.us.kg
+  tls: true
+  ws-opts:
+    headers:
+      Host: uxe.vs2024.us.kg
+    path: /?ed=2560
+- name: 美国 039
+  type: vless
+  network: ws
+  server: 192.200.160.251
+  port: 443
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  servername: uxe.vs2024.us.kg
+  tls: true
+  ws-opts:
+    headers:
+      Host: uxe.vs2024.us.kg
+    path: /?ed=2560
+- name: 加拿大 023
+  type: vless
+  network: ws
+  server: 104.16.158.26
+  port: 443
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  servername: uxe.vs2024.us.kg
+  skip-cert-verify: true
+  tls: true
+  udp: true
+  ws-opts:
+    headers:
+      Host: uxe.vs2024.us.kg
+    path: /?ed=2560
+- name: 法国 001
+  type: vless
+  network: ws
+  server: 185.16.110.107
+  port: 443
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  servername: uxe.vs2024.us.kg
+  tls: true
+  ws-opts:
+    headers:
+      Host: uxe.vs2024.us.kg
+    path: /?ed=2560
+- name: 加拿大 024
+  type: vless
+  network: ws
+  server: 104.19.144.210
+  port: 443
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  servername: uxe.vs2024.us.kg
+  skip-cert-verify: true
+  tls: true
+  udp: true
+  ws-opts:
+    headers:
+      Host: uxe.vs2024.us.kg
+    path: /?ed=2560
+- name: 加拿大 025
+  type: vless
+  network: ws
+  server: 104.16.148.109
+  port: 443
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  servername: uxe.vs2024.us.kg
+  skip-cert-verify: true
+  tls: true
+  udp: true
+  ws-opts:
+    headers:
+      Host: uxe.vs2024.us.kg
+    path: /?ed=2560
+- name: 美国 040
+  type: vless
+  network: ws
+  server: 63.141.128.177
+  port: 443
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  servername: uxe.vs2024.us.kg
+  tls: true
+  ws-opts:
+    headers:
+      Host: uxe.vs2024.us.kg
+    path: /?ed=2560
+- name: 加拿大 026
+  type: vless
+  network: ws
+  server: 104.19.151.74
+  port: 443
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  servername: uxe.vs2024.us.kg
+  skip-cert-verify: true
+  tls: true
+  udp: true
+  ws-opts:
+    headers:
+      Host: uxe.vs2024.us.kg
+    path: /?ed=2560
+- name: 美国 041
+  type: vless
+  network: ws
+  server: 192.9.154.127
+  port: 443
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  servername: uxe.vs2024.us.kg
+  skip-cert-verify: true
+  tls: true
+  udp: true
+  ws-opts:
+    headers:
+      Host: uxe.vs2024.us.kg
+    path: /?ed=2560
+- name: 加拿大 028
+  type: vless
+  network: ws
+  server: 162.159.152.197
+  port: 443
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  servername: uxe.vs2024.us.kg
+  skip-cert-verify: true
+  tls: true
+  udp: true
+  ws-opts:
+    headers:
+      Host: uxe.vs2024.us.kg
+    path: /?ed=2560
+- name: 加拿大 029
+  type: vless
+  network: ws
+  server: 104.16.207.176
+  port: 443
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  servername: uxe.vs2024.us.kg
+  skip-cert-verify: true
+  tls: true
+  udp: true
+  ws-opts:
+    headers:
+      Host: uxe.vs2024.us.kg
+    path: /?ed=2560
+- name: 美国 042
+  type: vless
+  network: ws
+  server: 192.0.54.28
+  port: 443
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  servername: uxe.vs2024.us.kg
+  tls: true
+  ws-opts:
+    headers:
+      Host: uxe.vs2024.us.kg
+    path: /?ed=2560
+- name: 加拿大 030
+  type: vless
+  network: ws
+  server: 104.16.147.220
+  port: 443
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  servername: uxe.vs2024.us.kg
+  skip-cert-verify: true
+  tls: true
+  udp: true
+  ws-opts:
+    headers:
+      Host: uxe.vs2024.us.kg
+    path: /?ed=2560
+- name: 奥地利 001
+  type: vless
+  network: ws
+  server: 212.183.88.50
+  port: 443
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  servername: uxe.vs2024.us.kg
+  tls: true
+  ws-opts:
+    headers:
+      Host: uxe.vs2024.us.kg
+    path: /?ed=2560
+- name: 美国 043
+  type: vless
+  network: ws
+  server: 63.141.128.208
+  port: 443
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  servername: uxe.vs2024.us.kg
+  tls: true
+  ws-opts:
+    headers:
+      Host: uxe.vs2024.us.kg
+    path: /?ed=2560
+- name: 奥地利 002
+  type: vless
+  network: ws
+  server: 212.183.88.246
+  port: 443
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  servername: uxe.vs2024.us.kg
+  skip-cert-verify: true
+  tls: true
+  udp: true
+  ws-opts:
+    headers:
+      Host: uxe.vs2024.us.kg
+    path: /?ed=2560
+- name: 加拿大 031
+  type: vless
+  network: ws
+  server: 162.159.152.21
+  port: 443
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  servername: uxe.vs2024.us.kg
+  skip-cert-verify: true
+  tls: true
+  udp: true
+  ws-opts:
+    headers:
+      Host: uxe.vs2024.us.kg
+    path: /?ed=2560
+- name: 美国 044
+  type: vless
+  network: ws
+  server: 206.238.236.170
+  port: 443
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  servername: uxe.vs2024.us.kg
+  tls: true
+  ws-opts:
+    headers:
+      Host: uxe.vs2024.us.kg
+    path: /?ed=2560
+- name: 加拿大 032
+  type: vless
+  network: ws
+  server: 162.159.153.62
+  port: 443
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  servername: uxe.vs2024.us.kg
+  skip-cert-verify: true
+  tls: true
+  udp: true
+  ws-opts:
+    headers:
+      Host: uxe.vs2024.us.kg
+    path: /?ed=2560
+- name: 美国 045
+  type: vless
+  server: 107.172.157.148
+  port: 30944
+  uuid: 819664e1-26f2-49db-8025-b18adee8fd2c
+  skip-cert-verify: false
+  tls: false
+- name: 加拿大 033
+  type: vless
+  network: ws
+  server: 172.64.35.66
+  port: 443
+  uuid: c797aa8a-c03d-48da-9ad4-c9774b14bed2
+  servername: ssvvl.esslh.filegear-sg.me
+  skip-cert-verify: true
+  tls: true
+  udp: true
+  ws-opts:
+    headers:
+      Host: ssvvl.esslh.filegear-sg.me
+    path: /?ed=2560
+- name: 俄罗斯 002
+  type: vless
+  network: ws
+  server: 45.67.215.131
+  port: 443
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  servername: uxe.vs2024.us.kg
+  skip-cert-verify: true
+  tls: true
+  udp: true
+  ws-opts:
+    headers:
+      Host: uxe.vs2024.us.kg
+    path: /?ed=2560
+- name: 俄罗斯 003
+  type: vless
+  network: ws
+  server: 45.67.215.109
+  port: 443
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  servername: uxe.vs2024.us.kg
+  tls: true
+  ws-opts:
+    headers:
+      Host: uxe.vs2024.us.kg
+    path: /?ed=2560
+- name: 俄罗斯 004
+  type: vless
+  network: ws
+  server: 45.67.215.212
+  port: 443
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  servername: uxe.vs2024.us.kg
+  tls: true
+  ws-opts:
+    headers:
+      Host: uxe.vs2024.us.kg
+    path: /?ed=2560
+- name: 加拿大 035
+  type: vless
+  network: ws
+  server: 162.159.153.178
+  port: 443
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  servername: uxe.vs2024.us.kg
+  skip-cert-verify: true
+  tls: true
+  udp: true
+  ws-opts:
+    headers:
+      Host: uxe.vs2024.us.kg
+    path: /?ed=2560
+- name: 加拿大 036
+  type: vless
+  network: ws
+  server: 162.159.152.179
+  port: 443
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  servername: uxe.vs2024.us.kg
+  skip-cert-verify: true
+  tls: true
+  udp: true
+  ws-opts:
+    headers:
+      Host: uxe.vs2024.us.kg
+    path: /?ed=2560
+- name: 加拿大 039
+  type: vless
+  network: ws
+  server: 104.16.204.117
+  port: 443
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  servername: uxe.vs2024.us.kg
+  skip-cert-verify: true
+  tls: true
+  udp: true
+  ws-opts:
+    headers:
+      Host: uxe.vs2024.us.kg
+    path: /?ed=2560
+- name: 加拿大 040
+  type: vless
+  network: ws
+  server: 162.159.128.95
+  port: 2087
+  uuid: c797aa8a-c03d-48da-9ad4-c9774b14bed2
+  servername: ssvvl.esslh.filegear-sg.me
+  skip-cert-verify: true
+  tls: true
+  udp: true
+  ws-opts:
+    headers:
+      Host: ssvvl.esslh.filegear-sg.me
+    path: /?ed=2560
+- name: 加拿大 041
+  type: vless
+  network: ws
+  server: 104.16.198.136
+  port: 443
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  servername: uxe.vs2024.us.kg
+  skip-cert-verify: true
+  tls: true
+  udp: true
+  ws-opts:
+    headers:
+      Host: uxe.vs2024.us.kg
+    path: /?ed=2560
+- name: 美国 046
+  type: vmess
+  network: tcp
+  server: 142.171.71.114
+  port: 23654
+  uuid: c2ab4538-dfdc-4bd8-8ff5-28d00c80880f
+  skip-cert-verify: true
+  tls: false
+  alterId: 0
+  cipher: auto
+- name: 美国 048
+  type: vless
+  network: ws
+  server: 192.0.54.104
+  port: 443
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  servername: uxe.vs2024.us.kg
+  tls: true
+  ws-opts:
+    headers:
+      Host: uxe.vs2024.us.kg
+    path: /?ed=2560
 proxy-groups:
 - name: PROXY
   type: select
@@ -1665,116 +1632,117 @@ proxy-groups:
 - name: SELECT
   type: select
   proxies: &id001
-  - 美国 002
   - 德国 006
   - 伊朗 004
   - 伊朗 005
-  - 伊朗 006
   - 土耳其 002
   - 美国 001
-  - 加拿大 001
-  - 德国 001
-  - 加拿大 002
   - 加拿大 003
-  - 加拿大 004
-  - 加拿大 005
-  - 德国 002
-  - 美国 003
-  - 美国 004
-  - 美国 005
   - 美国 006
   - 美国 007
   - 美国 008
   - 美国 009
   - 美国 010
   - 美国 011
-  - 加拿大 006
-  - 加拿大 007
-  - 加拿大 008
   - 加拿大 009
-  - 加拿大 010
-  - 加拿大 011
-  - 加拿大 012
-  - 美国 012
-  - 美国 013
-  - 加拿大 013
-  - 加拿大 014
-  - 美国 014
-  - 美国 015
-  - 加拿大 015
-  - 加拿大 016
-  - 美国 016
-  - 加拿大 017
-  - 加拿大 018
   - 美国 017
-  - 美国 018
-  - 日本 001
-  - 美国 019
   - 美国 020
-  - 美国 021
-  - 美国 022
-  - 美国 023
   - 美国 024
   - 美国 025
   - 美国 026
-  - 美国 027
   - 日本 002
-  - 新加坡 001
   - 美国 028
   - 美国 029
   - 韩国 001
-  - 韩国 002
   - 新加坡 002
   - 美国 030
   - 美国 031
   - 美国 032
-  - 加拿大 019
-  - 美国 033
-  - 加拿大 020
-  - 美国 034
-  - 加拿大 021
-  - 美国 035
-  - 美国 036
-  - 南非 001
-  - 美国 037
-  - 美国 038
-  - 加拿大 022
-  - 美国 039
-  - 奥地利 001
-  - 美国 040
-  - 美国 041
-  - 加拿大 023
-  - 加拿大 024
-  - 加拿大 025
-  - 加拿大 026
   - 加拿大 027
-  - 加拿大 028
-  - 美国 042
-  - 加拿大 029
-  - 美国 043
-  - 美国 044
-  - 加拿大 030
-  - 美国 045
-  - 加拿大 031
-  - 美国 046
-  - 加拿大 032
-  - 加拿大 033
   - 加拿大 034
-  - 加拿大 035
   - 美国 047
-  - 美国 048
-  - 美国 049
-  - 美国 050
-  - 美国 051
-  - 加拿大 036
-  - 韩国 003
-  - 美国 052
-  - 美国 053
   - 南非 002
-  - 日本 003
   - 韩国 004
   - 加拿大 037
   - 加拿大 038
+  - 日本 001
+  - 美国 002
+  - 美国 003
+  - 美国 004
+  - 加拿大 001
+  - 加拿大 002
+  - 美国 005
+  - 美国 012
+  - 乌克兰 001
+  - 美国 013
+  - 德国 001
+  - 加拿大 004
+  - 美国 014
+  - 加拿大 005
+  - 美国 015
+  - 美国 016
+  - 美国 018
+  - 加拿大 006
+  - 美国 019
+  - 美国 021
+  - 美国 022
+  - 美国 023
+  - 加拿大 007
+  - 加拿大 008
+  - 加拿大 010
+  - 加拿大 011
+  - 加拿大 012
+  - 加拿大 013
+  - 美国 027
+  - 加拿大 014
+  - 美国 033
+  - 德国 002
+  - 加拿大 015
+  - 加拿大 016
+  - 加拿大 017
+  - 加拿大 018
+  - 美国 034
+  - 加拿大 019
+  - 韩国 002
+  - 美国 035
+  - 美国 036
+  - 韩国 003
+  - 美国 037
+  - 加拿大 020
+  - 俄罗斯 001
+  - 加拿大 021
+  - 加拿大 022
+  - 美国 038
+  - 美国 039
+  - 加拿大 023
+  - 法国 001
+  - 加拿大 024
+  - 加拿大 025
+  - 美国 040
+  - 加拿大 026
+  - 美国 041
+  - 加拿大 028
+  - 加拿大 029
+  - 美国 042
+  - 加拿大 030
+  - 奥地利 001
+  - 美国 043
+  - 奥地利 002
+  - 加拿大 031
+  - 美国 044
+  - 加拿大 032
+  - 美国 045
+  - 加拿大 033
+  - 俄罗斯 002
+  - 俄罗斯 003
+  - 俄罗斯 004
+  - 加拿大 035
+  - 加拿大 036
+  - 加拿大 039
+  - 加拿大 040
+  - 加拿大 041
+  - 美国 046
+  - 美国 048
 - name: LOAD-BALANCE
   type: load-balance
   url: https://cp.cloudflare.com/generate_204
