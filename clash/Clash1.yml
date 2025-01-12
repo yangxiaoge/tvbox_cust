@@ -1016,22 +1016,6 @@ proxies:
     headers:
       Host: aveiror.com
     path: /linkvws
-- name: 加拿大 015
-  type: vmess
-  network: ws
-  server: vv.orangelightyo.us.kg
-  port: 80
-  uuid: 6a4bf596-cb12-4a2a-951c-f06e4aca9a59
-  skip-cert-verify: true
-  tls: false
-  udp: true
-  tfo: false
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: vv.orangelightyo.us.kg
-    path: /
 - name: 加拿大 016
   type: vmess
   network: ws
@@ -1621,6 +1605,34 @@ proxies:
     headers:
       Host: uxe.vs2024.us.kg
     path: /?ed=2560
+- name: 加拿大 015
+  type: vmess
+  network: ws
+  server: 198.41.209.70
+  port: 2095
+  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
+  servername: 100-78-250-146.s4.cn-db.top
+  skip-cert-verify: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: 100-78-250-146.s4.cn-db.top
+    path: /dabai.in104.25.36.93
+- name: 加拿大 042
+  type: vmess
+  network: ws
+  server: 104.16.155.10
+  port: 8880
+  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
+  servername: 100-151-81-36.s4.db-link01.top
+  skip-cert-verify: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: 100-151-81-36.s4.db-link01.top
+    path: /dabai.in104.24.185.219
 proxy-groups:
 - name: PROXY
   type: select
@@ -1697,7 +1709,6 @@ proxy-groups:
   - 加拿大 014
   - 美国 033
   - 德国 002
-  - 加拿大 015
   - 加拿大 016
   - 加拿大 017
   - 加拿大 018
@@ -1743,6 +1754,8 @@ proxy-groups:
   - 加拿大 041
   - 美国 046
   - 美国 048
+  - 加拿大 015
+  - 加拿大 042
 - name: LOAD-BALANCE
   type: load-balance
   url: https://cp.cloudflare.com/generate_204
