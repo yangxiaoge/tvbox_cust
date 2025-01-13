@@ -1633,6 +1633,20 @@ proxies:
     headers:
       Host: 100-151-81-36.s4.db-link01.top
     path: /dabai.in104.24.185.219
+- name: 美国 049
+  type: vmess
+  network: ws
+  server: 104.17.221.248
+  port: 2082
+  uuid: 65c003b7-d0b5-3751-8e22-b959f46463bc
+  servername: 100-158-204-97.s3.db-link01.top
+  skip-cert-verify: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: 100-158-204-97.s3.db-link01.top
+    path: /dabai.in104.24.107.6
 proxy-groups:
 - name: PROXY
   type: select
@@ -1756,6 +1770,7 @@ proxy-groups:
   - 美国 048
   - 加拿大 015
   - 加拿大 042
+  - 美国 049
 - name: LOAD-BALANCE
   type: load-balance
   url: https://cp.cloudflare.com/generate_204
