@@ -1364,14 +1364,6 @@ proxies:
   cipher: auto
   ws-headers:
     Host: 185.189.58.195
-- name: 德国 003
-  type: vmess
-  network: tcp
-  server: 5.75.135.123
-  port: 80
-  uuid: 6c2cfb86-be44-4f40-984b-d3331bc984a5
-  alterId: 0
-  cipher: auto
 - name: 德国 004
   type: vless
   network: ws
@@ -1636,6 +1628,34 @@ proxies:
     headers:
       Host: lmn39.sbs
     path: /fflsws
+- name: 美国 079
+  type: vmess
+  network: ws
+  server: 104.17.213.241
+  port: 2086
+  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
+  servername: 100-171-104-238.s2.db-link02.top
+  skip-cert-verify: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: 100-171-104-238.s2.db-link02.top
+    path: /dabai.in172.64.43.14
+- name: 美国 080
+  type: vmess
+  network: ws
+  server: 104.19.48.236
+  port: 2086
+  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
+  servername: 100-171-104-238.s2.db-link02.top
+  skip-cert-verify: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: 100-171-104-238.s2.db-link02.top
+    path: /dabai.in172.64.43.14
 proxy-groups:
 - name: PROXY
   type: select
@@ -1742,7 +1762,6 @@ proxy-groups:
   - 美国 064
   - 美国 065
   - 德国 001
-  - 德国 003
   - 德国 004
   - 法国 001
   - 美国 066
@@ -1762,6 +1781,8 @@ proxy-groups:
   - 美国 077
   - 加拿大 002
   - 美国 078
+  - 美国 079
+  - 美国 080
 - name: LOAD-BALANCE
   type: load-balance
   url: https://cp.cloudflare.com/generate_204
