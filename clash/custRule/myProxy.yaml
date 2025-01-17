@@ -1,5 +1,7 @@
 payload:
   # 填写需要代理的域名规则 
+  # DOMAIN-SUFFIX: 用于匹配指定后缀的域名,适用于需要对某个域名下的所有子域名进行统一代理设置的场景
+  # DOMAIN: 用于匹配完整的域名,适用于只需要对特定的单个域名进行代理设置的情况
   # fdroid
   - DOMAIN,f-droid.org
 
@@ -8,11 +10,11 @@ payload:
   
   # 卡通农场商店	
   #- DOMAIN,game.haydaygame.com
-  - game.haydaygame.com
+  - DOMAIN,game.haydaygame.com
 
   # Google
   #- DOMAIN,dl.google.com
-  - dl.google.com
+  - DOMAIN,dl.google.com
 
   # jetbrains插件
   - DOMAIN,plugins.jetbrains.com
@@ -26,5 +28,3 @@ payload:
 
   # armconverter
   - DOMAIN,armconverter.com
-  
-
