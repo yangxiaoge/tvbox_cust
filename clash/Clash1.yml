@@ -1630,6 +1630,19 @@ proxies:
     headers:
       Host: uxg.vs2024.us.kg
     path: /?ed=2560
+- name: 澳大利亚 001
+  type: trojan
+  network: ws
+  server: 192.65.217.200
+  port: 443
+  password: b59ee60f-9fa4-4770-b6a7-288620147f60
+  skip-cert-verify: true
+  udp: true
+  sni: k6us1.yfjc.sbs
+  ws-opts:
+    headers:
+      Host: k6us1.yfjc.sbs
+    path: /yfjc/kus1
 proxy-groups:
 - name: PROXY
   type: select
@@ -1758,6 +1771,7 @@ proxy-groups:
   - 德国 002
   - 德国 003
   - 美国 085
+  - 澳大利亚 001
 - name: LOAD-BALANCE
   type: load-balance
   url: https://cp.cloudflare.com/generate_204
