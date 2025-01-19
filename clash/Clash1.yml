@@ -1643,6 +1643,20 @@ proxies:
     headers:
       Host: k6us1.yfjc.sbs
     path: /yfjc/kus1
+- name: 巴勒斯坦 001
+  type: vmess
+  network: ws
+  server: 82.213.5.50
+  port: 80
+  uuid: f21bcdb6-5dc6-4c4b-9a34-3b185f6747c4
+  skip-cert-verify: true
+  tls: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: tabyan205.serveftp.com
+    path: /
 proxy-groups:
 - name: PROXY
   type: select
@@ -1772,6 +1786,7 @@ proxy-groups:
   - 德国 003
   - 美国 085
   - 澳大利亚 001
+  - 巴勒斯坦 001
 - name: LOAD-BALANCE
   type: load-balance
   url: https://cp.cloudflare.com/generate_204
