@@ -587,20 +587,6 @@ proxies:
     headers:
       Host: edge.validbv3528.ir
     path: /
-- name: 加拿大 018
-  type: vless
-  network: ws
-  server: 104.19.57.183
-  port: 2096
-  uuid: 70186b61-319d-42f2-9807-7df9594aa385
-  servername: amedo.esslh.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  ws-opts:
-    headers:
-      Host: amedo.esslh.filegear-sg.me
-    path: /?ed=2560
 - name: 加拿大 020
   type: vless
   network: ws
@@ -655,19 +641,6 @@ proxies:
   type: trojan
   network: ws
   server: 104.19.107.190
-  port: 2096
-  password: Aimer
-  skip-cert-verify: true
-  udp: true
-  sni: ameqo.esslh.filegear-sg.me
-  ws-opts:
-    headers:
-      Host: ameqo.esslh.filegear-sg.me
-    path: /?ed=2560
-- name: 加拿大 030
-  type: trojan
-  network: ws
-  server: 104.19.57.183
   port: 2096
   password: Aimer
   skip-cert-verify: true
@@ -1212,82 +1185,6 @@ proxies:
     method: GET
     path:
     - /
-- name: 美国 079
-  type: vmess
-  network: ws
-  server: 104.17.213.241
-  port: 2086
-  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
-  servername: 100-171-104-238.s2.db-link02.top
-  skip-cert-verify: true
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: 100-171-104-238.s2.db-link02.top
-    path: /dabai.in172.64.43.14
-- name: 美国 080
-  type: vmess
-  network: ws
-  server: 104.19.48.236
-  port: 2086
-  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
-  servername: 100-171-104-238.s2.db-link02.top
-  skip-cert-verify: true
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: 100-171-104-238.s2.db-link02.top
-    path: /dabai.in172.64.43.14
-- name: 美国 001
-  type: vmess
-  network: ws
-  server: hk-bmg.cowvpn.org
-  port: 443
-  uuid: 11a805f2-41a7-4cd8-8406-0470c3cde0d3
-  servername: hk-bmgcf.cowvpn.org
-  skip-cert-verify: false
-  tls: true
-  tfo: false
-  alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  ws-opts:
-    headers:
-      Host: hk-bmgcf.cowvpn.org
-    path: /cctv13/vmess_hk-bmgcf
-- name: 美国 002
-  type: vmess
-  network: ws
-  server: sg2.cowvpn.org
-  port: 443
-  uuid: 11a805f2-41a7-4cd8-8406-0470c3cde0d3
-  servername: sg2cf.cowvpn.org
-  skip-cert-verify: false
-  tls: true
-  tfo: false
-  alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  ws-opts:
-    headers:
-      Host: sg2cf.cowvpn.org
-    path: /cctv13/vmess_sg2cf
-- name: 美国 003
-  type: vless
-  network: ws
-  server: 162.159.153.212
-  port: 443
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  servername: uxg.vs2024.us.kg
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  ws-opts:
-    headers:
-      Host: uxg.vs2024.us.kg
-    path: /?ed=2560
 - name: 美国 043
   type: vless
   network: ws
@@ -1300,54 +1197,6 @@ proxies:
     headers:
       Host: a.mifeng.us.kg
     path: /telegram-_-_-_-_-__-free_shekan-_-_-_-/?ed
-- name: 南非 001
-  type: vless
-  network: ws
-  server: 160.123.255.0
-  port: 443
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  servername: dse.bgm2024.us.kg
-  tls: true
-  ws-opts:
-    headers:
-      Host: dse.bgm2024.us.kg
-    path: /?ed=2560
-- name: 美国 059
-  type: vless
-  network: ws
-  server: 198.62.62.137
-  port: 443
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  servername: dse.bgm2024.us.kg
-  tls: true
-  ws-opts:
-    headers:
-      Host: dse.bgm2024.us.kg
-    path: /?ed=2560
-- name: 美国 063
-  type: vless
-  network: ws
-  server: 135.84.76.74
-  port: 443
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  servername: dse.bgm2024.us.kg
-  tls: true
-  ws-opts:
-    headers:
-      Host: dse.bgm2024.us.kg
-    path: /?ed=2560
-- name: 美国 066
-  type: vless
-  network: ws
-  server: 63.141.128.76
-  port: 443
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  servername: dse.bgm2024.us.kg
-  tls: true
-  ws-opts:
-    headers:
-      Host: dse.bgm2024.us.kg
-    path: /?ed=2560
 - name: 美国 067
   type: vless
   network: ws
@@ -1372,114 +1221,6 @@ proxies:
     headers:
       Host: a.mifeng.us.kg
     path: /telegram-_-_-_-_-__-free_shekan-_-_-_-/?ed
-- name: 美国 069
-  type: vless
-  network: ws
-  server: 198.62.62.13
-  port: 443
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  servername: dse.bgm2024.us.kg
-  tls: true
-  ws-opts:
-    headers:
-      Host: dse.bgm2024.us.kg
-    path: /?ed=2560
-- name: 南非 002
-  type: vless
-  network: ws
-  server: 160.123.255.159
-  port: 443
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  servername: dse.bgm2024.us.kg
-  tls: true
-  ws-opts:
-    headers:
-      Host: dse.bgm2024.us.kg
-    path: /?ed=2560
-- name: 美国 070
-  type: vless
-  network: ws
-  server: 107.173.111.72
-  port: 1443
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  servername: dse.bgm2024.us.kg
-  tls: true
-  ws-opts:
-    headers:
-      Host: dse.bgm2024.us.kg
-    path: /?ed=2560
-- name: 美国 071
-  type: vless
-  network: ws
-  server: 162.159.153.9
-  port: 443
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  servername: uxg.vs2024.us.kg
-  tls: true
-  ws-opts:
-    headers:
-      Host: uxg.vs2024.us.kg
-    path: /?ed=2560
-- name: 美国 072
-  type: vless
-  network: ws
-  server: 160.79.104.231
-  port: 443
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  servername: dse.bgm2024.us.kg
-  tls: true
-  ws-opts:
-    headers:
-      Host: dse.bgm2024.us.kg
-    path: /?ed=2560
-- name: 美国 073
-  type: vless
-  network: ws
-  server: 160.79.104.208
-  port: 443
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  servername: dse.bgm2024.us.kg
-  tls: true
-  ws-opts:
-    headers:
-      Host: dse.bgm2024.us.kg
-    path: /?ed=2560
-- name: 南非 003
-  type: vless
-  network: ws
-  server: 160.123.255.60
-  port: 443
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  servername: dse.bgm2024.us.kg
-  tls: true
-  ws-opts:
-    headers:
-      Host: dse.bgm2024.us.kg
-    path: /?ed=2560
-- name: 美国 074
-  type: vless
-  network: ws
-  server: 160.79.105.235
-  port: 443
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  servername: dse.bgm2024.us.kg
-  tls: true
-  ws-opts:
-    headers:
-      Host: dse.bgm2024.us.kg
-    path: /?ed=2560
-- name: 美国 075
-  type: vless
-  network: ws
-  server: 198.62.62.54
-  port: 443
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  servername: dse.bgm2024.us.kg
-  tls: true
-  ws-opts:
-    headers:
-      Host: dse.bgm2024.us.kg
-    path: /?ed=2560
 - name: 美国 076
   type: vless
   network: ws
@@ -1492,18 +1233,6 @@ proxies:
     headers:
       Host: a.mifeng.us.kg
     path: /telegram-_-_-_-_-__-free_shekan-_-_-_-/?ed
-- name: 南非 004
-  type: vless
-  network: ws
-  server: 160.123.255.98
-  port: 443
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  servername: dse.bgm2024.us.kg
-  tls: true
-  ws-opts:
-    headers:
-      Host: dse.bgm2024.us.kg
-    path: /?ed=2560
 - name: 美国 077
   type: vless
   network: ws
@@ -1528,32 +1257,6 @@ proxies:
     headers:
       Host: a.mifeng.us.kg
     path: /?ed=2048
-- name: 德国 001
-  type: vless
-  network: http
-  server: 95.179.254.82
-  port: 8081
-  uuid: ebff98ac-7657-4c91-b563-418bb6548113
-  skip-cert-verify: false
-  tls: false
-  http-opts:
-    headers:
-      Host:
-      - telewebion.com
-    path:
-    - /
-- name: 美国 081
-  type: vless
-  network: ws
-  server: 98.70.26.236
-  port: 443
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  servername: dse.bgm2024.us.kg
-  tls: true
-  ws-opts:
-    headers:
-      Host: dse.bgm2024.us.kg
-    path: /?ed=2560
 - name: 美国 082
   type: vless
   network: ws
@@ -1566,97 +1269,462 @@ proxies:
     headers:
       Host: a.mifeng.us.kg
     path: /telegram-_-_-_-_-__-free_shekan-_-_-_-/?ed
-- name: 美国 083
-  type: vless
-  network: ws
-  server: 198.62.62.92
-  port: 443
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  servername: dse.bgm2024.us.kg
-  tls: true
-  ws-opts:
-    headers:
-      Host: dse.bgm2024.us.kg
-    path: /?ed=2560
-- name: 美国 084
-  type: vless
-  network: ws
-  server: 160.79.104.70
-  port: 443
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  servername: dse.bgm2024.us.kg
-  tls: true
-  ws-opts:
-    headers:
-      Host: dse.bgm2024.us.kg
-    path: /?ed=2560
-- name: 德国 002
-  type: vless
-  network: http
-  server: 95.179.254.82
-  port: 5518
-  uuid: ebff98ac-7657-4c91-b563-418bb6548113
-  skip-cert-verify: false
-  tls: false
-  http-opts:
-    headers:
-      Host:
-      - telewebion.com
-    path:
-    - /
-- name: 德国 003
-  type: vless
-  network: http
-  server: 95.179.254.82
-  port: 8071
-  uuid: ebff98ac-7657-4c91-b563-418bb6548113
-  skip-cert-verify: false
-  tls: false
-  http-opts:
-    headers:
-      Host:
-      - telewebion.com
-    path:
-    - /
-- name: 美国 085
-  type: vless
-  network: ws
-  server: 192.200.160.26
-  port: 443
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  servername: uxg.vs2024.us.kg
-  tls: true
-  ws-opts:
-    headers:
-      Host: uxg.vs2024.us.kg
-    path: /?ed=2560
-- name: 澳大利亚 001
-  type: trojan
-  network: ws
-  server: 192.65.217.200
-  port: 443
-  password: b59ee60f-9fa4-4770-b6a7-288620147f60
-  skip-cert-verify: true
-  udp: true
-  sni: k6us1.yfjc.sbs
-  ws-opts:
-    headers:
-      Host: k6us1.yfjc.sbs
-    path: /yfjc/kus1
-- name: 巴勒斯坦 001
+- name: 美国 001
   type: vmess
   network: ws
-  server: 82.213.5.50
+  server: yaml777.133010.xyz
   port: 80
-  uuid: f21bcdb6-5dc6-4c4b-9a34-3b185f6747c4
+  uuid: 4a1cb611-381c-4fff-ca35-99be316eee17
+  servername: yaml777.133010.xyz
+  skip-cert-verify: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: yaml777.133010.xyz
+    path: /yaml777
+- name: 美国 002
+  type: vmess
+  network: ws
+  server: 172.236.19.90
+  port: 4765
+  uuid: 82667668-4bfd-4906-ab31-c2745d0de78e
+  servername: v50.emovpn.buzz
+  skip-cert-verify: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: v50.emovpn.buzz
+    path: /
+- name: 美国 003
+  type: vmess
+  network: ws
+  server: 67.205.184.238
+  port: 8089
+  uuid: 82667668-4bfd-4906-ab31-c2745d0de78e
+  servername: v49.emovpn.buzz
+  skip-cert-verify: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: v49.emovpn.buzz
+    path: /
+- name: 美国 059
+  type: trojan
+  network: grpc
+  server: 172.67.204.84
+  port: 443
+  password: Nu5EqwcJ2OCuvKAcSQeGdg
+  skip-cert-verify: false
+  tls: true
+  udp: true
+  sni: cdn-22.gsmxreality.com
+  grpc-opts:
+    grpc-service-name: 443trojan
+- name: 印度 003
+  type: vmess
+  network: ws
+  server: 202.78.162.6
+  port: 80
+  uuid: 66fef53b-1b57-466d-89a4-bd99b90f6473
   skip-cert-verify: true
   tls: false
   alterId: 0
   cipher: auto
   ws-opts:
     headers:
-      Host: tabyan205.serveftp.com
+      Host: irisoft.servecounterstrike.com
     path: /
+- name: 澳大利亚 001
+  type: vmess
+  network: ws
+  server: syd-01.oci.ee
+  port: 23452
+  uuid: 402d0617-2cc5-4f15-98b3-285e399abb70
+  tls: false
+  udp: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: syd-01.oci.ee
+    path: /
+- name: 美国 063
+  type: vmess
+  network: ws
+  server: ff.kncc2.top
+  port: 8443
+  uuid: 89c344f2-096c-445c-b629-9b15152f38e7
+  skip-cert-verify: true
+  tls: true
+  udp: true
+  tfo: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: ff.kncc2.top
+    path: /89c344f2
+- name: 乌克兰 001
+  type: vmess
+  network: ws
+  server: 89.185.31.75
+  port: 8226
+  uuid: 82667668-4bfd-4906-ab31-c2745d0de78e
+  servername: v12.emovpn.buzz
+  skip-cert-verify: true
+  alterId: 0
+  cipher: auto
+  delay: 2113
+  ws-opts:
+    headers:
+      Host: v12.emovpn.buzz
+    path: /
+- name: 乌克兰 002
+  type: vmess
+  network: ws
+  server: 89.185.31.75
+  port: 1452
+  uuid: 82667668-4bfd-4906-ab31-c2745d0de78e
+  servername: v17.emovpn.buzz
+  skip-cert-verify: true
+  alterId: 0
+  cipher: auto
+  delay: 1667
+  ws-opts:
+    headers:
+      Host: v17.emovpn.buzz
+    path: /
+- name: 乌克兰 003
+  type: vmess
+  network: ws
+  server: 89.185.31.75
+  port: 1336
+  uuid: 82667668-4bfd-4906-ab31-c2745d0de78e
+  servername: v21.emovpn.buzz
+  skip-cert-verify: true
+  alterId: 0
+  cipher: auto
+  delay: 1410
+  ws-opts:
+    headers:
+      Host: v21.emovpn.buzz
+    path: /
+- name: 乌克兰 004
+  type: vmess
+  network: ws
+  server: v13.emovpn.buzz
+  port: 3110
+  uuid: 82667668-4bfd-4906-ab31-c2745d0de78e
+  servername: pull.free.video.10010.com
+  skip-cert-verify: true
+  alterId: 0
+  cipher: auto
+  delay: 1686
+  ws-opts:
+    headers:
+      Host: pull.free.video.10010.com
+    path: /
+- name: 乌克兰 005
+  type: vmess
+  network: ws
+  server: v17.emovpn.buzz
+  port: 1452
+  uuid: 82667668-4bfd-4906-ab31-c2745d0de78e
+  servername: pull.free.video.10010.com
+  skip-cert-verify: true
+  alterId: 0
+  cipher: auto
+  delay: 1481
+  ws-opts:
+    headers:
+      Host: pull.free.video.10010.com
+    path: /
+- name: 美国 066
+  type: vmess
+  network: ws
+  server: 15.235.83.228
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+  skip-cert-verify: true
+  tls: true
+  alterId: 0
+  cipher: auto
+  delay: 1401
+  ws-opts:
+    headers:
+      Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+    path: /linkvws
+- name: 美国 069
+  type: vmess
+  network: ws
+  server: 23.158.56.241
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+  skip-cert-verify: true
+  tls: true
+  alterId: 0
+  cipher: auto
+  delay: 1798
+  ws-opts:
+    headers:
+      Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+    path: /linkvws
+- name: 德国 001
+  type: vless
+  network: ws
+  server: 193.122.58.158
+  port: 443
+  uuid: 41abecd9-8096-4142-a75c-4e1d36d990bd
+  servername: mmdserver.us.kg
+  tls: true
+  udp: true
+  delay: 1424
+  ws-opts:
+    headers:
+      Host: mmdserver.us.kg
+    path: /?ed=2048
+- name: 英国 001
+  type: vless
+  network: ws
+  server: 138.3.240.63
+  port: 443
+  uuid: 41abecd9-8096-4142-a75c-4e1d36d990bd
+  servername: mmdserver.us.kg
+  tls: true
+  udp: true
+  delay: 2127
+  ws-opts:
+    headers:
+      Host: mmdserver.us.kg
+    path: /?ed=2048
+- name: 美国 070
+  type: vmess
+  network: http
+  server: 64.225.109.206
+  port: 2082
+  uuid: 48264b45-64b8-4e9f-8a88-cef41f20c736
+  skip-cert-verify: true
+  alterId: 0
+  cipher: auto
+  delay: 1626
+  http-opts:
+    method: GET
+    path:
+    - /
+- name: 日本 001
+  type: vless
+  network: ws
+  server: 103.231.73.153
+  port: 443
+  uuid: 41abecd9-8096-4142-a75c-4e1d36d990bd
+  servername: mmdserver.us.kg
+  tls: true
+  udp: true
+  delay: 2040
+  ws-opts:
+    headers:
+      Host: mmdserver.us.kg
+    path: /?ed=2048
+- name: 美国 071
+  type: vmess
+  network: ws
+  server: 206.190.234.176
+  port: 443
+  uuid: 11a805f2-41a7-4cd8-8406-0470c3cde0d3
+  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+  skip-cert-verify: true
+  tls: true
+  udp: true
+  alterId: 0
+  cipher: auto
+  delay: 854
+  ws-opts:
+    headers:
+      Host: jpcf.cowvpn.org
+    path: /cctv13/vmess_jpcf
+- name: 荷兰 001
+  type: vmess
+  network: ws
+  server: 45.154.98.230
+  port: 4001
+  uuid: 97a21172-89a0-411e-b017-6a27c61c743d
+  servername: fatcat.nevergonnagiveyouup.top
+  skip-cert-verify: true
+  tls: true
+  alterId: 0
+  cipher: auto
+  delay: 1437
+  ws-opts:
+    headers:
+      Host: fatcat.nevergonnagiveyouup.top
+    path: /vmess-argo?ed=2048
+- name: 美国 072
+  type: vmess
+  network: ws
+  server: 192.9.137.193
+  port: 8443
+  uuid: 97a21172-89a0-411e-b017-6a27c61c743d
+  servername: fatcat.nevergonnagiveyouup.top
+  skip-cert-verify: true
+  tls: true
+  alterId: 0
+  cipher: auto
+  delay: 2045
+  ws-opts:
+    headers:
+      Host: fatcat.nevergonnagiveyouup.top
+    path: /vmess-argo?ed=2048
+- name: 美国 073
+  type: vmess
+  network: ws
+  server: 150.230.146.170
+  port: 2053
+  uuid: 97a21172-89a0-411e-b017-6a27c61c743d
+  servername: fatcat.nevergonnagiveyouup.top
+  skip-cert-verify: true
+  tls: true
+  alterId: 0
+  cipher: auto
+  delay: 1564
+  ws-opts:
+    headers:
+      Host: fatcat.nevergonnagiveyouup.top
+    path: /vmess-argo?ed=2048
+- name: 德国 002
+  type: vmess
+  network: ws
+  server: 47.254.171.15
+  port: 2053
+  uuid: 97a21172-89a0-411e-b017-6a27c61c743d
+  servername: fatcat.nevergonnagiveyouup.top
+  skip-cert-verify: true
+  tls: true
+  alterId: 0
+  cipher: auto
+  delay: 1517
+  ws-opts:
+    headers:
+      Host: fatcat.nevergonnagiveyouup.top
+    path: /vmess-argo?ed=2048
+- name: 美国 074
+  type: vmess
+  network: ws
+  server: 129.159.143.171
+  port: 8443
+  uuid: 97a21172-89a0-411e-b017-6a27c61c743d
+  servername: fatcat.nevergonnagiveyouup.top
+  skip-cert-verify: true
+  tls: true
+  alterId: 0
+  cipher: auto
+  delay: 2112
+  ws-opts:
+    headers:
+      Host: fatcat.nevergonnagiveyouup.top
+    path: /vmess-argo?ed=2048
+- name: 美国 075
+  type: vmess
+  network: ws
+  server: 104.21.81.115
+  port: 443
+  uuid: de04add9-5c68-8bab-950c-08cd5320df18
+  servername: northflank.107421.xyz
+  skip-cert-verify: true
+  tls: true
+  alterId: 0
+  cipher: auto
+  delay: 1706
+  ws-opts:
+    headers:
+      Host: northflank.107421.xyz
+    path: /vmess
+- name: 美国 079
+  type: vless
+  network: ws
+  server: 104.18.26.94
+  port: 80
+  uuid: 61ff8b60-2be0-40a6-94b5-92cca33f1fab
+  servername: sedalat.tatexe3807.workers.dev
+  delay: 1477
+  ws-opts:
+    headers:
+      Host: sedalat.tatexe3807.workers.dev
+    path: /
+- name: 美国 080
+  type: vless
+  network: ws
+  server: 104.18.27.94
+  port: 80
+  uuid: 61ff8b60-2be0-40a6-94b5-92cca33f1fab
+  servername: sedalat.tatexe3807.workers.dev
+  client-fingerprint: chrome
+  delay: 851
+  ws-opts:
+    headers:
+      Host: sedalat.tatexe3807.workers.dev
+    path: /
+- name: 美国 081
+  type: vless
+  network: ws
+  server: 154.23.240.232
+  port: 443
+  uuid: 41abecd9-8096-4142-a75c-4e1d36d990bd
+  servername: mmdserver.us.kg
+  tls: true
+  udp: true
+  delay: 1593
+  ws-opts:
+    headers:
+      Host: mmdserver.us.kg
+    path: /?ed=2048
+- name: 加拿大 001
+  type: vmess
+  network: ws
+  server: s2.cn-db.top
+  port: 2052
+  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
+  skip-cert-verify: true
+  alterId: 0
+  cipher: auto
+  delay: 1616
+  ws-opts:
+    headers:
+      Host: 100-252-79-9.s2.cn-db.top
+    path: /dabai.in104.17.31.68
+- name: 加拿大 002
+  type: vmess
+  network: ws
+  server: s2.db-link01.top
+  port: 2082
+  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
+  skip-cert-verify: true
+  alterId: 0
+  cipher: auto
+  delay: 1693
+  ws-opts:
+    headers:
+      Host: 100-253-20-251.s2.db-link01.top
+    path: /dabai.in172.67.61.61
+- name: 加拿大 003
+  type: vmess
+  network: ws
+  server: s1.db-link01.top
+  port: 8880
+  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
+  servername: 100-250-32-53.s1.db-link01.top
+  skip-cert-verify: true
+  alterId: 0
+  cipher: auto
+  delay: 2517
+  ws-opts:
+    headers:
+      Host: 100-250-32-53.s1.db-link01.top
+    path: /dabai.in172.67.95.35
 proxy-groups:
 - name: PROXY
   type: select
@@ -1703,13 +1771,11 @@ proxy-groups:
   - 加拿大 016
   - 美国 022
   - 美国 023
-  - 加拿大 018
   - 加拿大 020
   - 美国 024
   - 加拿大 023
   - 加拿大 026
   - 加拿大 029
-  - 加拿大 030
   - 埃及 001
   - 美国 053
   - 印度 001
@@ -1752,41 +1818,44 @@ proxy-groups:
   - 美国 064
   - 美国 065
   - 法国 001
-  - 美国 079
-  - 美国 080
+  - 美国 043
+  - 美国 067
+  - 美国 068
+  - 美国 076
+  - 美国 077
+  - 美国 078
+  - 美国 082
   - 美国 001
   - 美国 002
   - 美国 003
-  - 美国 043
-  - 南非 001
   - 美国 059
+  - 印度 003
+  - 澳大利亚 001
   - 美国 063
+  - 乌克兰 001
+  - 乌克兰 002
+  - 乌克兰 003
+  - 乌克兰 004
+  - 乌克兰 005
   - 美国 066
-  - 美国 067
-  - 美国 068
   - 美国 069
-  - 南非 002
+  - 德国 001
+  - 英国 001
   - 美国 070
+  - 日本 001
   - 美国 071
+  - 荷兰 001
   - 美国 072
   - 美国 073
-  - 南非 003
+  - 德国 002
   - 美国 074
   - 美国 075
-  - 美国 076
-  - 南非 004
-  - 美国 077
-  - 美国 078
-  - 德国 001
+  - 美国 079
+  - 美国 080
   - 美国 081
-  - 美国 082
-  - 美国 083
-  - 美国 084
-  - 德国 002
-  - 德国 003
-  - 美国 085
-  - 澳大利亚 001
-  - 巴勒斯坦 001
+  - 加拿大 001
+  - 加拿大 002
+  - 加拿大 003
 - name: LOAD-BALANCE
   type: load-balance
   url: https://cp.cloudflare.com/generate_204
