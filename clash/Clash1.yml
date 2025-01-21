@@ -1297,20 +1297,6 @@ proxies:
     headers:
       Host: v50.emovpn.buzz
     path: /
-- name: 美国 003
-  type: vmess
-  network: ws
-  server: 67.205.184.238
-  port: 8089
-  uuid: 82667668-4bfd-4906-ab31-c2745d0de78e
-  servername: v49.emovpn.buzz
-  skip-cert-verify: true
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: v49.emovpn.buzz
-    path: /
 - name: 美国 059
   type: trojan
   network: grpc
@@ -1336,20 +1322,6 @@ proxies:
   ws-opts:
     headers:
       Host: irisoft.servecounterstrike.com
-    path: /
-- name: 澳大利亚 001
-  type: vmess
-  network: ws
-  server: syd-01.oci.ee
-  port: 23452
-  uuid: 402d0617-2cc5-4f15-98b3-285e399abb70
-  tls: false
-  udp: true
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: syd-01.oci.ee
     path: /
 - name: 美国 063
   type: vmess
@@ -1725,6 +1697,48 @@ proxies:
     headers:
       Host: 100-250-32-53.s1.db-link01.top
     path: /dabai.in172.67.95.35
+- name: 瑞典 001
+  type: vmess
+  network: ws
+  server: 148.135.31.41
+  port: 37002
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  skip-cert-verify: false
+  tls: true
+  alterId: 64
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: www.24003370.xyz
+    path: /
+- name: 加拿大 004
+  type: vmess
+  network: ws
+  server: 142.171.122.163
+  port: 31006
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  skip-cert-verify: false
+  tls: true
+  alterId: 64
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: www.76492797.xyz
+    path: /
+- name: 美国 003
+  type: vmess
+  network: ws
+  server: 137.175.49.124
+  port: 37009
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  skip-cert-verify: false
+  tls: true
+  alterId: 64
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: www.86838014.xyz
+    path: /
 proxy-groups:
 - name: PROXY
   type: select
@@ -1827,10 +1841,8 @@ proxy-groups:
   - 美国 082
   - 美国 001
   - 美国 002
-  - 美国 003
   - 美国 059
   - 印度 003
-  - 澳大利亚 001
   - 美国 063
   - 乌克兰 001
   - 乌克兰 002
@@ -1856,6 +1868,9 @@ proxy-groups:
   - 加拿大 001
   - 加拿大 002
   - 加拿大 003
+  - 瑞典 001
+  - 加拿大 004
+  - 美国 003
 - name: LOAD-BALANCE
   type: load-balance
   url: https://cp.cloudflare.com/generate_204
