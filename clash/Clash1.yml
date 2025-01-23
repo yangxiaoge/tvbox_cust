@@ -1598,21 +1598,6 @@ proxies:
     headers:
       Host: teleirani.ir
     path: /?ed=2048
-- name: 俄罗斯 001
-  type: vless
-  network: grpc
-  server: 31.44.3.109
-  port: 8443
-  uuid: 947c066d-62e5-47a5-933d-dd9816f70b1b
-  servername: www.speedtest.net
-  skip-cert-verify: false
-  tls: true
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: Paai0w6bHcKmaZzm8Sljt8uKydSYX5h1t3G_Y3T-Rm0
-    short-id: f74b9234
-  grpc-opts:
-    grpc-service-name: JoinBadeChannel@antimeli
 - name: 韩国 001
   type: vless
   network: ws
@@ -1655,20 +1640,6 @@ proxies:
     headers:
       Host: a.mifeng.us.kg
     path: /telegram-_-_-_-_-__-free_shekan-_-_-_-/?ed=2048
-- name: 美国 089
-  type: vless
-  network: ws
-  server: 129.150.43.23
-  port: 8443
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  servername: dss.ylks.us.kg
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  ws-opts:
-    headers:
-      Host: dss.ylks.us.kg
-    path: /?ed=2560&proxyip=proxyip.sg.fxxk.dedyn.io
 - name: 韩国 002
   type: vless
   network: ws
@@ -1737,6 +1708,48 @@ proxies:
     headers:
       Host: dss.ylks.us.kg
     path: /?ed=2560
+- name: 美国 089
+  type: vless
+  network: ws
+  server: 96110.cf.090227.xyz
+  port: 443
+  uuid: d17ca95a-8eaf-492f-93fa-538c88956bb3
+  servername: publicvless.pages.dev
+  skip-cert-verify: true
+  tls: true
+  tfo: false
+  ws-opts:
+    headers:
+      Host: publicvless.pages.dev
+    path: /?proxyip=proxyip.us.fxxk.dedyn.io
+- name: 美国 094
+  type: vless
+  network: ws
+  server: 198.62.62.183
+  port: 443
+  uuid: d17ca95a-8eaf-492f-93fa-538c88956bb3
+  servername: publicvless.pages.dev
+  skip-cert-verify: true
+  tls: true
+  tfo: false
+  ws-opts:
+    headers:
+      Host: publicvless.pages.dev
+    path: /?proxyip=proxyip.us.fxxk.dedyn.io
+- name: 美国 095
+  type: vless
+  network: ws
+  server: 198.62.62.78
+  port: 443
+  uuid: d17ca95a-8eaf-492f-93fa-538c88956bb3
+  servername: publicvless.pages.dev
+  skip-cert-verify: true
+  tls: true
+  tfo: false
+  ws-opts:
+    headers:
+      Host: publicvless.pages.dev
+    path: /?proxyip=proxyip.us.fxxk.dedyn.io
 proxy-groups:
 - name: PROXY
   type: select
@@ -1860,16 +1873,17 @@ proxy-groups:
   - 美国 084
   - 美国 085
   - 美国 086
-  - 俄罗斯 001
   - 韩国 001
   - 美国 087
   - 美国 088
-  - 美国 089
   - 韩国 002
   - 美国 090
   - 美国 091
   - 美国 092
   - 美国 093
+  - 美国 089
+  - 美国 094
+  - 美国 095
 - name: LOAD-BALANCE
   type: load-balance
   url: https://cp.cloudflare.com/generate_204
