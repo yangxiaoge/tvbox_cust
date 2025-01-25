@@ -1817,6 +1817,13 @@ proxies:
       User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
         like Gecko) Chrome/60.0.3112.101 Safari/537.36
     path: /?ed=2560
+- name: 美国 111
+  type: trojan
+  network: tcp
+  server: sg.mjt000.com
+  port: 443
+  password: 61834c10-4218-4918-b836-9b852b7add70
+  sni: sg.mjt000.com
 proxy-groups:
 - name: PROXY
   type: select
@@ -1952,6 +1959,7 @@ proxy-groups:
   - 美国 108
   - 美国 109
   - 美国 110
+  - 美国 111
 - name: LOAD-BALANCE
   type: load-balance
   url: https://cp.cloudflare.com/generate_204
