@@ -1465,6 +1465,34 @@ proxies:
     headers:
       Host: a.ssll.gay
     path: Telegram🇨🇳
+- name: 美国 059
+  type: vmess
+  network: ws
+  server: 172.67.133.78
+  port: 8443
+  uuid: e88b85c6-93b4-47f6-b3fb-2c55dcb1289f
+  servername: lax2.ibgfw.top
+  skip-cert-verify: true
+  tls: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: lax2.ibgfw.top
+    path: /dyajvws
+- name: 韩国 006
+  type: vless
+  network: ws
+  server: 117.123.207.117
+  port: 30073
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  servername: a.ssll.gay
+  tls: true
+  udp: true
+  ws-opts:
+    headers:
+      Host: a.ssll.gay
+    path: Telegram🇨🇳
 proxy-groups:
 - name: PROXY
   type: select
@@ -1580,6 +1608,8 @@ proxy-groups:
   - 美国 056
   - 美国 057
   - 荷兰 005
+  - 美国 059
+  - 韩国 006
 - name: LOAD-BALANCE
   type: load-balance
   url: https://cp.cloudflare.com/generate_204
