@@ -42,9 +42,9 @@ https://yangxiaoge.github.io/
 
 **1. 三方TVBox编译（墙裂推荐[FongMi影视](https://github.com/FongMi/Release/tree/fongmi/apk/release)）**
 依赖的项目:
-> update at 2025-01-26 01:09:35 UTC+0
+> update at 2025-01-30 01:06:50 UTC+0
 - [CatVodTVOfficial/TVBoxOSC](https://github.com/CatVodTVOfficial/TVBoxOSC)
-- [FongMi/TV](https://github.com/FongMi/TV)(Updated: 4f31bdecbc22f0adae53decbf72f016d2b2a33c0)
+- [FongMi/TV](https://github.com/FongMi/TV)(Updated: 11c52bbb370c4ef0f44c0bbe6e783ac8c8ff3d96)
 - [mlabalabala/box](https://github.com/mlabalabala/box)(Updated: 8f013750839246b70b859a5dc4d289cd1f649835)
 
 **2. 自定义爬虫**
