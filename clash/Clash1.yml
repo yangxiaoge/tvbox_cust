@@ -1425,6 +1425,21 @@ proxies:
     headers:
       Host: a.ssll.gay
     path: Telegram🇨🇳
+- name: 美国 056
+  type: vmess
+  network: ws
+  server: 104.18.114.2
+  port: 2086
+  uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
+  servername: m116.164748.xyz
+  tls: false
+  udp: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: m116.164748.xyz
+    path: github.com/Alvin9999
 proxy-groups:
 - name: PROXY
   type: select
@@ -1537,6 +1552,7 @@ proxy-groups:
   - 韩国 005
   - 荷兰 004
   - 美国 055
+  - 美国 056
 - name: LOAD-BALANCE
   type: load-balance
   url: https://cp.cloudflare.com/generate_204
