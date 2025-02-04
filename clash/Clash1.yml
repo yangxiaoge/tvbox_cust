@@ -1455,6 +1455,21 @@ proxies:
     headers:
       Host: m116.164748.xyz
     path: github.com/Alvin9999
+- name: 美国 059
+  type: vmess
+  network: grpc
+  server: t03-cf.phpman.top
+  port: 443
+  uuid: 537d21ad-49af-41ad-8089-db557b63a40e
+  servername: t03-cf.phpman.top
+  skip-cert-verify: false
+  tls: true
+  tfo: false
+  alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: /
 proxy-groups:
 - name: PROXY
   type: select
@@ -1569,6 +1584,7 @@ proxy-groups:
   - 美国 055
   - 美国 056
   - 美国 057
+  - 美国 059
 - name: LOAD-BALANCE
   type: load-balance
   url: https://cp.cloudflare.com/generate_204
