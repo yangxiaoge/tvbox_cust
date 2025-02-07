@@ -238,6 +238,7 @@ proxy-groups:
   - {name: 欧盟均衡-轮询, <<: *LoadBalanceCR, filter: *FilterEU, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Round_Robin.png}
 
 # 远程规则集
+# 更多规则，请参考：https://github.com/MetaCubeX/meta-rules-dat/tree/meta/geo/geosite
 rule-providers: 
   myProxy:
     <<: *ClassicalYaml
