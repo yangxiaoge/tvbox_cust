@@ -129,19 +129,6 @@ dns:
     - +.googleapis.cn
     - +.googleapis.com
 proxies:
-- name: 土耳其 002
-  type: vless
-  network: ws
-  server: 95.164.116.22
-  port: 2501
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  servername: a.mifeng.us.kg
-  skip-cert-verify: false
-  tls: true
-  ws-opts:
-    headers:
-      Host: a.mifeng.us.kg
-    path: /?ed=2560
 - name: 加拿大 027
   type: vless
   network: ws
@@ -341,18 +328,6 @@ proxies:
     headers:
       Host: crimson-cell-5828-ppal03.febox45376.workers.dev
     path: /?ed=2560
-- name: 美国 042
-  type: vless
-  network: ws
-  server: 162.159.152.2
-  port: 80
-  uuid: 11f0eadd-9a8d-4791-ada3-4789ac3ff7ca
-  skip-cert-verify: false
-  tls: false
-  ws-opts:
-    headers:
-      Host: empty-tree-6008.jobaf49186.workers.dev
-    path: /?ed=2560
 - name: 美国 044
   type: vless
   network: ws
@@ -401,18 +376,6 @@ proxies:
   ws-opts:
     headers:
       Host: ppal03.dolobe7975.workers.dev
-    path: /?ed=2560
-- name: 美国 050
-  type: vless
-  network: ws
-  server: 104.16.197.224
-  port: 80
-  uuid: 442ac940-bbdd-4044-9b2c-e4e53cbe0055
-  skip-cert-verify: false
-  tls: false
-  ws-opts:
-    headers:
-      Host: little-grass-d3f7az.cijof58321.workers.dev
     path: /?ed=2560
 - name: 美国 051
   type: vless
@@ -563,20 +526,6 @@ proxies:
     headers:
       Host: a.mifeng.us.kg
     path: /telegram-_-_-_-_-__-free_shekan-_-_-_-/?ed
-- name: 美国 070
-  type: vmess
-  network: http
-  server: 64.225.109.206
-  port: 2082
-  uuid: 48264b45-64b8-4e9f-8a88-cef41f20c736
-  skip-cert-verify: true
-  alterId: 0
-  cipher: auto
-  delay: 1626
-  http-opts:
-    method: GET
-    path:
-    - /
 - name: 美国 079
   type: vless
   network: ws
@@ -692,7 +641,7 @@ proxies:
 - name: 美国 001
   type: vmess
   network: ws
-  server: 104.21.238.54
+  server: 104.26.0.68
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -707,7 +656,7 @@ proxies:
 - name: 美国 002
   type: vmess
   network: ws
-  server: 104.21.238.55
+  server: 104.26.0.69
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -722,7 +671,7 @@ proxies:
 - name: 美国 003
   type: vmess
   network: ws
-  server: 104.21.238.56
+  server: 104.26.0.70
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -737,7 +686,7 @@ proxies:
 - name: 美国 005
   type: vmess
   network: ws
-  server: 104.21.238.57
+  server: 104.26.0.71
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -752,7 +701,7 @@ proxies:
 - name: 美国 006
   type: vmess
   network: ws
-  server: 104.21.238.58
+  server: 104.26.0.72
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -767,7 +716,7 @@ proxies:
 - name: 美国 007
   type: vmess
   network: ws
-  server: 104.21.238.59
+  server: 104.26.0.73
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -782,7 +731,7 @@ proxies:
 - name: 美国 008
   type: vmess
   network: ws
-  server: 104.21.238.60
+  server: 104.26.0.74
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -797,7 +746,7 @@ proxies:
 - name: 美国 009
   type: vmess
   network: ws
-  server: 104.21.238.61
+  server: 104.26.0.75
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -812,7 +761,7 @@ proxies:
 - name: 美国 010
   type: vmess
   network: ws
-  server: 104.21.238.62
+  server: 104.26.0.76
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -827,7 +776,7 @@ proxies:
 - name: 美国 011
   type: vmess
   network: ws
-  server: 104.21.238.63
+  server: 104.26.0.77
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -842,7 +791,7 @@ proxies:
 - name: 美国 012
   type: vmess
   network: ws
-  server: 104.21.238.64
+  server: 104.26.0.78
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -857,7 +806,7 @@ proxies:
 - name: 美国 013
   type: vmess
   network: ws
-  server: 104.21.238.65
+  server: 104.26.0.79
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -872,7 +821,7 @@ proxies:
 - name: 美国 014
   type: vmess
   network: ws
-  server: 104.21.238.66
+  server: 104.26.0.80
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -887,7 +836,7 @@ proxies:
 - name: 美国 015
   type: vmess
   network: ws
-  server: 104.21.238.67
+  server: 104.26.0.81
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -902,7 +851,7 @@ proxies:
 - name: 美国 016
   type: vmess
   network: ws
-  server: 104.21.238.68
+  server: 104.26.0.82
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -917,7 +866,7 @@ proxies:
 - name: 美国 017
   type: vmess
   network: ws
-  server: 104.21.238.69
+  server: 104.26.0.83
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -932,7 +881,7 @@ proxies:
 - name: 美国 018
   type: vmess
   network: ws
-  server: 104.21.238.70
+  server: 104.26.0.84
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -947,7 +896,7 @@ proxies:
 - name: 美国 019
   type: vmess
   network: ws
-  server: 104.21.238.71
+  server: 104.26.0.85
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -962,7 +911,7 @@ proxies:
 - name: 美国 020
   type: vmess
   network: ws
-  server: 104.21.238.72
+  server: 104.26.0.86
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -977,7 +926,7 @@ proxies:
 - name: 美国 021
   type: vmess
   network: ws
-  server: 104.21.238.73
+  server: 104.26.0.87
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -992,7 +941,7 @@ proxies:
 - name: 美国 022
   type: vmess
   network: ws
-  server: 104.21.238.74
+  server: 104.26.0.88
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -1007,7 +956,7 @@ proxies:
 - name: 美国 023
   type: vmess
   network: ws
-  server: 104.21.238.75
+  server: 104.26.0.89
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -1022,7 +971,7 @@ proxies:
 - name: 美国 024
   type: vmess
   network: ws
-  server: 104.21.238.76
+  server: 104.26.0.90
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -1037,7 +986,7 @@ proxies:
 - name: 美国 025
   type: vmess
   network: ws
-  server: 104.21.238.77
+  server: 104.26.0.91
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -1052,7 +1001,7 @@ proxies:
 - name: 美国 026
   type: vmess
   network: ws
-  server: 104.21.238.78
+  server: 104.26.0.92
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -1067,7 +1016,7 @@ proxies:
 - name: 美国 028
   type: vmess
   network: ws
-  server: 104.21.238.79
+  server: 104.26.0.93
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -1082,7 +1031,7 @@ proxies:
 - name: 美国 030
   type: vmess
   network: ws
-  server: 104.21.238.80
+  server: 104.26.0.94
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -1097,7 +1046,7 @@ proxies:
 - name: 美国 032
   type: vmess
   network: ws
-  server: 104.21.238.81
+  server: 104.26.0.95
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -1112,7 +1061,7 @@ proxies:
 - name: 美国 034
   type: vmess
   network: ws
-  server: 104.21.238.82
+  server: 104.26.0.96
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -1127,7 +1076,7 @@ proxies:
 - name: 美国 035
   type: vmess
   network: ws
-  server: 104.21.238.83
+  server: 104.26.0.97
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -1142,7 +1091,7 @@ proxies:
 - name: 美国 039
   type: vmess
   network: ws
-  server: 104.21.238.84
+  server: 104.26.0.98
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -1157,7 +1106,22 @@ proxies:
 - name: 美国 040
   type: vmess
   network: ws
-  server: 104.21.238.85
+  server: 104.26.0.99
+  port: 2086
+  uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
+  servername: m116.164748.xyz
+  tls: false
+  udp: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: m116.164748.xyz
+    path: github.com/Alvin9999
+- name: 美国 042
+  type: vmess
+  network: ws
+  server: 104.26.0.100
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -1172,7 +1136,7 @@ proxies:
 - name: 美国 047
   type: vmess
   network: ws
-  server: 104.21.238.86
+  server: 104.26.0.101
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -1187,7 +1151,22 @@ proxies:
 - name: 美国 048
   type: vmess
   network: ws
-  server: 104.21.238.87
+  server: 104.26.0.102
+  port: 2086
+  uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
+  servername: m116.164748.xyz
+  tls: false
+  udp: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: m116.164748.xyz
+    path: github.com/Alvin9999
+- name: 美国 050
+  type: vmess
+  network: ws
+  server: 104.26.0.103
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -1202,7 +1181,7 @@ proxies:
 - name: 美国 053
   type: vmess
   network: ws
-  server: 104.21.238.88
+  server: 104.26.0.104
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -1217,7 +1196,7 @@ proxies:
 - name: 美国 054
   type: vmess
   network: ws
-  server: 104.21.238.89
+  server: 104.26.0.105
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -1232,7 +1211,7 @@ proxies:
 - name: 美国 055
   type: vmess
   network: ws
-  server: 104.21.238.90
+  server: 104.26.0.106
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -1247,7 +1226,7 @@ proxies:
 - name: 美国 056
   type: vmess
   network: ws
-  server: 104.21.238.91
+  server: 104.26.0.107
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -1262,7 +1241,7 @@ proxies:
 - name: 美国 057
   type: vmess
   network: ws
-  server: 104.21.238.92
+  server: 104.26.0.108
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -1277,7 +1256,7 @@ proxies:
 - name: 美国 059
   type: vmess
   network: ws
-  server: 104.21.238.93
+  server: 104.26.0.109
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -1292,7 +1271,7 @@ proxies:
 - name: 美国 063
   type: vmess
   network: ws
-  server: 104.21.238.94
+  server: 104.26.0.110
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -1307,7 +1286,7 @@ proxies:
 - name: 美国 064
   type: vmess
   network: ws
-  server: 104.21.238.95
+  server: 104.26.0.111
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -1322,7 +1301,7 @@ proxies:
 - name: 美国 065
   type: vmess
   network: ws
-  server: 104.21.238.96
+  server: 104.26.0.112
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -1337,7 +1316,7 @@ proxies:
 - name: 美国 066
   type: vmess
   network: ws
-  server: 104.21.238.97
+  server: 104.26.0.113
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -1352,7 +1331,22 @@ proxies:
 - name: 美国 068
   type: vmess
   network: ws
-  server: 104.21.238.98
+  server: 104.26.0.114
+  port: 2086
+  uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
+  servername: m116.164748.xyz
+  tls: false
+  udp: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: m116.164748.xyz
+    path: github.com/Alvin9999
+- name: 美国 070
+  type: vmess
+  network: ws
+  server: 104.26.0.115
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -1367,7 +1361,7 @@ proxies:
 - name: 美国 071
   type: vmess
   network: ws
-  server: 104.21.238.99
+  server: 104.26.0.116
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -1382,7 +1376,7 @@ proxies:
 - name: 美国 073
   type: vmess
   network: ws
-  server: 104.21.238.100
+  server: 104.26.0.117
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -1397,7 +1391,7 @@ proxies:
 - name: 美国 074
   type: vmess
   network: ws
-  server: 104.21.238.101
+  server: 104.26.0.118
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -1412,7 +1406,7 @@ proxies:
 - name: 美国 075
   type: vmess
   network: ws
-  server: 104.21.238.102
+  server: 104.26.0.119
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -1427,7 +1421,7 @@ proxies:
 - name: 美国 076
   type: vmess
   network: ws
-  server: 104.21.238.103
+  server: 104.26.0.120
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -1442,7 +1436,7 @@ proxies:
 - name: 美国 081
   type: vmess
   network: ws
-  server: 104.21.238.104
+  server: 104.26.0.121
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -1457,7 +1451,7 @@ proxies:
 - name: 美国 083
   type: vmess
   network: ws
-  server: 104.21.238.105
+  server: 104.26.0.122
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -1472,7 +1466,7 @@ proxies:
 - name: 美国 085
   type: vmess
   network: ws
-  server: 104.21.238.106
+  server: 104.26.0.123
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -1487,7 +1481,7 @@ proxies:
 - name: 美国 086
   type: vmess
   network: ws
-  server: 104.21.238.107
+  server: 104.26.0.124
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -1502,7 +1496,7 @@ proxies:
 - name: 美国 088
   type: vmess
   network: ws
-  server: 104.21.238.108
+  server: 104.26.0.125
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -1517,7 +1511,7 @@ proxies:
 - name: 美国 089
   type: vmess
   network: ws
-  server: 104.21.238.109
+  server: 104.26.0.126
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -1532,7 +1526,7 @@ proxies:
 - name: 美国 090
   type: vmess
   network: ws
-  server: 104.21.238.110
+  server: 104.26.0.127
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -1547,7 +1541,7 @@ proxies:
 - name: 美国 091
   type: vmess
   network: ws
-  server: 104.21.238.111
+  server: 104.26.0.128
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -1562,7 +1556,7 @@ proxies:
 - name: 美国 092
   type: vmess
   network: ws
-  server: 104.21.238.112
+  server: 104.26.0.129
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -1577,7 +1571,7 @@ proxies:
 - name: 美国 093
   type: vmess
   network: ws
-  server: 104.21.238.113
+  server: 104.26.0.130
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -1592,7 +1586,7 @@ proxies:
 - name: 美国 094
   type: vmess
   network: ws
-  server: 104.21.238.114
+  server: 104.26.0.131
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -1607,7 +1601,7 @@ proxies:
 - name: 美国 095
   type: vmess
   network: ws
-  server: 104.21.238.115
+  server: 104.26.0.132
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -1622,7 +1616,7 @@ proxies:
 - name: 美国 096
   type: vmess
   network: ws
-  server: 104.21.238.116
+  server: 104.26.0.133
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -1637,7 +1631,7 @@ proxies:
 - name: 美国 098
   type: vmess
   network: ws
-  server: 104.21.238.117
+  server: 104.26.0.134
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -1652,7 +1646,7 @@ proxies:
 - name: 美国 099
   type: vmess
   network: ws
-  server: 104.21.238.118
+  server: 104.26.0.135
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -1667,7 +1661,7 @@ proxies:
 - name: 美国 100
   type: vmess
   network: ws
-  server: 104.21.238.119
+  server: 104.26.0.136
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -1682,7 +1676,7 @@ proxies:
 - name: 美国 101
   type: vmess
   network: ws
-  server: 104.21.238.120
+  server: 104.26.0.137
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -1697,7 +1691,7 @@ proxies:
 - name: 美国 102
   type: vmess
   network: ws
-  server: 104.21.238.121
+  server: 104.26.0.138
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -1712,7 +1706,7 @@ proxies:
 - name: 美国 103
   type: vmess
   network: ws
-  server: 104.21.238.122
+  server: 104.26.0.139
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -1727,7 +1721,7 @@ proxies:
 - name: 美国 104
   type: vmess
   network: ws
-  server: 104.21.238.123
+  server: 104.26.0.140
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -1742,7 +1736,7 @@ proxies:
 - name: 美国 105
   type: vmess
   network: ws
-  server: 104.21.238.124
+  server: 104.26.0.141
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -1757,7 +1751,7 @@ proxies:
 - name: 美国 106
   type: vmess
   network: ws
-  server: 104.21.238.125
+  server: 104.26.0.142
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -1772,7 +1766,7 @@ proxies:
 - name: 美国 107
   type: vmess
   network: ws
-  server: 104.21.238.126
+  server: 104.26.0.143
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -1787,7 +1781,7 @@ proxies:
 - name: 美国 108
   type: vmess
   network: ws
-  server: 104.21.238.127
+  server: 104.26.0.144
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -1802,7 +1796,7 @@ proxies:
 - name: 美国 109
   type: vmess
   network: ws
-  server: 104.21.238.128
+  server: 104.26.0.145
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -1817,7 +1811,7 @@ proxies:
 - name: 美国 111
   type: vmess
   network: ws
-  server: 104.21.238.129
+  server: 104.26.0.146
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -1832,7 +1826,7 @@ proxies:
 - name: 美国 112
   type: vmess
   network: ws
-  server: 104.21.238.130
+  server: 104.26.0.147
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -1847,7 +1841,7 @@ proxies:
 - name: 美国 113
   type: vmess
   network: ws
-  server: 104.21.238.131
+  server: 104.26.0.148
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -1862,7 +1856,7 @@ proxies:
 - name: 美国 114
   type: vmess
   network: ws
-  server: 104.21.238.132
+  server: 104.26.0.149
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -1877,7 +1871,7 @@ proxies:
 - name: 美国 115
   type: vmess
   network: ws
-  server: 104.21.238.133
+  server: 104.26.0.150
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -1892,7 +1886,7 @@ proxies:
 - name: 美国 116
   type: vmess
   network: ws
-  server: 104.21.238.134
+  server: 104.26.0.151
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -1907,7 +1901,7 @@ proxies:
 - name: 美国 117
   type: vmess
   network: ws
-  server: 104.21.238.135
+  server: 104.26.0.152
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -1922,7 +1916,7 @@ proxies:
 - name: 美国 118
   type: vmess
   network: ws
-  server: 104.21.238.136
+  server: 104.26.0.153
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -1937,7 +1931,7 @@ proxies:
 - name: 美国 119
   type: vmess
   network: ws
-  server: 104.21.238.137
+  server: 104.26.0.154
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -1952,7 +1946,7 @@ proxies:
 - name: 美国 120
   type: vmess
   network: ws
-  server: 104.21.238.138
+  server: 104.26.0.155
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -1967,7 +1961,7 @@ proxies:
 - name: 美国 121
   type: vmess
   network: ws
-  server: 104.21.238.139
+  server: 104.26.0.156
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -1982,7 +1976,7 @@ proxies:
 - name: 美国 122
   type: vmess
   network: ws
-  server: 104.21.238.140
+  server: 104.26.0.157
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -1997,7 +1991,7 @@ proxies:
 - name: 美国 123
   type: vmess
   network: ws
-  server: 104.21.238.141
+  server: 104.26.0.158
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -2012,7 +2006,7 @@ proxies:
 - name: 美国 124
   type: vmess
   network: ws
-  server: 104.21.238.142
+  server: 104.26.0.159
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -2027,7 +2021,7 @@ proxies:
 - name: 美国 125
   type: vmess
   network: ws
-  server: 104.21.238.143
+  server: 104.26.0.160
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -2042,7 +2036,7 @@ proxies:
 - name: 美国 126
   type: vmess
   network: ws
-  server: 104.21.238.144
+  server: 104.26.0.161
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -2057,7 +2051,7 @@ proxies:
 - name: 美国 127
   type: vmess
   network: ws
-  server: 104.21.238.145
+  server: 104.26.0.162
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -2072,7 +2066,7 @@ proxies:
 - name: 美国 128
   type: vmess
   network: ws
-  server: 104.21.238.146
+  server: 104.26.0.163
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -2087,7 +2081,7 @@ proxies:
 - name: 美国 129
   type: vmess
   network: ws
-  server: 104.21.238.147
+  server: 104.26.0.164
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -2102,7 +2096,7 @@ proxies:
 - name: 美国 130
   type: vmess
   network: ws
-  server: 104.21.238.148
+  server: 104.26.0.165
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -2117,7 +2111,7 @@ proxies:
 - name: 美国 131
   type: vmess
   network: ws
-  server: 104.21.238.149
+  server: 104.26.0.166
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -2132,7 +2126,7 @@ proxies:
 - name: 美国 132
   type: vmess
   network: ws
-  server: 104.21.238.150
+  server: 104.26.0.167
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -2147,7 +2141,7 @@ proxies:
 - name: 美国 133
   type: vmess
   network: ws
-  server: 104.21.238.151
+  server: 104.26.0.168
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -2162,7 +2156,7 @@ proxies:
 - name: 美国 134
   type: vmess
   network: ws
-  server: 104.21.238.152
+  server: 104.26.0.169
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -2177,7 +2171,7 @@ proxies:
 - name: 美国 135
   type: vmess
   network: ws
-  server: 104.21.238.153
+  server: 104.26.0.170
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -2192,7 +2186,7 @@ proxies:
 - name: 美国 136
   type: vmess
   network: ws
-  server: 104.21.238.154
+  server: 104.26.0.171
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -2207,7 +2201,7 @@ proxies:
 - name: 美国 137
   type: vmess
   network: ws
-  server: 104.21.238.155
+  server: 104.26.0.172
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -2222,7 +2216,7 @@ proxies:
 - name: 美国 138
   type: vmess
   network: ws
-  server: 104.21.238.156
+  server: 104.26.0.173
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -2237,7 +2231,7 @@ proxies:
 - name: 美国 139
   type: vmess
   network: ws
-  server: 104.21.238.157
+  server: 104.26.0.174
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -2252,7 +2246,7 @@ proxies:
 - name: 美国 140
   type: vmess
   network: ws
-  server: 104.21.238.158
+  server: 104.26.0.175
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -2267,7 +2261,7 @@ proxies:
 - name: 美国 141
   type: vmess
   network: ws
-  server: 104.21.238.159
+  server: 104.26.0.176
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -2282,7 +2276,7 @@ proxies:
 - name: 美国 142
   type: vmess
   network: ws
-  server: 104.21.238.160
+  server: 104.26.0.177
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -2297,7 +2291,7 @@ proxies:
 - name: 美国 143
   type: vmess
   network: ws
-  server: 104.21.238.161
+  server: 104.26.0.178
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -2312,7 +2306,7 @@ proxies:
 - name: 美国 144
   type: vmess
   network: ws
-  server: 104.21.238.162
+  server: 104.26.0.179
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -2327,7 +2321,7 @@ proxies:
 - name: 美国 145
   type: vmess
   network: ws
-  server: 104.21.238.163
+  server: 104.26.0.180
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -2342,7 +2336,7 @@ proxies:
 - name: 美国 146
   type: vmess
   network: ws
-  server: 104.21.238.164
+  server: 104.26.0.181
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -2357,7 +2351,7 @@ proxies:
 - name: 美国 147
   type: vmess
   network: ws
-  server: 104.21.238.165
+  server: 104.26.0.182
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -2372,7 +2366,7 @@ proxies:
 - name: 美国 148
   type: vmess
   network: ws
-  server: 104.21.238.166
+  server: 104.26.0.183
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -2387,7 +2381,7 @@ proxies:
 - name: 美国 149
   type: vmess
   network: ws
-  server: 104.21.238.167
+  server: 104.26.0.184
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -2402,7 +2396,7 @@ proxies:
 - name: 美国 150
   type: vmess
   network: ws
-  server: 104.21.238.168
+  server: 104.26.0.185
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -2417,7 +2411,7 @@ proxies:
 - name: 美国 151
   type: vmess
   network: ws
-  server: 104.21.238.169
+  server: 104.26.0.186
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -2432,7 +2426,7 @@ proxies:
 - name: 美国 152
   type: vmess
   network: ws
-  server: 104.21.238.170
+  server: 104.26.0.187
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -2447,7 +2441,7 @@ proxies:
 - name: 美国 153
   type: vmess
   network: ws
-  server: 104.21.238.171
+  server: 104.26.0.188
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -2462,7 +2456,7 @@ proxies:
 - name: 美国 154
   type: vmess
   network: ws
-  server: 104.21.238.172
+  server: 104.26.0.189
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -2477,7 +2471,7 @@ proxies:
 - name: 美国 155
   type: vmess
   network: ws
-  server: 104.21.238.173
+  server: 104.26.0.190
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -2492,7 +2486,7 @@ proxies:
 - name: 美国 156
   type: vmess
   network: ws
-  server: 104.21.238.174
+  server: 104.26.0.191
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -2507,7 +2501,7 @@ proxies:
 - name: 美国 157
   type: vmess
   network: ws
-  server: 104.21.238.175
+  server: 104.26.0.192
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -2522,7 +2516,7 @@ proxies:
 - name: 美国 158
   type: vmess
   network: ws
-  server: 104.21.238.176
+  server: 104.26.0.193
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -2537,7 +2531,7 @@ proxies:
 - name: 美国 159
   type: vmess
   network: ws
-  server: 104.21.238.177
+  server: 104.26.0.194
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -2552,7 +2546,7 @@ proxies:
 - name: 美国 160
   type: vmess
   network: ws
-  server: 104.21.238.178
+  server: 104.26.0.195
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -2567,7 +2561,7 @@ proxies:
 - name: 美国 161
   type: vmess
   network: ws
-  server: 104.21.238.179
+  server: 104.26.0.196
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -2582,7 +2576,7 @@ proxies:
 - name: 美国 162
   type: vmess
   network: ws
-  server: 104.21.238.180
+  server: 104.26.0.197
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -2597,7 +2591,7 @@ proxies:
 - name: 美国 163
   type: vmess
   network: ws
-  server: 104.21.238.181
+  server: 104.26.0.198
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -2612,7 +2606,7 @@ proxies:
 - name: 美国 164
   type: vmess
   network: ws
-  server: 104.21.238.182
+  server: 104.26.0.199
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -2627,7 +2621,7 @@ proxies:
 - name: 美国 165
   type: vmess
   network: ws
-  server: 104.21.238.183
+  server: 104.26.0.200
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -2642,7 +2636,7 @@ proxies:
 - name: 美国 166
   type: vmess
   network: ws
-  server: 104.21.238.184
+  server: 104.26.0.201
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -2657,7 +2651,7 @@ proxies:
 - name: 美国 167
   type: vmess
   network: ws
-  server: 104.21.238.185
+  server: 104.26.0.202
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -2672,7 +2666,7 @@ proxies:
 - name: 美国 168
   type: vmess
   network: ws
-  server: 104.21.238.186
+  server: 104.26.0.203
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -2687,7 +2681,7 @@ proxies:
 - name: 美国 169
   type: vmess
   network: ws
-  server: 104.21.238.187
+  server: 104.26.0.204
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -2702,7 +2696,7 @@ proxies:
 - name: 美国 170
   type: vmess
   network: ws
-  server: 104.21.238.188
+  server: 104.26.0.205
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -2717,7 +2711,7 @@ proxies:
 - name: 美国 171
   type: vmess
   network: ws
-  server: 104.21.238.189
+  server: 104.26.0.206
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -2732,7 +2726,7 @@ proxies:
 - name: 美国 172
   type: vmess
   network: ws
-  server: 104.21.238.190
+  server: 104.26.0.207
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -2747,7 +2741,7 @@ proxies:
 - name: 美国 173
   type: vmess
   network: ws
-  server: 104.21.238.191
+  server: 104.26.0.208
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -2762,7 +2756,7 @@ proxies:
 - name: 美国 174
   type: vmess
   network: ws
-  server: 104.21.238.192
+  server: 104.26.0.209
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -2777,7 +2771,7 @@ proxies:
 - name: 美国 175
   type: vmess
   network: ws
-  server: 104.21.238.193
+  server: 104.26.0.210
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -2792,7 +2786,7 @@ proxies:
 - name: 美国 176
   type: vmess
   network: ws
-  server: 104.21.238.194
+  server: 104.26.0.211
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -2807,7 +2801,7 @@ proxies:
 - name: 美国 177
   type: vmess
   network: ws
-  server: 104.21.238.195
+  server: 104.26.0.212
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -2822,7 +2816,7 @@ proxies:
 - name: 美国 178
   type: vmess
   network: ws
-  server: 104.21.238.196
+  server: 104.26.0.213
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -2837,7 +2831,7 @@ proxies:
 - name: 美国 179
   type: vmess
   network: ws
-  server: 104.21.238.197
+  server: 104.26.0.214
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -2852,7 +2846,7 @@ proxies:
 - name: 美国 180
   type: vmess
   network: ws
-  server: 104.21.238.198
+  server: 104.26.0.215
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -2867,7 +2861,7 @@ proxies:
 - name: 美国 181
   type: vmess
   network: ws
-  server: 104.21.238.199
+  server: 104.26.0.216
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -2882,7 +2876,7 @@ proxies:
 - name: 美国 182
   type: vmess
   network: ws
-  server: 104.21.238.200
+  server: 104.26.0.217
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -2897,7 +2891,7 @@ proxies:
 - name: 美国 183
   type: vmess
   network: ws
-  server: 104.21.238.201
+  server: 104.26.0.218
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -2912,7 +2906,7 @@ proxies:
 - name: 美国 184
   type: vmess
   network: ws
-  server: 104.21.238.202
+  server: 104.26.0.219
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -2927,7 +2921,7 @@ proxies:
 - name: 美国 185
   type: vmess
   network: ws
-  server: 104.21.238.203
+  server: 104.26.0.220
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -2942,7 +2936,7 @@ proxies:
 - name: 美国 186
   type: vmess
   network: ws
-  server: 104.21.238.204
+  server: 104.26.0.221
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -2957,7 +2951,7 @@ proxies:
 - name: 美国 187
   type: vmess
   network: ws
-  server: 104.21.238.205
+  server: 104.26.0.222
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -2972,7 +2966,7 @@ proxies:
 - name: 美国 188
   type: vmess
   network: ws
-  server: 104.21.238.206
+  server: 104.26.0.223
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -2987,7 +2981,7 @@ proxies:
 - name: 美国 189
   type: vmess
   network: ws
-  server: 104.21.238.207
+  server: 104.26.0.224
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -3002,7 +2996,7 @@ proxies:
 - name: 美国 190
   type: vmess
   network: ws
-  server: 104.21.238.208
+  server: 104.26.0.225
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -3017,7 +3011,7 @@ proxies:
 - name: 美国 191
   type: vmess
   network: ws
-  server: 104.21.238.209
+  server: 104.26.0.226
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -3032,7 +3026,7 @@ proxies:
 - name: 美国 192
   type: vmess
   network: ws
-  server: 104.21.238.210
+  server: 104.26.0.227
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -3047,7 +3041,7 @@ proxies:
 - name: 美国 193
   type: vmess
   network: ws
-  server: 104.21.238.211
+  server: 104.26.0.228
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -3062,7 +3056,7 @@ proxies:
 - name: 美国 194
   type: vmess
   network: ws
-  server: 104.21.238.212
+  server: 104.26.0.229
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -3077,7 +3071,7 @@ proxies:
 - name: 美国 195
   type: vmess
   network: ws
-  server: 104.21.238.213
+  server: 104.26.0.230
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -3092,7 +3086,7 @@ proxies:
 - name: 美国 196
   type: vmess
   network: ws
-  server: 104.21.238.214
+  server: 104.26.0.231
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -3107,7 +3101,7 @@ proxies:
 - name: 美国 197
   type: vmess
   network: ws
-  server: 104.21.238.215
+  server: 104.26.0.232
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -3122,7 +3116,7 @@ proxies:
 - name: 美国 198
   type: vmess
   network: ws
-  server: 104.21.238.216
+  server: 104.26.0.233
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -3137,7 +3131,7 @@ proxies:
 - name: 美国 199
   type: vmess
   network: ws
-  server: 104.21.238.217
+  server: 104.26.0.234
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -3152,7 +3146,7 @@ proxies:
 - name: 美国 200
   type: vmess
   network: ws
-  server: 104.21.238.218
+  server: 104.26.0.235
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -3167,7 +3161,7 @@ proxies:
 - name: 美国 201
   type: vmess
   network: ws
-  server: 104.21.238.219
+  server: 104.26.0.236
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -3182,7 +3176,7 @@ proxies:
 - name: 美国 202
   type: vmess
   network: ws
-  server: 104.21.238.220
+  server: 104.26.0.237
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -3197,7 +3191,7 @@ proxies:
 - name: 美国 203
   type: vmess
   network: ws
-  server: 104.21.238.221
+  server: 104.26.0.238
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -3212,7 +3206,7 @@ proxies:
 - name: 美国 204
   type: vmess
   network: ws
-  server: 104.21.238.222
+  server: 104.26.0.239
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -3227,7 +3221,7 @@ proxies:
 - name: 美国 205
   type: vmess
   network: ws
-  server: 104.21.238.223
+  server: 104.26.0.240
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -3242,7 +3236,7 @@ proxies:
 - name: 美国 206
   type: vmess
   network: ws
-  server: 104.21.238.224
+  server: 104.26.0.241
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -3257,7 +3251,7 @@ proxies:
 - name: 美国 207
   type: vmess
   network: ws
-  server: 104.21.238.225
+  server: 104.26.0.242
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -3272,7 +3266,7 @@ proxies:
 - name: 美国 208
   type: vmess
   network: ws
-  server: 104.21.238.226
+  server: 104.26.0.243
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -3287,7 +3281,7 @@ proxies:
 - name: 美国 209
   type: vmess
   network: ws
-  server: 104.21.238.227
+  server: 104.26.0.244
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -3302,7 +3296,7 @@ proxies:
 - name: 美国 210
   type: vmess
   network: ws
-  server: 104.21.238.228
+  server: 104.26.0.245
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -3317,7 +3311,7 @@ proxies:
 - name: 美国 211
   type: vmess
   network: ws
-  server: 104.21.238.229
+  server: 104.26.0.246
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -3332,7 +3326,7 @@ proxies:
 - name: 美国 212
   type: vmess
   network: ws
-  server: 104.21.238.230
+  server: 104.26.0.247
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -3347,7 +3341,7 @@ proxies:
 - name: 美国 213
   type: vmess
   network: ws
-  server: 104.21.238.231
+  server: 104.26.0.248
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -3362,7 +3356,7 @@ proxies:
 - name: 美国 214
   type: vmess
   network: ws
-  server: 104.21.238.232
+  server: 104.26.0.249
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -3377,7 +3371,7 @@ proxies:
 - name: 美国 215
   type: vmess
   network: ws
-  server: 104.21.238.233
+  server: 104.26.0.250
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -3392,7 +3386,7 @@ proxies:
 - name: 美国 216
   type: vmess
   network: ws
-  server: 104.21.238.234
+  server: 104.18.114.3
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -3407,7 +3401,7 @@ proxies:
 - name: 美国 217
   type: vmess
   network: ws
-  server: 104.21.238.235
+  server: 104.18.114.4
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -3422,7 +3416,7 @@ proxies:
 - name: 美国 218
   type: vmess
   network: ws
-  server: 104.21.238.236
+  server: 104.18.114.5
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -3437,7 +3431,7 @@ proxies:
 - name: 美国 219
   type: vmess
   network: ws
-  server: 104.21.238.237
+  server: 104.18.114.6
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -3452,7 +3446,7 @@ proxies:
 - name: 美国 220
   type: vmess
   network: ws
-  server: 104.21.238.238
+  server: 104.18.114.7
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -3467,7 +3461,7 @@ proxies:
 - name: 美国 221
   type: vmess
   network: ws
-  server: 104.21.238.239
+  server: 104.18.114.8
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -3482,7 +3476,7 @@ proxies:
 - name: 美国 222
   type: vmess
   network: ws
-  server: 104.21.238.240
+  server: 104.18.114.9
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -3497,7 +3491,7 @@ proxies:
 - name: 美国 223
   type: vmess
   network: ws
-  server: 104.21.238.241
+  server: 104.18.114.10
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -3512,7 +3506,7 @@ proxies:
 - name: 美国 224
   type: vmess
   network: ws
-  server: 104.21.238.242
+  server: 104.18.114.11
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -3527,7 +3521,7 @@ proxies:
 - name: 美国 225
   type: vmess
   network: ws
-  server: 104.21.238.243
+  server: 104.18.114.12
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -3542,7 +3536,7 @@ proxies:
 - name: 美国 226
   type: vmess
   network: ws
-  server: 104.21.238.244
+  server: 104.18.114.13
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -3557,7 +3551,7 @@ proxies:
 - name: 美国 227
   type: vmess
   network: ws
-  server: 104.21.238.245
+  server: 104.18.114.14
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -3572,7 +3566,7 @@ proxies:
 - name: 美国 228
   type: vmess
   network: ws
-  server: 104.21.238.246
+  server: 104.18.114.15
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -3587,7 +3581,7 @@ proxies:
 - name: 美国 229
   type: vmess
   network: ws
-  server: 104.21.238.247
+  server: 104.18.114.16
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -3602,7 +3596,7 @@ proxies:
 - name: 美国 230
   type: vmess
   network: ws
-  server: 104.21.238.248
+  server: 104.18.114.17
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -3617,7 +3611,7 @@ proxies:
 - name: 美国 231
   type: vmess
   network: ws
-  server: 104.21.238.249
+  server: 104.18.114.18
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -3632,7 +3626,7 @@ proxies:
 - name: 美国 232
   type: vmess
   network: ws
-  server: 104.21.238.250
+  server: 104.18.114.19
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -3647,7 +3641,7 @@ proxies:
 - name: 美国 233
   type: vmess
   network: ws
-  server: 104.26.0.1
+  server: 104.18.114.20
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -3662,7 +3656,7 @@ proxies:
 - name: 美国 234
   type: vmess
   network: ws
-  server: 104.26.0.2
+  server: 104.18.114.21
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -3677,7 +3671,7 @@ proxies:
 - name: 美国 235
   type: vmess
   network: ws
-  server: 104.26.0.3
+  server: 104.18.114.22
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -3692,7 +3686,7 @@ proxies:
 - name: 美国 236
   type: vmess
   network: ws
-  server: 104.26.0.4
+  server: 104.18.114.23
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -3707,7 +3701,7 @@ proxies:
 - name: 美国 237
   type: vmess
   network: ws
-  server: 104.26.0.5
+  server: 104.18.114.24
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -3722,7 +3716,7 @@ proxies:
 - name: 美国 238
   type: vmess
   network: ws
-  server: 104.26.0.6
+  server: 104.18.114.25
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -3737,7 +3731,7 @@ proxies:
 - name: 美国 239
   type: vmess
   network: ws
-  server: 104.26.0.7
+  server: 104.18.114.26
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -3752,7 +3746,7 @@ proxies:
 - name: 美国 240
   type: vmess
   network: ws
-  server: 104.26.0.8
+  server: 104.18.114.27
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -3767,7 +3761,7 @@ proxies:
 - name: 美国 241
   type: vmess
   network: ws
-  server: 104.26.0.9
+  server: 104.18.114.28
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -3782,7 +3776,7 @@ proxies:
 - name: 美国 242
   type: vmess
   network: ws
-  server: 104.26.0.10
+  server: 104.18.114.29
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -3797,7 +3791,7 @@ proxies:
 - name: 美国 243
   type: vmess
   network: ws
-  server: 104.26.0.11
+  server: 104.18.114.30
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -3812,7 +3806,7 @@ proxies:
 - name: 美国 244
   type: vmess
   network: ws
-  server: 104.26.0.12
+  server: 104.18.114.31
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -3827,7 +3821,7 @@ proxies:
 - name: 美国 245
   type: vmess
   network: ws
-  server: 104.26.0.13
+  server: 104.18.114.32
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -3842,7 +3836,7 @@ proxies:
 - name: 美国 246
   type: vmess
   network: ws
-  server: 104.26.0.14
+  server: 104.18.114.33
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -3857,7 +3851,7 @@ proxies:
 - name: 美国 247
   type: vmess
   network: ws
-  server: 104.26.0.15
+  server: 104.18.114.34
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -3872,7 +3866,7 @@ proxies:
 - name: 美国 248
   type: vmess
   network: ws
-  server: 104.26.0.16
+  server: 104.18.114.35
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -3887,7 +3881,7 @@ proxies:
 - name: 美国 249
   type: vmess
   network: ws
-  server: 104.26.0.17
+  server: 104.18.114.36
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -3902,7 +3896,7 @@ proxies:
 - name: 美国 250
   type: vmess
   network: ws
-  server: 104.26.0.18
+  server: 104.18.114.37
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -3917,7 +3911,7 @@ proxies:
 - name: 美国 251
   type: vmess
   network: ws
-  server: 104.26.0.19
+  server: 104.18.114.38
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -3932,7 +3926,7 @@ proxies:
 - name: 美国 252
   type: vmess
   network: ws
-  server: 104.26.0.20
+  server: 104.18.114.39
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -3947,7 +3941,7 @@ proxies:
 - name: 美国 253
   type: vmess
   network: ws
-  server: 104.26.0.21
+  server: 104.18.114.40
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -3962,7 +3956,7 @@ proxies:
 - name: 美国 254
   type: vmess
   network: ws
-  server: 104.26.0.22
+  server: 104.18.114.41
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -3977,7 +3971,7 @@ proxies:
 - name: 美国 255
   type: vmess
   network: ws
-  server: 104.26.0.23
+  server: 104.18.114.42
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -3992,7 +3986,7 @@ proxies:
 - name: 美国 256
   type: vmess
   network: ws
-  server: 104.26.0.24
+  server: 104.18.114.43
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -4007,7 +4001,7 @@ proxies:
 - name: 美国 257
   type: vmess
   network: ws
-  server: 104.26.0.25
+  server: 104.18.114.44
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -4022,7 +4016,7 @@ proxies:
 - name: 美国 258
   type: vmess
   network: ws
-  server: 104.26.0.26
+  server: 104.18.114.45
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -4037,7 +4031,7 @@ proxies:
 - name: 美国 259
   type: vmess
   network: ws
-  server: 104.26.0.27
+  server: 104.18.114.46
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -4052,7 +4046,7 @@ proxies:
 - name: 美国 260
   type: vmess
   network: ws
-  server: 104.26.0.28
+  server: 104.18.114.47
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -4067,7 +4061,7 @@ proxies:
 - name: 美国 261
   type: vmess
   network: ws
-  server: 104.26.0.29
+  server: 104.18.114.48
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -4082,7 +4076,7 @@ proxies:
 - name: 美国 262
   type: vmess
   network: ws
-  server: 104.26.0.30
+  server: 104.18.114.49
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -4097,7 +4091,7 @@ proxies:
 - name: 美国 263
   type: vmess
   network: ws
-  server: 104.26.0.31
+  server: 104.18.114.50
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -4112,7 +4106,7 @@ proxies:
 - name: 美国 264
   type: vmess
   network: ws
-  server: 104.26.0.32
+  server: 104.18.114.51
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -4127,7 +4121,7 @@ proxies:
 - name: 美国 265
   type: vmess
   network: ws
-  server: 104.26.0.33
+  server: 104.18.114.52
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -4142,7 +4136,7 @@ proxies:
 - name: 美国 266
   type: vmess
   network: ws
-  server: 104.26.0.34
+  server: 104.18.114.53
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -4157,7 +4151,7 @@ proxies:
 - name: 美国 267
   type: vmess
   network: ws
-  server: 104.26.0.35
+  server: 104.18.114.54
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -4172,7 +4166,7 @@ proxies:
 - name: 美国 268
   type: vmess
   network: ws
-  server: 104.26.0.36
+  server: 104.18.114.55
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -4187,7 +4181,7 @@ proxies:
 - name: 美国 269
   type: vmess
   network: ws
-  server: 104.26.0.37
+  server: 104.18.114.56
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -4202,7 +4196,7 @@ proxies:
 - name: 美国 270
   type: vmess
   network: ws
-  server: 104.26.0.38
+  server: 104.18.114.57
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -4217,7 +4211,7 @@ proxies:
 - name: 美国 271
   type: vmess
   network: ws
-  server: 104.26.0.39
+  server: 104.18.114.58
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -4232,7 +4226,7 @@ proxies:
 - name: 美国 272
   type: vmess
   network: ws
-  server: 104.26.0.40
+  server: 104.18.114.59
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -4247,7 +4241,7 @@ proxies:
 - name: 美国 273
   type: vmess
   network: ws
-  server: 104.26.0.41
+  server: 104.18.114.60
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -4262,7 +4256,7 @@ proxies:
 - name: 美国 274
   type: vmess
   network: ws
-  server: 104.26.0.42
+  server: 104.18.114.61
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -4277,7 +4271,7 @@ proxies:
 - name: 美国 275
   type: vmess
   network: ws
-  server: 104.26.0.43
+  server: 104.18.114.62
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -4292,7 +4286,7 @@ proxies:
 - name: 美国 276
   type: vmess
   network: ws
-  server: 104.26.0.44
+  server: 104.18.114.63
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -4307,7 +4301,7 @@ proxies:
 - name: 美国 277
   type: vmess
   network: ws
-  server: 104.26.0.45
+  server: 104.18.114.64
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -4322,7 +4316,7 @@ proxies:
 - name: 美国 278
   type: vmess
   network: ws
-  server: 104.26.0.46
+  server: 104.18.114.65
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -4337,7 +4331,7 @@ proxies:
 - name: 美国 279
   type: vmess
   network: ws
-  server: 104.26.0.47
+  server: 104.18.114.66
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -4352,7 +4346,7 @@ proxies:
 - name: 美国 280
   type: vmess
   network: ws
-  server: 104.26.0.48
+  server: 104.18.114.67
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -4367,7 +4361,7 @@ proxies:
 - name: 美国 281
   type: vmess
   network: ws
-  server: 104.26.0.49
+  server: 104.18.114.68
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -4382,7 +4376,7 @@ proxies:
 - name: 美国 282
   type: vmess
   network: ws
-  server: 104.26.0.50
+  server: 104.18.114.69
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -4397,7 +4391,7 @@ proxies:
 - name: 美国 283
   type: vmess
   network: ws
-  server: 104.26.0.51
+  server: 104.18.114.70
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -4412,7 +4406,7 @@ proxies:
 - name: 美国 284
   type: vmess
   network: ws
-  server: 104.26.0.52
+  server: 104.18.114.71
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -4427,7 +4421,7 @@ proxies:
 - name: 美国 285
   type: vmess
   network: ws
-  server: 104.26.0.53
+  server: 104.18.114.72
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -4442,7 +4436,7 @@ proxies:
 - name: 美国 286
   type: vmess
   network: ws
-  server: 104.26.0.54
+  server: 104.18.114.73
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -4457,7 +4451,7 @@ proxies:
 - name: 美国 287
   type: vmess
   network: ws
-  server: 104.26.0.55
+  server: 104.18.114.74
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -4472,7 +4466,7 @@ proxies:
 - name: 美国 288
   type: vmess
   network: ws
-  server: 104.26.0.56
+  server: 104.18.114.75
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -4487,7 +4481,7 @@ proxies:
 - name: 美国 289
   type: vmess
   network: ws
-  server: 104.26.0.57
+  server: 104.18.114.76
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -4502,7 +4496,7 @@ proxies:
 - name: 美国 290
   type: vmess
   network: ws
-  server: 104.26.0.58
+  server: 104.18.114.77
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -4517,7 +4511,7 @@ proxies:
 - name: 美国 291
   type: vmess
   network: ws
-  server: 104.26.0.59
+  server: 104.18.114.78
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -4532,7 +4526,7 @@ proxies:
 - name: 美国 292
   type: vmess
   network: ws
-  server: 104.26.0.60
+  server: 104.18.114.79
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -4547,7 +4541,7 @@ proxies:
 - name: 美国 293
   type: vmess
   network: ws
-  server: 104.26.0.61
+  server: 104.18.114.80
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -4562,7 +4556,7 @@ proxies:
 - name: 美国 294
   type: vmess
   network: ws
-  server: 104.26.0.62
+  server: 104.18.114.81
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -4577,7 +4571,7 @@ proxies:
 - name: 美国 295
   type: vmess
   network: ws
-  server: 104.26.0.63
+  server: 104.18.114.82
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -4592,7 +4586,7 @@ proxies:
 - name: 美国 296
   type: vmess
   network: ws
-  server: 104.26.0.64
+  server: 104.18.114.83
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -4607,7 +4601,7 @@ proxies:
 - name: 美国 297
   type: vmess
   network: ws
-  server: 104.26.0.65
+  server: 104.18.114.84
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -4622,7 +4616,7 @@ proxies:
 - name: 美国 298
   type: vmess
   network: ws
-  server: 104.26.0.66
+  server: 104.18.114.85
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -4637,7 +4631,37 @@ proxies:
 - name: 美国 299
   type: vmess
   network: ws
-  server: 104.26.0.67
+  server: 104.18.114.86
+  port: 2086
+  uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
+  servername: m116.164748.xyz
+  tls: false
+  udp: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: m116.164748.xyz
+    path: github.com/Alvin9999
+- name: 美国 300
+  type: vmess
+  network: ws
+  server: 104.18.114.87
+  port: 2086
+  uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
+  servername: m116.164748.xyz
+  tls: false
+  udp: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: m116.164748.xyz
+    path: github.com/Alvin9999
+- name: 美国 301
+  type: vmess
+  network: ws
+  server: 104.18.114.88
   port: 2086
   uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   servername: m116.164748.xyz
@@ -4660,7 +4684,6 @@ proxy-groups:
 - name: SELECT
   type: select
   proxies: &id001
-  - 土耳其 002
   - 加拿大 027
   - 加拿大 019
   - 加拿大 013
@@ -4677,12 +4700,10 @@ proxy-groups:
   - 美国 038
   - 巴西 001
   - 美国 041
-  - 美国 042
   - 美国 044
   - 美国 045
   - 美国 046
   - 美国 049
-  - 美国 050
   - 美国 051
   - 美国 052
   - 荷兰 002
@@ -4695,7 +4716,6 @@ proxy-groups:
   - 美国 077
   - 美国 078
   - 美国 082
-  - 美国 070
   - 美国 079
   - 美国 080
   - 美国 072
@@ -4736,8 +4756,10 @@ proxy-groups:
   - 美国 035
   - 美国 039
   - 美国 040
+  - 美国 042
   - 美国 047
   - 美国 048
+  - 美国 050
   - 美国 053
   - 美国 054
   - 美国 055
@@ -4749,6 +4771,7 @@ proxy-groups:
   - 美国 065
   - 美国 066
   - 美国 068
+  - 美国 070
   - 美国 071
   - 美国 073
   - 美国 074
@@ -4968,6 +4991,8 @@ proxy-groups:
   - 美国 297
   - 美国 298
   - 美国 299
+  - 美国 300
+  - 美国 301
 - name: LOAD-BALANCE
   type: load-balance
   url: https://cp.cloudflare.com/generate_204
