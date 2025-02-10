@@ -658,20 +658,6 @@ proxies:
     headers:
       Host: go.daluquan.top
     path: /
-- name: 美国 018
-  type: vmess
-  network: ws
-  server: imnjmlav.whmvmkwuey.store
-  port: 443
-  uuid: a2146f1c-9a28-46bd-8d6a-2320d2eeaa45
-  tls: true
-  udp: true
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: imnjmlav.whmvmkwuey.store
-    path: /
 - name: 印度 001
   type: vmess
   network: ws
@@ -888,21 +874,6 @@ proxies:
     headers:
       Host: ngedc.ambercc.filegear-sg.me
     path: /?ed=2560
-- name: 俄罗斯 001
-  type: vless
-  network: grpc
-  server: 188.227.84.54
-  port: 8443
-  uuid: 79e1374d-7f94-4da6-97ad-5ce28a5d393e
-  servername: www.speedtest.net
-  skip-cert-verify: false
-  tls: true
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: Paai0w6bHcKmaZzm8Sljt8uKydSYX5h1t3G_Y3T-Rm0
-    short-id: f74b9234
-  grpc-opts:
-    grpc-service-name: JoinBadeChannel@antimeli
 - name: 日本 002
   type: vless
   network: grpc
@@ -1196,19 +1167,6 @@ proxies:
       - moi.ir
     path:
     - /
-- name: 美国 044
-  type: vless
-  network: ws
-  server: 13.39.88.147
-  port: 22222
-  uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
-  servername: telegram-channel-vlessconfig.sohala.uk
-  skip-cert-verify: false
-  tls: true
-  ws-opts:
-    headers:
-      Host: telegram-channel-vlessconfig.sohala.uk
-    path: /telegram-channel-vlessconfig-ws
 - name: 美国 047
   type: trojan
   network: ws
@@ -2177,20 +2135,605 @@ proxies:
     headers:
       Host: ovhwuxian.pai50288.uk
     path: /
-- name: 荷兰 005
+- name: 美国 018
   type: vmess
   network: ws
-  server: indiavideo.sbs
+  server: p1.v2raybrasil.xyz
+  port: 2052
+  uuid: a71c8f6c-5210-45a0-8f47-1d2556ee3083
+  skip-cert-verify: true
+  tls: false
+  udp: true
+  tfo: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: ybr.redbullplus.xyz
+    path: /
+- name: 加拿大 011
+  type: vmess
+  network: ws
+  server: s5.cn-db.top
+  port: 2082
+  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
+  skip-cert-verify: true
+  tls: false
+  udp: true
+  tfo: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: 100-219-162-241.s5.cn-db.top
+    path: /dabai.in172.64.23.14
+- name: 加拿大 012
+  type: vmess
+  network: ws
+  server: s2.db-link01.top
+  port: 80
+  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
+  skip-cert-verify: true
+  tls: false
+  udp: true
+  tfo: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: 100-55-60-174.s2.db-link01.top
+    path: /dabai.in172.67.60.154
+- name: 美国 044
+  type: vmess
+  network: ws
+  server: nl.899994.xyz
+  port: 8443
+  uuid: a0605527-28e4-449c-80ee-5642cc16a8af
+  skip-cert-verify: true
+  tls: true
+  udp: true
+  tfo: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: nl.899994.xyz
+    path: /
+- name: 美国 114
+  type: vmess
+  network: ws
+  server: se.899994.xyz
   port: 443
-  uuid: 425c5e6e-30a0-4984-8a13-ee6f72053162
-  servername: indiavideo.sbs
+  uuid: a0605527-28e4-449c-80ee-5642cc16a8af
+  servername: se.899994.xyz
+  skip-cert-verify: true
+  tls: true
+  udp: true
+  tfo: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: se.899994.xyz
+    path: /
+- name: 美国 115
+  type: vmess
+  network: ws
+  server: s2.db-link02.top
+  port: 80
+  uuid: f518cff0-ee41-3cde-a453-9f3fbccd7ff8
+  skip-cert-verify: true
+  tls: false
+  udp: true
+  tfo: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: 100-123-224-69.s2.db-link02.top
+    path: /dabai.in172.67.79.58
+- name: 美国 116
+  type: vmess
+  network: ws
+  server: plex.com
+  port: 443
+  uuid: ca387597-d79e-48c2-89a7-e2dc66a88a70
+  skip-cert-verify: true
+  tls: true
+  udp: true
+  tfo: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: telegram-isvvpn.ir
+    path: /racevpn?telegram-
+- name: 韩国 002
+  type: trojan
+  network: ws
+  server: 183.102.181.112
+  port: 50000
+  password: Aimer
+  skip-cert-verify: true
+  udp: true
+  sni: ngepo.ambercc.filegear-sg.me
+  client-fingerprint: chrome
+  ws-opts:
+    headers:
+      Host: ngepo.ambercc.filegear-sg.me
+    path: /?ed=2560
+- name: 韩国 003
+  type: trojan
+  network: ws
+  server: 210.222.30.180
+  port: 17100
+  password: Aimer
+  skip-cert-verify: true
+  udp: true
+  sni: ngepo.ambercc.filegear-sg.me
+  ws-opts:
+    headers:
+      Host: ngepo.ambercc.filegear-sg.me
+    path: /?ed=2560
+- name: 韩国 004
+  type: trojan
+  network: ws
+  server: 210.99.204.14
+  port: 10044
+  password: Aimer
+  skip-cert-verify: true
+  udp: true
+  sni: ngepo.ambercc.filegear-sg.me
+  client-fingerprint: chrome
+  ws-opts:
+    headers:
+      Host: ngepo.ambercc.filegear-sg.me
+    path: /?ed=2560
+- name: 韩国 005
+  type: trojan
+  network: ws
+  server: 210.103.48.53
+  port: 12601
+  password: Aimer
+  skip-cert-verify: true
+  udp: true
+  sni: ngepo.ambercc.filegear-sg.me
+  ws-opts:
+    headers:
+      Host: ngepo.ambercc.filegear-sg.me
+    path: /?ed=2560
+- name: 韩国 006
+  type: trojan
+  network: ws
+  server: 14.35.59.67
+  port: 50000
+  password: Aimer
+  skip-cert-verify: true
+  udp: true
+  sni: ngepo.ambercc.filegear-sg.me
+  client-fingerprint: chrome
+  ws-opts:
+    headers:
+      Host: ngepo.ambercc.filegear-sg.me
+    path: /?ed=2560
+- name: 韩国 007
+  type: trojan
+  network: ws
+  server: 14.36.202.242
+  port: 50000
+  password: Aimer
+  skip-cert-verify: true
+  udp: true
+  sni: ngepo.ambercc.filegear-sg.me
+  client-fingerprint: chrome
+  ws-opts:
+    headers:
+      Host: ngepo.ambercc.filegear-sg.me
+    path: /?ed=2560
+- name: 美国 117
+  type: vmess
+  network: http
+  server: 155.138.208.122
+  port: 8881
+  uuid: db5afae4-ac23-41a6-8378-f307a9a47436
+  skip-cert-verify: false
+  tls: false
+  udp: true
+  alterId: 0
+  cipher: auto
+  http-opts:
+    headers:
+      Host:
+      - moi.ir
+    method: GET
+    path:
+    - /
+- name: 韩国 008
+  type: trojan
+  network: ws
+  server: 14.32.9.120
+  port: 50000
+  password: Aimer
+  skip-cert-verify: true
+  udp: true
+  sni: ngepo.ambercc.filegear-sg.me
+  client-fingerprint: chrome
+  ws-opts:
+    headers:
+      Host: ngepo.ambercc.filegear-sg.me
+    path: /?ed=2560
+- name: 美国 118
+  type: vless
+  network: ws
+  server: www.speedtest.net
+  port: 80
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  servername: redw.pooriam.ir
+  tls: false
+  ws-opts:
+    headers:
+      Host: redw.pooriam.ir
+    path: /?ed=MARAMBASHI_MARAMBASHI/?ed=2560
+- name: 美国 119
+  type: vless
+  network: ws
+  server: visa.cn
+  port: 443
+  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
+  servername: mht.mhtadayon.ir
+  skip-cert-verify: true
+  tls: true
+  tfo: false
+  client-fingerprint: chrome
+  ws-opts:
+    headers:
+      Host: mht.mhtadayon.ir
+    path: /?ed=2740
+- name: 荷兰 005
+  type: vless
+  network: http
+  server: 95.179.159.217
+  port: 22671
+  uuid: ebc5660f-bb9b-415c-94ab-d3630189ceb9
+  servername: telewebion.com
+  skip-cert-verify: false
+  tls: false
+  udp: true
+  http-opts:
+    headers:
+      Host:
+      - telewebion.com
+    method: GET
+    path:
+    - /
+- name: 加拿大 015
+  type: vmess
+  network: ws
+  server: s2.db-link01.top
+  port: 8880
+  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
+  tls: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: 100-177-17-45.s2.db-link01.top
+    path: /dabai.in172.67.92.156
+- name: 韩国 009
+  type: trojan
+  network: ws
+  server: 222.97.9.166
+  port: 50004
+  password: Aimer
+  skip-cert-verify: true
+  udp: true
+  sni: ngepo.ambercc.filegear-sg.me
+  client-fingerprint: chrome
+  ws-opts:
+    headers:
+      Host: ngepo.ambercc.filegear-sg.me
+    path: /?ed=2560
+- name: 美国 120
+  type: trojan
+  network: ws
+  server: pranab.ns.cloudflare.com
+  port: 443
+  password: Aimer
+  skip-cert-verify: true
+  udp: true
+  sni: ngepo.ambercc.filegear-sg.me
+  client-fingerprint: chrome
+  ws-opts:
+    headers:
+      Host: ngepo.ambercc.filegear-sg.me
+    path: /?ed=2560
+- name: 美国 121
+  type: trojan
+  network: ws
+  server: lynn.ns.cloudflare.com
+  port: 443
+  password: Aimer
+  skip-cert-verify: true
+  udp: true
+  sni: ngepo.ambercc.filegear-sg.me
+  ws-opts:
+    headers:
+      Host: ngepo.ambercc.filegear-sg.me
+    path: /?ed=2560
+- name: 奥地利 001
+  type: vless
+  network: ws
+  server: 212.183.88.231
+  port: 443
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  servername: ss.vs2024.us.kg
+  tls: true
+  ws-opts:
+    headers:
+      Host: ss.vs2024.us.kg
+    path: /ss.vs2024.us.kg
+- name: 美国 122
+  type: vless
+  network: ws
+  server: 13.39.186.175
+  port: 22222
+  uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+  servername: telegram-channel-vlessconfig.sohala.uk
+  skip-cert-verify: false
+  tls: true
+  ws-opts:
+    headers:
+      Host: telegram-channel-vlessconfig.sohala.uk
+    path: /telegram-channel-vlessconfig-ws
+- name: 美国 123
+  type: trojan
+  network: ws
+  server: arvind.ns.cloudflare.com
+  port: 443
+  password: Aimer
+  skip-cert-verify: true
+  udp: true
+  sni: ngepo.ambercc.filegear-sg.me
+  ws-opts:
+    headers:
+      Host: ngepo.ambercc.filegear-sg.me
+    path: /?ed=2560
+- name: 美国 124
+  type: vless
+  network: ws
+  server: 13.37.62.125
+  port: 22222
+  uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+  servername: telegram-channel-vlessconfig.sohala.uk
+  skip-cert-verify: false
+  tls: true
+  ws-opts:
+    headers:
+      Host: telegram-channel-vlessconfig.sohala.uk
+    path: /telegram-channel-vlessconfig-ws
+- name: 美国 125
+  type: vless
+  network: ws
+  server: wear.net
+  port: 443
+  uuid: 046fd332-80a6-43b0-91b0-7238a1dfc36c
+  servername: wear.net
+  skip-cert-verify: false
+  tls: true
+  udp: true
+  ws-opts:
+    headers:
+      Host: aw035.ir
+    path: /?ed=2048
+- name: 美国 126
+  type: vless
+  network: ws
+  server: NUFiLTER.fastly80-3.hosting-ip.com
+  port: 80
+  uuid: ff2b2fca-a979-4f23-8740-17975f11110a
+  servername: 6.fidsxss222x.ir
+  skip-cert-verify: false
+  tls: false
+  udp: true
+  ws-opts:
+    headers:
+      Host: 6.fidsxss222x.ir
+    path: /telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER?ed=8080
+- name: 美国 127
+  type: vmess
+  network: ws
+  server: tls.85.node-for-bigairport.win
+  port: 443
+  uuid: ef5fca10-41bc-4623-87a3-1170a7b51827
+  servername: tls.85.node-for-bigairport.win
+  skip-cert-verify: true
+  tls: true
+  alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  ws-opts:
+    headers:
+      Host: tls.85.node-for-bigairport.win
+    path: /
+- name: 美国 128
+  type: trojan
+  network: ws
+  server: 162.159.44.50
+  port: 2087
+  password: Aimer
+  skip-cert-verify: true
+  udp: true
+  sni: ngepo.ambercc.filegear-sg.me
+  client-fingerprint: chrome
+  ws-opts:
+    headers:
+      Host: ngepo.ambercc.filegear-sg.me
+    path: /?ed=2560
+- name: 美国 129
+  type: trojan
+  network: ws
+  server: 162.159.39.181
+  port: 443
+  password: Aimer
+  skip-cert-verify: true
+  udp: true
+  sni: ngepo.ambercc.filegear-sg.me
+  client-fingerprint: chrome
+  ws-opts:
+    headers:
+      Host: ngepo.ambercc.filegear-sg.me
+    path: /?ed=2560
+- name: 意大利 001
+  type: trojan
+  network: ws
+  server: 91.193.5.121
+  port: 8443
+  password: Aimer
+  skip-cert-verify: true
+  udp: true
+  sni: ngepo.ambercc.filegear-sg.me
+  ws-opts:
+    headers:
+      Host: ngepo.ambercc.filegear-sg.me
+    path: /?ed=2560
+- name: 美国 130
+  type: trojan
+  network: ws
+  server: damien.ns.cloudflare.com
+  port: 443
+  password: Aimer
+  skip-cert-verify: true
+  udp: true
+  sni: ngepo.ambercc.filegear-sg.me
+  ws-opts:
+    headers:
+      Host: ngepo.ambercc.filegear-sg.me
+    path: /?ed=2560
+- name: 美国 131
+  type: vmess
+  network: ws
+  server: join.ISVvpn.fastly80-3.hosting-ip.com
+  port: 80
+  uuid: ca387597-d79e-48c2-89a7-e2dc66a88a70
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: telegram-isvvpn.ir
+    path: /racevpn
+- name: 美国 132
+  type: vmess
+  network: ws
+  server: 172.67.130.140
+  port: 2082
+  uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
+  skip-cert-verify: true
+  tls: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: s1c.v2.v001sss.xyz
+    path: /
+- name: 美国 133
+  type: vmess
+  network: ws
+  server: vu-mumbai-01.vnode.info
+  port: 2053
+  uuid: a04001f3-2dba-40ed-8c2e-d0c765d9afaa
+  servername: vu-mumbai-01.vnode.info
   skip-cert-verify: false
   tls: true
   alterId: 0
   cipher: auto
   ws-opts:
     headers:
-      Host: indiavideo.sbs
+      Host: vu-mumbai-01.vnode.info
+    path: /
+- name: 法国 003
+  type: vmess
+  network: ws
+  server: 51.77.20.137
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  skip-cert-verify: false
+  tls: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: tilebani.com
+    path: /
+- name: 美国 134
+  type: vmess
+  network: ws
+  server: 104.21.77.29
+  port: 443
+  uuid: 8d90c129-4156-4d6c-9115-24df25f26a02
+  skip-cert-verify: false
+  tls: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: beyonddbc.sbs
+    path: /
+- name: 加拿大 016
+  type: vmess
+  network: ws
+  server: s2.cn-db.top
+  port: 2086
+  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
+  skip-cert-verify: false
+  tls: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: 100-28-190-253.s2.cn-db.top
+    path: /
+- name: 法国 004
+  type: vmess
+  network: ws
+  server: az05.beyondy.cfd
+  port: 443
+  uuid: 3f638f34-8dba-4186-bc43-2716a7ddd4be
+  servername: az05.beyondy.cfd
+  skip-cert-verify: false
+  tls: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: az05.beyondy.cfd
+    path: /
+- name: 加拿大 017
+  type: vmess
+  network: ws
+  server: s5.db-link01.top
+  port: 2086
+  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
+  skip-cert-verify: false
+  tls: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: 100-252-227-152.s5.db-link01.top
+    path: /
+- name: 法国 005
+  type: vmess
+  network: ws
+  server: irvideo.cfd
+  port: 443
+  uuid: e537f2f5-2a0c-4f59-92c9-832ca6433bf3
+  skip-cert-verify: false
+  tls: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: irvideo.cfd
     path: /
 proxy-groups:
 - name: PROXY
@@ -2242,7 +2785,6 @@ proxy-groups:
   - 美国 016
   - 英国 001
   - 美国 017
-  - 美国 018
   - 印度 001
   - 美国 019
   - 美国 020
@@ -2258,7 +2800,6 @@ proxy-groups:
   - 日本 001
   - 法国 001
   - 韩国 001
-  - 俄罗斯 001
   - 日本 002
   - 美国 032
   - 美国 034
@@ -2281,7 +2822,6 @@ proxy-groups:
   - 新加坡 001
   - 美国 042
   - 美国 043
-  - 美国 044
   - 美国 047
   - 荷兰 001
   - 荷兰 003
@@ -2352,7 +2892,48 @@ proxy-groups:
   - 美国 111
   - 美国 112
   - 美国 113
+  - 美国 018
+  - 加拿大 011
+  - 加拿大 012
+  - 美国 044
+  - 美国 114
+  - 美国 115
+  - 美国 116
+  - 韩国 002
+  - 韩国 003
+  - 韩国 004
+  - 韩国 005
+  - 韩国 006
+  - 韩国 007
+  - 美国 117
+  - 韩国 008
+  - 美国 118
+  - 美国 119
   - 荷兰 005
+  - 加拿大 015
+  - 韩国 009
+  - 美国 120
+  - 美国 121
+  - 奥地利 001
+  - 美国 122
+  - 美国 123
+  - 美国 124
+  - 美国 125
+  - 美国 126
+  - 美国 127
+  - 美国 128
+  - 美国 129
+  - 意大利 001
+  - 美国 130
+  - 美国 131
+  - 美国 132
+  - 美国 133
+  - 法国 003
+  - 美国 134
+  - 加拿大 016
+  - 法国 004
+  - 加拿大 017
+  - 法国 005
 - name: LOAD-BALANCE
   type: load-balance
   url: https://cp.cloudflare.com/generate_204
