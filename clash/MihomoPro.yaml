@@ -8,12 +8,27 @@
 # ||      ╚═════╝  ╚═════╝  ╚═════╝      ||
 # ||                                     ||
 # >>=====================================<<
-# 名称: MihomoPro高大全 V3
-# 日期: 2025年1月17日
-# 地址: https://github.com/666OS
+# 名称: MihomoPro高大全 V3.1
+# 日期: 2025 年 2 月 11 日
+# 作者: 666OS
 # 频道: https://t.me/Pinched666
+# 地址: https://github.com/666OS/YYDS/commit/442108dd3e47b6fbb5267f748b6d8caa5f079d59
+# 地址: https://github.com/666OS/YYDS/blob/main/mihomo/config/MihomoPro.yaml
+# 地址: https://wiki.metacubex.one/example/conf/#__tabbed_1_2
 # 注意：在proxy-providers加入您的机场订阅链接（锚点区结束后面）
-
+# 配置亮点：
+# 1. 策略组分类：最详细的大分类，同时有丰富的细分应用分组，大分类只为兜底作用，把所有的选择权交给用户。
+# 2. 地区策略：支持根据策略组选择不同地区的代理服务，并提供自动、均衡（散列）和轮询，单选节点等4种切换功能，便于随时切换。
+# 3. 常用公司服务分组：常用服务被单独归类以提高使用效率，例如：谷歌服务、微软服务和苹果服务，脸书服务被归为全球服务，建议使用代理访问，公司在中国的服务已内置为直连。
+# 4. mrs 格式规则集：没什么用但爱用。
+# 5. IPv6 支持：适配 IPv6，确保在支持 IPv6 的网络环境中能够正常工作，提高兼容性和访问效率。
+# 6. 链式代理：支持链式代理配置，允许跳板机选择不同策略组，落地机选择具体到达的节点，灵活配置网络访问路径。
+# 7. 兼容性：理论上兼容 Mihomo 核心应用，如 OpenClash、mihomoTProxy、mihomo-party、FlClash、Clash Verge 和 ClashX Meta。
+# 8. 多机场订阅：支持多机场订阅的混合使用，并在机场节点前增加标识，方便区分。
+# 9. 默认设置优化：采用傻瓜式最优默认设置，所有策略的默认代理设置统一联动，用户只需修改一个默认代理，即可实现全局联动，也可按实现情况再对不同策略组做单独切换。
+# 10.完美通过权威DNS测漏网站测试，5星好评，欢迎来测，测测更健康！
+# 11.使用本配置在OpenClah中不要开覆写！不要开覆写！不要开覆写！覆写设置中能禁用就禁用，能不打勾不要打勾。运行模式Fake-IP模式,实验性：绕过指定区域 IP 禁用。
+# 12.学会看日志，看运行配置，自行排查问题。
 ############################################## - ⚓️ 锚点区开始 - ##############################################
 # 锚点 - 远程订阅组
 PProviders: &PProviders {type: http, interval: 86400, health-check: {enable: true, url: 'https://www.gstatic.com/generate_204', interval: 300}, filter: '^(?!.*(群|邀请|返利|循环|官网|客服|网站|网址|获取|订阅|流量|到期|机场|下次|版本|官址|备用|过期|已用|联系|邮箱|工单|贩卖|通知|倒卖|防止|国内|地址|频道|无法|说明|使用|提示|特别|访问|支持|教程|关注|更新|作者|加入|USE|USED|TOTAL|EXPIRE|EMAIL|Panel|Channel|Author))'}
@@ -42,7 +57,7 @@ SelectProxy: &SelectProxy {type: select, proxies: [默认代理, 故障转移, �
 # 锚点 - 规则集 
 DomainMrs: &DomainMrs {type: http, interval: 86400, behavior: domain, format: mrs}
 DomainText: &DomainText {type: http, interval: 86400, behavior: domain, format: text}
-domainYaml: &domainYaml {type: http, interval: 86400, behavior: domain, format: yaml}
+DomainYaml: &domainYaml {type: http, interval: 86400, behavior: domain, format: yaml}
 IPcidrMrs: &IPcidrMrs {type: http, interval: 86400, behavior: ipcidr, format: mrs}
 IPcidrText: &IPcidrText {type: http, interval: 86400, behavior: ipcidr, format: text}
 ClassicalText: &ClassicalText {type: http, interval: 86400, behavior: classical, format: text}
@@ -52,7 +67,7 @@ ClassicalYaml: &ClassicalYaml {type: http, interval: 86400, behavior: classical,
 # 远程订阅组
 # 注意：请提供您的机场订阅链接，每个链接一行，并为每个机场命名，末尾的[A]为每个节点添加机场名称前缀，可自定义
 proxy-providers:
-  机场A: {<<: *PProviders, url: '机场订阅链接', override: {additional-prefix: '[A] '}}
+  机场A: {<<: *PProviders, url: '自己的付费订阅连接', override: {additional-prefix: '[A] '}}
   机场B: {<<: *PProviders, url: 'https://raw.githubusercontent.com/ripaojiedian/freenode/main/clash', override: {additional-prefix: '[B] '}}
 
 # 全局配置
@@ -85,9 +100,9 @@ secret: 123456
 
 # 自定 GEO 下载地址
 geox-url:
+  geoip: https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geoip-lite.dat
   geosite: https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geosite.dat
   mmdb: https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/country-lite.mmdb
-  geoip: https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geoip-lite.dat
   asn: https://github.com/xishang0128/geoip/releases/download/latest/GeoLite2-ASN.mmdb
 
 sniffer:
@@ -170,12 +185,12 @@ proxies:
 # 策略组 
 proxy-groups:
   - {name: 默认代理, <<: *SelectFB, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Static.png}
-  - {name: 故障转移, <<: *FallBack, proxies: [香港策略, 台湾策略, 新加坡策略, 日本策略, 韩国策略, 美国策略, 欧盟策略, 全球手动, 冷门自选, 直连], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/ULB.png}
+  - {name: 故障转移, <<: *FallBack, proxies: [日本策略, 新加坡策略, 香港策略, 台湾策略, 韩国策略, 美国策略, 欧盟策略, 全球手动, 冷门自选, 直连], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/ULB.png}
   - {name: 漏网之鱼, type: select, proxies: [直连, 默认代理], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Final.png}
   - {name: 全球手动, type: select, include-all: true, filter: *FilterAll, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Clubhouse.png}
   - {name: 冷门自选, type: select, include-all: true, filter: *FilterOther, icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/XD.png}
   - {name: 抖快书定位, type: select, proxies: [直连, 香港策略, 台湾策略, 新加坡策略, 日本策略, 韩国策略, 美国策略, 欧盟策略], icon: https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/ip.png}
-  - {name: MyProxy, <<: *SelectProxy, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/TikTok.png}
+  - {name: MyProxy, <<: *SelectProxy, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Proxy.png}
   - {name: ChatGPT, <<: *SelectSG, icon: https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/ChatGPT-green.png}
   - {name: AI平台, <<: *SelectSG, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Bot.png}
   - {name: Emby, <<: *SelectProxy, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Emby.png}
@@ -208,7 +223,7 @@ proxy-groups:
   - {name: 欧盟策略, type: select, proxies: [欧盟自动, 欧盟均衡-散列, 欧盟均衡-轮询], include-all: true, filter: *FilterEU, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/European_Union.png}
    # 其他策略
   - {name: 链式代理, type: relay, proxies: [中转机, 落地机], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/TIDAL_1.png}
-  - {name: 中转机, type: select, proxies: [香港策略, 台湾策略, 日本策略, 新加坡策略, 韩国策略, 美国策略, 欧盟策略, 冷门自选, 全球手动], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Rocket.png}
+  - {name: 中转机, type: select, proxies: [日本策略, 新加坡策略, 香港策略, 台湾策略, 韩国策略, 美国策略, 欧盟策略, 冷门自选, 全球手动], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Rocket.png}
   - {name: 落地机, type: select, include-all: true, filter: *FilterAll, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Domestic.png}
   - {name: 国内网站, type: select, proxies: [直连], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/China.png}
   - {name: 国外网站, <<: *SelectProxy, icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Global.png}
@@ -240,9 +255,15 @@ proxy-groups:
 # 远程规则集
 # 更多规则，请参考：https://github.com/MetaCubeX/meta-rules-dat/tree/meta/geo/geosite
 rule-providers: 
+  location_ip: #抖音快手小红书
+    <<: *ClassicalYaml
+    url: https://github.com/666OS/YYDS/raw/main/mihomo/rules/location_ip.yaml 
   myProxy:
     <<: *ClassicalYaml
     url: https://github.com/yangxiaoge/tvbox_cust/raw/master/clash/custRule/myProxy.yaml
+  myForbidden:
+    <<: *DomainText
+    url: https://github.com/yangxiaoge/tvbox_cust/raw/master/clash/custRule/myForbidden.list
   XPTV:
     <<: *ClassicalYaml
     url: https://github.com/666OS/YYDS/raw/main/mihomo/rules/XPTV.yaml 
@@ -250,147 +271,143 @@ rule-providers:
     <<: *ClassicalYaml
     url: https://github.com/666OS/YYDS/raw/main/mihomo/rules/fix-direct.yaml
   speedtest:
-    <<: *ClassicalYaml
-    url: https://github.com/666OS/YYDS/raw/main/mihomo/rules/speedtest.yaml 
+    <<: *DomainText
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/speedtest.list 
   emby:
     <<: *ClassicalText
     url: https://github.com/666OS/YYDS/raw/main/mihomo/rules/emby.list   
   openai:
     <<: *DomainMrs
-    url: https://github.com/666OS/YYDS/raw/main/mihomo/rules/openai.mrs
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/openai.mrs
   telegram:
     <<: *DomainMrs
-    url: https://github.com/666OS/YYDS/raw/main/mihomo/rules/telegram.mrs
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/telegram.mrs
   twitter:
     <<: *DomainMrs
-    url: https://github.com/666OS/YYDS/raw/main/mihomo/rules/twitter.mrs
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/twitter.mrs
   instagram:
     <<: *DomainMrs
-    url: https://github.com/666OS/YYDS/raw/main/mihomo/rules/instagram.mrs
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/instagram.mrs
   youtube:
     <<: *DomainMrs
-    url: https://github.com/666OS/YYDS/raw/main/mihomo/rules/youtube.mrs
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/youtube.mrs
   spotify:
     <<: *DomainMrs
-    url: https://github.com/666OS/YYDS/raw/main/mihomo/rules/spotify.mrs
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/spotify.mrs
   netflix:
     <<: *DomainMrs
-    url: https://github.com/666OS/YYDS/raw/main/mihomo/rules/netflix.mrs
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/netflix.mrs
   disney:
     <<: *DomainMrs
-    url: https://github.com/666OS/YYDS/raw/main/mihomo/rules/disney.mrs
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/disney.mrs
   hbo:
     <<: *DomainMrs
-    url: https://github.com/666OS/YYDS/raw/main/mihomo/rules/hbo.mrs
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/hbo.mrs
   tiktok:
     <<: *DomainMrs
-    url: https://github.com/666OS/YYDS/raw/main/mihomo/rules/tiktok.mrs
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/tiktok.mrs
   github:
     <<: *DomainMrs
-    url: https://github.com/666OS/YYDS/raw/main/mihomo/rules/github.mrs
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/github.mrs
   onedrive:
     <<: *DomainMrs
-    url: https://github.com/666OS/YYDS/raw/main/mihomo/rules/onedrive.mrs
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/onedrive.mrs
   microsoft@cn:
     <<: *DomainMrs
-    url: https://github.com/666OS/YYDS/raw/main/mihomo/rules/microsoft@cn.mrs
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/microsoft@cn.mrs
   microsoft:
     <<: *DomainMrs
-    url: https://github.com/666OS/YYDS/raw/main/mihomo/rules/microsoft.mrs
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/microsoft.mrs
   facebook:
     <<: *DomainMrs
-    url: https://github.com/666OS/YYDS/raw/main/mihomo/rules/facebook.mrs
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/facebook.mrs
   meta:
     <<: *DomainMrs
-    url: https://github.com/666OS/YYDS/raw/main/mihomo/rules/meta.mrs
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/meta.mrs
   google:
     <<: *DomainMrs
-    url: https://github.com/666OS/YYDS/raw/main/mihomo/rules/google.mrs
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/google.mrs
   apple-cn:
     <<: *DomainMrs
-    url: https://github.com/666OS/YYDS/raw/main/mihomo/rules/apple-cn.mrs
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/apple-cn.mrs
   apple:
     <<: *DomainMrs
-    url: https://github.com/666OS/YYDS/raw/main/mihomo/rules/apple.mrs
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/apple.mrs
   paypal@cn:
     <<: *DomainMrs
-    url: https://github.com/666OS/YYDS/raw/main/mihomo/rules/paypal@cn.mrs
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/paypal@cn.mrs
   paypal:
     <<: *DomainMrs
-    url: https://github.com/666OS/YYDS/raw/main/mihomo/rules/paypal.mrs
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/paypal.mrs
   cloudflare-cn:
     <<: *DomainMrs
-    url: https://github.com/666OS/YYDS/raw/main/mihomo/rules/cloudflare-cn.mrs
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/cloudflare-cn.mrs
   category-public-tracker:
     <<: *DomainMrs
-    url: https://github.com/666OS/YYDS/raw/main/mihomo/rules/category-public-tracker.mrs
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/category-public-tracker.mrs
   category-games:
     <<: *DomainMrs
-    url: https://github.com/666OS/YYDS/raw/main/mihomo/rules/category-games.mrs
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/category-games.mrs
   category-media-cn:
     <<: *DomainMrs
-    url: https://github.com/666OS/YYDS/raw/main/mihomo/rules/category-media-cn.mrs
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/category-media-cn.mrs
   category-media:
     <<: *DomainMrs
-    url: https://github.com/666OS/YYDS/raw/main/mihomo/rules/category-media.mrs
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/category-media.mrs
   category-cryptocurrency:
     <<: *DomainMrs
-    url: https://github.com/666OS/YYDS/raw/main/mihomo/rules/category-cryptocurrency.mrs
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/category-cryptocurrency.mrs
   category-social-media-!cn:
     <<: *DomainMrs
-    url: https://github.com/666OS/YYDS/raw/main/mihomo/rules/category-social-media-!cn.mrs
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/category-social-media-!cn.mrs
   category-ai-chat-!cn:
     <<: *DomainMrs
-    url: https://github.com/666OS/YYDS/raw/main/mihomo/rules/category-ai-chat-!cn.mrs
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/category-ai-chat-!cn.mrs
   geolocation-!cn:
     <<: *DomainMrs
-    url: https://github.com/666OS/YYDS/raw/main/mihomo/rules/geolocation-!cn.mrs
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/geolocation-!cn.mrs
   private_domain:
     <<: *DomainMrs
-    url: https://github.com/666OS/YYDS/raw/main/mihomo/rules/private.mrs
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/private.mrs
   cn_domain:
     <<: *DomainMrs
-    url: https://github.com/666OS/YYDS/raw/main/mihomo/rules/cn.mrs
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/cn.mrs
   # IP规则集
   facebook_ip:
     <<: *IPcidrMrs
-    url: https://github.com/666OS/YYDS/raw/main/mihomo/rules/facebook_ip.mrs
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/facebook.mrs
   google_ip:
     <<: *IPcidrMrs
-    url: https://github.com/666OS/YYDS/raw/main/mihomo/rules/google_ip.mrs
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/google.mrs
   netflix_ip:
     <<: *IPcidrMrs
-    url: https://github.com/666OS/YYDS/raw/main/mihomo/rules/netflix_ip.mrs
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/netflix.mrs
   twitter_ip:
     <<: *IPcidrMrs
-    url: https://github.com/666OS/YYDS/raw/main/mihomo/rules/twitter_ip.mrs
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/twitter.mrs
   telegram_ip:
     <<: *IPcidrMrs
-    url: https://github.com/666OS/YYDS/raw/main/mihomo/rules/telegram_ip.mrs
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/telegram.mrs
   private_ip:
     <<: *IPcidrMrs
-    url: https://github.com/666OS/YYDS/raw/main/mihomo/rules/private_ip.mrs
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/private.mrs
   cn_ip:
     <<: *IPcidrMrs
-    url: https://github.com/666OS/YYDS/raw/main/mihomo/rules/cn_ip.mrs
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/cn.mrs
 
 # 路由
 rules:
   # >屏蔽QUIC
   - AND,((DST-PORT,443),(NETWORK,UDP)),REJECT-DROP
+  # 屏蔽，自定义
+  # - RULE-SET,myForbidden,REJECT-DROP
   # 常用必备
   - DST-PORT,123,DIRECT
   - IP-CIDR,95.161.76.100/31,REJECT-DROP,no-resolve
   # 防御
   - RULE-SET,category-public-tracker,REJECT-DROP
-  # 抖音修改IP
-  - DOMAIN-SUFFIX,amemv.com,抖快书定位
-  - DOMAIN-SUFFIX,douyinvod.com,抖快书定位
-  # 快手修改IP
-  - DOMAIN-SUFFIX,gifshow.com,抖快书定位
-  - DOMAIN-SUFFIX,apissl.ksapisrv.com,抖快书定位
-  # 小红书修改IP
-  - DOMAIN-SUFFIX,edith.xiaohongshu.com,抖快书定位
+  # 抖音修改IP，快手修改IP，小红书修改IP
+  - RULE-SET,location_ip,抖快书定位
   # 自定义路由
   - RULE-SET,myProxy,MyProxy
   # 域名路由
