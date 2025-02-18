@@ -2084,21 +2084,6 @@ proxies:
     headers:
       Host: esna.twn24.ir
     path: /?ed=2048
-- name: 法国 001
-  type: vless
-  network: grpc
-  server: 185.10.17.218
-  port: 2083
-  uuid: 6986a097-943e-4309-adc8-df94fb5983b6
-  servername: refersion.com
-  skip-cert-verify: false
-  tls: true
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: WervOIj1lJKsjA5RZKql8hQ4Bu4Q0c9F76FwB5carRs
-    short-id: fc03ff273a
-  grpc-opts:
-    grpc-service-name: Telegram:hormozvpn@hormozvpn@hormozvpn@hormozvpn@hormozvpn@hormzvpn
 - name: 俄罗斯 003
   type: vless
   network: grpc
@@ -2362,16 +2347,6 @@ proxies:
     headers:
       Host: 11tg.w79kip11.workers.dev
     path: /?ed=2560
-- name: 瑞士 003
-  type: trojan
-  network: grpc
-  server: 138.124.183.89
-  port: 443
-  password: 8d31967e-7af4-4ead-bf99-32b810dab193
-  tls: true
-  sni: us1.safecdn.site
-  grpc-opts:
-    grpc-service-name: grpc
 - name: 韩国 009
   type: trojan
   network: ws
@@ -2385,19 +2360,6 @@ proxies:
     headers:
       Host: agepw.ambercc.filegear-sg.me
     path: /?ed=2560
-- name: 德国 003
-  type: vless
-  network: ws
-  server: 18.198.200.117
-  port: 22222
-  uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
-  servername: telegram-channel-vlessconfig.sohala.uk
-  skip-cert-verify: false
-  tls: true
-  ws-opts:
-    headers:
-      Host: telegram-channel-vlessconfig.sohala.uk
-    path: /telegram-channel-vlessconfig-ws
 - name: 美国 062
   type: trojan
   network: ws
@@ -2424,19 +2386,6 @@ proxies:
     headers:
       Host: agepw.ambercc.filegear-sg.me
     path: /?ed=2560
-- name: 英国 001
-  type: vless
-  network: ws
-  server: 51.20.224.242
-  port: 22222
-  uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
-  servername: telegram-channel-vlessconfig.sohala.uk
-  skip-cert-verify: false
-  tls: true
-  ws-opts:
-    headers:
-      Host: telegram-channel-vlessconfig.sohala.uk
-    path: /telegram-channel-vlessconfig-ws
 - name: 美国 092
   type: trojan
   network: ws
@@ -2507,15 +2456,6 @@ proxies:
     headers:
       Host: de-2.stunnel.cc
     path: /ws
-- name: 德国 004
-  type: trojan
-  network: tcp
-  server: 3.121.12.144
-  port: 22222
-  password: telegram-id-privatevpns
-  udp: true
-  sni: trojan.burgerip.co.uk
-  delay: 1211
 - name: 美国 097
   type: vmess
   network: ws
@@ -2681,6 +2621,282 @@ proxies:
     headers:
       Host: 100-4-20-123.s2.db-link02.top
     path: /
+- name: 加拿大 013
+  type: vmess
+  network: ws
+  server: s1.db-link02.top
+  port: 8080
+  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
+  skip-cert-verify: true
+  tls: false
+  udp: true
+  tfo: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: 100-213-61-102.s1.db-link02.top
+    path: /dabai.in104.21.151.202
+- name: 美国 105
+  type: trojan
+  network: ws
+  server: 172.66.45.36
+  port: 2083
+  password: Uy1%2CSF%23%5Dszr%25y.%3Cs
+  skip-cert-verify: true
+  udp: true
+  tfo: false
+  sni: jOinMaHdIsErVer-6Qj.PAgES.DEv
+  ws-opts:
+    headers:
+      Host: jOinMaHdIsErVer-6Qj.PAgES.DEv
+    path: /trLhvs4PDHp1EVcZxf?ed=2560
+- name: 美国 106
+  type: trojan
+  network: ws
+  server: 104.21.16.1
+  port: 2087
+  password: naEX%5Dg*qw%40MT%26lFz
+  skip-cert-verify: true
+  udp: true
+  tfo: false
+  sni: jOinMAhdIsErvEr-53k.pAGeS.Dev
+  ws-opts:
+    headers:
+      Host: jOinMAhdIsErvEr-53k.pAGeS.Dev
+    path: /trb6oyXIzrlytDBNlm?ed=2560
+- name: 美国 107
+  type: trojan
+  network: ws
+  server: 104.21.32.1
+  port: 8443
+  password: s42%26umY%28K5n*csP4
+  skip-cert-verify: true
+  udp: true
+  tfo: false
+  sni: JOInMAHDiseRVer-EEu.pAGEs.dEv
+  ws-opts:
+    headers:
+      Host: JOInMAHDiseRVer-EEu.pAGEs.dEv
+    path: /trOagy9SuM2cDpqUqO?ed=2560
+- name: 美国 108
+  type: trojan
+  network: ws
+  server: 104.21.96.1
+  port: 8443
+  password: s42%26umY%28K5n*csP4
+  skip-cert-verify: true
+  udp: true
+  tfo: false
+  sni: JOInMAHDiseRVer-EEu.pAGEs.dEv
+  ws-opts:
+    headers:
+      Host: JOInMAHDiseRVer-EEu.pAGEs.dEv
+    path: /trOagy9SuM2cDpqUqO?ed=2560
+- name: 美国 109
+  type: trojan
+  network: ws
+  server: 172.66.44.173
+  port: 443
+  password: '%3AZ%23%253cdIG%27c*%3B*O%7D'
+  skip-cert-verify: true
+  udp: true
+  tfo: false
+  sni: JoinmAhDiSeRvER-csn.PaGeS.DEv
+  ws-opts:
+    headers:
+      Host: JoinmAhDiSeRvER-csn.PaGeS.DEv
+    path: /trVxXjc9031MC8sntF?ed=2560
+- name: 美国 111
+  type: trojan
+  network: ws
+  server: 172.66.46.220
+  port: 2083
+  password: Uy1%2CSF%23%5Dszr%25y.%3Cs
+  skip-cert-verify: true
+  udp: true
+  tfo: false
+  sni: jOinMaHdIsErVer-6Qj.PAgES.DEv
+  ws-opts:
+    headers:
+      Host: jOinMaHdIsErVer-6Qj.PAgES.DEv
+    path: /trLhvs4PDHp1EVcZxf?ed=2560
+- name: 美国 112
+  type: vless
+  network: ws
+  server: 66.235.200.5
+  port: 80
+  uuid: e497da22-d020-40fb-a1fa-bc294066a2d2
+  skip-cert-verify: false
+  tls: false
+  ws-opts:
+    headers:
+      Host: pormang.webhost99.workers.dev
+    path: /
+- name: 美国 113
+  type: vless
+  network: ws
+  server: 104.16.38.178
+  port: 80
+  uuid: e497da22-d020-40fb-a1fa-bc294066a2d2
+  skip-cert-verify: false
+  tls: false
+  ws-opts:
+    headers:
+      Host: pormang.webhost99.workers.dev
+    path: /
+- name: 伊朗 002
+  type: vless
+  network: http
+  server: 78.39.47.162
+  port: 1006
+  uuid: 81207c7b-185a-487c-bec2-60e39f3bd12f
+  skip-cert-verify: false
+  tls: false
+  http-opts:
+    headers:
+      Host:
+      - zula.ir
+    path:
+    - /
+- name: 美国 114
+  type: vless
+  network: ws
+  server: 18.158.173.179
+  port: 22222
+  uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+  servername: telegram-channel-vlessconfig.sohala.uk
+  skip-cert-verify: false
+  tls: true
+  ws-opts:
+    headers:
+      Host: telegram-channel-vlessconfig.sohala.uk
+    path: /telegram-channel-vlessconfig-ws
+- name: 美国 115
+  type: vless
+  network: ws
+  server: 3.76.233.68
+  port: 22222
+  uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+  servername: telegram-channel-vlessconfig.sohala.uk
+  skip-cert-verify: false
+  tls: true
+  ws-opts:
+    headers:
+      Host: telegram-channel-vlessconfig.sohala.uk
+    path: /telegram-channel-vlessconfig-ws
+- name: 美国 116
+  type: vless
+  network: ws
+  server: 104.16.61.8
+  port: 8080
+  uuid: 39431b4c-da16-4052-b31c-0ab8e3b61908
+  skip-cert-verify: false
+  tls: false
+  ws-opts:
+    headers:
+      Host: fastfoods.api.ahmadp206.sbs.
+    path: /?ed=8080
+- name: 法国 001
+  type: vless
+  network: ws
+  server: 15.188.124.202
+  port: 22222
+  uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+  servername: telegram-channel-vlessconfig.sohala.uk
+  skip-cert-verify: false
+  tls: true
+  ws-opts:
+    headers:
+      Host: telegram-channel-vlessconfig.sohala.uk
+    path: /telegram-channel-vlessconfig-ws
+- name: 美国 117
+  type: vless
+  network: ws
+  server: 151.101.194.165
+  port: 80
+  uuid: 48106cfc-d347-47c2-852f-cde042bea7b9
+  skip-cert-verify: false
+  ws-opts:
+    headers:
+      Host: JoinBede--vmessorg--vmessorg.iR
+    path: /
+- name: 美国 118
+  type: vless
+  network: ws
+  server: 151.101.130.219
+  port: 80
+  uuid: 68d9ff4a-7f1f-4406-afd7-00ace4c28bdd
+  skip-cert-verify: false
+  ws-opts:
+    headers:
+      Host: IPSERVIS2.ORG
+    path: /
+- name: 法国 003
+  type: vless
+  network: ws
+  server: 52.47.184.132
+  port: 22222
+  uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+  servername: telegram-channel-vlessconfig.sohala.uk
+  skip-cert-verify: false
+  tls: true
+  ws-opts:
+    headers:
+      Host: telegram-channel-vlessconfig.sohala.uk
+    path: /telegram-channel-vlessconfig-ws
+- name: 美国 120
+  type: vless
+  network: ws
+  server: 13.61.218.154
+  port: 22222
+  uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+  servername: telegram-channel-vlessconfig.sohala.uk
+  skip-cert-verify: false
+  tls: true
+  ws-opts:
+    headers:
+      Host: telegram-channel-vlessconfig.sohala.uk
+    path: /telegram-channel-vlessconfig-ws
+- name: 美国 121
+  type: vless
+  network: ws
+  server: 16.170.70.29
+  port: 22222
+  uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+  servername: telegram-channel-vlessconfig.sohala.uk
+  skip-cert-verify: false
+  tls: true
+  ws-opts:
+    headers:
+      Host: telegram-channel-vlessconfig.sohala.uk
+    path: /telegram-channel-vlessconfig-ws
+- name: 美国 122
+  type: vless
+  network: ws
+  server: 104.20.43.197
+  port: 80
+  uuid: e497da22-d020-40fb-a1fa-bc294066a2d2
+  skip-cert-verify: false
+  tls: false
+  ws-opts:
+    headers:
+      Host: pormang.webhost99.workers.dev
+    path: /
+- name: 美国 123
+  type: vmess
+  network: ws
+  server: 104.19.48.236
+  port: 80
+  uuid: e6543319-0574-42ac-b778-1c4325d626f5
+  skip-cert-verify: false
+  tls: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: chunchuan.kejixiaoqi666.store
+    path: /
 proxy-groups:
 - name: PROXY
   type: select
@@ -2836,7 +3052,6 @@ proxy-groups:
   - 美国 012
   - 美国 013
   - 美国 014
-  - 法国 001
   - 俄罗斯 003
   - 意大利 001
   - 韩国 002
@@ -2857,18 +3072,14 @@ proxy-groups:
   - 美国 031
   - 瑞士 002
   - 美国 032
-  - 瑞士 003
   - 韩国 009
-  - 德国 003
   - 美国 062
   - 美国 086
-  - 英国 001
   - 美国 092
   - 美国 093
   - 美国 094
   - 美国 095
   - 美国 096
-  - 德国 004
   - 美国 097
   - 加拿大 011
   - 美国 098
@@ -2880,6 +3091,27 @@ proxy-groups:
   - 美国 103
   - 荷兰 005
   - 美国 104
+  - 加拿大 013
+  - 美国 105
+  - 美国 106
+  - 美国 107
+  - 美国 108
+  - 美国 109
+  - 美国 111
+  - 美国 112
+  - 美国 113
+  - 伊朗 002
+  - 美国 114
+  - 美国 115
+  - 美国 116
+  - 法国 001
+  - 美国 117
+  - 美国 118
+  - 法国 003
+  - 美国 120
+  - 美国 121
+  - 美国 122
+  - 美国 123
 - name: LOAD-BALANCE
   type: load-balance
   url: https://cp.cloudflare.com/generate_204
