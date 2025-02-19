@@ -1,8 +1,8 @@
-name: TVBox编译
+name: build-tvbox
 
 on:
   schedule:
-    - cron: 0 0 * * *
+    - cron: 0 20 * * *
   workflow_dispatch:
     inputs:
       rebuild:
@@ -23,38 +23,33 @@ jobs:
         include:
           - userName: FongMi
             repoName: TV
+            branchName: release
             # fongmi（大佬部分aar未提交，导致编译失败）
             # branchName: fongmi
             # ok大佬
-            branchName: release
             jdkVersion: 17
-            
-          - userName: mlabalabala
-            repoName: box
-            branchName: main
-            jdkVersion: 11
-            
           - userName: q215613905
             repoName: TVBoxOS
             branchName: main
             jdkVersion: 11
-            
           - userName: takagen99
             repoName: Box
             branchName: main
             jdkVersion: 17
-
+          - userName: mlabalabala
+            repoName: box
+            branchName: main
+            jdkVersion: 11
           - userName: Klosw
             repoName: Box
             branchName: dev-4.4
             jdkVersion: 11
-            
+
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           fetch-depth: 0
-          
       - name: Check New Commit
         run: |
           upStream=https://github.com/${{ matrix.userName }}/${{ matrix.repoName }}
@@ -68,7 +63,7 @@ jobs:
             echo "commitS=${commit:0:7}" >> $GITHUB_ENV
           fi
           echo "commit=$commit"
-          
+
       - name: Checkout Source Code
         if: ${{ env.commit }}
         run: |
@@ -76,27 +71,25 @@ jobs:
           cd TVBoxOSC
           git checkout ${{ env.commit }}
           echo "tag=$(git log --date=format:'%Y%m%d-%H%M' --pretty=format:%cd ${{ env.commitS }} -1)" >> $GITHUB_ENV
-          
-      # - name: Extra Modify
-      #   if: ${{ env.commit }}
-      #   working-directory: TVBoxOSC
-      #   run: |
-      #     if [[ "${{ matrix.userName }}" != "FongMi" ]]; then
-      #       echo '修改VersionName'
-      #       sed -i "/versionName/s#[0-9a-zA-Z_\.\'\"-]\+\$#\'${{ env.tag }}\'#" app/build.gradle
-      #       sed -i "/android:text=/s#=\"#=\"${{ env.tag }}\\\\n\\\\n#" app/src/main/res/layout/dialog_about.xml
-      #     fi
-      #     if [[ "${{ matrix.userName }}" == "FongMi" ]]; then
-      #       sed -i 's/TeamNewPipe/teamnewpipe/g' app/build.gradle
-      #     fi
-          
+
+      - name: Extra Modify
+        if: ${{ env.commit }}
+        working-directory: TVBoxOSC
+        run: |
+          echo 'crosswalk源，防挂'
+          if grep -q 'crosswalk' build.gradle; then
+            sed -i "/crosswalk/a\        maven { url 'https://o0halflife0o.github.io/crosswalk/releases/crosswalk/android/maven2' }" build.gradle
+          else
+            sed -i "/jitpack.io/a\        maven { url 'https://o0halflife0o.github.io/crosswalk/releases/crosswalk/android/maven2' }" build.gradle
+          fi
+
       - name: Compress Source Code
         if: ${{ env.commit }}
         working-directory: TVBoxOSC
         run: |
           #zip -q -x ".git/*" -x  ".github/*" -r source-${{ env.commitS }}.zip .
           tar -cJf source-${{ env.commitS }}.tar.xz --exclude=.git --exclude=.github *
-          
+
       - name: Release Apk Sign
         if: ${{ env.commit }}
         working-directory: TVBoxOSC
@@ -111,25 +104,25 @@ jobs:
           sed -i '$a\RELEASE_KEY_ALIAS=TVBoxOSC'            ./gradle.properties
           sed -i '$a\RELEASE_STORE_PASSWORD=TVBoxOSC'       ./gradle.properties
           sed -i '$a\RELEASE_KEY_PASSWORD=TVBoxOSC'         ./gradle.properties
-          
+
       - name: Setup JDK
         if: ${{ env.commit }}
         uses: actions/setup-java@main
         with:
           distribution: 'temurin'
           java-version: ${{ matrix.jdkVersion }}
-        
+
       - name: Setup Gradle
         if: ${{ env.commit }}
         uses: gradle/actions/setup-gradle@v4
-        
+
       - name: Build With Gradle
         if: ${{ env.commit }}
         working-directory: TVBoxOSC
         run: |
           chmod +x gradlew
           ./gradlew assemblerelease --build-cache --parallel --daemon --warning-mode all
-          
+
       - name: Prepare App
         if: ${{ env.commit }}
         working-directory: TVBoxOSC
@@ -139,7 +132,7 @@ jobs:
           find ~ -type d -iname "release" -print0 | while IFS= read -r -d '' dir; do
             find "$dir" -type f -name "*.apk" -exec sh -c 'cp "$1" "apk/${{ matrix.userName }}-${{ matrix.repoName }}-${{ matrix.branchName }}-${1##*/}"' sh {} \;
           done
-          
+
       - name: Release Note
         if: ${{ env.commit }}
         working-directory: TVBoxOSC
@@ -152,7 +145,7 @@ jobs:
           else
             git log --pretty=format:%B ${{ env.commitS }}...${lastCommit:0:7} |sed -e "s# \{2,\}#\n#g" -e "/^Merge \(pull\|branch\|remote\)/d" -e '/^$/d' |cat -n |sort -k2,2 -k1,1n |uniq -f1 |sort -k1,1n |cut -f2- >> apk/${{ matrix.userName }}-Release.log
           fi
-          
+
       - name: Upload App To Artifact
         uses: actions/upload-artifact@v4
         if: ${{ env.commit }}
@@ -165,7 +158,7 @@ jobs:
         if: ${{ inputs.donotpublish && env.commit }}
         run: |
           echo "commit=" >> $GITHUB_ENV
-          
+
       - name: Release and Upload Assets
         uses: ncipollo/release-action@main
         if: ${{ env.commit }}
@@ -181,12 +174,12 @@ jobs:
 
       - uses: dev-drprasad/delete-older-releases@master
         with:
-          keep_latest: 3
+          keep_latest: 5
           delete_tags: true
           delete_tag_pattern: ${{ matrix.userName }}_${{ matrix.repoName }}_${{ matrix.branchName }}.*
         env:
           GITHUB_TOKEN: ${{ secrets.GIT_TOKEN }}
-          
+
       - name: Push to master
         if: ${{ env.commit }}
         run: |
@@ -203,6 +196,7 @@ jobs:
           git push -u -f origin master
 
   clean:
+    needs: build
     runs-on: ubuntu-latest
     steps:
     - name: Delete workflow runs
