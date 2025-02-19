@@ -31,24 +31,48 @@ jobs:
             # branchName: fongmi
             # ok大佬
             branchName: release
+            jdkVersion: 17
+            
           - userName: mlabalabala
             repoName: box
             branchName: main
+            jdkVersion: 11
+            
+          - userName: q215613905
+            repoName: TVBoxOS
+            branchName: main
+            jdkVersion: 11
+            
+          - userName: takagen99
+            repoName: Box
+            branchName: main
+            jdkVersion: 17
+
+          - userName: Klosw
+            repoName: Box
+            branchName: dev-4.4
+            jdkVersion: 11
             
     steps:
       - name: Checkout
         uses: actions/checkout@v3
         with:
           fetch-depth: 0
+          
       - name: Check New Commit
         run: |
           upStream=https://github.com/${{ matrix.userName }}/${{ matrix.repoName }}
           echo "upStream=$upStream" >> $GITHUB_ENV
           commit=$(curl -sL $upStream/commits/${{ matrix.branchName }} |grep -o "/${{ matrix.userName }}/${{ matrix.repoName }}/commit/[a-z0-9]\+" |head -1 | cut -d\/ -f5)
+          if [[ -z "${commit}" ]]; then
+            commit=$(curl -s "https://api.github.com/repos/${{ matrix.userName }}/${{ matrix.repoName }}/commits/${{ matrix.branchName }}?per_page=1" | jq -r '.sha' )
+          fi
           if ! grep -q "$commit" README.md || [ "${{ inputs.rebuild }}" == "true" ]; then
             echo "commit=$commit" >> $GITHUB_ENV
             echo "commitS=${commit:0:7}" >> $GITHUB_ENV
           fi
+          echo "commit=$commit"
+          
       - name: Checkout Source Code
         if: ${{ env.commit }}
         run: |
@@ -56,24 +80,27 @@ jobs:
           cd TVBoxOSC
           git checkout ${{ env.commit }}
           echo "tag=$(git log --date=format:'%Y%m%d-%H%M' --pretty=format:%cd ${{ env.commitS }} -1)" >> $GITHUB_ENV
-      - name: Extra Modify
-        if: ${{ env.commit }}
-        working-directory: TVBoxOSC
-        run: |
-          if [[ "${{ matrix.userName }}" != "FongMi" ]]; then
-            echo '修改VersionName'
-            sed -i "/versionName/s#[0-9a-zA-Z_\.\'\"-]\+\$#\'${{ env.tag }}\'#" app/build.gradle
-            sed -i "/android:text=/s#=\"#=\"${{ env.tag }}\\\\n\\\\n#" app/src/main/res/layout/dialog_about.xml
-          fi
-          if [[ "${{ matrix.userName }}" == "FongMi" ]]; then
-            sed -i 's/TeamNewPipe/teamnewpipe/g' app/build.gradle
-          fi
+          
+      # - name: Extra Modify
+      #   if: ${{ env.commit }}
+      #   working-directory: TVBoxOSC
+      #   run: |
+      #     if [[ "${{ matrix.userName }}" != "FongMi" ]]; then
+      #       echo '修改VersionName'
+      #       sed -i "/versionName/s#[0-9a-zA-Z_\.\'\"-]\+\$#\'${{ env.tag }}\'#" app/build.gradle
+      #       sed -i "/android:text=/s#=\"#=\"${{ env.tag }}\\\\n\\\\n#" app/src/main/res/layout/dialog_about.xml
+      #     fi
+      #     if [[ "${{ matrix.userName }}" == "FongMi" ]]; then
+      #       sed -i 's/TeamNewPipe/teamnewpipe/g' app/build.gradle
+      #     fi
+          
       - name: Compress Source Code
         if: ${{ env.commit }}
         working-directory: TVBoxOSC
         run: |
           #zip -q -x ".git/*" -x  ".github/*" -r source-${{ env.commitS }}.zip .
           tar -cJf source-${{ env.commitS }}.tar.xz --exclude=.git --exclude=.github *
+          
       - name: Option For Test
         if: ${{ inputs.testOption }}
         working-directory: TVBoxOSC
@@ -81,6 +108,7 @@ jobs:
           #添加arm64支持，不支持ijk解码
           sed -i "/armeabi-v7a[\'\"]$/s#\$#, 'arm64-v8a'#" app/build.gradle
           sed -i "/armeabi-v7a[\'\"]$/s#\$#, 'arm64-v8a'#" player/build.gradle
+          
       - name: Release Apk Sign
         if: ${{ env.commit }}
         working-directory: TVBoxOSC
@@ -96,16 +124,16 @@ jobs:
           sed -i '$a\RELEASE_STORE_PASSWORD=TVBoxOSC'       ./gradle.properties
           sed -i '$a\RELEASE_KEY_PASSWORD=TVBoxOSC'         ./gradle.properties
           
-      - name: Setup Java
-        if: ${{ env.commit && (matrix.userName == 'FongMi') }}
-        uses: actions/setup-java@v3
+      - name: Setup JDK
+        if: ${{ env.commit }}
+        uses: actions/setup-java@main
         with:
           distribution: 'temurin'
-          java-version: '17'
+          java-version: ${{ matrix.jdkVersion }}
         
       - name: Setup Gradle
         if: ${{ env.commit }}
-        uses: gradle/gradle-build-action@v2
+        uses: gradle/actions/setup-gradle@v4
         
       - name: Build With Gradle
         if: ${{ env.commit }}
@@ -121,14 +149,14 @@ jobs:
           rm -rf apk/
           mkdir -p apk/
           find ~ -type d -iname "release" -print0 | while IFS= read -r -d '' dir; do
-            find "$dir" -type f -name "*.apk" -exec sh -c 'cp "$1" "apk/${{ matrix.userName }}-${{ matrix.repoName }}-${1##*/}"' sh {} \;
+            find "$dir" -type f -name "*.apk" -exec sh -c 'cp "$1" "apk/${{ matrix.userName }}-${{ matrix.repoName }}-${{ matrix.branchName }}-${1##*/}"' sh {} \;
           done
           
       - name: Release Note
         if: ${{ env.commit }}
         working-directory: TVBoxOSC
         run: |
-          lastCommit=$(grep "${{ matrix.userName }}\/${{ matrix.repoName }}" ${{ github.workspace }}/README.md |grep -o '[a-z0-9]\{40\}')
+          lastCommit=$(grep "${{ matrix.userName }}\/${{ matrix.repoName }}\/${{ matrix.branchName }}" ${{ github.workspace }}/README.md |grep -o '[a-z0-9]\{40\}')
           export LESSCHARSET=utf-8
           echo -e "Credit: [${{ matrix.userName }}](${{ env.upStream }})\nCommit: ${{ env.commit }}\nChangelog:" > apk/${{ matrix.userName }}-Release.log
           if [ "${{ env.commit }}" == "${lastCommit}" ]; then
@@ -141,10 +169,10 @@ jobs:
         uses: actions/upload-artifact@v4
         if: ${{ env.commit }}
         with:
-          name: ${{ matrix.userName }}-${{ matrix.repoName }}
+          name: ${{ matrix.userName }}-${{ matrix.repoName }}-${{ matrix.branchName }}
           path: |
             TVBoxOSC/apk/*
-            
+
       - name: Whether Or Not to Publish
         if: ${{ inputs.donotpublish && env.commit }}
         run: |
@@ -154,8 +182,8 @@ jobs:
         uses: ncipollo/release-action@main
         if: ${{ env.commit }}
         with:
-          name: ${{ matrix.userName }}_${{ matrix.repoName }}_${{ env.tag }}
-          tag: ${{ matrix.userName }}_${{ matrix.repoName }}_${{ env.tag }}
+          name: ${{ matrix.userName }}_${{ matrix.repoName }}_${{ matrix.branchName }}_${{ env.tag }}
+          tag: ${{ matrix.userName }}_${{ matrix.repoName }}_${{ matrix.branchName }}_${{ env.tag }}
           bodyFile: TVBoxOSC/apk/${{ matrix.userName }}-Release.log
           allowUpdates: true
           removeArtifacts: true
@@ -167,7 +195,7 @@ jobs:
         with:
           keep_latest: 3
           delete_tags: true
-          delete_tag_pattern: ${{ matrix.userName }}_${{ matrix.repoName }}
+          delete_tag_pattern: ${{ matrix.userName }}_${{ matrix.repoName }}_${{ matrix.branchName }}.*
         env:
           GITHUB_TOKEN: ${{ secrets.GIT_TOKEN }}
           
@@ -180,7 +208,7 @@ jobs:
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git remote set-url --add origin "https://${{ github.actor }}:${{ secrets.GIT_TOKEN }}@github.com/${{ github.repository }}"
           git pull --rebase
-          sed -i "/${{ matrix.userName }}\/${{ matrix.repoName }}/s#Updated: [a-zA-Z0-9]*#Updated: ${{ env.commit }}#" README.md
+          sed -i "/${{ matrix.userName }}\/${{ matrix.repoName }}\/${{ matrix.branchName }}/s#Updated: [a-zA-Z0-9]*#Updated: ${{ env.commit }}#" README.md
           sed -i "s/update at .*/update at $(date '+%Y-%m-%d %H:%M:%S') UTC+0/" README.md
           git add --all
           git commit -m "${{ env.commit }}"
