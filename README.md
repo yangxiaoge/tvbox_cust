@@ -64,6 +64,12 @@ https://yangxiaoge.github.io/
 
 所有直接或间接使用本仓库内容的个人和组织，应 24 小时内完成学习和研究，并及时删除本仓库内容。如对本仓库内容的功能有需求，应自行开发相关功能。所有基于本仓库内容的源代码，进行的任何修改，为其他个人或组织的自发行为，与本仓库内容没有任何直接或间接的关系，所造成的一切后果亦与本仓库内容和本仓库管理者无关 
 
+# 鼓励一下
+收集不易，若此项目有帮到你，望你能动用你的发财小手支持一下
+你的鼓励是这个项目继续更新的最大动力
+![image](https://github.com/user-attachments/assets/b56b08a8-3659-461e-a8d7-b5ba2552bd32)
+
+
 # Star History
 
 [![Star History Chart](https://api.star-history.com/svg?repos=yangxiaoge/tvbox_cust&type=Date)](https://star-history.com/#yangxiaoge/tvbox_cust&Date)
