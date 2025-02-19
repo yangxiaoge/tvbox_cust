@@ -19,20 +19,25 @@
 - 开机启动指定应用：[开机自启](/apk/开机自启_3.0_2024-03-11.apk)​ ​​​​ ​​​​ ​​​​​ ​​​ ​​​源码（自用闭源）: [autoclick](https://gitee.com/sheepyang_study/auto-click-slide)
 
 # FongMi影视教程
-https://yangxiaoge.github.io/
+https://yangxiaoge.github.io/yingshi
 
 # TVBox源
 - 多仓
   - 自用：https://cdn.jsdelivr.net/gh/yangxiaoge/tvbox_cust@master/tvbox/多仓.json
-  - 高天流云多仓：https://cdn.jsdelivr.net/gh/gaotianliuyun/gao@master/0707.json
-  - ~黎歌多仓：https://cdn.jsdelivr.net/gh/yangxiaoge/tvbox_cust@master/tvbox/黎歌多仓.json~
   - 18🈲：https://cdn.jsdelivr.net/gh/yangxiaoge/tvbox_cust@master/tvbox/多仓adult.json
+  - ~高天流云多仓：https://cdn.jsdelivr.net/gh/gaotianliuyun/gao@master/0707.json~
+  - ~黎歌多仓：https://cdn.jsdelivr.net/gh/yangxiaoge/tvbox_cust@master/tvbox/黎歌多仓.json~
 
-# Clash
+# Clash免费节点
 - https://cdn.jsdelivr.net/gh/yangxiaoge/tvbox_cust@master/clash/Clash2.yml
 
 # 工作日查询
 - 接口：https://cdn.jsdelivr.net/gh/yangxiaoge/tvbox_cust@master/holiday/isHoliday.json
+
+# 鼓励一下
+收集不易，若此项目有帮到你，望你能动用你的发财小手支持一下
+你的鼓励是这个项目继续更新的最大动力
+![image](https://github.com/user-attachments/assets/b56b08a8-3659-461e-a8d7-b5ba2552bd32)
 
 # 进阶玩法
 # TVBox编译 脚本来自 [o0HalfLife0o](https://github.com/o0HalfLife0o/TVBoxOSC) [zyqfork](https://github.com/zyqfork/TVBoxOSC) 
@@ -66,11 +71,6 @@ https://yangxiaoge.github.io/
 本仓库内容中涉及的第三方硬件、软件等，与本仓库内容没有任何直接或间接的关系。本仓库内容仅对部署和使用过程进行客观描述，不代表支持使用任何第三方硬件、软件。使用任何第三方硬件、软件，所造成的一切后果由使用的个人或组织承担，与本仓库内容无关。
 
 所有直接或间接使用本仓库内容的个人和组织，应 24 小时内完成学习和研究，并及时删除本仓库内容。如对本仓库内容的功能有需求，应自行开发相关功能。所有基于本仓库内容的源代码，进行的任何修改，为其他个人或组织的自发行为，与本仓库内容没有任何直接或间接的关系，所造成的一切后果亦与本仓库内容和本仓库管理者无关 
-
-# 鼓励一下
-收集不易，若此项目有帮到你，望你能动用你的发财小手支持一下
-你的鼓励是这个项目继续更新的最大动力
-![image](https://github.com/user-attachments/assets/b56b08a8-3659-461e-a8d7-b5ba2552bd32)
 
 
 # Star History
