@@ -4192,21 +4192,6 @@ proxies:
     headers:
       Host: agepy.aimercc.filegear-sg.me
     path: /?ed=2560
-- name: 美国 177
-  type: vmess
-  network: ws
-  server: ffa41b.5d8ecf82.cfd
-  port: 80
-  uuid: 4bf074f4-7e9c-4e4b-a10d-156e26199729
-  skip-cert-verify: true
-  tls: false
-  alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  ws-opts:
-    headers:
-      Host: us03s.5d8ecf82.cfd
-    path: /
 - name: 美国 178
   type: trojan
   network: ws
@@ -4324,20 +4309,6 @@ proxies:
     headers:
       Host: agepy.aimercc.filegear-sg.me
     path: /?ed=2560
-- name: 日本 008
-  type: vless
-  network: ws
-  server: 47.245.37.123
-  port: 443
-  uuid: fd902d74-2266-4997-99ec-83d3937cbfcc
-  servername: jpd.kddhs.asia
-  tls: true
-  udp: true
-  delay: 564
-  ws-opts:
-    headers:
-      Host: jpd.kddhs.asia
-    path: /bing
 - name: 美国 182
   type: vless
   network: ws
@@ -4400,6 +4371,80 @@ proxies:
     headers:
       Host: 100-87-160-252.s2.db-link02.top
     path: /
+- name: 美国 177
+  type: vless
+  network: ws
+  server: 96110.cf.090227.xyz
+  port: 443
+  uuid: d17ca95a-8eaf-492f-93fa-538c88956bb3
+  servername: publicvless.pages.dev
+  skip-cert-verify: true
+  tls: true
+  tfo: false
+  ws-opts:
+    headers:
+      Host: publicvless.pages.dev
+    path: /?proxyip=proxyip.us.fxxk.dedyn.io
+- name: 美国 186
+  type: vless
+  network: ws
+  server: 198.62.62.183
+  port: 443
+  uuid: d17ca95a-8eaf-492f-93fa-538c88956bb3
+  servername: publicvless.pages.dev
+  skip-cert-verify: true
+  tls: true
+  tfo: false
+  ws-opts:
+    headers:
+      Host: publicvless.pages.dev
+    path: /?proxyip=proxyip.us.fxxk.dedyn.io
+- name: 美国 187
+  type: vless
+  network: ws
+  server: 198.62.62.78
+  port: 443
+  uuid: d17ca95a-8eaf-492f-93fa-538c88956bb3
+  servername: publicvless.pages.dev
+  skip-cert-verify: true
+  tls: true
+  tfo: false
+  ws-opts:
+    headers:
+      Host: publicvless.pages.dev
+    path: /?proxyip=proxyip.us.fxxk.dedyn.io
+- name: 日本 008
+  type: vmess
+  network: ws
+  server: tls.05.node-for-bigairport.win
+  port: 33443
+  uuid: 3519dfc0-fa27-41cc-8c19-981818f9f6d5
+  skip-cert-verify: true
+  tls: true
+  udp: true
+  tfo: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: tls.05.node-for-bigairport.win
+    path: /
+- name: 美国 188
+  type: vmess
+  network: ws
+  server: www.speedtest.net
+  port: 443
+  uuid: 185487f0-f1be-11ef-b439-205c6d5f5d78
+  skip-cert-verify: true
+  tls: true
+  udp: true
+  tfo: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: eu-2.hihu.net
+    path: '/5z984v2o#by-telegram:'
 proxy-groups:
 - name: PROXY
   type: select
@@ -4711,7 +4756,6 @@ proxy-groups:
   - 荷兰 016
   - 美国 175
   - 美国 176
-  - 美国 177
   - 美国 178
   - 日本 006
   - 日本 007
@@ -4721,12 +4765,16 @@ proxy-groups:
   - 亚美尼亚 005
   - 俄罗斯 009
   - 美国 181
-  - 日本 008
   - 美国 182
   - 美国 183
   - 伊朗 006
   - 美国 184
   - 美国 185
+  - 美国 177
+  - 美国 186
+  - 美国 187
+  - 日本 008
+  - 美国 188
 - name: LOAD-BALANCE
   type: load-balance
   url: https://cp.cloudflare.com/generate_204
