@@ -47,9 +47,9 @@ https://yangxiaoge.github.io/yingshi
 
 **1. 三方TVBox编译（墙裂推荐[FongMi影视](https://github.com/FongMi/Release/tree/fongmi/apk/release)）**
 依赖的项目:
-> update at 2025-02-26 20:21:25 UTC+0
+> update at 2025-02-26 20:32:56 UTC+0
 - [CatVodTVOfficial/TVBoxOSC/main](https://github.com/CatVodTVOfficial/TVBoxOSC)
-- [FongMi/TV/release](https://github.com/FongMi/TV) (Updated: c792e564f521c6320d6512c9d7261555245a2774)
+- [FongMi/TV/release](https://github.com/FongMi/TV) (Updated: 1cf5c6df74ffd2da2731b794cb3693c7441b12bd)
 - [q215613905/TVBoxOS/main](https://github.com/q215613905/TVBoxOS) (Updated: d8dcf3e44c6a6247e48c09e0b7d86ae2d83ae051)
 - [takagen99/Box/main](https://github.com/takagen99/Box) (Updated: bdce185cdc3aadf2d33d06abb14f5599df2b533b)
 - [Klosw/Box/dev-4.4](https://github.com/Klosw/Box) (Updated: 346cc27c9dc066bcdba9bd541cf89c6d69b6cf1b)
