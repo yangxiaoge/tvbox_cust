@@ -129,19 +129,6 @@ dns:
     - +.googleapis.cn
     - +.googleapis.com
 proxies:
-- name: 美国 033
-  type: vless
-  network: ws
-  server: 104.24.148.184
-  port: 80
-  uuid: 01cb18d1-2062-47e7-999b-ec08e8b2ec85
-  skip-cert-verify: false
-  tls: false
-  client-fingerprint: chrome
-  ws-opts:
-    headers:
-      Host: muddy-rain-0a28-ppal03.mitey24737.workers.dev
-    path: /?ed=2560
 - name: 美国 049
   type: vless
   network: ws
@@ -154,31 +141,6 @@ proxies:
     headers:
       Host: ppal03.dolobe7975.workers.dev
     path: /?ed=2560
-- name: 美国 079
-  type: vless
-  network: ws
-  server: 104.18.26.94
-  port: 80
-  uuid: 61ff8b60-2be0-40a6-94b5-92cca33f1fab
-  servername: sedalat.tatexe3807.workers.dev
-  delay: 1477
-  ws-opts:
-    headers:
-      Host: sedalat.tatexe3807.workers.dev
-    path: /
-- name: 美国 080
-  type: vless
-  network: ws
-  server: 104.18.27.94
-  port: 80
-  uuid: 61ff8b60-2be0-40a6-94b5-92cca33f1fab
-  servername: sedalat.tatexe3807.workers.dev
-  client-fingerprint: chrome
-  delay: 851
-  ws-opts:
-    headers:
-      Host: sedalat.tatexe3807.workers.dev
-    path: /
 - name: 美国 069
   type: vless
   network: ws
@@ -194,21 +156,6 @@ proxies:
       User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
         Gecko) Chrome/51.0.2704.63 Safari/537.36
     path: /J61hhknxUXEwJZLq/MTU5LjY5LjE1My4xMTQ=?ed=2560
-- name: 美国 110
-  type: vless
-  network: ws
-  server: 104.18.41.138
-  port: 8880
-  uuid: 25af9eb2-3310-4f2b-bc82-ebea62ba7906
-  skip-cert-verify: true
-  udp: true
-  xudp: true
-  ws-opts:
-    headers:
-      Host: config-proxy-vl.telegram-config-proxy.workers.dev
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/60.0.3112.101 Safari/537.36
-    path: /?ed=2560
 - name: 美国 034
   type: vless
   network: ws
@@ -216,19 +163,6 @@ proxies:
   port: 80
   uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   skip-cert-verify: false
-  tls: false
-  client-fingerprint: chrome
-  ws-opts:
-    headers:
-      Host: a.xn--i-sx6a60i.us.kg.
-    path: /?ed=2560
-- name: 美国 035
-  type: vless
-  network: ws
-  server: tgju.org
-  port: 80
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  servername: a.xn--i-sx6a60i.us.kg.
   tls: false
   client-fingerprint: chrome
   ws-opts:
@@ -259,34 +193,6 @@ proxies:
     headers:
       Host: a.xn--i-sx6a60i.us.kg.
     path: /?ed=2560
-- name: 美国 039
-  type: vless
-  network: ws
-  server: 104.20.129.2
-  port: 80
-  uuid: e497da22-d020-40fb-a1fa-bc294066a2d2
-  servername: pormang.webhost99.workers.dev
-  tls: false
-  client-fingerprint: chrome
-  ws-opts:
-    headers:
-      Host: pormang.webhost99.workers.dev
-    path: /?ed=2560
-- name: 伊朗 001
-  type: vless
-  network: http
-  server: 188.245.251.47
-  port: 8080
-  uuid: 1c86a177-d7ff-4a5f-8255-cfeb4e051305
-  skip-cert-verify: false
-  tls: false
-  client-fingerprint: chrome
-  http-opts:
-    headers:
-      Host:
-      - sso.farhang.gov.ir
-    path:
-    - /download
 - name: 美国 056
   type: vless
   network: ws
@@ -359,35 +265,6 @@ proxies:
     headers:
       Host: pormang.webhost99.workers.dev
     path: /
-- name: 俄罗斯 005
-  type: vmess
-  network: ws
-  server: 185.174.138.199
-  port: 2052
-  uuid: 3f638f34-8dba-4186-bc43-2716a7ddd4be
-  skip-cert-verify: true
-  tls: false
-  udp: true
-  tfo: false
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: yellow-paper-029c.yvonna.workers.dev
-    path: /az05.beyondy.cfd/link?/TM
-- name: 美国 072
-  type: vless
-  network: ws
-  server: 104.16.40.145
-  port: 80
-  uuid: 818a98bf-e7d0-45d5-800b-24d4058234c6
-  skip-cert-verify: false
-  tls: false
-  client-fingerprint: chrome
-  ws-opts:
-    headers:
-      Host: still-smoke-881e-ppal03.cabit21569.workers.dev
-    path: /?ed=2560
 - name: 巴西 002
   type: vless
   network: ws
@@ -535,36 +412,6 @@ proxies:
     headers:
       Host: ooao14004.74gwenneth.workers.dev
     path: /
-- name: 俄罗斯 001
-  type: vmess
-  network: ws
-  server: 185.174.138.196
-  port: 2082
-  uuid: 3f638f34-8dba-4186-bc43-2716a7ddd4be
-  skip-cert-verify: true
-  tls: false
-  udp: true
-  tfo: false
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: yellow-paper-029c.yvonna.workers.dev
-    path: /az05.beyondy.cfd/link?/TM
-- name: 韩国 001
-  type: trojan
-  network: ws
-  server: 221.149.132.232
-  port: 50000
-  password: Aimer
-  skip-cert-verify: true
-  udp: true
-  sni: agepq.ambercc.filegear-sg.me
-  client-fingerprint: chrome
-  ws-opts:
-    headers:
-      Host: agepq.ambercc.filegear-sg.me
-    path: /?ed=2560
 - name: 美国 010
   type: vless
   network: ws
@@ -590,34 +437,6 @@ proxies:
   ws-opts:
     headers:
       Host: flat-bread-ddb6-ppal03.joriy39169.workers.dev
-    path: /?ed=2560
-- name: 韩国 005
-  type: trojan
-  network: ws
-  server: 222.114.11.234
-  port: 11288
-  password: Aimer
-  skip-cert-verify: true
-  udp: true
-  sni: agepq.ambercc.filegear-sg.me
-  client-fingerprint: chrome
-  ws-opts:
-    headers:
-      Host: agepq.ambercc.filegear-sg.me
-    path: /?ed=2560
-- name: 韩国 008
-  type: trojan
-  network: ws
-  server: 118.45.241.209
-  port: 50000
-  password: Aimer
-  skip-cert-verify: true
-  udp: true
-  sni: agepq.ambercc.filegear-sg.me
-  client-fingerprint: chrome
-  ws-opts:
-    headers:
-      Host: agepq.ambercc.filegear-sg.me
     path: /?ed=2560
 - name: 美国 017
   type: vless
@@ -645,35 +464,6 @@ proxies:
     headers:
       Host: a.xn--i-sx6a60i.us.kg.
     path: /t.mevpnAndroid2/?ed=2560
-- name: 冰岛 001
-  type: vless
-  network: ws
-  server: 94.250.246.200
-  port: 8080
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  servername: a.mifeng.us.kg
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    headers:
-      Host: a.mifeng.us.kg
-    path: /?ed=2560
-- name: 美国 004
-  type: vmess
-  network: ws
-  server: s2.db-link02.top
-  port: 2086
-  uuid: f518cff0-ee41-3cde-a453-9f3fbccd7ff8
-  skip-cert-verify: true
-  tls: false
-  udp: true
-  tfo: false
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: 100-57-35-141.s2.db-link02.top
-    path: /dabai.in104.20.130.8
 - name: 荷兰 003
   type: vless
   network: ws
@@ -737,20 +527,6 @@ proxies:
     headers:
       Host: pormang.webhost99.workers.dev
     path: /
-- name: 丹麦 001
-  type: vless
-  network: ws
-  server: www.csgo.com
-  port: 443
-  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-  servername: 512306.xyz
-  skip-cert-verify: true
-  tls: true
-  tfo: false
-  ws-opts:
-    headers:
-      Host: 512306.xyz
-    path: /?ed=2980
 - name: 美国 077
   type: vless
   network: ws
@@ -799,31 +575,6 @@ proxies:
     headers:
       Host: redw.pooriam.ir
     path: /
-- name: 美国 088
-  type: vless
-  network: ws
-  server: zula.ir
-  port: 80
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  servername: a.xn--i-sx6a60i.us.kg.
-  tls: false
-  client-fingerprint: chrome
-  ws-opts:
-    headers:
-      Host: a.xn--i-sx6a60i.us.kg.
-    path: /?ed=MARAMBASHI_MARAMBASHI/?ed=2560
-- name: 德国 002
-  type: vless
-  network: http
-  server: 128.140.43.250
-  port: 8081
-  uuid: 5d245df1-c570-4b84-9642-faa4d0e3d3b7
-  skip-cert-verify: false
-  tls: false
-  client-fingerprint: chrome
-  http-opts:
-    path:
-    - /
 - name: 意大利 001
   type: vless
   network: grpc
@@ -875,18 +626,6 @@ proxies:
     headers:
       Host: pormang.webhost99.workers.dev
     path: /
-- name: 美国 116
-  type: vless
-  network: ws
-  server: 104.16.61.8
-  port: 8080
-  uuid: 39431b4c-da16-4052-b31c-0ab8e3b61908
-  skip-cert-verify: false
-  tls: false
-  ws-opts:
-    headers:
-      Host: fastfoods.api.ahmadp206.sbs.
-    path: /?ed=8080
 - name: 美国 122
   type: vless
   network: ws
@@ -899,82 +638,6 @@ proxies:
     headers:
       Host: pormang.webhost99.workers.dev
     path: /
-- name: 美国 001
-  type: vmess
-  network: ws
-  server: esna.twn24.ir
-  port: 443
-  uuid: 0a4e54be-5bbe-4ece-9f5a-2c0d7be3ae85
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  tfo: false
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: esna.twn24.ir
-    path: /24820/?ed=2048
-- name: 加拿大 001
-  type: vmess
-  network: ws
-  server: s2.db-link01.top
-  port: 2052
-  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
-  skip-cert-verify: true
-  tls: false
-  udp: true
-  tfo: false
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: 100-189-132-241.s2.db-link01.top
-    path: /dabai.in104.24.227.22
-- name: 美国 002
-  type: vmess
-  network: ws
-  server: tasnim.ITN24.IR
-  port: 443
-  uuid: 468a9557-2855-4c53-94c1-5e97180c9790
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  tfo: false
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: tasnim.ITN24.IR
-    path: /24820/?ed=2048
-- name: 美国 003
-  type: trojan
-  network: ws
-  server: 104.21.32.1
-  port: 2087
-  password: naEX%5Dg*qw%40MT%26lFz
-  skip-cert-verify: true
-  udp: true
-  tfo: false
-  sni: jOinMAhdIsErvEr-53k.pAGeS.Dev
-  ws-opts:
-    headers:
-      Host: jOinMAhdIsErvEr-53k.pAGeS.Dev
-    path: /trb6oyXIzrlytDBNlm?ed=2560
-- name: 美国 005
-  type: trojan
-  network: ws
-  server: 104.21.112.1
-  port: 2087
-  password: naEX%5Dg*qw%40MT%26lFz
-  skip-cert-verify: true
-  udp: true
-  tfo: false
-  sni: jOinMAhdIsErvEr-53k.pAGeS.Dev
-  ws-opts:
-    headers:
-      Host: jOinMAhdIsErvEr-53k.pAGeS.Dev
-    path: /trb6oyXIzrlytDBNlm?ed=2560
 - name: 美国 006
   type: vless
   network: ws
@@ -1012,19 +675,6 @@ proxies:
     headers:
       Host: sHAhRamConfIGWorKERCJsa9898.coNFiGSHahrAMCOnFiG.wOrkErS.DeV
     path: /pgLUAo7mya6xC60a?ed=2560
-- name: 美国 007
-  type: vless
-  network: ws
-  server: 216.24.57.130
-  port: 8880
-  uuid: 1b6ae0f5-01dc-4b96-bca9-31c672dcf0aa
-  servername: mohsenfitshr.wibibin259.workers.dev
-  skip-cert-verify: false
-  tls: false
-  ws-opts:
-    headers:
-      Host: mohsenfitshr.wibibin259.workers.dev
-    path: /
 - name: 美国 008
   type: vless
   network: ws
@@ -1061,229 +711,6 @@ proxies:
     headers:
       Host: proud-queen-55500071.cexonoc962.workers.dev
     path: /?ed=2560
-- name: 伊朗 002
-  type: trojan
-  network: tcp
-  server: 188.253.22.10
-  port: 443
-  password: '3778399737045327872'
-  skip-cert-verify: true
-  sni: key-pangolin.treefrog761.one
-- name: 美国 013
-  type: vmess
-  network: ws
-  server: cdncdncdn.aikunapp.com
-  port: 443
-  uuid: e9ff847b-e8ff-4690-bd68-d024c63c381e
-  servername: cdn-ca.sm-node.com
-  skip-cert-verify: true
-  tls: true
-  alterId: 0
-  cipher: auto
-  delay: 2295
-  ws-opts:
-    headers:
-      Host: cdn-ca.sm-node.com
-    path: /vmess_ws/smjc/index?ed=8192
-- name: 德国 001
-  type: vmess
-  network: tcp
-  server: 193.108.118.136
-  port: 15713
-  uuid: f74e277e-84b3-46a2-8abd-2777fa5e4af9
-  skip-cert-verify: true
-  udp: true
-  alterId: 0
-  cipher: auto
-  ip-version: dual
-- name: 加拿大 002
-  type: vmess
-  network: ws
-  server: s1.db-link01.top
-  port: 2086
-  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
-  skip-cert-verify: false
-  tls: false
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: 100-191-129-167.s1.db-link01.top
-    path: /
-- name: 美国 014
-  type: vmess
-  network: tcp
-  server: 154.26.129.247
-  port: 57143
-  uuid: 28efbf36-079a-4c98-8470-d13458db6ee6
-  skip-cert-verify: true
-  tls: false
-  alterId: 0
-  cipher: auto
-  ws-headers:
-    Host: 154.26.129.247
-- name: 美国 015
-  type: vmess
-  network: ws
-  server: 172.111.36.108
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  tfo: false
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
-    path: /linkvws
-- name: 伊朗 003
-  type: vmess
-  network: tcp
-  server: 188.245.206.4
-  port: 15359
-  uuid: 68342e3b-62c3-4622-993f-b515d978275e
-  skip-cert-verify: true
-  tls: false
-  udp: true
-  tfo: false
-  alterId: 0
-  cipher: auto
-  http-opts:
-    headers:
-      Host:
-      - zula.ir
-    method: GET
-    path:
-    - /
-- name: 俄罗斯 002
-  type: trojan
-  network: ws
-  server: 92.243.75.49
-  port: 2087
-  password: wb6368
-  skip-cert-verify: true
-  udp: true
-  tfo: false
-  sni: hsdgbuys.pages.dev
-  ws-opts:
-    headers:
-      Host: hsdgbuys.pages.dev
-    path: /
-- name: 美国 016
-  type: trojan
-  network: ws
-  server: 104.21.48.1
-  port: 8443
-  password: s42%26umY%28K5n*csP4
-  skip-cert-verify: true
-  udp: true
-  tfo: false
-  sni: JOInMAHDiseRVer-EEu.pAGEs.dEv
-  ws-opts:
-    headers:
-      Host: JOInMAHDiseRVer-EEu.pAGEs.dEv
-    path: /trOagy9SuM2cDpqUqO?ed=2560
-- name: 美国 018
-  type: vmess
-  network: ws
-  server: tls.94.node-for-bigairport.win
-  port: 443
-  uuid: ef5fca10-41bc-4623-87a3-1170a7b51827
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  tfo: false
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: tls.94.node-for-bigairport.win
-    path: /
-- name: 韩国 002
-  type: trojan
-  network: ws
-  server: 59.2.75.64
-  port: 37722
-  password: Aimer
-  skip-cert-verify: true
-  udp: true
-  sni: agepy.ambercc.filegear-sg.me
-  client-fingerprint: chrome
-  ws-opts:
-    headers:
-      Host: agepy.ambercc.filegear-sg.me
-    path: /?ed=2560
-- name: 美国 020
-  type: vless
-  network: ws
-  server: 104.16.132.207
-  port: 80
-  uuid: 5b75d93d-1e40-43a4-af3d-d6cb11fbafe8
-  skip-cert-verify: false
-  tls: false
-  ws-opts:
-    headers:
-      Host: gozargah2.validbv7996.ir
-    path: /3Bc2FravWgXBrnlN?ed=2560
-- name: 韩国 003
-  type: trojan
-  network: ws
-  server: 220.80.154.29
-  port: 12220
-  password: Aimer
-  skip-cert-verify: true
-  udp: true
-  sni: agepy.ambercc.filegear-sg.me
-  client-fingerprint: chrome
-  ws-opts:
-    headers:
-      Host: agepy.ambercc.filegear-sg.me
-    path: /?ed=2560
-- name: 韩国 004
-  type: vless
-  network: ws
-  server: 112.160.102.173
-  port: 50000
-  uuid: 94d04e32-bc77-4eea-b57c-29ef4b7ef4b0
-  servername: agedt.ambercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  client-fingerprint: chrome
-  ws-opts:
-    headers:
-      Host: agedt.ambercc.filegear-sg.me
-    path: /?ed=2560
-- name: 韩国 006
-  type: trojan
-  network: ws
-  server: 14.41.85.118
-  port: 12465
-  password: Aimer
-  skip-cert-verify: true
-  udp: true
-  sni: agept.ambercc.filegear-sg.me
-  client-fingerprint: chrome
-  ws-opts:
-    headers:
-      Host: agept.ambercc.filegear-sg.me
-    path: /?ed=2560
-- name: 韩国 007
-  type: trojan
-  network: ws
-  server: 193.122.122.87
-  port: 52013
-  password: Aimer
-  skip-cert-verify: true
-  udp: true
-  sni: agepy.ambercc.filegear-sg.me
-  client-fingerprint: chrome
-  ws-opts:
-    headers:
-      Host: agepy.ambercc.filegear-sg.me
-    path: /?ed=2560
 - name: 美国 021
   type: vless
   network: ws
@@ -1296,35 +723,6 @@ proxies:
     headers:
       Host: a.mifeng.us.kg
     path: /telegram-_-_-_-_-__-free_shekan-_-_-_-/?ed=2048
-- name: 新加坡 001
-  type: vless
-  network: ws
-  server: 52.220.205.101
-  port: 9997
-  uuid: 94d04e32-bc77-4eea-b57c-29ef4b7ef4b0
-  servername: agedt.ambercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  client-fingerprint: chrome
-  ws-opts:
-    headers:
-      Host: agedt.ambercc.filegear-sg.me
-    path: /?ed=2560
-- name: 韩国 011
-  type: trojan
-  network: ws
-  server: 59.4.59.224
-  port: 12499
-  password: Aimer
-  skip-cert-verify: true
-  udp: true
-  sni: agept.ambercc.filegear-sg.me
-  client-fingerprint: chrome
-  ws-opts:
-    headers:
-      Host: agept.ambercc.filegear-sg.me
-    path: /?ed=2560
 - name: 美国 022
   type: vless
   network: ws
@@ -1338,230 +736,6 @@ proxies:
     headers:
       Host: gozargah2.validbv7996.ir
     path: /3Bc2FravWgXBrnlN?ed=2560
-- name: 美国 023
-  type: trojan
-  network: ws
-  server: 104.129.166.131
-  port: 8443
-  password: Aimer
-  skip-cert-verify: true
-  udp: true
-  sni: agept.ambercc.filegear-sg.me
-  client-fingerprint: chrome
-  ws-opts:
-    headers:
-      Host: agept.ambercc.filegear-sg.me
-    path: /?ed=2560
-- name: 美国 024
-  type: trojan
-  network: ws
-  server: 206.238.237.81
-  port: 2087
-  password: Aimer
-  skip-cert-verify: true
-  udp: true
-  sni: agepy.ambercc.filegear-sg.me
-  client-fingerprint: chrome
-  ws-opts:
-    headers:
-      Host: agepy.ambercc.filegear-sg.me
-    path: /?ed=2560
-- name: 美国 026
-  type: trojan
-  network: ws
-  server: 108.165.152.36
-  port: 2096
-  password: Aimer
-  skip-cert-verify: true
-  udp: true
-  sni: agepy.ambercc.filegear-sg.me
-  ws-opts:
-    headers:
-      Host: agepy.ambercc.filegear-sg.me
-    path: /?ed=2560
-- name: 亚美尼亚 001
-  type: trojan
-  network: ws
-  server: 188.164.159.138
-  port: 2083
-  password: Aimer
-  skip-cert-verify: true
-  udp: true
-  sni: agepy.ambercc.filegear-sg.me
-  ws-opts:
-    headers:
-      Host: agepy.ambercc.filegear-sg.me
-    path: /?ed=2560
-- name: 美国 027
-  type: trojan
-  network: ws
-  server: 108.165.152.202
-  port: 2083
-  password: Aimer
-  skip-cert-verify: true
-  udp: true
-  sni: agepy.ambercc.filegear-sg.me
-  ws-opts:
-    headers:
-      Host: agepy.ambercc.filegear-sg.me
-    path: /?ed=2560
-- name: 美国 028
-  type: trojan
-  network: ws
-  server: 104.19.60.193
-  port: 2083
-  password: Aimer
-  skip-cert-verify: true
-  udp: true
-  sni: agepy.ambercc.filegear-sg.me
-  ws-opts:
-    headers:
-      Host: agepy.ambercc.filegear-sg.me
-    path: /?ed=2560
-- name: 俄罗斯 003
-  type: trojan
-  network: ws
-  server: 92.243.74.180
-  port: 8443
-  password: Aimer
-  skip-cert-verify: true
-  udp: true
-  sni: agepy.ambercc.filegear-sg.me
-  ws-opts:
-    headers:
-      Host: agepy.ambercc.filegear-sg.me
-    path: /?ed=2560
-- name: 亚美尼亚 002
-  type: trojan
-  network: ws
-  server: 188.164.159.55
-  port: 2096
-  password: Aimer
-  skip-cert-verify: true
-  udp: true
-  sni: agepy.ambercc.filegear-sg.me
-  ws-opts:
-    headers:
-      Host: agepy.ambercc.filegear-sg.me
-    path: /?ed=2560
-- name: 美国 030
-  type: vless
-  network: ws
-  server: 151.101.2.216
-  port: 80
-  uuid: 46b06e2c-e5e0-4ad2-ad3e-9f316d7d3065
-  skip-cert-verify: false
-  tls: false
-  ws-opts:
-    headers:
-      Host: MaHxRaYT.aI.
-    path: /?ed=2048
-- name: 美国 031
-  type: trojan
-  network: ws
-  server: 206.238.236.31
-  port: 8443
-  password: Aimer
-  skip-cert-verify: true
-  udp: true
-  sni: agept.ambercc.filegear-sg.me
-  ws-opts:
-    headers:
-      Host: agept.ambercc.filegear-sg.me
-    path: /?ed=2560
-- name: 美国 032
-  type: trojan
-  network: ws
-  server: 108.165.152.93
-  port: 2083
-  password: Aimer
-  skip-cert-verify: true
-  udp: true
-  sni: agept.ambercc.filegear-sg.me
-  ws-opts:
-    headers:
-      Host: agept.ambercc.filegear-sg.me
-    path: /?ed=2560
-- name: 日本 001
-  type: trojan
-  network: ws
-  server: 103.116.7.133
-  port: 2083
-  password: Aimer
-  skip-cert-verify: true
-  udp: true
-  sni: agept.ambercc.filegear-sg.me
-  ws-opts:
-    headers:
-      Host: agept.ambercc.filegear-sg.me
-    path: /?ed=2560
-- name: 美国 037
-  type: trojan
-  network: ws
-  server: 107.173.149.120
-  port: 2087
-  password: Aimer
-  skip-cert-verify: true
-  udp: true
-  sni: agepy.ambercc.filegear-sg.me
-  client-fingerprint: chrome
-  ws-opts:
-    headers:
-      Host: agepy.ambercc.filegear-sg.me
-    path: /?ed=2560
-- name: 美国 040
-  type: trojan
-  network: ws
-  server: 192.200.160.35
-  port: 2083
-  password: Aimer
-  skip-cert-verify: true
-  udp: true
-  sni: agept.ambercc.filegear-sg.me
-  ws-opts:
-    headers:
-      Host: agept.ambercc.filegear-sg.me
-    path: /?ed=2560
-- name: 美国 041
-  type: trojan
-  network: ws
-  server: 108.165.152.113
-  port: 443
-  password: Aimer
-  skip-cert-verify: true
-  udp: true
-  sni: agept.ambercc.filegear-sg.me
-  ws-opts:
-    headers:
-      Host: agept.ambercc.filegear-sg.me
-    path: /?ed=2560
-- name: 美国 042
-  type: vless
-  network: ws
-  server: 151.101.128.155
-  port: 80
-  uuid: 46b06e2c-e5e0-4ad2-ad3e-9f316d7d3065
-  skip-cert-verify: false
-  tls: false
-  ws-opts:
-    headers:
-      Host: MaHxRaYT.aI.
-    path: /?ed=2048
-- name: 美国 043
-  type: vmess
-  network: ws
-  server: 162.120.94.103
-  port: 8443
-  uuid: e88b85c6-93b4-47f6-b3fb-2c55dcb1289f
-  servername: lax2.ibgfw.top
-  skip-cert-verify: true
-  tls: true
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: lax2.ibgfw.top
-    path: /dyajvws
 - name: 美国 044
   type: vless
   network: ws
@@ -1575,460 +749,6 @@ proxies:
     headers:
       Host: redw.pooriam.ir
     path: /
-- name: 荷兰 002
-  type: trojan
-  network: ws
-  server: 45.150.115.195
-  port: 2087
-  password: Aimer
-  skip-cert-verify: true
-  udp: true
-  sni: agepy.ambercc.filegear-sg.me
-  ws-opts:
-    headers:
-      Host: agepy.ambercc.filegear-sg.me
-    path: /?ed=2560
-- name: 美国 045
-  type: trojan
-  network: ws
-  server: 108.165.152.59
-  port: 2087
-  password: Aimer
-  skip-cert-verify: true
-  udp: true
-  sni: agepy.ambercc.filegear-sg.me
-  ws-opts:
-    headers:
-      Host: agepy.ambercc.filegear-sg.me
-    path: /?ed=2560
-- name: 伊朗 004
-  type: vless
-  network: http
-  server: 85.9.120.86
-  port: 56924
-  uuid: f8df46f4-310f-49ae-8c82-c15c9aacd95f
-  skip-cert-verify: false
-  tls: false
-  http-opts:
-    headers:
-      Host:
-      - bwm.com
-    path:
-    - /
-- name: 美国 047
-  type: vmess
-  network: ws
-  server: 192.74.241.135
-  port: 30003
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  alterId: 64
-  cipher: auto
-  delay: 1166
-  ws-opts:
-    headers:
-      Host: www.38740067.xyz
-    path: /path/1739980378395
-- name: 美国 048
-  type: vmess
-  network: ws
-  server: 198.2.195.1
-  port: 38005
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  alterId: 64
-  cipher: auto
-  delay: 2229
-  ws-opts:
-    headers:
-      Host: www.69829341.xyz
-    path: /path/1739973894418
-- name: 美国 050
-  type: vmess
-  network: ws
-  server: 38.11.49.57
-  port: 38003
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  alterId: 64
-  cipher: auto
-  delay: 1241
-  ws-opts:
-    headers:
-      Host: www.45700497.xyz
-    path: /path/1739973313415
-- name: 美国 052
-  type: vless
-  network: ws
-  server: 47.76.62.98
-  port: 587
-  uuid: 94d04e32-bc77-4eea-b57c-29ef4b7ef4b0
-  servername: agedt.ambercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  delay: 1232
-  ws-opts:
-    headers:
-      Host: agedt.ambercc.filegear-sg.me
-    path: /?ed=2560
-- name: 美国 053
-  type: vless
-  network: ws
-  server: 47.238.161.148
-  port: 587
-  uuid: 94d04e32-bc77-4eea-b57c-29ef4b7ef4b0
-  servername: agedt.ambercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  delay: 1012
-  ws-opts:
-    headers:
-      Host: agedt.ambercc.filegear-sg.me
-    path: /?ed=2560
-- name: 新加坡 003
-  type: vless
-  network: ws
-  server: 54.251.227.43
-  port: 443
-  uuid: 94d04e32-bc77-4eea-b57c-29ef4b7ef4b0
-  servername: agedt.ambercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  delay: 403
-  ws-opts:
-    headers:
-      Host: agedt.ambercc.filegear-sg.me
-    path: /?ed=2560
-- name: 美国 054
-  type: vmess
-  network: ws
-  server: 198.200.48.230
-  port: 37006
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  alterId: 64
-  cipher: auto
-  delay: 2199
-  ws-opts:
-    headers:
-      Host: www.46281147.xyz
-    path: /path/1739973894418
-- name: 美国 055
-  type: vmess
-  network: ws
-  server: 199.180.101.28
-  port: 38004
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  alterId: 64
-  cipher: auto
-  delay: 1668
-  ws-opts:
-    headers:
-      Host: www.11733511.xyz
-    path: /path/1739875088754
-- name: 加拿大 003
-  type: vmess
-  network: ws
-  server: s1.cn-db.top
-  port: 2095
-  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
-  servername: 100-139-204-73.s1.cn-db.top
-  skip-cert-verify: true
-  alterId: 0
-  cipher: auto
-  delay: 2097
-  ws-opts:
-    headers:
-      Host: 100-139-204-73.s1.cn-db.top
-    path: /dabai.in104.25.132.97
-- name: 荷兰 005
-  type: vless
-  network: ws
-  server: 185.133.35.155
-  port: 443
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  servername: zmc.bgm2024.us.kg
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  delay: 1960
-  ws-opts:
-    headers:
-      Host: zmc.bgm2024.us.kg
-    path: /?ed=2560
-- name: 美国 057
-  type: vless
-  network: ws
-  server: 63.141.128.96
-  port: 443
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  servername: zmc.bgm2024.us.kg
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  delay: 1729
-  ws-opts:
-    headers:
-      Host: zmc.bgm2024.us.kg
-    path: /?ed=2560
-- name: 奥地利 001
-  type: vless
-  network: ws
-  server: 212.183.88.225
-  port: 443
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  servername: zmc.bgm2024.us.kg
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  delay: 790
-  ws-opts:
-    headers:
-      Host: zmc.bgm2024.us.kg
-    path: /?ed=2560
-- name: 俄罗斯 006
-  type: vless
-  network: ws
-  server: 92.243.75.49
-  port: 2087
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  servername: zmc.bgm2024.us.kg
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  delay: 2293
-  ws-opts:
-    headers:
-      Host: zmc.bgm2024.us.kg
-    path: /?ed=2560
-- name: 美国 058
-  type: vless
-  network: ws
-  server: 63.141.128.58
-  port: 443
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  servername: zmc.bgm2024.us.kg
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  delay: 1131
-  ws-opts:
-    headers:
-      Host: zmc.bgm2024.us.kg
-    path: /?ed=2560
-- name: 奥地利 002
-  type: vless
-  network: ws
-  server: 212.183.88.43
-  port: 443
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  servername: zmc.bgm2024.us.kg
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  delay: 2955
-  ws-opts:
-    headers:
-      Host: zmc.bgm2024.us.kg
-    path: /?ed=2560
-- name: 美国 059
-  type: vless
-  network: ws
-  server: 192.200.160.99
-  port: 443
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  servername: zmc.bgm2024.us.kg
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  delay: 2770
-  ws-opts:
-    headers:
-      Host: zmc.bgm2024.us.kg
-    path: /?ed=2560
-- name: 奥地利 003
-  type: vless
-  network: ws
-  server: 212.183.88.176
-  port: 443
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  servername: zmc.bgm2024.us.kg
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  delay: 2292
-  ws-opts:
-    headers:
-      Host: zmc.bgm2024.us.kg
-    path: /?ed=2560
-- name: 美国 060
-  type: vmess
-  network: ws
-  server: 38.33.1.173
-  port: 37003
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  alterId: 64
-  cipher: auto
-  delay: 2055
-  ws-opts:
-    headers:
-      Host: www.24257549.xyz
-    path: /path/1739892314173
-- name: 美国 061
-  type: vmess
-  network: tcp
-  server: 107.148.207.249
-  port: 48712
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  servername: appsvs.shop
-  skip-cert-verify: true
-  alterId: 64
-  cipher: auto
-  delay: 1134
-- name: 美国 062
-  type: vmess
-  network: ws
-  server: 67.21.95.67
-  port: 30001
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  alterId: 64
-  cipher: auto
-  delay: 1204
-  ws-opts:
-    headers:
-      Host: www.63876016.xyz
-    path: /path/1739973894418
-- name: 加拿大 004
-  type: vmess
-  network: ws
-  server: s5.db-link01.top
-  port: 2052
-  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
-  servername: 100-62-189-118.s5.db-link01.top
-  skip-cert-verify: false
-  tls: false
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: 100-62-189-118.s5.db-link01.top
-    path: /
-- name: 美国 063
-  type: vmess
-  network: ws
-  server: 172.67.200.13
-  port: 443
-  uuid: 5f726fe3-d82e-4da5-a711-8af0cbb2b682
-  skip-cert-verify: false
-  tls: true
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: 1a2d514b-37cf-499f-8d08-d017a92ab5bb.asoul-ava.top
-    path: /
-- name: 澳大利亚 001
-  type: trojan
-  network: ws
-  server: 192.65.217.200
-  port: 443
-  password: b59ee60f-9fa4-4770-b6a7-288620147f60
-  skip-cert-verify: true
-  udp: true
-  sni: k6us1.yfjc.sbs
-  ws-opts:
-    headers:
-      Host: k6us1.yfjc.sbs
-    path: /yfjc/kus1
-- name: 巴勒斯坦 001
-  type: vmess
-  network: ws
-  server: 82.213.5.50
-  port: 80
-  uuid: f21bcdb6-5dc6-4c4b-9a34-3b185f6747c4
-  skip-cert-verify: true
-  tls: false
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: tabyan205.serveftp.com
-    path: /
-- name: 美国 065
-  type: vmess
-  network: ws
-  server: 104.19.48.236
-  port: 2052
-  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
-  skip-cert-verify: true
-  tls: false
-  udp: true
-  tfo: false
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: 100-41-36-35.s2.db-link01.top
-    path: /dabai.in172.67.71.198
-- name: 美国 066
-  type: trojan
-  network: ws
-  server: 104.21.80.1
-  port: 2087
-  password: naEX%5Dg*qw%40MT%26lFz
-  skip-cert-verify: true
-  udp: true
-  tfo: false
-  sni: jOinMAhdIsErvEr-53k.pAGeS.Dev
-  ws-opts:
-    headers:
-      Host: jOinMAhdIsErvEr-53k.pAGeS.Dev
-    path: /trb6oyXIzrlytDBNlm?ed=2560
-- name: 德国 003
-  type: vless
-  network: grpc
-  server: 167.235.71.117
-  port: 443
-  uuid: 0d89c71f-f359-4334-91f3-65fca32e41cd
-  servername: www.cdn77.com
-  skip-cert-verify: false
-  tls: true
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: gmfZyQtoXXrck45kkXm_vO3TlB0CcDNvkLkd3-HAfFA
-    short-id: b542ac
-  grpc-opts:
-    grpc-service-name: Telegram-ipV2Ray-Telegram-ipV2Ray-Telegram-ipV2Ray-Telegram-ipV2Ray-Telegram-ipV2Ray
-- name: 日本 002
-  type: vless
-  network: grpc
-  server: 103.241.66.112
-  port: 2060
-  uuid: 354712c4-dab3-452c-89fd-0a2edd6999f9
-  skip-cert-verify: false
-  tls: true
-  grpc-opts:
-    grpc-service-name: 2096vless
 - name: 美国 067
   type: vless
   network: ws
@@ -2041,23 +761,6 @@ proxies:
     headers:
       Host: workerr.johnstoner.workers.dev
     path: /?ed=2048
-- name: 匈牙利 001
-  type: vless
-  network: http
-  server: flv4-vip.digitalldns.com
-  port: 6587
-  uuid: ce961aa3-9ffb-4fed-904e-0cfba9f5aaba
-  servername: www.speedtest.net
-  skip-cert-verify: false
-  tls: false
-  udp: true
-  http-opts:
-    headers:
-      Host:
-      - www.speedtest.net
-    method: GET
-    path:
-    - /
 - name: 美国 068
   type: vless
   network: ws
@@ -2070,588 +773,6 @@ proxies:
     headers:
       Host: a.xn--i-sx6a60i.us.kg.
     path: /
-- name: 美国 070
-  type: vless
-  network: ws
-  server: 104.24.91.178
-  port: 80
-  uuid: 94b0cde3-a305-4d89-a192-575339220c7f
-  skip-cert-verify: false
-  tls: false
-  ws-opts:
-    headers:
-      Host: flat-rain-e26e-ppal03.cigoyob991.workers.dev
-    path: /?ed=2560
-- name: 美国 071
-  type: vless
-  network: ws
-  server: 104.18.14.19
-  port: 2086
-  uuid: 12b6fb4e-91a5-4b9c-b23f-aaf7917488fd
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ws-opts:
-    headers:
-      Host: 0108.9ro3grfw.workers.dev
-    path: /?ed=2560
-- name: 美国 076
-  type: vmess
-  network: ws
-  server: 104.21.3.219
-  port: 8443
-  uuid: c313606f-98c2-4d7b-ba74-48b94f61b11d
-  skip-cert-verify: false
-  tls: true
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: uswuxian.pai50288.uk
-    path: /
-- name: 美国 081
-  type: vmess
-  network: ws
-  server: 108.186.26.167
-  port: 37004
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  skip-cert-verify: false
-  tls: true
-  alterId: 64
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: www.64933771.xyz
-    path: /
-- name: 美国 082
-  type: vmess
-  network: ws
-  server: 137.175.39.195
-  port: 38002
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  skip-cert-verify: false
-  tls: true
-  alterId: 64
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: www.61974602.xyz
-    path: /
-- name: 美国 086
-  type: vmess
-  network: ws
-  server: 38.11.50.68
-  port: 31005
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  skip-cert-verify: false
-  tls: true
-  alterId: 64
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: www.65420682.xyz
-    path: /
-- name: 美国 089
-  type: vmess
-  network: ws
-  server: 38.33.56.47
-  port: 37001
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  skip-cert-verify: false
-  tls: true
-  alterId: 64
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: www.36790472.xyz
-    path: /
-- name: 美国 090
-  type: vmess
-  network: ws
-  server: 192.74.224.163
-  port: 37002
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  skip-cert-verify: false
-  tls: true
-  alterId: 64
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: www.68584158.xyz
-    path: /
-- name: 加拿大 005
-  type: vmess
-  network: ws
-  server: s1.db-link02.top
-  port: 2082
-  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
-  skip-cert-verify: false
-  tls: false
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: 100-113-212-3.s1.db-link02.top
-    path: /
-- name: 加拿大 006
-  type: vmess
-  network: ws
-  server: s5.cn-db.top
-  port: 2095
-  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
-  skip-cert-verify: false
-  tls: false
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: 100-27-240-19.s5.cn-db.top
-    path: /
-- name: 加拿大 007
-  type: vmess
-  network: ws
-  server: 104.16.155.10
-  port: 2082
-  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
-  skip-cert-verify: false
-  tls: false
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: 100-38-62-25.s5.db-link02.top
-    path: /
-- name: 美国 091
-  type: vmess
-  network: ws
-  server: 104.19.48.236
-  port: 2086
-  uuid: f518cff0-ee41-3cde-a453-9f3fbccd7ff8
-  skip-cert-verify: false
-  tls: false
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: 100-57-35-141.s2.db-link02.top
-    path: /
-- name: 美国 092
-  type: vmess
-  network: ws
-  server: 104.17.221.248
-  port: 2052
-  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
-  skip-cert-verify: false
-  tls: false
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: 100-44-70-80.s1.db-link02.top
-    path: /
-- name: 加拿大 008
-  type: vmess
-  network: ws
-  server: s5.db-link02.top
-  port: 2082
-  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
-  skip-cert-verify: false
-  tls: false
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: 100-38-62-25.s5.db-link02.top
-    path: /
-- name: 美国 094
-  type: vmess
-  network: ws
-  server: burt.ns.cloudflare.com
-  port: 443
-  uuid: 0cbe0787-95eb-48d4-94cb-4f30d915b167
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  tfo: false
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: tunnelnyc.875578.xyz
-    path: /tunnelnyc.875578.xyz
-- name: 美国 095
-  type: vmess
-  network: ws
-  server: june.ns.cloudflare.com
-  port: 443
-  uuid: 6b1f881f-aef0-4577-c8ee-64c53ae79bb9
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  tfo: false
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: tunnelsjc.875578.xyz
-    path: /tunnelsjc.875578.xyz
-- name: 美国 096
-  type: vmess
-  network: ws
-  server: jose.ns.cloudflare.com
-  port: 443
-  uuid: 5acae513-4e9c-432f-d628-48257c8cf1b8
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  tfo: false
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: tunneljp.875578.xyz
-    path: /tunneljp.875578.xyz
-- name: 美国 097
-  type: vmess
-  network: ws
-  server: iris.ns.cloudflare.com
-  port: 443
-  uuid: 59e15857-c87e-4e0f-cc75-861f2a31006c
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  tfo: false
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: tunnelkr.875578.xyz
-    path: /tunnelkr.875578.xyz
-- name: 新加坡 002
-  type: vless
-  network: ws
-  server: 18.136.16.233
-  port: 443
-  uuid: 94d04e32-bc77-4eea-b57c-29ef4b7ef4b0
-  servername: agedy.ambercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  ws-opts:
-    headers:
-      Host: agedy.ambercc.filegear-sg.me
-    path: /?ed=2560
-- name: 韩国 009
-  type: vless
-  network: ws
-  server: 211.218.223.130
-  port: 30012
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  servername: nc.dbbn2024.us.kg
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  ws-opts:
-    headers:
-      Host: nc.dbbn2024.us.kg
-    path: /?ed=2560
-- name: 韩国 010
-  type: trojan
-  network: ws
-  server: 175.199.169.221
-  port: 50003
-  password: Aimer
-  skip-cert-verify: true
-  udp: true
-  sni: agept.ambercc.filegear-sg.me
-  ws-opts:
-    headers:
-      Host: agept.ambercc.filegear-sg.me
-    path: /?ed=2560
-- name: 韩国 012
-  type: vless
-  network: ws
-  server: 211.218.242.102
-  port: 39358
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  servername: nc.dbbn2024.us.kg
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  ws-opts:
-    headers:
-      Host: nc.dbbn2024.us.kg
-    path: /?ed=2560
-- name: 韩国 013
-  type: vless
-  network: ws
-  server: 175.198.236.155
-  port: 15831
-  uuid: 94d04e32-bc77-4eea-b57c-29ef4b7ef4b0
-  servername: agedy.ambercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  ws-opts:
-    headers:
-      Host: agedy.ambercc.filegear-sg.me
-    path: /?ed=2560
-- name: 韩国 014
-  type: trojan
-  network: ws
-  server: 14.47.103.113
-  port: 12167
-  password: Aimer
-  skip-cert-verify: true
-  udp: true
-  sni: agept.ambercc.filegear-sg.me
-  ws-opts:
-    headers:
-      Host: agept.ambercc.filegear-sg.me
-    path: /?ed=2560
-- name: 韩国 015
-  type: vless
-  network: ws
-  server: 118.42.188.118
-  port: 37322
-  uuid: 94d04e32-bc77-4eea-b57c-29ef4b7ef4b0
-  servername: agedy.ambercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  ws-opts:
-    headers:
-      Host: agedy.ambercc.filegear-sg.me
-    path: /?ed=2560
-- name: 韩国 016
-  type: vless
-  network: ws
-  server: 175.199.169.221
-  port: 50003
-  uuid: 94d04e32-bc77-4eea-b57c-29ef4b7ef4b0
-  servername: agedy.ambercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  ws-opts:
-    headers:
-      Host: agedy.ambercc.filegear-sg.me
-    path: /?ed=2560
-- name: 韩国 017
-  type: trojan
-  network: ws
-  server: 115.23.163.214
-  port: 12523
-  password: Aimer
-  skip-cert-verify: true
-  udp: true
-  sni: agept.ambercc.filegear-sg.me
-  ws-opts:
-    headers:
-      Host: agept.ambercc.filegear-sg.me
-    path: /?ed=2560
-- name: 韩国 018
-  type: vless
-  network: ws
-  server: 121.153.45.186
-  port: 18004
-  uuid: 94d04e32-bc77-4eea-b57c-29ef4b7ef4b0
-  servername: agedy.ambercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  ws-opts:
-    headers:
-      Host: agedy.ambercc.filegear-sg.me
-    path: /?ed=2560
-- name: 韩国 019
-  type: trojan
-  network: ws
-  server: 121.153.45.186
-  port: 18004
-  password: Aimer
-  skip-cert-verify: true
-  udp: true
-  sni: agept.ambercc.filegear-sg.me
-  ws-opts:
-    headers:
-      Host: agept.ambercc.filegear-sg.me
-    path: /?ed=2560
-- name: 韩国 020
-  type: vless
-  network: ws
-  server: 14.47.103.113
-  port: 12167
-  uuid: 94d04e32-bc77-4eea-b57c-29ef4b7ef4b0
-  servername: agedy.ambercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  ws-opts:
-    headers:
-      Host: agedy.ambercc.filegear-sg.me
-    path: /?ed=2560
-- name: 韩国 021
-  type: vless
-  network: ws
-  server: 121.191.9.243
-  port: 35559
-  uuid: 94d04e32-bc77-4eea-b57c-29ef4b7ef4b0
-  servername: agedy.ambercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  ws-opts:
-    headers:
-      Host: agedy.ambercc.filegear-sg.me
-    path: /?ed=2560
-- name: 韩国 022
-  type: trojan
-  network: ws
-  server: 175.198.236.155
-  port: 15831
-  password: Aimer
-  skip-cert-verify: true
-  udp: true
-  sni: agept.ambercc.filegear-sg.me
-  ws-opts:
-    headers:
-      Host: agept.ambercc.filegear-sg.me
-    path: /?ed=2560
-- name: 韩国 023
-  type: vless
-  network: ws
-  server: 14.47.175.40
-  port: 12115
-  uuid: 94d04e32-bc77-4eea-b57c-29ef4b7ef4b0
-  servername: agedy.ambercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  ws-opts:
-    headers:
-      Host: agedy.ambercc.filegear-sg.me
-    path: /?ed=2560
-- name: 韩国 024
-  type: trojan
-  network: ws
-  server: 14.47.175.40
-  port: 12115
-  password: Aimer
-  skip-cert-verify: true
-  udp: true
-  sni: agept.ambercc.filegear-sg.me
-  ws-opts:
-    headers:
-      Host: agept.ambercc.filegear-sg.me
-    path: /?ed=2560
-- name: 韩国 025
-  type: trojan
-  network: ws
-  server: 175.208.25.75
-  port: 12373
-  password: Aimer
-  skip-cert-verify: true
-  udp: true
-  sni: agept.ambercc.filegear-sg.me
-  ws-opts:
-    headers:
-      Host: agept.ambercc.filegear-sg.me
-    path: /?ed=2560
-- name: 韩国 026
-  type: trojan
-  network: ws
-  server: 220.127.49.73
-  port: 14443
-  password: Aimer
-  skip-cert-verify: true
-  udp: true
-  sni: agept.ambercc.filegear-sg.me
-  ws-opts:
-    headers:
-      Host: agept.ambercc.filegear-sg.me
-    path: /?ed=2560
-- name: 新加坡 004
-  type: trojan
-  network: ws
-  server: 18.136.16.233
-  port: 443
-  password: Aimer
-  skip-cert-verify: true
-  udp: true
-  sni: agept.ambercc.filegear-sg.me
-  ws-opts:
-    headers:
-      Host: agept.ambercc.filegear-sg.me
-    path: /?ed=2560
-- name: 韩国 027
-  type: trojan
-  network: ws
-  server: 175.214.237.120
-  port: 50000
-  password: Aimer
-  skip-cert-verify: true
-  udp: true
-  sni: agepy.ambercc.filegear-sg.me
-  ws-opts:
-    headers:
-      Host: agepy.ambercc.filegear-sg.me
-    path: /?ed=2560
-- name: 美国 098
-  type: vless
-  network: ws
-  server: 192.0.54.18
-  port: 443
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  servername: nc.dbbn2024.us.kg
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  ws-opts:
-    headers:
-      Host: nc.dbbn2024.us.kg
-    path: /?ed=2560
-- name: 美国 099
-  type: vless
-  network: ws
-  server: 206.238.236.136
-  port: 443
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  servername: nc.dbbn2024.us.kg
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  ws-opts:
-    headers:
-      Host: nc.dbbn2024.us.kg
-    path: /?ed=2560
-- name: 美国 100
-  type: vless
-  network: ws
-  server: 154.17.21.134
-  port: 18446
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  servername: nc.dbbn2024.us.kg
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  ws-opts:
-    headers:
-      Host: nc.dbbn2024.us.kg
-    path: /?ed=2560
-- name: 美国 101
-  type: vless
-  network: ws
-  server: 104.168.43.27
-  port: 54063
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  servername: nc.dbbn2024.us.kg
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  ws-opts:
-    headers:
-      Host: nc.dbbn2024.us.kg
-    path: /?ed=2560
 - name: 荷兰 006
   type: vless
   network: ws
@@ -2676,60 +797,6 @@ proxies:
     headers:
       Host: calm-violet-0e47.pomofoc222.workers.dev
     path: /lrJO6NEVRGHecfbo?ed=2560
-- name: 美国 103
-  type: vless
-  network: ws
-  server: 47.89.244.253
-  port: 443
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  servername: nc.dbbn2024.us.kg
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  ws-opts:
-    headers:
-      Host: nc.dbbn2024.us.kg
-    path: /?ed=2560
-- name: 瑞典 001
-  type: vless
-  network: ws
-  server: 141.147.147.28
-  port: 8443
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  servername: nc.dbbn2024.us.kg
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  ws-opts:
-    headers:
-      Host: nc.dbbn2024.us.kg
-    path: /?ed=2560
-- name: 奥地利 004
-  type: vless
-  network: ws
-  server: 212.183.88.193
-  port: 443
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  servername: nc.dbbn2024.us.kg
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  ws-opts:
-    headers:
-      Host: nc.dbbn2024.us.kg
-    path: /?ed=2560
-- name: 美国 104
-  type: vless
-  network: ws
-  server: 172.67.180.238
-  port: 8880
-  uuid: 51d3d249-9095-4cbd-8fd2-3e6c1039cab4
-  skip-cert-verify: false
-  tls: false
-  ws-opts:
-    headers:
-      Host: falcunargo.c2259d7c10.workers.dev
-    path: /?ed=2048
 - name: 美国 105
   type: vless
   network: ws
@@ -2754,31 +821,6 @@ proxies:
     headers:
       Host: 0107.cxypogon.workers.dev
     path: /?ed=2560
-- name: 美国 107
-  type: vless
-  network: ws
-  server: 104.24.218.13
-  port: 80
-  uuid: 7ee0cedb-1f06-4be9-8444-51f289a4bf12
-  skip-cert-verify: false
-  tls: false
-  ws-opts:
-    headers:
-      Host: morning-sound-6fa2-ppal03.tinemo7285.workers.dev
-    path: /?ed=2560
-- name: 澳大利亚 002
-  type: trojan
-  network: ws
-  server: 43.156.116.194
-  port: 443
-  password: Aimer
-  skip-cert-verify: true
-  udp: true
-  sni: agept.ambercc.filegear-sg.me
-  ws-opts:
-    headers:
-      Host: agept.ambercc.filegear-sg.me
-    path: /?ed=2560
 - name: 德国 004
   type: vless
   network: ws
@@ -2792,18 +834,6 @@ proxies:
     headers:
       Host: b4f0b859-super-smoke-7916.bouncy-vulture1054.workers.dev
     path: /
-- name: 巴西 005
-  type: vless
-  network: ws
-  server: 188.114.98.45
-  port: 80
-  uuid: f7ef59d8-e848-454d-8613-9e2f45ddd04f
-  skip-cert-verify: false
-  tls: false
-  ws-opts:
-    headers:
-      Host: uuttrr.607f1dbb99.workers.dev
-    path: /?ed=2560
 - name: 美国 108
   type: vless
   network: ws
@@ -2852,18 +882,6 @@ proxies:
     headers:
       Host: rapid-mountain-e6a9-ppal03.rahog30057.workers.dev
     path: /?ed=2560
-- name: 美国 114
-  type: vless
-  network: ws
-  server: 104.21.7.193
-  port: 2095
-  uuid: f3562b04-2f2b-433a-80b4-45f60d659004
-  skip-cert-verify: false
-  tls: false
-  ws-opts:
-    headers:
-      Host: 925tg.3gnc3sjz.workers.dev
-    path: /?ed=2560
 - name: 美国 115
   type: vless
   network: ws
@@ -2876,96 +894,6 @@ proxies:
     headers:
       Host: bLue-sNoW-a243.GeleNE5962.wOrKeRS.dEV
     path: /Fvy0Y7NJ7uucUDha?ed=2560
-- name: 美国 117
-  type: trojan
-  network: ws
-  server: 154.26.182.81
-  port: 19355
-  password: Aimer
-  skip-cert-verify: true
-  udp: true
-  sni: agepy.ambercc.filegear-sg.me
-  ws-opts:
-    headers:
-      Host: agepy.ambercc.filegear-sg.me
-    path: /?ed=2560
-- name: 澳大利亚 003
-  type: trojan
-  network: ws
-  server: 185.148.13.32
-  port: 10005
-  password: Aimer
-  skip-cert-verify: true
-  udp: true
-  sni: agept.ambercc.filegear-sg.me
-  ws-opts:
-    headers:
-      Host: agept.ambercc.filegear-sg.me
-    path: /?ed=2560
-- name: 美国 118
-  type: trojan
-  network: ws
-  server: 154.21.93.92
-  port: 37955
-  password: Aimer
-  skip-cert-verify: true
-  udp: true
-  sni: agept.ambercc.filegear-sg.me
-  ws-opts:
-    headers:
-      Host: agept.ambercc.filegear-sg.me
-    path: /?ed=2560
-- name: 亚美尼亚 003
-  type: trojan
-  network: ws
-  server: 188.164.159.246
-  port: 2096
-  password: Aimer
-  skip-cert-verify: true
-  udp: true
-  sni: agept.ambercc.filegear-sg.me
-  ws-opts:
-    headers:
-      Host: agept.ambercc.filegear-sg.me
-    path: /?ed=2560
-- name: 美国 119
-  type: trojan
-  network: ws
-  server: 154.9.249.242
-  port: 443
-  password: Aimer
-  skip-cert-verify: true
-  udp: true
-  sni: agepu.ambercc.filegear-sg.me
-  ws-opts:
-    headers:
-      Host: agepu.ambercc.filegear-sg.me
-    path: /?ed=2560
-- name: 美国 120
-  type: vless
-  network: ws
-  server: 104.24.184.113
-  port: 80
-  uuid: 03c9f240-0bad-4f71-93f2-f5d272dada97
-  servername: sparkling-limit-ppal03.yibijow194.workers.dev
-  tls: false
-  ws-opts:
-    headers:
-      Host: sparkling-limit-ppal03.yibijow194.workers.dev
-    path: /
-- name: 美国 123
-  type: trojan
-  network: ws
-  server: 108.165.40.180
-  port: 41396
-  password: Aimer
-  skip-cert-verify: true
-  udp: true
-  sni: agepu.ambercc.filegear-sg.me
-  ws-opts:
-    headers:
-      Host: agepu.ambercc.filegear-sg.me
-    path: /?ed=2560
 - name: 美国 124
   type: vless
   network: ws
@@ -2978,32 +906,6 @@ proxies:
     headers:
       Host: sHrill-tErm-639b.TageLIT414.workeRs.dEv
     path: /
-- name: 美国 125
-  type: trojan
-  network: ws
-  server: 154.9.241.61
-  port: 587
-  password: Aimer
-  skip-cert-verify: true
-  udp: true
-  sni: agepu.ambercc.filegear-sg.me
-  ws-opts:
-    headers:
-      Host: agepu.ambercc.filegear-sg.me
-    path: /?ed=2560
-- name: 奥地利 005
-  type: trojan
-  network: ws
-  server: 185.119.117.146
-  port: 8443
-  password: Aimer
-  skip-cert-verify: true
-  udp: true
-  sni: agept.ambercc.filegear-sg.me
-  ws-opts:
-    headers:
-      Host: agept.ambercc.filegear-sg.me
-    path: /?ed=2560
 - name: 美国 126
   type: vless
   network: ws
@@ -3028,476 +930,6 @@ proxies:
     headers:
       Host: 21tg.459tj345.workers.dev
     path: /?ed=2560
-- name: 澳大利亚 004
-  type: vless
-  network: ws
-  server: 43.154.34.74
-  port: 1935
-  uuid: 94d04e32-bc77-4eea-b57c-29ef4b7ef4b0
-  servername: agedu.aimercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  delay: 1055
-  ws-opts:
-    headers:
-      Host: agedu.aimercc.filegear-sg.me
-    path: /?ed=2560
-- name: 美国 128
-  type: vless
-  network: ws
-  server: 47.236.251.178
-  port: 443
-  uuid: 94d04e32-bc77-4eea-b57c-29ef4b7ef4b0
-  servername: agedu.aimercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  delay: 1192
-  ws-opts:
-    headers:
-      Host: agedu.aimercc.filegear-sg.me
-    path: /?ed=2560
-- name: 斯洛文尼亚 001
-  type: vless
-  network: ws
-  server: 188.64.108.9
-  port: 443
-  uuid: 94d04e32-bc77-4eea-b57c-29ef4b7ef4b0
-  servername: agedu.aimercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  delay: 717
-  ws-opts:
-    headers:
-      Host: agedu.aimercc.filegear-sg.me
-    path: /?ed=2560
-- name: 新加坡 005
-  type: vless
-  network: ws
-  server: 150.109.11.223
-  port: 443
-  uuid: 94d04e32-bc77-4eea-b57c-29ef4b7ef4b0
-  servername: agedu.aimercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  delay: 2253
-  ws-opts:
-    headers:
-      Host: agedu.aimercc.filegear-sg.me
-    path: /?ed=2560
-- name: 荷兰 012
-  type: vless
-  network: ws
-  server: 212.52.0.61
-  port: 1846
-  uuid: 94d04e32-bc77-4eea-b57c-29ef4b7ef4b0
-  servername: agedu.aimercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  delay: 1802
-  ws-opts:
-    headers:
-      Host: agedu.aimercc.filegear-sg.me
-    path: /?ed=2560
-- name: 荷兰 014
-  type: vless
-  network: ws
-  server: 45.154.98.210
-  port: 444
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  servername: x3.vs2024.us.kg
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  delay: 1232
-  ws-opts:
-    headers:
-      Host: x3.vs2024.us.kg
-    path: /?ed=2560
-- name: 美国 129
-  type: vless
-  network: ws
-  server: 91.217.139.121
-  port: 8443
-  uuid: 94d04e32-bc77-4eea-b57c-29ef4b7ef4b0
-  servername: agedu.aimercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  delay: 854
-  ws-opts:
-    headers:
-      Host: agedu.aimercc.filegear-sg.me
-    path: /?ed=2560
-- name: 美国 130
-  type: vless
-  network: ws
-  server: 162.159.152.177
-  port: 443
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  servername: x3.vs2024.us.kg
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  delay: 1800
-  ws-opts:
-    headers:
-      Host: x3.vs2024.us.kg
-    path: /?ed=2560
-- name: 奥地利 006
-  type: vless
-  network: ws
-  server: 212.183.88.162
-  port: 443
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  servername: x3.vs2024.us.kg
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  delay: 1684
-  ws-opts:
-    headers:
-      Host: x3.vs2024.us.kg
-    path: /?ed=2560
-- name: 乌克兰 001
-  type: vless
-  network: ws
-  server: 45.67.215.117
-  port: 443
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  servername: x3.vs2024.us.kg
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  delay: 1260
-  ws-opts:
-    headers:
-      Host: x3.vs2024.us.kg
-    path: /?ed=2560&proxyip=45.67.215.117:443
-- name: 美国 131
-  type: vless
-  network: ws
-  server: 192.0.54.0
-  port: 443
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  servername: x3.vs2024.us.kg
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  delay: 1385
-  ws-opts:
-    headers:
-      Host: x3.vs2024.us.kg
-    path: /ss.vs2024.us.kg
-- name: 美国 132
-  type: vless
-  network: ws
-  server: 192.0.54.168
-  port: 443
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  servername: x3.vs2024.us.kg
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  delay: 1244
-  ws-opts:
-    headers:
-      Host: x3.vs2024.us.kg
-    path: /?ed=2560&proxyip=192.0.54.168:443
-- name: 美国 133
-  type: vless
-  network: ws
-  server: 63.141.128.177
-  port: 443
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  servername: x3.vs2024.us.kg
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  delay: 1719
-  ws-opts:
-    headers:
-      Host: x3.vs2024.us.kg
-    path: /x3.vs2024.us.kg
-- name: 美国 134
-  type: vmess
-  network: ws
-  server: 104.31.16.9
-  port: 2053
-  uuid: ad3d0eb7-24a6-403b-9225-feeacb8219b9
-  skip-cert-verify: false
-  tls: true
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: qurantv.quranir.com
-    path: /
-- name: 美国 121
-  type: trojan
-  network: grpc
-  server: 172.67.204.84
-  port: 443
-  password: Nu5EqwcJ2OCuvKAcSQeGdg
-  skip-cert-verify: false
-  tls: true
-  udp: true
-  sni: cdn-22.gsmxreality.com
-  grpc-opts:
-    grpc-service-name: 443trojan
-- name: 印度 001
-  type: vmess
-  network: ws
-  server: 202.78.162.6
-  port: 80
-  uuid: 66fef53b-1b57-466d-89a4-bd99b90f6473
-  skip-cert-verify: true
-  tls: false
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: irisoft.servecounterstrike.com
-    path: /
-- name: 美国 135
-  type: trojan
-  network: ws
-  server: 47.79.86.103
-  port: 587
-  password: Aimer
-  skip-cert-verify: true
-  udp: true
-  tfo: false
-  sni: agept.ambercc.filegear-sg.me
-  ws-opts:
-    headers:
-      Host: agept.ambercc.filegear-sg.me
-    path: /?ed=2560
-- name: 俄罗斯 007
-  type: trojan
-  network: ws
-  server: 46.254.93.243
-  port: 8443
-  password: Aimer
-  skip-cert-verify: true
-  udp: true
-  tfo: false
-  sni: agept.ambercc.filegear-sg.me
-  ws-opts:
-    headers:
-      Host: agept.ambercc.filegear-sg.me
-    path: /?ed=2560
-- name: 美国 136
-  type: vmess
-  network: ws
-  server: hdu.gecs.top
-  port: 443
-  uuid: 0a3cd062-241a-43fc-9c50-eccacbbd5aae
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  tfo: false
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: hdu.gecs.top
-    path: /vm
-- name: 美国 137
-  type: vmess
-  network: tcp
-  server: 20.78.127.141
-  port: 550
-  uuid: 9e11e992-c3a4-45fb-bb67-5f4f42fcd551
-  skip-cert-verify: true
-  tls: false
-  alterId: 0
-  cipher: auto
-- name: 澳大利亚 005
-  type: trojan
-  network: ws
-  server: 43.154.34.74
-  port: 1935
-  password: Aimer
-  skip-cert-verify: true
-  udp: true
-  sni: agepy.aimercc.filegear-sg.me
-  client-fingerprint: chrome
-  ws-opts:
-    headers:
-      Host: agepy.aimercc.filegear-sg.me
-    path: /?ed=2560
-- name: 俄罗斯 008
-  type: vless
-  network: grpc
-  server: 188.227.107.89
-  port: 8443
-  uuid: 3f5c4213-9faf-4958-8572-40e11e829d0d
-  servername: www.speedtest.net
-  skip-cert-verify: false
-  tls: true
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: 4FtHhoVD7TxmNBnNDCHmLiCJrdPOlUEaCU5IDFwERHc
-    short-id: feac68
-  grpc-opts:
-    grpc-service-name: JoinBadeChannel@antimeli
-- name: 新加坡 006
-  type: vless
-  network: ws
-  server: 13.250.38.94
-  port: 443
-  uuid: 94d04e32-bc77-4eea-b57c-29ef4b7ef4b0
-  servername: agedu.aimercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  ws-opts:
-    headers:
-      Host: agedu.aimercc.filegear-sg.me
-    path: /?ed=2560
-- name: 韩国 028
-  type: trojan
-  network: ws
-  server: 211.105.11.175
-  port: 12250
-  password: Aimer
-  skip-cert-verify: true
-  udp: true
-  sni: agept.ambercc.filegear-sg.me
-  client-fingerprint: chrome
-  ws-opts:
-    headers:
-      Host: agept.ambercc.filegear-sg.me
-    path: /?ed=2560
-- name: 韩国 029
-  type: trojan
-  network: ws
-  server: 121.172.164.106
-  port: 32400
-  password: Aimer
-  skip-cert-verify: true
-  udp: true
-  sni: agept.ambercc.filegear-sg.me
-  client-fingerprint: chrome
-  ws-opts:
-    headers:
-      Host: agept.ambercc.filegear-sg.me
-    path: /?ed=2560
-- name: 韩国 030
-  type: trojan
-  network: ws
-  server: 121.151.51.114
-  port: 38422
-  password: Aimer
-  skip-cert-verify: true
-  udp: true
-  sni: agept.ambercc.filegear-sg.me
-  client-fingerprint: chrome
-  ws-opts:
-    headers:
-      Host: agept.ambercc.filegear-sg.me
-    path: /?ed=2560
-- name: 韩国 032
-  type: trojan
-  network: ws
-  server: 220.122.114.61
-  port: 10071
-  password: Aimer
-  skip-cert-verify: true
-  udp: true
-  sni: agepy.aimercc.filegear-sg.me
-  client-fingerprint: chrome
-  ws-opts:
-    headers:
-      Host: agepy.aimercc.filegear-sg.me
-    path: /?ed=2560
-- name: 韩国 033
-  type: trojan
-  network: ws
-  server: 121.140.238.170
-  port: 12395
-  password: Aimer
-  skip-cert-verify: true
-  udp: true
-  sni: agepy.aimercc.filegear-sg.me
-  client-fingerprint: chrome
-  ws-opts:
-    headers:
-      Host: agepy.aimercc.filegear-sg.me
-    path: /?ed=2560
-- name: 韩国 034
-  type: trojan
-  network: ws
-  server: 222.120.196.136
-  port: 21082
-  password: Aimer
-  skip-cert-verify: true
-  udp: true
-  sni: agepy.aimercc.filegear-sg.me
-  client-fingerprint: chrome
-  ws-opts:
-    headers:
-      Host: agepy.aimercc.filegear-sg.me
-    path: /?ed=2560
-- name: 韩国 035
-  type: trojan
-  network: ws
-  server: 59.26.208.19
-  port: 22206
-  password: Aimer
-  skip-cert-verify: true
-  udp: true
-  sni: agepy.ambercc.filegear-sg.me
-  client-fingerprint: chrome
-  ws-opts:
-    headers:
-      Host: agepy.ambercc.filegear-sg.me
-    path: /?ed=2560
-- name: 韩国 036
-  type: trojan
-  network: ws
-  server: 118.46.215.195
-  port: 18048
-  password: Aimer
-  skip-cert-verify: true
-  udp: true
-  sni: agepy.aimercc.filegear-sg.me
-  client-fingerprint: chrome
-  ws-opts:
-    headers:
-      Host: agepy.aimercc.filegear-sg.me
-    path: /?ed=2560
-- name: 新加坡 007
-  type: trojan
-  network: ws
-  server: 13.250.38.94
-  port: 443
-  password: Aimer
-  skip-cert-verify: true
-  udp: true
-  sni: agepy.aimercc.filegear-sg.me
-  ws-opts:
-    headers:
-      Host: agepy.aimercc.filegear-sg.me
-    path: /?ed=2560
-- name: 新加坡 008
-  type: trojan
-  network: ws
-  server: 52.220.205.101
-  port: 9997
-  password: Aimer
-  skip-cert-verify: true
-  udp: true
-  sni: agepy.ambercc.filegear-sg.me
-  ws-opts:
-    headers:
-      Host: agepy.ambercc.filegear-sg.me
-    path: /?ed=2560
 - name: 美国 138
   type: vless
   network: ws
@@ -3511,47 +943,6 @@ proxies:
     headers:
       Host: Join--E-L-i-V-2-R-A-Y.net
     path: /channel,ELiV2RAY-channel,ELiV2RAY-channel,ELiV2RAY?ed
-- name: 斯洛文尼亚 002
-  type: trojan
-  network: ws
-  server: 188.64.108.9
-  port: 443
-  password: Aimer
-  skip-cert-verify: true
-  udp: true
-  sni: agepy.aimercc.filegear-sg.me
-  client-fingerprint: chrome
-  ws-opts:
-    headers:
-      Host: agepy.aimercc.filegear-sg.me
-    path: /?ed=2560
-- name: 新加坡 009
-  type: trojan
-  network: ws
-  server: 150.109.11.223
-  port: 443
-  password: Aimer
-  skip-cert-verify: true
-  udp: true
-  sni: agepy.aimercc.filegear-sg.me
-  client-fingerprint: chrome
-  ws-opts:
-    headers:
-      Host: agepy.aimercc.filegear-sg.me
-    path: /?ed=2560
-- name: 美国 139
-  type: vless
-  network: ws
-  server: join.VPNCUSTOMIZE.fastly80-3.hosting-ip.com
-  port: 80
-  uuid: a9784d56-8975-4b13-9e62-84da185fd889
-  servername: Join-VPNCUSTOMIZE-VPNCUSTOMIZE.ir
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ws-opts:
-    headers:
-      Host: Join-VPNCUSTOMIZE-VPNCUSTOMIZE.ir
-    path: /telegram-VPNCUSTOMIZE---telegram-VPNCUSTOMIZE---telegram-VPNCUSTOMIZE---telegram-VPNCUSTOMIZE---telegram-VPNCUSTOMIZE---telegram-VPNCUSTOMIZE?ed
 - name: 美国 140
   type: vless
   network: ws
@@ -3578,45 +969,6 @@ proxies:
     headers:
       Host: xijinpingnmsl.s4ar.workers.dev
     path: /?ed=2560
-- name: 美国 142
-  type: vless
-  network: ws
-  server: join.eliv2.ray.fastly80-3.hosting-ip.com
-  port: 80
-  uuid: a9784d56-8975-4b13-9e62-84da185fd889
-  servername: JoinChannel--ELiV2--ELiV2.iR
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ws-opts:
-    headers:
-      Host: JoinChannel--ELiV2--ELiV2.iR
-    path: /telegram-ELiV2RAY---telegram-ELiV2RAY---telegram-ELiV2RAY---telegram-ELiV2RAY---telegram-ELiV2RAY---telegram-ELiV2RAY?ed
-- name: 美国 143
-  type: vless
-  network: ws
-  server: 104.24.132.5
-  port: 80
-  uuid: 946b3994-cbcc-402c-bd93-c7f9df4d1c3b
-  skip-cert-verify: false
-  tls: false
-  client-fingerprint: chrome
-  ws-opts:
-    headers:
-      Host: nameless-silence-3ddd-ppal03.gecob30535.workers.dev
-    path: /?ed=2560
-- name: 美国 144
-  type: vless
-  network: ws
-  server: 172.67.140.149
-  port: 8880
-  uuid: 3e2be9f4-363f-419d-a23a-28e171c6bc54
-  skip-cert-verify: false
-  tls: false
-  client-fingerprint: chrome
-  ws-opts:
-    headers:
-      Host: telegram-falcunargo.31186fb105.workers.Dev
-    path: /?ed=2048
 - name: 美国 145
   type: vless
   network: ws
@@ -3629,19 +981,6 @@ proxies:
   ws-opts:
     headers:
       Host: withered-wave-ee0b-ppal03.faxip46069.workers.dev
-    path: /?ed=2560
-- name: 美国 146
-  type: vless
-  network: ws
-  server: 172.67.187.251
-  port: 8880
-  uuid: f3562b04-2f2b-433a-80b4-45f60d659004
-  skip-cert-verify: false
-  tls: false
-  client-fingerprint: chrome
-  ws-opts:
-    headers:
-      Host: 925tg.3gnc3sjz.workers.dev
     path: /?ed=2560
 - name: 美国 147
   type: vless
@@ -3656,19 +995,6 @@ proxies:
     headers:
       Host: calm-violet-0e47.pomofoc222.workers.dev
     path: /lrJO6NEVRGHecfbo?ed=2560
-- name: 美国 148
-  type: vless
-  network: ws
-  server: 104.24.87.230
-  port: 80
-  uuid: 590dfbde-f8c8-429b-b947-39bb767ddd9c
-  skip-cert-verify: false
-  tls: false
-  client-fingerprint: chrome
-  ws-opts:
-    headers:
-      Host: square-moon-bc81-ppal03.tivere6418.workers.dev
-    path: /?ed=2560
 - name: 美国 149
   type: vless
   network: ws
@@ -3721,19 +1047,6 @@ proxies:
     headers:
       Host: redw.pooriam.ir
     path: /
-- name: 美国 153
-  type: trojan
-  network: ws
-  server: 135.84.64.36
-  port: 2083
-  password: Aimer
-  skip-cert-verify: true
-  udp: true
-  sni: agepy.aimercc.filegear-sg.me
-  ws-opts:
-    headers:
-      Host: agepy.aimercc.filegear-sg.me
-    path: /?ed=2560
 - name: 伊朗 005
   type: vless
   network: http
@@ -3749,60 +1062,6 @@ proxies:
       - varzesh3.com
     path:
     - /
-- name: 美国 154
-  type: trojan
-  network: ws
-  server: 38.59.242.169
-  port: 27738
-  password: Aimer
-  skip-cert-verify: true
-  udp: true
-  sni: agepy.aimercc.filegear-sg.me
-  client-fingerprint: chrome
-  ws-opts:
-    headers:
-      Host: agepy.aimercc.filegear-sg.me
-    path: /?ed=2560
-- name: 美国 155
-  type: trojan
-  network: ws
-  server: 216.198.53.212
-  port: 8443
-  password: Aimer
-  skip-cert-verify: true
-  udp: true
-  sni: agept.ambercc.filegear-sg.me
-  client-fingerprint: chrome
-  ws-opts:
-    headers:
-      Host: agept.ambercc.filegear-sg.me
-    path: /?ed=2560
-- name: 美国 156
-  type: trojan
-  network: ws
-  server: 104.19.86.120
-  port: 2096
-  password: Aimer
-  skip-cert-verify: true
-  udp: true
-  sni: agepy.aimercc.filegear-sg.me
-  ws-opts:
-    headers:
-      Host: agepy.aimercc.filegear-sg.me
-    path: /?ed=2560
-- name: 美国 157
-  type: vless
-  network: ws
-  server: 104.16.148.244
-  port: 2095
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  skip-cert-verify: false
-  tls: false
-  client-fingerprint: chrome
-  ws-opts:
-    headers:
-      Host: fuckingcloudflare.2-5e8.workers.dev
-    path: /?ed=2560
 - name: 美国 158
   type: vless
   network: ws
@@ -3829,20 +1088,6 @@ proxies:
     headers:
       Host: redw.pooriam.ir
     path: /
-- name: 美国 160
-  type: trojan
-  network: ws
-  server: 198.23.135.181
-  port: 6666
-  password: Aimer
-  skip-cert-verify: true
-  udp: true
-  sni: agepy.aimercc.filegear-sg.me
-  client-fingerprint: chrome
-  ws-opts:
-    headers:
-      Host: agepy.aimercc.filegear-sg.me
-    path: /?ed=2560
 - name: 美国 161
   type: vless
   network: ws
@@ -3856,75 +1101,6 @@ proxies:
     headers:
       Host: sinaazizpor.wapgiz.workers.dev
     path: /?ed=2048
-- name: 美国 162
-  type: trojan
-  network: ws
-  server: 104.19.4.237
-  port: 8443
-  password: Aimer
-  skip-cert-verify: true
-  udp: true
-  sni: agepy.aimercc.filegear-sg.me
-  client-fingerprint: chrome
-  ws-opts:
-    headers:
-      Host: agepy.aimercc.filegear-sg.me
-    path: /?ed=2560
-- name: 亚美尼亚 004
-  type: trojan
-  network: ws
-  server: 188.164.159.171
-  port: 443
-  password: Aimer
-  skip-cert-verify: true
-  udp: true
-  sni: agept.ambercc.filegear-sg.me
-  client-fingerprint: chrome
-  ws-opts:
-    headers:
-      Host: agept.ambercc.filegear-sg.me
-    path: /?ed=2560
-- name: 美国 163
-  type: vless
-  network: ws
-  server: 172.67.144.253
-  port: 443
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  servername: a.xn--i-sx6a60i.us.kg
-  skip-cert-verify: false
-  tls: true
-  ws-opts:
-    headers:
-      Host: a.xn--i-sx6a60i.us.kg
-    path: /?ed=2560
-- name: 美国 164
-  type: trojan
-  network: ws
-  server: 38.28.194.67
-  port: 443
-  password: Aimer
-  skip-cert-verify: true
-  udp: true
-  sni: agepy.aimercc.filegear-sg.me
-  client-fingerprint: chrome
-  ws-opts:
-    headers:
-      Host: agepy.aimercc.filegear-sg.me
-    path: /?ed=2560
-- name: 美国 165
-  type: trojan
-  network: ws
-  server: 206.238.236.8
-  port: 2096
-  password: Aimer
-  skip-cert-verify: true
-  udp: true
-  sni: agept.ambercc.filegear-sg.me
-  client-fingerprint: chrome
-  ws-opts:
-    headers:
-      Host: agept.ambercc.filegear-sg.me
-    path: /?ed=2560
 - name: 美国 166
   type: vless
   network: ws
@@ -3938,20 +1114,6 @@ proxies:
     headers:
       Host: redw.pooriam.ir
     path: /
-- name: 澳大利亚 006
-  type: trojan
-  network: ws
-  server: 185.148.13.158
-  port: 587
-  password: Aimer
-  skip-cert-verify: true
-  udp: true
-  sni: agepy.aimercc.filegear-sg.me
-  client-fingerprint: chrome
-  ws-opts:
-    headers:
-      Host: agepy.aimercc.filegear-sg.me
-    path: /?ed=2560
 - name: 美国 167
   type: vless
   network: ws
@@ -3964,97 +1126,6 @@ proxies:
   ws-opts:
     headers:
       Host: jolly-fog-9e08-ppal03.revog68198.workers.dev
-    path: /?ed=2560
-- name: 美国 168
-  type: vless
-  network: ws
-  server: 104.25.35.114
-  port: 8080
-  uuid: 9f0eae34-97c1-4c07-8a55-438379981334
-  skip-cert-verify: false
-  tls: false
-  client-fingerprint: chrome
-  ws-opts:
-    headers:
-      Host: snowy-bush-4df8-ppal03.toxebex651.workers.dev
-    path: /
-- name: 美国 170
-  type: vless
-  network: ws
-  server: 104.18.32.69
-  port: 2086
-  uuid: 33039dbe-8889-42f1-9aeb-ecfbfa2a1640
-  skip-cert-verify: false
-  tls: false
-  client-fingerprint: chrome
-  ws-opts:
-    headers:
-      Host: 21tg.459tj345.workers.dev
-    path: /?ed=2560
-- name: 日本 003
-  type: trojan
-  network: ws
-  server: 139.162.73.24
-  port: 18836
-  password: Aimer
-  skip-cert-verify: true
-  udp: true
-  sni: agepy.aimercc.filegear-sg.me
-  ws-opts:
-    headers:
-      Host: agepy.aimercc.filegear-sg.me
-    path: /?ed=2560
-- name: 土耳其 001
-  type: trojan
-  network: tcp
-  server: 185.67.127.69
-  port: 443
-  password: '3747000103274291200'
-  udp: true
-  sni: ultimate-civet.adder289.quest
-  ip-version: dual
-- name: 荷兰 015
-  type: trojan
-  network: grpc
-  server: 45.140.167.102
-  port: 443
-  password: 19442555-3745-451f-98c8-e9fc0c6ab94b
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  sni: uk1.safecdn.site
-  client-fingerprint: chrome
-  grpc-opts:
-    grpc-service-name: grpc
-- name: 韩国 031
-  type: vless
-  network: ws
-  server: 211.248.156.161
-  port: 12130
-  uuid: 94d04e32-bc77-4eea-b57c-29ef4b7ef4b0
-  servername: agedu.aimercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  client-fingerprint: chrome
-  ws-opts:
-    headers:
-      Host: agedu.aimercc.filegear-sg.me
-    path: /?ed=2560
-- name: 韩国 037
-  type: vless
-  network: ws
-  server: 14.44.24.206
-  port: 50002
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  servername: ds.dbbn2024.us.kg
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  client-fingerprint: chrome
-  ws-opts:
-    headers:
-      Host: ds.dbbn2024.us.kg
     path: /?ed=2560
 - name: 日本 004
   type: vless
@@ -4071,20 +1142,6 @@ proxies:
     headers:
       Host: jpc.kddhs.asia
     path: /bing
-- name: 日本 005
-  type: vless
-  network: ws
-  server: 140.238.60.225
-  port: 443
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  servername: ds.dbbn2024.us.kg
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  ws-opts:
-    headers:
-      Host: ds.dbbn2024.us.kg
-    path: /?ed=2560
 - name: 美国 169
   type: vless
   network: ws
@@ -4097,63 +1154,6 @@ proxies:
     headers:
       Host: pormang.webhost99.workers.dev
     path: /
-- name: 美国 171
-  type: vless
-  network: ws
-  server: 162.159.152.53
-  port: 443
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  servername: ds.dbbn2024.us.kg
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  ws-opts:
-    headers:
-      Host: ds.dbbn2024.us.kg
-    path: /?ed=2560
-- name: 美国 172
-  type: vless
-  network: ws
-  server: 206.238.236.240
-  port: 443
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  servername: ds.dbbn2024.us.kg
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  ws-opts:
-    headers:
-      Host: ds.dbbn2024.us.kg
-    path: /?ed=2560
-- name: 美国 173
-  type: vless
-  network: ws
-  server: 104.17.122.253
-  port: 443
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  servername: ds.dbbn2024.us.kg
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  ws-opts:
-    headers:
-      Host: ds.dbbn2024.us.kg
-    path: /?ed=2560
-- name: 美国 174
-  type: vless
-  network: ws
-  server: 162.159.152.72
-  port: 443
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  servername: ds.dbbn2024.us.kg
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  client-fingerprint: chrome
-  ws-opts:
-    headers:
-      Host: ds.dbbn2024.us.kg
-    path: /?ed=2560
 - name: 荷兰 016
   type: vless
   network: ws
@@ -4167,44 +1167,6 @@ proxies:
     headers:
       Host: redw.pooriam.ir
     path: /TABRIZ.NET
-- name: 美国 175
-  type: vless
-  network: ws
-  server: 104.16.172.173
-  port: 80
-  uuid: 850563d4-d5e2-4672-b2e1-ceaa69ff62f2
-  skip-cert-verify: false
-  tls: false
-  ws-opts:
-    headers:
-      Host: aged-leaf-04aa-ppal03.midosib237.workers.dev
-    path: /?ed=2560
-- name: 美国 176
-  type: trojan
-  network: ws
-  server: 216.24.57.207
-  port: 443
-  password: Aimer
-  skip-cert-verify: true
-  udp: true
-  sni: agepy.aimercc.filegear-sg.me
-  ws-opts:
-    headers:
-      Host: agepy.aimercc.filegear-sg.me
-    path: /?ed=2560
-- name: 美国 178
-  type: trojan
-  network: ws
-  server: 216.24.57.1
-  port: 2053
-  password: Aimer
-  skip-cert-verify: true
-  udp: true
-  sni: agepy.aimercc.filegear-sg.me
-  ws-opts:
-    headers:
-      Host: agepy.aimercc.filegear-sg.me
-    path: /?ed=2560
 - name: 日本 006
   type: vless
   network: ws
@@ -4245,19 +1207,6 @@ proxies:
     headers:
       Host: gozargah.validbv7996.ir
     path: /---
-- name: 美国 180
-  type: vless
-  network: ws
-  server: 104.24.17.194
-  port: 2082
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  skip-cert-verify: false
-  tls: false
-  client-fingerprint: chrome
-  ws-opts:
-    headers:
-      Host: redw.pooriam.ir
-    path: /vless.txt/
 - name: 荷兰 017
   type: vless
   network: ws
@@ -4270,45 +1219,6 @@ proxies:
     headers:
       Host: pormang.webhost99.workers.dev
     path: /gh+repo+clone+2dust+
-- name: 亚美尼亚 005
-  type: trojan
-  network: ws
-  server: 188.164.159.25
-  port: 2053
-  password: Aimer
-  skip-cert-verify: true
-  udp: true
-  sni: agepy.aimercc.filegear-sg.me
-  ws-opts:
-    headers:
-      Host: agepy.aimercc.filegear-sg.me
-    path: /?ed=2560
-- name: 俄罗斯 009
-  type: trojan
-  network: ws
-  server: 46.254.92.201
-  port: 2053
-  password: Aimer
-  skip-cert-verify: true
-  udp: true
-  sni: agepy.aimercc.filegear-sg.me
-  ws-opts:
-    headers:
-      Host: agepy.aimercc.filegear-sg.me
-    path: /?ed=2560
-- name: 美国 181
-  type: trojan
-  network: ws
-  server: 167.68.4.131
-  port: 8443
-  password: Aimer
-  skip-cert-verify: true
-  udp: true
-  sni: agepy.aimercc.filegear-sg.me
-  ws-opts:
-    headers:
-      Host: agepy.aimercc.filegear-sg.me
-    path: /?ed=2560
 - name: 美国 182
   type: vless
   network: ws
@@ -4337,114 +1247,382 @@ proxies:
     headers:
       Host: Yak-Khanda-kUn-eY-gUL.biNG.com.xn--cR8HaaaAaAAAaAaaAaAaAAaAAaaaAAAAAaAaaAaaaAaaaaAAaaAAAaaaaAa.xN--Cr8hAaAaaAaaAAAAAAaaaAAAaAAaaAaAaAAAAAA.TREPAspeEdTEsT.NEtrag.cOm.PX.Com.sh017.IR.XN--Cr8hAaaAaaAaaAaaaAAAaaaAaaAaaaAaAAAaaaA.yek.dDnS-ip.nEt
     path: /?ed=1080
-- name: 伊朗 006
-  type: vmess
-  network: tcp
-  server: 31.58.137.67
-  port: 39119
-  uuid: 00dedc77-59b9-42f1-a9ce-3f33af694f5e
-  skip-cert-verify: true
-  alterId: 0
-  cipher: auto
-  delay: 1153
-- name: 美国 184
-  type: trojan
-  network: tcp
-  server: 137.184.120.86
-  port: 443
-  password: 6d0a7f2f-c26c-466a-8f90-d6630ba97928
-  skip-cert-verify: true
-  udp: true
-  sni: 829D7BDE-64B9-E759-C661-78BC73E582A0.1c2871ba-6025-61e2-e87f-a5c9e0ac8c1d.9d8f269f96b25232-759cbb36d6548597.kaufen
-  ip-version: dual
-- name: 美国 185
+- name: 美国 003
   type: vmess
   network: ws
-  server: 104.19.48.236
+  server: AC.fastly80-2.hosting-ip.com
+  port: 80
+  uuid: 6e3ac406-a15b-461d-8b05-ca01b284d9a0
+  skip-cert-verify: true
+  tls: false
+  udp: true
+  tfo: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: telegram-isvvpn.dev
+    path: /racevpn
+- name: 俄罗斯 001
+  type: vless
+  network: grpc
+  server: 78.111.86.113
+  port: 8443
+  uuid: a4be0cc0-67a0-4b19-959e-06e4c2c9ec01
+  servername: www.speedtest.net
+  skip-cert-verify: false
+  tls: true
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: btaC-4IwgXj-SqKxJqhmrFzn-7bzuOOcDS0VMhyar0k
+    short-id: 966cc1f0bc0ec166
+  grpc-opts:
+    grpc-service-name: JoinBadeChannel@antimeli
+- name: 美国 005
+  type: vless
+  network: ws
+  server: 190.93.244.226
+  port: 2052
+  uuid: 42f36835-730c-4ecc-9daf-20121ae7ba47
+  servername: gozargah.validbv7996.ir
+  skip-cert-verify: false
+  tls: false
+  ws-opts:
+    headers:
+      Host: gozargah.validbv7996.ir
+    path: /---
+- name: 印度 001
+  type: vless
+  network: ws
+  server: 14.102.229.149
+  port: 2052
+  uuid: 0c319c06-c493-5cef-9fa1-765ddcc37e8c
+  skip-cert-verify: false
+  tls: false
+  ws-opts:
+    headers:
+      Host: sPeedtest2.sbs.us2.v2vless.sitespeedtest.net
+    path: /vless#
+- name: 美国 028
+  type: vless
+  network: grpc
+  server: zula.ir
+  port: 8443
+  uuid: 06dd7fa5-5b58-4385-a080-b916e4e79eef
+  servername: wwwspeedtestnetwhiteberinsistomd6625996s01.gamers-room-forlifelol2.ir
+  tls: true
+  client-fingerprint: chrome
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: 8443vless
+  delay: 1517
+- name: 英国 001
+  type: vless
+  network: ws
+  server: 144.24.243.207
+  port: 443
+  uuid: b529971c-f46a-4eb9-a02d-e39cc3e83cf5
+  servername: dd8.transitkala.com
+  tls: true
+  udp: true
+  delay: 1757
+  ws-opts:
+    headers:
+      Host: dd8.transitkala.com
+    path: /
+- name: 美国 030
+  type: vmess
+  network: ws
+  server: 104.18.149.76
+  port: 443
+  uuid: de94cc0a-0592-4969-b1fc-97ea8f0ea0b3
+  servername: us.kkp.me.eu.org
+  skip-cert-verify: true
+  tls: true
+  alterId: 0
+  cipher: auto
+  delay: 2889
+  ws-opts:
+    headers:
+      Host: us.kkp.me.eu.org
+    path: /aa
+- name: 美国 001
+  type: vless
+  network: ws
+  server: 69.84.182.88
+  port: 443
+  uuid: d17ca95a-8eaf-492f-93fa-538c88956bb3
+  servername: publicvless.pages.dev
+  skip-cert-verify: true
+  tls: true
+  tfo: false
+  ws-opts:
+    headers:
+      Host: publicvless.pages.dev
+    path: /?proxyip=proxyip.us.fxxk.dedyn.io
+- name: 美国 002
+  type: vless
+  network: ws
+  server: 152.70.83.37
+  port: 443
+  uuid: d17ca95a-8eaf-492f-93fa-538c88956bb3
+  servername: publicvless.pages.dev
+  skip-cert-verify: true
+  tls: true
+  tfo: false
+  ws-opts:
+    headers:
+      Host: publicvless.pages.dev
+    path: /?proxyip=proxyip.jp.fxxk.dedyn.io
+- name: 美国 004
+  type: vless
+  network: ws
+  server: 198.62.62.203
+  port: 443
+  uuid: d17ca95a-8eaf-492f-93fa-538c88956bb3
+  servername: publicvless.pages.dev
+  skip-cert-verify: true
+  tls: true
+  tfo: false
+  ws-opts:
+    headers:
+      Host: publicvless.pages.dev
+    path: /?proxyip=proxyip.us.fxxk.dedyn.io
+- name: 美国 007
+  type: vless
+  network: ws
+  server: 104.18.41.190
+  port: 2095
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  skip-cert-verify: false
+  tls: false
+  ws-opts:
+    headers:
+      Host: fuckingcloudflare.20241225.workers.dev
+    path: /?ed=2560
+- name: 美国 013
+  type: vless
+  network: ws
+  server: 172.64.146.66
+  port: 2095
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  skip-cert-verify: false
+  tls: false
+  ws-opts:
+    headers:
+      Host: xijinpingnmsl.s4ar.workers.dev
+    path: /?ed=2560
+- name: 美国 014
+  type: vless
+  network: ws
+  server: 104.18.20.69
+  port: 2095
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  skip-cert-verify: false
+  tls: false
+  ws-opts:
+    headers:
+      Host: fuckingcloudflare.20241225.workers.dev
+    path: /?ed=2560
+- name: 美国 015
+  type: vless
+  network: ws
+  server: 104.18.21.94
+  port: 2095
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  skip-cert-verify: false
+  tls: false
+  ws-opts:
+    headers:
+      Host: fuckingcloudflare.2-5e8.workers.dev
+    path: /?ed=2560
+- name: 美国 016
+  type: vless
+  network: ws
+  server: 104.18.21.69
+  port: 2095
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  skip-cert-verify: false
+  tls: false
+  ws-opts:
+    headers:
+      Host: fuckingxijinping.xijinpingbigsb.workers.dev
+    path: /?ed=2560
+- name: 美国 018
+  type: vless
+  network: ws
+  server: 172.67.218.90
+  port: 80
+  uuid: 65b3cbba-e6ac-485a-9481-976a0415eab9
+  skip-cert-verify: false
+  tls: false
+  ws-opts:
+    headers:
+      Host: bLue-sNoW-a243.GeleNE5962.wOrKeRS.dEV
+    path: /Fvy0Y7NJ7uucUDha?ed=2560
+- name: 美国 020
+  type: vless
+  network: ws
+  server: 172.67.190.211
   port: 2082
-  uuid: 13514c2c-d5a4-335f-965a-5dc292e36759
+  uuid: 54b3cbba-e6ac-485a-9481-976a0873eab9
+  skip-cert-verify: false
+  tls: false
+  ws-opts:
+    headers:
+      Host: bLaCk-trutH-63Bc.DoviF72324.WoRKeRs.dev
+    path: /?ed=2560
+- name: 荷兰 002
+  type: vless
+  network: ws
+  server: 45.131.5.160
+  port: 2086
+  uuid: f366e744-abcd-4b5b-bd5e-2bd97b6443bf
+  skip-cert-verify: false
+  tls: false
+  ws-opts:
+    headers:
+      Host: fva64rbmjfkfznnptk6imz6sihrno35m4csom83admge5tfxniwduyuyt954fdh.ks3om.workers.Dev
+    path: /
+- name: 德国 001
+  type: vless
+  network: http
+  server: 5.75.192.237
+  port: 28028
+  uuid: b9f1f8fc-3f2c-442d-9705-6aff389f23b7
+  servername: www.speedtest.net
+  skip-cert-verify: false
+  tls: true
+  client-fingerprint: random
+  reality-opts:
+    public-key: xXwGwJOlSUEvc17KLNCPDF1WtjxiMTUxQb8aaZIuCnI
+    short-id: 0a896646c2
+  http-opts:
+    path:
+    - /telegram@ph_onex-VpIi-21-pHOneX.www.speedtest.net.zula.ir.1.FoNexWallbeSTphOnex.cOM
+- name: 美国 023
+  type: vless
+  network: ws
+  server: 104.16.19.242
+  port: 8880
+  uuid: 1853d1d2-1ccf-48e6-ae05-0c0bb285a8c4
+  skip-cert-verify: false
+  tls: false
+  ws-opts:
+    headers:
+      Host: winter-bush-f08c-ppal03.himigaw787.workers.dev
+    path: /?
+- name: 美国 024
+  type: vless
+  network: ws
+  server: 172.67.187.251
+  port: 2095
+  uuid: f3562b04-2f2b-433a-80b4-45f60d659004
+  skip-cert-verify: false
+  tls: false
+  ws-opts:
+    headers:
+      Host: 925tg.3gnc3sjz.workers.dev
+    path: /?ed=2560
+- name: 美国 026
+  type: vless
+  network: ws
+  server: 172.64.92.243
+  port: 80
+  uuid: 590dfbde-f8c8-429b-b947-39bb767ddd9c
+  skip-cert-verify: false
+  tls: false
+  ws-opts:
+    headers:
+      Host: square-moon-bc81-ppal03.tivere6418.workers.dev
+    path: /?ed=2560
+- name: 美国 027
+  type: vless
+  network: ws
+  server: 172.64.86.167
+  port: 80
+  uuid: 7ee0cedb-1f06-4be9-8444-51f289a4bf12
+  skip-cert-verify: false
+  tls: false
+  ws-opts:
+    headers:
+      Host: morning-sound-6fa2-ppal03.tinemo7285.workers.dev
+    path: /?ed=2560
+- name: 美国 031
+  type: vless
+  network: ws
+  server: 104.24.248.85
+  port: 80
+  uuid: 7fea28c6-f9b0-45ce-b7c2-ed3a3991d1e8
+  skip-cert-verify: false
+  tls: false
+  ws-opts:
+    headers:
+      Host: curly-waterfall-509e-ppal03.wimiba9167.workers.dev
+    path: /?ed=2560
+- name: 爱尔兰 001
+  type: vless
+  network: ws
+  server: 54.195.83.165
+  port: 22222
+  uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+  servername: telegram-channel-vlessconfig.sohala.uk
+  skip-cert-verify: false
+  tls: true
+  ws-opts:
+    headers:
+      Host: telegram-channel-vlessconfig.sohala.uk
+    path: /telegram-channel-vlessconfig-ws
+- name: 美国 032
+  type: vless
+  network: ws
+  server: 104.16.19.242
+  port: 80
+  uuid: 1853d1d2-1ccf-48e6-ae05-0c0bb285a8c4
+  skip-cert-verify: false
+  tls: false
+  ws-opts:
+    headers:
+      Host: winter-bush-f08c-ppal03.himigaw787.workers.dev
+    path: /?ed=2560
+- name: 荷兰 005
+  type: vless
+  network: ws
+  server: 45.131.5.91
+  port: 2086
+  uuid: f366e744-abcd-4b5b-bd5e-2bd97b6443bf
+  skip-cert-verify: false
+  tls: false
+  ws-opts:
+    headers:
+      Host: fva64rbmjfkfznnptk6imz6sihrno35m4csom83admge5tfxniwduyuyt954fdh.ks3om.workers.Dev
+    path: /
+- name: 美国 033
+  type: vmess
+  network: ws
+  server: 172.67.183.56
+  port: 80
+  uuid: 4bf074f4-7e9c-4e4b-a10d-156e26199729
   skip-cert-verify: false
   tls: false
   alterId: 0
   cipher: auto
   ws-opts:
     headers:
-      Host: 100-87-160-252.s2.db-link02.top
+      Host: us03s.5d8ecf82.cfd
     path: /
-- name: 美国 177
-  type: vless
-  network: ws
-  server: 96110.cf.090227.xyz
-  port: 443
-  uuid: d17ca95a-8eaf-492f-93fa-538c88956bb3
-  servername: publicvless.pages.dev
-  skip-cert-verify: true
-  tls: true
-  tfo: false
-  ws-opts:
-    headers:
-      Host: publicvless.pages.dev
-    path: /?proxyip=proxyip.us.fxxk.dedyn.io
-- name: 美国 186
-  type: vless
-  network: ws
-  server: 198.62.62.183
-  port: 443
-  uuid: d17ca95a-8eaf-492f-93fa-538c88956bb3
-  servername: publicvless.pages.dev
-  skip-cert-verify: true
-  tls: true
-  tfo: false
-  ws-opts:
-    headers:
-      Host: publicvless.pages.dev
-    path: /?proxyip=proxyip.us.fxxk.dedyn.io
-- name: 美国 187
-  type: vless
-  network: ws
-  server: 198.62.62.78
-  port: 443
-  uuid: d17ca95a-8eaf-492f-93fa-538c88956bb3
-  servername: publicvless.pages.dev
-  skip-cert-verify: true
-  tls: true
-  tfo: false
-  ws-opts:
-    headers:
-      Host: publicvless.pages.dev
-    path: /?proxyip=proxyip.us.fxxk.dedyn.io
-- name: 日本 008
+- name: 美国 035
   type: vmess
-  network: ws
-  server: tls.05.node-for-bigairport.win
-  port: 33443
-  uuid: 3519dfc0-fa27-41cc-8c19-981818f9f6d5
+  network: tcp
+  server: 172.204.8.10
+  port: 550
+  uuid: 81bbca70-a35f-487e-88a4-8bd5856b10a5
   skip-cert-verify: true
-  tls: true
-  udp: true
-  tfo: false
+  tls: false
   alterId: 0
   cipher: auto
-  ws-opts:
-    headers:
-      Host: tls.05.node-for-bigairport.win
-    path: /
-- name: 美国 188
-  type: vmess
-  network: ws
-  server: www.speedtest.net
-  port: 443
-  uuid: 185487f0-f1be-11ef-b439-205c6d5f5d78
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  tfo: false
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: eu-2.hihu.net
-    path: '/5z984v2o#by-telegram:'
+  ws-headers:
+    Host: 172.204.8.10
 proxy-groups:
 - name: PROXY
   type: select
@@ -4456,25 +1634,16 @@ proxy-groups:
 - name: SELECT
   type: select
   proxies: &id001
-  - 美国 033
   - 美国 049
-  - 美国 079
-  - 美国 080
   - 美国 069
-  - 美国 110
   - 美国 034
-  - 美国 035
   - 美国 036
   - 美国 038
-  - 美国 039
-  - 伊朗 001
   - 美国 056
   - 美国 046
   - 俄罗斯 004
   - 美国 051
   - 荷兰 004
-  - 俄罗斯 005
-  - 美国 072
   - 巴西 002
   - 荷兰 007
   - 巴西 003
@@ -4487,294 +1656,101 @@ proxy-groups:
   - 美国 085
   - 荷兰 010
   - 巴西 004
-  - 俄罗斯 001
-  - 韩国 001
   - 美国 010
   - 美国 011
-  - 韩国 005
-  - 韩国 008
   - 美国 017
   - 美国 019
-  - 冰岛 001
-  - 美国 004
   - 荷兰 003
   - 美国 025
   - 美国 029
   - 美国 064
   - 荷兰 013
-  - 丹麦 001
   - 美国 077
   - 美国 083
   - 美国 084
   - 美国 087
-  - 美国 088
-  - 德国 002
   - 意大利 001
   - 美国 093
   - 美国 112
   - 美国 113
-  - 美国 116
   - 美国 122
-  - 美国 001
-  - 加拿大 001
-  - 美国 002
-  - 美国 003
-  - 美国 005
   - 美国 006
   - 荷兰 001
   - 巴西 001
-  - 美国 007
   - 美国 008
   - 美国 009
   - 美国 012
-  - 伊朗 002
-  - 美国 013
-  - 德国 001
-  - 加拿大 002
-  - 美国 014
-  - 美国 015
-  - 伊朗 003
-  - 俄罗斯 002
-  - 美国 016
-  - 美国 018
-  - 韩国 002
-  - 美国 020
-  - 韩国 003
-  - 韩国 004
-  - 韩国 006
-  - 韩国 007
   - 美国 021
-  - 新加坡 001
-  - 韩国 011
   - 美国 022
-  - 美国 023
-  - 美国 024
-  - 美国 026
-  - 亚美尼亚 001
-  - 美国 027
-  - 美国 028
-  - 俄罗斯 003
-  - 亚美尼亚 002
-  - 美国 030
-  - 美国 031
-  - 美国 032
-  - 日本 001
-  - 美国 037
-  - 美国 040
-  - 美国 041
-  - 美国 042
-  - 美国 043
   - 美国 044
-  - 荷兰 002
-  - 美国 045
-  - 伊朗 004
-  - 美国 047
-  - 美国 048
-  - 美国 050
-  - 美国 052
-  - 美国 053
-  - 新加坡 003
-  - 美国 054
-  - 美国 055
-  - 加拿大 003
-  - 荷兰 005
-  - 美国 057
-  - 奥地利 001
-  - 俄罗斯 006
-  - 美国 058
-  - 奥地利 002
-  - 美国 059
-  - 奥地利 003
-  - 美国 060
-  - 美国 061
-  - 美国 062
-  - 加拿大 004
-  - 美国 063
-  - 澳大利亚 001
-  - 巴勒斯坦 001
-  - 美国 065
-  - 美国 066
-  - 德国 003
-  - 日本 002
   - 美国 067
-  - 匈牙利 001
   - 美国 068
-  - 美国 070
-  - 美国 071
-  - 美国 076
-  - 美国 081
-  - 美国 082
-  - 美国 086
-  - 美国 089
-  - 美国 090
-  - 加拿大 005
-  - 加拿大 006
-  - 加拿大 007
-  - 美国 091
-  - 美国 092
-  - 加拿大 008
-  - 美国 094
-  - 美国 095
-  - 美国 096
-  - 美国 097
-  - 新加坡 002
-  - 韩国 009
-  - 韩国 010
-  - 韩国 012
-  - 韩国 013
-  - 韩国 014
-  - 韩国 015
-  - 韩国 016
-  - 韩国 017
-  - 韩国 018
-  - 韩国 019
-  - 韩国 020
-  - 韩国 021
-  - 韩国 022
-  - 韩国 023
-  - 韩国 024
-  - 韩国 025
-  - 韩国 026
-  - 新加坡 004
-  - 韩国 027
-  - 美国 098
-  - 美国 099
-  - 美国 100
-  - 美国 101
   - 荷兰 006
   - 美国 102
-  - 美国 103
-  - 瑞典 001
-  - 奥地利 004
-  - 美国 104
   - 美国 105
   - 美国 106
-  - 美国 107
-  - 澳大利亚 002
   - 德国 004
-  - 巴西 005
   - 美国 108
   - 美国 109
   - 荷兰 011
   - 美国 111
-  - 美国 114
   - 美国 115
-  - 美国 117
-  - 澳大利亚 003
-  - 美国 118
-  - 亚美尼亚 003
-  - 美国 119
-  - 美国 120
-  - 美国 123
   - 美国 124
-  - 美国 125
-  - 奥地利 005
   - 美国 126
   - 美国 127
-  - 澳大利亚 004
-  - 美国 128
-  - 斯洛文尼亚 001
-  - 新加坡 005
-  - 荷兰 012
-  - 荷兰 014
-  - 美国 129
-  - 美国 130
-  - 奥地利 006
-  - 乌克兰 001
-  - 美国 131
-  - 美国 132
-  - 美国 133
-  - 美国 134
-  - 美国 121
-  - 印度 001
-  - 美国 135
-  - 俄罗斯 007
-  - 美国 136
-  - 美国 137
-  - 澳大利亚 005
-  - 俄罗斯 008
-  - 新加坡 006
-  - 韩国 028
-  - 韩国 029
-  - 韩国 030
-  - 韩国 032
-  - 韩国 033
-  - 韩国 034
-  - 韩国 035
-  - 韩国 036
-  - 新加坡 007
-  - 新加坡 008
   - 美国 138
-  - 斯洛文尼亚 002
-  - 新加坡 009
-  - 美国 139
   - 美国 140
   - 美国 141
-  - 美国 142
-  - 美国 143
-  - 美国 144
   - 美国 145
-  - 美国 146
   - 美国 147
-  - 美国 148
   - 美国 149
   - 美国 150
   - 美国 151
   - 美国 152
-  - 美国 153
   - 伊朗 005
-  - 美国 154
-  - 美国 155
-  - 美国 156
-  - 美国 157
   - 美国 158
   - 美国 159
-  - 美国 160
   - 美国 161
-  - 美国 162
-  - 亚美尼亚 004
-  - 美国 163
-  - 美国 164
-  - 美国 165
   - 美国 166
-  - 澳大利亚 006
   - 美国 167
-  - 美国 168
-  - 美国 170
-  - 日本 003
-  - 土耳其 001
-  - 荷兰 015
-  - 韩国 031
-  - 韩国 037
   - 日本 004
-  - 日本 005
   - 美国 169
-  - 美国 171
-  - 美国 172
-  - 美国 173
-  - 美国 174
   - 荷兰 016
-  - 美国 175
-  - 美国 176
-  - 美国 178
   - 日本 006
   - 日本 007
   - 美国 179
-  - 美国 180
   - 荷兰 017
-  - 亚美尼亚 005
-  - 俄罗斯 009
-  - 美国 181
   - 美国 182
   - 美国 183
-  - 伊朗 006
-  - 美国 184
-  - 美国 185
-  - 美国 177
-  - 美国 186
-  - 美国 187
-  - 日本 008
-  - 美国 188
+  - 美国 003
+  - 俄罗斯 001
+  - 美国 005
+  - 印度 001
+  - 美国 028
+  - 英国 001
+  - 美国 030
+  - 美国 001
+  - 美国 002
+  - 美国 004
+  - 美国 007
+  - 美国 013
+  - 美国 014
+  - 美国 015
+  - 美国 016
+  - 美国 018
+  - 美国 020
+  - 荷兰 002
+  - 德国 001
+  - 美国 023
+  - 美国 024
+  - 美国 026
+  - 美国 027
+  - 美国 031
+  - 爱尔兰 001
+  - 美国 032
+  - 荷兰 005
+  - 美国 033
+  - 美国 035
 - name: LOAD-BALANCE
   type: load-balance
   url: https://cp.cloudflare.com/generate_204
