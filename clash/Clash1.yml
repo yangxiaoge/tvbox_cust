@@ -1560,19 +1560,6 @@ proxies:
     headers:
       Host: curly-waterfall-509e-ppal03.wimiba9167.workers.dev
     path: /?ed=2560
-- name: 爱尔兰 001
-  type: vless
-  network: ws
-  server: 54.195.83.165
-  port: 22222
-  uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
-  servername: telegram-channel-vlessconfig.sohala.uk
-  skip-cert-verify: false
-  tls: true
-  ws-opts:
-    headers:
-      Host: telegram-channel-vlessconfig.sohala.uk
-    path: /telegram-channel-vlessconfig-ws
 - name: 美国 032
   type: vless
   network: ws
@@ -1623,6 +1610,186 @@ proxies:
   cipher: auto
   ws-headers:
     Host: 172.204.8.10
+- name: 美国 037
+  type: trojan
+  network: ws
+  server: 172.66.47.83
+  port: 443
+  password: '%3AZ%23%253cdIG%27c*%3B*O%7D'
+  skip-cert-verify: true
+  udp: true
+  tfo: false
+  sni: JoinmAhDiSeRvER-csn.PaGeS.DEv
+  ws-opts:
+    headers:
+      Host: JoinmAhDiSeRvER-csn.PaGeS.DEv
+    path: /trVxXjc9031MC8sntF?ed=2560
+- name: 美国 039
+  type: trojan
+  network: ws
+  server: 104.21.16.1
+  port: 8443
+  password: s42%26umY%28K5n*csP4
+  skip-cert-verify: true
+  udp: true
+  tfo: false
+  sni: JOInMAHDiseRVer-EEu.pAGEs.dEv
+  ws-opts:
+    headers:
+      Host: JOInMAHDiseRVer-EEu.pAGEs.dEv
+    path: /trOagy9SuM2cDpqUqO?ed=2560
+- name: 德国 002
+  type: vless
+  network: grpc
+  server: 91.107.173.102
+  port: 443
+  uuid: 9f7f2e9b-ce54-4afe-be7b-8f53da9e8935
+  servername: www.cdn77.com
+  skip-cert-verify: false
+  tls: true
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: BqyR1J0knEz_ExHwER9WKfxCeoMduUlb4oCGTez7-yg
+    short-id: 6b
+  grpc-opts:
+    grpc-service-name: MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN
+- name: 澳大利亚 001
+  type: trojan
+  network: grpc
+  server: 129.154.49.249
+  port: 15055
+  password: e8012565-5b9f-373f-b1eb-e2445711e65c
+  tls: true
+  sni: freehr01.jd0001.top
+  grpc-opts:
+    grpc-service-name: freehr01
+- name: 美国 040
+  type: vless
+  network: ws
+  server: 3.69.153.186
+  port: 22222
+  uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+  servername: telegram-channel-vlessconfig.sohala.uk
+  skip-cert-verify: false
+  tls: true
+  ws-opts:
+    headers:
+      Host: telegram-channel-vlessconfig.sohala.uk
+    path: /telegram-channel-vlessconfig-ws
+- name: 美国 041
+  type: trojan
+  network: ws
+  server: 190.93.244.66
+  port: 443
+  password: bpb-trojan
+  sni: zeming13.us.kg
+  ws-opts:
+    headers:
+      Host: zeming13.us.kg
+    path: /tr
+- name: 法国 001
+  type: vless
+  network: ws
+  server: 35.181.104.196
+  port: 22222
+  uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+  servername: telegram-channel-vlessconfig.sohala.uk
+  skip-cert-verify: false
+  tls: true
+  ws-opts:
+    headers:
+      Host: telegram-channel-vlessconfig.sohala.uk
+    path: /telegram-channel-vlessconfig-ws
+- name: 美国 042
+  type: vless
+  network: ws
+  server: 104.21.27.250
+  port: 80
+  uuid: a9a9eebe-3716-58b2-99f3-aa5e58160be9
+  skip-cert-verify: false
+  tls: false
+  ws-opts:
+    headers:
+      Host: iranvps.fastroot.ir
+    path: /vless
+- name: 美国 043
+  type: vless
+  network: ws
+  server: 13.50.159.85
+  port: 22222
+  uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+  servername: telegram-channel-vlessconfig.sohala.uk
+  skip-cert-verify: false
+  tls: true
+  ws-opts:
+    headers:
+      Host: telegram-channel-vlessconfig.sohala.uk
+    path: /telegram-channel-vlessconfig-ws
+- name: 英国 002
+  type: vless
+  network: ws
+  server: 51.21.164.20
+  port: 22222
+  uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+  servername: telegram-channel-vlessconfig.sohala.uk
+  skip-cert-verify: false
+  tls: true
+  ws-opts:
+    headers:
+      Host: telegram-channel-vlessconfig.sohala.uk
+    path: /telegram-channel-vlessconfig-ws
+- name: 俄罗斯 002
+  type: vmess
+  network: tcp
+  server: 188.130.154.56
+  port: 22946
+  uuid: 7ed1d138-37f7-41f7-843d-d4f2bdbba913
+  udp: true
+  alterId: 0
+  cipher: auto
+  ip-version: dual
+- name: 美国 045
+  type: vmess
+  network: ws
+  server: 6b2a30.50f8-2268-45e0.cfd
+  port: 80
+  uuid: 0ba4a240-1586-4a54-929c-26389c8a4111
+  skip-cert-verify: false
+  tls: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: jp01s.50f8-2268-45e0.cfd
+    path: /
+- name: 美国 047
+  type: vmess
+  network: ws
+  server: 172.67.153.119
+  port: 80
+  uuid: 4bf074f4-7e9c-4e4b-a10d-156e26199729
+  skip-cert-verify: false
+  tls: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: us03s.5d8ecf82.cfd
+    path: /
+- name: 美国 048
+  type: vmess
+  network: ws
+  server: 172.67.172.168
+  port: 80
+  uuid: 4bf074f4-7e9c-4e4b-a10d-156e26199729
+  skip-cert-verify: false
+  tls: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: us03s.5d8ecf82.cfd
+    path: /
 proxy-groups:
 - name: PROXY
   type: select
@@ -1746,11 +1913,24 @@ proxy-groups:
   - 美国 026
   - 美国 027
   - 美国 031
-  - 爱尔兰 001
   - 美国 032
   - 荷兰 005
   - 美国 033
   - 美国 035
+  - 美国 037
+  - 美国 039
+  - 德国 002
+  - 澳大利亚 001
+  - 美国 040
+  - 美国 041
+  - 法国 001
+  - 美国 042
+  - 美国 043
+  - 英国 002
+  - 俄罗斯 002
+  - 美国 045
+  - 美国 047
+  - 美国 048
 - name: LOAD-BALANCE
   type: load-balance
   url: https://cp.cloudflare.com/generate_204
