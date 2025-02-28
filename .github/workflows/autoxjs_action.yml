@@ -60,21 +60,6 @@ jobs:
           #zip -q -x ".git/*" -x  ".github/*" -r source-${{ env.commitS }}.zip .
           tar -cJf source-${{ env.commitS }}.tar.xz --exclude=.git --exclude=.github *
 
-      - name: Release Apk Sign
-        if: ${{ env.commit }}
-        working-directory: TVBoxOSC
-        run: |
-          signingConfigs='ICAgIHNpZ25pbmdDb25maWdzIHtcCiAgICAgICAgaWYgKHByb2plY3QuaGFzUHJvcGVydHkoIlJFTEVBU0VfU1RPUkVfRklMRSIpKSB7XAogICAgICAgICAgICBteUNvbmZpZyB7XAogICAgICAgICAgICAgICAgc3RvcmVGaWxlIGZpbGUoUkVMRUFTRV9TVE9SRV9GSUxFKVwKICAgICAgICAgICAgICAgIHN0b3JlUGFzc3dvcmQgUkVMRUFTRV9TVE9SRV9QQVNTV09SRFwKICAgICAgICAgICAgICAgIGtleUFsaWFzIFJFTEVBU0VfS0VZX0FMSUFTXAogICAgICAgICAgICAgICAga2V5UGFzc3dvcmQgUkVMRUFTRV9LRVlfUEFTU1dPUkRcCiAgICAgICAgICAgICAgICB2MVNpZ25pbmdFbmFibGVkIHRydWVcCiAgICAgICAgICAgICAgICB2MlNpZ25pbmdFbmFibGVkIHRydWVcCiAgICAgICAgICAgICAgICBlbmFibGVWM1NpZ25pbmcgPSB0cnVlXAogICAgICAgICAgICAgICAgZW5hYmxlVjRTaWduaW5nID0gdHJ1ZVwKICAgICAgICAgICAgfVwKICAgICAgICB9XAogICAgfVwKXA=='
-          signingConfig='ICAgICAgICAgICAgaWYgKHByb2plY3QuaGFzUHJvcGVydHkoIlJFTEVBU0VfU1RPUkVfRklMRSIpKSB7XAogICAgICAgICAgICAgICAgc2lnbmluZ0NvbmZpZyBzaWduaW5nQ29uZmlncy5teUNvbmZpZ1wKICAgICAgICAgICAgfVwK'
-          signingConfigs="$(echo "$signingConfigs" |base64 -d )"
-          signingConfig="$(echo "$signingConfig" |base64 -d )"
-          sed -i -e "/defaultConfig {/i\\$signingConfigs " -e "/debug {/a\\$signingConfig " -e "/release {/a\\$signingConfig " app/build.gradle
-          cp -f ${{ github.workspace }}/.github/workflows/TVBoxOSC.jks app/TVBoxOSC.jks
-          sed -i '$a\RELEASE_STORE_FILE=./TVBoxOSC.jks'     ./gradle.properties
-          sed -i '$a\RELEASE_KEY_ALIAS=TVBoxOSC'            ./gradle.properties
-          sed -i '$a\RELEASE_STORE_PASSWORD=TVBoxOSC'       ./gradle.properties
-          sed -i '$a\RELEASE_KEY_PASSWORD=TVBoxOSC'         ./gradle.properties
-
       - name: Setup JDK
         if: ${{ env.commit }}
         uses: actions/setup-java@main
@@ -86,12 +71,53 @@ jobs:
         if: ${{ env.commit }}
         uses: gradle/actions/setup-gradle@v4
 
-      - name: Build With Gradle
-        if: ${{ env.commit }}
-        working-directory: TVBoxOSC
+      - name: Use Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 20.x
+      - name: Setup Android SDK
+        uses: android-actions/setup-android@v3
+      - run: chmod 777 ./gradlew
+      - name: Build JsModule
         run: |
-          chmod +x gradlew
-          ./gradlew assemblerelease --build-cache --parallel --daemon --warning-mode all
+          ./gradlew autojs:buildJsModule
+      - name: Build Docs
+        run: |
+          pushd autojs/src/js-api
+          npm install
+          npm run docs
+          popd
+          rm -rf docs/v2/docs/nodejs/docs
+          mv autojs/src/js-api/docs docs/v2/docs/nodejs/
+          pushd docs/v2/
+          npm install
+          npm run build
+          popd
+          mkdir -p app/src/main/assets/docs/v2
+          mv docs/v2/build/* app/src/main/assets/docs/v2/
+      - name: Build inrt template
+        run: |
+          ./gradlew app:buildTemplateApp
+      - name: Build App
+        run: |
+          ./gradlew app:assembleV7
+      - uses: Tlaster/android-sign@v1.2.2
+        name: Sign app APK
+        with:
+          releaseDirectory: |
+            app/build/outputs/apk/v7/release
+          signingKeyBase64: ${{ secrets.ASIGNING_KEY }}
+          output: build/app/signed
+          alias: ${{ secrets.AALIAS }}
+          keyStorePassword: ${{ secrets.AKEY_STORE_PASSWORD }}
+          keyPassword: ${{ secrets.AKEY_PASSWORD }}
+        env:
+          BUILD_TOOLS_VERSION: "34.0.0"
+      - name: rename apk
+        run: |
+          cd build/app/signed
+          mv app-v7-arm64-v8a-release*.apk Autox-v7-arm64-v8a-release-${{steps.vars.outputs.short_ref}}.apk
+          ls
 
       - name: Prepare App
         if: ${{ env.commit }}
