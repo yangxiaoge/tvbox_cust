@@ -1828,61 +1828,6 @@ proxies:
     headers:
       Host: telegram-isvvpn.dev
     path: /racevpn
-- name: 法国 001
-  type: vless
-  network: grpc
-  server: 185.10.19.51
-  port: 2083
-  uuid: 0a0c348b-8e38-462b-8589-ae125c5ef296
-  servername: Icloud.com
-  skip-cert-verify: false
-  tls: true
-  client-fingerprint: safari
-  reality-opts:
-    public-key: Tr8zlpa9pf5oX4sNmle25Fezpz50Ym8Kmay4DjGAcEg
-    short-id: 7d78a81691466b95
-  grpc-opts:
-    grpc-service-name: Hormoz
-- name: 德国 003
-  type: vless
-  network: ws
-  server: 3.125.128.95
-  port: 22222
-  uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
-  servername: telegram-channel-vlessconfig.sohala.uk
-  skip-cert-verify: false
-  tls: true
-  ws-opts:
-    headers:
-      Host: telegram-channel-vlessconfig.sohala.uk
-    path: /telegram-channel-vlessconfig-ws
-- name: 伊朗 001
-  type: vless
-  network: http
-  server: 37.202.232.165
-  port: 13960
-  uuid: ebffc618-f5c1-4ee4-8762-b1759e67b46c
-  skip-cert-verify: false
-  tls: false
-  http-opts:
-    headers:
-      Host:
-      - speedtest.net
-    path:
-    - /
-- name: 法国 002
-  type: vless
-  network: ws
-  server: 52.47.162.143
-  port: 22222
-  uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
-  servername: telegram-channel-vlessconfig.sohala.uk
-  skip-cert-verify: false
-  tls: true
-  ws-opts:
-    headers:
-      Host: telegram-channel-vlessconfig.sohala.uk
-    path: /telegram-channel-vlessconfig-ws
 - name: 伊朗 002
   type: vless
   network: http
@@ -1911,6 +1856,256 @@ proxies:
     headers:
       Host: usd.kobtty.me
     path: /bing
+- name: 荷兰 012
+  type: vmess
+  network: ws
+  server: 188.164.248.120
+  port: 8443
+  uuid: e88b85c6-93b4-47f6-b3fb-2c55dcb1289f
+  skip-cert-verify: true
+  tls: true
+  udp: true
+  tfo: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: lax2.ibgfw.top
+    path: /dyajvws
+- name: 美国 054
+  type: vmess
+  network: ws
+  server: 198.41.209.70
+  port: 2082
+  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
+  skip-cert-verify: true
+  tls: false
+  udp: true
+  tfo: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: 100-38-62-25.s5.db-link02.top
+    path: /dabai.in104.18.42.172
+- name: 日本 001
+  type: vless
+  network: ws
+  server: 13.230.34.30
+  port: 443
+  uuid: 4b2e1ee8-a987-496b-8ca9-62317b566197
+  servername: agedi.ambercc.filegear-sg.me
+  skip-cert-verify: true
+  tls: true
+  udp: true
+  ws-opts:
+    headers:
+      Host: agedi.ambercc.filegear-sg.me
+    path: /?ed=2560
+- name: 美国 055
+  type: vless
+  network: ws
+  server: 3.113.64.82
+  port: 443
+  uuid: 4b2e1ee8-a987-496b-8ca9-62317b566197
+  servername: agedi.ambercc.filegear-sg.me
+  skip-cert-verify: true
+  tls: true
+  udp: true
+  ws-opts:
+    headers:
+      Host: agedi.ambercc.filegear-sg.me
+    path: /?ed=2560
+- name: 德国 003
+  type: vless
+  network: grpc
+  server: 116.203.62.110
+  port: 443
+  uuid: 9acb3764-9a9b-4cbe-b6ce-aa0f2a74d461
+  servername: www.cdn77.com
+  skip-cert-verify: false
+  tls: true
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: -Klt3151vv7nNAJFA1XI73cfw8DUnKjIetrSLxXGBEw
+    short-id: 83a3c1c336165ead
+  grpc-opts:
+    grpc-service-name: Telegram-ipV2Ray-Telegram-ipV2Ray-Telegram-ipV2Ray-Telegram-ipV2Ray-Telegram-ipV2Ray
+- name: 澳大利亚 002
+  type: vless
+  network: ws
+  server: 43.155.71.120
+  port: 448
+  uuid: 4b2e1ee8-a987-496b-8ca9-62317b566197
+  servername: agedi.ambercc.filegear-sg.me
+  skip-cert-verify: true
+  tls: true
+  udp: true
+  ws-opts:
+    headers:
+      Host: agedi.ambercc.filegear-sg.me
+    path: /?ed=2560
+- name: 日本 002
+  type: vless
+  network: ws
+  server: 18.183.158.211
+  port: 443
+  uuid: 4b2e1ee8-a987-496b-8ca9-62317b566197
+  servername: agedi.ambercc.filegear-sg.me
+  skip-cert-verify: true
+  tls: true
+  udp: true
+  ws-opts:
+    headers:
+      Host: agedi.ambercc.filegear-sg.me
+    path: /?ed=2560
+- name: 德国 005
+  type: vless
+  network: grpc
+  server: 157.90.118.187
+  port: 443
+  uuid: b33c4f41-be1b-47e3-baae-7617e3df3e7f
+  servername: www.cdn77.com
+  skip-cert-verify: false
+  tls: true
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: 32v2F8Ymo35CC3Q9D-T0uUMCoz-bvtvl5aMYQ-kvCV8
+    short-id: 33a68471e114bb72
+  grpc-opts:
+    grpc-service-name: Telegram-ipV2Ray-Telegram-ipV2Ray-Telegram-ipV2Ray-Telegram-ipV2Ray-Telegram-ipV2Ray
+- name: 新加坡 001
+  type: vless
+  network: ws
+  server: 13.250.14.76
+  port: 443
+  uuid: 4b2e1ee8-a987-496b-8ca9-62317b566197
+  servername: agedi.ambercc.filegear-sg.me
+  skip-cert-verify: true
+  tls: true
+  udp: true
+  ws-opts:
+    headers:
+      Host: agedi.ambercc.filegear-sg.me
+    path: /?ed=2560
+- name: 新加坡 002
+  type: vless
+  network: ws
+  server: 54.254.52.56
+  port: 443
+  uuid: 4b2e1ee8-a987-496b-8ca9-62317b566197
+  servername: agedi.ambercc.filegear-sg.me
+  skip-cert-verify: true
+  tls: true
+  udp: true
+  ws-opts:
+    headers:
+      Host: agedi.ambercc.filegear-sg.me
+    path: /?ed=2560
+- name: 欧洲 001
+  type: vmess
+  network: tcp
+  server: 138.199.158.245
+  port: 100
+  uuid: 3f650cc4-39d3-4eb5-82f1-149cca0c342b
+  sni: ''
+  alterId: 0
+  cipher: auto
+  fingerprint: ''
+- name: 日本 003
+  type: vmess
+  network: tcp
+  server: gy.youaremygod.top
+  port: 48889
+  uuid: c130cb36-c93f-4be7-9228-a7a97d43885a
+  skip-cert-verify: true
+  alterId: 0
+  cipher: auto
+  delay: 1036
+- name: 加拿大 002
+  type: vmess
+  network: ws
+  server: s2.cn-db.top
+  port: 2052
+  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
+  skip-cert-verify: false
+  tls: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: 100-252-79-9.s2.cn-db.top
+    path: /
+- name: 加拿大 003
+  type: vmess
+  network: ws
+  server: s1.cn-db.top
+  port: 2052
+  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
+  skip-cert-verify: false
+  tls: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: 100-70-193-42.s1.cn-db.top
+    path: /
+- name: 美国 057
+  type: vmess
+  network: ws
+  server: 162.159.252.210
+  port: 80
+  uuid: 0ba4a240-1586-4a54-929c-26389c8a4111
+  skip-cert-verify: false
+  tls: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: sg01s.57de-78fc4c715615.cfd
+    path: /
+- name: 美国 058
+  type: vmess
+  network: ws
+  server: faedff.57de-78fc4c715615.cfd
+  port: 80
+  uuid: 0ba4a240-1586-4a54-929c-26389c8a4111
+  skip-cert-verify: false
+  tls: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: sg01s.57de-78fc4c715615.cfd
+    path: /
+- name: 斯洛文尼亚 001
+  type: vmess
+  network: ws
+  server: 92.53.191.56
+  port: 8443
+  uuid: e88b85c6-93b4-47f6-b3fb-2c55dcb1289f
+  skip-cert-verify: false
+  tls: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: lax2.ibgfw.top
+    path: /
+- name: 美国 059
+  type: vmess
+  network: ws
+  server: 104.17.213.241
+  port: 2082
+  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
+  skip-cert-verify: false
+  tls: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: 100-219-162-241.s5.cn-db.top
+    path: /
 proxy-groups:
 - name: PROXY
   type: select
@@ -2054,12 +2249,26 @@ proxy-groups:
   - 美国 050
   - 美国 052
   - 美国 053
-  - 法国 001
-  - 德国 003
-  - 伊朗 001
-  - 法国 002
   - 伊朗 002
   - 希腊 001
+  - 荷兰 012
+  - 美国 054
+  - 日本 001
+  - 美国 055
+  - 德国 003
+  - 澳大利亚 002
+  - 日本 002
+  - 德国 005
+  - 新加坡 001
+  - 新加坡 002
+  - 欧洲 001
+  - 日本 003
+  - 加拿大 002
+  - 加拿大 003
+  - 美国 057
+  - 美国 058
+  - 斯洛文尼亚 001
+  - 美国 059
 - name: LOAD-BALANCE
   type: load-balance
   url: https://cp.cloudflare.com/generate_204
