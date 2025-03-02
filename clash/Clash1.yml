@@ -2002,16 +2002,6 @@ proxies:
     headers:
       Host: agedi.ambercc.filegear-sg.me
     path: /?ed=2560
-- name: 欧洲 001
-  type: vmess
-  network: tcp
-  server: 138.199.158.245
-  port: 100
-  uuid: 3f650cc4-39d3-4eb5-82f1-149cca0c342b
-  sni: ''
-  alterId: 0
-  cipher: auto
-  fingerprint: ''
 - name: 日本 003
   type: vmess
   network: tcp
@@ -2105,6 +2095,296 @@ proxies:
   ws-opts:
     headers:
       Host: 100-219-162-241.s5.cn-db.top
+    path: /
+- name: 美国 060
+  type: vmess
+  network: ws
+  server: tls.18.node-for-bigairport.win
+  port: 22443
+  uuid: 3519dfc0-fa27-41cc-8c19-981818f9f6d5
+  skip-cert-verify: true
+  tls: true
+  udp: true
+  tfo: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: tls.18.node-for-bigairport.win
+    path: /
+- name: 加拿大 004
+  type: vmess
+  network: ws
+  server: s4.db-link02.top
+  port: 2086
+  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
+  skip-cert-verify: true
+  tls: false
+  udp: true
+  tfo: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: 100-215-157-195.s4.db-link02.top
+    path: /dabai.in104.17.119.148
+- name: 美国 061
+  type: vless
+  network: ws
+  server: 47.76.76.61
+  port: 587
+  uuid: 4b2e1ee8-a987-496b-8ca9-62317b566197
+  servername: agedi.ambercc.filegear-sg.me
+  skip-cert-verify: true
+  tls: true
+  udp: true
+  client-fingerprint: chrome
+  ws-opts:
+    headers:
+      Host: agedi.ambercc.filegear-sg.me
+    path: /?ed=2560
+- name: 美国 062
+  type: vless
+  network: ws
+  server: 47.76.218.163
+  port: 443
+  uuid: 4b2e1ee8-a987-496b-8ca9-62317b566197
+  servername: agedi.ambercc.filegear-sg.me
+  skip-cert-verify: true
+  tls: true
+  udp: true
+  client-fingerprint: chrome
+  ws-opts:
+    headers:
+      Host: agedi.ambercc.filegear-sg.me
+    path: /?ed=2560
+- name: 德国 006
+  type: vless
+  network: grpc
+  server: 91.107.181.177
+  port: 2060
+  uuid: 46b06e2c-e5e0-4ad2-ad3e-9f316d7d3065
+  servername: refersion.com
+  skip-cert-verify: false
+  tls: true
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: jW_vraWBLfMcIkPp89pEPSbFQn2VM4qtPO4FAoC2chE
+    short-id: 629cc26960e47e39
+  grpc-opts:
+    grpc-service-name: 2086vless
+- name: 韩国 001
+  type: vless
+  network: ws
+  server: 220.90.247.28
+  port: 50000
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  servername: s5.ylkszy.eu.org
+  skip-cert-verify: true
+  tls: true
+  udp: true
+  client-fingerprint: chrome
+  ws-opts:
+    headers:
+      Host: s5.ylkszy.eu.org
+    path: /?ed=2560
+- name: 英国 002
+  type: vless
+  network: ws
+  server: 138.3.215.231
+  port: 44784
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  servername: s5.ylkszy.eu.org
+  skip-cert-verify: true
+  tls: true
+  udp: true
+  ws-opts:
+    headers:
+      Host: s5.ylkszy.eu.org
+    path: /?ed=2560
+- name: 日本 005
+  type: vless
+  network: http
+  server: 45.76.87.24
+  port: 80
+  uuid: 446bfcde-1d2d-4f6f-a828-117487411e01
+  skip-cert-verify: false
+  tls: false
+  client-fingerprint: chrome
+  http-opts:
+    headers:
+      Host:
+      - 2002:0000:0000::1
+    path:
+    - /Hello!
+- name: 美国 063
+  type: vless
+  network: ws
+  server: 104.16.134.27
+  port: 2083
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  servername: s5.ylkszy.eu.org
+  skip-cert-verify: true
+  tls: true
+  udp: true
+  ws-opts:
+    headers:
+      Host: s5.ylkszy.eu.org
+    path: /?ed=2560
+- name: 荷兰 014
+  type: vless
+  network: ws
+  server: 185.133.35.103
+  port: 443
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  servername: s5.ylkszy.eu.org
+  skip-cert-verify: true
+  tls: true
+  udp: true
+  ws-opts:
+    headers:
+      Host: s5.ylkszy.eu.org
+    path: /?ed=2560
+- name: 奥地利 001
+  type: vless
+  network: ws
+  server: 212.183.88.200
+  port: 443
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  servername: s5.ylkszy.eu.org
+  skip-cert-verify: true
+  tls: true
+  udp: true
+  client-fingerprint: chrome
+  ws-opts:
+    headers:
+      Host: s5.ylkszy.eu.org
+    path: /?ed=2560
+- name: 美国 065
+  type: vless
+  network: ws
+  server: 104.17.68.85
+  port: 443
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  servername: s5.ylkszy.eu.org
+  skip-cert-verify: true
+  tls: true
+  udp: true
+  ws-opts:
+    headers:
+      Host: s5.ylkszy.eu.org
+    path: /?ed=2560
+- name: 美国 066
+  type: vless
+  network: ws
+  server: 130.250.137.94
+  port: 443
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  servername: s5.ylkszy.eu.org
+  skip-cert-verify: true
+  tls: true
+  udp: true
+  ws-opts:
+    headers:
+      Host: s5.ylkszy.eu.org
+    path: /?ed=2560
+- name: 美国 070
+  type: vless
+  network: ws
+  server: 63.141.128.102
+  port: 443
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  servername: s5.ylkszy.eu.org
+  skip-cert-verify: true
+  tls: true
+  udp: true
+  ws-opts:
+    headers:
+      Host: s5.ylkszy.eu.org
+    path: /?ed=2560
+- name: 美国 071
+  type: vless
+  network: ws
+  server: 3.77.28.67
+  port: 22222
+  uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+  servername: telegram-channel-vlessconfig.sohala.uk
+  skip-cert-verify: false
+  tls: true
+  ws-opts:
+    headers:
+      Host: telegram-channel-vlessconfig.sohala.uk
+    path: /telegram-channel-vlessconfig-ws
+- name: 美国 072
+  type: vless
+  network: ws
+  server: 63.177.213.192
+  port: 22222
+  uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+  servername: telegram-channel-vlessconfig.sohala.uk
+  skip-cert-verify: false
+  tls: true
+  ws-opts:
+    headers:
+      Host: telegram-channel-vlessconfig.sohala.uk
+    path: /telegram-channel-vlessconfig-ws
+- name: 伊朗 001
+  type: vless
+  network: http
+  server: 185.79.158.142
+  port: 8098
+  uuid: c970567b-03e2-452d-8847-869d9d843395
+  skip-cert-verify: false
+  tls: false
+  http-opts:
+    path:
+    - /
+- name: 伊朗 003
+  type: vless
+  network: http
+  server: 185.79.158.143
+  port: 8764
+  uuid: 7aa62d74-b569-4c25-bcf7-d9a30e3e871b
+  skip-cert-verify: false
+  tls: false
+  http-opts:
+    path:
+    - /
+- name: 伊朗 004
+  type: vless
+  network: http
+  server: 185.79.158.145
+  port: 8220
+  uuid: 21fb862d-90bc-4629-b07a-3a2c6f5e6bd7
+  skip-cert-verify: false
+  tls: false
+  http-opts:
+    path:
+    - /
+- name: 伊朗 006
+  type: vless
+  network: http
+  server: 185.79.158.144
+  port: 8765
+  uuid: 3fa64054-5bf1-4ed7-b976-ed5d076a77af
+  skip-cert-verify: false
+  tls: false
+  http-opts:
+    path:
+    - /
+- name: 美国 076
+  type: vmess
+  network: ws
+  server: 172.67.42.232
+  port: 80
+  uuid: 4bf074f4-7e9c-4e4b-a10d-156e26199729
+  skip-cert-verify: false
+  tls: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: us03s.5d8ecf82.cfd
     path: /
 proxy-groups:
 - name: PROXY
@@ -2261,7 +2541,6 @@ proxy-groups:
   - 德国 005
   - 新加坡 001
   - 新加坡 002
-  - 欧洲 001
   - 日本 003
   - 加拿大 002
   - 加拿大 003
@@ -2269,6 +2548,27 @@ proxy-groups:
   - 美国 058
   - 斯洛文尼亚 001
   - 美国 059
+  - 美国 060
+  - 加拿大 004
+  - 美国 061
+  - 美国 062
+  - 德国 006
+  - 韩国 001
+  - 英国 002
+  - 日本 005
+  - 美国 063
+  - 荷兰 014
+  - 奥地利 001
+  - 美国 065
+  - 美国 066
+  - 美国 070
+  - 美国 071
+  - 美国 072
+  - 伊朗 001
+  - 伊朗 003
+  - 伊朗 004
+  - 伊朗 006
+  - 美国 076
 - name: LOAD-BALANCE
   type: load-balance
   url: https://cp.cloudflare.com/generate_204
