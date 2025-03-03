@@ -2302,32 +2302,6 @@ proxies:
     headers:
       Host: s5.ylkszy.eu.org
     path: /?ed=2560
-- name: 美国 071
-  type: vless
-  network: ws
-  server: 3.77.28.67
-  port: 22222
-  uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
-  servername: telegram-channel-vlessconfig.sohala.uk
-  skip-cert-verify: false
-  tls: true
-  ws-opts:
-    headers:
-      Host: telegram-channel-vlessconfig.sohala.uk
-    path: /telegram-channel-vlessconfig-ws
-- name: 美国 072
-  type: vless
-  network: ws
-  server: 63.177.213.192
-  port: 22222
-  uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
-  servername: telegram-channel-vlessconfig.sohala.uk
-  skip-cert-verify: false
-  tls: true
-  ws-opts:
-    headers:
-      Host: telegram-channel-vlessconfig.sohala.uk
-    path: /telegram-channel-vlessconfig-ws
 - name: 伊朗 001
   type: vless
   network: http
@@ -2385,6 +2359,443 @@ proxies:
   ws-opts:
     headers:
       Host: us03s.5d8ecf82.cfd
+    path: /
+- name: 日本 008
+  type: vmess
+  network: ws
+  server: 0000000000000000000000000046.bgroup-node-for-bigairport.sbs
+  port: 52353
+  uuid: b71f9e84-86c9-49c4-b5f4-b33b35ee7410
+  skip-cert-verify: true
+  tls: true
+  udp: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: 0000000000000000000000000046.bgroup-node-for-bigairport.sbs
+    path: /
+- name: 澳大利亚 003
+  type: vmess
+  network: tcp
+  server: 4sq5c-g03.jp04-3771-vm0.entry.fr0307a.art
+  port: 446
+  uuid: 8e555d33-4ce4-395e-93cd-670297aeeb0f
+  skip-cert-verify: true
+  alterId: 99999
+  cipher: auto
+- name: 日本 009
+  type: vmess
+  network: ws
+  server: 0000000000000000000000000044.bgroup-node-for-bigairport.sbs
+  port: 52352
+  uuid: b71f9e84-86c9-49c4-b5f4-b33b35ee7410
+  skip-cert-verify: true
+  tls: true
+  udp: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: 0000000000000000000000000044.bgroup-node-for-bigairport.sbs
+    path: /
+- name: 美国 071
+  type: vmess
+  network: ws
+  server: 0000000000000000000000000045.bgroup-node-for-bigairport.sbs
+  port: 12353
+  uuid: b71f9e84-86c9-49c4-b5f4-b33b35ee7410
+  skip-cert-verify: true
+  tls: true
+  udp: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: 0000000000000000000000000045.bgroup-node-for-bigairport.sbs
+    path: /
+- name: 美国 072
+  type: vmess
+  network: ws
+  server: 0000000000000000000000000050.bgroup-node-for-bigairport.sbs
+  port: 52355
+  uuid: b71f9e84-86c9-49c4-b5f4-b33b35ee7410
+  skip-cert-verify: true
+  tls: true
+  udp: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: 0000000000000000000000000050.bgroup-node-for-bigairport.sbs
+    path: /
+- name: 日本 010
+  type: vmess
+  network: ws
+  server: 0000000000000000000000000041.bgroup-node-for-bigairport.sbs
+  port: 12351
+  uuid: b71f9e84-86c9-49c4-b5f4-b33b35ee7410
+  skip-cert-verify: true
+  tls: true
+  udp: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: 0000000000000000000000000041.bgroup-node-for-bigairport.sbs
+    path: /
+- name: 美国 079
+  type: vless
+  server: 135.148.74.155
+  port: 443
+  uuid: 54694a33-a8dc-47dd-bc38-acd3971e0055
+  servername: 147135004002.sec20org.com
+  skip-cert-verify: false
+  tls: true
+  udp: true
+- name: 日本 011
+  type: vmess
+  network: ws
+  server: 0000000000000000000000000042.bgroup-node-for-bigairport.sbs
+  port: 52351
+  uuid: b71f9e84-86c9-49c4-b5f4-b33b35ee7410
+  skip-cert-verify: true
+  tls: true
+  udp: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: 0000000000000000000000000042.bgroup-node-for-bigairport.sbs
+    path: /
+- name: 美国 080
+  type: vless
+  network: ws
+  server: whatismyipaddress.com
+  port: 2096
+  uuid: d4adde74-fd7c-4665-a221-5a459c919d14
+  servername: wwwspeedtestnetwhiteberinsistomd6625996s29.elitemizban.ir
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    headers:
+      Host: wwwspeedtestnetwhiteberinsistomd6625996s29.elitemizban.ir
+    path: /
+- name: 日本 012
+  type: vmess
+  network: ws
+  server: 0000000000000000000000000047.bgroup-node-for-bigairport.sbs
+  port: 12354
+  uuid: b71f9e84-86c9-49c4-b5f4-b33b35ee7410
+  skip-cert-verify: true
+  tls: true
+  udp: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: 0000000000000000000000000047.bgroup-node-for-bigairport.sbs
+    path: /
+- name: 美国 081
+  type: vmess
+  network: ws
+  server: tls.06.node-for-bigairport.win
+  port: 443
+  uuid: b71f9e84-86c9-49c4-b5f4-b33b35ee7410
+  skip-cert-verify: true
+  tls: true
+  udp: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: tls.06.node-for-bigairport.win
+    path: /
+- name: 澳大利亚 004
+  type: vmess
+  network: ws
+  server: tls.12.node-for-bigairport.win
+  port: 33443
+  uuid: b71f9e84-86c9-49c4-b5f4-b33b35ee7410
+  skip-cert-verify: true
+  tls: true
+  udp: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: tls.12.node-for-bigairport.win
+    path: /
+- name: 日本 013
+  type: vmess
+  network: ws
+  server: tls.09.node-for-bigairport.win
+  port: 55443
+  uuid: b71f9e84-86c9-49c4-b5f4-b33b35ee7410
+  skip-cert-verify: true
+  tls: true
+  udp: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: tls.09.node-for-bigairport.win
+    path: /
+- name: 美国 082
+  type: vmess
+  network: ws
+  server: 23.158.56.241
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  skip-cert-verify: true
+  tls: true
+  udp: true
+  tfo: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+    path: /linkvws
+- name: 斯洛文尼亚 002
+  type: vmess
+  network: ws
+  server: 92.53.188.185
+  port: 8443
+  uuid: 191babc5-2aaf-4fe5-a563-f14244aefb4e
+  skip-cert-verify: true
+  tls: true
+  udp: true
+  tfo: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: lax1.ibgfw.top
+    path: /xrenvws
+- name: 美国 086
+  type: vmess
+  network: ws
+  server: freedomisnear.onetwothree123.ir
+  port: 2086
+  uuid: 666f3931-0dc1-4078-d7fa-a86b63bf067e
+  skip-cert-verify: true
+  tls: false
+  udp: true
+  tfo: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: Freedomisnear.onetwothree123.ir
+    path: /mehdi
+- name: 加拿大 005
+  type: vmess
+  network: ws
+  server: s5.db-link02.top
+  port: 8880
+  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
+  skip-cert-verify: true
+  tls: false
+  udp: true
+  tfo: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: 100-85-25-119.s5.db-link02.top
+    path: /dabai.in104.19.220.104
+- name: 美国 088
+  type: vmess
+  network: ws
+  server: rAkesMaRT.818185.gGFF.NET
+  port: 443
+  uuid: 0343d7ab-fa29-478a-8877-0d6a8b7d2ab8
+  skip-cert-verify: true
+  tls: true
+  udp: true
+  tfo: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: rakesmart.818185.ggff.net
+    path: /fBhqPm6Vqnob7lNM3m2RN6Lp
+- name: 美国 089
+  type: vmess
+  network: grpc
+  server: 108.162.192.217
+  port: 2087
+  uuid: 2a3263e2-891c-4446-b474-a8c63acb6e25
+  skip-cert-verify: true
+  tls: true
+  udp: true
+  tfo: false
+  alterId: 0
+  cipher: auto
+  grpc-opts:
+    grpc-service-name: /
+- name: 美国 090
+  type: vmess
+  network: ws
+  server: freedomisnear.onetwothree123.ir
+  port: 2052
+  uuid: 4c2c39bd-6658-4c2d-c2da-762fef958d32
+  skip-cert-verify: true
+  tls: false
+  udp: true
+  tfo: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: Freedomisnear.onetwothree123.ir
+    path: /mehdi
+- name: 美国 091
+  type: vless
+  network: ws
+  server: 104.16.52.146
+  port: 80
+  uuid: 3f5eba46-f9c9-4d49-985c-2a4345da4f5a
+  skip-cert-verify: false
+  tls: false
+  ws-opts:
+    headers:
+      Host: billowing-recipe-c066-ppal03.kerocel835.workers.dev
+    path: /?ed=2560
+- name: 日本 014
+  type: vless
+  network: ws
+  server: 151.101.230.116
+  port: 80
+  uuid: f1ab91a5-5adb-496b-99c1-fa51ebbbac1c
+  skip-cert-verify: false
+  ws-opts:
+    headers:
+      Host: Www.Nnddjdhjdy.com
+    path: /?ed=2048
+- name: 伊朗 007
+  type: vless
+  network: http
+  server: 185.79.158.141
+  port: 8088
+  uuid: 2b972ea2-7fc2-498b-8513-5a695c5452dd
+  skip-cert-verify: false
+  tls: false
+  http-opts:
+    path:
+    - /
+- name: 美国 092
+  type: vmess
+  network: ws
+  server: 151.101.66.168
+  port: 80
+  uuid: 7dc78582-88a8-4b4c-9e3e-50831d672766
+  sni: ''
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: amd.al
+    path: /XESALISTHEBEST?ed=2048
+- name: 美国 094
+  type: vmess
+  network: ws
+  server: 172.67.202.155
+  port: 8080
+  uuid: e322b371-9fb0-49b4-dd38-887e92a8a987
+  sni: ''
+  alterId: 0
+  cipher: auto
+  fingerprint: ''
+  ws-opts:
+    headers:
+      Host: Freedomisnear.onetwothree123.ir
+    path: /mehdi
+- name: 美国 095
+  type: vmess
+  network: ws
+  server: Freedomisnear.onetwothree123.ir
+  port: 443
+  uuid: 2217affb-e96a-4aab-8e74-ce2adcedcc81
+  skip-cert-verify: false
+  tls: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: Freedomisnear.onetwothree123.ir
+    path: /
+- name: 美国 096
+  type: vmess
+  network: ws
+  server: s3.cn-db.top
+  port: 2086
+  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
+  skip-cert-verify: false
+  tls: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: 100-237-59-154.s3.cn-db.top
+    path: /
+- name: 美国 097
+  type: vmess
+  network: ws
+  server: 172.67.146.154
+  port: 8880
+  uuid: 1c1cb7fe-a929-4e47-b292-4073b63d2d4b
+  skip-cert-verify: false
+  tls: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: lamusa.daozhang.site
+    path: /
+- name: 美国 098
+  type: vmess
+  network: ws
+  server: 141.101.114.114
+  port: 80
+  uuid: 4bf074f4-7e9c-4e4b-a10d-156e26199729
+  skip-cert-verify: false
+  tls: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: us03s.5d8ecf82.cfd
+    path: /
+- name: 美国 099
+  type: vmess
+  network: ws
+  server: 104.17.221.248
+  port: 2086
+  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
+  skip-cert-verify: false
+  tls: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: 100-48-202-143.s1.db-link01.top
+    path: /
+- name: 美国 100
+  type: vmess
+  network: ws
+  server: lamusa.daozhang.site
+  port: 8880
+  uuid: 1c1cb7fe-a929-4e47-b292-4073b63d2d4b
+  servername: lamusa.daozhang.site
+  skip-cert-verify: false
+  tls: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: lamusa.daozhang.site
     path: /
 proxy-groups:
 - name: PROXY
@@ -2562,13 +2973,42 @@ proxy-groups:
   - 美国 065
   - 美国 066
   - 美国 070
-  - 美国 071
-  - 美国 072
   - 伊朗 001
   - 伊朗 003
   - 伊朗 004
   - 伊朗 006
   - 美国 076
+  - 日本 008
+  - 澳大利亚 003
+  - 日本 009
+  - 美国 071
+  - 美国 072
+  - 日本 010
+  - 美国 079
+  - 日本 011
+  - 美国 080
+  - 日本 012
+  - 美国 081
+  - 澳大利亚 004
+  - 日本 013
+  - 美国 082
+  - 斯洛文尼亚 002
+  - 美国 086
+  - 加拿大 005
+  - 美国 088
+  - 美国 089
+  - 美国 090
+  - 美国 091
+  - 日本 014
+  - 伊朗 007
+  - 美国 092
+  - 美国 094
+  - 美国 095
+  - 美国 096
+  - 美国 097
+  - 美国 098
+  - 美国 099
+  - 美国 100
 - name: LOAD-BALANCE
   type: load-balance
   url: https://cp.cloudflare.com/generate_204
