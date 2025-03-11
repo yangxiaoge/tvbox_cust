@@ -4504,6 +4504,54 @@ proxies:
     headers:
       Host: wsxaa.aleppo-janinan.info
     path: /morano
+- name: 西班牙 002
+  type: vmess
+  network: ws
+  server: 185.18.250.249
+  port: 8443
+  uuid: 191babc5-2aaf-4fe5-a563-f14244aefb4e
+  skip-cert-verify: true
+  tls: true
+  udp: true
+  tfo: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: lax1.ibgfw.top
+    path: /xrenvws
+- name: 英国 003
+  type: vmess
+  network: ws
+  server: 144.24.200.164
+  port: 443
+  uuid: 9b456c2a-f2c1-45e1-87a9-b7628b04bb24
+  skip-cert-verify: true
+  tls: true
+  udp: true
+  tfo: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: beyonddsz.cfd
+    path: /linkws
+- name: 美国 210
+  type: vmess
+  network: ws
+  server: 172.67.202.155
+  port: 8880
+  uuid: 8566c18d-f1b1-4749-881c-9d0670866563
+  skip-cert-verify: true
+  tls: false
+  udp: true
+  tfo: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: zoornazanfarsineveshtam.onetwothree123.ir
+    path: /
 proxy-groups:
 - name: PROXY
   type: select
@@ -4824,6 +4872,9 @@ proxy-groups:
   - 日本 001
   - 日本 002
   - 美国 209
+  - 西班牙 002
+  - 英国 003
+  - 美国 210
 - name: LOAD-BALANCE
   type: load-balance
   url: https://cp.cloudflare.com/generate_204
