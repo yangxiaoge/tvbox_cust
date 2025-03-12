@@ -4552,6 +4552,16 @@ proxies:
     headers:
       Host: zoornazanfarsineveshtam.onetwothree123.ir
     path: /
+- name: 加拿大 016
+  type: vless
+  network: grpc
+  server: 142.132.185.23
+  port: 48929
+  uuid: 0cb0008e-72d6-432c-9c02-fc58da58f6ac
+  skip-cert-verify: false
+  tls: true
+  grpc-opts:
+    grpc-service-name: TEL@V2rayNG_SPDNet-TEL--@V2rayNG_SPDNet-TEL--@V2rayNG_SPDNet-TEL--@V2rayNG_SPDNet-JOIN-@V2rayNG_SPDNet-TEL--@V2rayNG_SPDNet-JOIN-@V2rayNG_SPDNet-TEL-@V2rayNG_SPDNet-TEL--@V2rayNG_SPDNet-JOIN-@V2rayNG_SPDNet-TEL--@V2rayNG_SPDNet
 proxy-groups:
 - name: PROXY
   type: select
@@ -4875,6 +4885,7 @@ proxy-groups:
   - 西班牙 002
   - 英国 003
   - 美国 210
+  - 加拿大 016
 - name: LOAD-BALANCE
   type: load-balance
   url: https://cp.cloudflare.com/generate_204
