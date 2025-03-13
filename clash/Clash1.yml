@@ -4562,6 +4562,22 @@ proxies:
   tls: true
   grpc-opts:
     grpc-service-name: TEL@V2rayNG_SPDNet-TEL--@V2rayNG_SPDNet-TEL--@V2rayNG_SPDNet-TEL--@V2rayNG_SPDNet-JOIN-@V2rayNG_SPDNet-TEL--@V2rayNG_SPDNet-JOIN-@V2rayNG_SPDNet-TEL-@V2rayNG_SPDNet-TEL--@V2rayNG_SPDNet-JOIN-@V2rayNG_SPDNet-TEL--@V2rayNG_SPDNet
+- name: 美国 211
+  type: vmess
+  network: ws
+  server: 104.21.96.1
+  port: 2083
+  uuid: 9210c7c8-a08e-4a89-efa6-912bf302fa4e
+  skip-cert-verify: true
+  tls: true
+  udp: true
+  tfo: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: tasnim.twn24.ir
+    path: /?ed=2048
 proxy-groups:
 - name: PROXY
   type: select
@@ -4886,6 +4902,7 @@ proxy-groups:
   - 英国 003
   - 美国 210
   - 加拿大 016
+  - 美国 211
 - name: LOAD-BALANCE
   type: load-balance
   url: https://cp.cloudflare.com/generate_204
