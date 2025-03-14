@@ -4578,6 +4578,22 @@ proxies:
     headers:
       Host: tasnim.twn24.ir
     path: /?ed=2048
+- name: 美国 212
+  type: vmess
+  network: ws
+  server: tasnim.twn24.ir
+  port: 443
+  uuid: 838bf0b0-a0c4-45a0-cb74-c25dcc2aaa28
+  skip-cert-verify: true
+  tls: true
+  udp: true
+  tfo: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: tasnim.twn24.ir
+    path: /10667/?ed=2048
 proxy-groups:
 - name: PROXY
   type: select
@@ -4903,6 +4919,7 @@ proxy-groups:
   - 美国 210
   - 加拿大 016
   - 美国 211
+  - 美国 212
 - name: LOAD-BALANCE
   type: load-balance
   url: https://cp.cloudflare.com/generate_204
