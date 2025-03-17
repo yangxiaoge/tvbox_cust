@@ -4622,6 +4622,21 @@ proxies:
     headers:
       Host: us-new03.daluquan.top
     path: /itdog?ed=2560
+- name: 美国 214
+  type: vmess
+  network: ws
+  server: us16.998998.best
+  port: 443
+  uuid: 07b7b563-f868-49fb-943a-6425e3dc34d9
+  servername: server9-3.998877.best
+  skip-cert-verify: true
+  tls: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: server9-3.998877.best
+    path: /rksdnuhgteb?ed=2560
 proxy-groups:
 - name: PROXY
   type: select
@@ -4950,6 +4965,7 @@ proxy-groups:
   - 美国 212
   - 美国 213
   - 英国 004
+  - 美国 214
 - name: LOAD-BALANCE
   type: load-balance
   url: https://cp.cloudflare.com/generate_204
