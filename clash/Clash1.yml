@@ -4637,6 +4637,20 @@ proxies:
     headers:
       Host: server9-3.998877.best
     path: /rksdnuhgteb?ed=2560
+- name: 美国 215
+  type: vless
+  network: ws
+  server: 69.84.182.165
+  port: 443
+  uuid: d17ca95a-8eaf-492f-93fa-538c88956bb3
+  servername: publicvless.pages.dev
+  skip-cert-verify: true
+  tls: true
+  tfo: false
+  ws-opts:
+    headers:
+      Host: publicvless.pages.dev
+    path: /?proxyip=proxyip.us.fxxk.dedyn.io
 proxy-groups:
 - name: PROXY
   type: select
@@ -4966,6 +4980,7 @@ proxy-groups:
   - 美国 213
   - 英国 004
   - 美国 214
+  - 美国 215
 - name: LOAD-BALANCE
   type: load-balance
   url: https://cp.cloudflare.com/generate_204
