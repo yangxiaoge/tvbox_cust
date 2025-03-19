@@ -34,11 +34,6 @@ https://yangxiaoge.github.io/yingshi
 # 工作日查询
 - 接口：https://cdn.jsdelivr.net/gh/yangxiaoge/tvbox_cust@master/holiday/isHoliday.json
 
-# 鼓励一下
-收集不易，若此项目有帮到你，望你能动用你的发财小手支持一下
-你的鼓励是这个项目继续更新的最大动力
-![image](https://github.com/user-attachments/assets/b56b08a8-3659-461e-a8d7-b5ba2552bd32)
-
 # 进阶玩法
 # TVBox编译 脚本来自 [o0HalfLife0o](https://github.com/o0HalfLife0o/TVBoxOSC) [zyqfork](https://github.com/zyqfork/TVBoxOSC) 
 ![Build](https://shields.io/github/actions/workflow/status/yangxiaoge/tvbox_cust/tvbox_app_action.yml?branch=master&logo=github&label=Build)
