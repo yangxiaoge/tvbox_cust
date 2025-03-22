@@ -1754,6 +1754,20 @@ proxies:
     headers:
       Host: server9-3.998877.best
     path: /rksdnuhgteb?ed=2560
+- name: 英国 002
+  type: vmess
+  network: ws
+  server: frankfurt.faforex.eu.org
+  port: 23451
+  uuid: dafa1cdd-171c-41ff-be98-466bca07e0a3
+  tls: false
+  udp: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: us-new03.daluquan.top
+    path: /itdog?ed=2560
 proxy-groups:
 - name: PROXY
   type: select
@@ -1885,6 +1899,7 @@ proxy-groups:
   - 荷兰 002
   - 加拿大 006
   - 美国 052
+  - 英国 002
 - name: LOAD-BALANCE
   type: load-balance
   url: https://cp.cloudflare.com/generate_204
