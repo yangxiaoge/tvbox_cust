@@ -1768,6 +1768,20 @@ proxies:
     headers:
       Host: us-new03.daluquan.top
     path: /itdog?ed=2560
+- name: 美国 053
+  type: vmess
+  network: ws
+  server: visa.com
+  port: 443
+  uuid: 47149ddc-d988-494c-821c-b6ab2104b44c
+  tls: false
+  udp: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: go.daluquan.top
+    path: /
 proxy-groups:
 - name: PROXY
   type: select
@@ -1900,6 +1914,7 @@ proxy-groups:
   - 加拿大 006
   - 美国 052
   - 英国 002
+  - 美国 053
 - name: LOAD-BALANCE
   type: load-balance
   url: https://cp.cloudflare.com/generate_204
