@@ -1869,6 +1869,23 @@ proxies:
     headers:
       Host: tls.05.node-for-bigairport.win
     path: /
+- name: 巴西 001
+  type: vmess
+  network: ws
+  server: 188.114.99.183
+  port: 443
+  uuid: edbb1059-1633-4271-b66e-ed4fba47a1bf
+  servername: linde06.indiavideo.sbs
+  skip-cert-verify: true
+  tls: true
+  udp: true
+  tfo: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: linde06.indiavideo.sbs
+    path: /linkws
 proxy-groups:
 - name: PROXY
   type: select
@@ -2008,6 +2025,7 @@ proxy-groups:
   - 美国 058
   - 美国 059
   - 美国 060
+  - 巴西 001
 - name: LOAD-BALANCE
   type: load-balance
   url: https://cp.cloudflare.com/generate_204
