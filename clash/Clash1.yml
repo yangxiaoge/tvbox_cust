@@ -1886,6 +1886,22 @@ proxies:
     headers:
       Host: linde06.indiavideo.sbs
     path: /linkws
+- name: 美国 061
+  type: vmess
+  network: ws
+  server: 0e1f11d2-stw740-sy3miy-3kis.fmt2-us.sghuawei.com
+  port: 420
+  uuid: 117fc3d8-fd04-11ed-b345-f23c93136cb3
+  skip-cert-verify: false
+  tls: false
+  tfo: false
+  alterId: 2
+  cipher: auto
+  client-fingerprint: chrome
+  ws-opts:
+    headers:
+      Host: 0e1f11d2-stw740-sy3miy-3kis.fmt2-us.sghuawei.com
+    path: /
 proxy-groups:
 - name: PROXY
   type: select
@@ -2026,6 +2042,7 @@ proxy-groups:
   - 美国 059
   - 美国 060
   - 巴西 001
+  - 美国 061
 - name: LOAD-BALANCE
   type: load-balance
   url: https://cp.cloudflare.com/generate_204
