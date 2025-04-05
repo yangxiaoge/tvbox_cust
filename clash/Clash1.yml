@@ -7111,6 +7111,431 @@ proxies:
     headers:
       Host: us.insbot.filegear-sg.me
     path: /aa
+- name: 立陶宛 022
+  type: vless
+  network: grpc
+  server: 84.32.9.41
+  port: 8880
+  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
+  skip-cert-verify: false
+  tls: true
+  udp: true
+  tfo: false
+- name: 立陶宛 023
+  type: vless
+  network: grpc
+  server: 84.32.9.55
+  port: 8880
+  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
+  skip-cert-verify: false
+  tls: true
+  udp: true
+  tfo: false
+- name: 伊朗 010
+  type: vmess
+  network: tcp
+  server: fl.pr0xymare.com
+  port: 3378
+  uuid: b3a6435b-feae-41f4-a6b8-cf3c09e536e1
+  skip-cert-verify: true
+  alterId: 0
+  cipher: auto
+- name: 美国 347
+  type: vmess
+  network: ws
+  server: us01.sh-cloudflare.sbs
+  port: 8443
+  uuid: 914584ee-3515-46ac-a09d-4677a2e9dc9a
+  servername: us01.sh-cloudflare.sbs
+  tls: true
+  udp: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: us01.sh-cloudflare.sbs
+    path: /
+- name: 美国 348
+  type: vmess
+  network: tcp
+  server: 186.190.215.93
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  tls: false
+  alterId: 0
+  cipher: auto
+  raw:
+    add: 186.190.215.93
+    aid: '0'
+    alpn: ''
+    fp: ''
+    host: ''
+    id: 04621bae-ab36-11ec-b909-0242ac120002
+    net: tcp
+    path: /
+    port: 22324
+    ps: 🇵🇦 PA_182
+    scy: ''
+    sni: ''
+    tls: ''
+    type: ''
+    v: '2'
+- name: 伊朗 011
+  type: vmess
+  network: tcp
+  server: 37.27.182.109
+  port: 3378
+  uuid: b3a6435b-feae-41f4-a6b8-cf3c09e536e1
+  tls: false
+  alterId: 0
+  cipher: auto
+  raw:
+    add: 37.27.182.109
+    aid: '0'
+    alpn: ''
+    fp: ''
+    host: ''
+    id: b3a6435b-feae-41f4-a6b8-cf3c09e536e1
+    net: tcp
+    path: ''
+    port: 3378
+    ps: 🔥Join+Telegram:@FarahVPN🟣
+    scy: auto
+    sni: ''
+    tls: none
+    type: ''
+    v: '2'
+- name: 美国 349
+  type: vless
+  network: ws
+  server: nextgenerationaiplatform.ir
+  port: 443
+  uuid: fe069d77-882c-4175-b48e-c79e3fe65a81
+  servername: nextgenerationaiplatform.ir
+  skip-cert-verify: false
+  tls: true
+  udp: true
+  tfo: false
+  client-fingerprint: chrome
+  ws-opts:
+    headers:
+      Host: nextgenerationaiplatform.ir
+    path: /fsafasfsafA
+- name: 美国 350
+  type: vmess
+  network: ws
+  server: 12955d58-submo0-su9w3p-4mce.fmt-us.sghuawei.com
+  port: 422
+  uuid: 06c625ea-5902-11ee-9e87-f23c9313b177
+  tls: false
+  alterId: 2
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- name: 美国 351
+  type: vmess
+  network: ws
+  server: ca21ce07-submo0-su9xu5-1phl.fmt2-us.sghuawei.com
+  port: 422
+  uuid: 0aed82ca-fd08-11ef-8cf9-f23c93136cb3
+  tls: false
+  alterId: 2
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: webrtcpunch.video.qq.com
+    path: /
+- name: 美国 352
+  type: vmess
+  network: ws
+  server: c5c81482-submo0-su9xu5-1phl.fmt-us.sghuawei.com
+  port: 422
+  uuid: 0aed82ca-fd08-11ef-8cf9-f23c93136cb3
+  tls: false
+  alterId: 2
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- name: 美国 353
+  type: vmess
+  network: ws
+  server: c7bd4bf3-submo0-sv7oxj-9zm8.fmt2-us.sghuawei.com
+  port: 422
+  uuid: 583509cc-8c38-11ef-9bc6-f23c93136cb3
+  tls: false
+  alterId: 2
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: webrtcpunch.video.qq.com
+    path: /
+- name: 美国 354
+  type: trojan
+  network: tcp
+  server: 35.169.150.100
+  port: 22222
+  password: telegram-id-directvpn
+  skip-cert-verify: false
+  tls: true
+  sni: trojan.burgerip.co.uk
+  allowInsecure: ''
+- name: 美国 355
+  type: vmess
+  network: ws
+  server: 5509f5ae-submo0-svbnjs-c618.fmt-us.sghuawei.com
+  port: 422
+  uuid: 1e0f519c-da50-11ef-baa9-f23c93141fad
+  tls: false
+  alterId: 2
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- name: 韩国 001
+  type: vmess
+  network: ws
+  server: 140.238.31.168
+  port: 8080
+  uuid: efb748ec-c921-42a1-ac9e-1d5485d6c447
+  skip-cert-verify: false
+  tls: false
+  tfo: false
+  alterId: 1
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: download.windowsupdate.com
+    path: /download
+- name: 美国 356
+  type: trojan
+  network: tcp
+  server: 18.156.49.184
+  port: 22222
+  password: telegram-id-privatevpns
+  skip-cert-verify: false
+  tls: true
+  sni: trojan.burgerip.co.uk
+  allowInsecure: ''
+- name: 美国 357
+  type: trojan
+  network: ws
+  server: ru1a.88888007.xyz
+  port: 443
+  password: c97cf46e-1554-36cb-8b36-c3556b883dc4
+  skip-cert-verify: false
+  sni: ru1a.88888007.xyz
+  ws-opts:
+    headers:
+      Host: ru1a.88888007.xyz
+    path: /3f741a9f-3c66-4102-838c-c77524d32d85
+- name: 美国 358
+  type: vmess
+  network: ws
+  server: 172.67.189.27
+  port: 2053
+  uuid: f082eeca-e068-45f9-d1bf-46e9de9bdf57
+  servername: ny2-sub.930.pp.ua
+  tls: true
+  alterId: 0
+  cipher: auto
+  raw:
+    add: 172.67.189.27
+    aid: '0'
+    alpn: ''
+    fp: ''
+    host: ny2-sub.930.pp.ua
+    id: f082eeca-e068-45f9-d1bf-46e9de9bdf57
+    net: ws
+    path: /ny2-sub.930.pp.ua
+    port: '2053'
+    ps: 🔥Join+Telegram:@FarahVPN🟣
+    scy: auto
+    sni: ny2-sub.930.pp.ua
+    tls: tls
+    type: ''
+    v: '2'
+  ws-opts:
+    headers:
+      Host: ny2-sub.930.pp.ua
+    path: /ny2-sub.930.pp.ua
+- name: 美国 359
+  type: trojan
+  network: ws
+  server: 104.21.21.226
+  port: 443
+  password: 6040a753-e35b-4384-8713-96f3c639b621
+  skip-cert-verify: true
+  udp: true
+  tfo: false
+  sni: uK803.890689.Xyz
+  ws-opts:
+    headers:
+      Host: uK803.890689.Xyz
+    path: /WxWOWO1YA9bs2HOmaeWimvT3
+- name: 美国 360
+  type: trojan
+  network: ws
+  server: us4a.88888007.xyz
+  port: 443
+  password: c97cf46e-1554-36cb-8b36-c3556b883dc4
+  skip-cert-verify: false
+  sni: us4a.88888007.xyz
+  ws-opts:
+    headers:
+      Host: us4a.88888007.xyz
+    path: /92024db4-eadf-4cd1-b7e5-87d047d353f0
+- name: 美国 361
+  type: vmess
+  network: ws
+  server: 104.21.57.38
+  port: 2053
+  uuid: f082eeca-e068-45f9-d1bf-46e9de9bdf57
+  servername: ny2-sub.930.pp.ua
+  tls: true
+  alterId: 0
+  cipher: auto
+  raw:
+    add: 104.21.57.38
+    aid: '0'
+    alpn: ''
+    fp: ''
+    host: ny2-sub.930.pp.ua
+    id: f082eeca-e068-45f9-d1bf-46e9de9bdf57
+    net: ws
+    path: /ny2-sub.930.pp.ua
+    port: '2053'
+    ps: 🔥Join+Telegram:@FarahVPN🟣
+    scy: auto
+    sni: ny2-sub.930.pp.ua
+    tls: tls
+    type: ''
+    v: '2'
+  ws-opts:
+    headers:
+      Host: ny2-sub.930.pp.ua
+    path: /ny2-sub.930.pp.ua
+- name: 美国 362
+  type: vmess
+  network: ws
+  server: 172.67.189.27
+  port: 2083
+  uuid: f082eeca-e068-45f9-d1bf-46e9de9bdf57
+  servername: ny2-sub.930.pp.ua
+  tls: true
+  alterId: 0
+  cipher: auto
+  raw:
+    add: 172.67.189.27
+    aid: '0'
+    alpn: ''
+    fp: ''
+    host: ny2-sub.930.pp.ua
+    id: f082eeca-e068-45f9-d1bf-46e9de9bdf57
+    net: ws
+    path: /ny2-sub.930.pp.ua
+    port: '2083'
+    ps: 🔥Join+Telegram:@FarahVPN🟣
+    scy: auto
+    sni: ny2-sub.930.pp.ua
+    tls: tls
+    type: ''
+    v: '2'
+  ws-opts:
+    headers:
+      Host: ny2-sub.930.pp.ua
+    path: /ny2-sub.930.pp.ua
+- name: 美国 363
+  type: trojan
+  network: ws
+  server: us2a.88888007.xyz
+  port: 443
+  password: c97cf46e-1554-36cb-8b36-c3556b883dc4
+  skip-cert-verify: false
+  sni: us2a.88888007.xyz
+  ws-opts:
+    headers:
+      Host: us2a.88888007.xyz
+    path: /92024db4-eadf-4cd1-b7e5-87d047d353f0
+- name: 美国 364
+  type: trojan
+  network: ws
+  server: us3a.88888007.xyz
+  port: 443
+  password: c97cf46e-1554-36cb-8b36-c3556b883dc4
+  skip-cert-verify: false
+  sni: us3a.88888007.xyz
+  ws-opts:
+    headers:
+      Host: us3a.88888007.xyz
+    path: /92024db4-eadf-4cd1-b7e5-87d047d353f0
+- name: 美国 365
+  type: trojan
+  network: ws
+  server: fr2a.88888007.xyz
+  port: 443
+  password: c97cf46e-1554-36cb-8b36-c3556b883dc4
+  skip-cert-verify: false
+  sni: fr2a.88888007.xyz
+  ws-opts:
+    headers:
+      Host: fr2a.88888007.xyz
+    path: /3f741a9f-3c66-4102-838c-c77524d32d85
+- name: 美国 366
+  type: trojan
+  network: ws
+  server: 172.67.204.22
+  port: 443
+  password: 4d04b30c-ef7b-4a07-8f9e-f581ec171f8a
+  skip-cert-verify: false
+  tls: true
+  sni: US7-08.890602.xyZ
+  allowInsecure: ''
+  ws-opts:
+    headers:
+      Host: us7-08.890602.xyz
+    path: /Zseq8mE8wMzbGFtV
+- name: 立陶宛 024
+  type: vless
+  network: grpc
+  server: 84.32.9.46
+  port: 8880
+  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
+  skip-cert-verify: false
+  tls: true
+  udp: true
+  tfo: false
+- name: 美国 367
+  type: vmess
+  network: ws
+  server: 172.67.189.27
+  port: 2087
+  uuid: bc86f949-7152-4367-92f5-7a11eacf9c9b
+  servername: lon2-sub.930.pp.ua
+  skip-cert-verify: true
+  tls: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: lon2-sub.930.pp.ua
+    path: /lon2-sub.930.pp.ua
+- name: 德国 016
+  type: vless
+  network: xhttp
+  server: germahy.nakarjgemming.ir
+  port: 8443
+  uuid: c44fbe30-1989-4917-bdae-04ef1315c4c8
+  servername: germahy.nakarjgemming.ir
+  skip-cert-verify: false
+  tls: true
+  udp: true
+  tfo: false
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXY
   type: select
@@ -7625,6 +8050,34 @@ proxy-groups:
   - 美国 344
   - 美国 345
   - 美国 346
+  - 立陶宛 022
+  - 立陶宛 023
+  - 伊朗 010
+  - 美国 347
+  - 美国 348
+  - 伊朗 011
+  - 美国 349
+  - 美国 350
+  - 美国 351
+  - 美国 352
+  - 美国 353
+  - 美国 354
+  - 美国 355
+  - 韩国 001
+  - 美国 356
+  - 美国 357
+  - 美国 358
+  - 美国 359
+  - 美国 360
+  - 美国 361
+  - 美国 362
+  - 美国 363
+  - 美国 364
+  - 美国 365
+  - 美国 366
+  - 立陶宛 024
+  - 美国 367
+  - 德国 016
 - name: LOAD-BALANCE
   type: load-balance
   url: https://cp.cloudflare.com/generate_204
