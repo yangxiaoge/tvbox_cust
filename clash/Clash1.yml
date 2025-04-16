@@ -12037,16 +12037,6 @@ proxies:
     headers:
       Host: yellow-paper-029c.yvonna.workers.dev
     path: /az05.beyondy.cfd/link?/TM
-- name: 美国 555
-  type: trojan
-  network: tcp
-  server: 3.72.227.235
-  port: 22222
-  password: telegram-id-privatevpns
-  skip-cert-verify: false
-  tls: true
-  sni: trojan.burgerip.co.uk
-  allowInsecure: ''
 - name: 美国 556
   type: vmess
   network: ws
@@ -12121,6 +12111,208 @@ proxies:
     headers:
       Host: m8s.457.pp.ua
     path: /m8s.457.pp.ua
+- name: IPV6 001
+  type: vless
+  network: grpc
+  server: ::ffff:85.209.156.7
+  port: 8880
+  uuid: 46db85a1-9d97-46f8-9b7a-ff9704510e5e
+  skip-cert-verify: false
+  tls: true
+  udp: true
+  tfo: false
+- name: 美国 555
+  type: vless
+  network: grpc
+  server: 5.253.30.14
+  port: 8880
+  uuid: c7d4b0f6-0f18-45a3-97c7-caaf373f032d
+  skip-cert-verify: false
+  tls: true
+  udp: true
+  tfo: false
+- name: 美国 558
+  type: vless
+  network: ws
+  server: 104.21.8.59
+  port: 443
+  uuid: d118038f-0d72-4b45-8cce-bcf237487f41
+  servername: xxx.66500-280b-471c-b2b8-d68b7f9960009.workers.dev
+  skip-cert-verify: false
+  tls: true
+  udp: true
+  tfo: false
+  client-fingerprint: chrome
+  ws-opts:
+    headers:
+      Host: xxx.66500-280b-471c-b2b8-d68b7f9960009.workers.dev
+    path: /?ed=2048
+- name: 立陶宛 036
+  type: vless
+  network: grpc
+  server: 185.8.105.254
+  port: 8880
+  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
+  skip-cert-verify: false
+  tls: true
+  udp: true
+  tfo: false
+- name: 立陶宛 037
+  type: vless
+  network: grpc
+  server: 84.32.25.111
+  port: 8880
+  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
+  skip-cert-verify: false
+  tls: true
+  udp: true
+  tfo: false
+- name: 立陶宛 038
+  type: vless
+  network: grpc
+  server: 84.32.9.31
+  port: 8880
+  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
+  skip-cert-verify: false
+  tls: true
+  udp: true
+  tfo: false
+- name: 瑞士 001
+  type: trojan
+  network: tcp
+  server: 250407.jichang.my
+  port: 52803
+  password: 20bc0771-1fde-45ee-8052-3c26249c43dc
+  skip-cert-verify: false
+  tls: true
+  sni: seoul3.678789.xyz
+  allowInsecure: ''
+- name: 美国 559
+  type: vmess
+  network: ws
+  server: 104.21.64.1
+  port: 2053
+  uuid: 965ed2bb-eb8e-4468-a890-f3a32233ed02
+  servername: 5u-s.445.pp.ua
+  skip-cert-verify: true
+  tls: true
+  udp: true
+  tfo: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: 5u-s.445.pp.ua
+    path: /5u-s.445.pp.ua
+- name: 美国 560
+  type: vmess
+  network: ws
+  server: tYu9G5.890617.Xyz
+  port: 443
+  uuid: d67cfeaf-b277-44ac-ab99-9dd02a7c5299
+  servername: tyu9g5.890617.xyz
+  skip-cert-verify: true
+  tls: true
+  alterId: 0
+  cipher: auto
+  delay: 2765
+  ws-opts:
+    headers:
+      Host: tyu9g5.890617.xyz
+    path: /q2hGWwflPDbymaoOj85lz42MdhsCLV
+- name: 韩国 006
+  type: trojan
+  network: ws
+  server: 110.9.4.54
+  port: 50004
+  password: ji0612uenfs
+  skip-cert-verify: true
+  sni: ji0612e.nfjunka.xyz
+  ws-opts:
+    headers:
+      Host: ji0612e.nfjunka.xyz
+    path: /?ed=2560&proxyip=110.9.4.54:50004
+- name: 澳大利亚 003
+  type: trojan
+  network: ws
+  server: 192.65.217.53
+  port: 8443
+  password: '123456'
+  skip-cert-verify: false
+  tls: true
+  sni: top-azx.pages.dev
+  allowInsecure: ''
+  ws-opts:
+    headers:
+      Host: top-azx.pages.dev
+    path: /Az1.vpn.33.TOP/?ed=2560
+- name: 美国 561
+  type: trojan
+  network: ws
+  server: 162.159.129.11
+  port: 2053
+  password: amclubs
+  skip-cert-verify: false
+  sni: tran.amclubs.rr.nu
+  ws-opts:
+    headers:
+      Host: tran.amclubs.rr.nu
+    path: /?ed=2560
+- name: 瑞士 002
+  type: trojan
+  network: tcp
+  server: 141.148.158.215
+  port: 34865
+  password: 20bc0771-1fde-45ee-8052-3c26249c43dc
+  skip-cert-verify: false
+  tls: true
+  sni: zurich.678789.xyz
+  allowInsecure: ''
+- name: 美国 562
+  type: vmess
+  network: ws
+  server: 104.21.23.210
+  port: 2053
+  uuid: d2fbbad7-3d1b-4bfb-fe4a-27bd45e25df0
+  servername: rak1-d.932.pp.ua
+  tls: true
+  alterId: 0
+  cipher: auto
+  raw:
+    add: 104.21.23.210
+    aid: 0
+    alpn: ''
+    fp: ''
+    host: rak1-d.932.pp.ua
+    id: d2fbbad7-3d1b-4bfb-fe4a-27bd45e25df0
+    net: ws
+    path: /rak1-d.932.pp.ua
+    port: 2053
+    ps: 🔥Join+Telegram:@FarahVPN🟣
+    scy: ''
+    sni: rak1-d.932.pp.ua
+    tls: tls
+    type: ''
+    v: 2
+  ws-opts:
+    headers:
+      Host: rak1-d.932.pp.ua
+    path: /rak1-d.932.pp.ua
+- name: 美国 563
+  type: vmess
+  network: ws
+  server: sanjose01.890614.filegear-sg.me
+  port: 443
+  uuid: 89c1aea7-4d0d-4013-b663-0f94a3e6bdbd
+  servername: sanjose01.890614.filegear-sg.me
+  skip-cert-verify: false
+  tls: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: sanjose01.890614.filegear-sg.me
+    path: /YfB29GXf4cThJQeJb
 proxy-groups:
 - name: PROXY
   type: select
@@ -12947,10 +13139,24 @@ proxy-groups:
   - 美国 553
   - 美国 554
   - 俄罗斯 010
-  - 美国 555
   - 美国 556
   - 德国 029
   - 美国 557
+  - IPV6 001
+  - 美国 555
+  - 美国 558
+  - 立陶宛 036
+  - 立陶宛 037
+  - 立陶宛 038
+  - 瑞士 001
+  - 美国 559
+  - 美国 560
+  - 韩国 006
+  - 澳大利亚 003
+  - 美国 561
+  - 瑞士 002
+  - 美国 562
+  - 美国 563
 - name: LOAD-BALANCE
   type: load-balance
   url: https://cp.cloudflare.com/generate_204
