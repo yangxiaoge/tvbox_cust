@@ -1703,6 +1703,21 @@ proxies:
     headers:
       Host: ip4-jp1.vp1000.net
     path: /pulicpaylfastpDisney
+- name: 美国 052
+  type: vmess
+  network: ws
+  server: us01.sh-cloudflare.sbs
+  port: 8443
+  uuid: 10749b58-d2ce-48db-997a-986d7c2dec35
+  servername: us01.sh-cloudflare.sbs
+  tls: true
+  udp: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: us01.sh-cloudflare.sbs
+    path: /
 proxy-groups:
 - name: PROXY
   type: select
@@ -1831,6 +1846,7 @@ proxy-groups:
   - 美国 045
   - 美国 047
   - 美国 050
+  - 美国 052
 - name: LOAD-BALANCE
   type: load-balance
   url: https://cp.cloudflare.com/generate_204
