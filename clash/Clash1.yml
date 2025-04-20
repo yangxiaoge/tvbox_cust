@@ -1718,6 +1718,19 @@ proxies:
     headers:
       Host: us01.sh-cloudflare.sbs
     path: /
+- name: 美国 053
+  type: vmess
+  network: ws
+  server: 1744007541.tencentapp.cn
+  port: 8443
+  uuid: 381cb6d1-6ad4-4909-8494-b8d786cf78ce
+  tls: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: 1744007578.speed.adl.cccp.freefly.pp.ua
+    path: /
 proxy-groups:
 - name: PROXY
   type: select
@@ -1847,6 +1860,7 @@ proxy-groups:
   - 美国 047
   - 美国 050
   - 美国 052
+  - 美国 053
 - name: LOAD-BALANCE
   type: load-balance
   url: https://cp.cloudflare.com/generate_204
