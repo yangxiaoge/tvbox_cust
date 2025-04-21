@@ -1731,6 +1731,17 @@ proxies:
     headers:
       Host: 1744007578.speed.adl.cccp.freefly.pp.ua
     path: /
+- name: 美国 054
+  type: trojan
+  network: ws
+  server: 104.21.23.115
+  port: 443
+  password: 5453ae26-250d-4e79-b4ec-016baf806865
+  sni: 1cc.852224.ggff.net
+  ws-opts:
+    headers:
+      Host: 1cc.852224.ggff.net
+    path: /OYzPAeaZdXUq2d6J3gc4aj
 proxy-groups:
 - name: PROXY
   type: select
@@ -1861,6 +1872,7 @@ proxy-groups:
   - 美国 050
   - 美国 052
   - 美国 053
+  - 美国 054
 - name: LOAD-BALANCE
   type: load-balance
   url: https://cp.cloudflare.com/generate_204
