@@ -1742,6 +1742,17 @@ proxies:
     headers:
       Host: 1cc.852224.ggff.net
     path: /OYzPAeaZdXUq2d6J3gc4aj
+- name: 美国 055
+  type: trojan
+  network: ws
+  server: 172.67.210.210
+  port: 443
+  password: 5453ae26-250d-4e79-b4ec-016baf806865
+  sni: 1cc.852224.ggff.net
+  ws-opts:
+    headers:
+      Host: 1cc.852224.ggff.net
+    path: /OYzPAeaZdXUq2d6J3gc4aj
 proxy-groups:
 - name: PROXY
   type: select
@@ -1873,6 +1884,7 @@ proxy-groups:
   - 美国 052
   - 美国 053
   - 美国 054
+  - 美国 055
 - name: LOAD-BALANCE
   type: load-balance
   url: https://cp.cloudflare.com/generate_204
