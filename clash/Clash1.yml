@@ -1809,6 +1809,19 @@ proxies:
     headers:
       Host: ipsychO.SUEx12.Ir
     path: /trre5IzbZ9IZZMddtw
+- name: 加拿大 006
+  type: vmess
+  network: ws
+  server: s1.cn-db.top
+  port: 2082
+  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
+  tls: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: 100-150-51-99.s1.cn-db.top
+    path: /dabai.in172.64.27.73
 proxy-groups:
 - name: PROXY
   type: select
@@ -1945,6 +1958,7 @@ proxy-groups:
   - 美国 058
   - 美国 059
   - 美国 060
+  - 加拿大 006
 - name: LOAD-BALANCE
   type: load-balance
   url: https://cp.cloudflare.com/generate_204
