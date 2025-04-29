@@ -1371,7 +1371,7 @@ proxies:
     headers:
       Host: c01.ylkszy.eu.org
     path: /?ed=2560
-- name: 美国 035
+- name: 日本 001
   type: vmess
   network: ws
   server: tls.05.node-for-bigairport.win
@@ -1839,6 +1839,21 @@ proxies:
     headers:
       Host: xcmg15.dtkj0328.com
     path: /xcmg1234
+- name: 韩国 001
+  type: vmess
+  network: ws
+  server: 140.238.28.227
+  port: 8080
+  uuid: efb748ec-c921-42a1-ac9e-1d5485d6c447
+  skip-cert-verify: false
+  tls: false
+  tfo: false
+  alterId: 1
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: download.windowsupdate.com
+    path: /download
 proxy-groups:
 - name: PROXY
   type: select
@@ -1943,7 +1958,7 @@ proxy-groups:
   - 美国 027
   - 阿联酋 001
   - 美国 032
-  - 美国 035
+  - 日本 001
   - 美国 037
   - 美国 038
   - 美国 039
@@ -1977,6 +1992,7 @@ proxy-groups:
   - 美国 070
   - 荷兰 002
   - 荷兰 005
+  - 韩国 001
 - name: LOAD-BALANCE
   type: load-balance
   url: https://cp.cloudflare.com/generate_204
