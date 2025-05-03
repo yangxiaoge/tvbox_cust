@@ -1486,6 +1486,19 @@ proxies:
     headers:
       Host: us01.sh-cloudflare.sbs
     path: /
+- name: 美国 033
+  type: vmess
+  network: ws
+  server: cdnjs.com
+  port: 443
+  uuid: de94cc0a-0592-4969-b1fc-97ea8f0ea0b3
+  tls: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: creativeservices.netflix.com.wukong.asolole.biz.id
+    path: /us.kkp.me.eu.org/aa
 proxy-groups:
 - name: PROXY
   type: select
@@ -1598,6 +1611,7 @@ proxy-groups:
   - 哥斯达黎加 001
   - 美国 041
   - 美国 026
+  - 美国 033
 - name: LOAD-BALANCE
   type: load-balance
   url: https://cp.cloudflare.com/generate_204
