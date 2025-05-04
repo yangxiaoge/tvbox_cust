@@ -1499,6 +1499,19 @@ proxies:
     headers:
       Host: creativeservices.netflix.com.wukong.asolole.biz.id
     path: /us.kkp.me.eu.org/aa
+- name: 美国 035
+  type: vmess
+  network: ws
+  server: time.is
+  port: 443
+  uuid: 769062ef-3e09-4caa-a951-892b6f25cf4a
+  tls: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: shs111.kejixiaoqi666.store
+    path: /
 proxy-groups:
 - name: PROXY
   type: select
@@ -1612,6 +1625,7 @@ proxy-groups:
   - 美国 041
   - 美国 026
   - 美国 033
+  - 美国 035
 - name: LOAD-BALANCE
   type: load-balance
   url: https://cp.cloudflare.com/generate_204
