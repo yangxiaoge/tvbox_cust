@@ -1512,6 +1512,19 @@ proxies:
     headers:
       Host: shs111.kejixiaoqi666.store
     path: /
+- name: 美国 040
+  type: vmess
+  network: ws
+  server: 2e21cedc-fa8b-4020-8ce0-390e7287d276.890603.pp.ua
+  port: 443
+  uuid: 5453ae26-250d-4e79-b4ec-016baf806865
+  tls: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: 2E21CEDc-fA8B-4020-8Ce0-390e7287D276.890603.Pp.uA
+    path: /h7Rcu0y30lhjdVjJ3gc4aj
 proxy-groups:
 - name: PROXY
   type: select
@@ -1626,6 +1639,7 @@ proxy-groups:
   - 美国 026
   - 美国 033
   - 美国 035
+  - 美国 040
 - name: LOAD-BALANCE
   type: load-balance
   url: https://cp.cloudflare.com/generate_204
