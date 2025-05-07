@@ -1526,18 +1526,31 @@ proxies:
       Host: 2E21CEDc-fA8B-4020-8Ce0-390e7287D276.890603.Pp.uA
     path: /h7Rcu0y30lhjdVjJ3gc4aj
 - name: 美国 042
+  type: trojan
+  network: ws
+  server: 104.21.34.159
+  port: 443
+  password: 15b24b56-d667-4fa8-b548-f3dc942fb461
+  sni: 2qwert.2031.pp.ua
+  ws-opts:
+    headers:
+      Host: 2qwert.2031.pp.ua
+    path: /4p35eUnmGxQ8YJFJxz
+- name: 美国 043
   type: vmess
   network: ws
-  server: 38.150.34.202
-  port: 50279
-  uuid: 92362b77-a3bb-4cdd-a466-ca11e0819c08
-  tls: true
+  server: 104.18.114.1
+  port: 2086
+  uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
+  servername: m116.164748.xyz
+  tls: false
+  udp: true
   alterId: 0
   cipher: auto
   ws-opts:
     headers:
-      Host: www.a.wdhbvua.pics
-    path: /
+      Host: m116.164748.xyz
+    path: github.com/Alvin9999
 proxy-groups:
 - name: PROXY
   type: select
@@ -1654,6 +1667,7 @@ proxy-groups:
   - 美国 035
   - 美国 040
   - 美国 042
+  - 美国 043
 - name: LOAD-BALANCE
   type: load-balance
   url: https://cp.cloudflare.com/generate_204
