@@ -177,20 +177,6 @@ proxies:
     headers:
       Host: us.freeyyds.dpdns.org
     path: /rongseven?ed=2048
-- name: 美国 004
-  type: vmess
-  network: grpc
-  server: 212.50.251.20
-  port: 54739
-  uuid: 2f38f848-a899-4c87-9807-207a41615e3c
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  tfo: true
-  alterId: 0
-  cipher: auto
-  grpc-opts:
-    grpc-service-name: hkyydsrongseven
 - name: 美国 049
   type: vless
   network: ws
@@ -1582,6 +1568,36 @@ proxies:
     headers:
       Host: m116.164748.xyz
     path: github.com/Alvin9999
+- name: 美国 004
+  type: vmess
+  network: ws
+  server: 104.21.238.3
+  port: 2086
+  uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
+  servername: m116.164748.xyz
+  tls: false
+  udp: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: m116.164748.xyz
+    path: github.com/Alvin9999
+- name: 美国 050
+  type: vmess
+  network: ws
+  server: 104.21.238.4
+  port: 2086
+  uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
+  servername: m116.164748.xyz
+  tls: false
+  udp: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: m116.164748.xyz
+    path: github.com/Alvin9999
 proxy-groups:
 - name: PROXY
   type: select
@@ -1596,7 +1612,6 @@ proxy-groups:
   - 美国 001
   - 美国 002
   - 美国 003
-  - 美国 004
   - 美国 049
   - 美国 069
   - 美国 034
@@ -1701,6 +1716,8 @@ proxy-groups:
   - 美国 043
   - 美国 045
   - 美国 047
+  - 美国 004
+  - 美国 050
 - name: LOAD-BALANCE
   type: load-balance
   url: https://cp.cloudflare.com/generate_204
