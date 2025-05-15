@@ -1658,6 +1658,17 @@ proxies:
     headers:
       Host: m6278.164748.xyz
     path: github.com/Alvin9999
+- name: 波兰 001
+  type: trojan
+  network: ws
+  server: bg.madison.eu.org
+  port: 443
+  password: bpb-trojan
+  sni: skwygx.top
+  ws-opts:
+    headers:
+      Host: skwygx.top
+    path: /tr
 proxy-groups:
 - name: PROXY
   type: select
@@ -1782,6 +1793,7 @@ proxy-groups:
   - 美国 053
   - 美国 054
   - 美国 055
+  - 波兰 001
 - name: LOAD-BALANCE
   type: load-balance
   url: https://cp.cloudflare.com/generate_204
