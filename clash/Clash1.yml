@@ -130,6 +130,66 @@ dns:
     - +.googleapis.com
 proxies:
 - name: 美国 001
+  type: vless
+  network: ws
+  server: www.clickbank.com
+  port: 80
+  uuid: 5aebf7d1-fb08-4200-9ab3-9ae3c01ab356
+  udp: true
+  smux:
+    enabled: false
+    max_streams: 8
+    protocol: h2mux
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: dbe661d5a761ff6c.s-5HU09JDF-97SHS.WWWrubika.irto.xn--ls8haaaaaaaaaaaaaaaaaa.la.which.xn--ls8haaaaaaaaaaaaaaaaaa.xn-ls8faaaaaaaaaa.speedtest.net.google.com.eu.ir.nl.aparat.com.komak.IR.Hj-De.85858569.xYz.
+      User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/124.0.0.0 Safari/537.36
+    ip-version: dual
+    max-early-data: 2050
+    path: /hajmi
+- name: 荷兰 001
+  type: vless
+  network: ws
+  server: www.eshipz.com
+  port: 80
+  uuid: 5aebf7d1-fb08-4200-9ab3-9ae3c01ab356
+  udp: true
+  smux:
+    enabled: false
+    max_streams: 8
+    protocol: h2mux
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: dbe661d5a761ff6c.s-5HU09JDF-97SHS.WWWrubika.irto.xn--ls8haaaaaaaaaaaaaaaaaa.la.which.xn--ls8haaaaaaaaaaaaaaaaaa.xn-ls8faaaaaaaaaa.speedtest.net.google.com.eu.ir.nl.aparat.com.komak.IR.Hj-En.85858569.xYz.
+      User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/117.0.0.0 Mobile Safari/537.36
+    ip-version: dual
+    max-early-data: 2050
+    path: /hajmi
+- name: 美国 002
+  type: vless
+  network: ws
+  server: www.drctcldfa.com
+  port: 80
+  uuid: 5aebf7d1-fb08-4200-9ab3-9ae3c01ab356
+  udp: true
+  smux:
+    enabled: false
+    max_streams: 8
+    protocol: h2mux
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: dbe661d5a761ff6c.s-5HU09JDF-97SHS.WWWrubika.irto.xn--ls8haaaaaaaaaaaaaaaaaa.la.which.xn--ls8haaaaaaaaaaaaaaaaaa.xn-ls8faaaaaaaaaa.speedtest.net.google.com.eu.ir.nl.aparat.com.komak.IR.Hj-Us.85858569.xYz.
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/125.0.0.0 Safari/537.36
+    ip-version: dual
+    max-early-data: 2050
+    path: /hajmi
+- name: 美国 003
   type: vmess
   network: ws
   server: www.hdmoli.com
@@ -145,7 +205,7 @@ proxies:
     headers:
       Host: fr.freeyyds.dpdns.org
     path: /rongseven?ed=2048
-- name: 美国 002
+- name: 美国 004
   type: vmess
   network: ws
   server: www.xinjuc.com
@@ -161,7 +221,7 @@ proxies:
     headers:
       Host: hk.freeyyds.dpdns.org
     path: /rongseven?ed=2048
-- name: 美国 003
+- name: 美国 005
   type: vmess
   network: ws
   server: www.wn03.cc
@@ -548,7 +608,7 @@ proxies:
     headers:
       Host: patient-shadow-baf1-ppal03.hohel98085.workers.dev
     path: /?ed=2560
-- name: 荷兰 001
+- name: 荷兰 002
   type: vless
   network: ws
   server: 45.131.5.111
@@ -905,7 +965,7 @@ proxies:
     headers:
       Host: Yak-Khanda-kUn-eY-gUL.biNG.com.xn--cR8HaaaAaAAAaAaaAaAaAAaAAaaaAAAAAaAaaAaaaAaaaaAAaaAAAaaaaAa.xN--Cr8hAaAaaAaaAAAAAAaaaAAAaAAaaAaAaAAAAAA.TREPAspeEdTEsT.NEtrag.cOm.PX.Com.sh017.IR.XN--Cr8hAaaAaaAaaAaaaAAAaaaAaaAaaaAaAAAaaaA.yek.dDnS-ip.nEt
     path: /?ed=1080
-- name: 美国 005
+- name: 美国 007
   type: vmess
   network: ws
   server: AC.fastly80-2.hosting-ip.com
@@ -921,7 +981,7 @@ proxies:
     headers:
       Host: telegram-isvvpn.dev
     path: /racevpn
-- name: 美国 007
+- name: 美国 009
   type: vless
   network: ws
   server: 190.93.244.226
@@ -1088,7 +1148,7 @@ proxies:
     headers:
       Host: amd.al
     path: /XESALISTHEBEST?ed=2048
-- name: 美国 009
+- name: 美国 013
   type: vmess
   network: ws
   server: 151.101.130.168
@@ -1104,7 +1164,7 @@ proxies:
     headers:
       Host: amd.al
     path: /XESALISTHEBEST?ed=2048
-- name: 美国 013
+- name: 美国 014
   type: vmess
   network: ws
   server: 0000000000000000000000000080.cgroup-node-for-bigairport.sbs
@@ -1120,7 +1180,7 @@ proxies:
     headers:
       Host: 0000000000000000000000000080.cgroup-node-for-bigairport.sbs
     path: /
-- name: 美国 014
+- name: 美国 015
   type: vmess
   network: ws
   server: s1.db-link01.top
@@ -1135,7 +1195,7 @@ proxies:
     headers:
       Host: 100-151-164-47.s1.db-link01.top
     path: /dabai.in172.67.2.142
-- name: 美国 015
+- name: 美国 017
   type: vless
   network: ws
   server: www.parsvds.com
@@ -1149,7 +1209,7 @@ proxies:
     headers:
       Host: bEAt.MIRaclETaxbiTS.Top.
     path: /2083/
-- name: 美国 017
+- name: 美国 018
   type: vmess
   network: ws
   server: 104.21.44.185
@@ -1165,7 +1225,7 @@ proxies:
     headers:
       Host: Freedomisnear.onetwothree123.ir
     path: /mehdi
-- name: 美国 018
+- name: 美国 020
   type: vmess
   network: ws
   server: s3.cn-db.top
@@ -1179,7 +1239,7 @@ proxies:
     headers:
       Host: 100-119-215-158.s3.cn-db.top
     path: /
-- name: 美国 020
+- name: 美国 022
   type: vmess
   network: ws
   server: 156.229.48.237
@@ -1209,7 +1269,7 @@ proxies:
     headers:
       Host: 100-128-12-180.s4.db-link02.top
     path: /dabai.in104.25.239.131
-- name: 美国 022
+- name: 美国 023
   type: trojan
   network: ws
   server: 172.66.44.230
@@ -1223,7 +1283,7 @@ proxies:
     headers:
       Host: Koma-YT.PAGeS.Dev
     path: /tro8sFW1S91B6sZrM1?ed=2560
-- name: 美国 023
+- name: 美国 024
   type: vmess
   network: ws
   server: 104.16.155.10
@@ -1239,7 +1299,7 @@ proxies:
     headers:
       Host: 100-149-191-2.s5.db-link02.top
     path: /dabai.in104.20.16.209
-- name: 美国 024
+- name: 美国 026
   type: trojan
   network: ws
   server: 172.66.47.42
@@ -1267,7 +1327,7 @@ proxies:
     headers:
       Host: 100-47-154-9.s1.cn-db.top
     path: /
-- name: 美国 026
+- name: 美国 027
   type: vmess
   network: ws
   server: 1a2d514b-37cf-499f-8d08-d017a92ab5bb.asoul-ava.top
@@ -1328,7 +1388,7 @@ proxies:
     headers:
       Host: c01.ylkszy.eu.org
     path: /?ed=2560
-- name: 美国 027
+- name: 美国 032
   type: vless
   network: ws
   server: 129.151.225.228
@@ -1358,7 +1418,7 @@ proxies:
     headers:
       Host: c01.ylkszy.eu.org
     path: /?ed=2560
-- name: 美国 032
+- name: 美国 033
   type: vless
   network: ws
   server: 192.9.180.162
@@ -1473,7 +1533,7 @@ proxies:
     headers:
       Host: us148.vp1000.net
     path: /cp100vp800kkkdsnx
-- name: 美国 033
+- name: 美国 035
   type: vmess
   network: ws
   server: us01.sh-cloudflare.sbs
@@ -1488,7 +1548,7 @@ proxies:
     headers:
       Host: us01.sh-cloudflare.sbs
     path: /
-- name: 美国 035
+- name: 美国 040
   type: vmess
   network: ws
   server: cdnjs.com
@@ -1501,7 +1561,7 @@ proxies:
     headers:
       Host: creativeservices.netflix.com.wukong.asolole.biz.id
     path: /us.kkp.me.eu.org/aa
-- name: 美国 040
+- name: 美国 042
   type: vmess
   network: ws
   server: time.is
@@ -1514,7 +1574,7 @@ proxies:
     headers:
       Host: shs111.kejixiaoqi666.store
     path: /
-- name: 美国 042
+- name: 美国 043
   type: vmess
   network: ws
   server: 2e21cedc-fa8b-4020-8ce0-390e7287d276.890603.pp.ua
@@ -1527,7 +1587,7 @@ proxies:
     headers:
       Host: 2E21CEDc-fA8B-4020-8Ce0-390e7287D276.890603.Pp.uA
     path: /h7Rcu0y30lhjdVjJ3gc4aj
-- name: 美国 043
+- name: 美国 045
   type: trojan
   network: ws
   server: 104.21.34.159
@@ -1538,7 +1598,7 @@ proxies:
     headers:
       Host: 2qwert.2031.pp.ua
     path: /4p35eUnmGxQ8YJFJxz
-- name: 美国 045
+- name: 美国 047
   type: vmess
   network: ws
   server: 104.18.114.1
@@ -1553,7 +1613,7 @@ proxies:
     headers:
       Host: m116.164748.xyz
     path: github.com/Alvin9999
-- name: 美国 047
+- name: 美国 050
   type: vmess
   network: ws
   server: 104.18.114.2
@@ -1568,7 +1628,7 @@ proxies:
     headers:
       Host: m116.164748.xyz
     path: github.com/Alvin9999
-- name: 美国 004
+- name: 美国 052
   type: vmess
   network: ws
   server: 104.21.238.3
@@ -1583,7 +1643,7 @@ proxies:
     headers:
       Host: m116.164748.xyz
     path: github.com/Alvin9999
-- name: 美国 050
+- name: 美国 053
   type: vmess
   network: ws
   server: 104.21.238.4
@@ -1598,7 +1658,7 @@ proxies:
     headers:
       Host: m116.164748.xyz
     path: github.com/Alvin9999
-- name: 美国 052
+- name: 美国 054
   type: vmess
   network: ws
   server: 104.21.238.5
@@ -1613,7 +1673,7 @@ proxies:
     headers:
       Host: m116.164748.xyz
     path: github.com/Alvin9999
-- name: 美国 053
+- name: 美国 055
   type: vmess
   network: ws
   server: 104.21.238.6
@@ -1628,7 +1688,7 @@ proxies:
     headers:
       Host: m6199.164748.xyz
     path: github.com/Alvin9999
-- name: 美国 054
+- name: 美国 057
   type: vmess
   network: ws
   server: 104.21.238.7
@@ -1643,7 +1703,7 @@ proxies:
     headers:
       Host: m6238.164748.xyz
     path: github.com/Alvin9999
-- name: 美国 055
+- name: 美国 058
   type: vmess
   network: ws
   server: 104.21.238.8
@@ -1680,28 +1740,6 @@ proxies:
     headers:
       Host: icecream.955850.xyz
     path: /proxyip=45.67.215.234:443
-- name: 美国 057
-  type: trojan
-  network: ws
-  server: 192.0.54.184
-  port: 443
-  password: 6884d714-d3c4-4b49-aa20-767ea92837d6
-  sni: icecream.955850.xyz
-  ws-opts:
-    headers:
-      Host: icecream.955850.xyz
-    path: /proxyip=192.0.54.184:443
-- name: 俄罗斯 001
-  type: trojan
-  network: ws
-  server: 194.76.18.122
-  port: 443
-  password: 6884d714-d3c4-4b49-aa20-767ea92837d6
-  sni: icecream.955850.xyz
-  ws-opts:
-    headers:
-      Host: icecream.955850.xyz
-    path: /proxyip=194.76.18.122:443
 proxy-groups:
 - name: PROXY
   type: select
@@ -1714,8 +1752,11 @@ proxy-groups:
   type: select
   proxies: &id001
   - 美国 001
+  - 荷兰 001
   - 美国 002
   - 美国 003
+  - 美国 004
+  - 美国 005
   - 美国 049
   - 美国 069
   - 美国 034
@@ -1745,7 +1786,7 @@ proxy-groups:
   - 美国 112
   - 美国 122
   - 美国 006
-  - 荷兰 001
+  - 荷兰 002
   - 美国 008
   - 美国 012
   - 美国 021
@@ -1773,8 +1814,8 @@ proxy-groups:
   - 荷兰 017
   - 美国 182
   - 美国 183
-  - 美国 005
   - 美国 007
+  - 美国 009
   - 印度 001
   - 美国 028
   - 英国 001
@@ -1787,25 +1828,25 @@ proxy-groups:
   - 美国 079
   - 伊朗 007
   - 美国 092
-  - 美国 009
   - 美国 013
   - 美国 014
   - 美国 015
   - 美国 017
   - 美国 018
   - 美国 020
-  - 加拿大 002
   - 美国 022
+  - 加拿大 002
   - 美国 023
   - 美国 024
-  - 加拿大 004
   - 美国 026
+  - 加拿大 004
+  - 美国 027
   - 俄罗斯 002
   - 加拿大 005
   - 新加坡 001
-  - 美国 027
-  - 阿联酋 001
   - 美国 032
+  - 阿联酋 001
+  - 美国 033
   - 日本 001
   - 美国 037
   - 美国 038
@@ -1813,23 +1854,21 @@ proxy-groups:
   - 英国 002
   - 哥斯达黎加 001
   - 美国 041
-  - 美国 033
   - 美国 035
   - 美国 040
   - 美国 042
   - 美国 043
   - 美国 045
   - 美国 047
-  - 美国 004
   - 美国 050
   - 美国 052
   - 美国 053
   - 美国 054
   - 美国 055
+  - 美国 057
+  - 美国 058
   - 波兰 001
   - 乌克兰 001
-  - 美国 057
-  - 俄罗斯 001
 - name: LOAD-BALANCE
   type: load-balance
   url: https://cp.cloudflare.com/generate_204
