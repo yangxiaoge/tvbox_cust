@@ -1751,6 +1751,17 @@ proxies:
     headers:
       Host: icecream.955850.xyz
     path: /
+- name: 俄罗斯 001
+  type: trojan
+  network: ws
+  server: 194.76.18.129
+  port: 443
+  password: 6884d714-d3c4-4b49-aa20-767ea92837d6
+  sni: icecream.955850.xyz
+  ws-opts:
+    headers:
+      Host: icecream.955850.xyz
+    path: /proxyip=194.76.18.129:443
 proxy-groups:
 - name: PROXY
   type: select
@@ -1881,6 +1892,7 @@ proxy-groups:
   - 波兰 001
   - 乌克兰 001
   - 德国 001
+  - 俄罗斯 001
 - name: LOAD-BALANCE
   type: load-balance
   url: https://cp.cloudflare.com/generate_204
