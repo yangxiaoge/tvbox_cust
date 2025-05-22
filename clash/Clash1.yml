@@ -1762,6 +1762,17 @@ proxies:
     headers:
       Host: icecream.955850.xyz
     path: /proxyip=194.76.18.129:443
+- name: 美国 059
+  type: trojan
+  network: ws
+  server: 172.67.181.193
+  port: 443
+  password: c8eac4b7-95ba-4ce0-920d-c3279eb3b391
+  sni: EEeEee4.hUAngSHANG2030.dPdNS.org
+  ws-opts:
+    headers:
+      Host: EEeEee4.hUAngSHANG2030.dPdNS.org
+    path: /ptGwaGzcA4KNAXX
 proxy-groups:
 - name: PROXY
   type: select
@@ -1893,6 +1904,7 @@ proxy-groups:
   - 乌克兰 001
   - 德国 001
   - 俄罗斯 001
+  - 美国 059
 - name: LOAD-BALANCE
   type: load-balance
   url: https://cp.cloudflare.com/generate_204
