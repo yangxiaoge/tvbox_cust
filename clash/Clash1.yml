@@ -1773,6 +1773,19 @@ proxies:
     headers:
       Host: EEeEee4.hUAngSHANG2030.dPdNS.org
     path: /ptGwaGzcA4KNAXX
+- name: 美国 060
+  type: vmess
+  network: ws
+  server: cs.flha.ru
+  port: 2082
+  uuid: 2f821152-c3e9-4074-9185-2790e7425f42
+  tls: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: cs.flha.ru
+    path: /
 proxy-groups:
 - name: PROXY
   type: select
@@ -1905,6 +1918,7 @@ proxy-groups:
   - 德国 001
   - 俄罗斯 001
   - 美国 059
+  - 美国 060
 - name: LOAD-BALANCE
   type: load-balance
   url: https://cp.cloudflare.com/generate_204
