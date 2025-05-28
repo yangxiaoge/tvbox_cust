@@ -1843,6 +1843,19 @@ proxies:
     headers:
       Host: m6758.164748.xyz
     path: github.com/Alvin9999
+- name: 美国 065
+  type: vmess
+  network: ws
+  server: auth0.openai.com
+  port: 443
+  uuid: e537f2f5-2a0c-4f59-92c9-832ca6433bf3
+  tls: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: admin.kasrax.ir
+    path: /irvideo.cfd/linkws
 proxy-groups:
 - name: PROXY
   type: select
@@ -1980,6 +1993,7 @@ proxy-groups:
   - 美国 062
   - 美国 063
   - 美国 064
+  - 美国 065
 - name: LOAD-BALANCE
   type: load-balance
   url: https://cp.cloudflare.com/generate_204
