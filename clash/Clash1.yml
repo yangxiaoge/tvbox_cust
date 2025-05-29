@@ -1856,6 +1856,19 @@ proxies:
     headers:
       Host: admin.kasrax.ir
     path: /irvideo.cfd/linkws
+- name: 英国 003
+  type: vmess
+  network: grpc
+  server: de.vmess.comnpmjs.com
+  port: 443
+  uuid: ceaaf653-9874-58c6-b100-092c01a1f73d
+  servername: de.vmess.comnpmjs.com
+  skip-cert-verify: false
+  tls: true
+  alterId: 0
+  cipher: auto
+  grpc-opts:
+    grpc-service-name: vmess-grpc
 proxy-groups:
 - name: PROXY
   type: select
@@ -1994,6 +2007,7 @@ proxy-groups:
   - 美国 063
   - 美国 064
   - 美国 065
+  - 英国 003
 - name: LOAD-BALANCE
   type: load-balance
   url: https://cp.cloudflare.com/generate_204
