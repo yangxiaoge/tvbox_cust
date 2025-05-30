@@ -1103,20 +1103,6 @@ proxies:
     headers:
       Host: us03s.5d8ecf82.cfd
     path: /
-- name: 希腊 001
-  type: vless
-  network: ws
-  server: 31.22.116.38
-  port: 443
-  uuid: 7671069f-ce73-4977-be03-414e79f1d7cd
-  servername: usd.kobtty.me
-  tls: true
-  udp: true
-  delay: 2146
-  ws-opts:
-    headers:
-      Host: usd.kobtty.me
-    path: /bing
 - name: 美国 076
   type: vmess
   network: ws
@@ -1180,22 +1166,6 @@ proxies:
     headers:
       Host: amd.al
     path: /XESALISTHEBEST?ed=2048
-- name: 美国 015
-  type: vmess
-  network: ws
-  server: 0000000000000000000000000080.cgroup-node-for-bigairport.sbs
-  port: 42360
-  uuid: 3519dfc0-fa27-41cc-8c19-981818f9f6d5
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  tfo: false
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: 0000000000000000000000000080.cgroup-node-for-bigairport.sbs
-    path: /
 - name: 美国 017
   type: vmess
   network: ws
@@ -1255,21 +1225,7 @@ proxies:
     headers:
       Host: 100-119-215-158.s3.cn-db.top
     path: /
-- name: 美国 023
-  type: vmess
-  network: ws
-  server: 156.229.48.237
-  port: 8443
-  uuid: 191babc5-2aaf-4fe5-a563-f14244aefb4e
-  skip-cert-verify: false
-  tls: true
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: lax1.ibgfw.top
-    path: /
-- name: 加拿大 002
+- name: 美国 015
   type: vmess
   network: ws
   server: s4.db-link02.top
@@ -1329,7 +1285,7 @@ proxies:
     headers:
       Host: NOp-55q.pAgEs.dEv
     path: /trGPZDfetEwuO25SAs?ed=2560
-- name: 加拿大 004
+- name: 美国 023
   type: vmess
   network: ws
   server: s1.cn-db.top
@@ -1477,20 +1433,6 @@ proxies:
   ws-opts:
     headers:
       Host: go.daluquan.top
-    path: /
-- name: 美国 038
-  type: vmess
-  network: ws
-  server: phx-plus-1ddns.faforex.eu.org
-  port: 23451
-  uuid: f845faba-ef07-4ef0-b055-866bbb81143c
-  tls: false
-  udp: true
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: phx-plus-1ddns.faforex.eu.org
     path: /
 - name: 美国 039
   type: vmess
@@ -1869,6 +1811,66 @@ proxies:
   cipher: auto
   grpc-opts:
     grpc-service-name: vmess-grpc
+- name: 美国 038
+  type: vmess
+  network: ws
+  server: Xcvfgt5.222560.xyz
+  port: 80
+  uuid: 19a78eeb-d83a-4364-b095-b7dd93436320
+  tls: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: Xcvfgt5.222560.xyz
+    path: /7LBPethgWxDoVuzO0WLijID
+- name: 美国 066
+  type: vmess
+  network: ws
+  server: xxxsde4.freevpnatm2025.dpdns.org
+  port: 80
+  uuid: 90f357dd-79ac-47c6-b0b8-958e2d19de07
+  tls: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: xxxsde4.freevpnatm2025.dpdns.org
+    path: /10W6SJaK0F0oVXeNU6S2RVRP
+- name: 美国 070
+  type: trojan
+  network: tcp
+  server: usla.mjt000.com
+  port: 443
+  password: e4af2638-bb12-4e4a-84f1-a032e23ca63f
+  skip-cert-verify: false
+  sni: usla.mjt000.com
+- name: 法国 001
+  type: trojan
+  network: ws
+  server: 141.11.203.191
+  port: 8443
+  password: Aimer
+  skip-cert-verify: false
+  udp: true
+  sni: epmw.ambercc.filegear-sg.me
+  ws-opts:
+    headers:
+      Host: epmw.ambercc.filegear-sg.me
+    path: /?ed=2560
+- name: 美国 071
+  type: trojan
+  network: ws
+  server: 108.165.152.58
+  port: 2087
+  password: Aimer
+  skip-cert-verify: false
+  udp: true
+  sni: epmw.ambercc.filegear-sg.me
+  ws-opts:
+    headers:
+      Host: epmw.ambercc.filegear-sg.me
+    path: /?ed=2560
 proxy-groups:
 - name: PROXY
   type: select
@@ -1953,23 +1955,20 @@ proxy-groups:
   - 美国 016
   - 美国 031
   - 美国 048
-  - 希腊 001
   - 美国 076
   - 美国 079
   - 伊朗 007
   - 美国 092
   - 美国 014
-  - 美国 015
   - 美国 017
   - 美国 018
   - 美国 020
   - 美国 022
-  - 美国 023
-  - 加拿大 002
+  - 美国 015
   - 美国 024
   - 美国 026
   - 美国 027
-  - 加拿大 004
+  - 美国 023
   - 美国 032
   - 俄罗斯 002
   - 加拿大 005
@@ -1979,7 +1978,6 @@ proxy-groups:
   - 美国 035
   - 日本 001
   - 美国 037
-  - 美国 038
   - 美国 039
   - 英国 002
   - 哥斯达黎加 001
@@ -2008,6 +2006,11 @@ proxy-groups:
   - 美国 064
   - 美国 065
   - 英国 003
+  - 美国 038
+  - 美国 066
+  - 美国 070
+  - 法国 001
+  - 美国 071
 - name: LOAD-BALANCE
   type: load-balance
   url: https://cp.cloudflare.com/generate_204
