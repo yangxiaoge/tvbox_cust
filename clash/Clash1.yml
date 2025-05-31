@@ -1035,20 +1035,6 @@ proxies:
     grpc-mode: gun
     grpc-service-name: 8443vless
   delay: 1517
-- name: 英国 001
-  type: vless
-  network: ws
-  server: 144.24.243.207
-  port: 443
-  uuid: b529971c-f46a-4eb9-a02d-e39cc3e83cf5
-  servername: dd8.transitkala.com
-  tls: true
-  udp: true
-  delay: 1757
-  ws-opts:
-    headers:
-      Host: dd8.transitkala.com
-    path: /
 - name: 美国 030
   type: vmess
   network: ws
@@ -1405,7 +1391,7 @@ proxies:
     headers:
       Host: c01.ylkszy.eu.org
     path: /?ed=2560
-- name: 日本 001
+- name: 新加坡 002
   type: vmess
   network: ws
   server: tls.05.node-for-bigairport.win
@@ -1871,6 +1857,36 @@ proxies:
     headers:
       Host: epmw.ambercc.filegear-sg.me
     path: /?ed=2560
+- name: 韩国 001
+  type: vmess
+  network: ws
+  server: 140.238.28.227
+  port: 8080
+  uuid: efb748ec-c921-42a1-ac9e-1d5485d6c447
+  skip-cert-verify: false
+  tls: false
+  tfo: false
+  alterId: 1
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: download.windowsupdate.com
+    path: /download
+- name: 美国 072
+  type: vmess
+  network: ws
+  server: 154.19.185.240
+  port: 80
+  uuid: efb748ec-c921-42a1-ac9e-1d5485d6c447
+  skip-cert-verify: false
+  tls: false
+  tfo: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: download.windowsupdate.com
+    path: /download
 proxy-groups:
 - name: PROXY
   type: select
@@ -1950,7 +1966,6 @@ proxy-groups:
   - 美国 013
   - 印度 001
   - 美国 028
-  - 英国 001
   - 美国 030
   - 美国 016
   - 美国 031
@@ -1976,7 +1991,7 @@ proxy-groups:
   - 美国 033
   - 阿联酋 001
   - 美国 035
-  - 日本 001
+  - 新加坡 002
   - 美国 037
   - 美国 039
   - 英国 002
@@ -2011,6 +2026,8 @@ proxy-groups:
   - 美国 070
   - 法国 001
   - 美国 071
+  - 韩国 001
+  - 美国 072
 - name: LOAD-BALANCE
   type: load-balance
   url: https://cp.cloudflare.com/generate_204
