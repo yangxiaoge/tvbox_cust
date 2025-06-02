@@ -1492,6 +1492,19 @@ proxies:
     headers:
       Host: us01.sh-cloudflare.sbs
     path: /
+- name: 美国 038
+  type: vmess
+  network: ws
+  server: cs.flha.ru
+  port: 2082
+  uuid: 2f821152-c3e9-4074-9185-2790e7425f42
+  tls: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: cs.flha.ru
+    path: /
 proxy-groups:
 - name: PROXY
   type: select
@@ -1603,6 +1616,7 @@ proxy-groups:
   - 哥斯达黎加 001
   - 美国 041
   - 美国 040
+  - 美国 038
 - name: LOAD-BALANCE
   type: load-balance
   url: https://cp.cloudflare.com/generate_204
