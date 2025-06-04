@@ -1516,6 +1516,17 @@ proxies:
     headers:
       Host: epme.ambercc.filegear-sg.me
     path: /
+- name: 日本 001
+  type: trojan
+  network: ws
+  server: 103.116.7.248
+  port: 443
+  password: Aimer
+  sni: epme.ambercc.filegear-sg.me
+  ws-opts:
+    headers:
+      Host: epme.ambercc.filegear-sg.me
+    path: /
 proxy-groups:
 - name: PROXY
   type: select
@@ -1629,6 +1640,7 @@ proxy-groups:
   - 美国 040
   - 美国 038
   - 斯洛文尼亚 001
+  - 日本 001
 - name: LOAD-BALANCE
   type: load-balance
   url: https://cp.cloudflare.com/generate_204
