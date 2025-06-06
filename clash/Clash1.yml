@@ -1538,6 +1538,17 @@ proxies:
     headers:
       Host: cCtv4.459.pp.uA
     path: /HpYP4foAlpTKtfYnjLYhU30U
+- name: 美国 043
+  type: trojan
+  network: ws
+  server: 172.67.133.248
+  port: 443
+  password: f0f6e76e-e5fe-4e2c-9faf-34832e021eae
+  sni: DDd.890604.FIlEGear-sG.Me
+  ws-opts:
+    headers:
+      Host: DDd.890604.FIlEGear-sG.Me
+    path: /mZr1mA5hub7QHHkQBzYO
 proxy-groups:
 - name: PROXY
   type: select
@@ -1653,6 +1664,7 @@ proxy-groups:
   - 斯洛文尼亚 001
   - 日本 001
   - 美国 042
+  - 美国 043
 - name: LOAD-BALANCE
   type: load-balance
   url: https://cp.cloudflare.com/generate_204
