@@ -1549,6 +1549,19 @@ proxies:
     headers:
       Host: DDd.890604.FIlEGear-sG.Me
     path: /mZr1mA5hub7QHHkQBzYO
+- name: 瑞典 001
+  type: vmess
+  network: ws
+  server: 185.146.173.25
+  port: 80
+  uuid: 46181c32-8c82-413a-b836-8375e5e513eb
+  tls: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: google.whatsapp.snapp.torob.basalam.sarzamiiinahang.ir.
+    path: /d3d3LmlyYW5ob3N0LmNvbQ==?ed=2560
 proxy-groups:
 - name: PROXY
   type: select
@@ -1665,6 +1678,7 @@ proxy-groups:
   - 日本 001
   - 美国 042
   - 美国 043
+  - 瑞典 001
 - name: LOAD-BALANCE
   type: load-balance
   url: https://cp.cloudflare.com/generate_204
