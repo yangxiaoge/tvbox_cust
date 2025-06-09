@@ -1575,6 +1575,17 @@ proxies:
     headers:
       Host: de01.sh-cloudflare.sbs
     path: /
+- name: 美国 047
+  type: trojan
+  network: ws
+  server: 172.67.204.120
+  port: 443
+  password: 4a3ee276-f50f-46f6-ba4d-13571732ab70
+  sni: ddcDe.890603.XYz
+  ws-opts:
+    headers:
+      Host: ddcDe.890603.XYz
+    path: /COp52Dbu3dvwvDWUxOqxq
 proxy-groups:
 - name: PROXY
   type: select
@@ -1693,6 +1704,7 @@ proxy-groups:
   - 美国 043
   - 瑞典 001
   - 美国 045
+  - 美国 047
 - name: LOAD-BALANCE
   type: load-balance
   url: https://cp.cloudflare.com/generate_204
