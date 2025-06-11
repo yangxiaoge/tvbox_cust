@@ -1599,6 +1599,21 @@ proxies:
     headers:
       Host: foxlux.fovi.tk
     path: /eisasqa
+- name: 美国 052
+  type: vmess
+  network: ws
+  server: 104.18.114.1
+  port: 2086
+  uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
+  servername: m116.164748.xyz
+  tls: false
+  udp: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: m116.164748.xyz
+    path: github.com/Alvin9999
 proxy-groups:
 - name: PROXY
   type: select
@@ -1719,6 +1734,7 @@ proxy-groups:
   - 美国 045
   - 美国 047
   - 美国 050
+  - 美国 052
 - name: LOAD-BALANCE
   type: load-balance
   url: https://cp.cloudflare.com/generate_204
