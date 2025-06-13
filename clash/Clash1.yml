@@ -1629,6 +1629,17 @@ proxies:
     headers:
       Host: m116.164748.xyz
     path: github.com/Alvin9999
+- name: 美国 054
+  type: trojan
+  network: ws
+  server: 154.83.2.54
+  port: 2096
+  password: d6b8011a-c725-435a-9fec-bf6d3530392c
+  sni: vle.amclubsvip.dpdns.org
+  ws-opts:
+    headers:
+      Host: vle.amclubsvip.dpdns.org
+    path: /
 proxy-groups:
 - name: PROXY
   type: select
@@ -1751,6 +1762,7 @@ proxy-groups:
   - 美国 050
   - 美国 052
   - 美国 053
+  - 美国 054
 - name: LOAD-BALANCE
   type: load-balance
   url: https://cp.cloudflare.com/generate_204
