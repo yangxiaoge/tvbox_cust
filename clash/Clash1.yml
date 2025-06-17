@@ -1685,6 +1685,21 @@ proxies:
     headers:
       Host: m116.164748.xyz
     path: github.com/Alvin9999
+- name: 美国 059
+  type: vmess
+  network: ws
+  server: 104.21.238.6
+  port: 2086
+  uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
+  servername: m7610.164748.xyz
+  tls: false
+  udp: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: m7610.164748.xyz
+    path: github.com/Alvin9999
 proxy-groups:
 - name: PROXY
   type: select
@@ -1811,6 +1826,7 @@ proxy-groups:
   - 美国 055
   - 美国 057
   - 美国 058
+  - 美国 059
 - name: LOAD-BALANCE
   type: load-balance
   url: https://cp.cloudflare.com/generate_204
