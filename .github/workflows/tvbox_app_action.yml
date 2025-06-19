@@ -28,21 +28,19 @@ jobs:
           - userName: q215613905
             repoName: TVBoxOS
             branchName: main
-            jdkVersion: 11
+            jdkVersion: 17
           - userName: takagen99
             repoName: Box
             branchName: main
             jdkVersion: 17
-          # 长时间不更新 
-          # - userName: mlabalabala
-          # repoName: box
-          # branchName: main
-          # jdkVersion: 11
-          # 长时间不更新 
-          # - userName: Klosw
-          #   repoName: Box
-          #   branchName: dev-4.4
-          #   jdkVersion: 11
+          - userName: mlabalabala
+            repoName: box
+            branchName: main
+            jdkVersion: 11
+          - userName: Klosw
+            repoName: Box
+            branchName: dev-4.4
+            jdkVersion: 11
 
     steps:
       - name: Checkout
