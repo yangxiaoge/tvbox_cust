@@ -72,8 +72,8 @@ jobs:
           fi
           echo "commit=$commit"
 
-      - name: 清理旧的构建目录
-        run: rm -rf TVBoxOSC
+      # - name: 清理旧的构建目录
+      #   run: rm -rf TVBoxOSC
         
       - name: Checkout Source Code
         if: ${{ env.commit }}
