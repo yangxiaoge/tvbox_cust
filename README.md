@@ -53,9 +53,9 @@ https://yangxiaoge.github.io/yingshi
 | [takagen99/Box](https://github.com/takagen99/Box)         | main           | 570c10d36b9f146963b4a1bb0f76b4b0d88409b5 | 2025-06-08 10:46:29 |
 | [FongMi/TV](https://github.com/FongMi/TV)               | release        | a03ac275211c5afa5764e9cd7724de5405f4d029  | 2025-06-19 04:49:14 |
 | [Klosw/Box](https://github.com/Klosw/Box)               | dev-4.4        | 346cc27c9dc066bcdba9bd541cf89c6d69b6cf1b | - |
-| [mlabalabala/box](https://github.com/mlabalabala/box)    | main           | 8beeb7fed9201350af294efcbeb8cee6f8c025bb | 2025-06-19 04:46:01 |
+| [mlabalabala/box](https://github.com/mlabalabala/box)    | main           | 8beeb7fed9201350af294efcbeb8cee6f8c025bb | 2025-06-19 13:02:13 |
 
-#### update at 2025-06-19 04:49:14
+#### update at 2025-06-19 13:02:13
 
 
 **2. 自定义爬虫**
