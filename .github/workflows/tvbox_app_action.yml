@@ -151,6 +151,8 @@ jobs:
               put("王二小", "http://tvbox.王二小放牛娃.top");\
           }};\
           ' app/src/main/java/com/fongmi/android/tv/App.java
+          # manifest修改，避免与原版影视provider冲突
+          sed -i 's|android:authorities="com\.fongmi\.quickjs\.provider"|android:authorities="com.fongmi.quickjs.provider.yangxiaoge"|' app/src/main/AndroidManifest.xml
           # 内置源写入数据库
           sed -i '/super\.onCreate();/a\
           // 添加默认接口\n\
