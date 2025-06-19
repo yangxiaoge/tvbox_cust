@@ -49,13 +49,13 @@ https://yangxiaoge.github.io/yingshi
 依赖的项目:
 | Repository                               | Branch         | Last Update                              | Build Time |
 |------------------------------------------|----------------|------------------------------------------|------------|
-| [q215613905/TVBoxOS](https://github.com/q215613905/TVBoxOS) | main           | 9d38d66185622a2a406b248fdefbed02a7e5d06b  | 2025-05-13 08:31:54 |
+| [q215613905/TVBoxOS](https://github.com/q215613905/TVBoxOS) | main           | 49e631437836a97cdf158544267de59855c11b6a  | 2025-06-19 04:48:35 |
 | [takagen99/Box](https://github.com/takagen99/Box)         | main           | 570c10d36b9f146963b4a1bb0f76b4b0d88409b5 | 2025-06-08 10:46:29 |
 | [FongMi/TV](https://github.com/FongMi/TV)               | release        | a03ac275211c5afa5764e9cd7724de5405f4d029  | 2025-06-19 12:19:24 |
 | [Klosw/Box](https://github.com/Klosw/Box)               | dev-4.4        | 346cc27c9dc066bcdba9bd541cf89c6d69b6cf1b | - |
 | [mlabalabala/box](https://github.com/mlabalabala/box)    | main           | 8beeb7fed9201350af294efcbeb8cee6f8c025bb | 2025-06-19 04:46:01 |
 
-#### update at 2025-06-19 04:46:01
+#### update at 2025-06-19 04:48:35
 
 
 **2. 自定义爬虫**
