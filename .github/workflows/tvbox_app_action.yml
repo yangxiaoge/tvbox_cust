@@ -310,8 +310,8 @@ jobs:
           git remote set-url --add origin "https://${{ github.actor }}:${{ secrets.GIT_TOKEN }}@github.com/${{ github.repository }}"
           git pull --rebase
           
-          # 获取当前时间
-          current_time=$(date '+%Y-%m-%d %H:%M:%S')
+          # 获取当前时间，北京时间
+          current_time=$(TZ='Asia/Shanghai' date '+%Y-%m-%d %H:%M:%S')
           
           # 更新对应仓库的 commit hash 和构建时间
           sed -i "/\[${{ matrix.userName }}\/${{ matrix.repoName }}\].*${{ matrix.branchName }}/{
