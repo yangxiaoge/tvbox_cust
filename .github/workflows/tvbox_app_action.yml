@@ -103,6 +103,8 @@ jobs:
           # yangxiaoge modify start
           # 包名修改
           sed -i 's/^.*applicationId "com\.fongmi\.android.*"/    applicationId "com.fongmi.android.tv.yangxiaoge"/' app/build.gradle
+          # apk命名增加版本号
+          sed -i '/outputFileName.*\.apk"/s/\.apk"/-${defaultConfig.versionName}.apk"/' app/build.gradle
           # 代码修改，导包
           sed -i '/public class App/i\
           import java.util.LinkedHashMap;\
