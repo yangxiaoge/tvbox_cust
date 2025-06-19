@@ -103,13 +103,17 @@ jobs:
         if: ${{ env.commit }}
         working-directory: TVBoxOSC
         run: |
+          #应用签名修改 
           signingConfigs='ICAgIHNpZ25pbmdDb25maWdzIHtcCiAgICAgICAgaWYgKHByb2plY3QuaGFzUHJvcGVydHkoIlJFTEVBU0VfU1RPUkVfRklMRSIpKSB7XAogICAgICAgICAgICBteUNvbmZpZyB7XAogICAgICAgICAgICAgICAgc3RvcmVGaWxlIGZpbGUoUkVMRUFTRV9TVE9SRV9GSUxFKVwKICAgICAgICAgICAgICAgIHN0b3JlUGFzc3dvcmQgUkVMRUFTRV9TVE9SRV9QQVNTV09SRFwKICAgICAgICAgICAgICAgIGtleUFsaWFzIFJFTEVBU0VfS0VZX0FMSUFTXAogICAgICAgICAgICAgICAga2V5UGFzc3dvcmQgUkVMRUFTRV9LRVlfUEFTU1dPUkRcCiAgICAgICAgICAgICAgICB2MVNpZ25pbmdFbmFibGVkIHRydWVcCiAgICAgICAgICAgICAgICB2MlNpZ25pbmdFbmFibGVkIHRydWVcCiAgICAgICAgICAgICAgICBlbmFibGVWM1NpZ25pbmcgPSB0cnVlXAogICAgICAgICAgICAgICAgZW5hYmxlVjRTaWduaW5nID0gdHJ1ZVwKICAgICAgICAgICAgfVwKICAgICAgICB9XAogICAgfVwKXA=='
           signingConfig='ICAgICAgICAgICAgaWYgKHByb2plY3QuaGFzUHJvcGVydHkoIlJFTEVBU0VfU1RPUkVfRklMRSIpKSB7XAogICAgICAgICAgICAgICAgc2lnbmluZ0NvbmZpZyBzaWduaW5nQ29uZmlncy5teUNvbmZpZ1wKICAgICAgICAgICAgfVwK'
           signingConfigs="$(echo "$signingConfigs" |base64 -d )"
           signingConfig="$(echo "$signingConfig" |base64 -d )"
           sed -i -e "/defaultConfig {/i\\$signingConfigs " -e "/debug {/a\\$signingConfig " -e "/release {/a\\$signingConfig " app/build.gradle
-          # yangxiaoge modify start
-          # 包名修改
+          
+          # FongMi定制修改 yangxiaoge modify start
+          if [ "$matrix_userName" == "FongMi" ]; then
+            echo "Detected userName = FongMi，开始执行补丁..."
+            # 包名修改
           sed -i 's/^.*applicationId "com\.fongmi\.android.*"/    applicationId "com.fongmi.android.tv.yangxiaoge"/' app/build.gradle
           # apk命名增加版本号
           sed -i '/outputFileName.*\.apk"/s/\.apk"/-v${defaultConfig.versionName}.apk"/' app/build.gradle
@@ -145,8 +149,10 @@ jobs:
           # 移除fongmi版的更新检测代码
           sed -i 's/^\(.*App\.execute.*\)/\/\/ \1/' app/src/leanback/java/com/fongmi/android/tv/Updater.java
           sed -i 's/^\(.*App\.execute.*\)/\/\/ \1/' app/src/mobile/java/com/fongmi/android/tv/Updater.java
-
-          # yangxiaoge modify end
+          else
+              echo "userName ≠ FongMi，跳过全部修改操作。"
+          fi
+          # FongMi定制修改 yangxiaoge modify end
   
           cp -f ${{ github.workspace }}/.github/workflows/TVBoxOSC.jks app/TVBoxOSC.jks
           sed -i '$a\RELEASE_STORE_FILE=./TVBoxOSC.jks'     ./gradle.properties
