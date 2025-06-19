@@ -91,6 +91,14 @@ jobs:
           else
             sed -i "/jitpack.io/a\        maven { url 'https://o0halflife0o.github.io/crosswalk/releases/crosswalk/android/maven2' }" build.gradle
           fi
+          if [ -f "pyramid/build.gradle" ]; then
+            sed -i 's/\(com.chaquo.python:gradle:\)12.0.1/\115.0.1/g' build.gradle
+            python3 -m venv venv
+            source venv/bin/activate
+            sed -i 's|buildPython("D:/Programs/Python/Python38/python.exe")|buildPython("'"$(pwd)/venv/bin/python"'")|g' pyramid/build.gradle
+            sed -i 's/minSdkVersion 19/minSdkVersion 21/g' pyramid/build.gradle
+            sed -i 's/minSdkVersion 19/minSdkVersion 21/g' app/build.gradle
+          fi
 
       - name: Compress Source Code
         if: ${{ env.commit }}
@@ -146,9 +154,11 @@ jobs:
                   liveConfig.update();\n\
               }\n\
           });' app/src/main/java/com/fongmi/android/tv/App.java
-          # 移除fongmi版的更新检测代码
+          # 移除fongmi版的更新检测代码以及toast提示
           sed -i 's/^\(.*App\.execute.*\)/\/\/ \1/' app/src/leanback/java/com/fongmi/android/tv/Updater.java
+          sed -i 's/^\(.*Notify\.show.*\)/\/\/ \1/' app/src/leanback/java/com/fongmi/android/tv/Updater.java
           sed -i 's/^\(.*App\.execute.*\)/\/\/ \1/' app/src/mobile/java/com/fongmi/android/tv/Updater.java
+          sed -i 's/^\(.*Notify\.show.*\)/\/\/ \1/' app/src/mobile/java/com/fongmi/android/tv/Updater.java
           else
               echo "userName ≠ FongMi，跳过全部修改操作。"
           fi
@@ -261,7 +271,7 @@ jobs:
           delete_tags: true
           delete_tag_pattern: ${{ matrix.userName }}_${{ matrix.repoName }}_${{ matrix.branchName }}.*
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHGIT_TOKENUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GIT_TOKEN}}
 
 
       - name: Whether Or Not to Publish
