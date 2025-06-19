@@ -100,6 +100,44 @@ jobs:
           signingConfigs="$(echo "$signingConfigs" |base64 -d )"
           signingConfig="$(echo "$signingConfig" |base64 -d )"
           sed -i -e "/defaultConfig {/i\\$signingConfigs " -e "/debug {/a\\$signingConfig " -e "/release {/a\\$signingConfig " app/build.gradle
+          # yangxiaoge modify start
+          # 包名修改
+          sed -i 's/^.*applicationId "com\.fongmi\.android.*"/    applicationId "com.fongmi.android.tv.yangxiaoge"/' app/build.gradle
+          # 代码修改，导包
+          sed -i '/public class App/i\
+          import java.util.LinkedHashMap;\
+          import java.util.Map;\
+          import com.fongmi.android.tv.bean.Config;\
+          ' app/src/main/java/com/fongmi/android/tv/App.java
+          # 代码修改，内置源
+          sed -i '/public App()/i\
+          private Map<String, String> sourceMap = new LinkedHashMap<>() {{\
+              put("自用(个人维护)", "https://cdn.jsdelivr.net/gh/yangxiaoge/tvbox_cust@master/tvbox/self_use.txt");\
+              put("饭太硬", "http://www.饭太硬.com/tv");\
+              put("王二小", "http://tvbox.王二小放牛娃.top");\
+          }};\
+          ' app/src/main/java/com/fongmi/android/tv/App.java
+          # 内置源写入数据库
+          sed -i '/super\.onCreate();/a\
+          // 添加默认接口\n\
+          sourceMap.forEach((name, url) -> {\n\
+              Config vodConfig = Config.find(url, 0); // 点播\n\
+              if (vodConfig.getName() == null || vodConfig.getName().isEmpty()) {\n\
+                  vodConfig.setName(name);\n\
+                  vodConfig.update();\n\
+              }\n\
+              Config liveConfig = Config.find(url, 1); // 直播\n\
+              if (liveConfig.getName() == null || liveConfig.getName().isEmpty()) {\n\
+                  liveConfig.setName(name);\n\
+                  liveConfig.update();\n\
+              }\n\
+          });' app/src/main/java/com/fongmi/android/tv/App.java
+          # 移除fongmi版的更新检测代码
+          sed -i 's/^\(.*App\.execute.*\)/\/\/ \1/' app/src/leanback/java/com/fongmi/android/tv/Updater.java
+          sed -i 's/^\(.*App\.execute.*\)/\/\/ \1/' app/src/mobile/java/com/fongmi/android/tv/Updater.java
+
+          # yangxiaoge modify end
+  
           cp -f ${{ github.workspace }}/.github/workflows/TVBoxOSC.jks app/TVBoxOSC.jks
           sed -i '$a\RELEASE_STORE_FILE=./TVBoxOSC.jks'     ./gradle.properties
           sed -i '$a\RELEASE_KEY_ALIAS=TVBoxOSC'            ./gradle.properties
