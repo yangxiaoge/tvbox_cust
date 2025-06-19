@@ -166,8 +166,8 @@ jobs:
           sed -i 's/^\(.*Notify\.show.*\)/\/\/ \1/' app/src/leanback/java/com/fongmi/android/tv/Updater.java
           sed -i 's/^\(.*App\.execute.*\)/\/\/ \1/' app/src/mobile/java/com/fongmi/android/tv/Updater.java
           sed -i 's/^\(.*Notify\.show.*\)/\/\/ \1/' app/src/mobile/java/com/fongmi/android/tv/Updater.java
-          echo "====== app/build.gradle 修改后内容预览 ======"
-          cat app/build.gradle
+          # echo "====== app/build.gradle 修改后内容预览 ======"
+          # cat app/build.gradle
 
       - name: Setup JDK
         if: ${{ env.commit }}
