@@ -215,30 +215,22 @@ jobs:
         run: |
           # 尝试获取上一次的 commit hash
           lastCommit=$(grep "\[${{ matrix.userName }}\/${{ matrix.repoName }}\]" ${{ github.workspace }}/README.md | grep "${{ matrix.branchName }}" | grep -o '[a-z0-9]\{40\}')
-          echo "这是 FongMi 的专属定制，commit1=$lastCommit"
           # 如果没有找到 commit hash，设置一个默认值以避免错误
           if [ -z "$lastCommit" ]; then
             echo "Warning: Could not find last commit hash for ${{ matrix.userName }}/${{ matrix.repoName }}/${{ matrix.branchName }}"
             lastCommit=${{ env.commit }}
           fi
-          fileName = ${{ matrix.userName }}
-          echo "这是 FongMi 的专属定制，commit2=$lastCommit"
-          echo apk/${fileName}--Release.log
           
           export LESSCHARSET=utf-8
           # 确保 apk 目录存在
           mkdir -p apk/
           echo -e "Credit: [${{ matrix.userName }}](${{ env.upStream }})\nCommit: ${{ env.commit }}\nChangelog:\n\`\`\`" > apk/${{ matrix.userName }}-Release.log
-          echo "这是 FongMi 的专属定制，commit3=$lastCommit"
-          echo apk/${fileName}--Release.log
           if [ "${{ env.commit }}" == "${lastCommit}" ]; then
             git log --pretty=format:%B ${{ env.commitS }} -1 | sed -e "s# \{2,\}#\n#g" -e "/^Merge \(pull\|branch\|remote\)/d" -e '/^$/d' | cat -n | sort -k2,2 -k1,1n | uniq -f1 | sort -k1,1n | cut -f2- >> apk/${{ matrix.userName }}-Release.log
           else
             git log --pretty=format:%B ${{ env.commitS }}...${lastCommit:0:7} | sed -e "s# \{2,\}#\n#g" -e "/^Merge \(pull\|branch\|remote\)/d" -e '/^$/d' | cat -n | sort -k2,2 -k1,1n | uniq -f1 | sort -k1,1n | cut -f2- >> apk/${{ matrix.userName }}-Release.log
           fi
           echo -e '```' >> apk/${{ matrix.userName }}-Release.log
-          echo "这是 FongMi 的专属定制，commit4=$lastCommit"
-          echo apk/${fileName}--Release.log
           # 确保日志文件存在并且有内容
           if [ ! -s "apk/${{ matrix.userName }}-Release.log" ]; then
             echo "No changes found" >> apk/${{ matrix.userName }}-Release.log
