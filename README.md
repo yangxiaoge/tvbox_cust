@@ -27,6 +27,8 @@ https://yangxiaoge.github.io/yingshi
   - 18🈲：https://cdn.jsdelivr.net/gh/yangxiaoge/tvbox_cust@master/tvbox/多仓adult.json
   - ~高天流云多仓：https://cdn.jsdelivr.net/gh/gaotianliuyun/gao@master/0707.json~
   - ~黎歌多仓：https://cdn.jsdelivr.net/gh/yangxiaoge/tvbox_cust@master/tvbox/黎歌多仓.json~
+- 源解析：
+  - https://ua.fongmi.eu.org/
 
 # Clash免费节点
 - https://cdn.jsdelivr.net/gh/yangxiaoge/tvbox_cust@master/clash/Clash2.yml
