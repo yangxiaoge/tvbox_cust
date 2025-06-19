@@ -14,7 +14,7 @@
 
 # TV 应用
 - TV默认桌面：[EmotnUI](/apk/EmotnUI_com.oversea.aslauncher_1.0.9.0_5094.apk)  ​​​​​ ​​​ ​​​​​​​​ ​​​​[当贝桌面](/apk/当贝桌面_4.1.7精简去广告版.apk) 
-- FongMi影视（TV/手机）：[下载影视](https://github.com/FongMi/Release/tree/fongmi/apk/release)​ ​​​​ ​​​​ ​​​​​​​​​​​​​ ​​​ ​​​订阅源: [tvbox源](https://github.com/yangxiaoge/tvbox_cust?tab=readme-ov-file#tvbox源) 
+- 影视（TV/手机）：[自编影视](https://github.com/yangxiaoge/tvbox_cust/releases) ​​​​ ​​​​ ​​​​​​​​​​​​​ ​​​ [FongMi影视](https://github.com/FongMi/Release/tree/fongmi/apk/release)​ ​​​​ ​​​​ ​​​​​​​​​​​​​ ​​​ ​​​订阅源: [tvbox源](https://github.com/yangxiaoge/tvbox_cust?tab=readme-ov-file#tvbox源) 
 - IPTV直播：[TiviMate2.1.5](/apk/TiviMate-2.1.5推荐-Premium付费破解版.apk)​ ​​​​​ ​​​ ​​​​​​​​ ​​​​ ​​​配置恢复：[地址](https://cdn.jsdelivr.net/gh/yangxiaoge/tvbox_cust@master/apk/TiviMate2.1.5_backup_20240409_104306.tmb)​ ​​​​ ​​​​ ​ ​​​​​​​​​​​ ​订阅源官网: [fanmingming](https://github.com/fanmingming/live)  ​ ​​​​ ​​​​ ​​​ ​​​​​​​​​IPV6源：[地址](https://live.fanmingming.com/tv/m3u/ipv6.m3u)
 - 开机启动指定应用：[开机自启](/apk/开机自启_3.0_2024-03-11.apk)​ ​​​​ ​​​​ ​​​​​ ​​​ ​​​源码（自用闭源）: [autoclick](https://gitee.com/sheepyang_study/auto-click-slide)
 
