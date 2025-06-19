@@ -25,8 +25,11 @@ https://yangxiaoge.github.io/yingshi
 - 多仓
   - 自用：https://cdn.jsdelivr.net/gh/yangxiaoge/tvbox_cust@master/tvbox/多仓.json
   - 18🈲：https://cdn.jsdelivr.net/gh/yangxiaoge/tvbox_cust@master/tvbox/多仓adult.json
-  - ~高天流云多仓：https://cdn.jsdelivr.net/gh/gaotianliuyun/gao@master/0707.json~
-  - ~黎歌多仓：https://cdn.jsdelivr.net/gh/yangxiaoge/tvbox_cust@master/tvbox/黎歌多仓.json~
+- 大佬仓
+  - 饭太硬: http://www.饭太硬.com/tv
+  - 王二小: http://tvbox.王二小放牛娃.top
+  - OK1: http://ok321.top/tv
+  - OK2: http://ok321.top/ok
 - 源解析：
   - https://ua.fongmi.eu.org/
 
