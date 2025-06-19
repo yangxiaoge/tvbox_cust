@@ -24,22 +24,20 @@ jobs:
           - userName: FongMi
             repoName: TV
             branchName: release
-            # fongmi（大佬部分aar未提交，导致编译失败）
-            # branchName: fongmi
-            # ok大佬
             jdkVersion: 17
-          # - userName: q215613905
-          #   repoName: TVBoxOS
-          #   branchName: main
-          #   jdkVersion: 11
-          # - userName: takagen99
-          #   repoName: Box
-          #   branchName: main
-          #   jdkVersion: 17
-          - userName: mlabalabala
-            repoName: box
+          - userName: q215613905
+            repoName: TVBoxOS
             branchName: main
             jdkVersion: 11
+          - userName: takagen99
+            repoName: Box
+            branchName: main
+            jdkVersion: 17
+          # 长时间不更新 
+          # - userName: mlabalabala
+          # repoName: box
+          # branchName: main
+          # jdkVersion: 11
           # 长时间不更新 
           # - userName: Klosw
           #   repoName: Box
