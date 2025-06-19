@@ -138,6 +138,8 @@ jobs:
           import java.util.Map;\
           import com.fongmi.android.tv.bean.Config;\
           ' app/src/main/java/com/fongmi/android/tv/App.java
+          # 应用名称修改
+          sed -i 's|<string name="app_name">.*</string>|<string name="app_name">蜂蜜影视</string>|' app/src/main/res/values-zh-rCN/strings.xml
           # 代码修改，内置源
           sed -i '/public App()/i\
           private Map<String, String> sourceMap = new LinkedHashMap<>() {{\
