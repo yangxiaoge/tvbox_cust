@@ -168,6 +168,8 @@ jobs:
                   liveConfig.update();\n\
               }\n\
           });' app/src/main/java/com/fongmi/android/tv/App.java
+          # 弹幕开关默认开启
+          sed -i 's|getBoolean("danmaku_load")|getBoolean("danmaku_load", true)|' app/src/main/java/com/fongmi/android/tv/Setting.java
           # 移除fongmi版的更新检测代码以及toast提示
           sed -i 's/^\(.*App\.execute.*\)/\/\/ \1/' app/src/leanback/java/com/fongmi/android/tv/Updater.java
           sed -i 's/^\(.*Notify\.show.*\)/\/\/ \1/' app/src/leanback/java/com/fongmi/android/tv/Updater.java
