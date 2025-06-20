@@ -1731,6 +1731,17 @@ proxies:
     headers:
       Host: m7647.164748.xyz
     path: github.com/Alvin9999
+- name: 美国 062
+  type: trojan
+  network: ws
+  server: 20.235.105.146
+  port: 443
+  password: ttfang
+  sni: ttfang.fange.me
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: /
 proxy-groups:
 - name: PROXY
   type: select
@@ -1860,6 +1871,7 @@ proxy-groups:
   - 美国 059
   - 美国 060
   - 美国 061
+  - 美国 062
 - name: LOAD-BALANCE
   type: load-balance
   url: https://cp.cloudflare.com/generate_204
