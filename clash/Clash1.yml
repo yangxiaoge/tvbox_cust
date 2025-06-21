@@ -1742,6 +1742,19 @@ proxies:
     headers:
       Host: ttfang.fange.me
     path: /
+- name: 美国 063
+  type: vmess
+  network: ws
+  server: ip.sb
+  port: 443
+  uuid: c9ddb489-7b5e-49ed-8b21-749f4a0ed56d
+  tls: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: usshs.atlen.dpdns.org
+    path: /c9ddb489-7b5e-49ed-8b21-749f4a0ed56d-vmess
 proxy-groups:
 - name: PROXY
   type: select
@@ -1872,6 +1885,7 @@ proxy-groups:
   - 美国 060
   - 美国 061
   - 美国 062
+  - 美国 063
 - name: LOAD-BALANCE
   type: load-balance
   url: https://cp.cloudflare.com/generate_204
