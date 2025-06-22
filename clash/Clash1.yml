@@ -1755,6 +1755,17 @@ proxies:
     headers:
       Host: usshs.atlen.dpdns.org
     path: /c9ddb489-7b5e-49ed-8b21-749f4a0ed56d-vmess
+- name: 美国 064
+  type: trojan
+  network: ws
+  server: 104.21.84.242
+  port: 443
+  password: 03e92910-34b1-4245-ac63-04a865f43cd5
+  sni: 3ERt.4444916.XyZ
+  ws-opts:
+    headers:
+      Host: 3ERt.4444916.XyZ
+    path: /bi35bFWoRrnPhIJoo2wcE6Q
 proxy-groups:
 - name: PROXY
   type: select
@@ -1886,6 +1897,7 @@ proxy-groups:
   - 美国 061
   - 美国 062
   - 美国 063
+  - 美国 064
 - name: LOAD-BALANCE
   type: load-balance
   url: https://cp.cloudflare.com/generate_204
