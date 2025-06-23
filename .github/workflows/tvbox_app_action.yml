@@ -13,6 +13,10 @@ on:
         description: '构建后不提交发布新版'
         required: false
         type: boolean
+      fongmi_app_name:
+        description: '指定要构建的 FongMi 应用名称（如：蜂蜜影视, 影视TV）'
+        required: false
+        type: string
 
 jobs:
   build:
@@ -142,7 +146,11 @@ jobs:
           import com.fongmi.android.tv.bean.Config;\
           ' app/src/main/java/com/fongmi/android/tv/App.java
           # 应用名称修改
-          sed -i 's|<string name="app_name">.*</string>|<string name="app_name">蜂蜜影视</string>|' app/src/main/res/values-zh-rCN/strings.xml
+          if [ -n "${{ github.event.inputs.fongmi_app_name }}" ]; then
+            sed -i 's|<string name="app_name">.*</string>|<string name="app_name">${{ github.event.inputs.fongmi_app_name }}</string>|' app/src/main/res/values-zh-rCN/strings.xml
+          else
+            sed -i 's|<string name="app_name">.*</string>|<string name="app_name">蜂蜜影视</string>|' app/src/main/res/values-zh-rCN/strings.xml
+          fi
           # 代码修改，内置源
           sed -i '/public App()/i\
           private Map<String, String> sourceMap = new LinkedHashMap<>() {{\
