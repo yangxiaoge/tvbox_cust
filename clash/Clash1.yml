@@ -1766,6 +1766,19 @@ proxies:
     headers:
       Host: 3ERt.4444916.XyZ
     path: /bi35bFWoRrnPhIJoo2wcE6Q
+- name: 美国 065
+  type: vmess
+  network: ws
+  server: xxxcvfgt6.huangshang.dpdns.org
+  port: 443
+  uuid: 91565d37-e81a-479d-9cb0-9cb2d86cea2c
+  tls: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: xxxcvfgt6.huangshang.dpdns.org
+    path: /w8kFMmZlXlyP0d3nfCNbqCRr57Xa
 proxy-groups:
 - name: PROXY
   type: select
@@ -1898,6 +1911,7 @@ proxy-groups:
   - 美国 062
   - 美国 063
   - 美国 064
+  - 美国 065
 - name: LOAD-BALANCE
   type: load-balance
   url: https://cp.cloudflare.com/generate_204
