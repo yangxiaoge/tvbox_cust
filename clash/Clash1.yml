@@ -1779,6 +1779,17 @@ proxies:
     headers:
       Host: xxxcvfgt6.huangshang.dpdns.org
     path: /w8kFMmZlXlyP0d3nfCNbqCRr57Xa
+- name: 美国 066
+  type: trojan
+  network: ws
+  server: eer.freevpnatm.dpdns.org
+  port: 443
+  password: ffcf7ec1-3e09-4821-b3d9-b426a107b73b
+  sni: eer.freevpnatm.dpdns.org
+  ws-opts:
+    headers:
+      Host: eer.freevpnatm.dpdns.org
+    path: /XmTzATQPJv9RO3xr1D40NK
 proxy-groups:
 - name: PROXY
   type: select
@@ -1912,6 +1923,7 @@ proxy-groups:
   - 美国 063
   - 美国 064
   - 美国 065
+  - 美国 066
 - name: LOAD-BALANCE
   type: load-balance
   url: https://cp.cloudflare.com/generate_204
