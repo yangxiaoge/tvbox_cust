@@ -1835,6 +1835,17 @@ proxies:
     headers:
       Host: m7990.164748.xyz
     path: github.com/Alvin9999
+- name: 美国 080
+  type: trojan
+  network: ws
+  server: 104.25.254.4
+  port: 2087
+  password: d6b8011a-c725-435a-9fec-bf6d3530392c
+  sni: vle.amclubdns.dpdns.org
+  ws-opts:
+    headers:
+      Host: vle.amclubdns.dpdns.org
+    path: /
 proxy-groups:
 - name: PROXY
   type: select
@@ -1972,6 +1983,7 @@ proxy-groups:
   - 美国 070
   - 美国 071
   - 美国 072
+  - 美国 080
 - name: LOAD-BALANCE
   type: load-balance
   url: https://cp.cloudflare.com/generate_204
