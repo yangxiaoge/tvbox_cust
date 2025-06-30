@@ -28,7 +28,7 @@ https://yangxiaoge.github.io/yingshi
 - 大佬仓
   - 饭太硬: http://www.饭太硬.com/tv
   - 王二小: http://tvbox.王二小放牛娃.top
-  - OK1: http://ok321.top/tv
+  - OK1: http://ok321.top/tv  [抓包弹幕](http://dm.qxq6.com/zy/api.php?url=https://v.qq.com/x/cover/mzc0020087cqggc/h4101viilc8.html)
   - OK2: http://ok321.top/ok
 - 源解析：
   - https://ua.fongmi.eu.org/
