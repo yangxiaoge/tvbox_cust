@@ -616,18 +616,6 @@ proxies:
     headers:
       Host: pormang.webhost99.workers.dev
     path: /
-- name: 美国 122
-  type: vless
-  network: ws
-  server: 104.20.43.197
-  port: 80
-  uuid: e497da22-d020-40fb-a1fa-bc294066a2d2
-  skip-cert-verify: false
-  tls: false
-  ws-opts:
-    headers:
-      Host: pormang.webhost99.workers.dev
-    path: /
 - name: 美国 008
   type: vless
   network: ws
@@ -762,19 +750,6 @@ proxies:
     headers:
       Host: sHrill-tErm-639b.TageLIT414.workeRs.dEv
     path: /
-- name: 美国 138
-  type: vless
-  network: ws
-  server: join.e-l-i-v-2-r-a-y.fastly80-3.hosting-ip.com
-  port: 80
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  servername: Join--E-L-i-V-2-R-A-Y.net
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ws-opts:
-    headers:
-      Host: Join--E-L-i-V-2-R-A-Y.net
-    path: /channel,ELiV2RAY-channel,ELiV2RAY-channel,ELiV2RAY?ed
 - name: 美国 140
   type: vless
   network: ws
@@ -801,19 +776,6 @@ proxies:
     headers:
       Host: withered-wave-ee0b-ppal03.faxip46069.workers.dev
     path: /?ed=2560
-- name: 美国 149
-  type: vless
-  network: ws
-  server: join.E-L-i-V-2-R-A-Y.fastly80-3.hosting-ip.com
-  port: 80
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  servername: Join--E-L-i-V-2-R-A-Y.net
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ws-opts:
-    headers:
-      Host: Join--E-L-i-V-2-R-A-Y.net
-    path: /channel,ELiV2RAY-channel,ELiV2RAY-channel,ELiV2RAY?ed
 - name: 美国 150
   type: vless
   network: ws
@@ -997,22 +959,6 @@ proxies:
     headers:
       Host: Yak-Khanda-kUn-eY-gUL.biNG.com.xn--cR8HaaaAaAAAaAaaAaAaAAaAAaaaAAAAAaAaaAaaaAaaaaAAaaAAAaaaaAa.xN--Cr8hAaAaaAaaAAAAAAaaaAAAaAAaaAaAaAAAAAA.TREPAspeEdTEsT.NEtrag.cOm.PX.Com.sh017.IR.XN--Cr8hAaaAaaAaaAaaaAAAaaaAaaAaaaAaAAAaaaA.yek.dDnS-ip.nEt
     path: /?ed=1080
-- name: 美国 013
-  type: vmess
-  network: ws
-  server: AC.fastly80-2.hosting-ip.com
-  port: 80
-  uuid: 6e3ac406-a15b-461d-8b05-ca01b284d9a0
-  skip-cert-verify: true
-  tls: false
-  udp: true
-  tfo: false
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: telegram-isvvpn.dev
-    path: /racevpn
 - name: 美国 014
   type: vless
   network: ws
@@ -1128,17 +1074,6 @@ proxies:
   skip-cert-verify: false
   tls: true
   udp: true
-- name: 伊朗 007
-  type: vless
-  network: http
-  server: 185.79.158.141
-  port: 8088
-  uuid: 2b972ea2-7fc2-498b-8513-5a695c5452dd
-  skip-cert-verify: false
-  tls: false
-  http-opts:
-    path:
-    - /
 - name: 美国 092
   type: vmess
   network: ws
@@ -1392,21 +1327,6 @@ proxies:
     headers:
       Host: c01.ylkszy.eu.org
     path: /?ed=2560
-- name: 美国 037
-  type: vless
-  network: ws
-  server: 192.9.180.162
-  port: 443
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  servername: c01.ylkszy.eu.org
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  delay: 1570
-  ws-opts:
-    headers:
-      Host: c01.ylkszy.eu.org
-    path: /?ed=2560
 - name: 新加坡 002
   type: vmess
   network: ws
@@ -1451,20 +1371,6 @@ proxies:
     headers:
       Host: de01.sh-cloudflare.sbs
     path: /
-- name: 英国 002
-  type: vmess
-  network: ws
-  server: frankfurt.faforex.eu.org
-  port: 23451
-  uuid: 4e309c18-ee5f-45f3-8f28-66467d1e0c4f
-  tls: false
-  udp: true
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: us-new03.daluquan.top
-    path: /itdog?ed=2560
 - name: 哥斯达黎加 001
   type: vmess
   network: ws
@@ -1493,6 +1399,122 @@ proxies:
     headers:
       Host: us148.vp1000.net
     path: /cp100vp800kkkdsnx
+- name: 美国 013
+  type: vmess
+  network: ws
+  server: us01.sh-cloudflare.sbs
+  port: 8443
+  uuid: 2bd0c9d7-f239-437e-a1e1-6cf830af2a1a
+  servername: us01.sh-cloudflare.sbs
+  tls: true
+  udp: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: us01.sh-cloudflare.sbs
+    path: /
+- name: 美国 037
+  type: trojan
+  network: ws
+  server: 104.21.6.179
+  port: 443
+  password: 6757b7d6-fa32-4708-b5d1-30e3cf928b51
+  sni: ZZzzzZZ.890601.XYZ
+  ws-opts:
+    headers:
+      Host: ZZzzzZZ.890601.XYZ
+    path: /l96MZ8se5Kl2p8BiMhP42l
+- name: 美国 040
+  type: vmess
+  network: ws
+  server: 104.18.114.1
+  port: 2086
+  uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
+  servername: m116.164748.xyz
+  tls: false
+  udp: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: m116.164748.xyz
+    path: github.com/Alvin9999
+- name: 美国 042
+  type: vmess
+  network: ws
+  server: 104.18.114.2
+  port: 2086
+  uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
+  servername: m116.164748.xyz
+  tls: false
+  udp: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: m116.164748.xyz
+    path: github.com/Alvin9999
+- name: 美国 043
+  type: vmess
+  network: ws
+  server: 104.21.238.3
+  port: 2086
+  uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
+  servername: m116.164748.xyz
+  tls: false
+  udp: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: m116.164748.xyz
+    path: github.com/Alvin9999
+- name: 美国 045
+  type: vmess
+  network: ws
+  server: 104.21.238.4
+  port: 2086
+  uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
+  servername: m116.164748.xyz
+  tls: false
+  udp: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: m116.164748.xyz
+    path: github.com/Alvin9999
+- name: 美国 047
+  type: vmess
+  network: ws
+  server: 104.21.238.5
+  port: 2086
+  uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
+  servername: m116.164748.xyz
+  tls: false
+  udp: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: m116.164748.xyz
+    path: github.com/Alvin9999
+- name: 美国 050
+  type: vmess
+  network: ws
+  server: 104.21.238.6
+  port: 2086
+  uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
+  servername: m116.164748.xyz
+  tls: false
+  udp: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: m116.164748.xyz
+    path: github.com/Alvin9999
 proxy-groups:
 - name: PROXY
   type: select
@@ -1539,7 +1561,6 @@ proxy-groups:
   - 美国 087
   - 美国 093
   - 美国 112
-  - 美国 122
   - 美国 008
   - 荷兰 002
   - 美国 009
@@ -1551,10 +1572,8 @@ proxy-groups:
   - 美国 109
   - 美国 115
   - 美国 124
-  - 美国 138
   - 美国 140
   - 美国 145
-  - 美国 149
   - 美国 150
   - 美国 151
   - 美国 152
@@ -1569,7 +1588,6 @@ proxy-groups:
   - 荷兰 017
   - 美国 182
   - 美国 183
-  - 美国 013
   - 美国 014
   - 印度 001
   - 美国 028
@@ -1579,7 +1597,6 @@ proxy-groups:
   - 美国 048
   - 美国 076
   - 美国 079
-  - 伊朗 007
   - 美国 092
   - 美国 015
   - 美国 017
@@ -1597,13 +1614,19 @@ proxy-groups:
   - 新加坡 001
   - 美国 035
   - 阿联酋 001
-  - 美国 037
   - 新加坡 002
   - 美国 038
   - 美国 039
-  - 英国 002
   - 哥斯达黎加 001
   - 美国 041
+  - 美国 013
+  - 美国 037
+  - 美国 040
+  - 美国 042
+  - 美国 043
+  - 美国 045
+  - 美国 047
+  - 美国 050
 - name: LOAD-BALANCE
   type: load-balance
   url: https://cp.cloudflare.com/generate_204
