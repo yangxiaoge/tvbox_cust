@@ -26,7 +26,7 @@ https://yangxiaoge.github.io/yingshi
   - 自用：https://cdn.jsdelivr.net/gh/yangxiaoge/tvbox_cust@master/tvbox/多仓.json
   - 18🈲：https://cdn.jsdelivr.net/gh/yangxiaoge/tvbox_cust@master/tvbox/多仓adult.json
 - 大佬仓
-  - 饭太硬: http://www.饭太硬.com/tv
+  - 饭太硬: http://www.饭太硬.com/tv  [导航](http://www.饭太硬.com/tv)
   - 王二小: http://tvbox.王二小放牛娃.top
   - OK1: http://ok321.top/tv  [抓包弹幕](http://dm.qxq6.com/zy/api.php?url=https://v.qq.com/x/cover/mzc0020087cqggc/h4101viilc8.html)
   - OK2: http://ok321.top/ok
