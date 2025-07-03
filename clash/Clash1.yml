@@ -1327,21 +1327,6 @@ proxies:
     headers:
       Host: c01.ylkszy.eu.org
     path: /?ed=2560
-- name: 新加坡 002
-  type: vmess
-  network: ws
-  server: tls.05.node-for-bigairport.win
-  port: 33443
-  uuid: b71f9e84-86c9-49c4-b5f4-b33b35ee7410
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: tls.05.node-for-bigairport.win
-    path: /
 - name: 美国 038
   type: vmess
   network: ws
@@ -1515,6 +1500,32 @@ proxies:
     headers:
       Host: m116.164748.xyz
     path: github.com/Alvin9999
+- name: 美国 052
+  type: trojan
+  network: ws
+  server: 104.17.128.1
+  port: 2096
+  password: d6b8011a-c725-435a-9fec-bf6d3530392c
+  sni: vle.amclubdns.dpdns.org
+  ws-opts:
+    headers:
+      Host: vle.amclubdns.dpdns.org
+    path: /
+- name: 美国 053
+  type: vmess
+  network: ws
+  server: 104.21.238.7
+  port: 2086
+  uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
+  servername: m8217.164748.xyz
+  tls: false
+  udp: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: m8217.164748.xyz
+    path: github.com/Alvin9999
 proxy-groups:
 - name: PROXY
   type: select
@@ -1614,7 +1625,6 @@ proxy-groups:
   - 新加坡 001
   - 美国 035
   - 阿联酋 001
-  - 新加坡 002
   - 美国 038
   - 美国 039
   - 哥斯达黎加 001
@@ -1627,6 +1637,8 @@ proxy-groups:
   - 美国 045
   - 美国 047
   - 美国 050
+  - 美国 052
+  - 美国 053
 - name: LOAD-BALANCE
   type: load-balance
   url: https://cp.cloudflare.com/generate_204
