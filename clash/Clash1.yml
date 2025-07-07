@@ -1563,6 +1563,17 @@ proxies:
     headers:
       Host: epmk.ambercc.filegear-sg.me
     path: /
+- name: 俄罗斯 003
+  type: trojan
+  network: ws
+  server: 46.254.92.142
+  port: 2087
+  password: Aimer
+  sni: epml.ambercc.filegear-sg.me
+  ws-opts:
+    headers:
+      Host: epml.ambercc.filegear-sg.me
+    path: /
 proxy-groups:
 - name: PROXY
   type: select
@@ -1679,6 +1690,7 @@ proxy-groups:
   - 美国 054
   - 亚美尼亚 001
   - 俄罗斯 001
+  - 俄罗斯 003
 - name: LOAD-BALANCE
   type: load-balance
   url: https://cp.cloudflare.com/generate_204
