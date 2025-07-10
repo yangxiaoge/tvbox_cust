@@ -1356,20 +1356,6 @@ proxies:
     headers:
       Host: de01.sh-cloudflare.sbs
     path: /
-- name: 哥斯达黎加 001
-  type: vmess
-  network: ws
-  server: 144.22.216.68
-  port: 8443
-  uuid: a9326a5a-b890-46e3-bd3d-a4f9d5082323
-  tls: true
-  udp: true
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: br3.vp1000.net
-    path: /pulicpDisney
 - name: 美国 041
   type: vmess
   network: ws
@@ -1596,6 +1582,28 @@ proxies:
     headers:
       Host: epmk.ambercc.filegear-sg.me
     path: /
+- name: 亚美尼亚 003
+  type: trojan
+  network: ws
+  server: 188.164.159.214
+  port: 2083
+  password: Aimer
+  sni: epmk.ambercc.filegear-sg.me
+  ws-opts:
+    headers:
+      Host: epmk.ambercc.filegear-sg.me
+    path: /
+- name: 亚美尼亚 004
+  type: trojan
+  network: ws
+  server: 188.164.159.234
+  port: 2083
+  password: Aimer
+  sni: epml.ambercc.filegear-sg.me
+  ws-opts:
+    headers:
+      Host: epml.ambercc.filegear-sg.me
+    path: /
 proxy-groups:
 - name: PROXY
   type: select
@@ -1697,7 +1705,6 @@ proxy-groups:
   - 阿联酋 001
   - 美国 038
   - 美国 039
-  - 哥斯达黎加 001
   - 美国 041
   - 美国 013
   - 美国 037
@@ -1715,6 +1722,8 @@ proxy-groups:
   - 俄罗斯 003
   - 美国 055
   - 亚美尼亚 002
+  - 亚美尼亚 003
+  - 亚美尼亚 004
 - name: LOAD-BALANCE
   type: load-balance
   url: https://cp.cloudflare.com/generate_204
