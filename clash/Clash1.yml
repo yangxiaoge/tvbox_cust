@@ -1628,6 +1628,19 @@ proxies:
     headers:
       Host: FffvvVbnhJui8.222560.XYz
     path: /mlyR5tmcKx3hweBopuhWEbIX
+- name: 美国 058
+  type: vmess
+  network: ws
+  server: aazxsdE.003330333.XYz
+  port: 443
+  uuid: 10b1e371-d734-4306-b67f-0fc1f95c2485
+  tls: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: aazxsdE.003330333.XYz
+    path: /SXjq8YlnGNBlbnEsM
 proxy-groups:
 - name: PROXY
   type: select
@@ -1750,6 +1763,7 @@ proxy-groups:
   - 亚美尼亚 004
   - 法国 001
   - 美国 057
+  - 美国 058
 - name: LOAD-BALANCE
   type: load-balance
   url: https://cp.cloudflare.com/generate_204
