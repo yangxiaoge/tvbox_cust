@@ -1654,6 +1654,17 @@ proxies:
     headers:
       Host: sssssssxxxx.2032.pp.ua
     path: /6We3U9Df1WGxgFnoFPw1
+- name: 美国 060
+  type: trojan
+  network: ws
+  server: 20.235.105.146
+  port: 443
+  password: ttfang
+  sni: ttfang.fange.me
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: /
 proxy-groups:
 - name: PROXY
   type: select
@@ -1778,6 +1789,7 @@ proxy-groups:
   - 美国 057
   - 美国 058
   - 美国 059
+  - 美国 060
 - name: LOAD-BALANCE
   type: load-balance
   url: https://cp.cloudflare.com/generate_204
