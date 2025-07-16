@@ -1665,6 +1665,19 @@ proxies:
     headers:
       Host: ttfang.fange.me
     path: /
+- name: 美国 061
+  type: vmess
+  network: ws
+  server: sSsdCVfBGNjkI.931.PP.Ua
+  port: 443
+  uuid: a4e8ec0a-75d0-4fc5-837a-4973ed3a9d3e
+  tls: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: sSsdCVfBGNjkI.931.PP.Ua
+    path: /14Fziqw1hYgCXNutkS5H
 proxy-groups:
 - name: PROXY
   type: select
@@ -1790,6 +1803,7 @@ proxy-groups:
   - 美国 058
   - 美国 059
   - 美国 060
+  - 美国 061
 - name: LOAD-BALANCE
   type: load-balance
   url: https://cp.cloudflare.com/generate_204
