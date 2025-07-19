@@ -1704,6 +1704,17 @@ proxies:
     headers:
       Host: wwwe3.11890604.xyz
     path: /uiAxvH6OkVk0VCfa7dX3JIrYk7zm
+- name: 日本 001
+  type: trojan
+  network: ws
+  server: 91.193.58.0
+  port: 443
+  password: trojan
+  sni: wahaha.yingyangkuaixian.dpdns.org
+  ws-opts:
+    headers:
+      Host: wahaha.yingyangkuaixian.dpdns.org
+    path: /
 proxy-groups:
 - name: PROXY
   type: select
@@ -1832,6 +1843,7 @@ proxy-groups:
   - 美国 061
   - 美国 062
   - 美国 063
+  - 日本 001
 - name: LOAD-BALANCE
   type: load-balance
   url: https://cp.cloudflare.com/generate_204
