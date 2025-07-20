@@ -1715,6 +1715,19 @@ proxies:
     headers:
       Host: wahaha.yingyangkuaixian.dpdns.org
     path: /
+- name: 美国 064
+  type: vmess
+  network: ws
+  server: www.visa.com.sg
+  port: 8880
+  uuid: 92e886f3-53c4-41a9-de97-a54f3abbdd9e
+  tls: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: does-consolidated-gs-links.trycloudflare.com
+    path: /
 proxy-groups:
 - name: PROXY
   type: select
@@ -1844,6 +1857,7 @@ proxy-groups:
   - 美国 062
   - 美国 063
   - 日本 001
+  - 美国 064
 - name: LOAD-BALANCE
   type: load-balance
   url: https://cp.cloudflare.com/generate_204
