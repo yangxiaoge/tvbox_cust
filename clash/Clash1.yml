@@ -1742,6 +1742,17 @@ proxies:
     headers:
       Host: do2.naichachong.top
     path: /wwa
+- name: 美国 066
+  type: trojan
+  network: ws
+  server: iiiiop0.444752.xyz
+  port: 443
+  password: 0f7070cd-c91d-4532-a51f-56da4f0e94be
+  sni: iiiiop0.444752.xyz
+  ws-opts:
+    headers:
+      Host: iiiiop0.444752.xyz
+    path: /ctHoQlqeZn8pbEUSLppj7jCmY
 proxy-groups:
 - name: PROXY
   type: select
@@ -1873,6 +1884,7 @@ proxy-groups:
   - 日本 001
   - 美国 064
   - 美国 065
+  - 美国 066
 - name: LOAD-BALANCE
   type: load-balance
   url: https://cp.cloudflare.com/generate_204
