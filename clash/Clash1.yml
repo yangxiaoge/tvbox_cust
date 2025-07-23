@@ -1753,6 +1753,18 @@ proxies:
     headers:
       Host: iiiiop0.444752.xyz
     path: /ctHoQlqeZn8pbEUSLppj7jCmY
+- name: 美国 070
+  type: vless
+  network: ws
+  server: visa.com
+  port: 8080
+  uuid: a4135b60-bcda-4163-972f-d98b39a612ac
+  tls: false
+  udp: true
+  ws-opts:
+    headers:
+      Host: US1.naichachong.com
+    path: /
 proxy-groups:
 - name: PROXY
   type: select
@@ -1885,6 +1897,7 @@ proxy-groups:
   - 美国 064
   - 美国 065
   - 美国 066
+  - 美国 070
 - name: LOAD-BALANCE
   type: load-balance
   url: https://cp.cloudflare.com/generate_204
