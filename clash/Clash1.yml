@@ -1765,6 +1765,19 @@ proxies:
     headers:
       Host: US1.naichachong.com
     path: /
+- name: 美国 071
+  type: vmess
+  network: ws
+  server: EeEDCFVg.999824.xYZ
+  port: 80
+  uuid: cdec9d57-661d-456a-bbf2-b4c38e9c6711
+  tls: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: eeedcfvg.999824.xyz
+    path: /9dZlJLjHHrL0VwSolbqFpg
 proxy-groups:
 - name: PROXY
   type: select
@@ -1898,6 +1911,7 @@ proxy-groups:
   - 美国 065
   - 美国 066
   - 美国 070
+  - 美国 071
 - name: LOAD-BALANCE
   type: load-balance
   url: https://cp.cloudflare.com/generate_204
