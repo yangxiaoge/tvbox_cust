@@ -1778,6 +1778,17 @@ proxies:
     headers:
       Host: eeedcfvg.999824.xyz
     path: /9dZlJLjHHrL0VwSolbqFpg
+- name: 乌克兰 001
+  type: trojan
+  network: ws
+  server: 45.67.215.95
+  port: 443
+  password: tg-fq521free
+  sni: torjan.xn--xhq44j.eu.org
+  ws-opts:
+    headers:
+      Host: torjan.xn--xhq44j.eu.org
+    path: /
 proxy-groups:
 - name: PROXY
   type: select
@@ -1912,6 +1923,7 @@ proxy-groups:
   - 美国 066
   - 美国 070
   - 美国 071
+  - 乌克兰 001
 - name: LOAD-BALANCE
   type: load-balance
   url: https://cp.cloudflare.com/generate_204
