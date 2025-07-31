@@ -1854,6 +1854,19 @@ proxies:
     headers:
       Host: Rrr4.8906004.xYZ
     path: /DZxb5QZyWgQPuXTwt
+- name: 美国 081
+  type: vmess
+  network: ws
+  server: FFfffffFffFFkkKkkKL.4444926.xYZ
+  port: 80
+  uuid: dc50eb1d-244d-4711-b168-a101a5e6fb1b
+  tls: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: ffffffffffffkkkkkkl.4444926.xyz
+    path: /awmqq79B17rfnpXiNaWb
 proxy-groups:
 - name: PROXY
   type: select
@@ -1994,6 +2007,7 @@ proxy-groups:
   - 美国 072
   - 俄罗斯 005
   - 美国 080
+  - 美国 081
 - name: LOAD-BALANCE
   type: load-balance
   url: https://cp.cloudflare.com/generate_204
