@@ -1516,6 +1516,19 @@ proxies:
     headers:
       Host: ffffffffffffkkkkkkl.4444926.xyz
     path: /awmqq79B17rfnpXiNaWb
+- name: 美国 052
+  type: vmess
+  network: ws
+  server: www.meter.net
+  port: 2083
+  uuid: d218dfe5-fae6-408e-b615-8666df7f0924
+  tls: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: blaze-uk-48.pinkle7.site
+    path: /wssss
 proxy-groups:
 - name: PROXY
   type: select
@@ -1628,6 +1641,7 @@ proxy-groups:
   - 美国 045
   - 美国 047
   - 美国 050
+  - 美国 052
 - name: LOAD-BALANCE
   type: load-balance
   url: https://cp.cloudflare.com/generate_204
