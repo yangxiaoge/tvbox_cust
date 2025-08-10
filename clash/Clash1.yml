@@ -1604,6 +1604,19 @@ proxies:
     headers:
       Host: xcvfgt6.999854.xyz
     path: /4Bp70NdrJV3xr1D40NK
+- name: 美国 062
+  type: vmess
+  network: ws
+  server: cc2dash.89060004.xyz
+  port: 2083
+  uuid: 2fc37713-3017-497e-ff2d-965f826a19a3
+  tls: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: cc2dash.89060004.xyz
+    path: /
 proxy-groups:
 - name: PROXY
   type: select
@@ -1723,6 +1736,7 @@ proxy-groups:
   - 美国 059
   - 美国 060
   - 美国 061
+  - 美国 062
 - name: LOAD-BALANCE
   type: load-balance
   url: https://cp.cloudflare.com/generate_204
