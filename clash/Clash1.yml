@@ -1630,6 +1630,19 @@ proxies:
     headers:
       Host: farid.1.berozha.ir
     path: /us.kkp.me.eu.org/aa
+- name: 美国 064
+  type: vmess
+  network: ws
+  server: 172.67.165.122
+  port: 443
+  uuid: 20e89a95-cedf-4fe3-9421-517ce66be170
+  tls: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: pppploiu.4444936.xyz
+    path: /SHToRcqfiraYkzOdf
 proxy-groups:
 - name: PROXY
   type: select
@@ -1751,6 +1764,7 @@ proxy-groups:
   - 美国 061
   - 美国 062
   - 美国 063
+  - 美国 064
 - name: LOAD-BALANCE
   type: load-balance
   url: https://cp.cloudflare.com/generate_204
