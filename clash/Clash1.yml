@@ -1643,6 +1643,17 @@ proxies:
     headers:
       Host: pppploiu.4444936.xyz
     path: /SHToRcqfiraYkzOdf
+- name: 美国 065
+  type: trojan
+  network: ws
+  server: 172.67.214.21
+  port: 443
+  password: 7248e825-887c-48b9-83bc-c26bc6392bf8
+  sni: xXcdvFgt.191268.XYz
+  ws-opts:
+    headers:
+      Host: xXcdvFgt.191268.XYz
+    path: /ctdmgeIg3NII3ibrzzKXJGy3S1
 proxy-groups:
 - name: PROXY
   type: select
@@ -1765,6 +1776,7 @@ proxy-groups:
   - 美国 062
   - 美国 063
   - 美国 064
+  - 美国 065
 - name: LOAD-BALANCE
   type: load-balance
   url: https://cp.cloudflare.com/generate_204
