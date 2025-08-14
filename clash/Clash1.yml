@@ -1654,6 +1654,19 @@ proxies:
     headers:
       Host: xXcdvFgt.191268.XYz
     path: /ctdmgeIg3NII3ibrzzKXJGy3S1
+- name: 美国 066
+  type: vmess
+  network: ws
+  server: cloudgetservice.mcloudservice.site
+  port: 443
+  uuid: 37f464cb-b826-4278-9bf8-11bdf1ec892b
+  tls: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: Fra-Vp-123.BLaZECLOUD.Site
+    path: /linvkws
 proxy-groups:
 - name: PROXY
   type: select
@@ -1777,6 +1790,7 @@ proxy-groups:
   - 美国 063
   - 美国 064
   - 美国 065
+  - 美国 066
 - name: LOAD-BALANCE
   type: load-balance
   url: https://cp.cloudflare.com/generate_204
