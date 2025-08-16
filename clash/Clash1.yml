@@ -279,6 +279,21 @@ proxies:
     headers:
       Host: m116.164748.xyz
     path: github.com/Alvin9999
+- name: 美国 011
+  type: vmess
+  network: ws
+  server: planb.mojcn.com
+  port: 16617
+  uuid: 0c0fdaa9-da2e-42c0-b38e-25d54ec1e6d4
+  skip-cert-verify: false
+  tls: false
+  tfo: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: b37048544d083a503188d38c53d6e4f2.mobgslb.tbcache.com
+    path: /
 - name: 英国 001
   type: vmess
   network: ws
@@ -294,7 +309,7 @@ proxies:
     headers:
       Host: e5406c2f4f42756d4a4089ffcd58947b.mobgslb.tbcache.com
     path: /
-- name: 美国 011
+- name: 美国 012
   type: trojan
   network: ws
   server: 172.67.214.21
@@ -389,19 +404,6 @@ proxies:
   network: ws
   server: 188.164.159.55
   port: 2096
-  password: Aimer
-  skip-cert-verify: true
-  udp: true
-  sni: epgb.aimercc.dpdns.org
-  ws-opts:
-    headers:
-      Host: epgb.aimercc.dpdns.org
-    path: /?ed=2560
-- name: 美国 012
-  type: trojan
-  network: ws
-  server: 34.85.77.183
-  port: 8080
   password: Aimer
   skip-cert-verify: true
   udp: true
@@ -956,713 +958,690 @@ proxies:
     headers:
       Host: epgb.aimercc.dpdns.org
     path: /?ed=2560
-- name: 美国 039
-  type: vmess
-  network: ws
-  server: planb.mojcn.com
-  port: 16617
-  uuid: 0c0fdaa9-da2e-42c0-b38e-25d54ec1e6d4
+- name: 印度 001
+  type: trojan
+  network: tcp
+  server: 103.252.116.138
+  port: 443
+  password: 2ee85121-31de-4581-a492-eb00f606e392
   skip-cert-verify: false
-  tls: false
-  tfo: false
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: b37048544d083a503188d38c53d6e4f2.mobgslb.tbcache.com
-    path: /
-- name: 哥斯达黎加 001
-  type: vmess
+  sni: hk.freeguard.org
+- name: 德国 001
+  type: trojan
   network: ws
-  server: 190.93.246.151
-  port: 80
-  uuid: 2f38f848-a899-4c87-9807-207a41615e3c
+  server: 5.10.214.216
+  port: 2096
+  password: ttfang
   skip-cert-verify: true
-  tls: false
-  udp: true
-  tfo: true
-  alterId: 0
-  cipher: auto
+  sni: ttfang.fange.me
+  client-fingerprint: chrome
   ws-opts:
     headers:
-      Host: fr.freeyyds.dpdns.org
-    path: /rongseven?ed=2048
-- name: 哥斯达黎加 002
-  type: vmess
+      Host: ttfang.fange.me
+    path: Telegram🇨🇳
+- name: 德国 002
+  type: trojan
   network: ws
-  server: 190.93.246.237
-  port: 80
-  uuid: 2f38f848-a899-4c87-9807-207a41615e3c
+  server: 5.10.215.216
+  port: 2096
+  password: ttfang
   skip-cert-verify: true
-  tls: false
-  udp: true
-  tfo: true
-  alterId: 0
-  cipher: auto
+  sni: ttfang.fange.me
+  client-fingerprint: chrome
   ws-opts:
     headers:
-      Host: fr.freeyyds.dpdns.org
-    path: /rongseven?ed=2048
-- name: 美国 040
-  type: vmess
+      Host: ttfang.fange.me
+    path: Telegram🇨🇳
+- name: 阿塞拜疆 001
+  type: trojan
   network: ws
-  server: www.hdmoli.com
-  port: 80
-  uuid: 2f38f848-a899-4c87-9807-207a41615e3c
+  server: 5.10.244.216
+  port: 2096
+  password: ttfang
   skip-cert-verify: true
-  tls: false
-  udp: true
-  tfo: true
-  alterId: 0
-  cipher: auto
+  sni: ttfang.fange.me
+  client-fingerprint: chrome
   ws-opts:
     headers:
-      Host: fr.freeyyds.dpdns.org
-    path: /rongseven?ed=2048
-- name: 美国 041
-  type: vmess
+      Host: ttfang.fange.me
+    path: Telegram🇨🇳
+- name: 阿塞拜疆 002
+  type: trojan
   network: ws
-  server: www.xinjuc.com
-  port: 80
-  uuid: 2f38f848-a899-4c87-9807-207a41615e3c
+  server: 5.10.245.216
+  port: 2096
+  password: ttfang
   skip-cert-verify: true
-  tls: false
-  udp: true
-  tfo: true
-  alterId: 0
-  cipher: auto
+  sni: ttfang.fange.me
+  client-fingerprint: chrome
   ws-opts:
     headers:
-      Host: hk.freeyyds.dpdns.org
-    path: /rongseven?ed=2048
-- name: 美国 042
-  type: vmess
+      Host: ttfang.fange.me
+    path: Telegram🇨🇳
+- name: 阿塞拜疆 003
+  type: trojan
   network: ws
-  server: baota.me
-  port: 80
-  uuid: 2f38f848-a899-4c87-9807-207a41615e3c
+  server: 5.10.246.216
+  port: 2096
+  password: ttfang
   skip-cert-verify: true
-  tls: false
-  udp: true
-  tfo: true
-  alterId: 0
-  cipher: auto
+  sni: ttfang.fange.me
+  client-fingerprint: chrome
   ws-opts:
     headers:
-      Host: us.freeyyds.dpdns.org
-    path: /rongseven?ed=2048
-- name: 美国 043
-  type: vmess
+      Host: ttfang.fange.me
+    path: Telegram🇨🇳
+- name: 阿塞拜疆 004
+  type: trojan
   network: ws
-  server: cloudflare-ip.mofashi.ltd
-  port: 80
-  uuid: 2f38f848-a899-4c87-9807-207a41615e3c
+  server: 5.10.247.216
+  port: 2096
+  password: ttfang
   skip-cert-verify: true
-  tls: false
-  udp: true
-  tfo: true
-  alterId: 0
-  cipher: auto
+  sni: ttfang.fange.me
+  client-fingerprint: chrome
   ws-opts:
     headers:
-      Host: us.freeyyds.dpdns.org
-    path: /rongseven?ed=2048
-- name: 美国 044
-  type: vmess
+      Host: ttfang.fange.me
+    path: Telegram🇨🇳
+- name: 德国 003
+  type: trojan
   network: ws
-  server: www.wn03.cc
-  port: 80
-  uuid: 2f38f848-a899-4c87-9807-207a41615e3c
+  server: 5.175.141.216
+  port: 2096
+  password: ttfang
   skip-cert-verify: true
-  tls: false
-  udp: true
-  tfo: true
-  alterId: 0
-  cipher: auto
+  sni: ttfang.fange.me
+  client-fingerprint: chrome
   ws-opts:
     headers:
-      Host: us.freeyyds.dpdns.org
-    path: /rongseven?ed=2048
-- name: 美国 045
-  type: vless
-  network: ws
-  server: www.clickbank.com
-  port: 80
-  uuid: 5aebf7d1-fb08-4200-9ab3-9ae3c01ab356
-  udp: true
-  smux:
-    enabled: false
-    max_streams: 8
-    protocol: h2mux
-  ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
-    headers:
-      Host: dbe661d5a761ff6c.s-5HU09JDF-97SHS.WWWrubika.irto.xn--ls8haaaaaaaaaaaaaaaaaa.la.which.xn--ls8haaaaaaaaaaaaaaaaaa.xn-ls8faaaaaaaaaa.speedtest.net.google.com.eu.ir.nl.aparat.com.komak.IR.Hj-De.85858569.xYz.
-      User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/124.0.0.0 Safari/537.36
-    ip-version: dual
-    max-early-data: 2050
-    path: /hajmi
+      Host: ttfang.fange.me
+    path: Telegram🇨🇳
 - name: 荷兰 001
-  type: vless
+  type: trojan
   network: ws
-  server: www.eshipz.com
-  port: 80
-  uuid: 5aebf7d1-fb08-4200-9ab3-9ae3c01ab356
-  udp: true
-  smux:
-    enabled: false
-    max_streams: 8
-    protocol: h2mux
-  ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
-    headers:
-      Host: dbe661d5a761ff6c.s-5HU09JDF-97SHS.WWWrubika.irto.xn--ls8haaaaaaaaaaaaaaaaaa.la.which.xn--ls8haaaaaaaaaaaaaaaaaa.xn-ls8faaaaaaaaaa.speedtest.net.google.com.eu.ir.nl.aparat.com.komak.IR.Hj-En.85858569.xYz.
-      User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/117.0.0.0 Mobile Safari/537.36
-    ip-version: dual
-    max-early-data: 2050
-    path: /hajmi
-- name: 美国 046
-  type: vless
-  network: ws
-  server: www.drctcldfa.com
-  port: 80
-  uuid: 5aebf7d1-fb08-4200-9ab3-9ae3c01ab356
-  udp: true
-  smux:
-    enabled: false
-    max_streams: 8
-    protocol: h2mux
-  ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
-    headers:
-      Host: dbe661d5a761ff6c.s-5HU09JDF-97SHS.WWWrubika.irto.xn--ls8haaaaaaaaaaaaaaaaaa.la.which.xn--ls8haaaaaaaaaaaaaaaaaa.xn-ls8faaaaaaaaaa.speedtest.net.google.com.eu.ir.nl.aparat.com.komak.IR.Hj-Us.85858569.xYz.
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/125.0.0.0 Safari/537.36
-    ip-version: dual
-    max-early-data: 2050
-    path: /hajmi
-- name: 美国 049
-  type: vless
-  network: ws
-  server: 104.24.37.192
-  port: 80
-  uuid: 9a2680ff-c5d5-410a-9108-8d6b10e4ea1e
-  skip-cert-verify: false
-  tls: false
-  ws-opts:
-    headers:
-      Host: ppal03.dolobe7975.workers.dev
-    path: /?ed=2560
-- name: 美国 069
-  type: vless
-  network: ws
-  server: 172.67.135.195
-  port: 2052
-  uuid: 0d710c53-876d-401f-97f0-6bd1a8db941a
+  server: 5.182.34.216
+  port: 2096
+  password: ttfang
   skip-cert-verify: true
-  udp: true
-  xudp: true
-  ws-opts:
-    headers:
-      Host: sWEeT-DIsK-b69d.TUdTudtrUHtRU.wOrkERS.dev
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/51.0.2704.63 Safari/537.36
-    path: /J61hhknxUXEwJZLq/MTU5LjY5LjE1My4xMTQ=?ed=2560
-- name: 美国 047
-  type: vless
-  network: ws
-  server: 104.26.15.85
-  port: 80
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  skip-cert-verify: false
-  tls: false
+  sni: ttfang.fange.me
   client-fingerprint: chrome
   ws-opts:
     headers:
-      Host: a.xn--i-sx6a60i.us.kg.
-    path: /?ed=2560
-- name: 美国 048
-  type: vless
-  network: ws
-  server: 104.26.14.85
-  port: 80
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ws-opts:
-    headers:
-      Host: a.xn--i-sx6a60i.us.kg.
-    path: /?ed=2560
-- name: 美国 056
-  type: vless
-  network: ws
-  server: 104.26.12.101
-  port: 2052
-  uuid: dfc1a9ab-6241-4b73-92f7-b299fc6b7751
-  servername: Yak-Khanda-kUn-eY-gUL.biNG.com.xn--cR8HaaaAaAAAaAaaAaAaAAaAAaaaAAAAAaAaaAaaaAaaaaAAaaAAAaaaaAa.xN--Cr8hAaAaaAaaAAAAAAaaaAAAaAAaaAaAaAAAAAA.TREPAspeEdTEsT.NEtrag.cOm.PX.Com.sh017.IR.XN--Cr8hAaaAaaAaaAaaaAAAaaaAaaAaaaAaAAAaaaA.yek.dDnS-ip.nEt
-  skip-cert-verify: true
-  udp: true
-  client-fingerprint: chrome
-  delay: 2905
-  ws-opts:
-    headers:
-      Host: Yak-Khanda-kUn-eY-gUL.biNG.com.xn--cR8HaaaAaAAAaAaaAaAaAAaAAaaaAAAAAaAaaAaaaAaaaaAAaaAAAaaaaAa.xN--Cr8hAaAaaAaaAAAAAAaaaAAAaAAaaAaAaAAAAAA.TREPAspeEdTEsT.NEtrag.cOm.PX.Com.sh017.IR.XN--Cr8hAaaAaaAaaAaaaAAAaaaAaaAaaaAaAAAaaaA.yek.dDnS-ip.nEt
-    path: /?ed=1080/telegram
-- name: 美国 050
-  type: vless
-  network: ws
-  server: 66.235.200.191
-  port: 80
-  uuid: e497da22-d020-40fb-a1fa-bc294066a2d2
-  servername: pormang.webhost99.workers.dev
-  skip-cert-verify: false
-  tls: false
-  udp: true
-  ws-opts:
-    headers:
-      Host: pormang.webhost99.workers.dev
-    path: /
+      Host: ttfang.fange.me
+    path: Telegram🇨🇳
 - name: 俄罗斯 011
-  type: vless
+  type: trojan
   network: ws
-  server: 185.174.138.194
-  port: 80
-  uuid: e497da22-d020-40fb-a1fa-bc294066a2d2
-  servername: pormang.webhost99.workers.dev
-  skip-cert-verify: false
-  tls: false
-  udp: true
+  server: 5.182.84.216
+  port: 2096
+  password: ttfang
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  client-fingerprint: chrome
   ws-opts:
     headers:
-      Host: pormang.webhost99.workers.dev
-    path: /
+      Host: ttfang.fange.me
+    path: Telegram🇨🇳
+- name: 俄罗斯 012
+  type: trojan
+  network: ws
+  server: 5.182.85.216
+  port: 2096
+  password: ttfang
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  client-fingerprint: chrome
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: Telegram🇨🇳
+- name: 印度 002
+  type: trojan
+  network: ws
+  server: 14.102.228.216
+  port: 2096
+  password: ttfang
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  client-fingerprint: chrome
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: Telegram🇨🇳
+- name: 印度 003
+  type: trojan
+  network: ws
+  server: 14.102.229.216
+  port: 2096
+  password: ttfang
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  client-fingerprint: chrome
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: Telegram🇨🇳
+- name: 英国 002
+  type: trojan
+  network: ws
+  server: 25.25.25.216
+  port: 2096
+  password: ttfang
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  client-fingerprint: chrome
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: Telegram🇨🇳
+- name: 英国 003
+  type: trojan
+  network: ws
+  server: 25.26.27.216
+  port: 2096
+  password: ttfang
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  client-fingerprint: chrome
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: Telegram🇨🇳
+- name: 美国 039
+  type: trojan
+  network: ws
+  server: 31.12.75.216
+  port: 2096
+  password: ttfang
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  client-fingerprint: chrome
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: Telegram🇨🇳
+- name: 乌克兰 003
+  type: trojan
+  network: ws
+  server: 31.43.179.216
+  port: 2096
+  password: ttfang
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  client-fingerprint: chrome
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: Telegram🇨🇳
+- name: 德国 004
+  type: trojan
+  network: ws
+  server: 31.185.108.216
+  port: 2096
+  password: ttfang
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  client-fingerprint: chrome
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: Telegram🇨🇳
+- name: 英国 004
+  type: trojan
+  network: ws
+  server: 45.8.211.216
+  port: 2096
+  password: ttfang
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  client-fingerprint: chrome
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: Telegram🇨🇳
+- name: 英国 005
+  type: trojan
+  network: ws
+  server: 45.12.30.216
+  port: 2096
+  password: ttfang
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  client-fingerprint: chrome
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: Telegram🇨🇳
+- name: 英国 006
+  type: trojan
+  network: ws
+  server: 45.12.31.216
+  port: 2096
+  password: ttfang
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  client-fingerprint: chrome
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: Telegram🇨🇳
+- name: 美国 040
+  type: trojan
+  network: ws
+  server: 45.40.144.216
+  port: 2096
+  password: ttfang
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  client-fingerprint: chrome
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: Telegram🇨🇳
+- name: 美国 041
+  type: trojan
+  network: ws
+  server: 45.40.145.216
+  port: 2096
+  password: ttfang
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  client-fingerprint: chrome
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: Telegram🇨🇳
+- name: 美国 042
+  type: trojan
+  network: ws
+  server: 45.40.146.216
+  port: 2096
+  password: ttfang
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  client-fingerprint: chrome
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: Telegram🇨🇳
+- name: 美国 043
+  type: trojan
+  network: ws
+  server: 45.40.147.216
+  port: 2096
+  password: ttfang
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  client-fingerprint: chrome
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: Telegram🇨🇳
+- name: 美国 044
+  type: trojan
+  network: ws
+  server: 45.40.148.216
+  port: 2096
+  password: ttfang
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  client-fingerprint: chrome
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: Telegram🇨🇳
+- name: 美国 045
+  type: trojan
+  network: ws
+  server: 45.40.149.216
+  port: 2096
+  password: ttfang
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  client-fingerprint: chrome
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: Telegram🇨🇳
+- name: 美国 046
+  type: trojan
+  network: ws
+  server: 45.40.150.216
+  port: 2096
+  password: ttfang
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  client-fingerprint: chrome
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: Telegram🇨🇳
+- name: 美国 047
+  type: trojan
+  network: ws
+  server: 45.40.151.216
+  port: 2096
+  password: ttfang
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  client-fingerprint: chrome
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: Telegram🇨🇳
+- name: 美国 048
+  type: trojan
+  network: ws
+  server: 45.40.152.216
+  port: 2096
+  password: ttfang
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  client-fingerprint: chrome
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: Telegram🇨🇳
+- name: 美国 049
+  type: trojan
+  network: ws
+  server: 45.40.153.216
+  port: 2096
+  password: ttfang
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  client-fingerprint: chrome
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: Telegram🇨🇳
+- name: 美国 050
+  type: trojan
+  network: ws
+  server: 45.40.154.216
+  port: 2096
+  password: ttfang
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  client-fingerprint: chrome
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: Telegram🇨🇳
 - name: 美国 051
-  type: vless
+  type: trojan
   network: ws
-  server: 66.235.200.58
-  port: 80
-  uuid: e497da22-d020-40fb-a1fa-bc294066a2d2
-  servername: pormang.webhost99.workers.dev
-  skip-cert-verify: false
-  tls: false
-  udp: true
-  ws-opts:
-    headers:
-      Host: pormang.webhost99.workers.dev
-    path: /
-- name: 荷兰 004
-  type: vless
-  network: ws
-  server: 45.149.12.128
-  port: 80
-  uuid: e497da22-d020-40fb-a1fa-bc294066a2d2
-  servername: pormang.webhost99.workers.dev
-  skip-cert-verify: false
-  tls: false
-  udp: true
+  server: 45.40.155.216
+  port: 2096
+  password: ttfang
+  skip-cert-verify: true
+  sni: ttfang.fange.me
   client-fingerprint: chrome
   ws-opts:
     headers:
-      Host: pormang.webhost99.workers.dev
-    path: /
-- name: 巴西 002
-  type: vless
+      Host: ttfang.fange.me
+    path: Telegram🇨🇳
+- name: 乌克兰 004
+  type: trojan
   network: ws
-  server: 188.114.97.1
-  port: 8880
-  uuid: 91d9b8d8-2aab-4e1a-9573-0d59e9cd7f8e
-  servername: falcunargo-channel.be3374a836.workers.Dev
-  tls: false
-  ws-opts:
-    headers:
-      Host: falcunargo-channel.be3374a836.workers.Dev
-    path: /?ed=2048
-- name: 巴西 003
-  type: vless
-  network: ws
-  server: 188.114.96.223
-  port: 80
-  uuid: eb201923-0e39-4425-bd0f-6244cd24ef2a
-  skip-cert-verify: false
-  tls: false
+  server: 45.67.215.216
+  port: 2096
+  password: ttfang
+  skip-cert-verify: true
+  sni: ttfang.fange.me
   client-fingerprint: chrome
   ws-opts:
     headers:
-      Host: zaq11000d.b835a8094d.workers.dev
-    path: /?ed=2560
-- name: 美国 073
-  type: vless
+      Host: ttfang.fange.me
+    path: Telegram🇨🇳
+- name: 法国 001
+  type: trojan
   network: ws
-  server: 104.24.147.64
-  port: 80
-  uuid: 03e4d6fe-f461-499f-b9c6-35c60f192e1a
-  servername: ppal03-ppal03.letiwe3303.workers.dev
-  tls: false
-  ws-opts:
-    headers:
-      Host: ppal03-ppal03.letiwe3303.workers.dev
-    path: /?ed=2560
-- name: 美国 074
-  type: vless
-  network: ws
-  server: 104.24.248.204
-  port: 80
-  uuid: 2370f4d8-6694-4e51-8c72-b2782ae96a59
-  skip-cert-verify: false
-  tls: false
+  server: 45.80.108.216
+  port: 2096
+  password: ttfang
+  skip-cert-verify: true
+  sni: ttfang.fange.me
   client-fingerprint: chrome
   ws-opts:
     headers:
-      Host: withered-wave-ee0b-ppal03.faxip46069.workers.dev
-    path: /?ed=2560
-- name: 美国 075
-  type: vless
+      Host: ttfang.fange.me
+    path: Telegram🇨🇳
+- name: 法国 002
+  type: trojan
   network: ws
-  server: 104.16.178.238
-  port: 80
-  uuid: d4eddaf9-a660-4905-b835-cad98677b380
-  servername: little-bird-a235-ppal03.fosawaw121.workers.dev
-  tls: false
-  ws-opts:
-    headers:
-      Host: little-bird-a235-ppal03.fosawaw121.workers.dev
-    path: /?ed=2560
-- name: 美国 078
-  type: vless
-  network: ws
-  server: 104.24.186.156
-  port: 80
-  uuid: 6ff4726f-3650-4803-95eb-50b240f6ac75
-  skip-cert-verify: false
-  tls: false
+  server: 45.80.110.216
+  port: 2096
+  password: ttfang
+  skip-cert-verify: true
+  sni: ttfang.fange.me
   client-fingerprint: chrome
   ws-opts:
     headers:
-      Host: red-math-7092-ppal03.mewoco2522.workers.dev
-    path: /?ed=2560
-- name: 美国 052
-  type: vless
+      Host: ttfang.fange.me
+    path: Telegram🇨🇳
+- name: 法国 003
+  type: trojan
   network: ws
-  server: 104.17.148.22
-  port: 80
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  servername: redw.pooriam.ir
-  tls: false
+  server: 45.80.111.216
+  port: 2096
+  password: ttfang
+  skip-cert-verify: true
+  sni: ttfang.fange.me
   client-fingerprint: chrome
   ws-opts:
     headers:
-      Host: redw.pooriam.ir
-    path: /LwW5jwrnymnOdqki?ed=2560
-- name: 美国 053
-  type: vless
+      Host: ttfang.fange.me
+    path: Telegram🇨🇳
+- name: 英国 007
+  type: trojan
   network: ws
-  server: 104.16.1.47
-  port: 80
-  uuid: b550a101-63fe-4862-bfd3-8b87bb4168dd
-  servername: flat-bread-ddb6-ppal03.joriy39169.workers.dev
-  tls: false
+  server: 45.85.118.216
+  port: 2096
+  password: ttfang
+  skip-cert-verify: true
+  sni: ttfang.fange.me
   client-fingerprint: chrome
   ws-opts:
     headers:
-      Host: flat-bread-ddb6-ppal03.joriy39169.workers.dev
-    path: /?ed=2560
-- name: 美国 054
-  type: vless
+      Host: ttfang.fange.me
+    path: Telegram🇨🇳
+- name: 英国 008
+  type: trojan
   network: ws
-  server: 172.67.204.84
-  port: 80
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  skip-cert-verify: false
-  tls: false
+  server: 45.85.119.216
+  port: 2096
+  password: ttfang
+  skip-cert-verify: true
+  sni: ttfang.fange.me
   client-fingerprint: chrome
   ws-opts:
     headers:
-      Host: a.xn--i-sx6a60i.us.kg.
-    path: /t.mevpnAndroid2/?ed=2560
-- name: 荷兰 003
-  type: vless
-  network: ws
-  server: 45.149.12.232
-  port: 80
-  uuid: e497da22-d020-40fb-a1fa-bc294066a2d2
-  skip-cert-verify: false
-  tls: false
-  ws-opts:
-    headers:
-      Host: pormang.webhost99.workers.dev
-    path: /
-- name: 美国 055
-  type: vless
-  network: ws
-  server: 66.235.200.149
-  port: 80
-  uuid: e497da22-d020-40fb-a1fa-bc294066a2d2
-  skip-cert-verify: false
-  tls: false
-  ws-opts:
-    headers:
-      Host: pormang.webhost99.workers.dev
-    path: /
-- name: 美国 057
-  type: vless
-  network: ws
-  server: 66.235.200.30
-  port: 80
-  uuid: e497da22-d020-40fb-a1fa-bc294066a2d2
-  skip-cert-verify: false
-  tls: false
-  ws-opts:
-    headers:
-      Host: pormang.webhost99.workers.dev
-    path: /
-- name: 荷兰 013
-  type: vless
-  network: ws
-  server: 45.149.12.206
-  port: 80
-  uuid: e497da22-d020-40fb-a1fa-bc294066a2d2
-  skip-cert-verify: false
-  tls: false
-  client-fingerprint: chrome
-  ws-opts:
-    headers:
-      Host: pormang.webhost99.workers.dev
-    path: /
-- name: 美国 077
-  type: vless
-  network: ws
-  server: 104.26.12.31
-  port: 80
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  skip-cert-verify: false
-  tls: false
-  ws-opts:
-    headers:
-      Host: redw.pooriam.ir
-    path: /
-- name: 美国 083
-  type: vless
-  network: ws
-  server: 104.27.88.150
-  port: 80
-  uuid: e497da22-d020-40fb-a1fa-bc294066a2d2
-  skip-cert-verify: false
-  tls: false
-  ws-opts:
-    headers:
-      Host: pormang.webhost99.workers.dev
-    path: /
-- name: 美国 087
-  type: vless
-  network: ws
-  server: 172.67.75.172
-  port: 80
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  skip-cert-verify: false
-  tls: false
-  ws-opts:
-    headers:
-      Host: redw.pooriam.ir
-    path: /
-- name: 美国 093
-  type: vless
-  network: ws
-  server: 104.16.171.121
-  port: 80
-  uuid: a3875c94-e968-404c-b62d-5a292d20e6d8
-  skip-cert-verify: false
-  tls: false
-  ws-opts:
-    headers:
-      Host: polished-limit-deb9-ppal03.latopi8673.workers.dev
-    path: /?ed=2560
-- name: 美国 112
-  type: vless
-  network: ws
-  server: 66.235.200.5
-  port: 80
-  uuid: e497da22-d020-40fb-a1fa-bc294066a2d2
-  skip-cert-verify: false
-  tls: false
-  ws-opts:
-    headers:
-      Host: pormang.webhost99.workers.dev
-    path: /
-- name: 美国 058
-  type: vless
-  network: ws
-  server: 104.16.76.55
-  port: 80
-  uuid: 5d8bc42a-d345-4bd3-a844-4b90afc44670
-  skip-cert-verify: false
-  tls: false
-  ws-opts:
-    headers:
-      Host: patient-shadow-baf1-ppal03.hohel98085.workers.dev
-    path: /?ed=2560
+      Host: ttfang.fange.me
+    path: Telegram🇨🇳
 - name: 荷兰 002
-  type: vless
+  type: trojan
   network: ws
-  server: 45.131.5.111
-  port: 80
-  uuid: d6ff33a6-03bf-4338-8a63-62ab284a9466
-  servername: feng4.l1ut8bi9.workers.dev
-  skip-cert-verify: false
-  tls: false
-  ws-opts:
-    headers:
-      Host: feng4.l1ut8bi9.workers.dev
-    path: /Telegram
-- name: 美国 059
-  type: vless
-  network: ws
-  server: 104.24.9.204
-  port: 80
-  uuid: ca68a029-971c-4ea4-8c1d-411cb7adc474
-  skip-cert-verify: false
-  tls: false
-  ws-opts:
-    headers:
-      Host: patient-sunset-f000-ppal03.cijej53213.workers.dev
-    path: /?ed=2560
-- name: 美国 060
-  type: vless
-  network: ws
-  server: 104.16.188.41
-  port: 80
-  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-  skip-cert-verify: false
-  tls: false
-  ws-opts:
-    headers:
-      Host: proud-queen-55500071.cexonoc962.workers.dev
-    path: /?ed=2560
-- name: 美国 061
-  type: vless
-  network: ws
-  server: 104.21.30.29
-  port: 80
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  skip-cert-verify: false
-  tls: false
-  ws-opts:
-    headers:
-      Host: a.mifeng.us.kg
-    path: /telegram-_-_-_-_-__-free_shekan-_-_-_-/?ed=2048
-- name: 美国 062
-  type: vless
-  network: ws
-  server: 104.21.56.44
-  port: 80
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  servername: '@V2ray_6_@V2ray_6_@40V2ray_6@V2ray_6_@V2ray_6_@40V2ray_6@40V2ray_6_@40V2ray_6_@40V2ray_6'
-  tls: false
+  server: 45.128.76.216
+  port: 2096
+  password: ttfang
+  skip-cert-verify: true
+  sni: ttfang.fange.me
   client-fingerprint: chrome
   ws-opts:
     headers:
-      Host: redw.pooriam.ir
-    path: /
-- name: 美国 067
-  type: vless
+      Host: ttfang.fange.me
+    path: Telegram🇨🇳
+- name: 荷兰 003
+  type: trojan
   network: ws
-  server: 172.67.168.60
-  port: 80
-  uuid: 5335d16e-7e42-4c9b-93a3-9e83bfd3073d
-  skip-cert-verify: false
-  tls: false
-  ws-opts:
-    headers:
-      Host: workerr.johnstoner.workers.dev
-    path: /?ed=2048
-- name: 美国 068
-  type: vless
-  network: ws
-  server: 104.26.14.185
-  port: 8080
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  skip-cert-verify: false
-  tls: false
-  ws-opts:
-    headers:
-      Host: a.xn--i-sx6a60i.us.kg.
-    path: /
-- name: 美国 109
-  type: vless
-  network: ws
-  server: 66.235.200.94
-  port: 8880
-  uuid: 5faa94c6-ea27-4ea0-9e39-2de3d6ea9be1
-  skip-cert-verify: false
-  tls: false
-  ws-opts:
-    headers:
-      Host: channel-falcunargo.efa180b5d7.workers.Dev
-    path: /✦❰+𝗝𝗼𝗶𝗻+➪+
-- name: 美国 115
-  type: vless
-  network: ws
-  server: 104.21.24.112
-  port: 80
-  uuid: 65b3cbba-e6ac-485a-9481-976a0415eab9
-  skip-cert-verify: false
-  tls: false
-  ws-opts:
-    headers:
-      Host: bLue-sNoW-a243.GeleNE5962.wOrKeRS.dEV
-    path: /Fvy0Y7NJ7uucUDha?ed=2560
-- name: 美国 124
-  type: vless
-  network: ws
-  server: 172.67.189.174
-  port: 80
-  uuid: 19b3cbba-e6ac-485a-9481-926a0415eab2
-  skip-cert-verify: false
-  tls: false
-  ws-opts:
-    headers:
-      Host: sHrill-tErm-639b.TageLIT414.workeRs.dEv
-    path: /
-- name: 美国 140
-  type: vless
-  network: ws
-  server: 104.18.56.155
-  port: 8080
-  uuid: 9f0eae34-97c1-4c07-8a55-438379981334
-  skip-cert-verify: false
-  tls: false
+  server: 45.130.125.216
+  port: 2096
+  password: ttfang
+  skip-cert-verify: true
+  sni: ttfang.fange.me
   client-fingerprint: chrome
   ws-opts:
     headers:
-      Host: snowy-bush-4df8-ppal03.toxebex651.workers.dev
-    path: /
-- name: 美国 145
-  type: vless
+      Host: ttfang.fange.me
+    path: Telegram🇨🇳
+- name: 荷兰 004
+  type: trojan
   network: ws
-  server: 172.64.78.198
-  port: 80
-  uuid: 2370f4d8-6694-4e51-8c72-b2782ae96a59
-  skip-cert-verify: false
-  tls: false
+  server: 45.131.4.216
+  port: 2096
+  password: ttfang
+  skip-cert-verify: true
+  sni: ttfang.fange.me
   client-fingerprint: chrome
   ws-opts:
     headers:
-      Host: withered-wave-ee0b-ppal03.faxip46069.workers.dev
-    path: /?ed=2560
-- name: 美国 150
-  type: vless
+      Host: ttfang.fange.me
+    path: Telegram🇨🇳
+- name: 荷兰 005
+  type: trojan
   network: ws
-  server: 104.16.182.65
-  port: 80
-  uuid: f86586c2-3a4c-49c9-83ec-5ae43786d4f7
-  skip-cert-verify: false
-  tls: false
+  server: 45.131.5.216
+  port: 2096
+  password: ttfang
+  skip-cert-verify: true
+  sni: ttfang.fange.me
   client-fingerprint: chrome
   ws-opts:
     headers:
-      Host: dark-bonus-0f2f-ppal03.yapeyef825.workers.dev
-    path: /Telegram
+      Host: ttfang.fange.me
+    path: Telegram🇨🇳
+- name: 荷兰 006
+  type: trojan
+  network: ws
+  server: 45.131.6.216
+  port: 2096
+  password: ttfang
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  client-fingerprint: chrome
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: Telegram🇨🇳
+- name: 荷兰 007
+  type: trojan
+  network: ws
+  server: 45.131.7.216
+  port: 2096
+  password: ttfang
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  client-fingerprint: chrome
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: Telegram🇨🇳
+- name: 荷兰 008
+  type: trojan
+  network: ws
+  server: 45.131.208.216
+  port: 2096
+  password: ttfang
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  client-fingerprint: chrome
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: Telegram🇨🇳
+- name: 荷兰 009
+  type: trojan
+  network: ws
+  server: 45.131.209.216
+  port: 2096
+  password: ttfang
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  client-fingerprint: chrome
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: Telegram🇨🇳
+- name: 荷兰 010
+  type: trojan
+  network: ws
+  server: 45.131.210.216
+  port: 2096
+  password: ttfang
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  client-fingerprint: chrome
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: Telegram🇨🇳
+- name: 荷兰 011
+  type: trojan
+  network: ws
+  server: 45.131.211.216
+  port: 2096
+  password: ttfang
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  client-fingerprint: chrome
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: Telegram🇨🇳
+- name: 荷兰 012
+  type: trojan
+  network: ws
+  server: 45.135.235.216
+  port: 2096
+  password: ttfang
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  client-fingerprint: chrome
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: Telegram🇨🇳
+- name: 荷兰 013
+  type: trojan
+  network: ws
+  server: 45.142.120.216
+  port: 2096
+  password: ttfang
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  client-fingerprint: chrome
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: Telegram🇨🇳
+- name: 荷兰 014
+  type: trojan
+  network: ws
+  server: 45.146.201.216
+  port: 2096
+  password: ttfang
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  client-fingerprint: chrome
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: Telegram🇨🇳
+- name: 荷兰 015
+  type: trojan
+  network: ws
+  server: 45.149.12.216
+  port: 2096
+  password: ttfang
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  client-fingerprint: chrome
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: Telegram🇨🇳
 proxy-groups:
 - name: PROXY
   type: select
@@ -1684,8 +1663,9 @@ proxy-groups:
   - 美国 008
   - 美国 009
   - 美国 010
-  - 英国 001
   - 美国 011
+  - 英国 001
+  - 美国 012
   - 亚美尼亚 001
   - 亚美尼亚 002
   - 亚美尼亚 003
@@ -1693,7 +1673,6 @@ proxy-groups:
   - 亚美尼亚 005
   - 亚美尼亚 006
   - 亚美尼亚 007
-  - 美国 012
   - 日本 001
   - 韩国 001
   - 韩国 002
@@ -1736,58 +1715,59 @@ proxy-groups:
   - 美国 036
   - 美国 037
   - 美国 038
+  - 印度 001
+  - 德国 001
+  - 德国 002
+  - 阿塞拜疆 001
+  - 阿塞拜疆 002
+  - 阿塞拜疆 003
+  - 阿塞拜疆 004
+  - 德国 003
+  - 荷兰 001
+  - 俄罗斯 011
+  - 俄罗斯 012
+  - 印度 002
+  - 印度 003
+  - 英国 002
+  - 英国 003
   - 美国 039
-  - 哥斯达黎加 001
-  - 哥斯达黎加 002
+  - 乌克兰 003
+  - 德国 004
+  - 英国 004
+  - 英国 005
+  - 英国 006
   - 美国 040
   - 美国 041
   - 美国 042
   - 美国 043
   - 美国 044
   - 美国 045
-  - 荷兰 001
   - 美国 046
-  - 美国 049
-  - 美国 069
   - 美国 047
   - 美国 048
-  - 美国 056
+  - 美国 049
   - 美国 050
-  - 俄罗斯 011
   - 美国 051
-  - 荷兰 004
-  - 巴西 002
-  - 巴西 003
-  - 美国 073
-  - 美国 074
-  - 美国 075
-  - 美国 078
-  - 美国 052
-  - 美国 053
-  - 美国 054
-  - 荷兰 003
-  - 美国 055
-  - 美国 057
-  - 荷兰 013
-  - 美国 077
-  - 美国 083
-  - 美国 087
-  - 美国 093
-  - 美国 112
-  - 美国 058
+  - 乌克兰 004
+  - 法国 001
+  - 法国 002
+  - 法国 003
+  - 英国 007
+  - 英国 008
   - 荷兰 002
-  - 美国 059
-  - 美国 060
-  - 美国 061
-  - 美国 062
-  - 美国 067
-  - 美国 068
-  - 美国 109
-  - 美国 115
-  - 美国 124
-  - 美国 140
-  - 美国 145
-  - 美国 150
+  - 荷兰 003
+  - 荷兰 004
+  - 荷兰 005
+  - 荷兰 006
+  - 荷兰 007
+  - 荷兰 008
+  - 荷兰 009
+  - 荷兰 010
+  - 荷兰 011
+  - 荷兰 012
+  - 荷兰 013
+  - 荷兰 014
+  - 荷兰 015
 - name: LOAD-BALANCE
   type: load-balance
   url: https://cp.cloudflare.com/generate_204
