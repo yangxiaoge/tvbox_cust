@@ -1669,6 +1669,19 @@ proxies:
     headers:
       Host: ttfang.fange.me
     path: Telegram🇨🇳
+- name: 美国 052
+  type: trojan
+  network: ws
+  server: 50.62.195.216
+  port: 2096
+  password: ttfang
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  client-fingerprint: chrome
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: Telegram🇨🇳
 proxy-groups:
 - name: PROXY
   type: select
@@ -1797,6 +1810,7 @@ proxy-groups:
   - 美国 049
   - 美国 050
   - 美国 051
+  - 美国 052
 - name: LOAD-BALANCE
   type: load-balance
   url: https://cp.cloudflare.com/generate_204
