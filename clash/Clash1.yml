@@ -130,6 +130,14 @@ dns:
     - +.googleapis.com
 proxies:
 - name: 美国 001
+  type: trojan
+  network: tcp
+  server: 3.112.225.166
+  port: 443
+  password: 253bc477d4e43c209f2d427272968280
+  skip-cert-verify: true
+  sni: www.baidu.com
+- name: 美国 002
   type: vmess
   network: ws
   server: ssssssssssssfffffffgh.2032.pp.ua
@@ -184,7 +192,7 @@ proxies:
     headers:
       Host: torjan.xn--xhq44j.eu.org
     path: /
-- name: 美国 002
+- name: 美国 003
   type: trojan
   network: ws
   server: 216.24.57.30
@@ -197,7 +205,7 @@ proxies:
     headers:
       Host: torjan.xn--xhq44j.eu.org
     path: /
-- name: 美国 003
+- name: 美国 004
   type: trojan
   network: ws
   server: 198.62.62.67
@@ -210,14 +218,6 @@ proxies:
     headers:
       Host: torjan.xn--xhq44j.eu.org
     path: /
-- name: 美国 004
-  type: trojan
-  network: tcp
-  server: 3.112.225.166
-  port: 443
-  password: 253bc477d4e43c209f2d427272968280
-  skip-cert-verify: true
-  sni: www.baidu.com
 - name: 美国 005
   type: trojan
   network: ws
@@ -1646,6 +1646,18 @@ proxies:
     headers:
       Host: ttfang.fange.me
     path: Telegram🇨🇳
+- name: 美国 054
+  type: trojan
+  network: ws
+  server: 166.62.106.194
+  port: 2096
+  password: ttfang
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: Telegram🇨🇳
 proxy-groups:
 - name: PROXY
   type: select
@@ -1658,10 +1670,10 @@ proxy-groups:
   type: select
   proxies: &id001
   - 美国 001
+  - 美国 002
   - 俄罗斯 001
   - 立陶宛 001
   - 乌克兰 001
-  - 美国 002
   - 美国 003
   - 美国 004
   - 美国 005
@@ -1783,6 +1795,7 @@ proxy-groups:
   - 美国 051
   - 美国 052
   - 美国 053
+  - 美国 054
 - name: LOAD-BALANCE
   type: load-balance
   url: https://cp.cloudflare.com/generate_204
