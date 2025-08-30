@@ -129,22 +129,6 @@ dns:
     - +.googleapis.cn
     - +.googleapis.com
 proxies:
-- name: 美国 001
-  type: vmess
-  network: ws
-  server: ssssssssssssfffffffgh.2032.pp.ua
-  port: 443
-  uuid: 4174b95d-115e-4d39-add6-1f8db95bb860
-  servername: ssssssssssssfffffffgh.2032.pp.ua
-  skip-cert-verify: false
-  tls: true
-  tfo: false
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: ssssssssssssfffffffgh.2032.pp.ua
-    path: /6We3U9Df1WGxgFnoFPw1
 - name: 俄罗斯 001
   type: trojan
   network: ws
@@ -184,6 +168,19 @@ proxies:
     headers:
       Host: torjan.xn--xhq44j.eu.org
     path: /
+- name: 美国 001
+  type: trojan
+  network: ws
+  server: 198.62.62.67
+  port: 443
+  password: tg-fq521free
+  skip-cert-verify: false
+  udp: true
+  sni: torjan.xn--xhq44j.eu.org
+  ws-opts:
+    headers:
+      Host: torjan.xn--xhq44j.eu.org
+    path: /
 - name: 美国 002
   type: trojan
   network: ws
@@ -198,18 +195,21 @@ proxies:
       Host: torjan.xn--xhq44j.eu.org
     path: /
 - name: 美国 003
-  type: trojan
+  type: vmess
   network: ws
-  server: 198.62.62.67
+  server: ssssssssssssfffffffgh.2032.pp.ua
   port: 443
-  password: tg-fq521free
+  uuid: 4174b95d-115e-4d39-add6-1f8db95bb860
+  servername: ssssssssssssfffffffgh.2032.pp.ua
   skip-cert-verify: false
-  udp: true
-  sni: torjan.xn--xhq44j.eu.org
+  tls: true
+  tfo: false
+  alterId: 0
+  cipher: auto
   ws-opts:
     headers:
-      Host: torjan.xn--xhq44j.eu.org
-    path: /
+      Host: ssssssssssssfffffffgh.2032.pp.ua
+    path: /6We3U9Df1WGxgFnoFPw1
 - name: 美国 004
   type: trojan
   network: ws
@@ -1674,6 +1674,19 @@ proxies:
     headers:
       Host: ttfang.fange.me
     path: Telegram🇨🇳
+- name: 美国 056
+  type: vmess
+  network: ws
+  server: test3.flha.ru
+  port: 80
+  uuid: 9a81340d-f81b-4c76-8abb-f4d305c535c0
+  tls: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: test3.flha.ru
+    path: /9a81340d-f81b-4c76-8abb-f4d305c535c0-vmess
 proxy-groups:
 - name: PROXY
   type: select
@@ -1685,10 +1698,10 @@ proxy-groups:
 - name: SELECT
   type: select
   proxies: &id001
-  - 美国 001
   - 俄罗斯 001
   - 立陶宛 001
   - 乌克兰 001
+  - 美国 001
   - 美国 002
   - 美国 003
   - 美国 004
@@ -1813,6 +1826,7 @@ proxy-groups:
   - 美国 053
   - 美国 054
   - 美国 055
+  - 美国 056
 - name: LOAD-BALANCE
   type: load-balance
   url: https://cp.cloudflare.com/generate_204
