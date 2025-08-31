@@ -1687,6 +1687,19 @@ proxies:
     headers:
       Host: test3.flha.ru
     path: /9a81340d-f81b-4c76-8abb-f4d305c535c0-vmess
+- name: 美国 057
+  type: vmess
+  network: ws
+  server: GgGgGGgGggggGg.222769.XYZ
+  port: 80
+  uuid: 2e65577e-8fdb-4bb1-a495-96f3122099a7
+  tls: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: gggggggggggggg.222769.xyz
+    path: /f6taOMcOSZb9TPR
 proxy-groups:
 - name: PROXY
   type: select
@@ -1827,6 +1840,7 @@ proxy-groups:
   - 美国 054
   - 美国 055
   - 美国 056
+  - 美国 057
 - name: LOAD-BALANCE
   type: load-balance
   url: https://cp.cloudflare.com/generate_204
