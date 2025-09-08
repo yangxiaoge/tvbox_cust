@@ -572,7 +572,31 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: /Telegram🇨🇳
+- name: 澳大利亚 001
+  type: trojan
+  network: tcp
+  server: 43.198.153.8
+  port: 3957
+  password: 253bc477d4e43c209f2d427272968280
+  skip-cert-verify: true
+  sni: 23.45.86.28
 - name: 美国 011
+  type: trojan
+  network: tcp
+  server: xingxing.jiasu123.org
+  port: 9160
+  password: 253bc477d4e43c209f2d427272968280
+  skip-cert-verify: true
+  sni: 23.45.86.28
+- name: 美国 012
+  type: trojan
+  network: tcp
+  server: xingxing.jiasu123.org
+  port: 47293
+  password: 253bc477d4e43c209f2d427272968280
+  skip-cert-verify: true
+  sni: 23.45.86.28
+- name: 美国 013
   type: trojan
   network: tcp
   server: xingxing.jiasu123.org
@@ -632,7 +656,7 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: /Telegram🇨🇳
-- name: 美国 012
+- name: 美国 014
   type: trojan
   network: ws
   server: 199.34.229.195
@@ -1221,7 +1245,7 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: Telegram🇨🇳
-- name: 澳大利亚 001
+- name: 澳大利亚 002
   type: trojan
   network: ws
   server: 192.65.217.87
@@ -1365,7 +1389,7 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: Telegram🇨🇳
-- name: 美国 013
+- name: 美国 015
   type: trojan
   network: ws
   server: 216.24.57.195
@@ -1376,7 +1400,7 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: /Telegram🇨🇳
-- name: 美国 014
+- name: 美国 046
   type: vmess
   network: ws
   server: ssssssssssssfffffffgh.2032.pp.ua
@@ -1389,28 +1413,6 @@ proxies:
     headers:
       Host: ssssssssssssfffffffgh.2032.pp.ua
     path: /6We3U9Df1WGxgFnoFPw1
-- name: 美国 015
-  type: trojan
-  network: ws
-  server: 209.46.30.195
-  port: 2096
-  password: slch2024
-  sni: ocost-dy.wmlefl.cc
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: Telegram🇨🇳
-- name: 立陶宛 005
-  type: trojan
-  network: ws
-  server: 185.148.105.195
-  port: 2096
-  password: slch2024
-  sni: ocost-dy.wmlefl.cc
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /Telegram🇨🇳
 proxy-groups:
 - name: PROXY
   type: select
@@ -1458,12 +1460,15 @@ proxy-groups:
   - 美国 010
   - 立陶宛 004
   - 俄罗斯 004
+  - 澳大利亚 001
   - 美国 011
+  - 美国 012
+  - 美国 013
   - 保加利亚 001
   - 俄罗斯 005
   - 俄罗斯 006
   - 瑞典 001
-  - 美国 012
+  - 美国 014
   - 美国 016
   - 美国 017
   - 俄罗斯 007
@@ -1512,7 +1517,7 @@ proxy-groups:
   - 美国 039
   - 美国 040
   - 美国 041
-  - 澳大利亚 001
+  - 澳大利亚 002
   - 美国 042
   - 美国 043
   - 哥斯达黎加 001
@@ -1524,10 +1529,8 @@ proxy-groups:
   - 亚美尼亚 001
   - 亚美尼亚 002
   - 荷兰 007
-  - 美国 013
-  - 美国 014
   - 美国 015
-  - 立陶宛 005
+  - 美国 046
 - name: LOAD-BALANCE
   type: load-balance
   url: https://cp.cloudflare.com/generate_204
