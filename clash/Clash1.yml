@@ -141,31 +141,7 @@ proxies:
   type: trojan
   network: tcp
   server: xingxing.jiasu123.org
-  port: 46943
-  password: 253bc477d4e43c209f2d427272968280
-  skip-cert-verify: true
-  sni: 23.45.86.28
-- name: 美国 003
-  type: trojan
-  network: tcp
-  server: xingxing.jiasu123.org
-  port: 3043
-  password: 253bc477d4e43c209f2d427272968280
-  skip-cert-verify: true
-  sni: 23.45.86.28
-- name: 美国 004
-  type: trojan
-  network: tcp
-  server: xingxing.jiasu123.org
   port: 4801
-  password: 253bc477d4e43c209f2d427272968280
-  skip-cert-verify: true
-  sni: 23.45.86.28
-- name: 美国 005
-  type: trojan
-  network: tcp
-  server: xingxing.jiasu123.org
-  port: 4317
   password: 253bc477d4e43c209f2d427272968280
   skip-cert-verify: true
   sni: 23.45.86.28
@@ -455,7 +431,7 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: /Telegram🇨🇳
-- name: 美国 006
+- name: 美国 003
   type: trojan
   network: ws
   server: 199.68.156.195
@@ -468,7 +444,7 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: /Telegram🇨🇳
-- name: 美国 007
+- name: 美国 004
   type: trojan
   network: ws
   server: 199.34.230.195
@@ -507,7 +483,7 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: /Telegram🇨🇳
-- name: 美国 008
+- name: 美国 005
   type: trojan
   network: ws
   server: 192.0.63.195
@@ -520,7 +496,7 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: /Telegram🇨🇳
-- name: 美国 009
+- name: 美国 006
   type: trojan
   network: ws
   server: 192.0.54.195
@@ -533,7 +509,7 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: /Telegram🇨🇳
-- name: 美国 010
+- name: 美国 007
   type: trojan
   network: ws
   server: 192.200.160.195
@@ -575,8 +551,40 @@ proxies:
 - name: 澳大利亚 001
   type: trojan
   network: tcp
-  server: 43.198.153.8
+  server: 43.198.184.150
+  port: 2282
+  password: 253bc477d4e43c209f2d427272968280
+  skip-cert-verify: true
+  sni: fe2.update.microsoft.com
+- name: 美国 008
+  type: trojan
+  network: tcp
+  server: xingxing.jiasu123.org
+  port: 316
+  password: 253bc477d4e43c209f2d427272968280
+  skip-cert-verify: true
+  sni: 23.45.86.28
+- name: 美国 009
+  type: trojan
+  network: tcp
+  server: xingxing.jiasu123.org
   port: 3957
+  password: 253bc477d4e43c209f2d427272968280
+  skip-cert-verify: true
+  sni: 23.45.86.28
+- name: 美国 010
+  type: trojan
+  network: tcp
+  server: xingxing.jiasu123.org
+  port: 2966
+  password: 253bc477d4e43c209f2d427272968280
+  skip-cert-verify: true
+  sni: 23.45.86.28
+- name: 日本 001
+  type: trojan
+  network: tcp
+  server: 13.231.37.82
+  port: 18233
   password: 253bc477d4e43c209f2d427272968280
   skip-cert-verify: true
   sni: 23.45.86.28
@@ -584,7 +592,7 @@ proxies:
   type: trojan
   network: tcp
   server: xingxing.jiasu123.org
-  port: 9160
+  port: 46943
   password: 253bc477d4e43c209f2d427272968280
   skip-cert-verify: true
   sni: 23.45.86.28
@@ -592,11 +600,19 @@ proxies:
   type: trojan
   network: tcp
   server: xingxing.jiasu123.org
-  port: 47293
+  port: 3043
   password: 253bc477d4e43c209f2d427272968280
   skip-cert-verify: true
   sni: 23.45.86.28
 - name: 美国 013
+  type: trojan
+  network: tcp
+  server: xingxing.jiasu123.org
+  port: 4317
+  password: 253bc477d4e43c209f2d427272968280
+  skip-cert-verify: true
+  sni: 23.45.86.28
+- name: 美国 014
   type: trojan
   network: tcp
   server: xingxing.jiasu123.org
@@ -656,7 +672,7 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: /Telegram🇨🇳
-- name: 美国 014
+- name: 美国 015
   type: trojan
   network: ws
   server: 199.34.229.195
@@ -1389,7 +1405,7 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: Telegram🇨🇳
-- name: 美国 015
+- name: 美国 046
   type: trojan
   network: ws
   server: 216.24.57.195
@@ -1400,19 +1416,6 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: /Telegram🇨🇳
-- name: 美国 046
-  type: vmess
-  network: ws
-  server: ssssssssssssfffffffgh.2032.pp.ua
-  port: 443
-  uuid: 4174b95d-115e-4d39-add6-1f8db95bb860
-  tls: true
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: ssssssssssssfffffffgh.2032.pp.ua
-    path: /6We3U9Df1WGxgFnoFPw1
 proxy-groups:
 - name: PROXY
   type: select
@@ -1426,9 +1429,6 @@ proxy-groups:
   proxies: &id001
   - 美国 001
   - 美国 002
-  - 美国 003
-  - 美国 004
-  - 美国 005
   - 奥地利 001
   - 英国 001
   - 英国 002
@@ -1451,24 +1451,29 @@ proxy-groups:
   - 荷兰 002
   - 俄罗斯 003
   - 立陶宛 002
-  - 美国 006
-  - 美国 007
+  - 美国 003
+  - 美国 004
   - 安圭拉 001
   - 立陶宛 003
-  - 美国 008
-  - 美国 009
-  - 美国 010
+  - 美国 005
+  - 美国 006
+  - 美国 007
   - 立陶宛 004
   - 俄罗斯 004
   - 澳大利亚 001
+  - 美国 008
+  - 美国 009
+  - 美国 010
+  - 日本 001
   - 美国 011
   - 美国 012
   - 美国 013
+  - 美国 014
   - 保加利亚 001
   - 俄罗斯 005
   - 俄罗斯 006
   - 瑞典 001
-  - 美国 014
+  - 美国 015
   - 美国 016
   - 美国 017
   - 俄罗斯 007
@@ -1529,7 +1534,6 @@ proxy-groups:
   - 亚美尼亚 001
   - 亚美尼亚 002
   - 荷兰 007
-  - 美国 015
   - 美国 046
 - name: LOAD-BALANCE
   type: load-balance
