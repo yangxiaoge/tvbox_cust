@@ -28,14 +28,6 @@ def download_clash():
         except Exception as e:
             print(f'httpGetText failed: %s' % (e))
 
-    # 免费节点
-    result = httpGetText('https://raw.githubusercontent.com/ermaozi/get_subscribe/main/subscribe/clash.yml')
-    if result:
-        fp = open("clash/Clash.yml", "w+", encoding='utf-8')
-        # print("----" + result)
-        fp.write(result)
-        fp.close()
-        
     # 免费节点1
     result = httpGetText('https://raw.githubusercontent.com/anaer/Sub/main/clash.yaml')
     if result:
@@ -52,8 +44,13 @@ def download_clash():
         fp.write(result)
         fp.close()
 
-    #https://clashnode.com/wp-content/uploads/2023/04/20230419.yaml
     # 免费节点3
+    result = httpGetText('https://raw.githubusercontent.com/ermaozi/get_subscribe/main/subscribe/clash.yml')
+    if result:
+        fp = open("clash/Clash3.yml", "w+", encoding='utf-8')
+        # print("----" + result)
+        fp.write(result)
+        fp.close()
         
     # 免费节点4
 
