@@ -54,23 +54,11 @@ def download_clash():
 
     #https://clashnode.com/wp-content/uploads/2023/04/20230419.yaml
     # 免费节点3
-    result = httpGetText("https://clashnode.com/wp-content/uploads/" + year + "/" + month + "/" + date + ".yaml")
-    if result:
-        fp = open("clash/Clash3.yml", "w+", encoding='utf-8')
-        # print("----" + result)
-        fp.write(result)
-        fp.close()
         
     # 免费节点4
-    result = httpGetText("https://raw.githubusercontent.com/ssrsub/ssr/master/Clash.yml")
-    if result:
-        fp = open("clash/Clash4.yml", "w+", encoding='utf-8')
-        # print("----" + result)
-        fp.write(result)
-        fp.close()
 
     # 免费节点5
-    result = httpGetText('https://raw.githubusercontent.com/aiboboxx/clashfree/main/clash.yml')
+    result = httpGetText('https://raw.githubusercontent.com/free-nodes/clashfree/refs/heads/main/clash.yml')
     if result:
         fp = open("clash/Clash5.yml", "w+", encoding='utf-8')
         # print("----" + result)
@@ -84,16 +72,7 @@ def download_clash():
         # print("----" + result)
         fp.write(result)
         fp.close()
-        
-    # 免费节点7
-    result = httpGetText('https://raw.githubusercontent.com/ermaozi/get_subscribe/main/subscribe/clash.yml')
-    if result:
-        fp = open("clash/Clash7.yml", "w+", encoding='utf-8')
-        # print("----" + result)
-        fp.write(result)
-        fp.close()
 
-        
 
 # 发送邮件消息
 def sendEmail(title, errorMsg):
