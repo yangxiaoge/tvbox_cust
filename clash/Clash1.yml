@@ -169,6 +169,21 @@ proxies:
   password: 253bc477d4e43c209f2d427272968280
   skip-cert-verify: true
   sni: 23.45.86.28
+- name: 英国 001
+  type: vmess
+  network: ws
+  server: t.cnmjcn.cyou
+  port: 16622
+  uuid: 743dbce9-ec7d-49dd-b9d6-3b1a151e729f
+  skip-cert-verify: false
+  tls: false
+  tfo: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: f604066249a784d694db65d3ebf5d60c.mobgslb.tbcache.com
+    path: /
 - name: 奥地利 001
   type: trojan
   network: ws
@@ -181,11 +196,11 @@ proxies:
   ws-opts:
     headers:
       Host: ocost-dy.wmlefl.cc
-    path: /由零开始
-- name: 西班牙 001
+    path: /Telegram
+- name: 澳大利亚 001
   type: trojan
   network: ws
-  server: 185.18.250.195
+  server: 192.65.217.195
   port: 2096
   password: slch2024
   skip-cert-verify: false
@@ -194,11 +209,24 @@ proxies:
   ws-opts:
     headers:
       Host: ocost-dy.wmlefl.cc
-    path: /由零开始
-- name: 英国 001
+    path: /Telegram🇨🇳
+- name: 澳大利亚 002
   type: trojan
   network: ws
-  server: 195.26.229.195
+  server: 185.207.197.195
+  port: 2096
+  password: slch2024
+  skip-cert-verify: false
+  udp: true
+  sni: ocost-dy.wmlefl.cc
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: /TelegramU0001F1E8U0001F1F3
+- name: 西班牙 001
+  type: trojan
+  network: ws
+  server: 185.18.250.195
   port: 2096
   password: slch2024
   skip-cert-verify: false
@@ -224,6 +252,19 @@ proxies:
 - name: 英国 003
   type: trojan
   network: ws
+  server: 195.26.229.195
+  port: 2096
+  password: slch2024
+  skip-cert-verify: false
+  udp: true
+  sni: ocost-dy.wmlefl.cc
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: /Telegram🇨🇳
+- name: 英国 004
+  type: trojan
+  network: ws
   server: 193.124.224.195
   port: 2096
   password: slch2024
@@ -234,7 +275,7 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: /TelegramU0001F1E8U0001F1F3
-- name: 英国 004
+- name: 英国 005
   type: trojan
   network: ws
   server: 188.244.122.195
@@ -246,7 +287,7 @@ proxies:
   ws-opts:
     headers:
       Host: ocost-dy.wmlefl.cc
-    path: /由零开始
+    path: /Telegram🇨🇳
 - name: 西班牙 002
   type: trojan
   network: ws
@@ -259,7 +300,7 @@ proxies:
   ws-opts:
     headers:
       Host: ocost-dy.wmlefl.cc
-    path: /Telegram
+    path: /TelegramU0001F1E8U0001F1F3
 - name: 西班牙 003
   type: trojan
   network: ws
@@ -272,8 +313,21 @@ proxies:
   ws-opts:
     headers:
       Host: ocost-dy.wmlefl.cc
-    path: /由零开始
+    path: /Telegram
 - name: 西班牙 004
+  type: trojan
+  network: ws
+  server: 185.251.82.195
+  port: 2096
+  password: slch2024
+  skip-cert-verify: false
+  udp: true
+  sni: ocost-dy.wmlefl.cc
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: /由零开始
+- name: 西班牙 005
   type: trojan
   network: ws
   server: 185.238.228.195
@@ -286,23 +340,10 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: /Telegram🇨🇳
-- name: 西班牙 005
-  type: trojan
-  network: ws
-  server: 185.251.81.195
-  port: 2096
-  password: slch2024
-  skip-cert-verify: false
-  udp: true
-  sni: ocost-dy.wmlefl.cc
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /Telegram
 - name: 西班牙 006
   type: trojan
   network: ws
-  server: 185.251.82.195
+  server: 185.251.81.195
   port: 2096
   password: slch2024
   skip-cert-verify: false
@@ -338,7 +379,7 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: /Telegram🇨🇳
-- name: 英国 005
+- name: 英国 006
   type: trojan
   network: ws
   server: 185.156.19.195
@@ -351,6 +392,32 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: /由零开始
+- name: 英国 007
+  type: trojan
+  network: ws
+  server: 194.36.55.195
+  port: 2096
+  password: slch2024
+  skip-cert-verify: false
+  udp: true
+  sni: ocost-dy.wmlefl.cc
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: /Telegram🇨🇳
+- name: 罗马尼亚 001
+  type: trojan
+  network: ws
+  server: 213.182.199.195
+  port: 2096
+  password: slch2024
+  skip-cert-verify: false
+  udp: true
+  sni: ocost-dy.wmlefl.cc
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: /TelegramU0001F1E8U0001F1F3
 - name: 俄罗斯 001
   type: trojan
   network: ws
@@ -364,33 +431,7 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: /Telegram
-- name: 保加利亚 001
-  type: trojan
-  network: ws
-  server: 185.176.26.195
-  port: 2096
-  password: slch2024
-  skip-cert-verify: true
-  udp: true
-  sni: ocost-dy.wmlefl.cc
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /Telegram
 - name: 卢森堡 001
-  type: trojan
-  network: ws
-  server: 188.42.88.195
-  port: 2096
-  password: slch2024
-  skip-cert-verify: false
-  udp: true
-  sni: ocost-dy.wmlefl.cc
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /Telegram
-- name: 卢森堡 002
   type: trojan
   network: ws
   server: 188.42.89.195
@@ -402,11 +443,24 @@ proxies:
   ws-opts:
     headers:
       Host: ocost-dy.wmlefl.cc
-    path: /TelegramU0001F1E8U0001F1F3
+    path: /Telegram
 - name: 荷兰 001
   type: trojan
   network: ws
   server: 188.164.248.195
+  port: 2096
+  password: slch2024
+  skip-cert-verify: false
+  udp: true
+  sni: ocost-dy.wmlefl.cc
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: /由零开始
+- name: 荷兰 002
+  type: trojan
+  network: ws
+  server: 188.164.248.87
   port: 2096
   password: slch2024
   skip-cert-verify: false
@@ -428,19 +482,6 @@ proxies:
   ws-opts:
     headers:
       Host: ocost-dy.wmlefl.cc
-    path: /Telegram🇨🇳
-- name: 荷兰 002
-  type: trojan
-  network: ws
-  server: 188.164.248.87
-  port: 2096
-  password: slch2024
-  skip-cert-verify: false
-  udp: true
-  sni: ocost-dy.wmlefl.cc
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
     path: /Telegram
 - name: 立陶宛 001
   type: trojan
@@ -448,17 +489,17 @@ proxies:
   server: 185.148.107.195
   port: 2096
   password: slch2024
-  skip-cert-verify: true
+  skip-cert-verify: false
   udp: true
   sni: ocost-dy.wmlefl.cc
   ws-opts:
     headers:
       Host: ocost-dy.wmlefl.cc
-    path: /TelegramU0001F1E8U0001F1F3
-- name: 俄罗斯 002
+    path: /Telegram🇨🇳
+- name: 荷兰 003
   type: trojan
   network: ws
-  server: 185.174.138.195
+  server: 188.42.145.195
   port: 2096
   password: slch2024
   skip-cert-verify: false
@@ -467,11 +508,11 @@ proxies:
   ws-opts:
     headers:
       Host: ocost-dy.wmlefl.cc
-    path: /Telegram
-- name: 立陶宛 002
+    path: /Telegram🇨🇳
+- name: 俄罗斯 002
   type: trojan
   network: ws
-  server: 185.176.24.195
+  server: 213.241.198.195
   port: 2096
   password: slch2024
   skip-cert-verify: false
@@ -484,6 +525,19 @@ proxies:
 - name: 俄罗斯 003
   type: trojan
   network: ws
+  server: 185.174.138.195
+  port: 2096
+  password: slch2024
+  skip-cert-verify: false
+  udp: true
+  sni: ocost-dy.wmlefl.cc
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: /由零开始
+- name: 俄罗斯 004
+  type: trojan
+  network: ws
   server: 185.59.218.195
   port: 2096
   password: slch2024
@@ -493,11 +547,11 @@ proxies:
   ws-opts:
     headers:
       Host: ocost-dy.wmlefl.cc
-    path: /Telegram
-- name: 荷兰 003
+    path: /由零开始
+- name: 立陶宛 002
   type: trojan
   network: ws
-  server: 188.42.145.195
+  server: 185.176.24.195
   port: 2096
   password: slch2024
   skip-cert-verify: false
@@ -532,24 +586,11 @@ proxies:
   ws-opts:
     headers:
       Host: ocost-dy.wmlefl.cc
-    path: /Telegram🇮🇷ShadowProxy66
+    path: /Telegram
 - name: 美国 007
   type: trojan
   network: ws
-  server: 192.200.160.87
-  port: 2096
-  password: slch2024
-  skip-cert-verify: false
-  udp: true
-  sni: ocost-dy.wmlefl.cc
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /Telegram🇨🇳
-- name: 俄罗斯 004
-  type: trojan
-  network: ws
-  server: 195.13.44.87
+  server: 198.62.62.87
   port: 2096
   password: slch2024
   skip-cert-verify: false
@@ -562,7 +603,20 @@ proxies:
 - name: 美国 008
   type: trojan
   network: ws
-  server: 192.200.160.195
+  server: 198.62.62.195
+  port: 2096
+  password: slch2024
+  skip-cert-verify: false
+  udp: true
+  sni: ocost-dy.wmlefl.cc
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: /由零开始
+- name: 美国 009
+  type: trojan
+  network: ws
+  server: 192.200.160.87
   port: 2096
   password: slch2024
   skip-cert-verify: false
@@ -572,10 +626,10 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: /Telegram🇨🇳
-- name: 美国 009
+- name: 美国 010
   type: trojan
   network: ws
-  server: 199.34.229.195
+  server: 199.68.156.87
   port: 2096
   password: slch2024
   skip-cert-verify: false
@@ -585,7 +639,7 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: /Telegram
-- name: 美国 010
+- name: 美国 011
   type: trojan
   network: ws
   server: 199.34.230.195
@@ -598,7 +652,145 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: /Telegram🇨🇳
-- name: 美国 011
+- name: 俄罗斯 005
+  type: trojan
+  network: ws
+  server: 195.13.45.195
+  port: 2096
+  password: slch2024
+  skip-cert-verify: false
+  udp: true
+  sni: ocost-dy.wmlefl.cc
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: /由零开始
+- name: 美国 012
+  type: trojan
+  network: ws
+  server: 209.46.30.195
+  port: 2096
+  password: slch2024
+  skip-cert-verify: false
+  udp: true
+  sni: ocost-dy.wmlefl.cc
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: /由零开始
+- name: 美国 013
+  type: trojan
+  network: ws
+  server: 192.0.63.195
+  port: 2096
+  password: slch2024
+  skip-cert-verify: false
+  udp: true
+  sni: ocost-dy.wmlefl.cc
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: /Telegram🇨🇳
+- name: 美国 014
+  type: trojan
+  network: ws
+  server: 199.34.230.87
+  port: 2096
+  password: slch2024
+  skip-cert-verify: false
+  udp: true
+  sni: ocost-dy.wmlefl.cc
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: /Telegram
+- name: 美国 015
+  type: trojan
+  network: ws
+  server: 204.93.210.195
+  port: 2096
+  password: slch2024
+  skip-cert-verify: false
+  udp: true
+  sni: ocost-dy.wmlefl.cc
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: /TelegramU0001F1E8U0001F1F3
+- name: 美国 016
+  type: trojan
+  network: tcp
+  server: xingxing.jiasu123.org
+  port: 4613
+  password: 253bc477d4e43c209f2d427272968280
+  skip-cert-verify: true
+  sni: 23.45.86.28
+- name: 保加利亚 001
+  type: trojan
+  network: ws
+  server: 185.176.26.195
+  port: 2096
+  password: slch2024
+  skip-cert-verify: true
+  udp: true
+  sni: ocost-dy.wmlefl.cc
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: /Telegram
+- name: 卢森堡 002
+  type: trojan
+  network: ws
+  server: 188.42.88.195
+  port: 2096
+  password: slch2024
+  skip-cert-verify: false
+  udp: true
+  sni: ocost-dy.wmlefl.cc
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: /Telegram
+- name: 俄罗斯 006
+  type: trojan
+  network: ws
+  server: 195.13.44.87
+  port: 2096
+  password: slch2024
+  skip-cert-verify: false
+  udp: true
+  sni: ocost-dy.wmlefl.cc
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: /Telegram
+- name: 美国 017
+  type: trojan
+  network: ws
+  server: 192.200.160.195
+  port: 2096
+  password: slch2024
+  skip-cert-verify: false
+  udp: true
+  sni: ocost-dy.wmlefl.cc
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: /Telegram🇨🇳
+- name: 美国 018
+  type: trojan
+  network: ws
+  server: 199.34.229.195
+  port: 2096
+  password: slch2024
+  skip-cert-verify: false
+  udp: true
+  sni: ocost-dy.wmlefl.cc
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: /Telegram
+- name: 美国 019
   type: trojan
   network: ws
   server: 192.0.54.195
@@ -624,46 +816,7 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: /Telegram🇨🇳
-- name: 美国 012
-  type: trojan
-  network: ws
-  server: 192.0.63.195
-  port: 2096
-  password: slch2024
-  skip-cert-verify: false
-  udp: true
-  sni: ocost-dy.wmlefl.cc
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /Telegram🇨🇳
-- name: 美国 013
-  type: trojan
-  network: ws
-  server: 199.68.156.87
-  port: 2096
-  password: slch2024
-  skip-cert-verify: false
-  udp: true
-  sni: ocost-dy.wmlefl.cc
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /Telegram
-- name: 美国 014
-  type: trojan
-  network: ws
-  server: 198.62.62.195
-  port: 2096
-  password: slch2024
-  skip-cert-verify: false
-  udp: true
-  sni: ocost-dy.wmlefl.cc
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /Telegram🇨🇳
-- name: 美国 015
+- name: 美国 020
   type: trojan
   network: ws
   server: 199.181.197.195
@@ -676,7 +829,7 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: /Telegram🇨🇳
-- name: 俄罗斯 005
+- name: 俄罗斯 007
   type: trojan
   network: ws
   server: 195.13.44.195
@@ -689,7 +842,7 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: /Telegram
-- name: 美国 016
+- name: 美国 021
   type: trojan
   network: ws
   server: 216.24.57.87
@@ -702,7 +855,7 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: /Telegram
-- name: 美国 017
+- name: 美国 022
   type: trojan
   network: ws
   server: 216.205.52.195
@@ -728,19 +881,6 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: /Telegram
-- name: 俄罗斯 006
-  type: trojan
-  network: ws
-  server: 195.13.45.195
-  port: 2096
-  password: slch2024
-  skip-cert-verify: false
-  udp: true
-  sni: ocost-dy.wmlefl.cc
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /Telegram
 - name: 加拿大 001
   type: trojan
   network: ws
@@ -754,33 +894,7 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: /Telegram
-- name: 美国 018
-  type: trojan
-  network: ws
-  server: 209.46.30.195
-  port: 2096
-  password: slch2024
-  skip-cert-verify: false
-  udp: true
-  sni: ocost-dy.wmlefl.cc
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /由零开始
-- name: 美国 019
-  type: trojan
-  network: ws
-  server: 198.62.62.87
-  port: 2096
-  password: slch2024
-  skip-cert-verify: false
-  udp: true
-  sni: ocost-dy.wmlefl.cc
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /Telegram
-- name: 美国 020
+- name: 美国 023
   type: trojan
   network: ws
   server: 216.24.57.195
@@ -793,21 +907,6 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: /Telegram
-- name: 英国 006
-  type: vmess
-  network: ws
-  server: t.cnmjcn.cyou
-  port: 16622
-  uuid: 743dbce9-ec7d-49dd-b9d6-3b1a151e729f
-  skip-cert-verify: false
-  tls: false
-  tfo: false
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: f604066249a784d694db65d3ebf5d60c.mobgslb.tbcache.com
-    path: /
 - name: 日本 001
   type: trojan
   network: tcp
@@ -816,7 +915,7 @@ proxies:
   password: 253bc477d4e43c209f2d427272968280
   skip-cert-verify: true
   sni: 23.45.86.28
-- name: 美国 021
+- name: 美国 024
   type: vless
   network: ws
   server: 172.66.40.99
@@ -834,7 +933,7 @@ proxies:
       User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
         like Gecko) Chrome/120.0.0.0 Safari/537.36
     path: /
-- name: 俄罗斯 007
+- name: 俄罗斯 008
   type: vless
   network: grpc
   server: 185.236.232.72
@@ -846,7 +945,7 @@ proxies:
   tfo: true
   client-fingerprint: chrome
   grpc-opts: {}
-- name: 俄罗斯 008
+- name: 俄罗斯 009
   type: vless
   network: grpc
   server: 185.236.232.148
@@ -858,7 +957,7 @@ proxies:
   tfo: true
   client-fingerprint: chrome
   grpc-opts: {}
-- name: 美国 022
+- name: 美国 025
   type: vless
   network: ws
   server: 104.21.3.219
@@ -876,7 +975,7 @@ proxies:
       User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
         like Gecko) Chrome/120.0.0.0 Safari/537.36
     path: /57ba2ab1
-- name: 俄罗斯 009
+- name: 俄罗斯 010
   type: vless
   network: grpc
   server: 185.236.232.120
@@ -888,7 +987,7 @@ proxies:
   tfo: true
   client-fingerprint: chrome
   grpc-opts: {}
-- name: 美国 023
+- name: 美国 026
   type: vless
   network: grpc
   server: 45.86.72.106
@@ -900,7 +999,7 @@ proxies:
   tfo: true
   client-fingerprint: chrome
   grpc-opts: {}
-- name: 俄罗斯 010
+- name: 俄罗斯 011
   type: vless
   network: grpc
   server: 185.236.232.243
@@ -912,7 +1011,7 @@ proxies:
   tfo: true
   client-fingerprint: chrome
   grpc-opts: {}
-- name: 俄罗斯 011
+- name: 俄罗斯 012
   type: vless
   network: grpc
   server: 185.236.232.189
@@ -924,7 +1023,7 @@ proxies:
   tfo: true
   client-fingerprint: chrome
   grpc-opts: {}
-- name: 美国 024
+- name: 美国 027
   type: vless
   network: grpc
   server: 45.82.251.121
@@ -936,7 +1035,7 @@ proxies:
   tfo: true
   client-fingerprint: chrome
   grpc-opts: {}
-- name: 美国 025
+- name: 美国 028
   type: vless
   network: ws
   server: 104.21.36.57
@@ -954,7 +1053,7 @@ proxies:
       User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
         like Gecko) Chrome/120.0.0.0 Safari/537.36
     path: /wsv/6c11247b-6078-461a-93d5-22e4df284e6d
-- name: 美国 026
+- name: 美国 029
   type: vless
   network: grpc
   server: 45.82.251.180
@@ -966,7 +1065,7 @@ proxies:
   tfo: true
   client-fingerprint: chrome
   grpc-opts: {}
-- name: 美国 027
+- name: 美国 030
   type: vless
   network: grpc
   server: 45.82.251.114
@@ -978,7 +1077,7 @@ proxies:
   tfo: true
   client-fingerprint: chrome
   grpc-opts: {}
-- name: 美国 028
+- name: 美国 031
   type: vless
   network: ws
   server: 45.45.218.166
@@ -996,7 +1095,7 @@ proxies:
       User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
         like Gecko) Chrome/120.0.0.0 Safari/537.36
     path: /
-- name: 俄罗斯 012
+- name: 俄罗斯 013
   type: vless
   network: grpc
   server: 185.236.232.123
@@ -1008,7 +1107,7 @@ proxies:
   tfo: true
   client-fingerprint: chrome
   grpc-opts: {}
-- name: 美国 029
+- name: 美国 032
   type: vless
   network: grpc
   server: 45.82.251.97
@@ -1020,7 +1119,7 @@ proxies:
   tfo: true
   client-fingerprint: chrome
   grpc-opts: {}
-- name: 俄罗斯 013
+- name: 俄罗斯 014
   type: vless
   network: grpc
   server: 185.236.232.199
@@ -1032,7 +1131,7 @@ proxies:
   tfo: true
   client-fingerprint: chrome
   grpc-opts: {}
-- name: 美国 030
+- name: 美国 033
   type: vless
   network: grpc
   server: pqh25v7.vetrkot.com
@@ -1044,7 +1143,7 @@ proxies:
   tfo: true
   client-fingerprint: chrome
   grpc-opts: {}
-- name: 美国 031
+- name: 美国 034
   type: vless
   network: grpc
   server: 45.82.251.142
@@ -1056,7 +1155,7 @@ proxies:
   tfo: true
   client-fingerprint: chrome
   grpc-opts: {}
-- name: 美国 032
+- name: 美国 035
   type: vless
   network: grpc
   server: 45.82.251.122
@@ -1080,7 +1179,7 @@ proxies:
   tfo: true
   client-fingerprint: chrome
   grpc-opts: {}
-- name: 美国 033
+- name: 美国 036
   type: vless
   network: grpc
   server: 45.82.251.93
@@ -1116,7 +1215,7 @@ proxies:
   tfo: true
   client-fingerprint: chrome
   grpc-opts: {}
-- name: 英国 007
+- name: 英国 008
   type: vmess
   network: tcp
   server: 82.197.69.131
@@ -1142,7 +1241,7 @@ proxies:
     headers:
       Host: singapore2.helloshuai.com
     path: /39cb4/
-- name: 美国 034
+- name: 美国 037
   type: vless
   network: ws
   server: kifpool.me
@@ -1186,7 +1285,7 @@ proxies:
     headers:
       Host: www.32278117.xyz
     path: /path/170733132233
-- name: 美国 035
+- name: 美国 038
   type: vless
   network: grpc
   server: 167.68.42.168
@@ -1199,7 +1298,7 @@ proxies:
   tfo: true
   client-fingerprint: chrome
   grpc-opts: {}
-- name: 美国 036
+- name: 美国 039
   type: vless
   network: grpc
   server: 141.193.213.214
@@ -1212,21 +1311,7 @@ proxies:
   tfo: true
   client-fingerprint: chrome
   grpc-opts: {}
-- name: 英国 008
-  type: trojan
-  network: ws
-  server: 194.36.55.195
-  port: 2096
-  password: slch2024
-  skip-cert-verify: true
-  udp: true
-  tfo: true
-  sni: ocost-dy.wmlefl.cc
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /Telegram
-- name: 美国 037
+- name: 美国 040
   type: vmess
   network: none
   server: 209.54.104.219
@@ -1237,7 +1322,7 @@ proxies:
   tfo: true
   alterId: 0
   cipher: auto
-- name: 美国 038
+- name: 美国 041
   type: vmess
   network: none
   server: 66.253.5.158
@@ -1260,7 +1345,7 @@ proxies:
   tfo: true
   client-fingerprint: chrome
   grpc-opts: {}
-- name: 美国 040
+- name: 美国 042
   type: vmess
   network: ws
   server: www.speedtest.net
@@ -1287,7 +1372,7 @@ proxies:
   tfo: true
   client-fingerprint: chrome
   grpc-opts: {}
-- name: 美国 041
+- name: 美国 043
   type: vless
   network: grpc
   server: 45.82.251.92
@@ -1299,7 +1384,7 @@ proxies:
   tfo: true
   client-fingerprint: chrome
   grpc-opts: {}
-- name: 美国 042
+- name: 美国 044
   type: vless
   network: grpc
   server: 104.26.2.186
@@ -1325,7 +1410,7 @@ proxies:
   tfo: true
   client-fingerprint: chrome
   grpc-opts: {}
-- name: 澳大利亚 001
+- name: 澳大利亚 003
   type: trojan
   network: tcp
   server: 43.198.184.150
@@ -1372,7 +1457,7 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: /Telegram
-- name: 美国 043
+- name: 美国 045
   type: trojan
   network: tcp
   server: xingxing.jiasu123.org
@@ -1380,7 +1465,7 @@ proxies:
   password: 253bc477d4e43c209f2d427272968280
   skip-cert-verify: true
   sni: 23.45.86.28
-- name: 美国 044
+- name: 美国 046
   type: trojan
   network: tcp
   server: xingxing.jiasu123.org
@@ -1401,7 +1486,7 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: /Telegram🇨🇳
-- name: 美国 045
+- name: 美国 047
   type: trojan
   network: tcp
   server: xingxing.jiasu123.org
@@ -1409,7 +1494,7 @@ proxies:
   password: 253bc477d4e43c209f2d427272968280
   skip-cert-verify: true
   sni: 23.45.86.28
-- name: 美国 046
+- name: 美国 048
   type: trojan
   network: tcp
   server: xingxing.jiasu123.org
@@ -1417,7 +1502,7 @@ proxies:
   password: 253bc477d4e43c209f2d427272968280
   skip-cert-verify: true
   sni: 23.45.86.28
-- name: 美国 047
+- name: 美国 049
   type: trojan
   network: tcp
   server: xingxing.jiasu123.org
@@ -1425,7 +1510,7 @@ proxies:
   password: 253bc477d4e43c209f2d427272968280
   skip-cert-verify: true
   sni: 23.45.86.28
-- name: 美国 048
+- name: 美国 050
   type: trojan
   network: tcp
   server: xingxing.jiasu123.org
@@ -1446,76 +1531,6 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: /Telegram🇨🇳
-- name: 瑞典 001
-  type: trojan
-  network: ws
-  server: 195.13.55.195
-  port: 2096
-  password: slch2024
-  skip-cert-verify: false
-  udp: true
-  sni: ocost-dy.wmlefl.cc
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /Telegram🇨🇳
-- name: 美国 049
-  type: trojan
-  network: ws
-  server: 216.205.52.87
-  port: 2096
-  password: slch2024
-  skip-cert-verify: true
-  sni: ocost-dy.wmlefl.cc
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: Telegram🇨🇳
-- name: 俄罗斯 022
-  type: trojan
-  network: ws
-  server: 213.241.198.87
-  port: 2096
-  password: slch2024
-  skip-cert-verify: true
-  sni: ocost-dy.wmlefl.cc
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: Telegram🇨🇳
-- name: 荷兰 004
-  type: trojan
-  network: ws
-  server: 185.193.29.195
-  port: 2096
-  password: slch2024
-  sni: ocost-dy.wmlefl.cc
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: Telegram🇨🇳
-- name: 俄罗斯 014
-  type: trojan
-  network: ws
-  server: 213.219.247.195
-  port: 2096
-  password: slch2024
-  sni: ocost-dy.wmlefl.cc
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: Telegram🇨🇳
-- name: 俄罗斯 023
-  type: trojan
-  network: ws
-  server: 185.221.160.195
-  port: 2096
-  password: slch2024
-  sni: ocost-dy.wmlefl.cc
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: Telegram🇨🇳
 proxy-groups:
 - name: PROXY
   type: select
@@ -1532,12 +1547,15 @@ proxy-groups:
   - 美国 003
   - 美国 004
   - 美国 005
-  - 奥地利 001
-  - 西班牙 001
   - 英国 001
+  - 奥地利 001
+  - 澳大利亚 001
+  - 澳大利亚 002
+  - 西班牙 001
   - 英国 002
   - 英国 003
   - 英国 004
+  - 英国 005
   - 西班牙 002
   - 西班牙 003
   - 西班牙 004
@@ -1545,100 +1563,98 @@ proxy-groups:
   - 西班牙 006
   - 法国 001
   - 德国 001
-  - 英国 005
+  - 英国 006
+  - 英国 007
+  - 罗马尼亚 001
   - 俄罗斯 001
-  - 保加利亚 001
   - 卢森堡 001
-  - 卢森堡 002
   - 荷兰 001
-  - 新加坡 001
   - 荷兰 002
+  - 新加坡 001
   - 立陶宛 001
-  - 俄罗斯 002
-  - 立陶宛 002
-  - 俄罗斯 003
   - 荷兰 003
+  - 俄罗斯 002
+  - 俄罗斯 003
+  - 俄罗斯 004
+  - 立陶宛 002
   - 美国 006
   - 安圭拉 001
   - 美国 007
-  - 俄罗斯 004
   - 美国 008
   - 美国 009
   - 美国 010
   - 美国 011
-  - 立陶宛 003
+  - 俄罗斯 005
   - 美国 012
   - 美国 013
   - 美国 014
   - 美国 015
-  - 俄罗斯 005
   - 美国 016
-  - 美国 017
-  - 立陶宛 004
+  - 保加利亚 001
+  - 卢森堡 002
   - 俄罗斯 006
-  - 加拿大 001
+  - 美国 017
   - 美国 018
   - 美国 019
+  - 立陶宛 003
   - 美国 020
-  - 英国 006
-  - 日本 001
-  - 美国 021
   - 俄罗斯 007
-  - 俄罗斯 008
+  - 美国 021
   - 美国 022
-  - 俄罗斯 009
+  - 立陶宛 004
+  - 加拿大 001
   - 美国 023
-  - 俄罗斯 010
-  - 俄罗斯 011
+  - 日本 001
   - 美国 024
+  - 俄罗斯 008
+  - 俄罗斯 009
   - 美国 025
+  - 俄罗斯 010
   - 美国 026
+  - 俄罗斯 011
+  - 俄罗斯 012
   - 美国 027
   - 美国 028
-  - 俄罗斯 012
   - 美国 029
-  - 俄罗斯 013
   - 美国 030
   - 美国 031
+  - 俄罗斯 013
   - 美国 032
-  - 俄罗斯 015
+  - 俄罗斯 014
   - 美国 033
+  - 美国 034
+  - 美国 035
+  - 俄罗斯 015
+  - 美国 036
   - 俄罗斯 016
   - 俄罗斯 017
-  - 英国 007
+  - 英国 008
   - 新加坡 002
-  - 美国 034
+  - 美国 037
   - 亚太地区 001
   - 韩国 001
-  - 美国 035
-  - 美国 036
-  - 英国 008
-  - 美国 037
   - 美国 038
-  - 俄罗斯 018
+  - 美国 039
   - 美国 040
-  - 俄罗斯 019
   - 美国 041
+  - 俄罗斯 018
   - 美国 042
+  - 俄罗斯 019
+  - 美国 043
+  - 美国 044
   - 立陶宛 005
-  - 澳大利亚 001
+  - 澳大利亚 003
   - 亚美尼亚 001
   - 亚美尼亚 002
   - 立陶宛 006
-  - 美国 043
-  - 美国 044
-  - 俄罗斯 020
   - 美国 045
   - 美国 046
+  - 俄罗斯 020
   - 美国 047
   - 美国 048
-  - 俄罗斯 021
-  - 瑞典 001
   - 美国 049
-  - 俄罗斯 022
-  - 荷兰 004
-  - 俄罗斯 014
-  - 俄罗斯 023
+  - 美国 050
+  - 俄罗斯 021
 - name: LOAD-BALANCE
   type: load-balance
   url: https://cp.cloudflare.com/generate_204
