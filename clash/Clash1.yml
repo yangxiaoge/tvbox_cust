@@ -149,7 +149,7 @@ proxies:
   type: trojan
   network: tcp
   server: xingxing.jiasu123.org
-  port: 3957
+  port: 4613
   password: 253bc477d4e43c209f2d427272968280
   skip-cert-verify: true
   sni: 23.45.86.28
@@ -157,7 +157,7 @@ proxies:
   type: trojan
   network: tcp
   server: xingxing.jiasu123.org
-  port: 2966
+  port: 3957
   password: 253bc477d4e43c209f2d427272968280
   skip-cert-verify: true
   sni: 23.45.86.28
@@ -165,25 +165,18 @@ proxies:
   type: trojan
   network: tcp
   server: xingxing.jiasu123.org
+  port: 2966
+  password: 253bc477d4e43c209f2d427272968280
+  skip-cert-verify: true
+  sni: 23.45.86.28
+- name: 美国 006
+  type: trojan
+  network: tcp
+  server: xingxing.jiasu123.org
   port: 1823
   password: 253bc477d4e43c209f2d427272968280
   skip-cert-verify: true
   sni: 23.45.86.28
-- name: 英国 001
-  type: vmess
-  network: ws
-  server: t.cnmjcn.cyou
-  port: 16622
-  uuid: 743dbce9-ec7d-49dd-b9d6-3b1a151e729f
-  skip-cert-verify: false
-  tls: false
-  tfo: false
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: f604066249a784d694db65d3ebf5d60c.mobgslb.tbcache.com
-    path: /
 - name: 奥地利 001
   type: trojan
   network: ws
@@ -236,7 +229,7 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: /由零开始
-- name: 英国 002
+- name: 英国 001
   type: trojan
   network: ws
   server: 195.26.229.87
@@ -249,7 +242,7 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: /TelegramU0001F1E8U0001F1F3
-- name: 英国 003
+- name: 英国 002
   type: trojan
   network: ws
   server: 195.26.229.195
@@ -262,7 +255,7 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: /Telegram🇨🇳
-- name: 英国 004
+- name: 英国 003
   type: trojan
   network: ws
   server: 193.124.224.195
@@ -275,7 +268,7 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: /TelegramU0001F1E8U0001F1F3
-- name: 英国 005
+- name: 英国 004
   type: trojan
   network: ws
   server: 188.244.122.195
@@ -379,7 +372,7 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: /Telegram🇨🇳
-- name: 英国 006
+- name: 英国 005
   type: trojan
   network: ws
   server: 185.156.19.195
@@ -392,7 +385,7 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: /由零开始
-- name: 英国 007
+- name: 英国 006
   type: trojan
   network: ws
   server: 194.36.55.195
@@ -561,7 +554,7 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: /Telegram🇨🇳
-- name: 美国 006
+- name: 美国 007
   type: trojan
   network: ws
   server: 199.68.156.195
@@ -587,7 +580,7 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: /Telegram
-- name: 美国 007
+- name: 美国 008
   type: trojan
   network: ws
   server: 198.62.62.87
@@ -600,7 +593,7 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: /Telegram
-- name: 美国 008
+- name: 美国 009
   type: trojan
   network: ws
   server: 198.62.62.195
@@ -613,7 +606,7 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: /由零开始
-- name: 美国 009
+- name: 美国 010
   type: trojan
   network: ws
   server: 192.200.160.87
@@ -626,7 +619,7 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: /Telegram🇨🇳
-- name: 美国 010
+- name: 美国 011
   type: trojan
   network: ws
   server: 199.68.156.87
@@ -639,7 +632,7 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: /Telegram
-- name: 美国 011
+- name: 美国 012
   type: trojan
   network: ws
   server: 199.34.230.195
@@ -665,7 +658,7 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: /由零开始
-- name: 美国 012
+- name: 美国 013
   type: trojan
   network: ws
   server: 209.46.30.195
@@ -678,7 +671,7 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: /由零开始
-- name: 美国 013
+- name: 美国 014
   type: trojan
   network: ws
   server: 192.0.63.195
@@ -691,7 +684,7 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: /Telegram🇨🇳
-- name: 美国 014
+- name: 美国 015
   type: trojan
   network: ws
   server: 199.34.230.87
@@ -704,7 +697,7 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: /Telegram
-- name: 美国 015
+- name: 美国 016
   type: trojan
   network: ws
   server: 204.93.210.195
@@ -717,14 +710,21 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: /TelegramU0001F1E8U0001F1F3
-- name: 美国 016
-  type: trojan
-  network: tcp
-  server: xingxing.jiasu123.org
-  port: 4613
-  password: 253bc477d4e43c209f2d427272968280
-  skip-cert-verify: true
-  sni: 23.45.86.28
+- name: 英国 007
+  type: vmess
+  network: ws
+  server: t.cnmjcn.cyou
+  port: 16622
+  uuid: 743dbce9-ec7d-49dd-b9d6-3b1a151e729f
+  skip-cert-verify: false
+  tls: false
+  tfo: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: f604066249a784d694db65d3ebf5d60c.mobgslb.tbcache.com
+    path: /
 - name: 保加利亚 001
   type: trojan
   network: ws
@@ -1531,6 +1531,17 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: /Telegram🇨🇳
+- name: 荷兰 004
+  type: trojan
+  network: ws
+  server: 185.193.29.195
+  port: 2096
+  password: slch2024
+  sni: ocost-dy.wmlefl.cc
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: Telegram🇨🇳
 proxy-groups:
 - name: PROXY
   type: select
@@ -1547,15 +1558,15 @@ proxy-groups:
   - 美国 003
   - 美国 004
   - 美国 005
-  - 英国 001
+  - 美国 006
   - 奥地利 001
   - 澳大利亚 001
   - 澳大利亚 002
   - 西班牙 001
+  - 英国 001
   - 英国 002
   - 英国 003
   - 英国 004
-  - 英国 005
   - 西班牙 002
   - 西班牙 003
   - 西班牙 004
@@ -1563,8 +1574,8 @@ proxy-groups:
   - 西班牙 006
   - 法国 001
   - 德国 001
+  - 英国 005
   - 英国 006
-  - 英国 007
   - 罗马尼亚 001
   - 俄罗斯 001
   - 卢森堡 001
@@ -1577,19 +1588,19 @@ proxy-groups:
   - 俄罗斯 003
   - 俄罗斯 004
   - 立陶宛 002
-  - 美国 006
-  - 安圭拉 001
   - 美国 007
+  - 安圭拉 001
   - 美国 008
   - 美国 009
   - 美国 010
   - 美国 011
-  - 俄罗斯 005
   - 美国 012
+  - 俄罗斯 005
   - 美国 013
   - 美国 014
   - 美国 015
   - 美国 016
+  - 英国 007
   - 保加利亚 001
   - 卢森堡 002
   - 俄罗斯 006
@@ -1655,6 +1666,7 @@ proxy-groups:
   - 美国 049
   - 美国 050
   - 俄罗斯 021
+  - 荷兰 004
 - name: LOAD-BALANCE
   type: load-balance
   url: https://cp.cloudflare.com/generate_204
