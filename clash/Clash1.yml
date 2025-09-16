@@ -130,1418 +130,1500 @@ dns:
     - +.googleapis.com
 proxies:
 - name: 美国 001
-  type: trojan
-  network: tcp
-  server: xingxing.jiasu123.org
-  port: 2282
-  password: 253bc477d4e43c209f2d427272968280
-  skip-cert-verify: true
-  sni: www.baidu.com
-- name: 美国 002
-  type: trojan
-  network: tcp
-  server: xingxing.jiasu123.org
-  port: 316
-  password: 253bc477d4e43c209f2d427272968280
-  skip-cert-verify: true
-  sni: 23.45.86.28
-- name: 美国 003
-  type: trojan
-  network: tcp
-  server: xingxing.jiasu123.org
-  port: 4613
-  password: 253bc477d4e43c209f2d427272968280
-  skip-cert-verify: true
-  sni: 23.45.86.28
-- name: 美国 004
-  type: trojan
-  network: tcp
-  server: xingxing.jiasu123.org
-  port: 3957
-  password: 253bc477d4e43c209f2d427272968280
-  skip-cert-verify: true
-  sni: 23.45.86.28
-- name: 美国 005
-  type: trojan
-  network: tcp
-  server: xingxing.jiasu123.org
-  port: 2966
-  password: 253bc477d4e43c209f2d427272968280
-  skip-cert-verify: true
-  sni: 23.45.86.28
-- name: 美国 006
-  type: trojan
-  network: tcp
-  server: xingxing.jiasu123.org
-  port: 1823
-  password: 253bc477d4e43c209f2d427272968280
-  skip-cert-verify: true
-  sni: 23.45.86.28
-- name: 奥地利 001
-  type: trojan
+  type: vmess
   network: ws
-  server: 212.183.88.195
-  port: 2096
-  password: slch2024
-  skip-cert-verify: false
+  server: planb.mojcn.com
+  port: 16617
+  uuid: 5809237d-bb6a-4cf8-98d3-dceb9e003638
   udp: true
-  sni: ocost-dy.wmlefl.cc
+  alterId: 0
+  cipher: auto
   ws-opts:
     headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /Telegram
-- name: 澳大利亚 001
-  type: trojan
-  network: ws
-  server: 192.65.217.195
-  port: 2096
-  password: slch2024
-  skip-cert-verify: false
-  udp: true
-  sni: ocost-dy.wmlefl.cc
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /Telegram🇨🇳
-- name: 澳大利亚 002
-  type: trojan
-  network: ws
-  server: 185.207.197.195
-  port: 2096
-  password: slch2024
-  skip-cert-verify: false
-  udp: true
-  sni: ocost-dy.wmlefl.cc
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /TelegramU0001F1E8U0001F1F3
-- name: 西班牙 001
-  type: trojan
-  network: ws
-  server: 185.18.250.195
-  port: 2096
-  password: slch2024
-  skip-cert-verify: false
-  udp: true
-  sni: ocost-dy.wmlefl.cc
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /由零开始
+      Host: f787cef956deb7c5d6bc362bd5daeb17.mobgslb.tbcache.com
+    path: /
 - name: 英国 001
-  type: trojan
+  type: vmess
   network: ws
-  server: 195.26.229.87
-  port: 2096
-  password: slch2024
-  skip-cert-verify: true
+  server: t.cnmjcn.cyou
+  port: 16617
+  uuid: 5809237d-bb6a-4cf8-98d3-dceb9e003638
   udp: true
-  sni: ocost-dy.wmlefl.cc
+  alterId: 0
+  cipher: auto
   ws-opts:
     headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /TelegramU0001F1E8U0001F1F3
+      Host: f787cef956deb7c5d6bc362bd5daeb17.mobgslb.tbcache.com
+    path: /
+- name: 美国 002
+  type: vmess
+  network: ws
+  server: planb.mojcn.com
+  port: 16618
+  uuid: 5809237d-bb6a-4cf8-98d3-dceb9e003638
+  udp: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: f787cef956deb7c5d6bc362bd5daeb17.mobgslb.tbcache.com
+    path: /
 - name: 英国 002
-  type: trojan
+  type: vmess
   network: ws
-  server: 195.26.229.195
-  port: 2096
-  password: slch2024
-  skip-cert-verify: false
+  server: t.cnmjcn.cyou
+  port: 16618
+  uuid: 5809237d-bb6a-4cf8-98d3-dceb9e003638
   udp: true
-  sni: ocost-dy.wmlefl.cc
+  alterId: 0
+  cipher: auto
   ws-opts:
     headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /Telegram🇨🇳
+      Host: f787cef956deb7c5d6bc362bd5daeb17.mobgslb.tbcache.com
+    path: /
+- name: 美国 003
+  type: vmess
+  network: ws
+  server: planb.mojcn.com
+  port: 16632
+  uuid: 5809237d-bb6a-4cf8-98d3-dceb9e003638
+  udp: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: f787cef956deb7c5d6bc362bd5daeb17.mobgslb.tbcache.com
+    path: /
 - name: 英国 003
-  type: trojan
+  type: vmess
   network: ws
-  server: 193.124.224.195
-  port: 2096
-  password: slch2024
-  skip-cert-verify: true
+  server: t.cnmjcn.cyou
+  port: 16632
+  uuid: 5809237d-bb6a-4cf8-98d3-dceb9e003638
   udp: true
-  sni: ocost-dy.wmlefl.cc
+  alterId: 0
+  cipher: auto
   ws-opts:
     headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /TelegramU0001F1E8U0001F1F3
+      Host: f787cef956deb7c5d6bc362bd5daeb17.mobgslb.tbcache.com
+    path: /
+- name: 美国 004
+  type: vmess
+  network: ws
+  server: planb.mojcn.com
+  port: 16622
+  uuid: 5809237d-bb6a-4cf8-98d3-dceb9e003638
+  udp: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: f787cef956deb7c5d6bc362bd5daeb17.mobgslb.tbcache.com
+    path: /
 - name: 英国 004
-  type: trojan
-  network: ws
-  server: 188.244.122.195
-  port: 2096
-  password: slch2024
-  skip-cert-verify: false
-  udp: true
-  sni: ocost-dy.wmlefl.cc
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /Telegram🇨🇳
-- name: 西班牙 002
-  type: trojan
-  network: ws
-  server: 185.251.83.195
-  port: 2096
-  password: slch2024
-  skip-cert-verify: false
-  udp: true
-  sni: ocost-dy.wmlefl.cc
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /TelegramU0001F1E8U0001F1F3
-- name: 西班牙 003
-  type: trojan
-  network: ws
-  server: 185.251.80.195
-  port: 2096
-  password: slch2024
-  skip-cert-verify: false
-  udp: true
-  sni: ocost-dy.wmlefl.cc
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /Telegram
-- name: 西班牙 004
-  type: trojan
-  network: ws
-  server: 185.251.82.195
-  port: 2096
-  password: slch2024
-  skip-cert-verify: false
-  udp: true
-  sni: ocost-dy.wmlefl.cc
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /由零开始
-- name: 西班牙 005
-  type: trojan
-  network: ws
-  server: 185.238.228.195
-  port: 2096
-  password: slch2024
-  skip-cert-verify: false
-  udp: true
-  sni: ocost-dy.wmlefl.cc
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /Telegram🇨🇳
-- name: 西班牙 006
-  type: trojan
-  network: ws
-  server: 185.251.81.195
-  port: 2096
-  password: slch2024
-  skip-cert-verify: false
-  udp: true
-  sni: ocost-dy.wmlefl.cc
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /Telegram
-- name: 法国 001
-  type: trojan
-  network: ws
-  server: 185.7.240.195
-  port: 2096
-  password: slch2024
-  skip-cert-verify: false
-  udp: true
-  sni: ocost-dy.wmlefl.cc
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /Telegram
-- name: 德国 001
-  type: trojan
-  network: ws
-  server: 185.16.110.195
-  port: 2096
-  password: slch2024
-  skip-cert-verify: false
-  udp: true
-  sni: ocost-dy.wmlefl.cc
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /Telegram🇨🇳
-- name: 英国 005
-  type: trojan
-  network: ws
-  server: 185.156.19.195
-  port: 2096
-  password: slch2024
-  skip-cert-verify: false
-  udp: true
-  sni: ocost-dy.wmlefl.cc
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /由零开始
-- name: 英国 006
-  type: trojan
-  network: ws
-  server: 194.36.55.195
-  port: 2096
-  password: slch2024
-  skip-cert-verify: false
-  udp: true
-  sni: ocost-dy.wmlefl.cc
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /Telegram🇨🇳
-- name: 罗马尼亚 001
-  type: trojan
-  network: ws
-  server: 213.182.199.195
-  port: 2096
-  password: slch2024
-  skip-cert-verify: false
-  udp: true
-  sni: ocost-dy.wmlefl.cc
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /TelegramU0001F1E8U0001F1F3
-- name: 俄罗斯 001
-  type: trojan
-  network: ws
-  server: 194.76.18.195
-  port: 2096
-  password: slch2024
-  skip-cert-verify: false
-  udp: true
-  sni: ocost-dy.wmlefl.cc
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /Telegram
-- name: 卢森堡 001
-  type: trojan
-  network: ws
-  server: 188.42.89.195
-  port: 2096
-  password: slch2024
-  skip-cert-verify: false
-  udp: true
-  sni: ocost-dy.wmlefl.cc
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /Telegram
-- name: 荷兰 001
-  type: trojan
-  network: ws
-  server: 188.164.248.195
-  port: 2096
-  password: slch2024
-  skip-cert-verify: false
-  udp: true
-  sni: ocost-dy.wmlefl.cc
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /由零开始
-- name: 荷兰 002
-  type: trojan
-  network: ws
-  server: 188.164.248.87
-  port: 2096
-  password: slch2024
-  skip-cert-verify: false
-  udp: true
-  sni: ocost-dy.wmlefl.cc
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /Telegram
-- name: 新加坡 001
-  type: trojan
-  network: ws
-  server: 185.18.184.195
-  port: 2096
-  password: slch2024
-  skip-cert-verify: false
-  udp: true
-  sni: ocost-dy.wmlefl.cc
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /Telegram
-- name: 立陶宛 001
-  type: trojan
-  network: ws
-  server: 185.148.107.195
-  port: 2096
-  password: slch2024
-  skip-cert-verify: false
-  udp: true
-  sni: ocost-dy.wmlefl.cc
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /Telegram🇨🇳
-- name: 荷兰 003
-  type: trojan
-  network: ws
-  server: 188.42.145.195
-  port: 2096
-  password: slch2024
-  skip-cert-verify: false
-  udp: true
-  sni: ocost-dy.wmlefl.cc
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /Telegram🇨🇳
-- name: 俄罗斯 002
-  type: trojan
-  network: ws
-  server: 213.241.198.195
-  port: 2096
-  password: slch2024
-  skip-cert-verify: false
-  udp: true
-  sni: ocost-dy.wmlefl.cc
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /TelegramU0001F1E8U0001F1F3
-- name: 俄罗斯 003
-  type: trojan
-  network: ws
-  server: 185.174.138.195
-  port: 2096
-  password: slch2024
-  skip-cert-verify: false
-  udp: true
-  sni: ocost-dy.wmlefl.cc
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /由零开始
-- name: 俄罗斯 004
-  type: trojan
-  network: ws
-  server: 185.59.218.195
-  port: 2096
-  password: slch2024
-  skip-cert-verify: false
-  udp: true
-  sni: ocost-dy.wmlefl.cc
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /由零开始
-- name: 立陶宛 002
-  type: trojan
-  network: ws
-  server: 185.176.24.195
-  port: 2096
-  password: slch2024
-  skip-cert-verify: false
-  udp: true
-  sni: ocost-dy.wmlefl.cc
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /Telegram🇨🇳
-- name: 美国 007
-  type: trojan
-  network: ws
-  server: 199.68.156.195
-  port: 2096
-  password: slch2024
-  skip-cert-verify: false
-  udp: true
-  sni: ocost-dy.wmlefl.cc
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /Telegram🇮🇷ShadowProxy66
-- name: 安圭拉 001
-  type: trojan
-  network: ws
-  server: 209.94.90.195
-  port: 2096
-  password: slch2024
-  skip-cert-verify: false
-  udp: true
-  sni: ocost-dy.wmlefl.cc
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /Telegram
-- name: 美国 008
-  type: trojan
-  network: ws
-  server: 198.62.62.87
-  port: 2096
-  password: slch2024
-  skip-cert-verify: false
-  udp: true
-  sni: ocost-dy.wmlefl.cc
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /Telegram
-- name: 美国 009
-  type: trojan
-  network: ws
-  server: 198.62.62.195
-  port: 2096
-  password: slch2024
-  skip-cert-verify: false
-  udp: true
-  sni: ocost-dy.wmlefl.cc
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /由零开始
-- name: 美国 010
-  type: trojan
-  network: ws
-  server: 192.200.160.87
-  port: 2096
-  password: slch2024
-  skip-cert-verify: false
-  udp: true
-  sni: ocost-dy.wmlefl.cc
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /Telegram🇨🇳
-- name: 美国 011
-  type: trojan
-  network: ws
-  server: 199.68.156.87
-  port: 2096
-  password: slch2024
-  skip-cert-verify: false
-  udp: true
-  sni: ocost-dy.wmlefl.cc
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /Telegram
-- name: 美国 012
-  type: trojan
-  network: ws
-  server: 199.34.230.195
-  port: 2096
-  password: slch2024
-  skip-cert-verify: false
-  udp: true
-  sni: ocost-dy.wmlefl.cc
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /Telegram🇨🇳
-- name: 俄罗斯 005
-  type: trojan
-  network: ws
-  server: 195.13.45.195
-  port: 2096
-  password: slch2024
-  skip-cert-verify: false
-  udp: true
-  sni: ocost-dy.wmlefl.cc
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /由零开始
-- name: 美国 013
-  type: trojan
-  network: ws
-  server: 209.46.30.195
-  port: 2096
-  password: slch2024
-  skip-cert-verify: false
-  udp: true
-  sni: ocost-dy.wmlefl.cc
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /由零开始
-- name: 美国 014
-  type: trojan
-  network: ws
-  server: 192.0.63.195
-  port: 2096
-  password: slch2024
-  skip-cert-verify: false
-  udp: true
-  sni: ocost-dy.wmlefl.cc
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /Telegram🇨🇳
-- name: 美国 015
-  type: trojan
-  network: ws
-  server: 199.34.230.87
-  port: 2096
-  password: slch2024
-  skip-cert-verify: false
-  udp: true
-  sni: ocost-dy.wmlefl.cc
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /Telegram
-- name: 美国 016
-  type: trojan
-  network: ws
-  server: 204.93.210.195
-  port: 2096
-  password: slch2024
-  skip-cert-verify: false
-  udp: true
-  sni: ocost-dy.wmlefl.cc
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /TelegramU0001F1E8U0001F1F3
-- name: 英国 007
   type: vmess
   network: ws
   server: t.cnmjcn.cyou
   port: 16622
-  uuid: 743dbce9-ec7d-49dd-b9d6-3b1a151e729f
-  skip-cert-verify: false
-  tls: false
-  tfo: false
+  uuid: 5809237d-bb6a-4cf8-98d3-dceb9e003638
+  udp: true
   alterId: 0
   cipher: auto
   ws-opts:
     headers:
-      Host: f604066249a784d694db65d3ebf5d60c.mobgslb.tbcache.com
+      Host: f787cef956deb7c5d6bc362bd5daeb17.mobgslb.tbcache.com
     path: /
-- name: 保加利亚 001
-  type: trojan
+- name: 美国 005
+  type: vmess
   network: ws
-  server: 185.176.26.195
-  port: 2096
-  password: slch2024
-  skip-cert-verify: true
+  server: planb.mojcn.com
+  port: 16626
+  uuid: 5809237d-bb6a-4cf8-98d3-dceb9e003638
   udp: true
-  sni: ocost-dy.wmlefl.cc
+  alterId: 0
+  cipher: auto
   ws-opts:
     headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /Telegram
-- name: 卢森堡 002
-  type: trojan
+      Host: f787cef956deb7c5d6bc362bd5daeb17.mobgslb.tbcache.com
+    path: /
+- name: 美国 006
+  type: vmess
   network: ws
-  server: 188.42.88.195
-  port: 2096
-  password: slch2024
+  server: planb.mojcn.com
+  port: 16616
+  uuid: 5809237d-bb6a-4cf8-98d3-dceb9e003638
+  udp: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: f787cef956deb7c5d6bc362bd5daeb17.mobgslb.tbcache.com
+    path: /
+- name: 英国 005
+  type: vmess
+  network: ws
+  server: t.cnmjcn.cyou
+  port: 16616
+  uuid: 5809237d-bb6a-4cf8-98d3-dceb9e003638
+  udp: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: f787cef956deb7c5d6bc362bd5daeb17.mobgslb.tbcache.com
+    path: /
+- name: 美国 007
+  type: vmess
+  network: ws
+  server: planb.mojcn.com
+  port: 16648
+  uuid: 5809237d-bb6a-4cf8-98d3-dceb9e003638
+  udp: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: f787cef956deb7c5d6bc362bd5daeb17.mobgslb.tbcache.com
+    path: /
+- name: 英国 006
+  type: vmess
+  network: ws
+  server: t.cnmjcn.cyou
+  port: 16648
+  uuid: 5809237d-bb6a-4cf8-98d3-dceb9e003638
+  udp: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: f787cef956deb7c5d6bc362bd5daeb17.mobgslb.tbcache.com
+    path: /
+- name: 美国 008
+  type: vmess
+  network: ws
+  server: planb.mojcn.com
+  port: 16641
+  uuid: 5809237d-bb6a-4cf8-98d3-dceb9e003638
+  udp: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: f787cef956deb7c5d6bc362bd5daeb17.mobgslb.tbcache.com
+    path: /
+- name: 英国 007
+  type: vmess
+  network: ws
+  server: t.cnmjcn.cyou
+  port: 16641
+  uuid: 5809237d-bb6a-4cf8-98d3-dceb9e003638
+  udp: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: f787cef956deb7c5d6bc362bd5daeb17.mobgslb.tbcache.com
+    path: /
+- name: 美国 009
+  type: vmess
+  network: ws
+  server: planb.mojcn.com
+  port: 16644
+  uuid: 5809237d-bb6a-4cf8-98d3-dceb9e003638
+  udp: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: f787cef956deb7c5d6bc362bd5daeb17.mobgslb.tbcache.com
+    path: /
+- name: 美国 010
+  type: vmess
+  network: ws
+  server: planb.mojcn.com
+  port: 16645
+  uuid: 5809237d-bb6a-4cf8-98d3-dceb9e003638
+  udp: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: f787cef956deb7c5d6bc362bd5daeb17.mobgslb.tbcache.com
+    path: /
+- name: 英国 008
+  type: vmess
+  network: ws
+  server: t.cnmjcn.cyou
+  port: 16645
+  uuid: 5809237d-bb6a-4cf8-98d3-dceb9e003638
+  udp: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: f787cef956deb7c5d6bc362bd5daeb17.mobgslb.tbcache.com
+    path: /
+- name: 德国 001
+  type: vless
+  network: ws
+  server: 5.10.214.255
+  port: 80
+  uuid: 67b05dba-e32b-424a-b5a8-61a2f4097a14
   skip-cert-verify: false
-  udp: true
-  sni: ocost-dy.wmlefl.cc
   ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
     headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /Telegram
-- name: 俄罗斯 006
-  type: trojan
+      Host: myvps.nilphreakz.me
+    max-early-data: 2560
+    path: /Telegram🇨🇳
+- name: 德国 002
+  type: vless
   network: ws
-  server: 195.13.44.87
-  port: 2096
-  password: slch2024
+  server: 5.10.215.255
+  port: 80
+  uuid: 20c21ebd-05ed-4f44-bc4d-8831ac518b7a
   skip-cert-verify: false
-  udp: true
-  sni: ocost-dy.wmlefl.cc
   ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
     headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /Telegram
+      Host: myvps.nilphreakz.me
+    max-early-data: 2560
+    path: /Telegram🇨🇳
+- name: 阿塞拜疆 001
+  type: vless
+  network: ws
+  server: 5.10.246.255
+  port: 80
+  uuid: 7d265652-cacf-4b9a-aee6-f20ba4dbfe04
+  skip-cert-verify: false
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: myvps.nilphreakz.me
+    max-early-data: 2560
+    path: /Telegram🇨🇳
+- name: 阿塞拜疆 002
+  type: vless
+  network: ws
+  server: 5.10.247.255
+  port: 80
+  uuid: 0a6936a5-12cb-4038-86bb-562894b7816f
+  skip-cert-verify: false
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: myvps.nilphreakz.me
+    max-early-data: 2560
+    path: /Telegram🇨🇳
+- name: 荷兰 001
+  type: vless
+  network: ws
+  server: 5.182.34.255
+  port: 80
+  uuid: 7c06892a-d102-47cc-846d-e1d445dc9d2c
+  skip-cert-verify: false
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: myvps.nilphreakz.me
+    max-early-data: 2560
+    path: /Telegram🇨🇳
+- name: 美国 011
+  type: vless
+  network: ws
+  server: 8.6.112.255
+  port: 80
+  uuid: f0d0c1f0-bd67-4c9d-9827-757dc0043fab
+  skip-cert-verify: false
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: myvps.nilphreakz.me
+    max-early-data: 2560
+    path: /Telegram🇨🇳
+- name: 美国 012
+  type: vless
+  network: ws
+  server: 8.34.70.255
+  port: 80
+  uuid: eed712ff-17d2-4e0b-bf0b-19ff3451b97a
+  skip-cert-verify: false
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: myvps.nilphreakz.me
+    max-early-data: 2560
+    path: /Telegram🇨🇳
+- name: 印度 001
+  type: vless
+  network: ws
+  server: 14.102.228.255
+  port: 80
+  uuid: a225a8ff-1505-4dfd-a3b7-59737bb499ee
+  skip-cert-verify: false
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: myvps.nilphreakz.me
+    max-early-data: 2560
+    path: /Telegram🇨🇳
+- name: 印度 002
+  type: vless
+  network: ws
+  server: 14.102.229.255
+  port: 80
+  uuid: a4798d14-063c-4b01-9b70-5b5793335b87
+  skip-cert-verify: false
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: myvps.nilphreakz.me
+    max-early-data: 2560
+    path: /Telegram🇨🇳
+- name: 美国 013
+  type: vless
+  network: ws
+  server: 31.12.75.255
+  port: 80
+  uuid: 77ece81f-a99a-4bd9-be0f-3c562c4dab8d
+  skip-cert-verify: false
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: myvps.nilphreakz.me
+    max-early-data: 2560
+    path: /Telegram🇨🇳
+- name: 乌克兰 001
+  type: vless
+  network: ws
+  server: 31.43.179.255
+  port: 80
+  uuid: f1062c0c-7a36-4250-af5b-b8b47c8a40ca
+  skip-cert-verify: false
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: myvps.nilphreakz.me
+    max-early-data: 2560
+    path: /Telegram🇨🇳
+- name: 德国 003
+  type: vless
+  network: ws
+  server: 31.185.108.255
+  port: 80
+  uuid: 7baac04e-a297-48a0-99e9-2deba9ae64fb
+  skip-cert-verify: false
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: myvps.nilphreakz.me
+    max-early-data: 2560
+    path: /Telegram🇨🇳
+- name: 荷兰 002
+  type: vless
+  network: ws
+  server: 37.153.171.255
+  port: 80
+  uuid: efdbbe04-38e0-46f3-a1c2-8c0c5604c636
+  skip-cert-verify: false
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: myvps.nilphreakz.me
+    max-early-data: 2560
+    path: /Telegram🇨🇳
+- name: 英国 009
+  type: vless
+  network: ws
+  server: 45.8.211.255
+  port: 80
+  uuid: 89b2eb61-c9c8-4990-9205-7f5eec0501fc
+  skip-cert-verify: false
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: myvps.nilphreakz.me
+    max-early-data: 2560
+    path: /Telegram🇨🇳
+- name: 英国 010
+  type: vless
+  network: ws
+  server: 45.12.30.255
+  port: 80
+  uuid: 67b05dba-e32b-424a-b5a8-61a2f4097a14
+  skip-cert-verify: false
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: myvps.nilphreakz.me
+    max-early-data: 2560
+    path: /Telegram🇨🇳
+- name: 英国 011
+  type: vless
+  network: ws
+  server: 45.12.31.255
+  port: 80
+  uuid: 20c21ebd-05ed-4f44-bc4d-8831ac518b7a
+  skip-cert-verify: false
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: myvps.nilphreakz.me
+    max-early-data: 2560
+    path: /Telegram🇨🇳
+- name: 美国 014
+  type: vless
+  network: ws
+  server: 45.40.144.255
+  port: 80
+  uuid: 6f565a11-f263-421a-bd3c-3d4efa51d4b0
+  skip-cert-verify: false
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: myvps.nilphreakz.me
+    max-early-data: 2560
+    path: /Telegram🇨🇳
+- name: 美国 015
+  type: vless
+  network: ws
+  server: 45.40.146.255
+  port: 80
+  uuid: 7d265652-cacf-4b9a-aee6-f20ba4dbfe04
+  skip-cert-verify: false
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: myvps.nilphreakz.me
+    max-early-data: 2560
+    path: /Telegram🇨🇳
+- name: 美国 016
+  type: vless
+  network: ws
+  server: 45.40.148.255
+  port: 80
+  uuid: 2ad33a9c-ee61-4df4-96e1-1bf0987d082e
+  skip-cert-verify: false
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: myvps.nilphreakz.me
+    max-early-data: 2560
+    path: /Telegram🇨🇳
 - name: 美国 017
-  type: trojan
+  type: vless
   network: ws
-  server: 192.200.160.195
-  port: 2096
-  password: slch2024
+  server: 45.40.149.255
+  port: 80
+  uuid: 7c06892a-d102-47cc-846d-e1d445dc9d2c
   skip-cert-verify: false
-  udp: true
-  sni: ocost-dy.wmlefl.cc
   ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
     headers:
-      Host: ocost-dy.wmlefl.cc
+      Host: myvps.nilphreakz.me
+    max-early-data: 2560
     path: /Telegram🇨🇳
 - name: 美国 018
-  type: trojan
+  type: vless
   network: ws
-  server: 199.34.229.195
-  port: 2096
-  password: slch2024
+  server: 45.40.151.255
+  port: 80
+  uuid: 15510a34-7cec-411a-9256-279241522f81
   skip-cert-verify: false
-  udp: true
-  sni: ocost-dy.wmlefl.cc
   ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
     headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /Telegram
-- name: 美国 019
-  type: trojan
-  network: ws
-  server: 192.0.54.195
-  port: 2096
-  password: slch2024
-  skip-cert-verify: false
-  udp: true
-  sni: ocost-dy.wmlefl.cc
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
+      Host: myvps.nilphreakz.me
+    max-early-data: 2560
     path: /Telegram🇨🇳
-- name: 立陶宛 003
-  type: trojan
+- name: 美国 019
+  type: vless
   network: ws
-  server: 185.148.104.195
-  port: 2096
-  password: slch2024
+  server: 45.40.153.255
+  port: 80
+  uuid: eed712ff-17d2-4e0b-bf0b-19ff3451b97a
   skip-cert-verify: false
-  udp: true
-  sni: ocost-dy.wmlefl.cc
   ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
     headers:
-      Host: ocost-dy.wmlefl.cc
+      Host: myvps.nilphreakz.me
+    max-early-data: 2560
     path: /Telegram🇨🇳
 - name: 美国 020
-  type: trojan
+  type: vless
   network: ws
-  server: 199.181.197.195
-  port: 2096
-  password: slch2024
+  server: 45.40.154.255
+  port: 80
+  uuid: 9c0caffc-04c5-413e-98e8-666052b19da8
   skip-cert-verify: false
-  udp: true
-  sni: ocost-dy.wmlefl.cc
   ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
     headers:
-      Host: ocost-dy.wmlefl.cc
+      Host: myvps.nilphreakz.me
+    max-early-data: 2560
     path: /Telegram🇨🇳
-- name: 俄罗斯 007
-  type: trojan
-  network: ws
-  server: 195.13.44.195
-  port: 2096
-  password: slch2024
-  skip-cert-verify: false
-  udp: true
-  sni: ocost-dy.wmlefl.cc
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /Telegram
 - name: 美国 021
-  type: trojan
+  type: vless
   network: ws
-  server: 216.24.57.87
-  port: 2096
-  password: slch2024
+  server: 45.40.155.255
+  port: 80
+  uuid: a225a8ff-1505-4dfd-a3b7-59737bb499ee
   skip-cert-verify: false
-  udp: true
-  sni: ocost-dy.wmlefl.cc
   ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
     headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /Telegram
+      Host: myvps.nilphreakz.me
+    max-early-data: 2560
+    path: /Telegram🇨🇳
+- name: 乌克兰 002
+  type: vless
+  network: ws
+  server: 45.67.215.255
+  port: 80
+  uuid: a4798d14-063c-4b01-9b70-5b5793335b87
+  skip-cert-verify: false
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: myvps.nilphreakz.me
+    max-early-data: 2560
+    path: /Telegram🇨🇳
+- name: 法国 001
+  type: vless
+  network: ws
+  server: 45.80.110.255
+  port: 80
+  uuid: 7c326126-7e75-457d-a8cd-8120da01eb25
+  skip-cert-verify: false
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: myvps.nilphreakz.me
+    max-early-data: 2560
+    path: /Telegram🇨🇳
+- name: 法国 002
+  type: vless
+  network: ws
+  server: 45.80.111.255
+  port: 80
+  uuid: acf0cb41-ac1a-448f-98cf-0b58a9f92b05
+  skip-cert-verify: false
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: myvps.nilphreakz.me
+    max-early-data: 2560
+    path: /Telegram🇨🇳
+- name: 英国 012
+  type: vless
+  network: ws
+  server: 45.85.118.255
+  port: 80
+  uuid: cb3ec36e-a0c2-4798-a340-9cb7eaee739a
+  skip-cert-verify: false
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: myvps.nilphreakz.me
+    max-early-data: 2560
+    path: /Telegram🇨🇳
+- name: 英国 013
+  type: vless
+  network: ws
+  server: 45.85.119.255
+  port: 80
+  uuid: da8aa1d1-5fd7-4085-85c1-3d5cbfdbfc5c
+  skip-cert-verify: false
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: myvps.nilphreakz.me
+    max-early-data: 2560
+    path: /Telegram🇨🇳
+- name: 荷兰 003
+  type: vless
+  network: ws
+  server: 45.128.76.255
+  port: 80
+  uuid: 781c352c-5b01-4920-9a0e-2a25732f694c
+  skip-cert-verify: false
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: myvps.nilphreakz.me
+    max-early-data: 2560
+    path: /Telegram🇨🇳
+- name: 荷兰 004
+  type: vless
+  network: ws
+  server: 45.130.125.255
+  port: 80
+  uuid: 4657a214-f331-4b98-bbe1-e813ab777a58
+  skip-cert-verify: false
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: myvps.nilphreakz.me
+    max-early-data: 2560
+    path: /Telegram🇨🇳
+- name: 荷兰 005
+  type: vless
+  network: ws
+  server: 45.131.4.255
+  port: 80
+  uuid: 1b604b11-1dd2-45e1-9805-dc802ecd8abb
+  skip-cert-verify: false
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: myvps.nilphreakz.me
+    max-early-data: 2560
+    path: /Telegram🇨🇳
+- name: 荷兰 006
+  type: vless
+  network: ws
+  server: 45.131.5.255
+  port: 80
+  uuid: 77ece81f-a99a-4bd9-be0f-3c562c4dab8d
+  skip-cert-verify: false
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: myvps.nilphreakz.me
+    max-early-data: 2560
+    path: /Telegram🇨🇳
+- name: 荷兰 007
+  type: vless
+  network: ws
+  server: 45.131.6.255
+  port: 80
+  uuid: f1062c0c-7a36-4250-af5b-b8b47c8a40ca
+  skip-cert-verify: false
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: myvps.nilphreakz.me
+    max-early-data: 2560
+    path: /Telegram🇨🇳
+- name: 荷兰 008
+  type: vless
+  network: ws
+  server: 45.131.7.255
+  port: 80
+  uuid: 7baac04e-a297-48a0-99e9-2deba9ae64fb
+  skip-cert-verify: false
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: myvps.nilphreakz.me
+    max-early-data: 2560
+    path: /Telegram🇨🇳
+- name: 荷兰 009
+  type: vless
+  network: ws
+  server: 45.131.208.255
+  port: 80
+  uuid: 72520d9d-695c-457e-b055-f65dc36e0e25
+  skip-cert-verify: false
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: myvps.nilphreakz.me
+    max-early-data: 2560
+    path: /Telegram🇨🇳
+- name: 荷兰 010
+  type: vless
+  network: ws
+  server: 45.131.209.255
+  port: 80
+  uuid: efdbbe04-38e0-46f3-a1c2-8c0c5604c636
+  skip-cert-verify: false
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: myvps.nilphreakz.me
+    max-early-data: 2560
+    path: /Telegram🇨🇳
+- name: 荷兰 011
+  type: vless
+  network: ws
+  server: 45.131.210.255
+  port: 80
+  uuid: 89b2eb61-c9c8-4990-9205-7f5eec0501fc
+  skip-cert-verify: false
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: myvps.nilphreakz.me
+    max-early-data: 2560
+    path: /Telegram🇨🇳
+- name: 荷兰 012
+  type: vless
+  network: ws
+  server: 45.135.235.255
+  port: 80
+  uuid: 20c21ebd-05ed-4f44-bc4d-8831ac518b7a
+  skip-cert-verify: false
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: myvps.nilphreakz.me
+    max-early-data: 2560
+    path: /Telegram🇨🇳
+- name: 荷兰 013
+  type: vless
+  network: ws
+  server: 45.142.120.255
+  port: 80
+  uuid: 6f565a11-f263-421a-bd3c-3d4efa51d4b0
+  skip-cert-verify: false
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: myvps.nilphreakz.me
+    max-early-data: 2560
+    path: /Telegram🇨🇳
+- name: 荷兰 014
+  type: vless
+  network: ws
+  server: 45.146.201.255
+  port: 80
+  uuid: d5436600-7461-43ed-b7fa-4eeb00f7d8d4
+  skip-cert-verify: false
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: myvps.nilphreakz.me
+    max-early-data: 2560
+    path: /Telegram🇨🇳
+- name: 荷兰 015
+  type: vless
+  network: ws
+  server: 45.149.12.255
+  port: 80
+  uuid: 7d265652-cacf-4b9a-aee6-f20ba4dbfe04
+  skip-cert-verify: false
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: myvps.nilphreakz.me
+    max-early-data: 2560
+    path: /Telegram🇨🇳
+- name: 荷兰 016
+  type: vless
+  network: ws
+  server: 45.153.7.255
+  port: 80
+  uuid: 0a6936a5-12cb-4038-86bb-562894b7816f
+  skip-cert-verify: false
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: myvps.nilphreakz.me
+    max-early-data: 2560
+    path: /Telegram🇨🇳
+- name: 荷兰 017
+  type: vless
+  network: ws
+  server: 45.159.216.255
+  port: 80
+  uuid: 2ad33a9c-ee61-4df4-96e1-1bf0987d082e
+  skip-cert-verify: false
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: myvps.nilphreakz.me
+    max-early-data: 2560
+    path: /Telegram🇨🇳
+- name: 荷兰 018
+  type: vless
+  network: ws
+  server: 45.159.217.255
+  port: 80
+  uuid: 7c06892a-d102-47cc-846d-e1d445dc9d2c
+  skip-cert-verify: false
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: myvps.nilphreakz.me
+    max-early-data: 2560
+    path: /Telegram🇨🇳
+- name: 荷兰 019
+  type: vless
+  network: ws
+  server: 45.159.218.255
+  port: 80
+  uuid: 0772da20-ea49-446d-816d-e42237c54848
+  skip-cert-verify: false
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: myvps.nilphreakz.me
+    max-early-data: 2560
+    path: /Telegram🇨🇳
+- name: 荷兰 020
+  type: vless
+  network: ws
+  server: 45.159.219.255
+  port: 80
+  uuid: 15510a34-7cec-411a-9256-279241522f81
+  skip-cert-verify: false
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: myvps.nilphreakz.me
+    max-early-data: 2560
+    path: /Telegram🇨🇳
+- name: 南非 001
+  type: vless
+  network: ws
+  server: 45.196.29.255
+  port: 80
+  uuid: 3766bbe4-16a2-4987-8833-2dcb20731a5f
+  skip-cert-verify: false
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: myvps.nilphreakz.me
+    max-early-data: 2560
+    path: /Telegram🇨🇳
+- name: 乌克兰 003
+  type: vless
+  network: ws
+  server: 46.202.30.255
+  port: 80
+  uuid: cb3ec36e-a0c2-4798-a340-9cb7eaee739a
+  skip-cert-verify: false
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: myvps.nilphreakz.me
+    max-early-data: 2560
+    path: /Telegram🇨🇳
 - name: 美国 022
-  type: trojan
+  type: vless
   network: ws
-  server: 216.205.52.195
-  port: 2096
-  password: slch2024
+  server: 50.62.88.255
+  port: 80
+  uuid: 4657a214-f331-4b98-bbe1-e813ab777a58
   skip-cert-verify: false
-  udp: true
-  sni: ocost-dy.wmlefl.cc
   ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
     headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /Telegram
-- name: 立陶宛 004
-  type: trojan
-  network: ws
-  server: 185.148.105.195
-  port: 2096
-  password: slch2024
-  skip-cert-verify: false
-  udp: true
-  sni: ocost-dy.wmlefl.cc
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /Telegram
-- name: 加拿大 001
-  type: trojan
-  network: ws
-  server: 205.233.181.195
-  port: 2096
-  password: slch2024
-  skip-cert-verify: false
-  udp: true
-  sni: ocost-dy.wmlefl.cc
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /Telegram
+      Host: myvps.nilphreakz.me
+    max-early-data: 2560
+    path: /Telegram🇨🇳
 - name: 美国 023
-  type: trojan
+  type: vless
   network: ws
-  server: 216.24.57.195
-  port: 2096
-  password: slch2024
+  server: 50.62.90.255
+  port: 80
+  uuid: 77ece81f-a99a-4bd9-be0f-3c562c4dab8d
   skip-cert-verify: false
-  udp: true
-  sni: ocost-dy.wmlefl.cc
   ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
     headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /Telegram
-- name: 日本 001
-  type: trojan
-  network: tcp
-  server: 13.231.37.82
-  port: 18233
-  password: 253bc477d4e43c209f2d427272968280
-  skip-cert-verify: true
-  sni: 23.45.86.28
+      Host: myvps.nilphreakz.me
+    max-early-data: 2560
+    path: /Telegram🇨🇳
 - name: 美国 024
   type: vless
   network: ws
-  server: 172.66.40.99
-  port: 2096
-  uuid: 502ce704-dcec-4f92-9489-505c99ce6c89
-  servername: d11.AlanHIAhO.cOM
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  tfo: true
-  client-fingerprint: chrome
+  server: 50.62.91.255
+  port: 80
+  uuid: f1062c0c-7a36-4250-af5b-b8b47c8a40ca
+  skip-cert-verify: false
   ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
     headers:
-      Host: d11.AlanHIAhO.cOM
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/120.0.0.0 Safari/537.36
-    path: /
-- name: 俄罗斯 008
-  type: vless
-  network: grpc
-  server: 185.236.232.72
-  port: 8880
-  uuid: e4824193-4f54-453b-d037-88368e85ef0e
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  tfo: true
-  client-fingerprint: chrome
-  grpc-opts: {}
-- name: 俄罗斯 009
-  type: vless
-  network: grpc
-  server: 185.236.232.148
-  port: 8880
-  uuid: e4824193-4f54-453b-d037-88368e85ef0e
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  tfo: true
-  client-fingerprint: chrome
-  grpc-opts: {}
+      Host: myvps.nilphreakz.me
+    max-early-data: 2560
+    path: /Telegram🇨🇳
 - name: 美国 025
   type: vless
   network: ws
-  server: 104.21.3.219
-  port: 8443
-  uuid: 57ba2ab1-a283-42eb-82ee-dc3561a805b8
-  servername: ovhwuxian.pai50288.uk
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  tfo: true
-  client-fingerprint: chrome
+  server: 50.62.173.255
+  port: 80
+  uuid: 72520d9d-695c-457e-b055-f65dc36e0e25
+  skip-cert-verify: false
   ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
     headers:
-      Host: ovhwuxian.pai50288.uk
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/120.0.0.0 Safari/537.36
-    path: /57ba2ab1
-- name: 俄罗斯 010
-  type: vless
-  network: grpc
-  server: 185.236.232.120
-  port: 8880
-  uuid: e4824193-4f54-453b-d037-88368e85ef0e
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  tfo: true
-  client-fingerprint: chrome
-  grpc-opts: {}
+      Host: myvps.nilphreakz.me
+    max-early-data: 2560
+    path: /Telegram🇨🇳
 - name: 美国 026
   type: vless
-  network: grpc
-  server: 45.86.72.106
-  port: 8880
-  uuid: e4824193-4f54-453b-d037-88368e85ef0e
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  tfo: true
-  client-fingerprint: chrome
-  grpc-opts: {}
-- name: 俄罗斯 011
-  type: vless
-  network: grpc
-  server: 185.236.232.243
-  port: 8880
-  uuid: e4824193-4f54-453b-d037-88368e85ef0e
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  tfo: true
-  client-fingerprint: chrome
-  grpc-opts: {}
-- name: 俄罗斯 012
-  type: vless
-  network: grpc
-  server: 185.236.232.189
-  port: 8880
-  uuid: e4824193-4f54-453b-d037-88368e85ef0e
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  tfo: true
-  client-fingerprint: chrome
-  grpc-opts: {}
+  network: ws
+  server: 50.62.174.255
+  port: 80
+  uuid: efdbbe04-38e0-46f3-a1c2-8c0c5604c636
+  skip-cert-verify: false
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: myvps.nilphreakz.me
+    max-early-data: 2560
+    path: /Telegram🇨🇳
 - name: 美国 027
   type: vless
-  network: grpc
-  server: 45.82.251.121
-  port: 8880
-  uuid: e4824193-4f54-453b-d037-88368e85ef0e
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  tfo: true
-  client-fingerprint: chrome
-  grpc-opts: {}
+  network: ws
+  server: 50.62.175.255
+  port: 80
+  uuid: 89b2eb61-c9c8-4990-9205-7f5eec0501fc
+  skip-cert-verify: false
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: myvps.nilphreakz.me
+    max-early-data: 2560
+    path: /Telegram🇨🇳
 - name: 美国 028
   type: vless
   network: ws
-  server: 104.21.36.57
-  port: 443
-  uuid: 6c11247b-6078-461a-93d5-22e4df284e6d
-  servername: mirror.fullmargintraders.com
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  tfo: true
-  client-fingerprint: chrome
+  server: 50.62.194.255
+  port: 80
+  uuid: 67b05dba-e32b-424a-b5a8-61a2f4097a14
+  skip-cert-verify: false
   ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
     headers:
-      Host: mirror.fullmargintraders.com
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/120.0.0.0 Safari/537.36
-    path: /wsv/6c11247b-6078-461a-93d5-22e4df284e6d
+      Host: myvps.nilphreakz.me
+    max-early-data: 2560
+    path: /Telegram🇨🇳
 - name: 美国 029
   type: vless
-  network: grpc
-  server: 45.82.251.180
-  port: 8880
-  uuid: e4824193-4f54-453b-d037-88368e85ef0e
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  tfo: true
-  client-fingerprint: chrome
-  grpc-opts: {}
+  network: ws
+  server: 50.62.195.255
+  port: 80
+  uuid: 20c21ebd-05ed-4f44-bc4d-8831ac518b7a
+  skip-cert-verify: false
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: myvps.nilphreakz.me
+    max-early-data: 2560
+    path: /Telegram🇨🇳
 - name: 美国 030
   type: vless
-  network: grpc
-  server: 45.82.251.114
-  port: 8880
-  uuid: e4824193-4f54-453b-d037-88368e85ef0e
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  tfo: true
-  client-fingerprint: chrome
-  grpc-opts: {}
+  network: ws
+  server: 50.62.198.255
+  port: 80
+  uuid: 6f565a11-f263-421a-bd3c-3d4efa51d4b0
+  skip-cert-verify: false
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: myvps.nilphreakz.me
+    max-early-data: 2560
+    path: /Telegram🇨🇳
+- name: 乌克兰 004
+  type: vless
+  network: ws
+  server: 62.72.166.255
+  port: 80
+  uuid: d5436600-7461-43ed-b7fa-4eeb00f7d8d4
+  skip-cert-verify: false
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: myvps.nilphreakz.me
+    max-early-data: 2560
+    path: /Telegram🇨🇳
 - name: 美国 031
   type: vless
   network: ws
-  server: 45.45.218.166
-  port: 21275
-  uuid: 678a8311-6184-4a1f-a651-84be3cc82e37
-  servername: ula347.tiri-viri.com
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  tfo: true
-  client-fingerprint: chrome
+  server: 63.141.128.255
+  port: 80
+  uuid: 7d265652-cacf-4b9a-aee6-f20ba4dbfe04
+  skip-cert-verify: false
   ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
     headers:
-      Host: ula347.tiri-viri.com
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/120.0.0.0 Safari/537.36
-    path: /
-- name: 俄罗斯 013
-  type: vless
-  network: grpc
-  server: 185.236.232.123
-  port: 8880
-  uuid: e4824193-4f54-453b-d037-88368e85ef0e
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  tfo: true
-  client-fingerprint: chrome
-  grpc-opts: {}
+      Host: myvps.nilphreakz.me
+    max-early-data: 2560
+    path: /Telegram🇨🇳
 - name: 美国 032
   type: vless
-  network: grpc
-  server: 45.82.251.97
-  port: 8880
-  uuid: e4824193-4f54-453b-d037-88368e85ef0e
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  tfo: true
-  client-fingerprint: chrome
-  grpc-opts: {}
-- name: 俄罗斯 014
-  type: vless
-  network: grpc
-  server: 185.236.232.199
-  port: 8880
-  uuid: e4824193-4f54-453b-d037-88368e85ef0e
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  tfo: true
-  client-fingerprint: chrome
-  grpc-opts: {}
+  network: ws
+  server: 66.45.118.255
+  port: 80
+  uuid: 0a6936a5-12cb-4038-86bb-562894b7816f
+  skip-cert-verify: false
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: myvps.nilphreakz.me
+    max-early-data: 2560
+    path: /Telegram🇨🇳
 - name: 美国 033
   type: vless
-  network: grpc
-  server: pqh25v7.vetrkot.com
-  port: 8880
-  uuid: e4824193-4f54-453b-d037-88368e85ef0e
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  tfo: true
-  client-fingerprint: chrome
-  grpc-opts: {}
+  network: ws
+  server: 66.81.247.255
+  port: 80
+  uuid: 2ad33a9c-ee61-4df4-96e1-1bf0987d082e
+  skip-cert-verify: false
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: myvps.nilphreakz.me
+    max-early-data: 2560
+    path: /Telegram🇨🇳
 - name: 美国 034
   type: vless
-  network: grpc
-  server: 45.82.251.142
-  port: 8880
-  uuid: e4824193-4f54-453b-d037-88368e85ef0e
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  tfo: true
-  client-fingerprint: chrome
-  grpc-opts: {}
+  network: ws
+  server: 66.225.252.255
+  port: 80
+  uuid: 7c06892a-d102-47cc-846d-e1d445dc9d2c
+  skip-cert-verify: false
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: myvps.nilphreakz.me
+    max-early-data: 2560
+    path: /Telegram🇨🇳
 - name: 美国 035
   type: vless
-  network: grpc
-  server: 45.82.251.122
-  port: 8880
-  uuid: e4824193-4f54-453b-d037-88368e85ef0e
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  tfo: true
-  client-fingerprint: chrome
-  grpc-opts: {}
-- name: 俄罗斯 015
-  type: vless
-  network: grpc
-  server: 185.236.232.223
-  port: 8880
-  uuid: e4824193-4f54-453b-d037-88368e85ef0e
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  tfo: true
-  client-fingerprint: chrome
-  grpc-opts: {}
+  network: ws
+  server: 66.235.200.255
+  port: 80
+  uuid: 0772da20-ea49-446d-816d-e42237c54848
+  skip-cert-verify: false
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: myvps.nilphreakz.me
+    max-early-data: 2560
+    path: /Telegram🇨🇳
 - name: 美国 036
   type: vless
-  network: grpc
-  server: 45.82.251.93
-  port: 8880
-  uuid: e4824193-4f54-453b-d037-88368e85ef0e
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  tfo: true
-  client-fingerprint: chrome
-  grpc-opts: {}
-- name: 俄罗斯 016
-  type: vless
-  network: grpc
-  server: 185.236.232.129
-  port: 8880
-  uuid: e4824193-4f54-453b-d037-88368e85ef0e
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  tfo: true
-  client-fingerprint: chrome
-  grpc-opts: {}
-- name: 俄罗斯 017
-  type: vless
-  network: grpc
-  server: 185.236.232.116
-  port: 8880
-  uuid: e4824193-4f54-453b-d037-88368e85ef0e
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  tfo: true
-  client-fingerprint: chrome
-  grpc-opts: {}
-- name: 英国 008
-  type: vmess
-  network: tcp
-  server: 82.197.69.131
-  port: 39674
-  uuid: 5a89386a-827b-4f54-8778-2f1b5122c6ef
-  skip-cert-verify: true
-  udp: true
-  tfo: true
-  alterId: 0
-  cipher: auto
-- name: 新加坡 002
-  type: vmess
   network: ws
-  server: 54.169.173.51
-  port: 443
-  uuid: 14a79148-3d75-41d6-a998-2be9edef88cb
-  skip-cert-verify: true
-  udp: true
-  tfo: true
-  alterId: 0
-  cipher: auto
+  server: 72.167.25.255
+  port: 80
+  uuid: f0d0c1f0-bd67-4c9d-9827-757dc0043fab
+  skip-cert-verify: false
   ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
     headers:
-      Host: singapore2.helloshuai.com
-    path: /39cb4/
+      Host: myvps.nilphreakz.me
+    max-early-data: 2560
+    path: /Telegram🇨🇳
 - name: 美国 037
   type: vless
   network: ws
-  server: kifpool.me
-  port: 443
-  uuid: b754b53a-aaf5-475c-eeed-46806c2aa63f
-  servername: nkang2replace.airlineshoma.com
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  tfo: true
-  client-fingerprint: chrome
+  server: 72.167.241.255
+  port: 80
+  uuid: 9c0caffc-04c5-413e-98e8-666052b19da8
+  skip-cert-verify: false
   ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
     headers:
-      Host: nkang2replace.airlineshoma.com
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/120.0.0.0 Safari/537.36
-    path: /
-- name: 亚太地区 001
-  type: vmess
-  network: tcp
-  server: 103.115.109.250
-  port: 40762
-  uuid: 35ce6e3a-4ddc-472c-9e9f-a34362c194e7
-  skip-cert-verify: true
-  udp: true
-  tfo: true
-  alterId: 0
-  cipher: auto
-- name: 韩国 001
-  type: vmess
-  network: ws
-  server: 202.79.161.188
-  port: 443
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  skip-cert-verify: true
-  udp: true
-  tfo: true
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: www.32278117.xyz
-    path: /path/170733132233
+      Host: myvps.nilphreakz.me
+    max-early-data: 2560
+    path: /Telegram🇨🇳
 - name: 美国 038
   type: vless
-  network: grpc
-  server: 167.68.42.168
-  port: 443
-  uuid: 401374e6-df77-41fb-f638-dad8184f175b
-  servername: pqh24v3.hiddendom.shop
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  tfo: true
-  client-fingerprint: chrome
-  grpc-opts: {}
-- name: 美国 039
-  type: vless
-  network: grpc
-  server: 141.193.213.214
-  port: 443
-  uuid: 401374e6-df77-41fb-f638-dad8184f175b
-  servername: pqh23v5.hiddendom.shop
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  tfo: true
-  client-fingerprint: chrome
-  grpc-opts: {}
-- name: 美国 040
-  type: vmess
-  network: none
-  server: 209.54.104.219
-  port: 43966
-  uuid: 0e3606ae-321a-4d0b-85ec-5f4352f4bc24
-  skip-cert-verify: true
-  udp: true
-  tfo: true
-  alterId: 0
-  cipher: auto
-- name: 美国 041
-  type: vmess
-  network: none
-  server: 66.253.5.158
-  port: 36299
-  uuid: 4ada72ac-46b4-4080-aa1e-c81999725ba5
-  skip-cert-verify: true
-  udp: true
-  tfo: true
-  alterId: 0
-  cipher: auto
-- name: 俄罗斯 018
-  type: vless
-  network: grpc
-  server: 185.231.205.99
-  port: 8880
-  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  tfo: true
-  client-fingerprint: chrome
-  grpc-opts: {}
-- name: 美国 042
-  type: vmess
   network: ws
-  server: www.speedtest.net
-  port: 443
-  uuid: b7acf44f-3c3a-430c-8ed0-fb64ccc9a13a
-  skip-cert-verify: true
-  udp: true
-  tfo: true
-  alterId: 0
-  cipher: auto
+  server: 72.167.243.255
+  port: 80
+  uuid: a4798d14-063c-4b01-9b70-5b5793335b87
+  skip-cert-verify: false
   ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
     headers:
-      Host: BLaZE-fRA-64.BLaZECLOuD.sitE
-    path: /linkvkwss
-- name: 俄罗斯 019
+      Host: myvps.nilphreakz.me
+    max-early-data: 2560
+    path: /Telegram🇨🇳
+- name: 加拿大 001
   type: vless
-  network: grpc
-  server: 185.236.232.240
-  port: 8880
-  uuid: e4824193-4f54-453b-d037-88368e85ef0e
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  tfo: true
-  client-fingerprint: chrome
-  grpc-opts: {}
-- name: 美国 043
+  network: ws
+  server: 74.49.214.255
+  port: 80
+  uuid: 3766bbe4-16a2-4987-8833-2dcb20731a5f
+  skip-cert-verify: false
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: myvps.nilphreakz.me
+    max-early-data: 2560
+    path: /Telegram🇨🇳
+- name: 德国 004
   type: vless
-  network: grpc
-  server: 45.82.251.92
-  port: 8880
-  uuid: e4824193-4f54-453b-d037-88368e85ef0e
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  tfo: true
-  client-fingerprint: chrome
-  grpc-opts: {}
-- name: 美国 044
+  network: ws
+  server: 77.37.33.255
+  port: 80
+  uuid: acf0cb41-ac1a-448f-98cf-0b58a9f92b05
+  skip-cert-verify: false
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: myvps.nilphreakz.me
+    max-early-data: 2560
+    path: /Telegram🇨🇳
+- name: 俄罗斯 001
   type: vless
-  network: grpc
-  server: 104.26.2.186
-  port: 443
-  uuid: 401374e6-df77-41fb-f638-dad8184f175b
-  servername: pqh31v7.hiddendom.shop
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  tfo: true
-  client-fingerprint: chrome
-  grpc-opts: {}
+  network: ws
+  server: 77.105.163.255
+  port: 80
+  uuid: 781c352c-5b01-4920-9a0e-2a25732f694c
+  skip-cert-verify: false
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: myvps.nilphreakz.me
+    max-early-data: 2560
+    path: /Telegram🇨🇳
+- name: 俄罗斯 002
+  type: vless
+  network: ws
+  server: 77.232.140.255
+  port: 80
+  uuid: 4657a214-f331-4b98-bbe1-e813ab777a58
+  skip-cert-verify: false
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: myvps.nilphreakz.me
+    max-early-data: 2560
+    path: /Telegram🇨🇳
+- name: 英国 014
+  type: vless
+  network: ws
+  server: 80.93.202.255
+  port: 80
+  uuid: 1b604b11-1dd2-45e1-9805-dc802ecd8abb
+  skip-cert-verify: false
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: myvps.nilphreakz.me
+    max-early-data: 2560
+    path: /Telegram🇨🇳
+- name: 立陶宛 001
+  type: vless
+  network: ws
+  server: 86.38.214.255
+  port: 80
+  uuid: 77ece81f-a99a-4bd9-be0f-3c562c4dab8d
+  skip-cert-verify: false
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: myvps.nilphreakz.me
+    max-early-data: 2560
+    path: /Telegram🇨🇳
+- name: 立陶宛 002
+  type: vless
+  network: ws
+  server: 88.216.66.255
+  port: 80
+  uuid: f1062c0c-7a36-4250-af5b-b8b47c8a40ca
+  skip-cert-verify: false
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: myvps.nilphreakz.me
+    max-early-data: 2560
+    path: /Telegram🇨🇳
+- name: 立陶宛 003
+  type: vless
+  network: ws
+  server: 88.216.67.255
+  port: 80
+  uuid: 7baac04e-a297-48a0-99e9-2deba9ae64fb
+  skip-cert-verify: false
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: myvps.nilphreakz.me
+    max-early-data: 2560
+    path: /Telegram🇨🇳
+- name: 立陶宛 004
+  type: vless
+  network: ws
+  server: 88.216.69.255
+  port: 80
+  uuid: 72520d9d-695c-457e-b055-f65dc36e0e25
+  skip-cert-verify: false
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: myvps.nilphreakz.me
+    max-early-data: 2560
+    path: /Telegram🇨🇳
 - name: 立陶宛 005
   type: vless
-  network: grpc
-  server: 89.116.180.248
-  port: 443
-  uuid: 401374e6-df77-41fb-f638-dad8184f175b
-  servername: pqh23v4.hiddendom.shop
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  tfo: true
-  client-fingerprint: chrome
-  grpc-opts: {}
-- name: 澳大利亚 003
-  type: trojan
-  network: tcp
-  server: 43.198.184.150
-  port: 2282
-  password: 253bc477d4e43c209f2d427272968280
-  skip-cert-verify: true
-  sni: fe2.update.microsoft.com
-- name: 亚美尼亚 001
-  type: trojan
   network: ws
-  server: 188.164.158.195
-  port: 2096
-  password: slch2024
+  server: 89.116.46.255
+  port: 80
+  uuid: efdbbe04-38e0-46f3-a1c2-8c0c5604c636
   skip-cert-verify: false
-  udp: true
-  sni: ocost-dy.wmlefl.cc
   ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
     headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /TelegramU0001F1E8U0001F1F3
-- name: 亚美尼亚 002
-  type: trojan
-  network: ws
-  server: 188.164.159.195
-  port: 2096
-  password: slch2024
-  skip-cert-verify: false
-  udp: true
-  sni: ocost-dy.wmlefl.cc
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /TelegramU0001F1E8U0001F1F3
+      Host: myvps.nilphreakz.me
+    max-early-data: 2560
+    path: /Telegram🇨🇳
 - name: 立陶宛 006
-  type: trojan
+  type: vless
   network: ws
-  server: 185.148.106.195
-  port: 2096
-  password: slch2024
+  server: 89.116.161.255
+  port: 80
+  uuid: 89b2eb61-c9c8-4990-9205-7f5eec0501fc
   skip-cert-verify: false
-  udp: true
-  sni: ocost-dy.wmlefl.cc
   ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
     headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /Telegram
-- name: 美国 045
-  type: trojan
-  network: tcp
-  server: xingxing.jiasu123.org
-  port: 1924
-  password: 253bc477d4e43c209f2d427272968280
-  skip-cert-verify: true
-  sni: 23.45.86.28
-- name: 美国 046
-  type: trojan
-  network: tcp
-  server: xingxing.jiasu123.org
-  port: 4801
-  password: 253bc477d4e43c209f2d427272968280
-  skip-cert-verify: true
-  sni: 23.45.86.28
-- name: 俄罗斯 020
-  type: trojan
-  network: ws
-  server: 193.9.49.195
-  port: 2096
-  password: slch2024
-  skip-cert-verify: false
-  udp: true
-  sni: ocost-dy.wmlefl.cc
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
+      Host: myvps.nilphreakz.me
+    max-early-data: 2560
     path: /Telegram🇨🇳
-- name: 美国 047
-  type: trojan
-  network: tcp
-  server: xingxing.jiasu123.org
-  port: 46943
-  password: 253bc477d4e43c209f2d427272968280
-  skip-cert-verify: true
-  sni: 23.45.86.28
-- name: 美国 048
-  type: trojan
-  network: tcp
-  server: xingxing.jiasu123.org
-  port: 3043
-  password: 253bc477d4e43c209f2d427272968280
-  skip-cert-verify: true
-  sni: 23.45.86.28
-- name: 美国 049
-  type: trojan
-  network: tcp
-  server: xingxing.jiasu123.org
-  port: 4317
-  password: 253bc477d4e43c209f2d427272968280
-  skip-cert-verify: true
-  sni: 23.45.86.28
-- name: 美国 050
-  type: trojan
-  network: tcp
-  server: xingxing.jiasu123.org
-  port: 1523
-  password: 253bc477d4e43c209f2d427272968280
-  skip-cert-verify: true
-  sni: 23.45.86.28
-- name: 俄罗斯 021
-  type: trojan
+- name: 立陶宛 007
+  type: vless
   network: ws
-  server: 195.13.54.195
-  port: 2096
-  password: slch2024
+  server: 89.116.180.255
+  port: 80
+  uuid: 67b05dba-e32b-424a-b5a8-61a2f4097a14
   skip-cert-verify: false
-  udp: true
-  sni: ocost-dy.wmlefl.cc
   ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
     headers:
-      Host: ocost-dy.wmlefl.cc
+      Host: myvps.nilphreakz.me
+    max-early-data: 2560
     path: /Telegram🇨🇳
-- name: 荷兰 004
-  type: trojan
+- name: 立陶宛 008
+  type: vless
   network: ws
-  server: 185.193.29.195
-  port: 2096
-  password: slch2024
-  sni: ocost-dy.wmlefl.cc
+  server: 89.116.250.255
+  port: 80
+  uuid: 20c21ebd-05ed-4f44-bc4d-8831ac518b7a
+  skip-cert-verify: false
   ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
     headers:
-      Host: ocost-dy.wmlefl.cc
-    path: Telegram🇨🇳
+      Host: myvps.nilphreakz.me
+    max-early-data: 2560
+    path: /Telegram🇨🇳
+- name: 立陶宛 009
+  type: vless
+  network: ws
+  server: 89.117.112.255
+  port: 80
+  uuid: 6f565a11-f263-421a-bd3c-3d4efa51d4b0
+  skip-cert-verify: false
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: myvps.nilphreakz.me
+    max-early-data: 2560
+    path: /Telegram🇨🇳
+- name: 德国 005
+  type: vless
+  network: ws
+  server: 91.206.71.255
+  port: 80
+  uuid: 7d265652-cacf-4b9a-aee6-f20ba4dbfe04
+  skip-cert-verify: false
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: myvps.nilphreakz.me
+    max-early-data: 2560
+    path: /Telegram🇨🇳
+- name: 沙特阿拉伯 001
+  type: vless
+  network: ws
+  server: 91.209.253.255
+  port: 80
+  uuid: 0a6936a5-12cb-4038-86bb-562894b7816f
+  skip-cert-verify: false
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: myvps.nilphreakz.me
+    max-early-data: 2560
+    path: /Telegram🇨🇳
+- name: 斯洛文尼亚 001
+  type: vless
+  network: ws
+  server: 92.53.188.255
+  port: 80
+  uuid: 2ad33a9c-ee61-4df4-96e1-1bf0987d082e
+  skip-cert-verify: false
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: myvps.nilphreakz.me
+    max-early-data: 2560
+    path: /Telegram🇨🇳
+- name: 斯洛文尼亚 002
+  type: vless
+  network: ws
+  server: 92.53.189.255
+  port: 80
+  uuid: 7c06892a-d102-47cc-846d-e1d445dc9d2c
+  skip-cert-verify: false
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: myvps.nilphreakz.me
+    max-early-data: 2560
+    path: /Telegram🇨🇳
+- name: 斯洛文尼亚 003
+  type: vless
+  network: ws
+  server: 92.53.190.255
+  port: 80
+  uuid: 0772da20-ea49-446d-816d-e42237c54848
+  skip-cert-verify: false
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: myvps.nilphreakz.me
+    max-early-data: 2560
+    path: /Telegram🇨🇳
+- name: 斯洛文尼亚 004
+  type: vless
+  network: ws
+  server: 92.53.191.255
+  port: 80
+  uuid: 15510a34-7cec-411a-9256-279241522f81
+  skip-cert-verify: false
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: myvps.nilphreakz.me
+    max-early-data: 2560
+    path: /Telegram🇨🇳
+- name: 意大利 001
+  type: vless
+  network: ws
+  server: 92.60.74.255
+  port: 80
+  uuid: f0d0c1f0-bd67-4c9d-9827-757dc0043fab
+  skip-cert-verify: false
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: myvps.nilphreakz.me
+    max-early-data: 2560
+    path: /Telegram🇨🇳
+- name: 俄罗斯 003
+  type: vless
+  network: ws
+  server: 92.243.74.255
+  port: 80
+  uuid: eed712ff-17d2-4e0b-bf0b-19ff3451b97a
+  skip-cert-verify: false
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: myvps.nilphreakz.me
+    max-early-data: 2560
+    path: /Telegram🇨🇳
+- name: 俄罗斯 004
+  type: vless
+  network: ws
+  server: 92.243.75.255
+  port: 80
+  uuid: 9c0caffc-04c5-413e-98e8-666052b19da8
+  skip-cert-verify: false
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: myvps.nilphreakz.me
+    max-early-data: 2560
+    path: /Telegram🇨🇳
+- name: 法国 003
+  type: vless
+  network: ws
+  server: 94.140.0.255
+  port: 80
+  uuid: a225a8ff-1505-4dfd-a3b7-59737bb499ee
+  skip-cert-verify: false
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: myvps.nilphreakz.me
+    max-early-data: 2560
+    path: /Telegram🇨🇳
+- name: 俄罗斯 005
+  type: vless
+  network: ws
+  server: 94.247.142.255
+  port: 80
+  uuid: a4798d14-063c-4b01-9b70-5b5793335b87
+  skip-cert-verify: false
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: myvps.nilphreakz.me
+    max-early-data: 2560
+    path: /Telegram🇨🇳
+- name: 南非 002
+  type: vless
+  network: ws
+  server: 102.132.188.255
+  port: 80
+  uuid: acf0cb41-ac1a-448f-98cf-0b58a9f92b05
+  skip-cert-verify: false
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: myvps.nilphreakz.me
+    max-early-data: 2560
+    path: /Telegram🇨🇳
+- name: 南非 003
+  type: vless
+  network: ws
+  server: 102.177.176.255
+  port: 80
+  uuid: cb3ec36e-a0c2-4798-a340-9cb7eaee739a
+  skip-cert-verify: false
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: myvps.nilphreakz.me
+    max-early-data: 2560
+    path: /Telegram🇨🇳
+- name: 日本 001
+  type: vless
+  network: ws
+  server: 103.116.7.255
+  port: 80
+  uuid: da8aa1d1-5fd7-4085-85c1-3d5cbfdbfc5c
+  skip-cert-verify: false
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: myvps.nilphreakz.me
+    max-early-data: 2560
+    path: /Telegram🇨🇳
+- name: 澳大利亚 001
+  type: vless
+  network: ws
+  server: 103.133.1.255
+  port: 80
+  uuid: 781c352c-5b01-4920-9a0e-2a25732f694c
+  skip-cert-verify: false
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: myvps.nilphreakz.me
+    max-early-data: 2560
+    path: /Telegram🇨🇳
+- name: 亚太地区 001
+  type: vless
+  network: ws
+  server: 103.160.204.255
+  port: 80
+  uuid: 4657a214-f331-4b98-bbe1-e813ab777a58
+  skip-cert-verify: false
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: myvps.nilphreakz.me
+    max-early-data: 2560
+    path: /Telegram🇨🇳
 proxy-groups:
 - name: PROXY
   type: select
@@ -1554,119 +1636,120 @@ proxy-groups:
   type: select
   proxies: &id001
   - 美国 001
+  - 英国 001
   - 美国 002
+  - 英国 002
   - 美国 003
+  - 英国 003
   - 美国 004
+  - 英国 004
   - 美国 005
   - 美国 006
-  - 奥地利 001
-  - 澳大利亚 001
-  - 澳大利亚 002
-  - 西班牙 001
-  - 英国 001
-  - 英国 002
-  - 英国 003
-  - 英国 004
-  - 西班牙 002
-  - 西班牙 003
-  - 西班牙 004
-  - 西班牙 005
-  - 西班牙 006
-  - 法国 001
-  - 德国 001
   - 英国 005
-  - 英国 006
-  - 罗马尼亚 001
-  - 俄罗斯 001
-  - 卢森堡 001
-  - 荷兰 001
-  - 荷兰 002
-  - 新加坡 001
-  - 立陶宛 001
-  - 荷兰 003
-  - 俄罗斯 002
-  - 俄罗斯 003
-  - 俄罗斯 004
-  - 立陶宛 002
   - 美国 007
-  - 安圭拉 001
+  - 英国 006
   - 美国 008
+  - 英国 007
   - 美国 009
   - 美国 010
+  - 英国 008
+  - 德国 001
+  - 德国 002
+  - 阿塞拜疆 001
+  - 阿塞拜疆 002
+  - 荷兰 001
   - 美国 011
   - 美国 012
-  - 俄罗斯 005
+  - 印度 001
+  - 印度 002
   - 美国 013
+  - 乌克兰 001
+  - 德国 003
+  - 荷兰 002
+  - 英国 009
+  - 英国 010
+  - 英国 011
   - 美国 014
   - 美国 015
   - 美国 016
-  - 英国 007
-  - 保加利亚 001
-  - 卢森堡 002
-  - 俄罗斯 006
   - 美国 017
   - 美国 018
   - 美国 019
-  - 立陶宛 003
   - 美国 020
-  - 俄罗斯 007
   - 美国 021
+  - 乌克兰 002
+  - 法国 001
+  - 法国 002
+  - 英国 012
+  - 英国 013
+  - 荷兰 003
+  - 荷兰 004
+  - 荷兰 005
+  - 荷兰 006
+  - 荷兰 007
+  - 荷兰 008
+  - 荷兰 009
+  - 荷兰 010
+  - 荷兰 011
+  - 荷兰 012
+  - 荷兰 013
+  - 荷兰 014
+  - 荷兰 015
+  - 荷兰 016
+  - 荷兰 017
+  - 荷兰 018
+  - 荷兰 019
+  - 荷兰 020
+  - 南非 001
+  - 乌克兰 003
   - 美国 022
-  - 立陶宛 004
-  - 加拿大 001
   - 美国 023
-  - 日本 001
   - 美国 024
-  - 俄罗斯 008
-  - 俄罗斯 009
   - 美国 025
-  - 俄罗斯 010
   - 美国 026
-  - 俄罗斯 011
-  - 俄罗斯 012
   - 美国 027
   - 美国 028
   - 美国 029
   - 美国 030
+  - 乌克兰 004
   - 美国 031
-  - 俄罗斯 013
   - 美国 032
-  - 俄罗斯 014
   - 美国 033
   - 美国 034
   - 美国 035
-  - 俄罗斯 015
   - 美国 036
-  - 俄罗斯 016
-  - 俄罗斯 017
-  - 英国 008
-  - 新加坡 002
   - 美国 037
-  - 亚太地区 001
-  - 韩国 001
   - 美国 038
-  - 美国 039
-  - 美国 040
-  - 美国 041
-  - 俄罗斯 018
-  - 美国 042
-  - 俄罗斯 019
-  - 美国 043
-  - 美国 044
+  - 加拿大 001
+  - 德国 004
+  - 俄罗斯 001
+  - 俄罗斯 002
+  - 英国 014
+  - 立陶宛 001
+  - 立陶宛 002
+  - 立陶宛 003
+  - 立陶宛 004
   - 立陶宛 005
-  - 澳大利亚 003
-  - 亚美尼亚 001
-  - 亚美尼亚 002
   - 立陶宛 006
-  - 美国 045
-  - 美国 046
-  - 俄罗斯 020
-  - 美国 047
-  - 美国 048
-  - 美国 049
-  - 美国 050
-  - 俄罗斯 021
-  - 荷兰 004
+  - 立陶宛 007
+  - 立陶宛 008
+  - 立陶宛 009
+  - 德国 005
+  - 沙特阿拉伯 001
+  - 斯洛文尼亚 001
+  - 斯洛文尼亚 002
+  - 斯洛文尼亚 003
+  - 斯洛文尼亚 004
+  - 意大利 001
+  - 俄罗斯 003
+  - 俄罗斯 004
+  - 法国 003
+  - 俄罗斯 005
+  - 南非 002
+  - 南非 003
+  - 日本 001
+  - 澳大利亚 001
+  - 亚太地区 001
 - name: LOAD-BALANCE
   type: load-balance
   url: https://cp.cloudflare.com/generate_204
