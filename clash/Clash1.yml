@@ -1624,6 +1624,19 @@ proxies:
       Host: myvps.nilphreakz.me
     max-early-data: 2560
     path: /Telegram🇨🇳
+- name: 亚太地区 002
+  type: vless
+  network: ws
+  server: 103.169.142.255
+  port: 80
+  uuid: 1b604b11-1dd2-45e1-9805-dc802ecd8abb
+  skip-cert-verify: false
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: myvps.nilphreakz.me
+    max-early-data: 2560
+    path: /Telegram🇨🇳
 proxy-groups:
 - name: PROXY
   type: select
@@ -1750,6 +1763,7 @@ proxy-groups:
   - 日本 001
   - 澳大利亚 001
   - 亚太地区 001
+  - 亚太地区 002
 - name: LOAD-BALANCE
   type: load-balance
   url: https://cp.cloudflare.com/generate_204
