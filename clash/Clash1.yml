@@ -129,1514 +129,1780 @@ dns:
     - +.googleapis.cn
     - +.googleapis.com
 proxies:
+- name: 日本 001
+  type: trojan
+  network: tcp
+  server: 153.121.76.9
+  port: 3160
+  password: 253bc477d4e43c209f2d427272968280
+  skip-cert-verify: true
+  sni: 23.45.86.28
 - name: 美国 001
-  type: vmess
-  network: ws
-  server: planb.mojcn.com
-  port: 16617
-  uuid: 5809237d-bb6a-4cf8-98d3-dceb9e003638
-  udp: true
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: f787cef956deb7c5d6bc362bd5daeb17.mobgslb.tbcache.com
-    path: /
-- name: 英国 001
-  type: vmess
-  network: ws
-  server: t.cnmjcn.cyou
-  port: 16617
-  uuid: 5809237d-bb6a-4cf8-98d3-dceb9e003638
-  udp: true
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: f787cef956deb7c5d6bc362bd5daeb17.mobgslb.tbcache.com
-    path: /
+  type: trojan
+  network: tcp
+  server: xingxing.jiasu123.org
+  port: 3043
+  password: 253bc477d4e43c209f2d427272968280
+  skip-cert-verify: true
+  sni: 23.45.86.28
 - name: 美国 002
+  type: trojan
+  network: tcp
+  server: xingxing.jiasu123.org
+  port: 4317
+  password: 253bc477d4e43c209f2d427272968280
+  skip-cert-verify: true
+  sni: 23.45.86.28
+- name: 日本 002
+  type: trojan
+  network: tcp
+  server: 153.121.73.102
+  port: 3294
+  password: 253bc477d4e43c209f2d427272968280
+  skip-cert-verify: true
+  sni: www.nintendogames.net
+- name: 日本 003
+  type: trojan
+  network: tcp
+  server: 153.121.76.9
+  port: 4317
+  password: 253bc477d4e43c209f2d427272968280
+  skip-cert-verify: true
+  sni: www.nintendogames.net
+- name: 荷兰 001
+  type: vless
+  network: grpc
+  server: order.dissertationhelpspecialist.com
+  port: 443
+  uuid: cf4d1019-b05e-41fa-94dc-50baa4a85453
+  servername: tgju.org
+  skip-cert-verify: true
+  tls: true
+  udp: true
+  tfo: true
+  client-fingerprint: firefox
+  packet-addr: false
+  reality-opts:
+    public-key: xI1IUDhIUaKY3qPE9CSOcNaiJ4sRc69ppRamFOMwgiI
+    short-id: 3da49e0b43
+  grpc-opts:
+    grpc-service-name: twixservice-twixservice-twixservice-twixservice-twixservice-twixservice-twixservice-twixservice-twixservice-twixservice-twixservice-twixservice-twixservice-twixservice-twixservice-twixservice-twixservice-twixservice-twixservice-twixservice-twixservice-twixservice-twixservice-twixservice-twixservice-twixservice-twixservice-twixservice-twixservice-twixservice
+  packet-encoding: xudp
+  xudp: true
+- name: 荷兰 002
+  type: vless
+  network: grpc
+  server: sadaf.netherlands.mehrdadsadaf.com
+  port: 80
+  uuid: 59acb90b-fb9d-433b-a2f0-c039cf23dfc7
+  servername: dash.cloudflare.com
+  skip-cert-verify: true
+  tls: true
+  udp: true
+  tfo: true
+  client-fingerprint: chrome
+  packet-addr: false
+  reality-opts:
+    public-key: 5VdWpwWeApKlGJoi50efzxiPjBruG4Rqi6ku0IDxwgc
+    short-id: 3bbf56e2
+  grpc-opts:
+    grpc-service-name: '@Mehrdad_Zargar,@Mehrdad_Zargar,@Mehrdad_Zargar,@Mehrdad_Zargar,@Mehrdad_Zargar,@Mehrdad_Zargar,@Mehrdad_Zargar,@Mehrdad_Zargar,@Mehrdad_Zargar'
+  packet-encoding: xudp
+  xudp: true
+- name: 荷兰 003
+  type: vless
+  network: grpc
+  server: wndisdkvwmqyod.curfuffled.com
+  port: 443
+  uuid: 87de526a-5fdb-425d-9683-d2a2251d731f
+  servername: tgju.org
+  skip-cert-verify: true
+  tls: true
+  udp: true
+  tfo: true
+  client-fingerprint: firefox
+  packet-addr: false
+  reality-opts:
+    public-key: TIvPO8pe4ICvHUItzR-S4966pToAcugMSDUvJFS6ah0
+    short-id: 4cdd84908413
+  grpc-opts:
+    grpc-service-name: vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl
+  packet-encoding: xudp
+  xudp: true
+- name: 比利时 001
   type: vmess
   network: ws
-  server: planb.mojcn.com
-  port: 16618
-  uuid: 5809237d-bb6a-4cf8-98d3-dceb9e003638
+  server: 57.129.24.124
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  skip-cert-verify: true
   udp: true
+  tfo: true
   alterId: 0
   cipher: auto
   ws-opts:
     headers:
-      Host: f787cef956deb7c5d6bc362bd5daeb17.mobgslb.tbcache.com
-    path: /
-- name: 英国 002
-  type: vmess
-  network: ws
-  server: t.cnmjcn.cyou
-  port: 16618
-  uuid: 5809237d-bb6a-4cf8-98d3-dceb9e003638
-  udp: true
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: f787cef956deb7c5d6bc362bd5daeb17.mobgslb.tbcache.com
-    path: /
+      Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+    path: /linkvws
 - name: 美国 003
   type: vmess
   network: ws
-  server: planb.mojcn.com
-  port: 16632
-  uuid: 5809237d-bb6a-4cf8-98d3-dceb9e003638
+  server: 104.17.148.22
+  port: 443
+  uuid: 5f726fe3-d82e-4da5-a711-8af0cbb2b682
+  skip-cert-verify: true
   udp: true
+  tfo: true
   alterId: 0
   cipher: auto
   ws-opts:
     headers:
-      Host: f787cef956deb7c5d6bc362bd5daeb17.mobgslb.tbcache.com
-    path: /
-- name: 英国 003
-  type: vmess
-  network: ws
-  server: t.cnmjcn.cyou
-  port: 16632
-  uuid: 5809237d-bb6a-4cf8-98d3-dceb9e003638
-  udp: true
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: f787cef956deb7c5d6bc362bd5daeb17.mobgslb.tbcache.com
-    path: /
+      Host: bitter-boat-6004.samineh-sfri-95.workers.dev
+    path: /b62a948c-faa2-4e8a-bf8a-3ff3121c875a.asoul-ava.top/azumase.ren
 - name: 美国 004
   type: vmess
-  network: ws
-  server: planb.mojcn.com
-  port: 16622
-  uuid: 5809237d-bb6a-4cf8-98d3-dceb9e003638
+  network: tcp
+  server: lt.fxlcn.com
+  port: 45276
+  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
+  skip-cert-verify: true
   udp: true
+  tfo: true
   alterId: 0
   cipher: auto
-  ws-opts:
-    headers:
-      Host: f787cef956deb7c5d6bc362bd5daeb17.mobgslb.tbcache.com
-    path: /
-- name: 英国 004
-  type: vmess
-  network: ws
-  server: t.cnmjcn.cyou
-  port: 16622
-  uuid: 5809237d-bb6a-4cf8-98d3-dceb9e003638
-  udp: true
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: f787cef956deb7c5d6bc362bd5daeb17.mobgslb.tbcache.com
-    path: /
 - name: 美国 005
   type: vmess
   network: ws
-  server: planb.mojcn.com
-  port: 16626
-  uuid: 5809237d-bb6a-4cf8-98d3-dceb9e003638
+  server: cf.fovi.tk
+  port: 443
+  uuid: bf67437e-6c90-45ca-abc2-c7240a5ce2aa
+  skip-cert-verify: true
   udp: true
+  tfo: true
   alterId: 0
   cipher: auto
   ws-opts:
     headers:
-      Host: f787cef956deb7c5d6bc362bd5daeb17.mobgslb.tbcache.com
-    path: /
+      Host: foxlux.fovi.tk
+    path: /eisasqa
+- name: 乌克兰 001
+  type: vmess
+  network: ws
+  server: pq-brazil1.09vpn.com
+  port: 80
+  uuid: c04c3b34-70fd-4fec-963e-c12d09f36bef
+  skip-cert-verify: true
+  udp: true
+  tfo: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: pq-brazil1.09vpn.com
+    path: /vmess/
 - name: 美国 006
   type: vmess
-  network: ws
-  server: planb.mojcn.com
-  port: 16616
-  uuid: 5809237d-bb6a-4cf8-98d3-dceb9e003638
+  network: tcp
+  server: ye.fxlcn.com
+  port: 45246
+  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
+  skip-cert-verify: true
   udp: true
+  tfo: true
   alterId: 0
   cipher: auto
-  ws-opts:
-    headers:
-      Host: f787cef956deb7c5d6bc362bd5daeb17.mobgslb.tbcache.com
-    path: /
-- name: 英国 005
-  type: vmess
-  network: ws
-  server: t.cnmjcn.cyou
-  port: 16616
-  uuid: 5809237d-bb6a-4cf8-98d3-dceb9e003638
-  udp: true
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: f787cef956deb7c5d6bc362bd5daeb17.mobgslb.tbcache.com
-    path: /
 - name: 美国 007
   type: vmess
   network: ws
-  server: planb.mojcn.com
-  port: 16648
-  uuid: 5809237d-bb6a-4cf8-98d3-dceb9e003638
+  server: orvps2.horsenma.net
+  port: 8443
+  uuid: 57e595e6-ef54-4e0d-b8df-e96db9612b99
+  skip-cert-verify: true
   udp: true
+  tfo: true
   alterId: 0
   cipher: auto
   ws-opts:
     headers:
-      Host: f787cef956deb7c5d6bc362bd5daeb17.mobgslb.tbcache.com
-    path: /
-- name: 英国 006
-  type: vmess
-  network: ws
-  server: t.cnmjcn.cyou
-  port: 16648
-  uuid: 5809237d-bb6a-4cf8-98d3-dceb9e003638
-  udp: true
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: f787cef956deb7c5d6bc362bd5daeb17.mobgslb.tbcache.com
-    path: /
+      Host: orvps2.horsenma.net
+    path: /horsen
 - name: 美国 008
   type: vmess
-  network: ws
-  server: planb.mojcn.com
-  port: 16641
-  uuid: 5809237d-bb6a-4cf8-98d3-dceb9e003638
+  network: tcp
+  server: lt.fxlcn.com
+  port: 45271
+  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
+  skip-cert-verify: true
   udp: true
+  tfo: true
   alterId: 0
   cipher: auto
-  ws-opts:
-    headers:
-      Host: f787cef956deb7c5d6bc362bd5daeb17.mobgslb.tbcache.com
-    path: /
-- name: 英国 007
+- name: 比利时 002
   type: vmess
   network: ws
-  server: t.cnmjcn.cyou
-  port: 16641
-  uuid: 5809237d-bb6a-4cf8-98d3-dceb9e003638
+  server: 57.129.24.125
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  skip-cert-verify: true
   udp: true
+  tfo: true
   alterId: 0
   cipher: auto
   ws-opts:
     headers:
-      Host: f787cef956deb7c5d6bc362bd5daeb17.mobgslb.tbcache.com
-    path: /
+      Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+    path: /linkvws
+- name: 德国 001
+  type: vmess
+  network: tcp
+  server: 94.136.185.230
+  port: 10534
+  uuid: b01c7ef9-33ec-41f6-bfbf-77ddc4d21649
+  skip-cert-verify: true
+  udp: true
+  tfo: true
+  alterId: 0
+  cipher: auto
 - name: 美国 009
   type: vmess
-  network: ws
-  server: planb.mojcn.com
-  port: 16644
-  uuid: 5809237d-bb6a-4cf8-98d3-dceb9e003638
+  network: tcp
+  server: lt.fxlcn.com
+  port: 45417
+  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
+  skip-cert-verify: true
   udp: true
+  tfo: true
   alterId: 0
   cipher: auto
-  ws-opts:
-    headers:
-      Host: f787cef956deb7c5d6bc362bd5daeb17.mobgslb.tbcache.com
-    path: /
 - name: 美国 010
   type: vmess
-  network: ws
-  server: planb.mojcn.com
-  port: 16645
-  uuid: 5809237d-bb6a-4cf8-98d3-dceb9e003638
+  network: tcp
+  server: lt.fxlcn.com
+  port: 45235
+  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
+  skip-cert-verify: true
   udp: true
+  tfo: true
   alterId: 0
   cipher: auto
-  ws-opts:
-    headers:
-      Host: f787cef956deb7c5d6bc362bd5daeb17.mobgslb.tbcache.com
-    path: /
-- name: 英国 008
+- name: 美国 011
   type: vmess
   network: ws
-  server: t.cnmjcn.cyou
-  port: 16645
-  uuid: 5809237d-bb6a-4cf8-98d3-dceb9e003638
+  server: codepen.io
+  port: 443
+  uuid: de94cc0a-0592-4969-b1fc-97ea8f0ea0b3
+  skip-cert-verify: true
   udp: true
+  tfo: true
   alterId: 0
   cipher: auto
   ws-opts:
     headers:
-      Host: f787cef956deb7c5d6bc362bd5daeb17.mobgslb.tbcache.com
-    path: /
-- name: 德国 001
-  type: vless
-  network: ws
-  server: 5.10.214.255
-  port: 80
-  uuid: 67b05dba-e32b-424a-b5a8-61a2f4097a14
-  skip-cert-verify: false
-  ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
-    headers:
-      Host: myvps.nilphreakz.me
-    max-early-data: 2560
-    path: /Telegram🇨🇳
-- name: 德国 002
-  type: vless
-  network: ws
-  server: 5.10.215.255
-  port: 80
-  uuid: 20c21ebd-05ed-4f44-bc4d-8831ac518b7a
-  skip-cert-verify: false
-  ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
-    headers:
-      Host: myvps.nilphreakz.me
-    max-early-data: 2560
-    path: /Telegram🇨🇳
-- name: 阿塞拜疆 001
-  type: vless
-  network: ws
-  server: 5.10.246.255
-  port: 80
-  uuid: 7d265652-cacf-4b9a-aee6-f20ba4dbfe04
-  skip-cert-verify: false
-  ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
-    headers:
-      Host: myvps.nilphreakz.me
-    max-early-data: 2560
-    path: /Telegram🇨🇳
-- name: 阿塞拜疆 002
-  type: vless
-  network: ws
-  server: 5.10.247.255
-  port: 80
-  uuid: 0a6936a5-12cb-4038-86bb-562894b7816f
-  skip-cert-verify: false
-  ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
-    headers:
-      Host: myvps.nilphreakz.me
-    max-early-data: 2560
-    path: /Telegram🇨🇳
-- name: 荷兰 001
-  type: vless
-  network: ws
-  server: 5.182.34.255
-  port: 80
-  uuid: 7c06892a-d102-47cc-846d-e1d445dc9d2c
-  skip-cert-verify: false
-  ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
-    headers:
-      Host: myvps.nilphreakz.me
-    max-early-data: 2560
-    path: /Telegram🇨🇳
-- name: 美国 011
-  type: vless
-  network: ws
-  server: 8.6.112.255
-  port: 80
-  uuid: f0d0c1f0-bd67-4c9d-9827-757dc0043fab
-  skip-cert-verify: false
-  ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
-    headers:
-      Host: myvps.nilphreakz.me
-    max-early-data: 2560
-    path: /Telegram🇨🇳
+      Host: farid.1.berozha.ir
+    path: /us.kkp.me.eu.org/aa
 - name: 美国 012
-  type: vless
-  network: ws
-  server: 8.34.70.255
-  port: 80
-  uuid: eed712ff-17d2-4e0b-bf0b-19ff3451b97a
-  skip-cert-verify: false
-  ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
-    headers:
-      Host: myvps.nilphreakz.me
-    max-early-data: 2560
-    path: /Telegram🇨🇳
-- name: 印度 001
-  type: vless
-  network: ws
-  server: 14.102.228.255
-  port: 80
-  uuid: a225a8ff-1505-4dfd-a3b7-59737bb499ee
-  skip-cert-verify: false
-  ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
-    headers:
-      Host: myvps.nilphreakz.me
-    max-early-data: 2560
-    path: /Telegram🇨🇳
-- name: 印度 002
-  type: vless
-  network: ws
-  server: 14.102.229.255
-  port: 80
-  uuid: a4798d14-063c-4b01-9b70-5b5793335b87
-  skip-cert-verify: false
-  ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
-    headers:
-      Host: myvps.nilphreakz.me
-    max-early-data: 2560
-    path: /Telegram🇨🇳
+  type: vmess
+  network: tcp
+  server: lt.fxlcn.com
+  port: 45291
+  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
+  skip-cert-verify: true
+  udp: true
+  tfo: true
+  alterId: 0
+  cipher: auto
 - name: 美国 013
-  type: vless
-  network: ws
-  server: 31.12.75.255
-  port: 80
-  uuid: 77ece81f-a99a-4bd9-be0f-3c562c4dab8d
-  skip-cert-verify: false
-  ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
-    headers:
-      Host: myvps.nilphreakz.me
-    max-early-data: 2560
-    path: /Telegram🇨🇳
-- name: 乌克兰 001
-  type: vless
-  network: ws
-  server: 31.43.179.255
-  port: 80
-  uuid: f1062c0c-7a36-4250-af5b-b8b47c8a40ca
-  skip-cert-verify: false
-  ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
-    headers:
-      Host: myvps.nilphreakz.me
-    max-early-data: 2560
-    path: /Telegram🇨🇳
-- name: 德国 003
-  type: vless
-  network: ws
-  server: 31.185.108.255
-  port: 80
-  uuid: 7baac04e-a297-48a0-99e9-2deba9ae64fb
-  skip-cert-verify: false
-  ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
-    headers:
-      Host: myvps.nilphreakz.me
-    max-early-data: 2560
-    path: /Telegram🇨🇳
-- name: 荷兰 002
-  type: vless
-  network: ws
-  server: 37.153.171.255
-  port: 80
-  uuid: efdbbe04-38e0-46f3-a1c2-8c0c5604c636
-  skip-cert-verify: false
-  ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
-    headers:
-      Host: myvps.nilphreakz.me
-    max-early-data: 2560
-    path: /Telegram🇨🇳
-- name: 英国 009
-  type: vless
-  network: ws
-  server: 45.8.211.255
-  port: 80
-  uuid: 89b2eb61-c9c8-4990-9205-7f5eec0501fc
-  skip-cert-verify: false
-  ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
-    headers:
-      Host: myvps.nilphreakz.me
-    max-early-data: 2560
-    path: /Telegram🇨🇳
-- name: 英国 010
-  type: vless
-  network: ws
-  server: 45.12.30.255
-  port: 80
-  uuid: 67b05dba-e32b-424a-b5a8-61a2f4097a14
-  skip-cert-verify: false
-  ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
-    headers:
-      Host: myvps.nilphreakz.me
-    max-early-data: 2560
-    path: /Telegram🇨🇳
-- name: 英国 011
-  type: vless
-  network: ws
-  server: 45.12.31.255
-  port: 80
-  uuid: 20c21ebd-05ed-4f44-bc4d-8831ac518b7a
-  skip-cert-verify: false
-  ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
-    headers:
-      Host: myvps.nilphreakz.me
-    max-early-data: 2560
-    path: /Telegram🇨🇳
-- name: 美国 014
-  type: vless
-  network: ws
-  server: 45.40.144.255
-  port: 80
-  uuid: 6f565a11-f263-421a-bd3c-3d4efa51d4b0
-  skip-cert-verify: false
-  ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
-    headers:
-      Host: myvps.nilphreakz.me
-    max-early-data: 2560
-    path: /Telegram🇨🇳
-- name: 美国 015
-  type: vless
-  network: ws
-  server: 45.40.146.255
-  port: 80
-  uuid: 7d265652-cacf-4b9a-aee6-f20ba4dbfe04
-  skip-cert-verify: false
-  ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
-    headers:
-      Host: myvps.nilphreakz.me
-    max-early-data: 2560
-    path: /Telegram🇨🇳
-- name: 美国 016
-  type: vless
-  network: ws
-  server: 45.40.148.255
-  port: 80
-  uuid: 2ad33a9c-ee61-4df4-96e1-1bf0987d082e
-  skip-cert-verify: false
-  ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
-    headers:
-      Host: myvps.nilphreakz.me
-    max-early-data: 2560
-    path: /Telegram🇨🇳
-- name: 美国 017
-  type: vless
-  network: ws
-  server: 45.40.149.255
-  port: 80
-  uuid: 7c06892a-d102-47cc-846d-e1d445dc9d2c
-  skip-cert-verify: false
-  ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
-    headers:
-      Host: myvps.nilphreakz.me
-    max-early-data: 2560
-    path: /Telegram🇨🇳
-- name: 美国 018
-  type: vless
-  network: ws
-  server: 45.40.151.255
-  port: 80
-  uuid: 15510a34-7cec-411a-9256-279241522f81
-  skip-cert-verify: false
-  ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
-    headers:
-      Host: myvps.nilphreakz.me
-    max-early-data: 2560
-    path: /Telegram🇨🇳
-- name: 美国 019
-  type: vless
-  network: ws
-  server: 45.40.153.255
-  port: 80
-  uuid: eed712ff-17d2-4e0b-bf0b-19ff3451b97a
-  skip-cert-verify: false
-  ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
-    headers:
-      Host: myvps.nilphreakz.me
-    max-early-data: 2560
-    path: /Telegram🇨🇳
-- name: 美国 020
-  type: vless
-  network: ws
-  server: 45.40.154.255
-  port: 80
-  uuid: 9c0caffc-04c5-413e-98e8-666052b19da8
-  skip-cert-verify: false
-  ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
-    headers:
-      Host: myvps.nilphreakz.me
-    max-early-data: 2560
-    path: /Telegram🇨🇳
-- name: 美国 021
-  type: vless
-  network: ws
-  server: 45.40.155.255
-  port: 80
-  uuid: a225a8ff-1505-4dfd-a3b7-59737bb499ee
-  skip-cert-verify: false
-  ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
-    headers:
-      Host: myvps.nilphreakz.me
-    max-early-data: 2560
-    path: /Telegram🇨🇳
-- name: 乌克兰 002
-  type: vless
-  network: ws
-  server: 45.67.215.255
-  port: 80
-  uuid: a4798d14-063c-4b01-9b70-5b5793335b87
-  skip-cert-verify: false
-  ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
-    headers:
-      Host: myvps.nilphreakz.me
-    max-early-data: 2560
-    path: /Telegram🇨🇳
+  type: vmess
+  network: tcp
+  server: lt.fxlcn.com
+  port: 45233
+  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
+  skip-cert-verify: true
+  udp: true
+  tfo: true
+  alterId: 0
+  cipher: auto
 - name: 法国 001
-  type: vless
+  type: vmess
   network: ws
-  server: 45.80.110.255
-  port: 80
-  uuid: 7c326126-7e75-457d-a8cd-8120da01eb25
-  skip-cert-verify: false
+  server: 146.59.55.50
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  skip-cert-verify: true
+  udp: true
+  tfo: true
+  alterId: 0
+  cipher: auto
   ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
     headers:
-      Host: myvps.nilphreakz.me
-    max-early-data: 2560
-    path: /Telegram🇨🇳
-- name: 法国 002
-  type: vless
+      Host: o.metuji.com
+    path: /linkvws
+- name: 比利时 003
+  type: vmess
   network: ws
-  server: 45.80.111.255
-  port: 80
-  uuid: acf0cb41-ac1a-448f-98cf-0b58a9f92b05
-  skip-cert-verify: false
+  server: 57.129.28.69
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  skip-cert-verify: true
+  udp: true
+  tfo: true
+  alterId: 0
+  cipher: auto
   ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
     headers:
-      Host: myvps.nilphreakz.me
-    max-early-data: 2560
-    path: /Telegram🇨🇳
-- name: 英国 012
-  type: vless
-  network: ws
-  server: 45.85.118.255
-  port: 80
-  uuid: cb3ec36e-a0c2-4798-a340-9cb7eaee739a
-  skip-cert-verify: false
-  ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
-    headers:
-      Host: myvps.nilphreakz.me
-    max-early-data: 2560
-    path: /Telegram🇨🇳
-- name: 英国 013
-  type: vless
-  network: ws
-  server: 45.85.119.255
-  port: 80
-  uuid: da8aa1d1-5fd7-4085-85c1-3d5cbfdbfc5c
-  skip-cert-verify: false
-  ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
-    headers:
-      Host: myvps.nilphreakz.me
-    max-early-data: 2560
-    path: /Telegram🇨🇳
-- name: 荷兰 003
-  type: vless
-  network: ws
-  server: 45.128.76.255
-  port: 80
-  uuid: 781c352c-5b01-4920-9a0e-2a25732f694c
-  skip-cert-verify: false
-  ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
-    headers:
-      Host: myvps.nilphreakz.me
-    max-early-data: 2560
-    path: /Telegram🇨🇳
-- name: 荷兰 004
-  type: vless
-  network: ws
-  server: 45.130.125.255
-  port: 80
-  uuid: 4657a214-f331-4b98-bbe1-e813ab777a58
-  skip-cert-verify: false
-  ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
-    headers:
-      Host: myvps.nilphreakz.me
-    max-early-data: 2560
-    path: /Telegram🇨🇳
-- name: 荷兰 005
-  type: vless
-  network: ws
-  server: 45.131.4.255
-  port: 80
-  uuid: 1b604b11-1dd2-45e1-9805-dc802ecd8abb
-  skip-cert-verify: false
-  ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
-    headers:
-      Host: myvps.nilphreakz.me
-    max-early-data: 2560
-    path: /Telegram🇨🇳
-- name: 荷兰 006
-  type: vless
-  network: ws
-  server: 45.131.5.255
-  port: 80
-  uuid: 77ece81f-a99a-4bd9-be0f-3c562c4dab8d
-  skip-cert-verify: false
-  ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
-    headers:
-      Host: myvps.nilphreakz.me
-    max-early-data: 2560
-    path: /Telegram🇨🇳
-- name: 荷兰 007
-  type: vless
-  network: ws
-  server: 45.131.6.255
-  port: 80
-  uuid: f1062c0c-7a36-4250-af5b-b8b47c8a40ca
-  skip-cert-verify: false
-  ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
-    headers:
-      Host: myvps.nilphreakz.me
-    max-early-data: 2560
-    path: /Telegram🇨🇳
-- name: 荷兰 008
-  type: vless
-  network: ws
-  server: 45.131.7.255
-  port: 80
-  uuid: 7baac04e-a297-48a0-99e9-2deba9ae64fb
-  skip-cert-verify: false
-  ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
-    headers:
-      Host: myvps.nilphreakz.me
-    max-early-data: 2560
-    path: /Telegram🇨🇳
-- name: 荷兰 009
-  type: vless
-  network: ws
-  server: 45.131.208.255
-  port: 80
-  uuid: 72520d9d-695c-457e-b055-f65dc36e0e25
-  skip-cert-verify: false
-  ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
-    headers:
-      Host: myvps.nilphreakz.me
-    max-early-data: 2560
-    path: /Telegram🇨🇳
-- name: 荷兰 010
-  type: vless
-  network: ws
-  server: 45.131.209.255
-  port: 80
-  uuid: efdbbe04-38e0-46f3-a1c2-8c0c5604c636
-  skip-cert-verify: false
-  ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
-    headers:
-      Host: myvps.nilphreakz.me
-    max-early-data: 2560
-    path: /Telegram🇨🇳
-- name: 荷兰 011
-  type: vless
-  network: ws
-  server: 45.131.210.255
-  port: 80
-  uuid: 89b2eb61-c9c8-4990-9205-7f5eec0501fc
-  skip-cert-verify: false
-  ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
-    headers:
-      Host: myvps.nilphreakz.me
-    max-early-data: 2560
-    path: /Telegram🇨🇳
-- name: 荷兰 012
-  type: vless
-  network: ws
-  server: 45.135.235.255
-  port: 80
-  uuid: 20c21ebd-05ed-4f44-bc4d-8831ac518b7a
-  skip-cert-verify: false
-  ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
-    headers:
-      Host: myvps.nilphreakz.me
-    max-early-data: 2560
-    path: /Telegram🇨🇳
-- name: 荷兰 013
-  type: vless
-  network: ws
-  server: 45.142.120.255
-  port: 80
-  uuid: 6f565a11-f263-421a-bd3c-3d4efa51d4b0
-  skip-cert-verify: false
-  ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
-    headers:
-      Host: myvps.nilphreakz.me
-    max-early-data: 2560
-    path: /Telegram🇨🇳
-- name: 荷兰 014
-  type: vless
-  network: ws
-  server: 45.146.201.255
-  port: 80
-  uuid: d5436600-7461-43ed-b7fa-4eeb00f7d8d4
-  skip-cert-verify: false
-  ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
-    headers:
-      Host: myvps.nilphreakz.me
-    max-early-data: 2560
-    path: /Telegram🇨🇳
-- name: 荷兰 015
-  type: vless
-  network: ws
-  server: 45.149.12.255
-  port: 80
-  uuid: 7d265652-cacf-4b9a-aee6-f20ba4dbfe04
-  skip-cert-verify: false
-  ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
-    headers:
-      Host: myvps.nilphreakz.me
-    max-early-data: 2560
-    path: /Telegram🇨🇳
-- name: 荷兰 016
-  type: vless
-  network: ws
-  server: 45.153.7.255
-  port: 80
-  uuid: 0a6936a5-12cb-4038-86bb-562894b7816f
-  skip-cert-verify: false
-  ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
-    headers:
-      Host: myvps.nilphreakz.me
-    max-early-data: 2560
-    path: /Telegram🇨🇳
-- name: 荷兰 017
-  type: vless
-  network: ws
-  server: 45.159.216.255
-  port: 80
-  uuid: 2ad33a9c-ee61-4df4-96e1-1bf0987d082e
-  skip-cert-verify: false
-  ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
-    headers:
-      Host: myvps.nilphreakz.me
-    max-early-data: 2560
-    path: /Telegram🇨🇳
-- name: 荷兰 018
-  type: vless
-  network: ws
-  server: 45.159.217.255
-  port: 80
-  uuid: 7c06892a-d102-47cc-846d-e1d445dc9d2c
-  skip-cert-verify: false
-  ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
-    headers:
-      Host: myvps.nilphreakz.me
-    max-early-data: 2560
-    path: /Telegram🇨🇳
-- name: 荷兰 019
-  type: vless
-  network: ws
-  server: 45.159.218.255
-  port: 80
-  uuid: 0772da20-ea49-446d-816d-e42237c54848
-  skip-cert-verify: false
-  ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
-    headers:
-      Host: myvps.nilphreakz.me
-    max-early-data: 2560
-    path: /Telegram🇨🇳
-- name: 荷兰 020
-  type: vless
-  network: ws
-  server: 45.159.219.255
-  port: 80
-  uuid: 15510a34-7cec-411a-9256-279241522f81
-  skip-cert-verify: false
-  ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
-    headers:
-      Host: myvps.nilphreakz.me
-    max-early-data: 2560
-    path: /Telegram🇨🇳
-- name: 南非 001
-  type: vless
-  network: ws
-  server: 45.196.29.255
-  port: 80
-  uuid: 3766bbe4-16a2-4987-8833-2dcb20731a5f
-  skip-cert-verify: false
-  ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
-    headers:
-      Host: myvps.nilphreakz.me
-    max-early-data: 2560
-    path: /Telegram🇨🇳
-- name: 乌克兰 003
-  type: vless
-  network: ws
-  server: 46.202.30.255
-  port: 80
-  uuid: cb3ec36e-a0c2-4798-a340-9cb7eaee739a
-  skip-cert-verify: false
-  ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
-    headers:
-      Host: myvps.nilphreakz.me
-    max-early-data: 2560
-    path: /Telegram🇨🇳
-- name: 美国 022
-  type: vless
-  network: ws
-  server: 50.62.88.255
-  port: 80
-  uuid: 4657a214-f331-4b98-bbe1-e813ab777a58
-  skip-cert-verify: false
-  ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
-    headers:
-      Host: myvps.nilphreakz.me
-    max-early-data: 2560
-    path: /Telegram🇨🇳
-- name: 美国 023
-  type: vless
-  network: ws
-  server: 50.62.90.255
-  port: 80
-  uuid: 77ece81f-a99a-4bd9-be0f-3c562c4dab8d
-  skip-cert-verify: false
-  ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
-    headers:
-      Host: myvps.nilphreakz.me
-    max-early-data: 2560
-    path: /Telegram🇨🇳
-- name: 美国 024
-  type: vless
-  network: ws
-  server: 50.62.91.255
-  port: 80
-  uuid: f1062c0c-7a36-4250-af5b-b8b47c8a40ca
-  skip-cert-verify: false
-  ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
-    headers:
-      Host: myvps.nilphreakz.me
-    max-early-data: 2560
-    path: /Telegram🇨🇳
-- name: 美国 025
-  type: vless
-  network: ws
-  server: 50.62.173.255
-  port: 80
-  uuid: 72520d9d-695c-457e-b055-f65dc36e0e25
-  skip-cert-verify: false
-  ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
-    headers:
-      Host: myvps.nilphreakz.me
-    max-early-data: 2560
-    path: /Telegram🇨🇳
-- name: 美国 026
-  type: vless
-  network: ws
-  server: 50.62.174.255
-  port: 80
-  uuid: efdbbe04-38e0-46f3-a1c2-8c0c5604c636
-  skip-cert-verify: false
-  ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
-    headers:
-      Host: myvps.nilphreakz.me
-    max-early-data: 2560
-    path: /Telegram🇨🇳
-- name: 美国 027
-  type: vless
-  network: ws
-  server: 50.62.175.255
-  port: 80
-  uuid: 89b2eb61-c9c8-4990-9205-7f5eec0501fc
-  skip-cert-verify: false
-  ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
-    headers:
-      Host: myvps.nilphreakz.me
-    max-early-data: 2560
-    path: /Telegram🇨🇳
-- name: 美国 028
-  type: vless
-  network: ws
-  server: 50.62.194.255
-  port: 80
-  uuid: 67b05dba-e32b-424a-b5a8-61a2f4097a14
-  skip-cert-verify: false
-  ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
-    headers:
-      Host: myvps.nilphreakz.me
-    max-early-data: 2560
-    path: /Telegram🇨🇳
-- name: 美国 029
-  type: vless
-  network: ws
-  server: 50.62.195.255
-  port: 80
-  uuid: 20c21ebd-05ed-4f44-bc4d-8831ac518b7a
-  skip-cert-verify: false
-  ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
-    headers:
-      Host: myvps.nilphreakz.me
-    max-early-data: 2560
-    path: /Telegram🇨🇳
-- name: 美国 030
-  type: vless
-  network: ws
-  server: 50.62.198.255
-  port: 80
-  uuid: 6f565a11-f263-421a-bd3c-3d4efa51d4b0
-  skip-cert-verify: false
-  ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
-    headers:
-      Host: myvps.nilphreakz.me
-    max-early-data: 2560
-    path: /Telegram🇨🇳
-- name: 乌克兰 004
-  type: vless
-  network: ws
-  server: 62.72.166.255
-  port: 80
-  uuid: d5436600-7461-43ed-b7fa-4eeb00f7d8d4
-  skip-cert-verify: false
-  ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
-    headers:
-      Host: myvps.nilphreakz.me
-    max-early-data: 2560
-    path: /Telegram🇨🇳
-- name: 美国 031
-  type: vless
-  network: ws
-  server: 63.141.128.255
-  port: 80
-  uuid: 7d265652-cacf-4b9a-aee6-f20ba4dbfe04
-  skip-cert-verify: false
-  ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
-    headers:
-      Host: myvps.nilphreakz.me
-    max-early-data: 2560
-    path: /Telegram🇨🇳
-- name: 美国 032
-  type: vless
-  network: ws
-  server: 66.45.118.255
-  port: 80
-  uuid: 0a6936a5-12cb-4038-86bb-562894b7816f
-  skip-cert-verify: false
-  ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
-    headers:
-      Host: myvps.nilphreakz.me
-    max-early-data: 2560
-    path: /Telegram🇨🇳
-- name: 美国 033
-  type: vless
-  network: ws
-  server: 66.81.247.255
-  port: 80
-  uuid: 2ad33a9c-ee61-4df4-96e1-1bf0987d082e
-  skip-cert-verify: false
-  ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
-    headers:
-      Host: myvps.nilphreakz.me
-    max-early-data: 2560
-    path: /Telegram🇨🇳
-- name: 美国 034
-  type: vless
-  network: ws
-  server: 66.225.252.255
-  port: 80
-  uuid: 7c06892a-d102-47cc-846d-e1d445dc9d2c
-  skip-cert-verify: false
-  ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
-    headers:
-      Host: myvps.nilphreakz.me
-    max-early-data: 2560
-    path: /Telegram🇨🇳
-- name: 美国 035
-  type: vless
-  network: ws
-  server: 66.235.200.255
-  port: 80
-  uuid: 0772da20-ea49-446d-816d-e42237c54848
-  skip-cert-verify: false
-  ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
-    headers:
-      Host: myvps.nilphreakz.me
-    max-early-data: 2560
-    path: /Telegram🇨🇳
-- name: 美国 036
-  type: vless
-  network: ws
-  server: 72.167.25.255
-  port: 80
-  uuid: f0d0c1f0-bd67-4c9d-9827-757dc0043fab
-  skip-cert-verify: false
-  ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
-    headers:
-      Host: myvps.nilphreakz.me
-    max-early-data: 2560
-    path: /Telegram🇨🇳
-- name: 美国 037
-  type: vless
-  network: ws
-  server: 72.167.241.255
-  port: 80
-  uuid: 9c0caffc-04c5-413e-98e8-666052b19da8
-  skip-cert-verify: false
-  ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
-    headers:
-      Host: myvps.nilphreakz.me
-    max-early-data: 2560
-    path: /Telegram🇨🇳
-- name: 美国 038
-  type: vless
-  network: ws
-  server: 72.167.243.255
-  port: 80
-  uuid: a4798d14-063c-4b01-9b70-5b5793335b87
-  skip-cert-verify: false
-  ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
-    headers:
-      Host: myvps.nilphreakz.me
-    max-early-data: 2560
-    path: /Telegram🇨🇳
+      Host: baradiha.com
+    path: /linkvws
 - name: 加拿大 001
-  type: vless
+  type: vmess
   network: ws
-  server: 74.49.214.255
+  server: 51.79.102.253
   port: 80
-  uuid: 3766bbe4-16a2-4987-8833-2dcb20731a5f
-  skip-cert-verify: false
+  uuid: 58fe1542-5290-40ad-815a-77707a81afe5
+  skip-cert-verify: true
+  udp: true
+  tfo: true
+  alterId: 0
+  cipher: auto
   ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
     headers:
-      Host: myvps.nilphreakz.me
-    max-early-data: 2560
-    path: /Telegram🇨🇳
-- name: 德国 004
-  type: vless
+      Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+    path: /IOebhLMhl1CTbFHbL95myfRX2
+- name: 比利时 004
+  type: vmess
   network: ws
-  server: 77.37.33.255
-  port: 80
-  uuid: acf0cb41-ac1a-448f-98cf-0b58a9f92b05
-  skip-cert-verify: false
+  server: 57.129.25.25
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  skip-cert-verify: true
+  udp: true
+  tfo: true
+  alterId: 0
+  cipher: auto
   ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
     headers:
-      Host: myvps.nilphreakz.me
-    max-early-data: 2560
-    path: /Telegram🇨🇳
+      Host: f.khilei.com
+    path: /linkvws
+- name: 比利时 005
+  type: vmess
+  network: ws
+  server: 57.129.28.65
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  skip-cert-verify: true
+  udp: true
+  tfo: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: kapelleng.com
+    path: /linkvws
+- name: 美国 014
+  type: trojan
+  network: ws
+  server: log.bpminecraft.com
+  port: 443
+  password: vip
+  skip-cert-verify: true
+  udp: true
+  tfo: true
+  sni: heihu880.pages.dev
+  ws-opts:
+    headers:
+      Host: heihu880.pages.dev
+    path: /?ed=2560
+- name: 美国 015
+  type: trojan
+  network: ws
+  server: 104.18.42.163
+  port: 443
+  password: vip
+  skip-cert-verify: true
+  udp: true
+  tfo: true
+  sni: heihu880.pages.dev
+  ws-opts:
+    headers:
+      Host: heihu880.pages.dev
+    path: /?ed=2560
+- name: 美国 016
+  type: trojan
+  network: ws
+  server: www.visa.com.sg
+  port: 8443
+  password: trojan
+  skip-cert-verify: true
+  udp: true
+  tfo: true
+  sni: pangpi.pages.dev
+  ws-opts:
+    headers:
+      Host: pangpi.pages.dev
+    path: /?ed=2560
+- name: 美国 017
+  type: trojan
+  network: ws
+  server: www.iplocation.net
+  port: 443
+  password: vip
+  skip-cert-verify: true
+  udp: true
+  tfo: true
+  sni: heihu880.pages.dev
+  ws-opts:
+    headers:
+      Host: heihu880.pages.dev
+    path: /?ed=2560
+- name: 美国 018
+  type: trojan
+  network: ws
+  server: whatismyipaddress.com
+  port: 443
+  password: vip
+  skip-cert-verify: true
+  udp: true
+  tfo: true
+  sni: heihu880.pages.dev
+  ws-opts:
+    headers:
+      Host: heihu880.pages.dev
+    path: /?ed=2560
+- name: 美国 019
+  type: trojan
+  network: ws
+  server: 172.66.44.230
+  port: 8443
+  password: 8r%3C%5B9%27l6hAO%238ZQi
+  skip-cert-verify: true
+  udp: true
+  tfo: true
+  sni: Koma-YT.PAGeS.Dev
+  ws-opts:
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+    path: /tro8sFW1S91B6sZrM1?ed=2560
+- name: 美国 020
+  type: trojan
+  network: ws
+  server: www.gco.gov.qa
+  port: 443
+  password: vip
+  skip-cert-verify: true
+  udp: true
+  tfo: true
+  sni: heihu880.pages.dev
+  ws-opts:
+    headers:
+      Host: heihu880.pages.dev
+    path: /?ed=2560
+- name: 美国 021
+  type: trojan
+  network: ws
+  server: dcf741e8.epeius-2gy.pages.dev
+  port: 443
+  password: auto
+  skip-cert-verify: true
+  udp: true
+  tfo: true
+  sni: dcf741e8.epeius-2gy.pages.dev
+  ws-opts:
+    headers:
+      Host: dcf741e8.epeius-2gy.pages.dev
+    path: /?ed=2560
+- name: 美国 022
+  type: trojan
+  network: ws
+  server: www.visa.com.hk
+  port: 8443
+  password: vip
+  skip-cert-verify: true
+  udp: true
+  tfo: true
+  sni: heihu880.pages.dev
+  ws-opts:
+    headers:
+      Host: heihu880.pages.dev
+    path: /?ed=2560
+- name: 美国 023
+  type: trojan
+  network: ws
+  server: www.zsu.gov.ua
+  port: 443
+  password: vip
+  skip-cert-verify: true
+  udp: true
+  tfo: true
+  sni: heihu880.pages.dev
+  ws-opts:
+    headers:
+      Host: heihu880.pages.dev
+    path: /?ed=2560
+- name: 美国 024
+  type: trojan
+  network: ws
+  server: fbi.gov
+  port: 443
+  password: vip
+  skip-cert-verify: true
+  udp: true
+  tfo: true
+  sni: heihu880.pages.dev
+  ws-opts:
+    headers:
+      Host: heihu880.pages.dev
+    path: /?ed=2560
+- name: 美国 025
+  type: trojan
+  network: ws
+  server: www.gov.se
+  port: 443
+  password: vip
+  skip-cert-verify: true
+  udp: true
+  tfo: true
+  sni: heihu880.pages.dev
+  ws-opts:
+    headers:
+      Host: heihu880.pages.dev
+    path: /?ed=2560
+- name: 美国 026
+  type: trojan
+  network: ws
+  server: www.gov.ua
+  port: 443
+  password: vip
+  skip-cert-verify: true
+  udp: true
+  tfo: true
+  sni: heihu880.pages.dev
+  ws-opts:
+    headers:
+      Host: heihu880.pages.dev
+    path: /?ed=2560
 - name: 俄罗斯 001
-  type: vless
+  type: trojan
   network: ws
-  server: 77.105.163.255
-  port: 80
-  uuid: 781c352c-5b01-4920-9a0e-2a25732f694c
-  skip-cert-verify: false
+  server: 92.243.75.49
+  port: 2087
+  password: wb6368
+  skip-cert-verify: true
+  udp: true
+  tfo: true
+  sni: hsdgbuys.pages.dev
   ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
     headers:
-      Host: myvps.nilphreakz.me
-    max-early-data: 2560
-    path: /Telegram🇨🇳
+      Host: hsdgbuys.pages.dev
+    path: /
+- name: 美国 027
+  type: trojan
+  network: ws
+  server: iplocation.io
+  port: 443
+  password: vip
+  skip-cert-verify: true
+  udp: true
+  tfo: true
+  sni: heihu880.pages.dev
+  ws-opts:
+    headers:
+      Host: heihu880.pages.dev
+    path: /?ed=2560
+- name: 丹麦 001
+  type: trojan
+  network: ws
+  server: www.csgo.com
+  port: 443
+  password: vip
+  skip-cert-verify: true
+  udp: true
+  tfo: true
+  sni: heihu880.pages.dev
+  ws-opts:
+    headers:
+      Host: heihu880.pages.dev
+    path: /?ed=2560
+- name: 美国 028
+  type: trojan
+  network: ws
+  server: 104.25.165.81
+  port: 8443
+  password: '123456'
+  skip-cert-verify: true
+  udp: true
+  tfo: true
+  sni: top-azx.pages.dev
+  ws-opts:
+    headers:
+      Host: top-azx.pages.dev
+    path: /Az1.vpn.33.TOP/?ed=2560
+- name: 美国 029
+  type: trojan
+  network: ws
+  server: www.ipaddress.my
+  port: 443
+  password: vip
+  skip-cert-verify: true
+  udp: true
+  tfo: true
+  sni: heihu880.pages.dev
+  ws-opts:
+    headers:
+      Host: heihu880.pages.dev
+    path: /?ed=2560
+- name: 美国 030
+  type: trojan
+  network: ws
+  server: 104.25.165.83
+  port: 8443
+  password: '123456'
+  skip-cert-verify: true
+  udp: true
+  tfo: true
+  sni: top-azx.pages.dev
+  ws-opts:
+    headers:
+      Host: top-azx.pages.dev
+    path: /Az1.vpn.33.TOP/?ed=2560
+- name: 美国 031
+  type: trojan
+  network: ws
+  server: koma-yt.pages.dev
+  port: 8443
+  password: 8r%3C%5B9%27l6hAO%238ZQi
+  skip-cert-verify: true
+  udp: true
+  tfo: true
+  sni: Koma-YT.PAGeS.Dev
+  ws-opts:
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+    path: /tro8sFW1S91B6sZrM1?ed=2560
+- name: 美国 032
+  type: trojan
+  network: ws
+  server: time.is
+  port: 2087
+  password: vip
+  skip-cert-verify: true
+  udp: true
+  tfo: true
+  sni: heihu880.pages.dev
+  ws-opts:
+    headers:
+      Host: heihu880.pages.dev
+    path: /?ed=2560
+- name: 美国 033
+  type: trojan
+  network: ws
+  server: 172.66.46.254
+  port: 443
+  password: auto
+  skip-cert-verify: true
+  udp: true
+  tfo: true
+  sni: dcf741e8.epeius-2gy.pages.dev
+  ws-opts:
+    headers:
+      Host: dcf741e8.epeius-2gy.pages.dev
+    path: /?ed=2560
+- name: 美国 034
+  type: trojan
+  network: ws
+  server: ip.sb
+  port: 8443
+  password: trojan
+  skip-cert-verify: true
+  udp: true
+  tfo: true
+  sni: fofang.pages.dev
+  ws-opts:
+    headers:
+      Host: fofang.pages.dev
+    path: /?ed=2560
+- name: 美国 035
+  type: trojan
+  network: ws
+  server: www.udemy.com
+  port: 443
+  password: vip
+  skip-cert-verify: true
+  udp: true
+  tfo: true
+  sni: heihu880.pages.dev
+  ws-opts:
+    headers:
+      Host: heihu880.pages.dev
+    path: /?ed=2560
+- name: 美国 036
+  type: trojan
+  network: ws
+  server: singapore.com
+  port: 443
+  password: vip
+  skip-cert-verify: true
+  udp: true
+  tfo: true
+  sni: heihu880.pages.dev
+  ws-opts:
+    headers:
+      Host: heihu880.pages.dev
+    path: /?ed=2560
+- name: 美国 037
+  type: trojan
+  network: ws
+  server: 104.17.148.22
+  port: 443
+  password: redfree8
+  skip-cert-verify: true
+  udp: true
+  tfo: true
+  sni: redfree8-p1.pooriashop.ir
+  ws-opts:
+    headers:
+      Host: redfree8-p1.pooriashop.ir
+    path: /trTelegram
+- name: 美国 038
+  type: trojan
+  network: ws
+  server: www.wto.org
+  port: 443
+  password: vip
+  skip-cert-verify: true
+  udp: true
+  tfo: true
+  sni: heihu880.pages.dev
+  ws-opts:
+    headers:
+      Host: heihu880.pages.dev
+    path: /?ed=2560
+- name: 美国 039
+  type: trojan
+  network: ws
+  server: 104.21.112.1
+  port: 443
+  password: f8b7cd5e-60c4-4e95-9b7b-d561ef4eed8c
+  skip-cert-verify: true
+  udp: true
+  tfo: true
+  sni: yellow-cloud-d53f.vavovi6084.workers.dev
+  ws-opts:
+    headers:
+      Host: yellow-cloud-d53f.vavovi6084.workers.dev
+    path: /?ed=2560
+- name: 美国 040
+  type: trojan
+  network: ws
+  server: www.ipget.net
+  port: 443
+  password: vip
+  skip-cert-verify: true
+  udp: true
+  tfo: true
+  sni: heihu880.pages.dev
+  ws-opts:
+    headers:
+      Host: heihu880.pages.dev
+    path: /?ed=2560
+- name: 美国 041
+  type: trojan
+  network: ws
+  server: 104.18.27.94
+  port: 443
+  password: vip
+  skip-cert-verify: true
+  udp: true
+  tfo: true
+  sni: heihu880.pages.dev
+  ws-opts:
+    headers:
+      Host: heihu880.pages.dev
+    path: /?ed=2560
+- name: 美国 042
+  type: trojan
+  network: ws
+  server: www.pcmag.com
+  port: 443
+  password: vip
+  skip-cert-verify: true
+  udp: true
+  tfo: true
+  sni: heihu880.pages.dev
+  ws-opts:
+    headers:
+      Host: heihu880.pages.dev
+    path: /?ed=2560
+- name: 美国 043
+  type: trojan
+  network: ws
+  server: www.udacity.com
+  port: 443
+  password: vip
+  skip-cert-verify: true
+  udp: true
+  tfo: true
+  sni: heihu880.pages.dev
+  ws-opts:
+    headers:
+      Host: heihu880.pages.dev
+    path: /?ed=2560
+- name: 美国 044
+  type: trojan
+  network: ws
+  server: japan.com
+  port: 443
+  password: vip
+  skip-cert-verify: true
+  udp: true
+  tfo: true
+  sni: heihu880.pages.dev
+  ws-opts:
+    headers:
+      Host: heihu880.pages.dev
+    path: /?ed=2560
+- name: 美国 045
+  type: trojan
+  network: ws
+  server: www.visa.com.tw
+  port: 443
+  password: vip
+  skip-cert-verify: true
+  udp: true
+  tfo: true
+  sni: heihu880.pages.dev
+  ws-opts:
+    headers:
+      Host: heihu880.pages.dev
+    path: /?ed=2560
+- name: 美国 046
+  type: trojan
+  network: ws
+  server: 104.17.148.22
+  port: 80
+  password: redfree8
+  skip-cert-verify: true
+  udp: true
+  tfo: true
+  sni: redfree8-p1.pooriashop.ir
+  ws-opts:
+    headers:
+      Host: redfree8-p1.pooriashop.ir
+    path: /trLwW5jwrnymnOdqki?ed=2560
+- name: 美国 047
+  type: trojan
+  network: ws
+  server: 45.82.14.144
+  port: 2025
+  password: vpn
+  skip-cert-verify: true
+  udp: true
+  tfo: true
+  sni: dns.google.com
+  ws-opts:
+    headers:
+      Host: dns.google.com
+    path: /
+- name: 美国 048
+  type: trojan
+  network: ws
+  server: 38.207.133.204
+  port: 10002
+  password: trojan
+  skip-cert-verify: true
+  udp: true
+  tfo: true
+  sni: qingming-b08.pages.dev
+  ws-opts:
+    headers:
+      Host: qingming-b08.pages.dev
+    path: /?ed=2560
+- name: 美国 049
+  type: trojan
+  network: ws
+  server: 104.21.18.192
+  port: 443
+  password: rXzh%3B%3FnW1GGKB(K8
+  skip-cert-verify: true
+  udp: true
+  tfo: true
+  sni: sAiKOXpUbGm.ZhkinGkuRD13.WorkErs.dEV
+  ws-opts:
+    headers:
+      Host: sAiKOXpUbGm.ZhkinGkuRD13.WorkErs.dEV
+    path: /tr4BCdusB84159lWnu
+- name: 美国 050
+  type: trojan
+  network: ws
+  server: edtunnel-dgp.pages.dev
+  port: 443
+  password: vip
+  skip-cert-verify: true
+  udp: true
+  tfo: true
+  sni: heihu880.pages.dev
+  ws-opts:
+    headers:
+      Host: heihu880.pages.dev
+    path: /?ed=2560
+- name: 美国 051
+  type: trojan
+  network: ws
+  server: 198.41.208.69
+  port: 8443
+  password: '123456'
+  skip-cert-verify: true
+  udp: true
+  tfo: true
+  sni: top-azx.pages.dev
+  ws-opts:
+    headers:
+      Host: top-azx.pages.dev
+    path: /Az1.vpn.33.TOP/?ed=2560
 - name: 俄罗斯 002
+  type: trojan
+  network: ws
+  server: 109.120.132.80
+  port: 2025
+  password: vpn
+  skip-cert-verify: true
+  udp: true
+  tfo: true
+  sni: vkvd127.mycdn.me
+  ws-opts:
+    headers:
+      Host: vkvd127.mycdn.me
+    path: /
+- name: 美国 052
   type: vless
   network: ws
-  server: 77.232.140.255
-  port: 80
-  uuid: 4657a214-f331-4b98-bbe1-e813ab777a58
-  skip-cert-verify: false
+  server: 172.66.46.246
+  port: 443
+  uuid: eb658eea-9fa9-4f34-ad96-67b7d65da38b
+  servername: ELENA.ELENA.ddns-ip.net
+  skip-cert-verify: true
+  tls: true
+  udp: true
+  tfo: true
+  client-fingerprint: chrome
+  packet-encoding: xudp
+  xudp: true
+  packet-addr: false
   ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
     headers:
-      Host: myvps.nilphreakz.me
-    max-early-data: 2560
-    path: /Telegram🇨🇳
-- name: 英国 014
+      Host: ELENA.ELENA.ddns-ip.net
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/120.0.0.0 Safari/537.36
+    path: /ELiV2RAY----ELiV2RAY----ELiV2RAY----ELiV2RAY----ELiV2RAY----ELiV2RAY?ed=2560
+- name: 巴西 001
   type: vless
   network: ws
-  server: 80.93.202.255
+  server: 188.114.98.112
   port: 80
-  uuid: 1b604b11-1dd2-45e1-9805-dc802ecd8abb
-  skip-cert-verify: false
+  uuid: eb658eea-9fa9-4f34-ad96-67b7d65da38b
+  skip-cert-verify: true
+  tls: false
+  udp: true
+  tfo: true
+  client-fingerprint: chrome
+  packet-encoding: xudp
+  xudp: true
+  packet-addr: false
   ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
     headers:
-      Host: myvps.nilphreakz.me
-    max-early-data: 2560
-    path: /Telegram🇨🇳
-- name: 立陶宛 001
+      Host: ELENA.ddNS-ip.net.
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/120.0.0.0 Safari/537.36
+    path: /ELiV2-RAY----ELiV2-RAY----ELiV2-RAY----ELiV2-RAY----ELiV2-RAY----ELiV2-RAY?ed=2560
+- name: 美国 053
   type: vless
   network: ws
-  server: 86.38.214.255
-  port: 80
-  uuid: 77ece81f-a99a-4bd9-be0f-3c562c4dab8d
-  skip-cert-verify: false
+  server: 104.18.36.24
+  port: 443
+  uuid: 30f2d443-af46-4dd6-83c9-b5e17299ebd2
+  servername: carlotta.shoorekeeper.cloudns.org
+  skip-cert-verify: true
+  tls: true
+  udp: true
+  tfo: true
+  client-fingerprint: chrome
+  packet-encoding: xudp
+  xudp: true
+  packet-addr: false
   ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
     headers:
-      Host: myvps.nilphreakz.me
-    max-early-data: 2560
-    path: /Telegram🇨🇳
-- name: 立陶宛 002
+      Host: carlotta.shoorekeeper.cloudns.org
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/120.0.0.0 Safari/537.36
+    path: /proxyip=zani.yaemiko.ggff.net/?JOKERRVPN_BIA_CHANEL
+- name: 美国 054
   type: vless
   network: ws
-  server: 88.216.66.255
+  server: www.speedtest.net
   port: 80
-  uuid: f1062c0c-7a36-4250-af5b-b8b47c8a40ca
-  skip-cert-verify: false
+  uuid: 6d6c379e-3086-409f-9397-4df4f816fc81
+  skip-cert-verify: true
+  tls: false
+  udp: true
+  tfo: true
+  client-fingerprint: chrome
+  packet-encoding: xudp
+  xudp: true
+  packet-addr: false
   ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
     headers:
-      Host: myvps.nilphreakz.me
-    max-early-data: 2560
-    path: /Telegram🇨🇳
-- name: 立陶宛 003
+      Host: revest.maketunnelim.Lat.
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/120.0.0.0 Safari/537.36
+    path: /Join----VPNCUSTOMIZE---Join----VPNCUSTOMIZE
+- name: 美国 055
   type: vless
   network: ws
-  server: 88.216.67.255
-  port: 80
-  uuid: 7baac04e-a297-48a0-99e9-2deba9ae64fb
-  skip-cert-verify: false
+  server: 172.66.40.99
+  port: 8080
+  uuid: 3639fbba-e6ac-4447-9518-e1176466f6bb
+  skip-cert-verify: true
+  tls: false
+  udp: true
+  tfo: true
+  client-fingerprint: chrome
+  packet-encoding: xudp
+  xudp: true
+  packet-addr: false
   ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
     headers:
-      Host: myvps.nilphreakz.me
-    max-early-data: 2560
-    path: /Telegram🇨🇳
-- name: 立陶宛 004
+      Host: M.mangoap.org
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/120.0.0.0 Safari/537.36
+    path: /Telegram--ip_configs--Join--ip_configs--Telegram--ip_configs--Join--ip_configs--Telegram--ip_configs--Join--ip_configs--Telegram--ip_configs--Join--ip_configs--Telegram--ip_configs--Join--ip_configs?ed=2048
+- name: 美国 056
   type: vless
   network: ws
-  server: 88.216.69.255
-  port: 80
-  uuid: 72520d9d-695c-457e-b055-f65dc36e0e25
-  skip-cert-verify: false
+  server: www.speedtest.net
+  port: 8080
+  uuid: 451b78be-abfc-4a46-b2e3-9c3357b21a56
+  skip-cert-verify: true
+  tls: false
+  udp: true
+  tfo: true
+  client-fingerprint: chrome
+  packet-encoding: xudp
+  xudp: true
+  packet-addr: false
   ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
     headers:
-      Host: myvps.nilphreakz.me
-    max-early-data: 2560
-    path: /Telegram🇨🇳
-- name: 立陶宛 005
+      Host: inFo.laLezaRanegomaNandish.onlineshopbb.org.
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/120.0.0.0 Safari/537.36
+    path: /
+- name: 美国 057
   type: vless
   network: ws
-  server: 89.116.46.255
-  port: 80
-  uuid: efdbbe04-38e0-46f3-a1c2-8c0c5604c636
-  skip-cert-verify: false
+  server: 172.67.65.158
+  port: 8880
+  uuid: e9979910-79d1-4621-a93c-b2a579c44ba7
+  skip-cert-verify: true
+  tls: false
+  udp: true
+  tfo: true
+  client-fingerprint: chrome
+  packet-encoding: xudp
+  xudp: true
+  packet-addr: false
   ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
     headers:
-      Host: myvps.nilphreakz.me
-    max-early-data: 2560
-    path: /Telegram🇨🇳
-- name: 立陶宛 006
+      Host: VngSuPpLY.IP-DdnS.com
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/120.0.0.0 Safari/537.36
+    path: /Etb1L6YUdZFZuTOr?ed=2560
+- name: 美国 058
   type: vless
   network: ws
-  server: 89.116.161.255
-  port: 80
-  uuid: 89b2eb61-c9c8-4990-9205-7f5eec0501fc
-  skip-cert-verify: false
+  server: www.bankonbasak.com
+  port: 443
+  uuid: 30f2d443-af46-4dd6-83c9-b5e17299ebd2
+  servername: carlotta.shoorekeeper.cloudns.org
+  skip-cert-verify: true
+  tls: true
+  udp: true
+  tfo: true
+  client-fingerprint: chrome
+  packet-encoding: xudp
+  xudp: true
+  packet-addr: false
   ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
     headers:
-      Host: myvps.nilphreakz.me
-    max-early-data: 2560
-    path: /Telegram🇨🇳
-- name: 立陶宛 007
+      Host: carlotta.shoorekeeper.cloudns.org
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/120.0.0.0 Safari/537.36
+    path: /proxyip=zani.yaemiko.ggff.net
+- name: 美国 059
   type: vless
   network: ws
-  server: 89.116.180.255
+  server: speedtest.net
   port: 80
-  uuid: 67b05dba-e32b-424a-b5a8-61a2f4097a14
-  skip-cert-verify: false
+  uuid: b1f58d90-e65f-4566-91f3-1b96e9a68614
+  skip-cert-verify: true
+  tls: false
+  udp: true
+  tfo: true
+  client-fingerprint: chrome
+  packet-encoding: xudp
+  xudp: true
+  packet-addr: false
   ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
     headers:
-      Host: myvps.nilphreakz.me
-    max-early-data: 2560
-    path: /Telegram🇨🇳
-- name: 立陶宛 008
+      Host: JoiIInNn--DIgiv2Ray.Ir.
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/120.0.0.0 Safari/537.36
+    path: /
+- name: 美国 060
   type: vless
   network: ws
-  server: 89.116.250.255
-  port: 80
-  uuid: 20c21ebd-05ed-4f44-bc4d-8831ac518b7a
-  skip-cert-verify: false
+  server: privasi.turah.my.id
+  port: 443
+  uuid: 0fbf4f81-2598-4b6a-a623-0ead4cb9efa8
+  servername: privasi.turah.my.id
+  skip-cert-verify: true
+  tls: true
+  udp: true
+  tfo: true
+  client-fingerprint: chrome
+  packet-encoding: xudp
+  xudp: true
+  packet-addr: false
   ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
     headers:
-      Host: myvps.nilphreakz.me
-    max-early-data: 2560
-    path: /Telegram🇨🇳
-- name: 立陶宛 009
+      Host: privasi.turah.my.id
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/120.0.0.0 Safari/537.36
+    path: /Free-CF-Proxy-AD192.3.113.4-19318?ed=2048
+- name: 美国 061
+  type: vless
+  network: grpc
+  server: 172.67.74.133
+  port: 443
+  uuid: 6780a3c0-a98c-4622-b894-8e34167f7b31
+  skip-cert-verify: true
+  tls: true
+  udp: true
+  tfo: true
+  client-fingerprint: chrome
+  packet-addr: false
+  xudp: true
+  grpc-opts:
+    grpc-service-name: Telegram
+  packet-encoding: xudp
+- name: 美国 062
   type: vless
   network: ws
-  server: 89.117.112.255
-  port: 80
-  uuid: 6f565a11-f263-421a-bd3c-3d4efa51d4b0
-  skip-cert-verify: false
+  server: 172.66.40.99
+  port: 443
+  uuid: 30f2d443-af46-4dd6-83c9-b5e17299ebd2
+  servername: carlotta.shoorekeeper.cloudns.org
+  skip-cert-verify: true
+  tls: true
+  udp: true
+  tfo: true
+  client-fingerprint: chrome
+  packet-encoding: xudp
+  xudp: true
+  packet-addr: false
   ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
     headers:
-      Host: myvps.nilphreakz.me
-    max-early-data: 2560
-    path: /Telegram🇨🇳
-- name: 德国 005
+      Host: carlotta.shoorekeeper.cloudns.org
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/120.0.0.0 Safari/537.36
+    path: /
+- name: 美国 063
   type: vless
   network: ws
-  server: 91.206.71.255
-  port: 80
-  uuid: 7d265652-cacf-4b9a-aee6-f20ba4dbfe04
-  skip-cert-verify: false
+  server: 104.26.0.108
+  port: 443
+  uuid: 41b8c97a-7fac-4191-8922-f58d42a9acf7
+  servername: app-stg.gopay.co.id.servpn.my.id
+  skip-cert-verify: true
+  tls: true
+  udp: true
+  tfo: true
+  client-fingerprint: chrome
+  packet-encoding: xudp
+  xudp: true
+  packet-addr: false
   ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
     headers:
-      Host: myvps.nilphreakz.me
-    max-early-data: 2560
-    path: /Telegram🇨🇳
-- name: 沙特阿拉伯 001
+      Host: app-stg.gopay.co.id.servpn.my.id
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/120.0.0.0 Safari/537.36
+    path: /id5?ed=2560/?JKVPNTELEGRAM_CHANEL_JKVPN_JKVPN
+- name: 美国 064
   type: vless
   network: ws
-  server: 91.209.253.255
-  port: 80
-  uuid: 0a6936a5-12cb-4038-86bb-562894b7816f
-  skip-cert-verify: false
+  server: 104.26.1.108
+  port: 443
+  uuid: 3d7dd548-5456-4f28-8019-393fbfab3312
+  servername: app-stg.gopay.co.id.servpn.my.id
+  skip-cert-verify: true
+  tls: true
+  udp: true
+  tfo: true
+  client-fingerprint: chrome
+  packet-encoding: xudp
+  xudp: true
+  packet-addr: false
   ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
     headers:
-      Host: myvps.nilphreakz.me
-    max-early-data: 2560
-    path: /Telegram🇨🇳
-- name: 斯洛文尼亚 001
+      Host: app-stg.gopay.co.id.servpn.my.id
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/120.0.0.0 Safari/537.36
+    path: /sg3/?-JKVPN_TELEGRAM_CHANEL_JKVPN_JKVPN_JKVPN
+- name: 美国 065
   type: vless
   network: ws
-  server: 92.53.188.255
+  server: cumhuriyet.com.tr
   port: 80
-  uuid: 2ad33a9c-ee61-4df4-96e1-1bf0987d082e
-  skip-cert-verify: false
+  uuid: 58186ddc-be2e-4148-a680-ccd546994988
+  skip-cert-verify: true
+  tls: false
+  udp: true
+  tfo: true
+  client-fingerprint: chrome
+  packet-addr: false
+  xudp: true
+  flow: xtls-rprx-vision
+  packet-encoding: xudp
   ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
     headers:
-      Host: myvps.nilphreakz.me
-    max-early-data: 2560
-    path: /Telegram🇨🇳
-- name: 斯洛文尼亚 002
+      Host: Vmessorg.paradoxone.ir
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/120.0.0.0 Safari/537.36
+    path: /
+- name: 美国 066
   type: vless
   network: ws
-  server: 92.53.189.255
-  port: 80
-  uuid: 7c06892a-d102-47cc-846d-e1d445dc9d2c
-  skip-cert-verify: false
+  server: www.speedtest.net
+  port: 8443
+  uuid: ccbe6b7c-9264-40c4-8bc1-ef8f6205d7a4
+  servername: hetzner-5.crisis.name.ng
+  skip-cert-verify: true
+  tls: true
+  udp: true
+  tfo: true
+  client-fingerprint: chrome
+  packet-encoding: xudp
+  xudp: true
+  packet-addr: false
   ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
     headers:
-      Host: myvps.nilphreakz.me
-    max-early-data: 2560
-    path: /Telegram🇨🇳
-- name: 斯洛文尼亚 003
+      Host: hetzner-5.crisis.name.ng
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/120.0.0.0 Safari/537.36
+    path: /
+- name: 美国 067
   type: vless
   network: ws
-  server: 92.53.190.255
-  port: 80
-  uuid: 0772da20-ea49-446d-816d-e42237c54848
-  skip-cert-verify: false
+  server: 172.67.141.140
+  port: 8880
+  uuid: 7e948e09-fa6f-4b8e-8c5d-181fa15fbec5
+  skip-cert-verify: true
+  tls: false
+  udp: true
+  tfo: true
+  client-fingerprint: chrome
+  packet-encoding: xudp
+  xudp: true
+  packet-addr: false
   ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
     headers:
-      Host: myvps.nilphreakz.me
-    max-early-data: 2560
-    path: /Telegram🇨🇳
-- name: 斯洛文尼亚 004
+      Host: v2ngsupply2.ip-ddns.com
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/120.0.0.0 Safari/537.36
+    path: /QaaLdIiGgWNoIxOF?ed=2560
+- name: 美国 068
   type: vless
   network: ws
-  server: 92.53.191.255
-  port: 80
-  uuid: 15510a34-7cec-411a-9256-279241522f81
-  skip-cert-verify: false
+  server: 104.16.85.3
+  port: 8880
+  uuid: e9979910-79d1-4621-a93c-b2a579c44ba7
+  skip-cert-verify: true
+  tls: false
+  udp: true
+  tfo: true
+  client-fingerprint: chrome
+  packet-encoding: xudp
+  xudp: true
+  packet-addr: false
   ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
     headers:
-      Host: myvps.nilphreakz.me
-    max-early-data: 2560
-    path: /Telegram🇨🇳
-- name: 意大利 001
+      Host: vngsupply.ip-ddns.com
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/120.0.0.0 Safari/537.36
+    path: /6TvG8D6HimXKgdp2?ed=2560
+- name: 美国 069
   type: vless
   network: ws
-  server: 92.60.74.255
+  server: 104.18.26.90
   port: 80
-  uuid: f0d0c1f0-bd67-4c9d-9827-757dc0043fab
-  skip-cert-verify: false
+  uuid: 6f690965-3be3-43bb-9331-3ead6efb20aa
+  skip-cert-verify: true
+  tls: false
+  udp: true
+  tfo: true
+  client-fingerprint: chrome
+  packet-encoding: xudp
+  xudp: true
+  packet-addr: false
   ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
     headers:
-      Host: myvps.nilphreakz.me
-    max-early-data: 2560
-    path: /Telegram🇨🇳
+      Host: sib.sibzamini.dpdns.org
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/120.0.0.0 Safari/537.36
+    path: /?ed=2560/
+- name: 美国 070
+  type: vless
+  network: ws
+  server: 104.16.104.151
+  port: 80
+  uuid: 1f431db3-1918-4e7b-a855-c93485e11694
+  skip-cert-verify: true
+  tls: false
+  udp: true
+  tfo: true
+  client-fingerprint: chrome
+  packet-encoding: xudp
+  xudp: true
+  packet-addr: false
+  ws-opts:
+    headers:
+      Host: pari.parinazz.dpdns.org
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/120.0.0.0 Safari/537.36
+    path: /?ed=2560
+- name: 美国 071
+  type: vless
+  network: ws
+  server: www.speedtest.net
+  port: 443
+  uuid: fc264e2f-753b-43fd-878c-c8f82b4bc502
+  servername: hiddifyreplace2.safavidempire.org
+  skip-cert-verify: true
+  tls: true
+  udp: true
+  tfo: true
+  client-fingerprint: chrome
+  packet-encoding: xudp
+  xudp: true
+  packet-addr: false
+  ws-opts:
+    headers:
+      Host: hiddifyreplace2.safavidempire.org
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/120.0.0.0 Safari/537.36
+    path: /76fe1f74-5804-4a5a-8b9d-5f877d90a9c6
+- name: 美国 072
+  type: vless
+  network: ws
+  server: www.speedtest.net
+  port: 2086
+  uuid: a7a6f432-903c-4e92-a107-4b559b8c176b
+  skip-cert-verify: true
+  tls: false
+  udp: true
+  tfo: true
+  client-fingerprint: chrome
+  packet-encoding: xudp
+  xudp: true
+  packet-addr: false
+  ws-opts:
+    headers:
+      Host: mahan.mmadvip8563.ir
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/120.0.0.0 Safari/537.36
+    path: /
+- name: 美国 073
+  type: vmess
+  network: ws
+  server: v2ray.codefyinc.com
+  port: 443
+  uuid: 2c981164-9b93-4bca-94ff-b78d3f8498d7
+  skip-cert-verify: true
+  udp: true
+  tfo: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: v2ray.codefyinc.com
+    path: /vmessws
+- name: 美国 074
+  type: vless
+  network: ws
+  server: 172.66.40.99
+  port: 80
+  uuid: bb867c2e-b692-4b7c-b48e-435598787308
+  skip-cert-verify: true
+  tls: false
+  udp: true
+  tfo: true
+  client-fingerprint: chrome
+  packet-encoding: xudp
+  xudp: true
+  packet-addr: false
+  ws-opts:
+    headers:
+      Host: d.jOin.zEdMoDeOn.oNl.
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/120.0.0.0 Safari/537.36
+    path: /Join-ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON
+- name: 美国 075
+  type: vless
+  network: ws
+  server: 104.17.41.52
+  port: 8080
+  uuid: 7e948e09-fa6f-4b8e-8c5d-181fa15fbec5
+  skip-cert-verify: true
+  tls: false
+  udp: true
+  tfo: true
+  client-fingerprint: chrome
+  packet-encoding: xudp
+  xudp: true
+  packet-addr: false
+  ws-opts:
+    headers:
+      Host: v2ngsupply2.ip-ddns.com
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/120.0.0.0 Safari/537.36
+    path: /ijiDwDw8BcM9ieHc?ed=2560
+- name: 巴西 002
+  type: vless
+  network: ws
+  server: 188.114.97.1
+  port: 80
+  uuid: 98f18f76-bb78-4ab9-b949-bfca8741ce22
+  skip-cert-verify: true
+  tls: false
+  udp: true
+  tfo: true
+  client-fingerprint: chrome
+  packet-encoding: xudp
+  xudp: true
+  packet-addr: false
+  ws-opts:
+    headers:
+      Host: binextv.iransheep.web.tr.
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/120.0.0.0 Safari/537.36
+    path: /telegram,
+- name: 越南 001
+  type: vmess
+  network: ws
+  server: vn4.viefast.net
+  port: 80
+  uuid: 9e76767d-4bfa-4f04-a800-42e2f63afed2
+  skip-cert-verify: true
+  udp: true
+  tfo: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: www.linemo.jp
+    path: /viefast
+- name: 美国 076
+  type: vmess
+  network: ws
+  server: s1.db-link.in
+  port: 80
+  uuid: 003ef206-46b6-3701-ab77-b03debe7511f
+  skip-cert-verify: true
+  udp: true
+  tfo: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: dabaius.webn.cc
+    path: /dabai.inc09e03012ee5d2d79229cdf0acfb9a12
+- name: 美国 077
+  type: vless
+  network: ws
+  server: mstr.fastly80.hosting-ip.com
+  port: 80
+  uuid: 031fe63c-f7da-40b7-960d-1101df6eda60
+  skip-cert-verify: true
+  tls: false
+  udp: true
+  tfo: true
+  client-fingerprint: chrome
+  ws-opts:
+    headers:
+      Host: Gn8656.io
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/120.0.0.0 Safari/537.36
+    path: /admin
+- name: 美国 078
+  type: vless
+  network: grpc
+  server: pqh38v1.avoipok.shop
+  port: 8880
+  uuid: e4824193-4f54-453b-d037-88368e85ef0e
+  skip-cert-verify: true
+  tls: true
+  udp: true
+  tfo: true
+  client-fingerprint: chrome
+  grpc-opts: {}
+- name: 美国 079
+  type: vless
+  network: ws
+  server: zula.ir
+  port: 2096
+  uuid: 97909ffd-6da0-4893-9d63-00e72ad55256
+  servername: frAgteSt.JaHANGiRKh.eU.orG
+  skip-cert-verify: true
+  tls: true
+  udp: true
+  tfo: true
+  client-fingerprint: chrome
+  ws-opts:
+    headers:
+      Host: frAgteSt.JaHANGiRKh.eU.orG
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/120.0.0.0 Safari/537.36
+    path: /
+- name: 比利时 006
+  type: vmess
+  network: ws
+  server: fapeng.org
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  skip-cert-verify: true
+  udp: true
+  tfo: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: fapeng.org
+    path: linkvws
 - name: 俄罗斯 003
   type: vless
-  network: ws
-  server: 92.243.74.255
-  port: 80
-  uuid: eed712ff-17d2-4e0b-bf0b-19ff3451b97a
-  skip-cert-verify: false
-  ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
-    headers:
-      Host: myvps.nilphreakz.me
-    max-early-data: 2560
-    path: /Telegram🇨🇳
+  network: grpc
+  server: 185.236.232.72
+  port: 8880
+  uuid: e4824193-4f54-453b-d037-88368e85ef0e
+  skip-cert-verify: true
+  tls: true
+  udp: true
+  tfo: true
+  client-fingerprint: chrome
+  grpc-opts: {}
 - name: 俄罗斯 004
   type: vless
-  network: ws
-  server: 92.243.75.255
-  port: 80
-  uuid: 9c0caffc-04c5-413e-98e8-666052b19da8
-  skip-cert-verify: false
-  ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
-    headers:
-      Host: myvps.nilphreakz.me
-    max-early-data: 2560
-    path: /Telegram🇨🇳
-- name: 法国 003
-  type: vless
-  network: ws
-  server: 94.140.0.255
-  port: 80
-  uuid: a225a8ff-1505-4dfd-a3b7-59737bb499ee
-  skip-cert-verify: false
-  ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
-    headers:
-      Host: myvps.nilphreakz.me
-    max-early-data: 2560
-    path: /Telegram🇨🇳
+  network: grpc
+  server: 185.236.232.148
+  port: 8880
+  uuid: e4824193-4f54-453b-d037-88368e85ef0e
+  skip-cert-verify: true
+  tls: true
+  udp: true
+  tfo: true
+  client-fingerprint: chrome
+  grpc-opts: {}
+- name: 英国 001
+  type: vmess
+  network: tcp
+  server: 89.31.120.192
+  port: 443
+  uuid: 44537595-9ccc-4b83-8936-5f9ad3229019
+  skip-cert-verify: true
+  udp: true
+  tfo: true
+  alterId: 0
+  cipher: auto
 - name: 俄罗斯 005
   type: vless
-  network: ws
-  server: 94.247.142.255
-  port: 80
-  uuid: a4798d14-063c-4b01-9b70-5b5793335b87
-  skip-cert-verify: false
-  ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
-    headers:
-      Host: myvps.nilphreakz.me
-    max-early-data: 2560
-    path: /Telegram🇨🇳
-- name: 南非 002
+  network: grpc
+  server: 185.236.232.116
+  port: 8880
+  uuid: e4824193-4f54-453b-d037-88368e85ef0e
+  skip-cert-verify: true
+  tls: true
+  udp: true
+  tfo: true
+  client-fingerprint: chrome
+  grpc-opts: {}
+- name: 美国 080
   type: vless
   network: ws
-  server: 102.132.188.255
-  port: 80
-  uuid: acf0cb41-ac1a-448f-98cf-0b58a9f92b05
-  skip-cert-verify: false
+  server: 104.21.3.219
+  port: 8443
+  uuid: 57ba2ab1-a283-42eb-82ee-dc3561a805b8
+  servername: ovhwuxian.pai50288.uk
+  skip-cert-verify: true
+  tls: true
+  udp: true
+  tfo: true
+  client-fingerprint: chrome
   ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
     headers:
-      Host: myvps.nilphreakz.me
-    max-early-data: 2560
-    path: /Telegram🇨🇳
-- name: 南非 003
+      Host: ovhwuxian.pai50288.uk
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/120.0.0.0 Safari/537.36
+    path: /57ba2ab1
+- name: 美国 081
   type: vless
-  network: ws
-  server: 102.177.176.255
-  port: 80
-  uuid: cb3ec36e-a0c2-4798-a340-9cb7eaee739a
-  skip-cert-verify: false
-  ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
-    headers:
-      Host: myvps.nilphreakz.me
-    max-early-data: 2560
-    path: /Telegram🇨🇳
-- name: 日本 001
-  type: vless
-  network: ws
-  server: 103.116.7.255
-  port: 80
-  uuid: da8aa1d1-5fd7-4085-85c1-3d5cbfdbfc5c
-  skip-cert-verify: false
-  ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
-    headers:
-      Host: myvps.nilphreakz.me
-    max-early-data: 2560
-    path: /Telegram🇨🇳
+  network: grpc
+  server: 54.36.114.253
+  port: 25369
+  uuid: c3001ca6-96f6-4c60-833c-4495c0c6951e
+  skip-cert-verify: true
+  tls: true
+  udp: true
+  tfo: true
+  client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON
+- name: 美国 082
+  type: vmess
+  network: tcp
+  server: 165.140.216.141
+  port: 443
+  uuid: e7d72a8d-26f2-4b54-b366-0c43e0bcba7d
+  skip-cert-verify: true
+  udp: true
+  tfo: true
+  alterId: 0
+  cipher: auto
 - name: 澳大利亚 001
   type: vless
   network: ws
-  server: 103.133.1.255
-  port: 80
-  uuid: 781c352c-5b01-4920-9a0e-2a25732f694c
-  skip-cert-verify: false
+  server: hk3.kaipi.link
+  port: 443
+  uuid: d8665d45-8103-46e9-9cb7-8902bb7559b4
+  servername: hk3.kaipi.link
+  skip-cert-verify: true
+  tls: true
+  udp: true
+  tfo: true
+  client-fingerprint: chrome
   ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
     headers:
-      Host: myvps.nilphreakz.me
-    max-early-data: 2560
-    path: /Telegram🇨🇳
-- name: 亚太地区 001
+      Host: hk3.kaipi.link
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/120.0.0.0 Safari/537.36
+    path: /texaws
+- name: 美国 083
+  type: vless
+  network: grpc
+  server: 51.89.118.126
+  port: 25369
+  uuid: 5fda29b6-0688-44e3-afdf-df533c800109
+  skip-cert-verify: true
+  tls: true
+  udp: true
+  tfo: true
+  client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON
+- name: 美国 084
   type: vless
   network: ws
-  server: 103.160.204.255
+  server: 152.53.52.242
   port: 80
-  uuid: 4657a214-f331-4b98-bbe1-e813ab777a58
-  skip-cert-verify: false
+  uuid: 53fff6cc-b4ec-43e8-ade5-e0c42972fc33
+  skip-cert-verify: true
+  tls: false
+  udp: true
+  tfo: true
+  client-fingerprint: chrome
   ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
     headers:
-      Host: myvps.nilphreakz.me
-    max-early-data: 2560
-    path: /Telegram🇨🇳
-- name: 亚太地区 002
+      Host: cdn.ir
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/120.0.0.0 Safari/537.36
+    path: /news
+- name: 俄罗斯 006
+  type: vless
+  network: grpc
+  server: 185.231.205.181
+  port: 8880
+  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
+  skip-cert-verify: true
+  tls: true
+  udp: true
+  tfo: true
+  client-fingerprint: chrome
+  grpc-opts: {}
+- name: 俄罗斯 007
+  type: vless
+  network: grpc
+  server: 185.231.205.246
+  port: 8880
+  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
+  skip-cert-verify: true
+  tls: true
+  udp: true
+  tfo: true
+  client-fingerprint: chrome
+  grpc-opts: {}
+- name: 俄罗斯 008
+  type: vless
+  network: grpc
+  server: 185.231.205.253
+  port: 8880
+  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
+  skip-cert-verify: true
+  tls: true
+  udp: true
+  tfo: true
+  client-fingerprint: chrome
+  grpc-opts: {}
+- name: 俄罗斯 009
+  type: vmess
+  network: tcp
+  server: 45.67.230.79
+  port: 11052
+  uuid: 314185f7-931d-4656-922d-0857e7afd224
+  skip-cert-verify: true
+  udp: true
+  tfo: true
+  alterId: 0
+  cipher: auto
+- name: 美国 085
   type: vless
   network: ws
-  server: 103.169.142.255
-  port: 80
-  uuid: 1b604b11-1dd2-45e1-9805-dc802ecd8abb
-  skip-cert-verify: false
+  server: openai.com
+  port: 443
+  uuid: 101e6a7d-7d10-4859-a626-8a76daab4547
+  servername: nkAnG2rEpLACE.airlineSHoma.Com
+  skip-cert-verify: true
+  tls: true
+  udp: true
+  tfo: true
+  client-fingerprint: randomized
   ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
     headers:
-      Host: myvps.nilphreakz.me
-    max-early-data: 2560
-    path: /Telegram🇨🇳
+      Host: nkAnG2rEpLACE.airlineSHoma.Com
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/120.0.0.0 Safari/537.36
+    path: /?ed=2560
+- name: 美国 086
+  type: vless
+  network: ws
+  server: light-presence.oneeat.co
+  port: 80
+  uuid: 7e74ff43-3a90-48b3-8372-7d92a045c2d4
+  skip-cert-verify: true
+  tls: false
+  udp: true
+  tfo: true
+  client-fingerprint: chrome
+  ws-opts:
+    headers:
+      Host: light-presence.oneeat.co
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/120.0.0.0 Safari/537.36
+    path: /
 proxy-groups:
 - name: PROXY
   type: select
@@ -1648,40 +1914,34 @@ proxy-groups:
 - name: SELECT
   type: select
   proxies: &id001
+  - 日本 001
   - 美国 001
-  - 英国 001
   - 美国 002
-  - 英国 002
+  - 日本 002
+  - 日本 003
+  - 荷兰 001
+  - 荷兰 002
+  - 荷兰 003
+  - 比利时 001
   - 美国 003
-  - 英国 003
   - 美国 004
-  - 英国 004
   - 美国 005
+  - 乌克兰 001
   - 美国 006
-  - 英国 005
   - 美国 007
-  - 英国 006
   - 美国 008
-  - 英国 007
+  - 比利时 002
+  - 德国 001
   - 美国 009
   - 美国 010
-  - 英国 008
-  - 德国 001
-  - 德国 002
-  - 阿塞拜疆 001
-  - 阿塞拜疆 002
-  - 荷兰 001
   - 美国 011
   - 美国 012
-  - 印度 001
-  - 印度 002
   - 美国 013
-  - 乌克兰 001
-  - 德国 003
-  - 荷兰 002
-  - 英国 009
-  - 英国 010
-  - 英国 011
+  - 法国 001
+  - 比利时 003
+  - 加拿大 001
+  - 比利时 004
+  - 比利时 005
   - 美国 014
   - 美国 015
   - 美国 016
@@ -1690,41 +1950,17 @@ proxy-groups:
   - 美国 019
   - 美国 020
   - 美国 021
-  - 乌克兰 002
-  - 法国 001
-  - 法国 002
-  - 英国 012
-  - 英国 013
-  - 荷兰 003
-  - 荷兰 004
-  - 荷兰 005
-  - 荷兰 006
-  - 荷兰 007
-  - 荷兰 008
-  - 荷兰 009
-  - 荷兰 010
-  - 荷兰 011
-  - 荷兰 012
-  - 荷兰 013
-  - 荷兰 014
-  - 荷兰 015
-  - 荷兰 016
-  - 荷兰 017
-  - 荷兰 018
-  - 荷兰 019
-  - 荷兰 020
-  - 南非 001
-  - 乌克兰 003
   - 美国 022
   - 美国 023
   - 美国 024
   - 美国 025
   - 美国 026
+  - 俄罗斯 001
   - 美国 027
+  - 丹麦 001
   - 美国 028
   - 美国 029
   - 美国 030
-  - 乌克兰 004
   - 美国 031
   - 美国 032
   - 美国 033
@@ -1733,37 +1969,68 @@ proxy-groups:
   - 美国 036
   - 美国 037
   - 美国 038
-  - 加拿大 001
-  - 德国 004
-  - 俄罗斯 001
+  - 美国 039
+  - 美国 040
+  - 美国 041
+  - 美国 042
+  - 美国 043
+  - 美国 044
+  - 美国 045
+  - 美国 046
+  - 美国 047
+  - 美国 048
+  - 美国 049
+  - 美国 050
+  - 美国 051
   - 俄罗斯 002
-  - 英国 014
-  - 立陶宛 001
-  - 立陶宛 002
-  - 立陶宛 003
-  - 立陶宛 004
-  - 立陶宛 005
-  - 立陶宛 006
-  - 立陶宛 007
-  - 立陶宛 008
-  - 立陶宛 009
-  - 德国 005
-  - 沙特阿拉伯 001
-  - 斯洛文尼亚 001
-  - 斯洛文尼亚 002
-  - 斯洛文尼亚 003
-  - 斯洛文尼亚 004
-  - 意大利 001
+  - 美国 052
+  - 巴西 001
+  - 美国 053
+  - 美国 054
+  - 美国 055
+  - 美国 056
+  - 美国 057
+  - 美国 058
+  - 美国 059
+  - 美国 060
+  - 美国 061
+  - 美国 062
+  - 美国 063
+  - 美国 064
+  - 美国 065
+  - 美国 066
+  - 美国 067
+  - 美国 068
+  - 美国 069
+  - 美国 070
+  - 美国 071
+  - 美国 072
+  - 美国 073
+  - 美国 074
+  - 美国 075
+  - 巴西 002
+  - 越南 001
+  - 美国 076
+  - 美国 077
+  - 美国 078
+  - 美国 079
+  - 比利时 006
   - 俄罗斯 003
   - 俄罗斯 004
-  - 法国 003
+  - 英国 001
   - 俄罗斯 005
-  - 南非 002
-  - 南非 003
-  - 日本 001
+  - 美国 080
+  - 美国 081
+  - 美国 082
   - 澳大利亚 001
-  - 亚太地区 001
-  - 亚太地区 002
+  - 美国 083
+  - 美国 084
+  - 俄罗斯 006
+  - 俄罗斯 007
+  - 俄罗斯 008
+  - 俄罗斯 009
+  - 美国 085
+  - 美国 086
 - name: LOAD-BALANCE
   type: load-balance
   url: https://cp.cloudflare.com/generate_204
