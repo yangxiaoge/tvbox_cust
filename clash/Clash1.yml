@@ -132,24 +132,24 @@ proxies:
 - name: 日本 001
   type: trojan
   network: tcp
-  server: 153.121.73.102
-  port: 3294
-  password: 253bc477d4e43c209f2d427272968280
-  skip-cert-verify: true
-  sni: www.nintendogames.net
-- name: 日本 002
-  type: trojan
-  network: tcp
   server: 160.16.63.16
   port: 447
   password: 253bc477d4e43c209f2d427272968280
   skip-cert-verify: true
   sni: www.baidu.com
-- name: 日本 003
+- name: 日本 002
   type: trojan
   network: tcp
   server: 153.121.45.139
   port: 327
+  password: 253bc477d4e43c209f2d427272968280
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+- name: 日本 003
+  type: trojan
+  network: tcp
+  server: 153.121.73.102
+  port: 3294
   password: 253bc477d4e43c209f2d427272968280
   skip-cert-verify: false
   sni: www.nintendogames.net
@@ -161,6 +161,32 @@ proxies:
   password: 253bc477d4e43c209f2d427272968280
   skip-cert-verify: false
   sni: www.nintendogames.net
+- name: 澳大利亚 001
+  type: trojan
+  network: ws
+  server: 140.83.57.183
+  port: 22735
+  password: juzi
+  skip-cert-verify: true
+  udp: true
+  sni: juzi8186-sr1.pages.dev
+  ws-opts:
+    headers:
+      Host: juzi8186-sr1.pages.dev
+    path: /?ed=2560
+- name: 美国 001
+  type: trojan
+  network: ws
+  server: 154.29.155.249
+  port: 443
+  password: juzi
+  skip-cert-verify: true
+  udp: true
+  sni: juzi8186-sr1.pages.dev
+  ws-opts:
+    headers:
+      Host: juzi8186-sr1.pages.dev
+    path: /?ed=2560
 - name: 荷兰 001
   type: vless
   network: grpc
@@ -236,7 +262,7 @@ proxies:
     headers:
       Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
     path: /linkvws
-- name: 美国 001
+- name: 美国 002
   type: vmess
   network: ws
   server: 104.17.148.22
@@ -251,7 +277,7 @@ proxies:
     headers:
       Host: bitter-boat-6004.samineh-sfri-95.workers.dev
     path: /b62a948c-faa2-4e8a-bf8a-3ff3121c875a.asoul-ava.top/azumase.ren
-- name: 美国 002
+- name: 美国 003
   type: vmess
   network: tcp
   server: lt.fxlcn.com
@@ -262,7 +288,7 @@ proxies:
   tfo: true
   alterId: 0
   cipher: auto
-- name: 美国 003
+- name: 美国 004
   type: vmess
   network: ws
   server: cf.fovi.tk
@@ -292,7 +318,7 @@ proxies:
     headers:
       Host: pq-brazil1.09vpn.com
     path: /vmess/
-- name: 美国 004
+- name: 美国 005
   type: vmess
   network: tcp
   server: ye.fxlcn.com
@@ -303,7 +329,7 @@ proxies:
   tfo: true
   alterId: 0
   cipher: auto
-- name: 美国 005
+- name: 美国 006
   type: vmess
   network: ws
   server: orvps2.horsenma.net
@@ -318,7 +344,7 @@ proxies:
     headers:
       Host: orvps2.horsenma.net
     path: /horsen
-- name: 美国 006
+- name: 美国 007
   type: vmess
   network: tcp
   server: lt.fxlcn.com
@@ -355,7 +381,7 @@ proxies:
   tfo: true
   alterId: 0
   cipher: auto
-- name: 美国 007
+- name: 美国 008
   type: vmess
   network: tcp
   server: lt.fxlcn.com
@@ -366,7 +392,7 @@ proxies:
   tfo: true
   alterId: 0
   cipher: auto
-- name: 美国 008
+- name: 美国 009
   type: vmess
   network: tcp
   server: lt.fxlcn.com
@@ -377,7 +403,7 @@ proxies:
   tfo: true
   alterId: 0
   cipher: auto
-- name: 美国 009
+- name: 美国 010
   type: vmess
   network: ws
   server: codepen.io
@@ -392,7 +418,7 @@ proxies:
     headers:
       Host: farid.1.berozha.ir
     path: /us.kkp.me.eu.org/aa
-- name: 美国 010
+- name: 美国 011
   type: vmess
   network: tcp
   server: lt.fxlcn.com
@@ -403,7 +429,7 @@ proxies:
   tfo: true
   alterId: 0
   cipher: auto
-- name: 美国 011
+- name: 美国 012
   type: vmess
   network: tcp
   server: lt.fxlcn.com
@@ -489,7 +515,7 @@ proxies:
     headers:
       Host: kapelleng.com
     path: /linkvws
-- name: 美国 012
+- name: 美国 013
   type: trojan
   network: ws
   server: log.bpminecraft.com
@@ -503,7 +529,7 @@ proxies:
     headers:
       Host: heihu880.pages.dev
     path: /?ed=2560
-- name: 美国 013
+- name: 美国 014
   type: trojan
   network: ws
   server: 104.18.42.163
@@ -517,7 +543,7 @@ proxies:
     headers:
       Host: heihu880.pages.dev
     path: /?ed=2560
-- name: 美国 014
+- name: 美国 015
   type: trojan
   network: ws
   server: www.visa.com.sg
@@ -531,7 +557,7 @@ proxies:
     headers:
       Host: pangpi.pages.dev
     path: /?ed=2560
-- name: 美国 015
+- name: 美国 016
   type: trojan
   network: ws
   server: www.iplocation.net
@@ -545,7 +571,7 @@ proxies:
     headers:
       Host: heihu880.pages.dev
     path: /?ed=2560
-- name: 美国 016
+- name: 美国 017
   type: trojan
   network: ws
   server: whatismyipaddress.com
@@ -559,7 +585,7 @@ proxies:
     headers:
       Host: heihu880.pages.dev
     path: /?ed=2560
-- name: 美国 017
+- name: 美国 018
   type: trojan
   network: ws
   server: 172.66.44.230
@@ -573,7 +599,7 @@ proxies:
     headers:
       Host: Koma-YT.PAGeS.Dev
     path: /tro8sFW1S91B6sZrM1?ed=2560
-- name: 美国 018
+- name: 美国 019
   type: trojan
   network: ws
   server: www.gco.gov.qa
@@ -587,7 +613,7 @@ proxies:
     headers:
       Host: heihu880.pages.dev
     path: /?ed=2560
-- name: 美国 019
+- name: 美国 020
   type: trojan
   network: ws
   server: dcf741e8.epeius-2gy.pages.dev
@@ -601,7 +627,7 @@ proxies:
     headers:
       Host: dcf741e8.epeius-2gy.pages.dev
     path: /?ed=2560
-- name: 美国 020
+- name: 美国 021
   type: trojan
   network: ws
   server: www.visa.com.hk
@@ -615,7 +641,7 @@ proxies:
     headers:
       Host: heihu880.pages.dev
     path: /?ed=2560
-- name: 美国 021
+- name: 美国 022
   type: trojan
   network: ws
   server: www.zsu.gov.ua
@@ -629,7 +655,7 @@ proxies:
     headers:
       Host: heihu880.pages.dev
     path: /?ed=2560
-- name: 美国 022
+- name: 美国 023
   type: trojan
   network: ws
   server: fbi.gov
@@ -643,7 +669,7 @@ proxies:
     headers:
       Host: heihu880.pages.dev
     path: /?ed=2560
-- name: 美国 023
+- name: 美国 024
   type: trojan
   network: ws
   server: www.gov.se
@@ -657,7 +683,7 @@ proxies:
     headers:
       Host: heihu880.pages.dev
     path: /?ed=2560
-- name: 美国 024
+- name: 美国 025
   type: trojan
   network: ws
   server: www.gov.ua
@@ -685,7 +711,7 @@ proxies:
     headers:
       Host: hsdgbuys.pages.dev
     path: /
-- name: 美国 025
+- name: 美国 026
   type: trojan
   network: ws
   server: iplocation.io
@@ -713,7 +739,7 @@ proxies:
     headers:
       Host: heihu880.pages.dev
     path: /?ed=2560
-- name: 美国 026
+- name: 美国 027
   type: trojan
   network: ws
   server: 104.25.165.81
@@ -727,7 +753,7 @@ proxies:
     headers:
       Host: top-azx.pages.dev
     path: /Az1.vpn.33.TOP/?ed=2560
-- name: 美国 027
+- name: 美国 028
   type: trojan
   network: ws
   server: www.ipaddress.my
@@ -741,7 +767,7 @@ proxies:
     headers:
       Host: heihu880.pages.dev
     path: /?ed=2560
-- name: 美国 028
+- name: 美国 029
   type: trojan
   network: ws
   server: 104.25.165.83
@@ -755,7 +781,7 @@ proxies:
     headers:
       Host: top-azx.pages.dev
     path: /Az1.vpn.33.TOP/?ed=2560
-- name: 美国 029
+- name: 美国 030
   type: trojan
   network: ws
   server: koma-yt.pages.dev
@@ -769,7 +795,7 @@ proxies:
     headers:
       Host: Koma-YT.PAGeS.Dev
     path: /tro8sFW1S91B6sZrM1?ed=2560
-- name: 美国 030
+- name: 美国 031
   type: trojan
   network: ws
   server: time.is
@@ -783,7 +809,7 @@ proxies:
     headers:
       Host: heihu880.pages.dev
     path: /?ed=2560
-- name: 美国 031
+- name: 美国 032
   type: trojan
   network: ws
   server: 172.66.46.254
@@ -797,7 +823,7 @@ proxies:
     headers:
       Host: dcf741e8.epeius-2gy.pages.dev
     path: /?ed=2560
-- name: 美国 032
+- name: 美国 033
   type: trojan
   network: ws
   server: ip.sb
@@ -811,7 +837,7 @@ proxies:
     headers:
       Host: fofang.pages.dev
     path: /?ed=2560
-- name: 美国 033
+- name: 美国 034
   type: trojan
   network: ws
   server: www.udemy.com
@@ -825,7 +851,7 @@ proxies:
     headers:
       Host: heihu880.pages.dev
     path: /?ed=2560
-- name: 美国 034
+- name: 美国 035
   type: trojan
   network: ws
   server: singapore.com
@@ -839,7 +865,7 @@ proxies:
     headers:
       Host: heihu880.pages.dev
     path: /?ed=2560
-- name: 美国 035
+- name: 美国 036
   type: trojan
   network: ws
   server: 104.17.148.22
@@ -853,7 +879,7 @@ proxies:
     headers:
       Host: redfree8-p1.pooriashop.ir
     path: /trTelegram
-- name: 美国 036
+- name: 美国 037
   type: trojan
   network: ws
   server: www.wto.org
@@ -867,7 +893,7 @@ proxies:
     headers:
       Host: heihu880.pages.dev
     path: /?ed=2560
-- name: 美国 037
+- name: 美国 038
   type: trojan
   network: ws
   server: 104.21.112.1
@@ -881,7 +907,7 @@ proxies:
     headers:
       Host: yellow-cloud-d53f.vavovi6084.workers.dev
     path: /?ed=2560
-- name: 美国 038
+- name: 美国 039
   type: trojan
   network: ws
   server: www.ipget.net
@@ -895,7 +921,7 @@ proxies:
     headers:
       Host: heihu880.pages.dev
     path: /?ed=2560
-- name: 美国 039
+- name: 美国 040
   type: trojan
   network: ws
   server: 104.18.27.94
@@ -909,7 +935,7 @@ proxies:
     headers:
       Host: heihu880.pages.dev
     path: /?ed=2560
-- name: 美国 040
+- name: 美国 041
   type: trojan
   network: ws
   server: www.pcmag.com
@@ -923,7 +949,7 @@ proxies:
     headers:
       Host: heihu880.pages.dev
     path: /?ed=2560
-- name: 美国 041
+- name: 美国 042
   type: trojan
   network: ws
   server: www.udacity.com
@@ -937,7 +963,7 @@ proxies:
     headers:
       Host: heihu880.pages.dev
     path: /?ed=2560
-- name: 美国 042
+- name: 美国 043
   type: trojan
   network: ws
   server: japan.com
@@ -951,7 +977,7 @@ proxies:
     headers:
       Host: heihu880.pages.dev
     path: /?ed=2560
-- name: 美国 043
+- name: 美国 044
   type: trojan
   network: ws
   server: www.visa.com.tw
@@ -965,7 +991,7 @@ proxies:
     headers:
       Host: heihu880.pages.dev
     path: /?ed=2560
-- name: 美国 044
+- name: 美国 045
   type: trojan
   network: ws
   server: 104.17.148.22
@@ -979,7 +1005,7 @@ proxies:
     headers:
       Host: redfree8-p1.pooriashop.ir
     path: /trLwW5jwrnymnOdqki?ed=2560
-- name: 美国 045
+- name: 美国 046
   type: trojan
   network: ws
   server: 45.82.14.144
@@ -993,7 +1019,7 @@ proxies:
     headers:
       Host: dns.google.com
     path: /
-- name: 美国 046
+- name: 美国 047
   type: trojan
   network: ws
   server: 38.207.133.204
@@ -1007,7 +1033,7 @@ proxies:
     headers:
       Host: qingming-b08.pages.dev
     path: /?ed=2560
-- name: 美国 047
+- name: 美国 048
   type: trojan
   network: ws
   server: 104.21.18.192
@@ -1021,7 +1047,7 @@ proxies:
     headers:
       Host: sAiKOXpUbGm.ZhkinGkuRD13.WorkErs.dEV
     path: /tr4BCdusB84159lWnu
-- name: 美国 048
+- name: 美国 049
   type: trojan
   network: ws
   server: edtunnel-dgp.pages.dev
@@ -1035,7 +1061,7 @@ proxies:
     headers:
       Host: heihu880.pages.dev
     path: /?ed=2560
-- name: 美国 049
+- name: 美国 050
   type: trojan
   network: ws
   server: 198.41.208.69
@@ -1063,7 +1089,7 @@ proxies:
     headers:
       Host: vkvd127.mycdn.me
     path: /
-- name: 美国 050
+- name: 美国 051
   type: vless
   network: ws
   server: 172.66.46.246
@@ -1104,7 +1130,7 @@ proxies:
       User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
         like Gecko) Chrome/120.0.0.0 Safari/537.36
     path: /ELiV2-RAY----ELiV2-RAY----ELiV2-RAY----ELiV2-RAY----ELiV2-RAY----ELiV2-RAY?ed=2560
-- name: 美国 051
+- name: 美国 052
   type: vless
   network: ws
   server: 104.18.36.24
@@ -1125,7 +1151,7 @@ proxies:
       User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
         like Gecko) Chrome/120.0.0.0 Safari/537.36
     path: /proxyip=zani.yaemiko.ggff.net/?JOKERRVPN_BIA_CHANEL
-- name: 美国 052
+- name: 美国 053
   type: vless
   network: ws
   server: www.speedtest.net
@@ -1145,7 +1171,7 @@ proxies:
       User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
         like Gecko) Chrome/120.0.0.0 Safari/537.36
     path: /Join----VPNCUSTOMIZE---Join----VPNCUSTOMIZE
-- name: 美国 053
+- name: 美国 054
   type: vless
   network: ws
   server: 172.66.40.99
@@ -1165,7 +1191,7 @@ proxies:
       User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
         like Gecko) Chrome/120.0.0.0 Safari/537.36
     path: /Telegram--ip_configs--Join--ip_configs--Telegram--ip_configs--Join--ip_configs--Telegram--ip_configs--Join--ip_configs--Telegram--ip_configs--Join--ip_configs--Telegram--ip_configs--Join--ip_configs?ed=2048
-- name: 美国 054
+- name: 美国 055
   type: vless
   network: ws
   server: www.speedtest.net
@@ -1185,7 +1211,7 @@ proxies:
       User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
         like Gecko) Chrome/120.0.0.0 Safari/537.36
     path: /
-- name: 美国 055
+- name: 美国 056
   type: vless
   network: ws
   server: 172.67.65.158
@@ -1205,7 +1231,7 @@ proxies:
       User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
         like Gecko) Chrome/120.0.0.0 Safari/537.36
     path: /Etb1L6YUdZFZuTOr?ed=2560
-- name: 美国 056
+- name: 美国 057
   type: vless
   network: ws
   server: www.bankonbasak.com
@@ -1226,7 +1252,7 @@ proxies:
       User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
         like Gecko) Chrome/120.0.0.0 Safari/537.36
     path: /proxyip=zani.yaemiko.ggff.net
-- name: 美国 057
+- name: 美国 058
   type: vless
   network: ws
   server: speedtest.net
@@ -1246,7 +1272,7 @@ proxies:
       User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
         like Gecko) Chrome/120.0.0.0 Safari/537.36
     path: /
-- name: 美国 058
+- name: 美国 059
   type: vless
   network: ws
   server: privasi.turah.my.id
@@ -1267,7 +1293,7 @@ proxies:
       User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
         like Gecko) Chrome/120.0.0.0 Safari/537.36
     path: /Free-CF-Proxy-AD192.3.113.4-19318?ed=2048
-- name: 美国 059
+- name: 美国 060
   type: vless
   network: grpc
   server: 172.67.74.133
@@ -1283,7 +1309,7 @@ proxies:
   grpc-opts:
     grpc-service-name: Telegram
   packet-encoding: xudp
-- name: 美国 060
+- name: 美国 061
   type: vless
   network: ws
   server: 172.66.40.99
@@ -1304,7 +1330,7 @@ proxies:
       User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
         like Gecko) Chrome/120.0.0.0 Safari/537.36
     path: /
-- name: 美国 061
+- name: 美国 062
   type: vless
   network: ws
   server: 104.26.0.108
@@ -1325,7 +1351,7 @@ proxies:
       User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
         like Gecko) Chrome/120.0.0.0 Safari/537.36
     path: /id5?ed=2560/?JKVPNTELEGRAM_CHANEL_JKVPN_JKVPN
-- name: 美国 062
+- name: 美国 063
   type: vless
   network: ws
   server: 104.26.1.108
@@ -1346,7 +1372,7 @@ proxies:
       User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
         like Gecko) Chrome/120.0.0.0 Safari/537.36
     path: /sg3/?-JKVPN_TELEGRAM_CHANEL_JKVPN_JKVPN_JKVPN
-- name: 美国 063
+- name: 美国 064
   type: vless
   network: ws
   server: cumhuriyet.com.tr
@@ -1367,7 +1393,7 @@ proxies:
       User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
         like Gecko) Chrome/120.0.0.0 Safari/537.36
     path: /
-- name: 美国 064
+- name: 美国 065
   type: vless
   network: ws
   server: www.speedtest.net
@@ -1388,7 +1414,7 @@ proxies:
       User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
         like Gecko) Chrome/120.0.0.0 Safari/537.36
     path: /
-- name: 美国 065
+- name: 美国 066
   type: vless
   network: ws
   server: 172.67.141.140
@@ -1408,7 +1434,7 @@ proxies:
       User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
         like Gecko) Chrome/120.0.0.0 Safari/537.36
     path: /QaaLdIiGgWNoIxOF?ed=2560
-- name: 美国 066
+- name: 美国 067
   type: vless
   network: ws
   server: 104.16.85.3
@@ -1428,7 +1454,7 @@ proxies:
       User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
         like Gecko) Chrome/120.0.0.0 Safari/537.36
     path: /6TvG8D6HimXKgdp2?ed=2560
-- name: 美国 067
+- name: 美国 068
   type: vless
   network: ws
   server: 104.18.26.90
@@ -1448,7 +1474,7 @@ proxies:
       User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
         like Gecko) Chrome/120.0.0.0 Safari/537.36
     path: /?ed=2560/
-- name: 美国 068
+- name: 美国 069
   type: vless
   network: ws
   server: 104.16.104.151
@@ -1468,7 +1494,7 @@ proxies:
       User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
         like Gecko) Chrome/120.0.0.0 Safari/537.36
     path: /?ed=2560
-- name: 美国 069
+- name: 美国 070
   type: vless
   network: ws
   server: www.speedtest.net
@@ -1489,7 +1515,7 @@ proxies:
       User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
         like Gecko) Chrome/120.0.0.0 Safari/537.36
     path: /76fe1f74-5804-4a5a-8b9d-5f877d90a9c6
-- name: 美国 070
+- name: 美国 071
   type: vless
   network: ws
   server: www.speedtest.net
@@ -1509,7 +1535,7 @@ proxies:
       User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
         like Gecko) Chrome/120.0.0.0 Safari/537.36
     path: /
-- name: 美国 071
+- name: 美国 072
   type: vmess
   network: ws
   server: v2ray.codefyinc.com
@@ -1524,7 +1550,7 @@ proxies:
     headers:
       Host: v2ray.codefyinc.com
     path: /vmessws
-- name: 美国 072
+- name: 美国 073
   type: vless
   network: ws
   server: 172.66.40.99
@@ -1544,7 +1570,7 @@ proxies:
       User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
         like Gecko) Chrome/120.0.0.0 Safari/537.36
     path: /Join-ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON
-- name: 美国 073
+- name: 美国 074
   type: vless
   network: ws
   server: 104.17.41.52
@@ -1584,7 +1610,7 @@ proxies:
       User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
         like Gecko) Chrome/120.0.0.0 Safari/537.36
     path: /telegram,
-- name: 美国 074
+- name: 美国 075
   type: vmess
   network: tcp
   server: 193.124.24.247
@@ -1610,7 +1636,7 @@ proxies:
     headers:
       Host: www.linemo.jp
     path: /viefast
-- name: 美国 075
+- name: 美国 076
   type: vmess
   network: ws
   server: s1.db-link.in
@@ -1625,7 +1651,7 @@ proxies:
     headers:
       Host: dabaius.webn.cc
     path: /dabai.inc09e03012ee5d2d79229cdf0acfb9a12
-- name: 美国 076
+- name: 美国 077
   type: vless
   network: ws
   server: mstr.fastly80.hosting-ip.com
@@ -1642,7 +1668,7 @@ proxies:
       User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
         like Gecko) Chrome/120.0.0.0 Safari/537.36
     path: /admin
-- name: 美国 077
+- name: 美国 078
   type: vless
   network: grpc
   server: pqh38v1.avoipok.shop
@@ -1654,7 +1680,7 @@ proxies:
   tfo: true
   client-fingerprint: chrome
   grpc-opts: {}
-- name: 美国 078
+- name: 美国 079
   type: vless
   network: ws
   server: zula.ir
@@ -1734,7 +1760,7 @@ proxies:
   tfo: true
   client-fingerprint: chrome
   grpc-opts: {}
-- name: 美国 079
+- name: 美国 080
   type: vless
   network: ws
   server: 104.21.3.219
@@ -1752,7 +1778,7 @@ proxies:
       User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
         like Gecko) Chrome/120.0.0.0 Safari/537.36
     path: /57ba2ab1
-- name: 美国 080
+- name: 美国 081
   type: vless
   network: grpc
   server: 54.36.114.253
@@ -1765,7 +1791,7 @@ proxies:
   client-fingerprint: chrome
   grpc-opts:
     grpc-service-name: ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON
-- name: 美国 081
+- name: 美国 082
   type: vmess
   network: tcp
   server: 165.140.216.141
@@ -1776,7 +1802,7 @@ proxies:
   tfo: true
   alterId: 0
   cipher: auto
-- name: 澳大利亚 001
+- name: 澳大利亚 002
   type: vless
   network: ws
   server: hk3.kaipi.link
@@ -1794,7 +1820,7 @@ proxies:
       User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
         like Gecko) Chrome/120.0.0.0 Safari/537.36
     path: /texaws
-- name: 美国 082
+- name: 美国 083
   type: vless
   network: grpc
   server: 51.89.118.126
@@ -1807,7 +1833,20 @@ proxies:
   client-fingerprint: chrome
   grpc-opts:
     grpc-service-name: ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON
-- name: 美国 083
+- name: 美国 084
+  type: vless
+  network: grpc
+  server: 54.36.117.130
+  port: 25369
+  uuid: 3bba9a08-157f-442b-b814-313e3ec7f350
+  skip-cert-verify: true
+  tls: true
+  udp: true
+  tfo: true
+  client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON
+- name: 美国 085
   type: vless
   network: ws
   server: 152.53.52.242
@@ -1871,7 +1910,7 @@ proxies:
   tfo: true
   alterId: 0
   cipher: auto
-- name: 美国 084
+- name: 美国 086
   type: vless
   network: ws
   server: openai.com
@@ -1889,35 +1928,6 @@ proxies:
       User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
         like Gecko) Chrome/120.0.0.0 Safari/537.36
     path: /?ed=2560
-- name: 美国 085
-  type: vless
-  network: ws
-  server: light-presence.oneeat.co
-  port: 80
-  uuid: 7e74ff43-3a90-48b3-8372-7d92a045c2d4
-  skip-cert-verify: true
-  tls: false
-  udp: true
-  tfo: true
-  client-fingerprint: chrome
-  ws-opts:
-    headers:
-      Host: light-presence.oneeat.co
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/120.0.0.0 Safari/537.36
-    path: /
-- name: 美国 086
-  type: vless
-  network: grpc
-  server: 45.82.251.180
-  port: 8880
-  uuid: e4824193-4f54-453b-d037-88368e85ef0e
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  tfo: true
-  client-fingerprint: chrome
-  grpc-opts: {}
 proxy-groups:
 - name: PROXY
   type: select
@@ -1933,30 +1943,31 @@ proxy-groups:
   - 日本 002
   - 日本 003
   - 日本 004
+  - 澳大利亚 001
+  - 美国 001
   - 荷兰 001
   - 荷兰 002
   - 荷兰 003
   - 比利时 001
-  - 美国 001
   - 美国 002
   - 美国 003
-  - 乌克兰 001
   - 美国 004
+  - 乌克兰 001
   - 美国 005
   - 美国 006
+  - 美国 007
   - 比利时 002
   - 德国 001
-  - 美国 007
   - 美国 008
   - 美国 009
   - 美国 010
   - 美国 011
+  - 美国 012
   - 法国 001
   - 比利时 003
   - 加拿大 001
   - 比利时 004
   - 比利时 005
-  - 美国 012
   - 美国 013
   - 美国 014
   - 美国 015
@@ -1969,10 +1980,10 @@ proxy-groups:
   - 美国 022
   - 美国 023
   - 美国 024
-  - 俄罗斯 001
   - 美国 025
-  - 丹麦 001
+  - 俄罗斯 001
   - 美国 026
+  - 丹麦 001
   - 美国 027
   - 美国 028
   - 美国 029
@@ -1996,10 +2007,10 @@ proxy-groups:
   - 美国 047
   - 美国 048
   - 美国 049
-  - 俄罗斯 002
   - 美国 050
-  - 巴西 001
+  - 俄罗斯 002
   - 美国 051
+  - 巴西 001
   - 美国 052
   - 美国 053
   - 美国 054
@@ -2022,30 +2033,30 @@ proxy-groups:
   - 美国 071
   - 美国 072
   - 美国 073
-  - 巴西 002
   - 美国 074
-  - 越南 001
+  - 巴西 002
   - 美国 075
+  - 越南 001
   - 美国 076
   - 美国 077
   - 美国 078
+  - 美国 079
   - 比利时 006
   - 俄罗斯 003
   - 俄罗斯 004
   - 英国 001
   - 俄罗斯 005
-  - 美国 079
   - 美国 080
   - 美国 081
-  - 澳大利亚 001
   - 美国 082
+  - 澳大利亚 002
   - 美国 083
+  - 美国 084
+  - 美国 085
   - 俄罗斯 006
   - 俄罗斯 007
   - 俄罗斯 008
   - 俄罗斯 009
-  - 美国 084
-  - 美国 085
   - 美国 086
 - name: LOAD-BALANCE
   type: load-balance
