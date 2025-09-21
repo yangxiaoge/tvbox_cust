@@ -132,11 +132,11 @@ proxies:
 - name: 日本 001
   type: trojan
   network: tcp
-  server: 160.16.63.16
+  server: 160.16.70.180
   port: 447
   password: 253bc477d4e43c209f2d427272968280
-  skip-cert-verify: true
-  sni: www.baidu.com
+  skip-cert-verify: false
+  sni: www.nintendogames.net
 - name: 日本 002
   type: trojan
   network: tcp
@@ -148,16 +148,56 @@ proxies:
 - name: 日本 003
   type: trojan
   network: tcp
-  server: 153.121.73.102
-  port: 3294
+  server: 160.16.72.33
+  port: 1924
   password: 253bc477d4e43c209f2d427272968280
   skip-cert-verify: false
   sni: www.nintendogames.net
 - name: 日本 004
   type: trojan
   network: tcp
+  server: 160.16.130.66
+  port: 2045
+  password: 253bc477d4e43c209f2d427272968280
+  skip-cert-verify: true
+  sni: www.nintendogames.net
+- name: 日本 005
+  type: trojan
+  network: tcp
+  server: 160.16.117.182
+  port: 4397
+  password: 253bc477d4e43c209f2d427272968280
+  skip-cert-verify: true
+  sni: www.nintendogames.net
+- name: 日本 006
+  type: trojan
+  network: tcp
+  server: 153.121.73.102
+  port: 3294
+  password: 253bc477d4e43c209f2d427272968280
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+- name: 日本 007
+  type: trojan
+  network: tcp
   server: 153.121.73.102
   port: 3296
+  password: 253bc477d4e43c209f2d427272968280
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+- name: 日本 008
+  type: trojan
+  network: tcp
+  server: 160.16.63.16
+  port: 447
+  password: 253bc477d4e43c209f2d427272968280
+  skip-cert-verify: true
+  sni: www.nintendogames.net
+- name: 日本 009
+  type: trojan
+  network: tcp
+  server: 153.121.73.102
+  port: 1924
   password: 253bc477d4e43c209f2d427272968280
   skip-cert-verify: false
   sni: www.nintendogames.net
@@ -1875,59 +1915,6 @@ proxies:
   tfo: true
   client-fingerprint: chrome
   grpc-opts: {}
-- name: 俄罗斯 007
-  type: vless
-  network: grpc
-  server: 185.231.205.246
-  port: 8880
-  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  tfo: true
-  client-fingerprint: chrome
-  grpc-opts: {}
-- name: 俄罗斯 008
-  type: vless
-  network: grpc
-  server: 185.231.205.253
-  port: 8880
-  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  tfo: true
-  client-fingerprint: chrome
-  grpc-opts: {}
-- name: 俄罗斯 009
-  type: vmess
-  network: tcp
-  server: 45.67.230.79
-  port: 11052
-  uuid: 314185f7-931d-4656-922d-0857e7afd224
-  skip-cert-verify: true
-  udp: true
-  tfo: true
-  alterId: 0
-  cipher: auto
-- name: 美国 086
-  type: vless
-  network: ws
-  server: openai.com
-  port: 443
-  uuid: 101e6a7d-7d10-4859-a626-8a76daab4547
-  servername: nkAnG2rEpLACE.airlineSHoma.Com
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  tfo: true
-  client-fingerprint: randomized
-  ws-opts:
-    headers:
-      Host: nkAnG2rEpLACE.airlineSHoma.Com
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/120.0.0.0 Safari/537.36
-    path: /?ed=2560
 proxy-groups:
 - name: PROXY
   type: select
@@ -1943,6 +1930,11 @@ proxy-groups:
   - 日本 002
   - 日本 003
   - 日本 004
+  - 日本 005
+  - 日本 006
+  - 日本 007
+  - 日本 008
+  - 日本 009
   - 澳大利亚 001
   - 美国 001
   - 荷兰 001
@@ -2054,10 +2046,6 @@ proxy-groups:
   - 美国 084
   - 美国 085
   - 俄罗斯 006
-  - 俄罗斯 007
-  - 俄罗斯 008
-  - 俄罗斯 009
-  - 美国 086
 - name: LOAD-BALANCE
   type: load-balance
   url: https://cp.cloudflare.com/generate_204
