@@ -132,60 +132,12 @@ proxies:
 - name: 日本 001
   type: trojan
   network: tcp
-  server: 160.16.63.16
-  port: 447
-  password: 253bc477d4e43c209f2d427272968280
-  skip-cert-verify: true
-  sni: www.nintendogames.net
-- name: 日本 002
-  type: trojan
-  network: tcp
-  server: 160.16.72.33
-  port: 1924
-  password: 253bc477d4e43c209f2d427272968280
-  skip-cert-verify: false
-  sni: www.nintendogames.net
-- name: 日本 003
-  type: trojan
-  network: tcp
-  server: 160.16.130.66
-  port: 2045
-  password: 253bc477d4e43c209f2d427272968280
-  skip-cert-verify: true
-  sni: www.nintendogames.net
-- name: 日本 004
-  type: trojan
-  network: tcp
-  server: 160.16.117.182
-  port: 4397
-  password: 253bc477d4e43c209f2d427272968280
-  skip-cert-verify: true
-  sni: www.nintendogames.net
-- name: 日本 005
-  type: trojan
-  network: tcp
-  server: 153.121.73.102
-  port: 3294
-  password: 253bc477d4e43c209f2d427272968280
-  skip-cert-verify: false
-  sni: www.nintendogames.net
-- name: 日本 006
-  type: trojan
-  network: tcp
-  server: 153.121.73.102
-  port: 3296
-  password: 253bc477d4e43c209f2d427272968280
-  skip-cert-verify: false
-  sni: www.nintendogames.net
-- name: 日本 007
-  type: trojan
-  network: tcp
   server: 202.181.103.246
   port: 443
   password: 253bc477d4e43c209f2d427272968280
   skip-cert-verify: true
   sni: www.nintendogames.net
-- name: 日本 008
+- name: 日本 002
   type: trojan
   network: tcp
   server: 160.16.236.32
@@ -193,7 +145,7 @@ proxies:
   password: 253bc477d4e43c209f2d427272968280
   skip-cert-verify: false
   sni: www.nintendogames.net
-- name: 日本 009
+- name: 日本 003
   type: trojan
   network: tcp
   server: 160.16.196.59
@@ -201,7 +153,31 @@ proxies:
   password: 253bc477d4e43c209f2d427272968280
   skip-cert-verify: false
   sni: www.nintendogames.net
-- name: 日本 010
+- name: 日本 004
+  type: trojan
+  network: tcp
+  server: 160.16.72.33
+  port: 1924
+  password: 253bc477d4e43c209f2d427272968280
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+- name: 日本 005
+  type: trojan
+  network: tcp
+  server: 160.16.130.66
+  port: 2045
+  password: 253bc477d4e43c209f2d427272968280
+  skip-cert-verify: true
+  sni: www.nintendogames.net
+- name: 日本 006
+  type: trojan
+  network: tcp
+  server: 160.16.117.182
+  port: 4397
+  password: 253bc477d4e43c209f2d427272968280
+  skip-cert-verify: true
+  sni: www.nintendogames.net
+- name: 日本 007
   type: trojan
   network: tcp
   server: 153.121.45.139
@@ -209,11 +185,35 @@ proxies:
   password: 253bc477d4e43c209f2d427272968280
   skip-cert-verify: false
   sni: www.nintendogames.net
-- name: 日本 011
+- name: 日本 008
   type: trojan
   network: tcp
   server: 160.16.72.33
   port: 3294
+  password: 253bc477d4e43c209f2d427272968280
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+- name: 日本 009
+  type: trojan
+  network: tcp
+  server: 160.16.63.16
+  port: 447
+  password: 253bc477d4e43c209f2d427272968280
+  skip-cert-verify: true
+  sni: www.nintendogames.net
+- name: 日本 010
+  type: trojan
+  network: tcp
+  server: 153.121.73.102
+  port: 3294
+  password: 253bc477d4e43c209f2d427272968280
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+- name: 日本 011
+  type: trojan
+  network: tcp
+  server: 153.121.73.102
+  port: 3296
   password: 253bc477d4e43c209f2d427272968280
   skip-cert-verify: false
   sni: www.nintendogames.net
@@ -1917,6 +1917,19 @@ proxies:
   tfo: true
   client-fingerprint: chrome
   grpc-opts: {}
+- name: 美国 085
+  type: vmess
+  network: ws
+  server: GgGgGGgGggggGg.222769.XYZ
+  port: 80
+  uuid: 2e65577e-8fdb-4bb1-a495-96f3122099a7
+  tls: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: gggggggggggggg.222769.xyz
+    path: /f6taOMcOSZb9TPR
 proxy-groups:
 - name: PROXY
   type: select
@@ -2049,6 +2062,7 @@ proxy-groups:
   - 美国 084
   - 俄罗斯 006
   - 俄罗斯 007
+  - 美国 085
 - name: LOAD-BALANCE
   type: load-balance
   url: https://cp.cloudflare.com/generate_204
