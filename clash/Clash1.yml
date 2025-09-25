@@ -145,6 +145,14 @@ proxies:
   password: 253bc477d4e43c209f2d427272968280
   skip-cert-verify: false
   sni: www.nintendogames.net
+- name: 美国 001
+  type: trojan
+  network: tcp
+  server: auto.wgnmdgfw.com
+  port: 16327
+  password: 90f45c05-917f-3b1b-a582-899cfe4cf7b3
+  skip-cert-verify: false
+  sni: eplcgame.com
 - name: 日本 003
   type: trojan
   network: tcp
@@ -193,23 +201,6 @@ proxies:
   password: 253bc477d4e43c209f2d427272968280
   skip-cert-verify: false
   sni: www.nintendogames.net
-- name: 美国 001
-  type: trojan
-  network: tcp
-  server: auto.wgnmdgfw.com
-  port: 16327
-  password: 90f45c05-917f-3b1b-a582-899cfe4cf7b3
-  skip-cert-verify: false
-  sni: eplcgame.com
-- name: 美国 002
-  type: vmess
-  network: tcp
-  server: 38.147.188.112
-  port: 24939
-  uuid: 928408df-3114-4b57-b852-f8d120ce056c
-  tls: false
-  alterId: 0
-  cipher: auto
 - name: 日本 009
   type: trojan
   network: tcp
@@ -1917,6 +1908,32 @@ proxies:
   client-fingerprint: chrome
   grpc-opts:
     grpc-service-name: ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON
+- name: 美国 002
+  type: vmess
+  network: ws
+  server: bbbbbbbbb.222769.xyz
+  port: 80
+  uuid: 2e65577e-8fdb-4bb1-a495-96f3122099a7
+  tls: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: bbbbbbbbb.222769.xyz
+    path: /f6taOMcOSZb9TPR
+- name: 法国 002
+  type: vmess
+  network: ws
+  server: 51.75.161.102
+  port: 443
+  uuid: 1805c3ae-ed84-4e7e-8ca2-fe9acd0897b0
+  tls: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: bLAZe-UK-102.bLaZESErvErS1.Site
+    path: /linkvkwss
 proxy-groups:
 - name: PROXY
   type: select
@@ -1930,14 +1947,13 @@ proxy-groups:
   proxies: &id001
   - 日本 001
   - 日本 002
+  - 美国 001
   - 日本 003
   - 日本 004
   - 日本 005
   - 日本 006
   - 日本 007
   - 日本 008
-  - 美国 001
-  - 美国 002
   - 日本 009
   - 日本 010
   - 日本 011
@@ -2051,6 +2067,8 @@ proxy-groups:
   - 澳大利亚 001
   - 美国 084
   - 美国 085
+  - 美国 002
+  - 法国 002
 - name: LOAD-BALANCE
   type: load-balance
   url: https://cp.cloudflare.com/generate_204
