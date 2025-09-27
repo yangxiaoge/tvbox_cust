@@ -145,27 +145,19 @@ proxies:
   password: 253bc477d4e43c209f2d427272968280
   skip-cert-verify: false
   sni: www.nintendogames.net
-- name: 美国 001
-  type: trojan
-  network: tcp
-  server: auto.wgnmdgfw.com
-  port: 16327
-  password: 90f45c05-917f-3b1b-a582-899cfe4cf7b3
-  skip-cert-verify: false
-  sni: eplcgame.com
 - name: 日本 003
   type: trojan
   network: tcp
-  server: 160.16.231.103
-  port: 1331
+  server: 160.16.68.250
+  port: 3160
   password: 253bc477d4e43c209f2d427272968280
   skip-cert-verify: false
   sni: www.nintendogames.net
 - name: 日本 004
   type: trojan
   network: tcp
-  server: 160.16.68.250
-  port: 3160
+  server: 160.16.231.103
+  port: 1331
   password: 253bc477d4e43c209f2d427272968280
   skip-cert-verify: false
   sni: www.nintendogames.net
@@ -188,7 +180,7 @@ proxies:
 - name: 日本 007
   type: trojan
   network: tcp
-  server: 153.121.45.139
+  server: 160.16.87.174
   port: 1700
   password: 253bc477d4e43c209f2d427272968280
   skip-cert-verify: false
@@ -201,10 +193,18 @@ proxies:
   password: 253bc477d4e43c209f2d427272968280
   skip-cert-verify: false
   sni: www.nintendogames.net
+- name: 美国 001
+  type: trojan
+  network: tcp
+  server: auto.wgnmdgfw.com
+  port: 16327
+  password: 90f45c05-917f-3b1b-a582-899cfe4cf7b3
+  skip-cert-verify: false
+  sni: eplcgame.com
 - name: 日本 009
   type: trojan
   network: tcp
-  server: 160.16.87.174
+  server: 153.121.45.139
   port: 1700
   password: 253bc477d4e43c209f2d427272968280
   skip-cert-verify: false
@@ -1942,6 +1942,19 @@ proxies:
     headers:
       Host: bLAZe-UK-102.bLaZESErvErS1.Site
     path: /linkvkwss
+- name: 美国 086
+  type: vmess
+  network: ws
+  server: dddvvbn.931.pp.ua
+  port: 443
+  uuid: 4174b95d-115e-4d39-add6-1f8db95bb860
+  tls: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: dddvvbn.931.pp.ua
+    path: /6We3U9Df1WGxgFnoFPw1
 proxy-groups:
 - name: PROXY
   type: select
@@ -1955,13 +1968,13 @@ proxy-groups:
   proxies: &id001
   - 日本 001
   - 日本 002
-  - 美国 001
   - 日本 003
   - 日本 004
   - 日本 005
   - 日本 006
   - 日本 007
   - 日本 008
+  - 美国 001
   - 日本 009
   - 日本 010
   - 日本 011
@@ -2078,6 +2091,7 @@ proxy-groups:
   - 美国 085
   - 美国 002
   - 法国 002
+  - 美国 086
 - name: LOAD-BALANCE
   type: load-balance
   url: https://cp.cloudflare.com/generate_204
