@@ -144,22 +144,14 @@ proxies:
     headers:
       Host: baidu.com
     path: /oooo
-- name: 亚太地区 001
-  type: trojan
-  network: tcp
-  server: naiu-hk.05vr9nyqg5.download
-  port: 13007
-  password: dce3c42b-f259-4b18-b5c1-a42ebef4e732
-  skip-cert-verify: false
-  sni: cloudflare.node-ssl.cdn-alibaba.com
 - name: 中国 002
   type: trojan
   network: tcp
-  server: 58.152.53.214
+  server: 58.152.30.87
   port: 443
   password: c53647f3153f784b3c695ffbe5fb43c0
-  skip-cert-verify: true
-  sni: www.baidu.com
+  skip-cert-verify: false
+  sni: www.nintendogames.net
 - name: 中国 003
   type: trojan
   network: tcp
@@ -171,7 +163,7 @@ proxies:
 - name: 日本 001
   type: trojan
   network: tcp
-  server: 160.16.144.208
+  server: 160.16.106.144
   port: 316
   password: c53647f3153f784b3c695ffbe5fb43c0
   skip-cert-verify: true
@@ -179,7 +171,7 @@ proxies:
 - name: 日本 002
   type: trojan
   network: tcp
-  server: 160.16.144.208
+  server: 160.16.106.144
   port: 1331
   password: c53647f3153f784b3c695ffbe5fb43c0
   skip-cert-verify: true
@@ -187,68 +179,12 @@ proxies:
 - name: 日本 003
   type: trojan
   network: tcp
-  server: 160.16.144.208
-  port: 2283
-  password: c53647f3153f784b3c695ffbe5fb43c0
-  skip-cert-verify: true
-  sni: www.baidu.com
-- name: 日本 004
-  type: trojan
-  network: tcp
-  server: 160.16.138.24
-  port: 5041
-  password: c53647f3153f784b3c695ffbe5fb43c0
-  skip-cert-verify: true
-  sni: www.baidu.com
-- name: 日本 005
-  type: trojan
-  network: tcp
-  server: 160.16.144.208
-  port: 2381
-  password: c53647f3153f784b3c695ffbe5fb43c0
-  skip-cert-verify: true
-  sni: www.baidu.com
-- name: 日本 006
-  type: trojan
-  network: tcp
-  server: 160.16.124.55
-  port: 24673
-  password: c53647f3153f784b3c695ffbe5fb43c0
-  skip-cert-verify: true
-  sni: www.baidu.com
-- name: 中国 004
-  type: trojan
-  network: tcp
-  server: 58.152.30.87
-  port: 443
-  password: c53647f3153f784b3c695ffbe5fb43c0
-  skip-cert-verify: false
-  sni: www.nintendogames.net
-- name: 日本 007
-  type: trojan
-  network: tcp
-  server: 160.16.106.144
-  port: 316
-  password: c53647f3153f784b3c695ffbe5fb43c0
-  skip-cert-verify: true
-  sni: www.baidu.com
-- name: 日本 008
-  type: trojan
-  network: tcp
-  server: 160.16.106.144
-  port: 1331
-  password: c53647f3153f784b3c695ffbe5fb43c0
-  skip-cert-verify: true
-  sni: www.baidu.com
-- name: 日本 009
-  type: trojan
-  network: tcp
   server: 153.121.56.122
   port: 5041
   password: c53647f3153f784b3c695ffbe5fb43c0
   skip-cert-verify: true
   sni: www.baidu.com
-- name: 日本 010
+- name: 日本 004
   type: trojan
   network: tcp
   server: 153.121.56.122
@@ -256,7 +192,7 @@ proxies:
   password: c53647f3153f784b3c695ffbe5fb43c0
   skip-cert-verify: true
   sni: www.baidu.com
-- name: 日本 011
+- name: 日本 005
   type: trojan
   network: tcp
   server: 160.16.106.144
@@ -264,11 +200,88 @@ proxies:
   password: c53647f3153f784b3c695ffbe5fb43c0
   skip-cert-verify: true
   sni: www.baidu.com
-- name: 日本 012
+- name: 日本 006
   type: trojan
   network: tcp
   server: 160.16.106.144
   port: 2467
+  password: c53647f3153f784b3c695ffbe5fb43c0
+  skip-cert-verify: true
+  sni: www.baidu.com
+- name: 美国 001
+  type: trojan
+  network: ws
+  server: 172.67.192.215
+  port: 443
+  password: d0728e94-82c2-456b-b5d4-eeab540599df
+  skip-cert-verify: false
+  udp: true
+  sni: joss.krikkrik.xyz
+  ws-opts:
+    headers:
+      Host: joss.krikkrik.xyz
+    path: /Free-VPN-CF-Geo-Project/AE5
+- name: 亚太地区 001
+  type: trojan
+  network: tcp
+  server: naiu-hk.05vr9nyqg5.download
+  port: 13007
+  password: dce3c42b-f259-4b18-b5c1-a42ebef4e732
+  skip-cert-verify: false
+  sni: cloudflare.node-ssl.cdn-alibaba.com
+- name: 中国 004
+  type: trojan
+  network: tcp
+  server: 58.152.53.214
+  port: 443
+  password: c53647f3153f784b3c695ffbe5fb43c0
+  skip-cert-verify: true
+  sni: www.baidu.com
+- name: 日本 007
+  type: trojan
+  network: tcp
+  server: 160.16.144.208
+  port: 316
+  password: c53647f3153f784b3c695ffbe5fb43c0
+  skip-cert-verify: true
+  sni: www.baidu.com
+- name: 日本 008
+  type: trojan
+  network: tcp
+  server: 160.16.144.208
+  port: 1331
+  password: c53647f3153f784b3c695ffbe5fb43c0
+  skip-cert-verify: true
+  sni: www.baidu.com
+- name: 日本 009
+  type: trojan
+  network: tcp
+  server: 160.16.144.208
+  port: 2283
+  password: c53647f3153f784b3c695ffbe5fb43c0
+  skip-cert-verify: true
+  sni: www.baidu.com
+- name: 日本 010
+  type: trojan
+  network: tcp
+  server: 160.16.138.24
+  port: 5041
+  password: c53647f3153f784b3c695ffbe5fb43c0
+  skip-cert-verify: true
+  sni: www.baidu.com
+- name: 日本 011
+  type: trojan
+  network: tcp
+  server: 160.16.144.208
+  port: 2381
+  password: c53647f3153f784b3c695ffbe5fb43c0
+  skip-cert-verify: true
+  sni: www.baidu.com
+- name: 日本 012
+  type: trojan
+  network: tcp
+  server: 160.16.124.55
+  port: 24673
   password: c53647f3153f784b3c695ffbe5fb43c0
   skip-cert-verify: true
   sni: www.baidu.com
@@ -555,7 +568,7 @@ proxies:
     headers:
       Host: serkat.org
     path: linkvws
-- name: 美国 001
+- name: 美国 002
   type: vmess
   network: ws
   server: seribus.org
@@ -585,7 +598,7 @@ proxies:
     headers:
       Host: pelang.org
     path: linkvws
-- name: 美国 002
+- name: 美国 003
   type: vmess
   network: ws
   server: 172.67.234.68
@@ -600,7 +613,7 @@ proxies:
     headers:
       Host: foxpol.fovi.tk
     path: /eisasqa
-- name: 美国 003
+- name: 美国 004
   type: vmess
   network: tcp
   server: 165.140.216.141
@@ -611,7 +624,7 @@ proxies:
   tfo: true
   alterId: 0
   cipher: auto
-- name: 美国 004
+- name: 美国 005
   type: vmess
   network: tcp
   server: 162.19.205.162
@@ -622,7 +635,7 @@ proxies:
   tfo: true
   alterId: 0
   cipher: auto
-- name: 美国 005
+- name: 美国 006
   type: vmess
   network: tcp
   server: 15.235.163.157
@@ -633,7 +646,7 @@ proxies:
   tfo: true
   alterId: 0
   cipher: auto
-- name: 美国 006
+- name: 美国 007
   type: vmess
   network: ws
   server: 15.204.64.211
@@ -648,7 +661,7 @@ proxies:
     headers:
       Host: kampong.org
     path: linkvws
-- name: 美国 007
+- name: 美国 008
   type: vmess
   network: ws
   server: 15.204.64.214
@@ -663,7 +676,7 @@ proxies:
     headers:
       Host: yichueng.org
     path: linkvws
-- name: 美国 008
+- name: 美国 009
   type: vmess
   network: tcp
   server: 15.204.234.200
@@ -674,7 +687,7 @@ proxies:
   tfo: true
   alterId: 0
   cipher: auto
-- name: 美国 009
+- name: 美国 010
   type: vmess
   network: tcp
   server: 15.204.11.190
@@ -685,7 +698,7 @@ proxies:
   tfo: true
   alterId: 0
   cipher: auto
-- name: 美国 010
+- name: 美国 011
   type: vmess
   network: ws
   server: 148.113.153.112
@@ -745,7 +758,7 @@ proxies:
     headers:
       Host: serkat.org
     path: /linkvws
-- name: 美国 011
+- name: 美国 012
   type: vless
   network: grpc
   server: 51.89.118.126
@@ -758,7 +771,7 @@ proxies:
   client-fingerprint: chrome
   grpc-opts:
     grpc-service-name: ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON
-- name: 美国 012
+- name: 美国 013
   type: vless
   network: grpc
   server: 85.209.195.133
@@ -770,7 +783,7 @@ proxies:
   tfo: true
   client-fingerprint: chrome
   grpc-opts: {}
-- name: 美国 013
+- name: 美国 014
   type: vless
   network: grpc
   server: 638942644808587337.abadan-drc-tusacaf.info
@@ -898,7 +911,7 @@ proxies:
   client-fingerprint: chrome
   grpc-opts:
     grpc-service-name: ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON
-- name: 美国 014
+- name: 美国 015
   type: vless
   network: grpc
   server: 51.178.253.133
@@ -963,7 +976,7 @@ proxies:
   client-fingerprint: chrome
   grpc-opts:
     grpc-service-name: ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON
-- name: 美国 015
+- name: 美国 016
   type: vless
   network: grpc
   server: 152.228.242.123
@@ -1085,7 +1098,7 @@ proxies:
   tfo: true
   client-fingerprint: chrome
   grpc-opts: {}
-- name: 美国 016
+- name: 美国 017
   type: vless
   network: grpc
   server: 638930975302281795.helsinki-drc-tusabu.info
@@ -1109,7 +1122,7 @@ proxies:
   tfo: true
   client-fingerprint: chrome
   grpc-opts: {}
-- name: 美国 017
+- name: 美国 018
   type: vless
   network: grpc
   server: 94.131.118.98
@@ -1157,7 +1170,7 @@ proxies:
   tfo: true
   client-fingerprint: chrome
   grpc-opts: {}
-- name: 美国 018
+- name: 美国 019
   type: vless
   network: grpc
   server: 638940560407102132.copenhagen-drc-tusacaf.info
@@ -1269,7 +1282,7 @@ proxies:
   tfo: true
   client-fingerprint: chrome
   grpc-opts: {}
-- name: 美国 019
+- name: 美国 020
   type: vmess
   network: ws
   server: 216.173.69.250
@@ -1362,7 +1375,7 @@ proxies:
     headers:
       Host: fapeng.org
     path: linkvws
-- name: 美国 020
+- name: 美国 021
   type: vmess
   network: ws
   server: ebc.zoom.us
@@ -1377,7 +1390,7 @@ proxies:
     headers:
       Host: node4.rtxconfigz.com
     path: /
-- name: 美国 021
+- name: 美国 022
   type: vmess
   network: ws
   server: 209.126.84.189
@@ -1392,7 +1405,7 @@ proxies:
     headers:
       Host: 209.126.84.189
     path: /vmessws
-- name: 美国 022
+- name: 美国 023
   type: vmess
   network: ws
   server: 1a2d514b-37cf-499f-8d08-d017a92ab5bb.asoul-ava.top
@@ -1407,7 +1420,7 @@ proxies:
     headers:
       Host: 1a2d514b-37cf-499f-8d08-d017a92ab5bb.asoul-ava.top
     path: /azumase.ren
-- name: 美国 023
+- name: 美国 024
   type: vmess
   network: ws
   server: 15.235.85.156
@@ -1794,7 +1807,7 @@ proxies:
       User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
         like Gecko) Chrome/120.0.0.0 Safari/537.36
     path: /snippets/ip=proxyip.fxxk.dedyn.io:443?ed=2560
-- name: 美国 024
+- name: 美国 025
   type: vless
   network: ws
   server: 155.248.214.92
@@ -1992,7 +2005,7 @@ proxies:
     headers:
       Host: kampong.org
     path: linkvws
-- name: 美国 025
+- name: 美国 026
   type: vmess
   network: ws
   server: 15.204.103.7
@@ -2183,7 +2196,7 @@ proxies:
     headers:
       Host: o.metuji.com
     path: /linkvws
-- name: 美国 026
+- name: 美国 027
   type: vmess
   network: ws
   server: 15.235.50.172
@@ -2269,7 +2282,7 @@ proxies:
     headers:
       Host: lammaland.org
     path: linkvws
-- name: 美国 027
+- name: 美国 028
   type: vmess
   network: ws
   server: masjide.org
@@ -2299,7 +2312,7 @@ proxies:
     headers:
       Host: f.khilei.com
     path: /linkvws
-- name: 美国 028
+- name: 美国 029
   type: vmess
   network: tcp
   server: 38.12.83.217
@@ -2352,7 +2365,7 @@ proxies:
   tfo: true
   client-fingerprint: chrome
   grpc-opts: {}
-- name: 美国 029
+- name: 美国 030
   type: vless
   network: ws
   server: xn--ktff-jt6hr36l.tencentapp.cn
@@ -2370,7 +2383,7 @@ proxies:
       User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
         like Gecko) Chrome/120.0.0.0 Safari/537.36
     path: /snippets
-- name: 美国 030
+- name: 美国 031
   type: vless
   network: ws
   server: 198.202.211.61
@@ -2546,7 +2559,7 @@ proxies:
   tfo: true
   client-fingerprint: chrome
   grpc-opts: {}
-- name: 美国 031
+- name: 美国 032
   type: vless
   network: ws
   server: 104.16.3.5
@@ -2606,7 +2619,7 @@ proxies:
   tfo: true
   client-fingerprint: chrome
   grpc-opts: {}
-- name: 美国 032
+- name: 美国 033
   type: vless
   network: grpc
   server: 45.12.133.235
@@ -2618,7 +2631,7 @@ proxies:
   tfo: true
   client-fingerprint: chrome
   grpc-opts: {}
-- name: 美国 033
+- name: 美国 034
   type: vless
   network: grpc
   server: 85.209.153.82
@@ -2630,7 +2643,7 @@ proxies:
   tfo: true
   client-fingerprint: chrome
   grpc-opts: {}
-- name: 美国 034
+- name: 美国 035
   type: vmess
   network: ws
   server: cf.fovi.tk
@@ -2645,7 +2658,7 @@ proxies:
     headers:
       Host: foxpol.fovi.tk
     path: /eisasqa
-- name: 美国 035
+- name: 美国 036
   type: vmess
   network: tcp
   server: 51.161.130.101
@@ -2668,7 +2681,7 @@ proxies:
   tfo: true
   client-fingerprint: chrome
   grpc-opts: {}
-- name: 美国 036
+- name: 美国 037
   type: vless
   network: ws
   server: 198.62.62.229
@@ -2711,7 +2724,7 @@ proxies:
   client-fingerprint: chrome
   grpc-opts:
     grpc-service-name: '@Evay_vpn_bot----@Evay_vpn_bot----@Evay_vpn_bot----@Evay_vpn_bot----@Evay_vpn_bot----@Evay_vpn_bot----@Evay_vpn_bot----@Evay_vpn_bot----@Evay_vpn_bot----@Evay_vpn_bot----@Evay_vpn_bot----@Evay_vpn_bot----@Evay_vpn_bot----@Evay_vpn_bot----@Evay_vpn_bot----@Evay_vpn_bot----@Evay_vpn_bot----@Evay_vpn_bot----@Evay_vpn_bot----@Evay_vpn_bot----@Evay_vpn_bot'
-- name: 美国 037
+- name: 美国 038
   type: vless
   network: grpc
   server: 86.104.74.155
@@ -2735,7 +2748,7 @@ proxies:
   tfo: true
   client-fingerprint: chrome
   grpc-opts: {}
-- name: 美国 038
+- name: 美国 039
   type: vless
   network: ws
   server: 104.21.36.57
@@ -2789,7 +2802,7 @@ proxies:
   tfo: true
   client-fingerprint: chrome
   grpc-opts: {}
-- name: 美国 039
+- name: 美国 040
   type: vless
   network: ws
   server: ovhwuxian.pai50288.uk
@@ -26219,7 +26232,7 @@ proxies:
   skip-cert-verify: true
   alterId: 0
   cipher: auto
-- name: 美国 040
+- name: 美国 044
   type: vmess
   network: ws
   server: support.zoom.us
@@ -26232,7 +26245,7 @@ proxies:
     headers:
       Host: node4.rtxconfigz.com
     path: /
-- name: 美国 044
+- name: 美国 045
   type: vless
   network: ws
   server: wangcai216.cloudflare.182682.xyz
@@ -26256,7 +26269,7 @@ proxies:
   tls: true
   udp: true
   tfo: false
-- name: 美国 045
+- name: 美国 051
   type: vmess
   network: ws
   server: t1.620720.xyz
@@ -26270,7 +26283,7 @@ proxies:
     headers:
       Host: t1.620720.xyz
     path: /
-- name: 美国 051
+- name: 美国 185
   type: vless
   network: ws
   server: nrtcfdns.zone.id
@@ -26478,21 +26491,6 @@ proxies:
   tls: true
   udp: true
   tfo: false
-- name: 加拿大 004
-  type: vless
-  network: ws
-  server: mtn----join.outline-vpn.cloud
-  port: 80
-  uuid: a93eacd2-2852-4d84-9355-fd1e6477dccc
-  servername: tunn.free.hr
-  skip-cert-verify: false
-  tls: true
-  udp: true
-  tfo: false
-  ws-opts:
-    headers:
-      Host: tunn.free.hr
-    path: /?ed=2048
 - name: 美国 1053
   type: vless
   network: ws
@@ -28459,7 +28457,7 @@ proxies:
   skip-cert-verify: true
   alterId: 0
   cipher: auto
-- name: 美国 185
+- name: 美国 1134
   type: vless
   network: ws
   server: 104.20.2.221
@@ -28474,7 +28472,7 @@ proxies:
     headers:
       Host: bycf.lzjnb.shop
     path: /?ed=2560
-- name: 美国 1134
+- name: 美国 1135
   type: vless
   network: ws
   server: blog.cloudflare.com
@@ -28488,7 +28486,7 @@ proxies:
     headers:
       Host: freedom.pusytroller.cf
     path: /
-- name: 美国 1135
+- name: 美国 1136
   type: vless
   network: ws
   server: openai.com
@@ -28518,22 +28516,6 @@ proxies:
     headers:
       Host: always-online1.lp-airdrop.top
     path: Path/Telegram
-- name: 加拿大 011
-  type: vless
-  network: ws
-  server: mtn--join.outline-vpn.cloud
-  port: 443
-  uuid: b9ad895b-12ac-40fc-a5ac-a5b2a1285001
-  servername: 3k.pureboy.eu.org
-  skip-cert-verify: false
-  tls: true
-  udp: true
-  tfo: false
-  client-fingerprint: chrome
-  ws-opts:
-    headers:
-      Host: 3k.pureboy.eu.org
-    path: /?ed=2048
 proxy-groups:
 - name: PROXY
   type: select
@@ -28546,7 +28528,6 @@ proxy-groups:
   type: select
   proxies: &id001
   - 中国 001
-  - 亚太地区 001
   - 中国 002
   - 中国 003
   - 日本 001
@@ -28555,6 +28536,8 @@ proxy-groups:
   - 日本 004
   - 日本 005
   - 日本 006
+  - 美国 001
+  - 亚太地区 001
   - 中国 004
   - 日本 007
   - 日本 008
@@ -28593,9 +28576,8 @@ proxy-groups:
   - 日本 019
   - 日本 020
   - 法国 001
-  - 美国 001
-  - 比利时 001
   - 美国 002
+  - 比利时 001
   - 美国 003
   - 美国 004
   - 美国 005
@@ -28604,12 +28586,13 @@ proxy-groups:
   - 美国 008
   - 美国 009
   - 美国 010
+  - 美国 011
   - 日本 021
   - 德国 001
   - 比利时 002
-  - 美国 011
   - 美国 012
   - 美国 013
+  - 美国 014
   - 比利时 003
   - 法国 002
   - 法国 003
@@ -28619,12 +28602,12 @@ proxy-groups:
   - 法国 004
   - 荷兰 001
   - 比利时 005
-  - 美国 014
+  - 美国 015
   - 德国 002
   - 法国 005
   - 法国 006
   - 法国 007
-  - 美国 015
+  - 美国 016
   - 德国 003
   - 荷兰 002
   - 法国 008
@@ -28634,13 +28617,13 @@ proxy-groups:
   - 德国 005
   - 德国 006
   - 荷兰 004
-  - 美国 016
-  - 法国 010
   - 美国 017
+  - 法国 010
+  - 美国 018
   - 荷兰 005
   - 荷兰 006
   - 荷兰 007
-  - 美国 018
+  - 美国 019
   - 荷兰 008
   - 法国 011
   - 法国 012
@@ -28649,17 +28632,17 @@ proxy-groups:
   - 乌克兰 004
   - 乌克兰 005
   - 乌克兰 006
-  - 美国 019
+  - 美国 020
   - 比利时 006
   - 法国 013
   - 德国 007
   - 德国 008
   - 中国 025
   - 比利时 007
-  - 美国 020
   - 美国 021
   - 美国 022
   - 美国 023
+  - 美国 024
   - 法国 014
   - 法国 015
   - 德国 009
@@ -28686,7 +28669,7 @@ proxy-groups:
   - 法国 018
   - 中国 026
   - 加拿大 001
-  - 美国 024
+  - 美国 025
   - 韩国 001
   - 法国 019
   - 法国 020
@@ -28697,7 +28680,7 @@ proxy-groups:
   - 比利时 022
   - 比利时 023
   - 比利时 024
-  - 美国 025
+  - 美国 026
   - 比利时 025
   - IPV6 001
   - 中国 027
@@ -28710,20 +28693,20 @@ proxy-groups:
   - 法国 021
   - 比利时 031
   - 比利时 032
-  - 美国 026
+  - 美国 027
   - 比利时 033
   - 英国 002
   - 比利时 034
   - 法国 022
   - 法国 023
-  - 美国 027
-  - 比利时 035
   - 美国 028
+  - 比利时 035
+  - 美国 029
   - 比利时 036
   - 比利时 037
   - 日本 022
-  - 美国 029
   - 美国 030
+  - 美国 031
   - 俄罗斯 003
   - 俄罗斯 004
   - 俄罗斯 005
@@ -28737,25 +28720,25 @@ proxy-groups:
   - 乌克兰 008
   - 乌克兰 009
   - 乌克兰 010
-  - 美国 031
+  - 美国 032
   - 波兰 001
   - 日本 023
   - 荷兰 010
-  - 美国 032
   - 美国 033
   - 美国 034
   - 美国 035
-  - 日本 024
   - 美国 036
+  - 日本 024
+  - 美国 037
   - 荷兰 011
   - 乌克兰 011
-  - 美国 037
-  - 乌克兰 012
   - 美国 038
+  - 乌克兰 012
+  - 美国 039
   - 俄罗斯 007
   - 荷兰 012
   - 荷兰 013
-  - 美国 039
+  - 美国 040
   - 中国 028
   - 中国 029
   - 日本 025
@@ -30559,11 +30542,11 @@ proxy-groups:
   - 美国 1041
   - 美国 1042
   - 阿塞拜疆 001
-  - 美国 040
   - 美国 044
-  - 德国 039
   - 美国 045
+  - 德国 039
   - 美国 051
+  - 美国 185
   - 美国 1043
   - 美国 1044
   - 法国 135
@@ -30579,7 +30562,6 @@ proxy-groups:
   - 美国 1051
   - 法国 137
   - 美国 1052
-  - 加拿大 004
   - 美国 1053
   - 德国 050
   - 俄罗斯 077
@@ -30739,11 +30721,10 @@ proxy-groups:
   - 中国 138
   - 中国 139
   - 中国 140
-  - 美国 185
   - 美国 1134
   - 美国 1135
+  - 美国 1136
   - 加拿大 010
-  - 加拿大 011
 - name: LOAD-BALANCE
   type: load-balance
   url: https://cp.cloudflare.com/generate_204
