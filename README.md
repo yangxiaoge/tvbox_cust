@@ -26,9 +26,10 @@ https://yangxiaoge.github.io/yingshi
   - 自用：https://github.com/yangxiaoge/tvbox_cust/raw/refs/heads/master/tvbox/多仓.json
 - 大佬仓
   - 饭太硬: http://www.饭太硬.com/tv  [导航](http://www.饭太硬.com/tv)
-  - 王二小: http://tvbox.王二小放牛娃.top
+  - 王二小: http://tvbox.王二小放牛娃.top 
   - OK1: http://ok321.top/tv  [抓包弹幕](http://dm.qxq6.com/zy/api.php?url=https://v.qq.com/x/cover/mzc0020087cqggc/h4101viilc8.html)
-  - OK2: http://ok321.top/ok
+  - OK2: http://ok321.top/ok 
+  - 大佬电报群：[FongMi](https://web.telegram.org/k/#@fongmi_official) [肥猫](https://web.telegram.org/k/#@TVBoxxoo) [OK](https://web.telegram.org/k/#@okdespace) [王二小](https://web.telegram.org/k/#@wangerxiaofangniuwa)
 - 源解析：
   - https://ua.fongmi.eu.org/
 
