@@ -86,7 +86,13 @@ jobs:
           cd TVBoxOSC
           git checkout ${{ env.commit }}
           echo "tag=$(git log --date=format:'%Y%m%d-%H%M' --pretty=format:%cd ${{ env.commitS }} -1)" >> $GITHUB_ENV
-
+          
+      - name: Setup Python 3.10
+        if: ${{ env.commit }}
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+          
       - name: Extra Modify
         if: ${{ env.commit }}
         working-directory: TVBoxOSC
@@ -104,6 +110,47 @@ jobs:
             sed -i 's|buildPython("D:/Programs/Python/Python38/python.exe")|buildPython("'"$(pwd)/venv/bin/python"'")|g' pyramid/build.gradle
             sed -i 's/minSdkVersion 19/minSdkVersion 21/g' pyramid/build.gradle
             sed -i 's/minSdkVersion 19/minSdkVersion 21/g' app/build.gradle
+          fi
+
+          # 处理 Chaquopy Python 配置
+          if [ -f "chaquo/build.gradle" ]; then
+            echo "检测到 chaquo 模块,开始配置 Python 环境"
+          
+            # 验证 Python 3.10
+            python3.10 --version
+            PYTHON_PATH=$(which python3.10)
+            echo "Python 路径: $PYTHON_PATH"
+          
+            # 更新 Chaquopy 版本到 15.0.1
+            sed -i 's/\(com.chaquo.python:gradle:\)[0-9.]\+/\115.0.1/g' build.gradle
+          
+            # 在 python 块中添加 buildPython 配置
+            # 在 version "3.10" 这行后面添加 buildPython
+            sed -i "/version \"3.10\"/a\            buildPython \"$PYTHON_PATH\"" chaquo/build.gradle
+          
+            # 更新 minSdkVersion (如果需要)
+            sed -i 's/minSdkVersion 19/minSdkVersion 21/g' chaquo/build.gradle 2>/dev/null || true
+            sed -i 's/minSdkVersion 19/minSdkVersion 21/g' app/build.gradle 2>/dev/null || true
+          
+            echo "Python 环境配置完成"
+          
+            # 显示修改后的配置
+            echo "=== chaquo/build.gradle python 配置 ==="
+            sed -n '/python {/,/^[[:space:]]*}/p' chaquo/build.gradle
+          fi
+          
+          # 移除 x86 架构
+          if [ -f "app/build.gradle" ]; then
+            sed -i '/x86 {/,/^[[:space:]]*}/d' app/build.gradle
+            sed -i '/^[[:space:]]*$/N;/^\s*\n\s*$/d' app/build.gradle
+          
+            # 修改 applicationId 以允许与原版共存
+            sed -i 's/applicationId "com\.fongmi\.android\.tv"/applicationId "com.fongmi.tv"/' app/build.gradle
+          fi
+          
+          # 修改 AndroidManifest.xml
+          if [ -f "app/src/main/AndroidManifest.xml" ]; then
+            sed -i 's/android:authorities="com\.fongmi\.quickjs\.provider"/android:authorities="${applicationId}.quickjs.provider"/' app/src/main/AndroidManifest.xml
           fi
 
       - name: Compress Source Code
