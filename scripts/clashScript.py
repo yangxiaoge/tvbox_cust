@@ -70,6 +70,14 @@ def download_clash():
         fp.write(result)
         fp.close()
 
+    # gkd规则订阅
+    result = httpGetText('https://raw.githubusercontent.com/Lin-arm/GKD_subscription/main/dist/gkd.json5')
+    if result:
+        fp = open("gkd/GKD_subscription.json5", "w+", encoding='utf-8')
+        # print("----" + result)
+        fp.write(result)
+        fp.close()
+
 
 # 发送邮件消息
 def sendEmail(title, errorMsg):
