@@ -19,6 +19,8 @@ def download_clash():
     # 创建文件夹
     if not os.path.exists("clash"):
         os.mkdir("clash")
+    if not os.path.exists("gkd"):
+        os.mkdir("gkd")
 
     def httpGetText(url):
         try:
