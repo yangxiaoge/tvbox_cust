@@ -52,12 +52,12 @@ https://yangxiaoge.github.io/yingshi
 | Repository                               | Branch         | Last Update                              | Build Time |
 |------------------------------------------|----------------|------------------------------------------|------------|
 | [FongMi/TV（已内置源）](https://github.com/FongMi/TV)               | release        | 171a41bf1c4a5b0c2cf0e439b5c5ce716b0229aa  | 2026-01-13 04:34:53 |
-| [q215613905/TVBoxOS](https://github.com/q215613905/TVBoxOS) | main           | 704cd2658fbcaf38551228cb90bd9f766a0c9e72  | 2026-01-20 10:34:33 |
+| [q215613905/TVBoxOS](https://github.com/q215613905/TVBoxOS) | main           | 377159840fa9516a787f4bdf66078f11cb8a7452  | 2026-06-11 06:08:34 |
 | [takagen99/Box](https://github.com/takagen99/Box)         | main           | 258a5fef61578869ae905ca230bdde9e99fc19a8 | 2026-02-28 04:47:47 |
 | [Klosw/Box](https://github.com/Klosw/Box)               | dev-4.4        | 346cc27c9dc066bcdba9bd541cf89c6d69b6cf1b | - |
 | [mlabalabala/box](https://github.com/mlabalabala/box)    | main           | c5dc2b98569e829650dc680ae2588299fad79542 | 2026-03-18 04:44:50 |
 
-#### update at 2026-03-18 04:44:50
+#### update at 2026-06-11 06:08:34
 
 
 **2. 自定义爬虫**
