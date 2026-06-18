@@ -27,7 +27,7 @@ jobs:
         include:
           - userName: FongMi
             repoName: TV
-            branchName: release
+            branchName: fongmi
             jdkVersion: 17
           - userName: q215613905
             repoName: TVBoxOS
@@ -41,10 +41,6 @@ jobs:
             repoName: box
             branchName: main
             jdkVersion: 11
-          # - userName: Klosw
-          #   repoName: Box
-          #   branchName: dev-4.4
-          #   jdkVersion: 11
 
     steps:
       - name: Checkout
