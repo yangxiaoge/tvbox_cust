@@ -54,7 +54,6 @@ https://yangxiaoge.github.io/yingshi
 | [FongMi/TV（已内置源）](https://github.com/FongMi/TV)               | release        | 171a41bf1c4a5b0c2cf0e439b5c5ce716b0229aa  | 2026-01-13 04:34:53 |
 | [q215613905/TVBoxOS](https://github.com/q215613905/TVBoxOS) | main           | c35584ad5ccdd458f329a00469352a6e23c97e3d  | 2026-06-18 06:08:08 |
 | [takagen99/Box](https://github.com/takagen99/Box)         | main           | 258a5fef61578869ae905ca230bdde9e99fc19a8 | 2026-02-28 04:47:47 |
-| [Klosw/Box](https://github.com/Klosw/Box)               | dev-4.4        | 346cc27c9dc066bcdba9bd541cf89c6d69b6cf1b | - |
 | [mlabalabala/box](https://github.com/mlabalabala/box)    | main           | c5dc2b98569e829650dc680ae2588299fad79542 | 2026-03-18 04:44:50 |
 
 #### update at 2026-06-18 06:08:08
