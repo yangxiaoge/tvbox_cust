@@ -105,41 +105,41 @@ def updateHolidayFile():
             isOffDay = lastYear.isHoliday
             myJson['name'] = lastYear.name
             if isOffDay:
-                myJson['desc'] = "放假"
+                myJson['desc'] = "放假🎉"
             else:
-                myJson['desc'] = "法定补班"
+                myJson['desc'] = "法定补班🧱"
         if thisYear.contain:
             isOffDay = thisYear.isHoliday
             myJson['name'] = thisYear.name
             if isOffDay:
-                myJson['desc'] = "放假"
+                myJson['desc'] = "放假🎉"
             else:
-                myJson['desc'] = "法定补班"
+                myJson['desc'] = "法定补班🧱"
         if nextYear.contain:
             isOffDay = nextYear.isHoliday   
             myJson['name'] = nextYear.name
             if isOffDay:
-                myJson['desc'] = "放假"
+                myJson['desc'] = "放假🎉"
             else:
-                myJson['desc'] = "法定补班"
+                myJson['desc'] = "法定补班🧱"
     else:
         isOffDay = weekend
         if weekend:
-            tempName = "周末"
+            tempName = "周末🎉"
         else:
-            tempName = "工作日"
+            tempName = "工作日🧱"
             
         myJson['name'] = tempName
         
         if isOffDay:
-            myJson['desc'] = "放假"
+            myJson['desc'] = "放假🎉"
         else:
-            myJson['desc'] = "搬砖"
+            myJson['desc'] = "搬砖🧱"
     
     if isOffDay:
-        print("今日放假")   
+        print("今日放假🎉")   
     else:
-        print("今日搬砖") 
+        print("今日搬砖🧱") 
         
     myJson['date']=today
     myJson['isOffDay']=isOffDay
