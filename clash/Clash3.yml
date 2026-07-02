@@ -24,170 +24,40 @@ dns:
       - https://1.1.1.1/dns-query#🚀 节点选择
       - https://8.8.8.8/dns-query#🚀 节点选择
 proxies:
-  - name: 🇨🇦_CA_加拿大
+  - name: 🇦🇺_AU_澳大利亚
     type: trojan
-    server: 103.177.136.45
-    port: 46424
-    password: 4f4d1167-ef14-4304-9bce-0740472503ef
-    sni: de.01.naiun.bilibili.com
-    skip-cert-verify: true
-    tls: true
-    udp: true
-  - name: 🇨🇦_CA_加拿大_1
-    type: trojan
-    server: 103.177.136.45
-    port: 45619
-    password: 4f4d1167-ef14-4304-9bce-0740472503ef
-    sni: fr.01.naiun.bilibili.com
-    skip-cert-verify: true
-    tls: true
-    udp: true
-  - name: 🇨🇦_CA_加拿大_2
-    type: trojan
-    server: 103.177.136.42
-    port: 47909
-    password: 4f4d1167-ef14-4304-9bce-0740472503ef
-    sni: is.01.naiun.bilibili.com
-    skip-cert-verify: true
-    tls: true
-    udp: true
-  - name: 🇺🇸_US_美国->🇩🇪_DE_德国
-    type: vless
-    server: 104.20.6.134
+    server: tight-possum.rooster465.autos
     port: 443
-    uuid: 2088ef0d-4d2c-43b3-874b-b6a03531c81b
-    network: ws
-    servername: r.meDiASHOPPp.sbS
-    tls: true
-    ws-opts:
-      path: /eyJqdW5rIjoiVVpPeXNodUFQMHNVcU12aCIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
-      headers:
-        Host: r.mediashoppp.sbs
-    skip-cert-verify: true
-    udp: true
-  - name: 🇨🇦_CA_加拿大_3
-    type: trojan
-    server: 103.177.136.42
-    port: 48697
-    password: 4f4d1167-ef14-4304-9bce-0740472503ef
-    sni: gh.01.naiun.bilibili.com
+    password: PI36027154
     skip-cert-verify: true
     tls: true
     udp: true
-  - name: 🇭🇰_HK_中国香港->🇺🇸_US_美国
-    type: vmess
-    server: v29.hdacd.com
-    port: 30829
-    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-    alterId: 2
-    cipher: auto
-    tls: false
-    skip-cert-verify: true
-    udp: true
-  - name: 🇭🇰_HK_中国香港->🇸🇬_SG_新加坡
-    type: vmess
-    server: v45.hdacd.com
-    port: 30845
-    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-    alterId: 2
-    cipher: auto
-    tls: false
-    skip-cert-verify: true
-    udp: true
-  - name: 🇨🇦_CA_加拿大_4
-    type: trojan
-    server: 103.177.136.42
-    port: 46424
-    password: 4f4d1167-ef14-4304-9bce-0740472503ef
-    sni: de.01.naiun.bilibili.com
-    skip-cert-verify: true
-    tls: true
-    udp: true
-  - name: 🇬🇧_GB_英国
+  - name: 🇺🇸_US_美国->🇨🇭_CH_瑞士
     type: vless
-    server: 45.206.0.34
-    port: 8443
-    uuid: 52faee73-e0fe-4661-992d-67259257170f
-    servername: storage.yandex.net
-    tls: true
-    flow: xtls-rprx-vision
+    server: 172.65.111.43
+    port: 22
+    uuid: monacoVPN
+    network: http
+    tls: false
     client-fingerprint: chrome
-    reality-opts:
-      public-key: dY9SNEllJMW63xo-JdXufhmjAxB_4uFw_QMjgufjiD8
-      short-id: ea10cd5686751ec5
+    http-opts:
+      path:
+        - /@monacoVPN@monacoVPN@monacoVPN@monacoVPN
     skip-cert-verify: true
     udp: true
-  - name: "@DeltaKroneckerGithub_Clash_4533"
+  - name: 🇺🇸_US_美国->🇸🇬_SG_新加坡
     type: vless
-    server: ee-t2.vinnypuxtomoon.today
-    port: 2053
-    uuid: 1ee0c3d2-9c42-463f-8497-ee05f76b84e5
-    servername: ee-t2.vinnypuxtomoon.today
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: firefox
-    reality-opts:
-      public-key: RwtMzZtTCmy9WRq3_27xeGF8-1l_qPXRVG3yIFp-6Go
-      short-id: c0d1d1776fed0f6d
-    skip-cert-verify: true
-    udp: true
-  - name: 🇺🇸_US_美国
-    type: vless
-    server: 172.64.41.202
+    server: 170.114.46.6
     port: 443
-    uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
+    uuid: 6680846a-8a57-4dfd-9a0e-63209cfc8535
     network: ws
-    servername: t1s1.rittbo.kdns.fr
+    servername: support.zoom.us.yxls.eu.cc
     tls: true
     client-fingerprint: chrome
     ws-opts:
-      path: /
+      path: /sg-amz
       headers:
-        Host: t1s1.rittbo.kdns.fr
-    skip-cert-verify: true
-    udp: true
-  - name: 🇬🇧_GB_英国_1
-    type: vless
-    server: 45.206.0.53
-    port: 8443
-    uuid: 52faee73-e0fe-4661-992d-67259257170f
-    servername: storage.yandex.net
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: dY9SNEllJMW63xo-JdXufhmjAxB_4uFw_QMjgufjiD8
-      short-id: ea10cd5686751ec5
-    skip-cert-verify: true
-    udp: true
-  - name: 🇨🇦_CA_加拿大_5
-    type: trojan
-    server: 103.177.136.45
-    port: 47909
-    password: 4f4d1167-ef14-4304-9bce-0740472503ef
-    sni: is.01.naiun.bilibili.com
-    skip-cert-verify: true
-    tls: true
-    udp: true
-  - name: 🇸🇬_SG_新加坡
-    type: hysteria2
-    server: 13.229.94.221
-    port: 443
-    password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-    sni: https://t.me/WangCai2🇨🇳
-    skip-cert-verify: true
-    udp: true
-  - name: 🇮🇷_IR_伊朗->🇩🇪_DE_德国
-    type: vless
-    server: 193.176.240.129
-    port: 8880
-    uuid: d9307ab3-1ed0-4b6d-bfd0-e104c7ccc25a
-    network: ws
-    tls: false
-    ws-opts:
-      path: /
-      headers:
-        Host: azsv2.ir5ive.ir
+        Host: support.zoom.us.yxls.eu.cc
     skip-cert-verify: true
     udp: true
   - name: 🇻🇳_VN_越南
@@ -200,36 +70,7 @@ proxies:
     obfs: salamander
     obfs-password: eNM/NfxTsBqQIKcN0ezARS1z0f5mIxRd9GSwhVsyJlo=
     udp: true
-  - name: 🇰🇷_KR_韩国
-    type: vless
-    server: 152.67.211.233
-    port: 8899
-    uuid: ebf0f3c7-323f-431e-944f-67297178f5bb
-    servername: www.lovelive-anime.jp
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: B7eELUOn0QM6fKSrr5v_AE4JPHQIxvb9-xX3WLqnLAk
-      short-id: 11d27eb4
-    skip-cert-verify: true
-    udp: true
-  - name: 🇺🇸_US_美国_1
-    type: vless
-    server: 104.19.134.235
-    port: 443
-    uuid: 72d1797c-cef8-410a-b8fd-db9104dc3cb0
-    network: ws
-    servername: amooaliii.net
-    tls: true
-    client-fingerprint: chrome
-    ws-opts:
-      path: /jdhfyws
-      headers:
-        Host: amooaliii.net
-    skip-cert-verify: true
-    udp: true
-  - name: 🇺🇸_US_美国->🇸🇬_SG_新加坡
+  - name: 🇺🇸_US_美国->🇸🇬_SG_新加坡_1
     type: vless
     server: support.zoom.us
     port: 443
@@ -244,59 +85,13 @@ proxies:
         Host: support.zoom.us.yxls.eu.cc
     skip-cert-verify: true
     udp: true
-  - name: 🇨🇦_CA_加拿大_6
+  - name: 🇸🇬_SG_新加坡
     type: trojan
-    server: 103.177.136.42
-    port: 45553
-    password: 4f4d1167-ef14-4304-9bce-0740472503ef
-    sni: ch.01.naiun.bilibili.com
-    skip-cert-verify: true
-    tls: true
-    udp: true
-  - name: 🇬🇪_GE_格鲁吉亚->🇧🇪_BE_比利时
-    type: vless
-    server: belgium.cloudpath.live
+    server: rich-mule.rooster465.autos
     port: 443
-    uuid: a1fbffe9-8e5a-5a0e-9333-045d32eccd59
-    servername: microsoft.com
+    password: PI36027154
+    skip-cert-verify: true
     tls: true
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: 9HzeVOO-_7-V3l4TCNqgO-cj32nlF3wsG8K4X3qFmFw
-      short-id: cc52201b
-    skip-cert-verify: true
-    udp: true
-  - name: 🇸🇬_SG_新加坡_1
-    type: hysteria2
-    server: 13.250.29.24
-    port: 443
-    password: qQe1z5kU8kN6SlKnDt9Ru3Qp
-    sni: vpn-sg-001.fastervpn.world
-    skip-cert-verify: true
-    udp: true
-  - name: 🇭🇰_HK_中国香港->🇺🇸_US_美国_1
-    type: vmess
-    server: v8.hdacd.com
-    port: 30808
-    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-    alterId: 2
-    cipher: auto
-    tls: false
-    skip-cert-verify: true
-    udp: true
-  - name: 🇭🇰_HK_中国香港
-    type: vless
-    server: vip.bcjdvip.com
-    port: 14006
-    uuid: 3e06720a-86f0-49b9-8f00-062681e3b385
-    servername: apple.com
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: XPLe-686APp5RHaiFHZDTJsf1kMo-aMZuKjKeHmdyEM
-      short-id: ff5ebee2264c
-    skip-cert-verify: true
     udp: true
 proxy-groups:
   - name: 🚀 节点选择
@@ -304,57 +99,21 @@ proxy-groups:
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇨🇦_CA_加拿大
-      - 🇨🇦_CA_加拿大_1
-      - 🇨🇦_CA_加拿大_2
-      - 🇺🇸_US_美国->🇩🇪_DE_德国
-      - 🇨🇦_CA_加拿大_3
-      - 🇭🇰_HK_中国香港->🇺🇸_US_美国
-      - 🇭🇰_HK_中国香港->🇸🇬_SG_新加坡
-      - 🇨🇦_CA_加拿大_4
-      - 🇬🇧_GB_英国
-      - "@DeltaKroneckerGithub_Clash_4533"
-      - 🇺🇸_US_美国
-      - 🇬🇧_GB_英国_1
-      - 🇨🇦_CA_加拿大_5
-      - 🇸🇬_SG_新加坡
-      - 🇮🇷_IR_伊朗->🇩🇪_DE_德国
-      - 🇻🇳_VN_越南
-      - 🇰🇷_KR_韩国
-      - 🇺🇸_US_美国_1
+      - 🇦🇺_AU_澳大利亚
+      - 🇺🇸_US_美国->🇨🇭_CH_瑞士
       - 🇺🇸_US_美国->🇸🇬_SG_新加坡
-      - 🇨🇦_CA_加拿大_6
-      - 🇬🇪_GE_格鲁吉亚->🇧🇪_BE_比利时
-      - 🇸🇬_SG_新加坡_1
-      - 🇭🇰_HK_中国香港->🇺🇸_US_美国_1
-      - 🇭🇰_HK_中国香港
+      - 🇻🇳_VN_越南
+      - 🇺🇸_US_美国->🇸🇬_SG_新加坡_1
+      - 🇸🇬_SG_新加坡
   - name: ♻️ 自动选择
     type: url-test
     proxies:
-      - 🇨🇦_CA_加拿大
-      - 🇨🇦_CA_加拿大_1
-      - 🇨🇦_CA_加拿大_2
-      - 🇺🇸_US_美国->🇩🇪_DE_德国
-      - 🇨🇦_CA_加拿大_3
-      - 🇭🇰_HK_中国香港->🇺🇸_US_美国
-      - 🇭🇰_HK_中国香港->🇸🇬_SG_新加坡
-      - 🇨🇦_CA_加拿大_4
-      - 🇬🇧_GB_英国
-      - "@DeltaKroneckerGithub_Clash_4533"
-      - 🇺🇸_US_美国
-      - 🇬🇧_GB_英国_1
-      - 🇨🇦_CA_加拿大_5
-      - 🇸🇬_SG_新加坡
-      - 🇮🇷_IR_伊朗->🇩🇪_DE_德国
-      - 🇻🇳_VN_越南
-      - 🇰🇷_KR_韩国
-      - 🇺🇸_US_美国_1
+      - 🇦🇺_AU_澳大利亚
+      - 🇺🇸_US_美国->🇨🇭_CH_瑞士
       - 🇺🇸_US_美国->🇸🇬_SG_新加坡
-      - 🇨🇦_CA_加拿大_6
-      - 🇬🇪_GE_格鲁吉亚->🇧🇪_BE_比利时
-      - 🇸🇬_SG_新加坡_1
-      - 🇭🇰_HK_中国香港->🇺🇸_US_美国_1
-      - 🇭🇰_HK_中国香港
+      - 🇻🇳_VN_越南
+      - 🇺🇸_US_美国->🇸🇬_SG_新加坡_1
+      - 🇸🇬_SG_新加坡
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
@@ -364,117 +123,45 @@ proxy-groups:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇨🇦_CA_加拿大
-      - 🇨🇦_CA_加拿大_1
-      - 🇨🇦_CA_加拿大_2
-      - 🇺🇸_US_美国->🇩🇪_DE_德国
-      - 🇨🇦_CA_加拿大_3
-      - 🇭🇰_HK_中国香港->🇺🇸_US_美国
-      - 🇭🇰_HK_中国香港->🇸🇬_SG_新加坡
-      - 🇨🇦_CA_加拿大_4
-      - 🇬🇧_GB_英国
-      - "@DeltaKroneckerGithub_Clash_4533"
-      - 🇺🇸_US_美国
-      - 🇬🇧_GB_英国_1
-      - 🇨🇦_CA_加拿大_5
-      - 🇸🇬_SG_新加坡
-      - 🇮🇷_IR_伊朗->🇩🇪_DE_德国
-      - 🇻🇳_VN_越南
-      - 🇰🇷_KR_韩国
-      - 🇺🇸_US_美国_1
+      - 🇦🇺_AU_澳大利亚
+      - 🇺🇸_US_美国->🇨🇭_CH_瑞士
       - 🇺🇸_US_美国->🇸🇬_SG_新加坡
-      - 🇨🇦_CA_加拿大_6
-      - 🇬🇪_GE_格鲁吉亚->🇧🇪_BE_比利时
-      - 🇸🇬_SG_新加坡_1
-      - 🇭🇰_HK_中国香港->🇺🇸_US_美国_1
-      - 🇭🇰_HK_中国香港
+      - 🇻🇳_VN_越南
+      - 🇺🇸_US_美国->🇸🇬_SG_新加坡_1
+      - 🇸🇬_SG_新加坡
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇨🇦_CA_加拿大
-      - 🇨🇦_CA_加拿大_1
-      - 🇨🇦_CA_加拿大_2
-      - 🇺🇸_US_美国->🇩🇪_DE_德国
-      - 🇨🇦_CA_加拿大_3
-      - 🇭🇰_HK_中国香港->🇺🇸_US_美国
-      - 🇭🇰_HK_中国香港->🇸🇬_SG_新加坡
-      - 🇨🇦_CA_加拿大_4
-      - 🇬🇧_GB_英国
-      - "@DeltaKroneckerGithub_Clash_4533"
-      - 🇺🇸_US_美国
-      - 🇬🇧_GB_英国_1
-      - 🇨🇦_CA_加拿大_5
-      - 🇸🇬_SG_新加坡
-      - 🇮🇷_IR_伊朗->🇩🇪_DE_德国
-      - 🇻🇳_VN_越南
-      - 🇰🇷_KR_韩国
-      - 🇺🇸_US_美国_1
+      - 🇦🇺_AU_澳大利亚
+      - 🇺🇸_US_美国->🇨🇭_CH_瑞士
       - 🇺🇸_US_美国->🇸🇬_SG_新加坡
-      - 🇨🇦_CA_加拿大_6
-      - 🇬🇪_GE_格鲁吉亚->🇧🇪_BE_比利时
-      - 🇸🇬_SG_新加坡_1
-      - 🇭🇰_HK_中国香港->🇺🇸_US_美国_1
-      - 🇭🇰_HK_中国香港
+      - 🇻🇳_VN_越南
+      - 🇺🇸_US_美国->🇸🇬_SG_新加坡_1
+      - 🇸🇬_SG_新加坡
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🇨🇦_CA_加拿大
-      - 🇨🇦_CA_加拿大_1
-      - 🇨🇦_CA_加拿大_2
-      - 🇺🇸_US_美国->🇩🇪_DE_德国
-      - 🇨🇦_CA_加拿大_3
-      - 🇭🇰_HK_中国香港->🇺🇸_US_美国
-      - 🇭🇰_HK_中国香港->🇸🇬_SG_新加坡
-      - 🇨🇦_CA_加拿大_4
-      - 🇬🇧_GB_英国
-      - "@DeltaKroneckerGithub_Clash_4533"
-      - 🇺🇸_US_美国
-      - 🇬🇧_GB_英国_1
-      - 🇨🇦_CA_加拿大_5
-      - 🇸🇬_SG_新加坡
-      - 🇮🇷_IR_伊朗->🇩🇪_DE_德国
-      - 🇻🇳_VN_越南
-      - 🇰🇷_KR_韩国
-      - 🇺🇸_US_美国_1
+      - 🇦🇺_AU_澳大利亚
+      - 🇺🇸_US_美国->🇨🇭_CH_瑞士
       - 🇺🇸_US_美国->🇸🇬_SG_新加坡
-      - 🇨🇦_CA_加拿大_6
-      - 🇬🇪_GE_格鲁吉亚->🇧🇪_BE_比利时
-      - 🇸🇬_SG_新加坡_1
-      - 🇭🇰_HK_中国香港->🇺🇸_US_美国_1
-      - 🇭🇰_HK_中国香港
+      - 🇻🇳_VN_越南
+      - 🇺🇸_US_美国->🇸🇬_SG_新加坡_1
+      - 🇸🇬_SG_新加坡
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇨🇦_CA_加拿大
-      - 🇨🇦_CA_加拿大_1
-      - 🇨🇦_CA_加拿大_2
-      - 🇺🇸_US_美国->🇩🇪_DE_德国
-      - 🇨🇦_CA_加拿大_3
-      - 🇭🇰_HK_中国香港->🇺🇸_US_美国
-      - 🇭🇰_HK_中国香港->🇸🇬_SG_新加坡
-      - 🇨🇦_CA_加拿大_4
-      - 🇬🇧_GB_英国
-      - "@DeltaKroneckerGithub_Clash_4533"
-      - 🇺🇸_US_美国
-      - 🇬🇧_GB_英国_1
-      - 🇨🇦_CA_加拿大_5
-      - 🇸🇬_SG_新加坡
-      - 🇮🇷_IR_伊朗->🇩🇪_DE_德国
-      - 🇻🇳_VN_越南
-      - 🇰🇷_KR_韩国
-      - 🇺🇸_US_美国_1
+      - 🇦🇺_AU_澳大利亚
+      - 🇺🇸_US_美国->🇨🇭_CH_瑞士
       - 🇺🇸_US_美国->🇸🇬_SG_新加坡
-      - 🇨🇦_CA_加拿大_6
-      - 🇬🇪_GE_格鲁吉亚->🇧🇪_BE_比利时
-      - 🇸🇬_SG_新加坡_1
-      - 🇭🇰_HK_中国香港->🇺🇸_US_美国_1
-      - 🇭🇰_HK_中国香港
+      - 🇻🇳_VN_越南
+      - 🇺🇸_US_美国->🇸🇬_SG_新加坡_1
+      - 🇸🇬_SG_新加坡
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -502,30 +189,12 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇨🇦_CA_加拿大
-      - 🇨🇦_CA_加拿大_1
-      - 🇨🇦_CA_加拿大_2
-      - 🇺🇸_US_美国->🇩🇪_DE_德国
-      - 🇨🇦_CA_加拿大_3
-      - 🇭🇰_HK_中国香港->🇺🇸_US_美国
-      - 🇭🇰_HK_中国香港->🇸🇬_SG_新加坡
-      - 🇨🇦_CA_加拿大_4
-      - 🇬🇧_GB_英国
-      - "@DeltaKroneckerGithub_Clash_4533"
-      - 🇺🇸_US_美国
-      - 🇬🇧_GB_英国_1
-      - 🇨🇦_CA_加拿大_5
-      - 🇸🇬_SG_新加坡
-      - 🇮🇷_IR_伊朗->🇩🇪_DE_德国
-      - 🇻🇳_VN_越南
-      - 🇰🇷_KR_韩国
-      - 🇺🇸_US_美国_1
+      - 🇦🇺_AU_澳大利亚
+      - 🇺🇸_US_美国->🇨🇭_CH_瑞士
       - 🇺🇸_US_美国->🇸🇬_SG_新加坡
-      - 🇨🇦_CA_加拿大_6
-      - 🇬🇪_GE_格鲁吉亚->🇧🇪_BE_比利时
-      - 🇸🇬_SG_新加坡_1
-      - 🇭🇰_HK_中国香港->🇺🇸_US_美国_1
-      - 🇭🇰_HK_中国香港
+      - 🇻🇳_VN_越南
+      - 🇺🇸_US_美国->🇸🇬_SG_新加坡_1
+      - 🇸🇬_SG_新加坡
 rule-providers:
   LocalAreaNetwork:
     type: http
