@@ -24,45 +24,51 @@ dns:
       - https://1.1.1.1/dns-query#🚀 节点选择
       - https://8.8.8.8/dns-query#🚀 节点选择
 proxies:
-  - name: 🇱🇹_LT_立陶宛
+  - name: 🇺🇸_US_美国->🇫🇮_FI_芬兰
     type: vless
-    server: 45.194.10.79
-    port: 8443
-    uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
+    server: 45.196.182.70
+    port: 443
+    uuid: 701ea834-7c31-4544-95d6-f0a4dfe40b36
     servername: storage.yandex.net
     tls: true
     flow: xtls-rprx-vision
     client-fingerprint: chrome
     reality-opts:
-      public-key: L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA
-      short-id: 2cfb5a0ae8ab0cb0
+      public-key: KYlgK96xPZJq10GbhF-BaCXRxXc9XzxzfICdooYvMlg
+      short-id: d020b987f84eb78a
     skip-cert-verify: true
     udp: true
-  - name: 🇺🇸_US_美国
+  - name: 🇭🇰_HK_中国香港
     type: hysteria2
-    server: 147.90.235.195
-    port: 52625
-    password: 13d29042-ab82-4195-9cd4-2bafc518e201
-    sni: apps.apple.com
+    server: 82.47.32.31
+    port: 50961
+    password: a8a5b34d-fe46-487d-bd6a-d9f3101525fd
+    sni: iosapps.itunes.apple.com
     skip-cert-verify: true
     udp: true
-  - name: 🇺🇸_US_美国->🇫🇮_FI_芬兰
+  - name: 🇭🇺_HU_匈牙利->🇫🇷_FR_法国
+    type: vless
+    server: 155.117.137.103
+    port: 443
+    uuid: 9480871a-3843-441c-9b83-aa8c5c96b209
+    servername: cdn6-49.yahoo.com
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: CMkW1axrhEXoiJ6anMz9XEjlfqlAtEZya7L0b5ZPMyw
+      short-id: 3c9c5d01c6f824dd
+    skip-cert-verify: true
+    udp: true
+  - name: 🇮🇳_IN_印度
     type: hysteria2
-    server: 45.196.182.222
-    port: 8449
-    password: 03e7f55f-22f8-4564-880f-b86c8cdbf140
-    sni: https://t.me/WangCai2🇨🇳
+    server: in.9966690.xyz
+    port: 50000
+    password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+    sni: iosapps.itunes.apple.com
     skip-cert-verify: true
-    udp: true
-  - name: 🇳🇱_NL_荷兰
-    type: vmess
-    server: c87s5.portablesubmarines.com
-    port: 18339
-    uuid: 3cd9077d-76f7-4104-bd82-eb6916b89d43
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: true
+    obfs: salamander
+    obfs-password: YzgyOTkwNDk4ZTU2NT365A==
     udp: true
   - name: 🇫🇮_FI_芬兰
     type: hysteria2
@@ -72,54 +78,26 @@ proxies:
     sni: https://t.me/WangCai2🇨🇳
     skip-cert-verify: true
     udp: true
-  - name: 🇩🇪_DE_德国
+  - name: 🇺🇸_US_美国->🇫🇮_FI_芬兰_1
     type: hysteria2
-    server: ff2.yuntong.click
+    server: 45.196.182.161
+    port: 8449
+    password: 03e7f55f-22f8-4564-880f-b86c8cdbf140
+    sni: sni.fi-m247-02.com
+    skip-cert-verify: true
+    udp: true
+  - name: 🇺🇸_US_美国->🇫🇮_FI_芬兰_2
+    type: vless
+    server: 45.196.182.18
     port: 443
-    password: f7cb07a0-e6f9-4d22-a60e-c61854450c89
-    sni: ff2.yuntong.click
-    skip-cert-verify: true
-    obfs: salamander
-    obfs-password: eNM/NfxTsBqQIKcN0ezARS1z0f5mIxRd9GSwhVsyJlo=
-    udp: true
-  - name: 🇺🇸_US_美国_1
-    type: hysteria2
-    server: 172.96.141.4
-    port: 51717
-    password: 73ffcd12-0155-432f-9fd4-c1d2bf9190d7
-    sni: api.push.apple.com
-    skip-cert-verify: true
-    udp: true
-  - name: 🇭🇰_HK_中国香港
-    type: hysteria2
-    server: 202.146.222.29
-    port: 443
-    password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-    sni: https://t.me/WangCai2🇨🇳
-    skip-cert-verify: true
-    udp: true
-  - name: 🇰🇷_KR_韩国
-    type: hysteria2
-    server: vpn-kr-003.fastervpn.world
-    port: 443
-    password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-    sni: vpn-kr-003.fastervpn.world
-    skip-cert-verify: true
-    udp: true
-  - name: 🇷🇺_RU_俄罗斯
-    type: hysteria2
-    server: 46.17.40.117
-    port: 50045
-    password: cb887032-0447-4216-be3c-7333ecdcda9a
-    sni: music.apple.com
-    skip-cert-verify: true
-    udp: true
-  - name: 🇺🇸_US_美国_2
-    type: hysteria2
-    server: 172.96.141.4
-    port: 50581
-    password: a8a5b34d-fe46-487d-bd6a-d9f3101525fd
-    sni: api.push.apple.com
+    uuid: 701ea834-7c31-4544-95d6-f0a4dfe40b36
+    servername: storage.yandex.net
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: KYlgK96xPZJq10GbhF-BaCXRxXc9XzxzfICdooYvMlg
+      short-id: d020b987f84eb78a
     skip-cert-verify: true
     udp: true
   - name: 🇭🇰_HK_中国香港_1
@@ -131,88 +109,71 @@ proxies:
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: n1747624274.4u9ma.icu
     network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: n1747624274.4u9ma.icu
-    udp: true
-  - name: 🇷🇺_RU_俄罗斯_1
-    type: hysteria2
-    server: 46.17.40.117
-    port: 51857
-    password: 73ffcd12-0155-432f-9fd4-c1d2bf9190d7
-    sni: music.apple.com
-    skip-cert-verify: true
     udp: true
   - name: 🇸🇬_SG_新加坡
-    type: hysteria2
-    server: 104.234.233.100
-    port: 55000
-    password: 140dfd67-61be-45e8-b234-0a5529d47ebc
-    sni: www.bing.com
-    skip-cert-verify: true
-    udp: true
-  - name: 🇷🇺_RU_俄罗斯_2
     type: vless
-    server: vlessru.duckdns.org
+    server: 64.56.71.98
     port: 8443
-    uuid: c90395e6-2140-47ad-a54d-9b166729d3ef
-    network: ws
-    servername: vlessru.duckdns.org
+    uuid: 497631c4-a1a4-0081-a86a-f42873473bb6
+    servername: auto.quattro-tech.ru
     tls: true
-    client-fingerprint: chrome
-    ws-opts:
-      path: /wsru
-      headers:
-        Host: vlessru.duckdns.org
-    skip-cert-verify: true
-    udp: true
-  - name: 🇷🇺_RU_俄罗斯_3
-    type: hysteria2
-    server: 46.17.40.117
-    port: 51385
-    password: a8a5b34d-fe46-487d-bd6a-d9f3101525fd
-    sni: music.apple.com
-    skip-cert-verify: true
-    udp: true
-  - name: 🇺🇸_US_美国->🇫🇮_FI_芬兰_1
-    type: hysteria2
-    server: 45.196.182.243
-    port: 8449
-    password: 03e7f55f-22f8-4564-880f-b86c8cdbf140
-    sni: https://t.me/WangCai2🇨🇳
-    skip-cert-verify: true
-    udp: true
-  - name: 🇺🇸_US_美国_3
-    type: hysteria2
-    server: 172.96.141.4
-    port: 52738
-    password: cb887032-0447-4216-be3c-7333ecdcda9a
-    sni: api.push.apple.com
-    skip-cert-verify: true
-    udp: true
-  - name: 🇩🇪_DE_德国_1
-    type: vless
-    server: 47.254.156.143
-    port: 443
-    uuid: 3e7f67de-648e-4871-b51a-a225214d41ee
-    servername: api.company-target.com
-    tls: true
+    flow: xtls-rprx-vision
     client-fingerprint: chrome
     reality-opts:
-      public-key: TRP10HqKUXEQ3O-cfsq93DycfBmbJe9KM36yvSa8Mmw
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
     skip-cert-verify: true
     udp: true
-  - name: 🇮🇩_ID_印度尼西亚
-    type: trojan
-    server: qfdfsg.wsone.icu
-    port: 443
-    password: M7v%w11Se*
-    sni: qfdfsg.wsone.icu
+  - name: 🇺🇸_US_美国
+    type: vless
+    server: wawov6.ombre.qzz.io
+    port: 2096
+    uuid: c7251b62-d162-44a5-9d90-bf26a340ad40
+    network: ws
+    servername: wawov6.ombre.qzz.io
+    tls: true
+    ws-opts:
+      path: /luluchan
+      headers:
+        Host: wawov6.ombre.qzz.io
     skip-cert-verify: true
+    udp: true
+  - name: 🇪🇸_ES_西班牙
+    type: vless
+    server: 45.198.80.38
+    port: 443
+    uuid: eece4171-e025-40a3-9027-e395036ff99d
+    servername: storage.yandex.net
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: zr8_rtHm86s_G1gfRwNtunStGngYZSdYkA3PyBFXpDg
+      short-id: 28047c78b3f5ee2c
+    skip-cert-verify: true
+    udp: true
+  - name: 🇰🇷_KR_韩国
+    type: vmess
+    server: 217.142.138.61
+    port: 80
+    uuid: ac1b933d-afff-4487-93ef-f57130a55dff
+    alterId: 0
+    cipher: auto
     tls: false
+    skip-cert-verify: true
+    network: http
+    http-opts:
+      path:
+        - /
+    udp: true
+  - name: 🇸🇬_SG_新加坡_1
+    type: hysteria2
+    server: 45.88.42.29
+    port: 50117
+    password: 13d29042-ab82-4195-9cd4-2bafc518e201
+    sni: iosapps.itunes.apple.com
+    skip-cert-verify: true
     udp: true
   - name: 🇫🇷_FR_法国
     type: tuic
@@ -227,27 +188,132 @@ proxies:
     skip-cert-verify: true
     disable-sni: false
     udp: true
-  - name: 🇺🇸_US_美国_4
-    type: hysteria2
-    server: 128.241.227.213
-    port: 40000
-    password: c6d33e4e-c01a-4ec0-82d3-c4c18f451e4c
-    sni: bing.com
+  - name: 🇺🇸_US_美国->🇩🇪_DE_德国
+    type: vless
+    server: 162.159.36.42
+    port: 443
+    uuid: c416332e-2bde-4806-ac02-8f021c6e8f68
+    network: ws
+    servername: bbc.zjxc.de5.net
+    tls: true
+    ws-opts:
+      path: /?proxyip=proxyip.us.fxxk.dedyn.io
+      headers:
+        Host: bbc.zjxc.de5.net
     skip-cert-verify: true
     udp: true
-  - name: 🇰🇷_KR_韩国_1
+  - name: 🇫🇮_FI_芬兰_1
+    type: ss
+    server: mail2.thirdpaull.monster
+    port: 57327
+    cipher: chacha20-ietf-poly1305
+    password: 2KAu9eMmGwShWTWcuyynmLE81PVkoKDvQ3fb29dPScc1bMUW5y6hpprXqVWqSqjTi234hFGdDf3ArCuWtBw5FA6zV5wBgWTP
+    skip-cert-verify: true
+    udp: true
+  - name: 🇯🇵_JP_日本
     type: vmess
-    server: 217.142.138.61
-    port: 80
-    uuid: ac1b933d-afff-4487-93ef-f57130a55dff
+    server: cc26.goingside.site
+    port: 8998
+    uuid: 3d82c222-c34a-4522-b4ec-cdc90bcc0b84
     alterId: 0
     cipher: auto
     tls: false
     skip-cert-verify: true
-    network: http
-    http-opts:
-      path:
-        - /
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: cc26.goingside.site
+    udp: true
+  - name: 🇭🇰_HK_中国香港_2
+    type: vmess
+    server: v10.hdacd.com
+    port: 30807
+    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+    alterId: 2
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    udp: true
+  - name: 🇺🇸_US_美国->🇫🇮_FI_芬兰_3
+    type: vless
+    server: 45.196.182.17
+    port: 443
+    uuid: 701ea834-7c31-4544-95d6-f0a4dfe40b36
+    servername: storage.yandex.net
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: KYlgK96xPZJq10GbhF-BaCXRxXc9XzxzfICdooYvMlg
+      short-id: d020b987f84eb78a
+    skip-cert-verify: true
+    udp: true
+  - name: 🇸🇬_SG_新加坡_2
+    type: hysteria2
+    server: 104.234.233.100
+    port: 55000
+    password: 140dfd67-61be-45e8-b234-0a5529d47ebc
+    sni: www.bing.com
+    skip-cert-verify: true
+    udp: true
+  - name: 🇭🇰_HK_中国香港_3
+    type: hysteria2
+    server: 202.146.222.29
+    port: 443
+    password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+    sni: https://t.me/WangCai2🇨🇳
+    skip-cert-verify: true
+    udp: true
+  - name: 🇺🇸_US_美国->🇫🇮_FI_芬兰_4
+    type: hysteria2
+    server: 45.196.182.252
+    port: 8449
+    password: 03e7f55f-22f8-4564-880f-b86c8cdbf140
+    sni: sni.fi-m247-02.com
+    skip-cert-verify: true
+    udp: true
+  - name: 🇺🇸_US_美国_1
+    type: hysteria2
+    server: vpn-us-003.fastervpn.world
+    port: 443
+    password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+    sni: vpn-us-003.fastervpn.world
+    skip-cert-verify: true
+    udp: true
+  - name: 🇩🇪_DE_德国
+    type: hysteria2
+    server: ff2.yuntong.click
+    port: 443
+    password: f7cb07a0-e6f9-4d22-a60e-c61854450c89
+    sni: ff2.yuntong.click
+    skip-cert-verify: true
+    obfs: salamander
+    obfs-password: eNM/NfxTsBqQIKcN0ezARS1z0f5mIxRd9GSwhVsyJlo=
+    udp: true
+  - name: 🇭🇺_HU_匈牙利
+    type: vless
+    server: 45.198.87.158
+    port: 8443
+    uuid: 7896c501-248f-4068-bc2f-363c91ba5122
+    servername: storage.yandex.net
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 7zd9mJilgjOrg_ohtw23Vmio-pdnYqeP_r-kiWt87Cg
+      short-id: 2715592069f36fe7
+    skip-cert-verify: true
+    udp: true
+  - name: 🇻🇳_VN_越南
+    type: hysteria2
+    server: vn2.yuntong.click
+    port: 443
+    password: f7cb07a0-e6f9-4d22-a60e-c61854450c89
+    sni: vn2.yuntong.click
+    skip-cert-verify: true
+    obfs: salamander
+    obfs-password: eNM/NfxTsBqQIKcN0ezARS1z0f5mIxRd9GSwhVsyJlo=
     udp: true
 proxy-groups:
   - name: 🚀 节点选择
@@ -255,55 +321,61 @@ proxy-groups:
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇱🇹_LT_立陶宛
-      - 🇺🇸_US_美国
       - 🇺🇸_US_美国->🇫🇮_FI_芬兰
-      - 🇳🇱_NL_荷兰
-      - 🇫🇮_FI_芬兰
-      - 🇩🇪_DE_德国
-      - 🇺🇸_US_美国_1
       - 🇭🇰_HK_中国香港
-      - 🇰🇷_KR_韩国
-      - 🇷🇺_RU_俄罗斯
-      - 🇺🇸_US_美国_2
-      - 🇭🇰_HK_中国香港_1
-      - 🇷🇺_RU_俄罗斯_1
-      - 🇸🇬_SG_新加坡
-      - 🇷🇺_RU_俄罗斯_2
-      - 🇷🇺_RU_俄罗斯_3
+      - 🇭🇺_HU_匈牙利->🇫🇷_FR_法国
+      - 🇮🇳_IN_印度
+      - 🇫🇮_FI_芬兰
       - 🇺🇸_US_美国->🇫🇮_FI_芬兰_1
-      - 🇺🇸_US_美国_3
-      - 🇩🇪_DE_德国_1
-      - 🇮🇩_ID_印度尼西亚
+      - 🇺🇸_US_美国->🇫🇮_FI_芬兰_2
+      - 🇭🇰_HK_中国香港_1
+      - 🇸🇬_SG_新加坡
+      - 🇺🇸_US_美国
+      - 🇪🇸_ES_西班牙
+      - 🇰🇷_KR_韩国
+      - 🇸🇬_SG_新加坡_1
       - 🇫🇷_FR_法国
-      - 🇺🇸_US_美国_4
-      - 🇰🇷_KR_韩国_1
+      - 🇺🇸_US_美国->🇩🇪_DE_德国
+      - 🇫🇮_FI_芬兰_1
+      - 🇯🇵_JP_日本
+      - 🇭🇰_HK_中国香港_2
+      - 🇺🇸_US_美国->🇫🇮_FI_芬兰_3
+      - 🇸🇬_SG_新加坡_2
+      - 🇭🇰_HK_中国香港_3
+      - 🇺🇸_US_美国->🇫🇮_FI_芬兰_4
+      - 🇺🇸_US_美国_1
+      - 🇩🇪_DE_德国
+      - 🇭🇺_HU_匈牙利
+      - 🇻🇳_VN_越南
   - name: ♻️ 自动选择
     type: url-test
     proxies:
-      - 🇱🇹_LT_立陶宛
-      - 🇺🇸_US_美国
       - 🇺🇸_US_美国->🇫🇮_FI_芬兰
-      - 🇳🇱_NL_荷兰
-      - 🇫🇮_FI_芬兰
-      - 🇩🇪_DE_德国
-      - 🇺🇸_US_美国_1
       - 🇭🇰_HK_中国香港
-      - 🇰🇷_KR_韩国
-      - 🇷🇺_RU_俄罗斯
-      - 🇺🇸_US_美国_2
-      - 🇭🇰_HK_中国香港_1
-      - 🇷🇺_RU_俄罗斯_1
-      - 🇸🇬_SG_新加坡
-      - 🇷🇺_RU_俄罗斯_2
-      - 🇷🇺_RU_俄罗斯_3
+      - 🇭🇺_HU_匈牙利->🇫🇷_FR_法国
+      - 🇮🇳_IN_印度
+      - 🇫🇮_FI_芬兰
       - 🇺🇸_US_美国->🇫🇮_FI_芬兰_1
-      - 🇺🇸_US_美国_3
-      - 🇩🇪_DE_德国_1
-      - 🇮🇩_ID_印度尼西亚
+      - 🇺🇸_US_美国->🇫🇮_FI_芬兰_2
+      - 🇭🇰_HK_中国香港_1
+      - 🇸🇬_SG_新加坡
+      - 🇺🇸_US_美国
+      - 🇪🇸_ES_西班牙
+      - 🇰🇷_KR_韩国
+      - 🇸🇬_SG_新加坡_1
       - 🇫🇷_FR_法国
-      - 🇺🇸_US_美国_4
-      - 🇰🇷_KR_韩国_1
+      - 🇺🇸_US_美国->🇩🇪_DE_德国
+      - 🇫🇮_FI_芬兰_1
+      - 🇯🇵_JP_日本
+      - 🇭🇰_HK_中国香港_2
+      - 🇺🇸_US_美国->🇫🇮_FI_芬兰_3
+      - 🇸🇬_SG_新加坡_2
+      - 🇭🇰_HK_中国香港_3
+      - 🇺🇸_US_美国->🇫🇮_FI_芬兰_4
+      - 🇺🇸_US_美国_1
+      - 🇩🇪_DE_德国
+      - 🇭🇺_HU_匈牙利
+      - 🇻🇳_VN_越南
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
@@ -313,113 +385,125 @@ proxy-groups:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇱🇹_LT_立陶宛
-      - 🇺🇸_US_美国
       - 🇺🇸_US_美国->🇫🇮_FI_芬兰
-      - 🇳🇱_NL_荷兰
-      - 🇫🇮_FI_芬兰
-      - 🇩🇪_DE_德国
-      - 🇺🇸_US_美国_1
       - 🇭🇰_HK_中国香港
-      - 🇰🇷_KR_韩国
-      - 🇷🇺_RU_俄罗斯
-      - 🇺🇸_US_美国_2
-      - 🇭🇰_HK_中国香港_1
-      - 🇷🇺_RU_俄罗斯_1
-      - 🇸🇬_SG_新加坡
-      - 🇷🇺_RU_俄罗斯_2
-      - 🇷🇺_RU_俄罗斯_3
+      - 🇭🇺_HU_匈牙利->🇫🇷_FR_法国
+      - 🇮🇳_IN_印度
+      - 🇫🇮_FI_芬兰
       - 🇺🇸_US_美国->🇫🇮_FI_芬兰_1
-      - 🇺🇸_US_美国_3
-      - 🇩🇪_DE_德国_1
-      - 🇮🇩_ID_印度尼西亚
+      - 🇺🇸_US_美国->🇫🇮_FI_芬兰_2
+      - 🇭🇰_HK_中国香港_1
+      - 🇸🇬_SG_新加坡
+      - 🇺🇸_US_美国
+      - 🇪🇸_ES_西班牙
+      - 🇰🇷_KR_韩国
+      - 🇸🇬_SG_新加坡_1
       - 🇫🇷_FR_法国
-      - 🇺🇸_US_美国_4
-      - 🇰🇷_KR_韩国_1
+      - 🇺🇸_US_美国->🇩🇪_DE_德国
+      - 🇫🇮_FI_芬兰_1
+      - 🇯🇵_JP_日本
+      - 🇭🇰_HK_中国香港_2
+      - 🇺🇸_US_美国->🇫🇮_FI_芬兰_3
+      - 🇸🇬_SG_新加坡_2
+      - 🇭🇰_HK_中国香港_3
+      - 🇺🇸_US_美国->🇫🇮_FI_芬兰_4
+      - 🇺🇸_US_美国_1
+      - 🇩🇪_DE_德国
+      - 🇭🇺_HU_匈牙利
+      - 🇻🇳_VN_越南
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇱🇹_LT_立陶宛
-      - 🇺🇸_US_美国
       - 🇺🇸_US_美国->🇫🇮_FI_芬兰
-      - 🇳🇱_NL_荷兰
-      - 🇫🇮_FI_芬兰
-      - 🇩🇪_DE_德国
-      - 🇺🇸_US_美国_1
       - 🇭🇰_HK_中国香港
-      - 🇰🇷_KR_韩国
-      - 🇷🇺_RU_俄罗斯
-      - 🇺🇸_US_美国_2
-      - 🇭🇰_HK_中国香港_1
-      - 🇷🇺_RU_俄罗斯_1
-      - 🇸🇬_SG_新加坡
-      - 🇷🇺_RU_俄罗斯_2
-      - 🇷🇺_RU_俄罗斯_3
+      - 🇭🇺_HU_匈牙利->🇫🇷_FR_法国
+      - 🇮🇳_IN_印度
+      - 🇫🇮_FI_芬兰
       - 🇺🇸_US_美国->🇫🇮_FI_芬兰_1
-      - 🇺🇸_US_美国_3
-      - 🇩🇪_DE_德国_1
-      - 🇮🇩_ID_印度尼西亚
+      - 🇺🇸_US_美国->🇫🇮_FI_芬兰_2
+      - 🇭🇰_HK_中国香港_1
+      - 🇸🇬_SG_新加坡
+      - 🇺🇸_US_美国
+      - 🇪🇸_ES_西班牙
+      - 🇰🇷_KR_韩国
+      - 🇸🇬_SG_新加坡_1
       - 🇫🇷_FR_法国
-      - 🇺🇸_US_美国_4
-      - 🇰🇷_KR_韩国_1
+      - 🇺🇸_US_美国->🇩🇪_DE_德国
+      - 🇫🇮_FI_芬兰_1
+      - 🇯🇵_JP_日本
+      - 🇭🇰_HK_中国香港_2
+      - 🇺🇸_US_美国->🇫🇮_FI_芬兰_3
+      - 🇸🇬_SG_新加坡_2
+      - 🇭🇰_HK_中国香港_3
+      - 🇺🇸_US_美国->🇫🇮_FI_芬兰_4
+      - 🇺🇸_US_美国_1
+      - 🇩🇪_DE_德国
+      - 🇭🇺_HU_匈牙利
+      - 🇻🇳_VN_越南
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🇱🇹_LT_立陶宛
-      - 🇺🇸_US_美国
       - 🇺🇸_US_美国->🇫🇮_FI_芬兰
-      - 🇳🇱_NL_荷兰
-      - 🇫🇮_FI_芬兰
-      - 🇩🇪_DE_德国
-      - 🇺🇸_US_美国_1
       - 🇭🇰_HK_中国香港
-      - 🇰🇷_KR_韩国
-      - 🇷🇺_RU_俄罗斯
-      - 🇺🇸_US_美国_2
-      - 🇭🇰_HK_中国香港_1
-      - 🇷🇺_RU_俄罗斯_1
-      - 🇸🇬_SG_新加坡
-      - 🇷🇺_RU_俄罗斯_2
-      - 🇷🇺_RU_俄罗斯_3
+      - 🇭🇺_HU_匈牙利->🇫🇷_FR_法国
+      - 🇮🇳_IN_印度
+      - 🇫🇮_FI_芬兰
       - 🇺🇸_US_美国->🇫🇮_FI_芬兰_1
-      - 🇺🇸_US_美国_3
-      - 🇩🇪_DE_德国_1
-      - 🇮🇩_ID_印度尼西亚
+      - 🇺🇸_US_美国->🇫🇮_FI_芬兰_2
+      - 🇭🇰_HK_中国香港_1
+      - 🇸🇬_SG_新加坡
+      - 🇺🇸_US_美国
+      - 🇪🇸_ES_西班牙
+      - 🇰🇷_KR_韩国
+      - 🇸🇬_SG_新加坡_1
       - 🇫🇷_FR_法国
-      - 🇺🇸_US_美国_4
-      - 🇰🇷_KR_韩国_1
+      - 🇺🇸_US_美国->🇩🇪_DE_德国
+      - 🇫🇮_FI_芬兰_1
+      - 🇯🇵_JP_日本
+      - 🇭🇰_HK_中国香港_2
+      - 🇺🇸_US_美国->🇫🇮_FI_芬兰_3
+      - 🇸🇬_SG_新加坡_2
+      - 🇭🇰_HK_中国香港_3
+      - 🇺🇸_US_美国->🇫🇮_FI_芬兰_4
+      - 🇺🇸_US_美国_1
+      - 🇩🇪_DE_德国
+      - 🇭🇺_HU_匈牙利
+      - 🇻🇳_VN_越南
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇱🇹_LT_立陶宛
-      - 🇺🇸_US_美国
       - 🇺🇸_US_美国->🇫🇮_FI_芬兰
-      - 🇳🇱_NL_荷兰
-      - 🇫🇮_FI_芬兰
-      - 🇩🇪_DE_德国
-      - 🇺🇸_US_美国_1
       - 🇭🇰_HK_中国香港
-      - 🇰🇷_KR_韩国
-      - 🇷🇺_RU_俄罗斯
-      - 🇺🇸_US_美国_2
-      - 🇭🇰_HK_中国香港_1
-      - 🇷🇺_RU_俄罗斯_1
-      - 🇸🇬_SG_新加坡
-      - 🇷🇺_RU_俄罗斯_2
-      - 🇷🇺_RU_俄罗斯_3
+      - 🇭🇺_HU_匈牙利->🇫🇷_FR_法国
+      - 🇮🇳_IN_印度
+      - 🇫🇮_FI_芬兰
       - 🇺🇸_US_美国->🇫🇮_FI_芬兰_1
-      - 🇺🇸_US_美国_3
-      - 🇩🇪_DE_德国_1
-      - 🇮🇩_ID_印度尼西亚
+      - 🇺🇸_US_美国->🇫🇮_FI_芬兰_2
+      - 🇭🇰_HK_中国香港_1
+      - 🇸🇬_SG_新加坡
+      - 🇺🇸_US_美国
+      - 🇪🇸_ES_西班牙
+      - 🇰🇷_KR_韩国
+      - 🇸🇬_SG_新加坡_1
       - 🇫🇷_FR_法国
-      - 🇺🇸_US_美国_4
-      - 🇰🇷_KR_韩国_1
+      - 🇺🇸_US_美国->🇩🇪_DE_德国
+      - 🇫🇮_FI_芬兰_1
+      - 🇯🇵_JP_日本
+      - 🇭🇰_HK_中国香港_2
+      - 🇺🇸_US_美国->🇫🇮_FI_芬兰_3
+      - 🇸🇬_SG_新加坡_2
+      - 🇭🇰_HK_中国香港_3
+      - 🇺🇸_US_美国->🇫🇮_FI_芬兰_4
+      - 🇺🇸_US_美国_1
+      - 🇩🇪_DE_德国
+      - 🇭🇺_HU_匈牙利
+      - 🇻🇳_VN_越南
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -447,29 +531,32 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇱🇹_LT_立陶宛
-      - 🇺🇸_US_美国
       - 🇺🇸_US_美国->🇫🇮_FI_芬兰
-      - 🇳🇱_NL_荷兰
-      - 🇫🇮_FI_芬兰
-      - 🇩🇪_DE_德国
-      - 🇺🇸_US_美国_1
       - 🇭🇰_HK_中国香港
-      - 🇰🇷_KR_韩国
-      - 🇷🇺_RU_俄罗斯
-      - 🇺🇸_US_美国_2
-      - 🇭🇰_HK_中国香港_1
-      - 🇷🇺_RU_俄罗斯_1
-      - 🇸🇬_SG_新加坡
-      - 🇷🇺_RU_俄罗斯_2
-      - 🇷🇺_RU_俄罗斯_3
+      - 🇭🇺_HU_匈牙利->🇫🇷_FR_法国
+      - 🇮🇳_IN_印度
+      - 🇫🇮_FI_芬兰
       - 🇺🇸_US_美国->🇫🇮_FI_芬兰_1
-      - 🇺🇸_US_美国_3
-      - 🇩🇪_DE_德国_1
-      - 🇮🇩_ID_印度尼西亚
+      - 🇺🇸_US_美国->🇫🇮_FI_芬兰_2
+      - 🇭🇰_HK_中国香港_1
+      - 🇸🇬_SG_新加坡
+      - 🇺🇸_US_美国
+      - 🇪🇸_ES_西班牙
+      - 🇰🇷_KR_韩国
+      - 🇸🇬_SG_新加坡_1
       - 🇫🇷_FR_法国
-      - 🇺🇸_US_美国_4
-      - 🇰🇷_KR_韩国_1
+      - 🇺🇸_US_美国->🇩🇪_DE_德国
+      - 🇫🇮_FI_芬兰_1
+      - 🇯🇵_JP_日本
+      - 🇭🇰_HK_中国香港_2
+      - 🇺🇸_US_美国->🇫🇮_FI_芬兰_3
+      - 🇸🇬_SG_新加坡_2
+      - 🇭🇰_HK_中国香港_3
+      - 🇺🇸_US_美国->🇫🇮_FI_芬兰_4
+      - 🇺🇸_US_美国_1
+      - 🇩🇪_DE_德国
+      - 🇭🇺_HU_匈牙利
+      - 🇻🇳_VN_越南
 rule-providers:
   LocalAreaNetwork:
     type: http
