@@ -24,70 +24,7 @@ dns:
       - https://1.1.1.1/dns-query#🚀 节点选择
       - https://8.8.8.8/dns-query#🚀 节点选择
 proxies:
-  - name: 🇭🇰_HK_中国香港特别行政区
-    type: vmess
-    server: 47.83.221.185
-    port: 80
-    uuid: 771a590c-5eac-5732-b796-17251132f8d2
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: true
-    udp: true
-  - name: 🇺🇸_US_美国
-    type: ss
-    server: 3.145.57.90
-    port: 443
-    cipher: aes-256-cfb
-    password: amazonskr05
-    skip-cert-verify: true
-    udp: true
-  - name: 🇨🇳_CN_中国
-    type: trojan
-    server: 114.80.8.128
-    port: 39001
-    password: 1df3ece1218bedba28c6c6ac726a07bb
-    sni: www.yrtok.com
-    skip-cert-verify: true
-    tls: true
-    udp: true
-  - name: 🇺🇸_US_美国->🇩🇪_DE_德国
-    type: vless
-    server: 172.64.147.236
-    port: 443
-    uuid: c35050ce-01ab-45a9-91b8-54cec637d0a8
-    network: ws
-    servername: octopusss5.info
-    tls: true
-    client-fingerprint: chrome
-    ws-opts:
-      path: /udfyfws
-      headers:
-        Host: octopusss5.info
-    skip-cert-verify: true
-    udp: true
-  - name: 🇻🇳_VN_越南
-    type: hysteria2
-    server: vn2.yuntong.click
-    port: 443
-    password: f7cb07a0-e6f9-4d22-a60e-c61854450c89
-    sni: vn2.yuntong.click
-    skip-cert-verify: true
-    obfs: salamander
-    obfs-password: eNM/NfxTsBqQIKcN0ezARS1z0f5mIxRd9GSwhVsyJlo=
-    udp: true
   - name: 🇭🇰_HK_中国香港
-    type: vmess
-    server: n1747624274.4u9ma.icu
-    port: 443
-    uuid: d8daf507-a4ac-4eea-8399-8f0cd071eb52
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    network: ws
-    udp: true
-  - name: 🇭🇰_HK_中国香港_1
     type: vmess
     server: n1747624260.4u9ma.icu
     port: 443
@@ -98,41 +35,103 @@ proxies:
     skip-cert-verify: true
     network: ws
     udp: true
-  - name: 🇫🇮_FI_芬兰
-    type: vless
-    server: hokm-t1.igatel.com
-    port: 8526
-    uuid: a49adb79-ed7b-449a-8bba-3842dc495e74
-    servername: www.yahoo.com
-    tls: true
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: -zNDEqKkScKvMWB7spEper78GE_u-nR4jDHZ3DpOoxM
-      short-id: 62ad184af31fc8cf
+  - name: 🇭🇰_HK_中国香港_1
+    type: vmess
+    server: 47.76.127.88
+    port: 5566
+    uuid: 44712929-c2b7-4fa4-93bd-9de332a78c8c
+    alterId: 0
+    cipher: auto
+    tls: false
     skip-cert-verify: true
     udp: true
-  - name: 🇭🇰_HK_中国香港_2
+  - name: 🇮🇩_ID_印度尼西亚
+    type: trojan
+    server: ine07011438.tmdsb.org
+    port: 3367
+    password: "3632736327"
+    sni: ine07011438.tmdsb.org
+    skip-cert-verify: true
+    tls: true
+    udp: true
+  - name: 🇷🇺_RU_俄罗斯->🇫🇮_FI_芬兰
     type: hysteria2
-    server: 156.226.172.6
-    port: 55000
-    password: e3d48fa4-42b7-40a7-827c-5b6496a043d1
+    server: fast88.screw.page
+    port: 443
+    password: c0aa0cee-e855-4bcc-9afc-46241cb17990
+    sni: fast88.screw.page
+    skip-cert-verify: true
+    udp: true
+  - name: 🇩🇪_DE_德国
+    type: hysteria
+    server: 5.83.129.153
+    port: 20088
+    auth_str: dongtaiwang.com
+    up: "500"
+    down: "1000"
+    sni: apple.com
+    skip-cert-verify: true
+    alpn:
+      - h3
+    udp: true
+  - name: 🇯🇵_JP_日本
+    type: hysteria2
+    server: 45.88.43.116
+    port: 52454
+    password: 6c077487-06af-4fb1-9e46-d485d98f0a31
     sni: www.bing.com
     skip-cert-verify: true
     udp: true
-  - name: 🇨🇳_CN_中国->🇸🇬_SG_新加坡
-    type: vless
-    server: 120.55.183.176
-    port: 443
-    uuid: 4d10c997-4781-4cd9-82c3-15453523e12c
-    network: ws
-    servername: support.zoom.us.yxls.eu.cc
-    tls: true
-    client-fingerprint: chrome
-    ws-opts:
-      path: /sg-melbi
-      headers:
-        Host: support.zoom.us.yxls.eu.cc
+  - name: 🇩🇪_DE_德国_1
+    type: hysteria
+    server: 5.83.129.90
+    port: 54177
+    auth_str: dongtaiwang.com
+    up: "500"
+    down: "1000"
+    sni: apple.com
     skip-cert-verify: true
+    alpn:
+      - h3
+    udp: true
+  - name: 🇭🇰_HK_中国香港_2
+    type: vmess
+    server: n1747624274.4u9ma.icu
+    port: 443
+    uuid: d8daf507-a4ac-4eea-8399-8f0cd071eb52
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    network: ws
+    udp: true
+  - name: 🇰🇷_KR_韩国
+    type: trojan
+    server: kr04021338.tmdsb.org
+    port: 1864
+    password: "3632736327"
+    sni: kr04021338.tmdsb.org
+    skip-cert-verify: true
+    tls: true
+    udp: true
+  - name: 🇺🇸_US_美国
+    type: trojan
+    server: us04021322.tmdsb.org
+    port: 2888
+    password: "3632736327"
+    sni: us04021322.tmdsb.org
+    skip-cert-verify: true
+    tls: true
+    udp: true
+  - name: 🇩🇪_DE_德国_2
+    type: hysteria2
+    server: ff2.yuntong.click
+    port: 443
+    password: f7cb07a0-e6f9-4d22-a60e-c61854450c89
+    sni: ff2.yuntong.click
+    skip-cert-verify: true
+    obfs: salamander
+    obfs-password: eNM/NfxTsBqQIKcN0ezARS1z0f5mIxRd9GSwhVsyJlo=
     udp: true
   - name: 🇺🇸_US_美国_1
     type: vmess
@@ -145,74 +144,12 @@ proxies:
     skip-cert-verify: true
     servername: gw.alicdn.com
     udp: true
-  - name: 🇬🇧_GB_英国
-    type: hysteria2
-    server: 45.154.205.25
-    port: 55000
-    password: 88f839f2-c3c0-487d-aac3-f8c089d2369d
-    sni: www.bing.com
-    skip-cert-verify: true
-    udp: true
-  - name: 🇩🇪_DE_德国
-    type: hysteria2
-    server: ff2.yuntong.click
-    port: 443
-    password: f7cb07a0-e6f9-4d22-a60e-c61854450c89
-    sni: ff2.yuntong.click
-    skip-cert-verify: true
-    obfs: salamander
-    obfs-password: eNM/NfxTsBqQIKcN0ezARS1z0f5mIxRd9GSwhVsyJlo=
-    udp: true
-  - name: 🇯🇵_JP_日本
-    type: hysteria2
-    server: haigc.shop
-    port: 443
-    password: xtoRpl9CCisiSwbIawiZ
-    sni: haigc.shop
-    skip-cert-verify: true
-    udp: true
-  - name: 🇷🇺_RU_俄罗斯->🇫🇮_FI_芬兰
-    type: hysteria2
-    server: fast88.screw.page
-    port: 443
-    password: c0aa0cee-e855-4bcc-9afc-46241cb17990
-    sni: fast88.screw.page
-    skip-cert-verify: true
-    udp: true
   - name: 🇺🇸_US_美国_2
     type: hysteria2
-    server: 69.63.220.227
-    port: 443
-    password: 038663b35fe801158d3eca2dae5a6fb1
-    sni: 69.63.220.227
-    skip-cert-verify: true
-    obfs: salamander
-    obfs-password: 7e3ea7dfee4694e5e0e73383
-    udp: true
-  - name: 🇸🇬_SG_新加坡
-    type: hysteria2
-    server: 54.255.102.19
-    port: 443
-    password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-    sni: https://t.me/WangCai2🇨🇳
-    skip-cert-verify: true
-    udp: true
-  - name: 🇯🇵_JP_日本_1
-    type: ss
-    server: 52.195.12.64
-    port: 443
-    cipher: aes-256-cfb
-    password: amazonskr05
-    skip-cert-verify: true
-    udp: true
-  - name: 🇭🇰_HK_中国香港_3
-    type: vmess
-    server: 47.76.127.88
-    port: 5566
-    uuid: 44712929-c2b7-4fa4-93bd-9de332a78c8c
-    alterId: 0
-    cipher: auto
-    tls: false
+    server: 156.229.164.1
+    port: 55000
+    password: 1624ccf4-f88b-4411-81bd-978570b3cbdc
+    sni: www.bing.com
     skip-cert-verify: true
     udp: true
 proxy-groups:
@@ -221,47 +158,35 @@ proxy-groups:
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇭🇰_HK_中国香港特别行政区
-      - 🇺🇸_US_美国
-      - 🇨🇳_CN_中国
-      - 🇺🇸_US_美国->🇩🇪_DE_德国
-      - 🇻🇳_VN_越南
       - 🇭🇰_HK_中国香港
       - 🇭🇰_HK_中国香港_1
-      - 🇫🇮_FI_芬兰
-      - 🇭🇰_HK_中国香港_2
-      - 🇨🇳_CN_中国->🇸🇬_SG_新加坡
-      - 🇺🇸_US_美国_1
-      - 🇬🇧_GB_英国
+      - 🇮🇩_ID_印度尼西亚
+      - 🇷🇺_RU_俄罗斯->🇫🇮_FI_芬兰
       - 🇩🇪_DE_德国
       - 🇯🇵_JP_日本
-      - 🇷🇺_RU_俄罗斯->🇫🇮_FI_芬兰
+      - 🇩🇪_DE_德国_1
+      - 🇭🇰_HK_中国香港_2
+      - 🇰🇷_KR_韩国
+      - 🇺🇸_US_美国
+      - 🇩🇪_DE_德国_2
+      - 🇺🇸_US_美国_1
       - 🇺🇸_US_美国_2
-      - 🇸🇬_SG_新加坡
-      - 🇯🇵_JP_日本_1
-      - 🇭🇰_HK_中国香港_3
   - name: ♻️ 自动选择
     type: url-test
     proxies:
-      - 🇭🇰_HK_中国香港特别行政区
-      - 🇺🇸_US_美国
-      - 🇨🇳_CN_中国
-      - 🇺🇸_US_美国->🇩🇪_DE_德国
-      - 🇻🇳_VN_越南
       - 🇭🇰_HK_中国香港
       - 🇭🇰_HK_中国香港_1
-      - 🇫🇮_FI_芬兰
-      - 🇭🇰_HK_中国香港_2
-      - 🇨🇳_CN_中国->🇸🇬_SG_新加坡
-      - 🇺🇸_US_美国_1
-      - 🇬🇧_GB_英国
+      - 🇮🇩_ID_印度尼西亚
+      - 🇷🇺_RU_俄罗斯->🇫🇮_FI_芬兰
       - 🇩🇪_DE_德国
       - 🇯🇵_JP_日本
-      - 🇷🇺_RU_俄罗斯->🇫🇮_FI_芬兰
+      - 🇩🇪_DE_德国_1
+      - 🇭🇰_HK_中国香港_2
+      - 🇰🇷_KR_韩国
+      - 🇺🇸_US_美国
+      - 🇩🇪_DE_德国_2
+      - 🇺🇸_US_美国_1
       - 🇺🇸_US_美国_2
-      - 🇸🇬_SG_新加坡
-      - 🇯🇵_JP_日本_1
-      - 🇭🇰_HK_中国香港_3
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
@@ -271,97 +196,73 @@ proxy-groups:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇭🇰_HK_中国香港特别行政区
-      - 🇺🇸_US_美国
-      - 🇨🇳_CN_中国
-      - 🇺🇸_US_美国->🇩🇪_DE_德国
-      - 🇻🇳_VN_越南
       - 🇭🇰_HK_中国香港
       - 🇭🇰_HK_中国香港_1
-      - 🇫🇮_FI_芬兰
-      - 🇭🇰_HK_中国香港_2
-      - 🇨🇳_CN_中国->🇸🇬_SG_新加坡
-      - 🇺🇸_US_美国_1
-      - 🇬🇧_GB_英国
+      - 🇮🇩_ID_印度尼西亚
+      - 🇷🇺_RU_俄罗斯->🇫🇮_FI_芬兰
       - 🇩🇪_DE_德国
       - 🇯🇵_JP_日本
-      - 🇷🇺_RU_俄罗斯->🇫🇮_FI_芬兰
+      - 🇩🇪_DE_德国_1
+      - 🇭🇰_HK_中国香港_2
+      - 🇰🇷_KR_韩国
+      - 🇺🇸_US_美国
+      - 🇩🇪_DE_德国_2
+      - 🇺🇸_US_美国_1
       - 🇺🇸_US_美国_2
-      - 🇸🇬_SG_新加坡
-      - 🇯🇵_JP_日本_1
-      - 🇭🇰_HK_中国香港_3
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇭🇰_HK_中国香港特别行政区
-      - 🇺🇸_US_美国
-      - 🇨🇳_CN_中国
-      - 🇺🇸_US_美国->🇩🇪_DE_德国
-      - 🇻🇳_VN_越南
       - 🇭🇰_HK_中国香港
       - 🇭🇰_HK_中国香港_1
-      - 🇫🇮_FI_芬兰
-      - 🇭🇰_HK_中国香港_2
-      - 🇨🇳_CN_中国->🇸🇬_SG_新加坡
-      - 🇺🇸_US_美国_1
-      - 🇬🇧_GB_英国
+      - 🇮🇩_ID_印度尼西亚
+      - 🇷🇺_RU_俄罗斯->🇫🇮_FI_芬兰
       - 🇩🇪_DE_德国
       - 🇯🇵_JP_日本
-      - 🇷🇺_RU_俄罗斯->🇫🇮_FI_芬兰
+      - 🇩🇪_DE_德国_1
+      - 🇭🇰_HK_中国香港_2
+      - 🇰🇷_KR_韩国
+      - 🇺🇸_US_美国
+      - 🇩🇪_DE_德国_2
+      - 🇺🇸_US_美国_1
       - 🇺🇸_US_美国_2
-      - 🇸🇬_SG_新加坡
-      - 🇯🇵_JP_日本_1
-      - 🇭🇰_HK_中国香港_3
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🇭🇰_HK_中国香港特别行政区
-      - 🇺🇸_US_美国
-      - 🇨🇳_CN_中国
-      - 🇺🇸_US_美国->🇩🇪_DE_德国
-      - 🇻🇳_VN_越南
       - 🇭🇰_HK_中国香港
       - 🇭🇰_HK_中国香港_1
-      - 🇫🇮_FI_芬兰
-      - 🇭🇰_HK_中国香港_2
-      - 🇨🇳_CN_中国->🇸🇬_SG_新加坡
-      - 🇺🇸_US_美国_1
-      - 🇬🇧_GB_英国
+      - 🇮🇩_ID_印度尼西亚
+      - 🇷🇺_RU_俄罗斯->🇫🇮_FI_芬兰
       - 🇩🇪_DE_德国
       - 🇯🇵_JP_日本
-      - 🇷🇺_RU_俄罗斯->🇫🇮_FI_芬兰
+      - 🇩🇪_DE_德国_1
+      - 🇭🇰_HK_中国香港_2
+      - 🇰🇷_KR_韩国
+      - 🇺🇸_US_美国
+      - 🇩🇪_DE_德国_2
+      - 🇺🇸_US_美国_1
       - 🇺🇸_US_美国_2
-      - 🇸🇬_SG_新加坡
-      - 🇯🇵_JP_日本_1
-      - 🇭🇰_HK_中国香港_3
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇭🇰_HK_中国香港特别行政区
-      - 🇺🇸_US_美国
-      - 🇨🇳_CN_中国
-      - 🇺🇸_US_美国->🇩🇪_DE_德国
-      - 🇻🇳_VN_越南
       - 🇭🇰_HK_中国香港
       - 🇭🇰_HK_中国香港_1
-      - 🇫🇮_FI_芬兰
-      - 🇭🇰_HK_中国香港_2
-      - 🇨🇳_CN_中国->🇸🇬_SG_新加坡
-      - 🇺🇸_US_美国_1
-      - 🇬🇧_GB_英国
+      - 🇮🇩_ID_印度尼西亚
+      - 🇷🇺_RU_俄罗斯->🇫🇮_FI_芬兰
       - 🇩🇪_DE_德国
       - 🇯🇵_JP_日本
-      - 🇷🇺_RU_俄罗斯->🇫🇮_FI_芬兰
+      - 🇩🇪_DE_德国_1
+      - 🇭🇰_HK_中国香港_2
+      - 🇰🇷_KR_韩国
+      - 🇺🇸_US_美国
+      - 🇩🇪_DE_德国_2
+      - 🇺🇸_US_美国_1
       - 🇺🇸_US_美国_2
-      - 🇸🇬_SG_新加坡
-      - 🇯🇵_JP_日本_1
-      - 🇭🇰_HK_中国香港_3
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -389,25 +290,19 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇭🇰_HK_中国香港特别行政区
-      - 🇺🇸_US_美国
-      - 🇨🇳_CN_中国
-      - 🇺🇸_US_美国->🇩🇪_DE_德国
-      - 🇻🇳_VN_越南
       - 🇭🇰_HK_中国香港
       - 🇭🇰_HK_中国香港_1
-      - 🇫🇮_FI_芬兰
-      - 🇭🇰_HK_中国香港_2
-      - 🇨🇳_CN_中国->🇸🇬_SG_新加坡
-      - 🇺🇸_US_美国_1
-      - 🇬🇧_GB_英国
+      - 🇮🇩_ID_印度尼西亚
+      - 🇷🇺_RU_俄罗斯->🇫🇮_FI_芬兰
       - 🇩🇪_DE_德国
       - 🇯🇵_JP_日本
-      - 🇷🇺_RU_俄罗斯->🇫🇮_FI_芬兰
+      - 🇩🇪_DE_德国_1
+      - 🇭🇰_HK_中国香港_2
+      - 🇰🇷_KR_韩国
+      - 🇺🇸_US_美国
+      - 🇩🇪_DE_德国_2
+      - 🇺🇸_US_美国_1
       - 🇺🇸_US_美国_2
-      - 🇸🇬_SG_新加坡
-      - 🇯🇵_JP_日本_1
-      - 🇭🇰_HK_中国香港_3
 rule-providers:
   LocalAreaNetwork:
     type: http
