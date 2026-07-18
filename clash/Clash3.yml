@@ -24,68 +24,17 @@ dns:
       - https://1.1.1.1/dns-query#🚀 节点选择
       - https://8.8.8.8/dns-query#🚀 节点选择
 proxies:
-  - name: 🇩🇪_DE_德国
-    type: hysteria2
-    server: ff2.yuntong.click
-    port: 443
-    password: f7cb07a0-e6f9-4d22-a60e-c61854450c89
-    sni: ff2.yuntong.click
+  - name: 🇨🇳_CN_中国->🇭🇰_HK_中国香港
+    type: vmess
+    server: v9.hdacd.com
+    port: 30809
+    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+    alterId: 2
+    cipher: auto
+    tls: false
     skip-cert-verify: true
-    obfs: salamander
-    obfs-password: eNM/NfxTsBqQIKcN0ezARS1z0f5mIxRd9GSwhVsyJlo=
-    udp: true
-  - name: 🇸🇬_SG_新加坡
-    type: trojan
-    server: proper-marlin.rooster465.autos
-    port: 443
-    password: NQ26071394
-    sni: proper-marlin.rooster465.autos
-    skip-cert-verify: true
-    tls: true
     udp: true
   - name: 🇭🇰_HK_中国香港
-    type: trojan
-    server: 18.163.5.109
-    port: 7674
-    password: BxceQaOe
-    sni: t.me%2Fripaojiedian
-    skip-cert-verify: true
-    tls: false
-    udp: true
-  - name: 🇩🇪_DE_德国_1
-    type: hysteria
-    server: 5.83.129.90
-    port: 54177
-    auth_str: dongtaiwang.com
-    up: "11"
-    down: "55"
-    sni: bing.com
-    skip-cert-verify: true
-    alpn:
-      - h3
-    udp: true
-  - name: 🇺🇸_US_美国
-    type: ss
-    server: 88.210.36.106
-    port: 2377
-    cipher: chacha20-ietf-poly1305
-    password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-    plugin: obfs
-    plugin-opts:
-      mode: tls
-      host: (Telegram🇨🇳 @WangCai2)f6e348d:70852
-    skip-cert-verify: true
-    udp: true
-  - name: 🇯🇵_JP_日本
-    type: trojan
-    server: brief-hare.rooster465.autos
-    port: 443
-    password: NQ26071394
-    sni: brief-hare.rooster465.autos
-    skip-cert-verify: true
-    tls: true
-    udp: true
-  - name: 🇭🇰_HK_中国香港_1
     type: vmess
     server: 47.76.127.88
     port: 5566
@@ -95,219 +44,48 @@ proxies:
     tls: false
     skip-cert-verify: true
     udp: true
-  - name: 🇰🇷_KR_韩国
-    type: trojan
-    server: living-hagfish.rooster465.autos
-    port: 443
-    password: NQ26071394
-    sni: living-hagfish.rooster465.autos
-    skip-cert-verify: true
-    tls: false
-    udp: true
-  - name: 🇫🇷_FR_法国
-    type: tuic
-    server: 62.210.24.143
-    port: 33888
-    uuid: 9adb384a-0f16-4501-a8f3-b6b2556fce87
-    password: dongtaiwang.com
-    sni: bing.com
-    alpn:
-      - h3
-    congestion-controller: cubic
-    udp-relay-mode: native
-    skip-cert-verify: true
-    disable-sni: false
-    udp: true
-  - name: 🇮🇪_IE_爱尔兰
-    type: trojan
-    server: thankful-piranha.rooster465.autos
-    port: 443
-    password: NQ26071394
-    sni: thankful-piranha.rooster465.autos
-    skip-cert-verify: true
-    tls: true
-    udp: true
-  - name: 🇵🇱_PL_波兰
-    type: vless
-    server: 185.16.36.200
-    port: 43439
-    uuid: c8b5f6c9-83ff-0063-be9c-f997a5b2f692
-    network: grpc
-    servername: cdn-up.perecbass.ru
-    tls: true
-    client-fingerprint: firefox
-    grpc-opts:
-      grpc-service-name: ws
-    reality-opts:
-      public-key: b4n1pcO8ST3JkGtj8YymXVrW17LEe2EHec5wY7hMMR4
-      short-id: 0df2f86d58385f90
-    skip-cert-verify: true
-    udp: true
-  - name: 🇫🇷_FR_法国_1
-    type: trojan
-    server: ready-kangaroo.rooster465.autos
-    port: 443
-    password: NQ26071394
-    sni: ready-kangaroo.rooster465.autos
-    skip-cert-verify: true
-    tls: true
-    udp: true
-  - name: 🇸🇬_SG_新加坡_1
-    type: trojan
-    server: helping-newt.rooster465.autos
-    port: 443
-    password: NQ26071394
-    sni: helping-newt.rooster465.autos
-    skip-cert-verify: true
-    tls: true
-    udp: true
-  - name: 🇯🇵_JP_日本_1
-    type: trojan
-    server: expert-muskrat.rooster465.autos
-    port: 443
-    password: NQ26071394
-    sni: expert-muskrat.rooster465.autos
-    skip-cert-verify: true
-    tls: true
-    udp: true
-  - name: 🇭🇰_HK_中国香港_2
+  - name: 🇨🇳_CN_中国->🇺🇸_US_美国
     type: vmess
-    server: n1747624274.4u9ma.icu
-    port: 443
-    uuid: d8daf507-a4ac-4eea-8399-8f0cd071eb52
-    alterId: 0
+    server: v4.hdacd.com
+    port: 30804
+    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+    alterId: 2
     cipher: auto
-    tls: true
-    skip-cert-verify: true
-    network: ws
-    udp: true
-  - name: 🇩🇪_DE_德国_2
-    type: vless
-    server: 3.122.121.39
-    port: 22224
-    uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
     tls: false
     skip-cert-verify: true
     udp: true
-  - name: 🇰🇷_KR_韩国_1
-    type: trojan
-    server: guided-pelican.rooster465.autos
-    port: 443
-    password: NQ26071394
-    sni: guided-pelican.rooster465.autos
-    skip-cert-verify: true
-    tls: true
-    udp: true
-  - name: 🇭🇰_HK_中国香港->🇺🇸_US_美国
-    type: trojan
-    server: 18.163.5.109
-    port: 35966
-    password: BxceQaOe
-    sni: t.me%2Fripaojiedian
-    skip-cert-verify: true
-    tls: false
-    udp: true
-  - name: 🇺🇸_US_美国_1
+  - name: 🇳🇱_NL_荷兰
     type: vless
-    server: 172.66.3.90
-    port: 8443
-    uuid: 817b61c8-9bf0-4365-8a52-e43dfad274a6
-    network: ws
-    servername: shin-ra.ccwu.cc
-    tls: true
-    ws-opts:
-      path: /
-      headers:
-        Host: shin-ra.ccwu.cc
-    skip-cert-verify: true
-    udp: true
-  - name: 🇵🇱_PL_波兰_1
-    type: vless
-    server: 128.204.223.94
-    port: 9815
-    uuid: 37a0bd7c-8b9f-4693-8916-bd1e2da0a817
-    network: ws
-    tls: false
-    skip-cert-verify: true
-    udp: true
-  - name: 🇮🇪_IE_爱尔兰_1
-    type: trojan
-    server: fun-labrador.rooster465.autos
+    server: 95.85.228.34
     port: 443
-    password: NQ26071394
-    sni: fun-labrador.rooster465.autos
-    skip-cert-verify: true
-    tls: true
-    udp: true
-  - name: 🇬🇷_GR_希腊
-    type: vless
-    server: grek.helper-internet.com
-    port: 443
-    uuid: 59da5351-5151-417d-b2f7-6923848b717e
-    servername: grek.helper-internet.com
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: W-zf_ncm9sYALF5EqvUsxqTkYGdAw-tQczT2SqwVMGE
-      short-id: ff776ff77be48b88
-    skip-cert-verify: true
-    udp: true
-  - name: 🇯🇵_JP_日本_2
-    type: trojan
-    server: stunning-mastodon.rooster465.autos
-    port: 443
-    password: NQ26071394
-    sni: stunning-mastodon.rooster465.autos
-    skip-cert-verify: true
-    tls: true
-    udp: true
-  - name: 🇰🇷_KR_韩国_2
-    type: trojan
-    server: accurate-cat.rooster465.autos
-    port: 443
-    password: NQ26071394
-    sni: accurate-cat.rooster465.autos
-    skip-cert-verify: true
-    tls: true
-    udp: true
-  - name: 🇩🇪_DE_德国_3
-    type: vless
-    server: 2.26.125.51
-    port: 443
-    uuid: 320fb564-c329-4d32-8187-89d7058af0eb
-    servername: site.rumedia-cdn.com
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: firefox
-    reality-opts:
-      public-key: HOTVBbrNu_CXdYbnC8sumXQfZ_W7NG2vcN8o8SblTGI
-      short-id: e6b0240761f538e1
-    skip-cert-verify: true
-    udp: true
-  - name: 🇩🇪_DE_德国_4
-    type: vless
-    server: ge1.cyphervpn.pro
-    port: 8443
-    uuid: 8bba3194-4856-46d1-8319-075817d87eb1
+    uuid: 8f0560ec-ba22-4431-a6a7-318dc59d5233
     network: grpc
-    servername: ge1.cyphervpn.pro
+    servername: 1vga81kaw013f-topology-gslb-yccdn.ru
     tls: true
+    client-fingerprint: chrome
     grpc-opts:
-      grpc-service-name: ge1grpc
+      grpc-service-name: nexusGrpc
+    reality-opts:
+      public-key: ibignrnL_bVupAb4hFM939eT22FtlzPvc1FZY_FDwnw
+      short-id: 5e3ab3ab228625
     skip-cert-verify: true
     udp: true
-  - name: 🇺🇸_US_美国_2
-    type: hysteria2
-    server: 69.63.220.227
+  - name: 🇺🇸_US_美国->🇩🇪_DE_德国
+    type: vless
+    server: 199.232.22.39
     port: 443
-    password: 038663b35fe801158d3eca2dae5a6fb1
-    sni: 69.63.220.227
+    uuid: cbcf2255-6d66-4039-b7d6-c10d6ffc99e7
+    network: ws
+    servername: ssl.fastly.com
+    tls: true
+    client-fingerprint: chrome
+    ws-opts:
+      path: /TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER?ed
+      headers:
+        Host: pan1.global.ssl.fastly.net
     skip-cert-verify: true
-    obfs: salamander
-    obfs-password: 7e3ea7dfee4694e5e0e73383
     udp: true
-  - name: 🇭🇰_HK_中国香港_3
+  - name: 🇭🇰_HK_中国香港_1
     type: vless
     server: hk.259470.xyz
     port: 443
@@ -327,71 +105,179 @@ proxies:
       short-id: 31fb576726
     skip-cert-verify: true
     udp: true
+  - name: 🇺🇸_US_美国->🇫🇷_FR_法国
+    type: vmess
+    server: 4cdn.njkrpl.com
+    port: 443
+    uuid: a0449b33-d7f6-42a5-8bdc-3b5e727ec9f8
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    network: ws
+    udp: true
+  - name: 🇩🇪_DE_德国
+    type: hysteria
+    server: 5.83.129.90
+    port: 54177
+    auth_str: dongtaiwang.com
+    up: "11"
+    down: "55"
+    sni: bing.com
+    skip-cert-verify: true
+    alpn:
+      - h3
+    udp: true
+  - name: 🇭🇰_HK_中国香港_2
+    type: vmess
+    server: n1747624260.4u9ma.icu
+    port: 443
+    uuid: eee8cb72-7eab-4034-a308-ed06cb07e003
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    network: ws
+    udp: true
+  - name: 🇺🇸_US_美国
+    type: vmess
+    server: guanwang.awsno.com
+    port: 443
+    uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    udp: true
+  - name: 🇸🇰_SK_斯洛伐克
+    type: ss
+    server: 156.146.40.84
+    port: 1080
+    cipher: chacha20-ietf-poly1305
+    password: Vr06rU_v1vFPYeXq9zbsAA
+    skip-cert-verify: true
+    udp: true
+  - name: 🇭🇰_HK_中国香港_3
+    type: vmess
+    server: n1747624274.4u9ma.icu
+    port: 443
+    uuid: d8daf507-a4ac-4eea-8399-8f0cd071eb52
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    network: ws
+    udp: true
+  - name: 🇩🇪_DE_德国_1
+    type: hysteria2
+    server: ff2.yuntong.click
+    port: 443
+    password: f7cb07a0-e6f9-4d22-a60e-c61854450c89
+    sni: ff2.yuntong.click
+    skip-cert-verify: true
+    obfs: salamander
+    obfs-password: eNM/NfxTsBqQIKcN0ezARS1z0f5mIxRd9GSwhVsyJlo=
+    udp: true
+  - name: 🇫🇷_FR_法国
+    type: tuic
+    server: 62.210.24.143
+    port: 33888
+    uuid: 9adb384a-0f16-4501-a8f3-b6b2556fce87
+    password: dongtaiwang.com
+    sni: bing.com
+    alpn:
+      - h3
+    congestion-controller: cubic
+    udp-relay-mode: native
+    skip-cert-verify: true
+    disable-sni: false
+    udp: true
+  - name: 🇩🇪_DE_德国_2
+    type: trojan
+    server: mahsa246qub5.mahsaaminivpn.com
+    port: 27068
+    password: 5X8o4K1Ybu
+    skip-cert-verify: true
+    tls: true
+    udp: true
+  - name: 🇷🇺_RU_俄罗斯->🇩🇪_DE_德国
+    type: vless
+    server: 5.129.194.34
+    port: 4100
+    uuid: 9b44bfb4-9d28-4870-9fc3-5154d6d462ff
+    network: ws
+    tls: false
+    ws-opts:
+      path: /v1
+      headers:
+        Host: live.ok.ru
+    skip-cert-verify: true
+    udp: true
+  - name: 🇩🇪_DE_德国_3
+    type: hysteria
+    server: 5.83.129.153
+    port: 20088
+    auth_str: dongtaiwang.com
+    up: "500"
+    down: "1000"
+    sni: apple.com
+    skip-cert-verify: true
+    alpn:
+      - h3
+    udp: true
+  - name: 🇩🇪_DE_德国_4
+    type: ss
+    server: 3.75.172.120
+    port: 443
+    cipher: aes-256-cfb
+    password: amazonskr05
+    skip-cert-verify: true
+    udp: true
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇩🇪_DE_德国
-      - 🇸🇬_SG_新加坡
+      - 🇨🇳_CN_中国->🇭🇰_HK_中国香港
       - 🇭🇰_HK_中国香港
-      - 🇩🇪_DE_德国_1
-      - 🇺🇸_US_美国
-      - 🇯🇵_JP_日本
+      - 🇨🇳_CN_中国->🇺🇸_US_美国
+      - 🇳🇱_NL_荷兰
+      - 🇺🇸_US_美国->🇩🇪_DE_德国
       - 🇭🇰_HK_中国香港_1
-      - 🇰🇷_KR_韩国
-      - 🇫🇷_FR_法国
-      - 🇮🇪_IE_爱尔兰
-      - 🇵🇱_PL_波兰
-      - 🇫🇷_FR_法国_1
-      - 🇸🇬_SG_新加坡_1
-      - 🇯🇵_JP_日本_1
+      - 🇺🇸_US_美国->🇫🇷_FR_法国
+      - 🇩🇪_DE_德国
       - 🇭🇰_HK_中国香港_2
+      - 🇺🇸_US_美国
+      - 🇸🇰_SK_斯洛伐克
+      - 🇭🇰_HK_中国香港_3
+      - 🇩🇪_DE_德国_1
+      - 🇫🇷_FR_法国
       - 🇩🇪_DE_德国_2
-      - 🇰🇷_KR_韩国_1
-      - 🇭🇰_HK_中国香港->🇺🇸_US_美国
-      - 🇺🇸_US_美国_1
-      - 🇵🇱_PL_波兰_1
-      - 🇮🇪_IE_爱尔兰_1
-      - 🇬🇷_GR_希腊
-      - 🇯🇵_JP_日本_2
-      - 🇰🇷_KR_韩国_2
+      - 🇷🇺_RU_俄罗斯->🇩🇪_DE_德国
       - 🇩🇪_DE_德国_3
       - 🇩🇪_DE_德国_4
-      - 🇺🇸_US_美国_2
-      - 🇭🇰_HK_中国香港_3
   - name: ♻️ 自动选择
     type: url-test
     proxies:
-      - 🇩🇪_DE_德国
-      - 🇸🇬_SG_新加坡
+      - 🇨🇳_CN_中国->🇭🇰_HK_中国香港
       - 🇭🇰_HK_中国香港
-      - 🇩🇪_DE_德国_1
-      - 🇺🇸_US_美国
-      - 🇯🇵_JP_日本
+      - 🇨🇳_CN_中国->🇺🇸_US_美国
+      - 🇳🇱_NL_荷兰
+      - 🇺🇸_US_美国->🇩🇪_DE_德国
       - 🇭🇰_HK_中国香港_1
-      - 🇰🇷_KR_韩国
-      - 🇫🇷_FR_法国
-      - 🇮🇪_IE_爱尔兰
-      - 🇵🇱_PL_波兰
-      - 🇫🇷_FR_法国_1
-      - 🇸🇬_SG_新加坡_1
-      - 🇯🇵_JP_日本_1
+      - 🇺🇸_US_美国->🇫🇷_FR_法国
+      - 🇩🇪_DE_德国
       - 🇭🇰_HK_中国香港_2
+      - 🇺🇸_US_美国
+      - 🇸🇰_SK_斯洛伐克
+      - 🇭🇰_HK_中国香港_3
+      - 🇩🇪_DE_德国_1
+      - 🇫🇷_FR_法国
       - 🇩🇪_DE_德国_2
-      - 🇰🇷_KR_韩国_1
-      - 🇭🇰_HK_中国香港->🇺🇸_US_美国
-      - 🇺🇸_US_美国_1
-      - 🇵🇱_PL_波兰_1
-      - 🇮🇪_IE_爱尔兰_1
-      - 🇬🇷_GR_希腊
-      - 🇯🇵_JP_日本_2
-      - 🇰🇷_KR_韩国_2
+      - 🇷🇺_RU_俄罗斯->🇩🇪_DE_德国
       - 🇩🇪_DE_德国_3
       - 🇩🇪_DE_德国_4
-      - 🇺🇸_US_美国_2
-      - 🇭🇰_HK_中国香港_3
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
@@ -401,133 +287,93 @@ proxy-groups:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇩🇪_DE_德国
-      - 🇸🇬_SG_新加坡
+      - 🇨🇳_CN_中国->🇭🇰_HK_中国香港
       - 🇭🇰_HK_中国香港
-      - 🇩🇪_DE_德国_1
-      - 🇺🇸_US_美国
-      - 🇯🇵_JP_日本
+      - 🇨🇳_CN_中国->🇺🇸_US_美国
+      - 🇳🇱_NL_荷兰
+      - 🇺🇸_US_美国->🇩🇪_DE_德国
       - 🇭🇰_HK_中国香港_1
-      - 🇰🇷_KR_韩国
-      - 🇫🇷_FR_法国
-      - 🇮🇪_IE_爱尔兰
-      - 🇵🇱_PL_波兰
-      - 🇫🇷_FR_法国_1
-      - 🇸🇬_SG_新加坡_1
-      - 🇯🇵_JP_日本_1
+      - 🇺🇸_US_美国->🇫🇷_FR_法国
+      - 🇩🇪_DE_德国
       - 🇭🇰_HK_中国香港_2
+      - 🇺🇸_US_美国
+      - 🇸🇰_SK_斯洛伐克
+      - 🇭🇰_HK_中国香港_3
+      - 🇩🇪_DE_德国_1
+      - 🇫🇷_FR_法国
       - 🇩🇪_DE_德国_2
-      - 🇰🇷_KR_韩国_1
-      - 🇭🇰_HK_中国香港->🇺🇸_US_美国
-      - 🇺🇸_US_美国_1
-      - 🇵🇱_PL_波兰_1
-      - 🇮🇪_IE_爱尔兰_1
-      - 🇬🇷_GR_希腊
-      - 🇯🇵_JP_日本_2
-      - 🇰🇷_KR_韩国_2
+      - 🇷🇺_RU_俄罗斯->🇩🇪_DE_德国
       - 🇩🇪_DE_德国_3
       - 🇩🇪_DE_德国_4
-      - 🇺🇸_US_美国_2
-      - 🇭🇰_HK_中国香港_3
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇩🇪_DE_德国
-      - 🇸🇬_SG_新加坡
+      - 🇨🇳_CN_中国->🇭🇰_HK_中国香港
       - 🇭🇰_HK_中国香港
-      - 🇩🇪_DE_德国_1
-      - 🇺🇸_US_美国
-      - 🇯🇵_JP_日本
+      - 🇨🇳_CN_中国->🇺🇸_US_美国
+      - 🇳🇱_NL_荷兰
+      - 🇺🇸_US_美国->🇩🇪_DE_德国
       - 🇭🇰_HK_中国香港_1
-      - 🇰🇷_KR_韩国
-      - 🇫🇷_FR_法国
-      - 🇮🇪_IE_爱尔兰
-      - 🇵🇱_PL_波兰
-      - 🇫🇷_FR_法国_1
-      - 🇸🇬_SG_新加坡_1
-      - 🇯🇵_JP_日本_1
+      - 🇺🇸_US_美国->🇫🇷_FR_法国
+      - 🇩🇪_DE_德国
       - 🇭🇰_HK_中国香港_2
+      - 🇺🇸_US_美国
+      - 🇸🇰_SK_斯洛伐克
+      - 🇭🇰_HK_中国香港_3
+      - 🇩🇪_DE_德国_1
+      - 🇫🇷_FR_法国
       - 🇩🇪_DE_德国_2
-      - 🇰🇷_KR_韩国_1
-      - 🇭🇰_HK_中国香港->🇺🇸_US_美国
-      - 🇺🇸_US_美国_1
-      - 🇵🇱_PL_波兰_1
-      - 🇮🇪_IE_爱尔兰_1
-      - 🇬🇷_GR_希腊
-      - 🇯🇵_JP_日本_2
-      - 🇰🇷_KR_韩国_2
+      - 🇷🇺_RU_俄罗斯->🇩🇪_DE_德国
       - 🇩🇪_DE_德国_3
       - 🇩🇪_DE_德国_4
-      - 🇺🇸_US_美国_2
-      - 🇭🇰_HK_中国香港_3
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🇩🇪_DE_德国
-      - 🇸🇬_SG_新加坡
+      - 🇨🇳_CN_中国->🇭🇰_HK_中国香港
       - 🇭🇰_HK_中国香港
-      - 🇩🇪_DE_德国_1
-      - 🇺🇸_US_美国
-      - 🇯🇵_JP_日本
+      - 🇨🇳_CN_中国->🇺🇸_US_美国
+      - 🇳🇱_NL_荷兰
+      - 🇺🇸_US_美国->🇩🇪_DE_德国
       - 🇭🇰_HK_中国香港_1
-      - 🇰🇷_KR_韩国
-      - 🇫🇷_FR_法国
-      - 🇮🇪_IE_爱尔兰
-      - 🇵🇱_PL_波兰
-      - 🇫🇷_FR_法国_1
-      - 🇸🇬_SG_新加坡_1
-      - 🇯🇵_JP_日本_1
+      - 🇺🇸_US_美国->🇫🇷_FR_法国
+      - 🇩🇪_DE_德国
       - 🇭🇰_HK_中国香港_2
+      - 🇺🇸_US_美国
+      - 🇸🇰_SK_斯洛伐克
+      - 🇭🇰_HK_中国香港_3
+      - 🇩🇪_DE_德国_1
+      - 🇫🇷_FR_法国
       - 🇩🇪_DE_德国_2
-      - 🇰🇷_KR_韩国_1
-      - 🇭🇰_HK_中国香港->🇺🇸_US_美国
-      - 🇺🇸_US_美国_1
-      - 🇵🇱_PL_波兰_1
-      - 🇮🇪_IE_爱尔兰_1
-      - 🇬🇷_GR_希腊
-      - 🇯🇵_JP_日本_2
-      - 🇰🇷_KR_韩国_2
+      - 🇷🇺_RU_俄罗斯->🇩🇪_DE_德国
       - 🇩🇪_DE_德国_3
       - 🇩🇪_DE_德国_4
-      - 🇺🇸_US_美国_2
-      - 🇭🇰_HK_中国香港_3
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇩🇪_DE_德国
-      - 🇸🇬_SG_新加坡
+      - 🇨🇳_CN_中国->🇭🇰_HK_中国香港
       - 🇭🇰_HK_中国香港
-      - 🇩🇪_DE_德国_1
-      - 🇺🇸_US_美国
-      - 🇯🇵_JP_日本
+      - 🇨🇳_CN_中国->🇺🇸_US_美国
+      - 🇳🇱_NL_荷兰
+      - 🇺🇸_US_美国->🇩🇪_DE_德国
       - 🇭🇰_HK_中国香港_1
-      - 🇰🇷_KR_韩国
-      - 🇫🇷_FR_法国
-      - 🇮🇪_IE_爱尔兰
-      - 🇵🇱_PL_波兰
-      - 🇫🇷_FR_法国_1
-      - 🇸🇬_SG_新加坡_1
-      - 🇯🇵_JP_日本_1
+      - 🇺🇸_US_美国->🇫🇷_FR_法国
+      - 🇩🇪_DE_德国
       - 🇭🇰_HK_中国香港_2
+      - 🇺🇸_US_美国
+      - 🇸🇰_SK_斯洛伐克
+      - 🇭🇰_HK_中国香港_3
+      - 🇩🇪_DE_德国_1
+      - 🇫🇷_FR_法国
       - 🇩🇪_DE_德国_2
-      - 🇰🇷_KR_韩国_1
-      - 🇭🇰_HK_中国香港->🇺🇸_US_美国
-      - 🇺🇸_US_美国_1
-      - 🇵🇱_PL_波兰_1
-      - 🇮🇪_IE_爱尔兰_1
-      - 🇬🇷_GR_希腊
-      - 🇯🇵_JP_日本_2
-      - 🇰🇷_KR_韩国_2
+      - 🇷🇺_RU_俄罗斯->🇩🇪_DE_德国
       - 🇩🇪_DE_德国_3
       - 🇩🇪_DE_德国_4
-      - 🇺🇸_US_美国_2
-      - 🇭🇰_HK_中国香港_3
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -555,34 +401,24 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇩🇪_DE_德国
-      - 🇸🇬_SG_新加坡
+      - 🇨🇳_CN_中国->🇭🇰_HK_中国香港
       - 🇭🇰_HK_中国香港
-      - 🇩🇪_DE_德国_1
-      - 🇺🇸_US_美国
-      - 🇯🇵_JP_日本
+      - 🇨🇳_CN_中国->🇺🇸_US_美国
+      - 🇳🇱_NL_荷兰
+      - 🇺🇸_US_美国->🇩🇪_DE_德国
       - 🇭🇰_HK_中国香港_1
-      - 🇰🇷_KR_韩国
-      - 🇫🇷_FR_法国
-      - 🇮🇪_IE_爱尔兰
-      - 🇵🇱_PL_波兰
-      - 🇫🇷_FR_法国_1
-      - 🇸🇬_SG_新加坡_1
-      - 🇯🇵_JP_日本_1
+      - 🇺🇸_US_美国->🇫🇷_FR_法国
+      - 🇩🇪_DE_德国
       - 🇭🇰_HK_中国香港_2
+      - 🇺🇸_US_美国
+      - 🇸🇰_SK_斯洛伐克
+      - 🇭🇰_HK_中国香港_3
+      - 🇩🇪_DE_德国_1
+      - 🇫🇷_FR_法国
       - 🇩🇪_DE_德国_2
-      - 🇰🇷_KR_韩国_1
-      - 🇭🇰_HK_中国香港->🇺🇸_US_美国
-      - 🇺🇸_US_美国_1
-      - 🇵🇱_PL_波兰_1
-      - 🇮🇪_IE_爱尔兰_1
-      - 🇬🇷_GR_希腊
-      - 🇯🇵_JP_日本_2
-      - 🇰🇷_KR_韩国_2
+      - 🇷🇺_RU_俄罗斯->🇩🇪_DE_德国
       - 🇩🇪_DE_德国_3
       - 🇩🇪_DE_德国_4
-      - 🇺🇸_US_美国_2
-      - 🇭🇰_HK_中国香港_3
 rule-providers:
   LocalAreaNetwork:
     type: http
