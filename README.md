@@ -16,10 +16,10 @@
 
 | 应用类型 | 客户端下载 | 辅助配置 / 相关链接 |
 | :--- | :--- | :--- |
-| **TV 默认桌面** | • [EmotnUI](/apk/EmotnUI_com.oversea.aslauncher_1.0.9.0_5094.apk) (默认桌面)<br>• [当贝桌面](/apk/当贝桌面_4.1.7精简去广告版.apk) (精简去广告版) | |
-| **影视客户端** | • [自编影视](https://github.com/yangxiaoge/tvbox_cust/releases) (自用编译版)<br>• [FongMi影视](https://github.com/FongMi/Release/tree/fongmi/apk/release) (原版) | 接口订阅源: [点此跳转到下方TVBox源](#tvbox-源) |
-| **IPTV 直播** | • [TiviMate 2.1.5](/apk/TiviMate-2.1.5推荐-Premium付费破解版.apk) (推荐/付费破解版) | • [配置恢复备份文件](https://raw.githubusercontent.com/yangxiaoge/tvbox_cust/refs/heads/master/apk/TiviMate2.1.5_backup_20240409_104306.tmb)<br>• 订阅源官网: [fanmingming](https://github.com/fanmingming/live)<br>• [IPv6 直播源地址](https://live.fanmingming.com/tv/m3u/ipv6.m3u) |
-| **开机自启** | • [开机自启 3.0](/apk/开机自启_3.0_2024-03-11.apk) (开机自动运行指定 App) | • 源码: [autoclick](https://gitee.com/sheepyang_study/auto-click-slide) (自用闭源) |
+| **TV 默认桌面** | • [EmotnUI](/apk/EmotnUI_com.oversea.aslauncher_1.0.9.0_5094.apk)（默认桌面）<br>• [当贝桌面](/apk/当贝桌面_4.1.7精简去广告版.apk)（精简去广告版） | - |
+| **影视客户端** | • [自编影视](https://github.com/yangxiaoge/tvbox_cust/releases)（自用编译版）<br>• [FongMi影视](https://github.com/FongMi/Release/tree/fongmi/apk/release)（原版） | 接口订阅源：[跳转至下方TVBox源](#tvbox-源) |
+| **IPTV / 央视直播** | • [TiviMate 2.1.5](/apk/TiviMate-2.1.5推荐-Premium付费破解版.apk)（通用直播，推荐）<br>• [WebViewTvLive](https://github.com/hxh19950701/WebViewTvLive)（WebView方式播放央视）<br>• [CCTV_Viewer](https://github.com/Eanya-Tonic/CCTV_Viewer) | • [TiviMate配置备份](https://raw.githubusercontent.com/yangxiaoge/tvbox_cust/refs/heads/master/apk/TiviMate2.1.5_backup_20240409_104306.tmb)<br>• 订阅源仓库：[fanmingming](https://github.com/fanmingming/live)<br>• IPv6直播源：https://live.fanmingming.com/tv/m3u/ipv6.m3u |
+| **开机自启** | • [开机自启 3.0](/apk/开机自启_3.0_2024-03-11.apk)（开机自动启动指定应用） | • 自用源码：[autoclick](https://gitee.com/sheepyang_study/auto-click-slide)（闭源） |
 
 ---
 
