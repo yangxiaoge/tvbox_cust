@@ -39,9 +39,9 @@
 * **自用多仓链接**: `https://github.com/yangxiaoge/tvbox_cust/raw/refs/heads/master/tvbox/多仓.json`
 
 ### 2. 优秀大佬仓
-* **饭太硬**: `http://www.饭太硬.net/tv`
-* **王二小**: `http://new.王二小放牛娃.top/`
-* **嗷呜**: `http://itv666.cc/aowu/config.webp`
+* **饭太硬**: `http://www.饭太硬.cc/tv`
+* **王二小**: `http://new.王二小放牛娃.top`
+* **嗷呜**: `http://www.英格里希嗷呜.top/tv`
 
 ### 3. 官方及大佬交流群 (Telegram)
 * [FongMi 官方频道](https://web.telegram.org/k/#@fongmi_official) | [饭太硬](https://web.telegram.org/k/#@TVBoxxoo) | [王二小放牛娃](https://web.telegram.org/k/#@wangerxiaofangniuwa) | [嗷呜交流频道](https://web.telegram.org/a/#-1003462278777) 
