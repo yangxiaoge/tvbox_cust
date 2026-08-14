@@ -58,7 +58,9 @@
 
 * **Clash 订阅配置 (配置三)**: `https://raw.githubusercontent.com/yangxiaoge/tvbox_cust/refs/heads/master/clash/Clash3.yml`
 * **Clash 订阅配置 (配置二)**: `https://raw.githubusercontent.com/yangxiaoge/tvbox_cust/refs/heads/master/clash/Clash2.yml`
-* **OpenClash 自定义规则 (MihomoPro)**: `https://raw.githubusercontent.com/yangxiaoge/tvbox_cust/refs/heads/master/clash/custRule/MihomoPro-2025-09-10.yaml`
+* **OpenClash 自定义规则 (MihomoPro)**:
+  - `https://raw.githubusercontent.com/yangxiaoge/tvbox_cust/refs/heads/master/clash/custRule/MihomoPro-2025-09-10.yaml`
+  - 参考：`https://github.com/666OS/YYDS/tree/main/mihomo/config/legacy`
 
 ---
 
