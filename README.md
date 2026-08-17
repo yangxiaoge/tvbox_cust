@@ -141,4 +141,4 @@
 
 # Star History
 
-[![Star History Chart](https://api.star-history.com/svg?repos=yangxiaoge/tvbox_cust&type=Date)](https://star-history.com/#yangxiaoge/tvbox_cust&Date)
+[![Star History Chart](https://star-history.dera.page/svg?repos=yangxiaoge/tvbox_cust&type=Date)](https://star-history.dera.page/#yangxiaoge/tvbox_cust&type=Date)
