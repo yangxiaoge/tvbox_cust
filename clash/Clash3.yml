@@ -24,128 +24,6 @@ dns:
       - https://1.1.1.1/dns-query#🚀 节点选择
       - https://8.8.8.8/dns-query#🚀 节点选择
 proxies:
-  - name: 🇨🇳_CN_中国->🇯🇵_JP_日本
-    type: ss
-    server: 121.46.230.136
-    port: 65443
-    cipher: aes-256-cfb
-    password: 7eadc6dbe2ae
-    skip-cert-verify: true
-    udp: true
-  - name: 🇳🇴_NO_挪威
-    type: vless
-    server: 31.76.5.26
-    port: 443
-    uuid: 423b1d79-08c4-403f-9d5e-c541f791b55f
-    servername: nordic.cendora.ru
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: qq
-    reality-opts:
-      public-key: YQTixaXzPVImuRc4TUbrFAekjIiaYV-t5S-HTKlH0AU
-      short-id: 2186a755ed67b034
-    skip-cert-verify: true
-    udp: true
-  - name: 🇺🇸_US_美国
-    type: vmess
-    server: guanwang.awsno.com
-    port: 443
-    uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    udp: true
-  - name: 🇨🇿_CZ_捷克->🇩🇪_DE_德国
-    type: vless
-    server: 78.159.247.253
-    port: 2027
-    uuid: 851ed0d8-a37b-452d-8ef2-5b6c2d28a060
-    network: raw
-    servername: storage.yandex.net
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: firefox
-    reality-opts:
-      public-key: ISa-DZOI4LRRb9DHMFYm5oFqBXDjYzz0hVWUfWvzLmo
-      short-id: 8d3293f0066e129a
-    skip-cert-verify: true
-    udp: true
-  - name: 🇺🇸_US_美国_1
-    type: vless
-    server: 51.81.223.225
-    port: 11094
-    uuid: f1fa0ad9-b122-4b7c-da82-4bea9edc48dd
-    servername: www.yahoo.com
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: 9dnXiXxP4xgvtTVRj9SBFdyO6mjGvVhWD8qVZZLCCCk
-      short-id: a356addf
-    skip-cert-verify: true
-    udp: true
-  - name: 🇳🇴_NO_挪威_1
-    type: vless
-    server: 31.76.5.26
-    port: 13443
-    uuid: 423b1d79-08c4-403f-9d5e-c541f791b55f
-    servername: auto.cendora.ru
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: qq
-    reality-opts:
-      public-key: gc9oXe37KCCm3J1dJ03wdGsnxPBdeEkRPOvl_t-vfVM
-      short-id: a7f3c91b2e6d84c0
-    skip-cert-verify: true
-    udp: true
-  - name: 🇪🇪_EE_爱沙尼亚
-    type: vless
-    server: 31.76.70.31
-    port: 443
-    uuid: 423b1d79-08c4-403f-9d5e-c541f791b55f
-    servername: baltic.cendora.ru
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: edge
-    reality-opts:
-      public-key: t_qv0VOfWhKZJV_giGC55-ipgHYWo44Yfvik_B8T8ik
-      short-id: 4a46213c935e2ee4
-    skip-cert-verify: true
-    udp: true
-  - name: 🇳🇱_NL_荷兰
-    type: vless
-    server: 158.178.153.49
-    port: 62145
-    uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-    tls: false
-    skip-cert-verify: true
-    udp: true
-  - name: 🇹🇭_TH_泰国
-    type: ss
-    server: 103.169.67.34
-    port: 65443
-    cipher: aes-256-cfb
-    password: 7eadc6dbe2ae
-    skip-cert-verify: true
-    udp: true
-  - name: 🇨🇳_CN_中国->🇺🇸_US_美国
-    type: vless
-    server: jp.sofast.live
-    port: 52683
-    uuid: 5aaa5259-f924-4682-a4a3-149d472a9dcc
-    tls: false
-    skip-cert-verify: true
-    udp: true
-  - name: 🇨🇳_CN_中国->🇺🇸_US_美国_1
-    type: vless
-    server: us22.sofast.live
-    port: 58011
-    uuid: 0afc6426-606c-48e7-bd70-3c424a416842
-    tls: false
-    client-fingerprint: chrome
-    skip-cert-verify: true
-    udp: true
   - name: 🇫🇮_FI_芬兰
     type: vless
     server: 163.5.153.153
@@ -161,20 +39,132 @@ proxies:
       short-id: a91045bc
     skip-cert-verify: true
     udp: true
-  - name: 🇫🇮_FI_芬兰_1
-    type: hysteria2
-    server: fast.wwwinternetvideo.click
-    port: 443
-    password: C91FbOXGY9XRymrcEebtax9R1Nj62UizoT8S6kCb7xwey8IE
-    sni: fast.wwwinternetvideo.click
+  - name: 🇨🇳_CN_中国
+    type: vless
+    server: 120.227.1.43
+    port: 12528
+    uuid: f0169b08-43fd-4dc3-8195-18f6ad2fe39d
+    tls: false
     skip-cert-verify: true
     udp: true
-  - name: 🇺🇸_US_美国_2
+  - name: 🇷🇺_RU_俄罗斯
     type: vless
-    server: 180.178.60.254
-    port: 10000
-    uuid: caec0d8d-ab2f-4247-b97d-7fb1a34ab195
+    server: 5.42.106.111
+    port: 2200
+    uuid: 099f0859-cb81-4a57-b6d8-2c8e18030627
+    network: ws
     tls: false
+    ws-opts:
+      path: /v1
+      headers:
+        Host: rzd.ru
+    skip-cert-verify: true
+    udp: true
+  - name: 🇨🇳_CN_中国->🇹🇭_TH_泰国
+    type: ss
+    server: 211.91.158.44
+    port: 21123
+    cipher: chacha20-ietf-poly1305
+    password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
+    skip-cert-verify: true
+    udp: true
+  - name: 🇨🇳_CN_中国->🇬🇧_GB_英国
+    type: ss
+    server: 211.91.158.44
+    port: 21117
+    cipher: chacha20-ietf-poly1305
+    password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
+    skip-cert-verify: true
+    udp: true
+  - name: 🇨🇳_CN_中国->🇯🇵_JP_日本
+    type: ss
+    server: 211.91.158.44
+    port: 21119
+    cipher: chacha20-ietf-poly1305
+    password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
+    skip-cert-verify: true
+    udp: true
+  - name: 🇨🇳_CN_中国->🇬🇧_GB_英国_1
+    type: ss
+    server: 211.91.158.44
+    port: 21104
+    cipher: chacha20-ietf-poly1305
+    password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
+    skip-cert-verify: true
+    udp: true
+  - name: 🇨🇳_CN_中国->🇺🇸_US_美国
+    type: ss
+    server: 211.91.158.44
+    port: 21105
+    cipher: chacha20-ietf-poly1305
+    password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
+    skip-cert-verify: true
+    udp: true
+  - name: 🇨🇳_CN_中国_1
+    type: vmess
+    server: 112.132.215.108
+    port: 50002
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    udp: true
+  - name: 🇹🇭_TH_泰国
+    type: ss
+    server: 103.169.67.34
+    port: 65443
+    cipher: aes-256-cfb
+    password: 7eadc6dbe2ae
+    skip-cert-verify: true
+    udp: true
+  - name: 🇨🇳_CN_中国->🇮🇱_IL_以色列
+    type: ss
+    server: 211.91.158.44
+    port: 21116
+    cipher: chacha20-ietf-poly1305
+    password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
+    skip-cert-verify: true
+    udp: true
+  - name: 🇨🇳_CN_中国->🇮🇳_IN_印度
+    type: ss
+    server: 211.91.158.26
+    port: 21103
+    cipher: chacha20-ietf-poly1305
+    password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
+    skip-cert-verify: true
+    udp: true
+  - name: 🇨🇳_CN_中国->🇫🇷_FR_法国
+    type: ss
+    server: 211.91.158.44
+    port: 21122
+    cipher: chacha20-ietf-poly1305
+    password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
+    skip-cert-verify: true
+    udp: true
+  - name: 🇨🇳_CN_中国->🇰🇷_KR_韩国
+    type: ss
+    server: 121.46.230.138
+    port: 65443
+    cipher: aes-256-cfb
+    password: 7eadc6dbe2ae
+    skip-cert-verify: true
+    udp: true
+  - name: 🇲🇾_MY_马来西亚
+    type: trojan
+    server: 47.250.84.25
+    port: 443
+    password: 5931134d1cde66bf83a54acdfebe7ab2
+    sni: moltbot.doctoroyy.net
+    skip-cert-verify: true
+    tls: false
+    udp: true
+  - name: 🇨🇳_CN_中国->🇸🇬_SG_新加坡
+    type: ss
+    server: 211.91.158.26
+    port: 21121
+    cipher: chacha20-ietf-poly1305
+    password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
     skip-cert-verify: true
     udp: true
   - name: 🇭🇰_HK_中国香港
@@ -187,46 +177,19 @@ proxies:
     tls: false
     skip-cert-verify: true
     udp: true
-  - name: 🇪🇪_EE_爱沙尼亚_1
-    type: vless
-    server: 31.76.70.32
-    port: 443
-    uuid: 423b1d79-08c4-403f-9d5e-c541f791b55f
-    servername: baltic.cendora.ru
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: t_qv0VOfWhKZJV_giGC55-ipgHYWo44Yfvik_B8T8ik
-      short-id: 4a46213c935e2ee4
-    skip-cert-verify: true
-    udp: true
-  - name: 🇳🇱_NL_荷兰_1
-    type: vless
-    server: 2.59.183.167
-    port: 443
-    uuid: 301d514e-4aa0-47b0-ba44-a0cb891cd52f
-    servername: www.samsung.com
-    tls: true
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: OZVjfQBboTDTBw0baMFqzVPsVUI4FNQmspTEb0b0zW4
-      short-id: a1b2c3d4
-    skip-cert-verify: true
-    udp: true
-  - name: 🇭🇰_HK_中国香港_1
+  - name: 🇨🇳_CN_中国->🇩🇪_DE_德国
     type: vmess
-    server: v10.hdacd.com
-    port: 30807
+    server: v33.hdacd.com
+    port: 30833
     uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
     alterId: 2
     cipher: auto
     tls: false
     skip-cert-verify: true
     udp: true
-  - name: 🇱🇻_LV_拉脱维亚
+  - name: 🇳🇴_NO_挪威
     type: vless
-    server: 195.123.210.168
+    server: 31.76.5.26
     port: 13443
     uuid: 423b1d79-08c4-403f-9d5e-c541f791b55f
     servername: auto.cendora.ru
@@ -238,49 +201,16 @@ proxies:
       short-id: a7f3c91b2e6d84c0
     skip-cert-verify: true
     udp: true
-  - name: 🇺🇸_US_美国_3
-    type: ss
-    server: 38.64.58.242
-    port: 8388
-    cipher: aes-256-gcm
-    password: 7w9x5m4kNWNFgKuDXFUxu68x-26wbWwg
-    skip-cert-verify: true
-    udp: true
-  - name: 🇳🇱_NL_荷兰_2
-    type: vless
-    server: 158.101.208.44
-    port: 62145
-    uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-    tls: false
-    skip-cert-verify: true
-    udp: true
-  - name: 🇨🇳_CN_中国->🇫🇷_FR_法国
+  - name: 🇺🇸_US_美国
     type: vmess
-    server: v35.hdacd.com
-    port: 30835
-    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-    alterId: 2
+    server: 23.95.248.105
+    port: 443
+    uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
+    alterId: 0
     cipher: auto
-    tls: false
+    tls: true
     skip-cert-verify: true
-    udp: true
-  - name: 🇨🇳_CN_中国->🇯🇵_JP_日本_1
-    type: vmess
-    server: v6.hdacd.com
-    port: 30806
-    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-    alterId: 2
-    cipher: auto
-    tls: false
-    skip-cert-verify: true
-    udp: true
-  - name: 🇳🇱_NL_荷兰_3
-    type: vless
-    server: 92.5.227.75
-    port: 62145
-    uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-    tls: false
-    skip-cert-verify: true
+    servername: 23.95.248.105
     udp: true
   - type: vless
     server: ge-20b81e.atlanta-api.com
@@ -291,65 +221,133 @@ proxies:
     skip-cert-verify: true
     udp: true
     name: ge-20b81e.atlanta-api.com
+  - name: 🇨🇳_CN_中国->🇩🇪_DE_德国_1
+    type: ss
+    server: 211.91.158.44
+    port: 21118
+    cipher: chacha20-ietf-poly1305
+    password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
+    skip-cert-verify: true
+    udp: true
+  - name: 🇨🇳_CN_中国->🇫🇷_FR_法国_1
+    type: ss
+    server: 211.91.158.44
+    port: 21126
+    cipher: chacha20-ietf-poly1305
+    password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
+    skip-cert-verify: true
+    udp: true
+  - name: 🇸🇬_SG_新加坡
+    type: vless
+    server: 66.42.62.84
+    port: 443
+    uuid: 389e0591-86d6-408f-bf24-18f611a0c94b
+    servername: www.apple.com
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: kxuW6rJkcKU88l_sgqezrcMFEy4yofrgouBoKufWASs
+      short-id: 2fadfe9a357ec21e
+    skip-cert-verify: true
+    udp: true
+  - name: 🇱🇹_LT_立陶宛
+    type: ss
+    server: 144.31.243.2
+    port: 16015
+    cipher: chacha20-ietf-poly1305
+    password: J1InuU6QRT5JOh1mQfkjU2
+    skip-cert-verify: true
+    udp: true
+  - name: 🇨🇳_CN_中国->🇰🇷_KR_韩国_1
+    type: ss
+    server: 211.91.158.44
+    port: 21107
+    cipher: chacha20-ietf-poly1305
+    password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
+    skip-cert-verify: true
+    udp: true
+  - name: 🇨🇳_CN_中国->🇺🇸_US_美国_1
+    type: vless
+    server: us22.sofast.live
+    port: 58011
+    uuid: 0afc6426-606c-48e7-bd70-3c424a416842
+    tls: false
+    skip-cert-verify: true
+    udp: true
+  - name: 🇨🇳_CN_中国->🇸🇬_SG_新加坡_1
+    type: ss
+    server: 211.91.158.44
+    port: 21121
+    cipher: chacha20-ietf-poly1305
+    password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
+    skip-cert-verify: true
+    udp: true
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
+      - 🇫🇮_FI_芬兰
+      - 🇨🇳_CN_中国
+      - 🇷🇺_RU_俄罗斯
+      - 🇨🇳_CN_中国->🇹🇭_TH_泰国
+      - 🇨🇳_CN_中国->🇬🇧_GB_英国
       - 🇨🇳_CN_中国->🇯🇵_JP_日本
+      - 🇨🇳_CN_中国->🇬🇧_GB_英国_1
+      - 🇨🇳_CN_中国->🇺🇸_US_美国
+      - 🇨🇳_CN_中国_1
+      - 🇹🇭_TH_泰国
+      - 🇨🇳_CN_中国->🇮🇱_IL_以色列
+      - 🇨🇳_CN_中国->🇮🇳_IN_印度
+      - 🇨🇳_CN_中国->🇫🇷_FR_法国
+      - 🇨🇳_CN_中国->🇰🇷_KR_韩国
+      - 🇲🇾_MY_马来西亚
+      - 🇨🇳_CN_中国->🇸🇬_SG_新加坡
+      - 🇭🇰_HK_中国香港
+      - 🇨🇳_CN_中国->🇩🇪_DE_德国
       - 🇳🇴_NO_挪威
       - 🇺🇸_US_美国
-      - 🇨🇿_CZ_捷克->🇩🇪_DE_德国
-      - 🇺🇸_US_美国_1
-      - 🇳🇴_NO_挪威_1
-      - 🇪🇪_EE_爱沙尼亚
-      - 🇳🇱_NL_荷兰
-      - 🇹🇭_TH_泰国
-      - 🇨🇳_CN_中国->🇺🇸_US_美国
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_1
-      - 🇫🇮_FI_芬兰
-      - 🇫🇮_FI_芬兰_1
-      - 🇺🇸_US_美国_2
-      - 🇭🇰_HK_中国香港
-      - 🇪🇪_EE_爱沙尼亚_1
-      - 🇳🇱_NL_荷兰_1
-      - 🇭🇰_HK_中国香港_1
-      - 🇱🇻_LV_拉脱维亚
-      - 🇺🇸_US_美国_3
-      - 🇳🇱_NL_荷兰_2
-      - 🇨🇳_CN_中国->🇫🇷_FR_法国
-      - 🇨🇳_CN_中国->🇯🇵_JP_日本_1
-      - 🇳🇱_NL_荷兰_3
       - ge-20b81e.atlanta-api.com
+      - 🇨🇳_CN_中国->🇩🇪_DE_德国_1
+      - 🇨🇳_CN_中国->🇫🇷_FR_法国_1
+      - 🇸🇬_SG_新加坡
+      - 🇱🇹_LT_立陶宛
+      - 🇨🇳_CN_中国->🇰🇷_KR_韩国_1
+      - 🇨🇳_CN_中国->🇺🇸_US_美国_1
+      - 🇨🇳_CN_中国->🇸🇬_SG_新加坡_1
   - name: ♻️ 自动选择
     type: url-test
     proxies:
+      - 🇫🇮_FI_芬兰
+      - 🇨🇳_CN_中国
+      - 🇷🇺_RU_俄罗斯
+      - 🇨🇳_CN_中国->🇹🇭_TH_泰国
+      - 🇨🇳_CN_中国->🇬🇧_GB_英国
       - 🇨🇳_CN_中国->🇯🇵_JP_日本
+      - 🇨🇳_CN_中国->🇬🇧_GB_英国_1
+      - 🇨🇳_CN_中国->🇺🇸_US_美国
+      - 🇨🇳_CN_中国_1
+      - 🇹🇭_TH_泰国
+      - 🇨🇳_CN_中国->🇮🇱_IL_以色列
+      - 🇨🇳_CN_中国->🇮🇳_IN_印度
+      - 🇨🇳_CN_中国->🇫🇷_FR_法国
+      - 🇨🇳_CN_中国->🇰🇷_KR_韩国
+      - 🇲🇾_MY_马来西亚
+      - 🇨🇳_CN_中国->🇸🇬_SG_新加坡
+      - 🇭🇰_HK_中国香港
+      - 🇨🇳_CN_中国->🇩🇪_DE_德国
       - 🇳🇴_NO_挪威
       - 🇺🇸_US_美国
-      - 🇨🇿_CZ_捷克->🇩🇪_DE_德国
-      - 🇺🇸_US_美国_1
-      - 🇳🇴_NO_挪威_1
-      - 🇪🇪_EE_爱沙尼亚
-      - 🇳🇱_NL_荷兰
-      - 🇹🇭_TH_泰国
-      - 🇨🇳_CN_中国->🇺🇸_US_美国
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_1
-      - 🇫🇮_FI_芬兰
-      - 🇫🇮_FI_芬兰_1
-      - 🇺🇸_US_美国_2
-      - 🇭🇰_HK_中国香港
-      - 🇪🇪_EE_爱沙尼亚_1
-      - 🇳🇱_NL_荷兰_1
-      - 🇭🇰_HK_中国香港_1
-      - 🇱🇻_LV_拉脱维亚
-      - 🇺🇸_US_美国_3
-      - 🇳🇱_NL_荷兰_2
-      - 🇨🇳_CN_中国->🇫🇷_FR_法国
-      - 🇨🇳_CN_中国->🇯🇵_JP_日本_1
-      - 🇳🇱_NL_荷兰_3
       - ge-20b81e.atlanta-api.com
+      - 🇨🇳_CN_中国->🇩🇪_DE_德国_1
+      - 🇨🇳_CN_中国->🇫🇷_FR_法国_1
+      - 🇸🇬_SG_新加坡
+      - 🇱🇹_LT_立陶宛
+      - 🇨🇳_CN_中国->🇰🇷_KR_韩国_1
+      - 🇨🇳_CN_中国->🇺🇸_US_美国_1
+      - 🇨🇳_CN_中国->🇸🇬_SG_新加坡_1
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
@@ -359,121 +357,133 @@ proxy-groups:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
+      - 🇫🇮_FI_芬兰
+      - 🇨🇳_CN_中国
+      - 🇷🇺_RU_俄罗斯
+      - 🇨🇳_CN_中国->🇹🇭_TH_泰国
+      - 🇨🇳_CN_中国->🇬🇧_GB_英国
       - 🇨🇳_CN_中国->🇯🇵_JP_日本
+      - 🇨🇳_CN_中国->🇬🇧_GB_英国_1
+      - 🇨🇳_CN_中国->🇺🇸_US_美国
+      - 🇨🇳_CN_中国_1
+      - 🇹🇭_TH_泰国
+      - 🇨🇳_CN_中国->🇮🇱_IL_以色列
+      - 🇨🇳_CN_中国->🇮🇳_IN_印度
+      - 🇨🇳_CN_中国->🇫🇷_FR_法国
+      - 🇨🇳_CN_中国->🇰🇷_KR_韩国
+      - 🇲🇾_MY_马来西亚
+      - 🇨🇳_CN_中国->🇸🇬_SG_新加坡
+      - 🇭🇰_HK_中国香港
+      - 🇨🇳_CN_中国->🇩🇪_DE_德国
       - 🇳🇴_NO_挪威
       - 🇺🇸_US_美国
-      - 🇨🇿_CZ_捷克->🇩🇪_DE_德国
-      - 🇺🇸_US_美国_1
-      - 🇳🇴_NO_挪威_1
-      - 🇪🇪_EE_爱沙尼亚
-      - 🇳🇱_NL_荷兰
-      - 🇹🇭_TH_泰国
-      - 🇨🇳_CN_中国->🇺🇸_US_美国
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_1
-      - 🇫🇮_FI_芬兰
-      - 🇫🇮_FI_芬兰_1
-      - 🇺🇸_US_美国_2
-      - 🇭🇰_HK_中国香港
-      - 🇪🇪_EE_爱沙尼亚_1
-      - 🇳🇱_NL_荷兰_1
-      - 🇭🇰_HK_中国香港_1
-      - 🇱🇻_LV_拉脱维亚
-      - 🇺🇸_US_美国_3
-      - 🇳🇱_NL_荷兰_2
-      - 🇨🇳_CN_中国->🇫🇷_FR_法国
-      - 🇨🇳_CN_中国->🇯🇵_JP_日本_1
-      - 🇳🇱_NL_荷兰_3
       - ge-20b81e.atlanta-api.com
+      - 🇨🇳_CN_中国->🇩🇪_DE_德国_1
+      - 🇨🇳_CN_中国->🇫🇷_FR_法国_1
+      - 🇸🇬_SG_新加坡
+      - 🇱🇹_LT_立陶宛
+      - 🇨🇳_CN_中国->🇰🇷_KR_韩国_1
+      - 🇨🇳_CN_中国->🇺🇸_US_美国_1
+      - 🇨🇳_CN_中国->🇸🇬_SG_新加坡_1
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
+      - 🇫🇮_FI_芬兰
+      - 🇨🇳_CN_中国
+      - 🇷🇺_RU_俄罗斯
+      - 🇨🇳_CN_中国->🇹🇭_TH_泰国
+      - 🇨🇳_CN_中国->🇬🇧_GB_英国
       - 🇨🇳_CN_中国->🇯🇵_JP_日本
+      - 🇨🇳_CN_中国->🇬🇧_GB_英国_1
+      - 🇨🇳_CN_中国->🇺🇸_US_美国
+      - 🇨🇳_CN_中国_1
+      - 🇹🇭_TH_泰国
+      - 🇨🇳_CN_中国->🇮🇱_IL_以色列
+      - 🇨🇳_CN_中国->🇮🇳_IN_印度
+      - 🇨🇳_CN_中国->🇫🇷_FR_法国
+      - 🇨🇳_CN_中国->🇰🇷_KR_韩国
+      - 🇲🇾_MY_马来西亚
+      - 🇨🇳_CN_中国->🇸🇬_SG_新加坡
+      - 🇭🇰_HK_中国香港
+      - 🇨🇳_CN_中国->🇩🇪_DE_德国
       - 🇳🇴_NO_挪威
       - 🇺🇸_US_美国
-      - 🇨🇿_CZ_捷克->🇩🇪_DE_德国
-      - 🇺🇸_US_美国_1
-      - 🇳🇴_NO_挪威_1
-      - 🇪🇪_EE_爱沙尼亚
-      - 🇳🇱_NL_荷兰
-      - 🇹🇭_TH_泰国
-      - 🇨🇳_CN_中国->🇺🇸_US_美国
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_1
-      - 🇫🇮_FI_芬兰
-      - 🇫🇮_FI_芬兰_1
-      - 🇺🇸_US_美国_2
-      - 🇭🇰_HK_中国香港
-      - 🇪🇪_EE_爱沙尼亚_1
-      - 🇳🇱_NL_荷兰_1
-      - 🇭🇰_HK_中国香港_1
-      - 🇱🇻_LV_拉脱维亚
-      - 🇺🇸_US_美国_3
-      - 🇳🇱_NL_荷兰_2
-      - 🇨🇳_CN_中国->🇫🇷_FR_法国
-      - 🇨🇳_CN_中国->🇯🇵_JP_日本_1
-      - 🇳🇱_NL_荷兰_3
       - ge-20b81e.atlanta-api.com
+      - 🇨🇳_CN_中国->🇩🇪_DE_德国_1
+      - 🇨🇳_CN_中国->🇫🇷_FR_法国_1
+      - 🇸🇬_SG_新加坡
+      - 🇱🇹_LT_立陶宛
+      - 🇨🇳_CN_中国->🇰🇷_KR_韩国_1
+      - 🇨🇳_CN_中国->🇺🇸_US_美国_1
+      - 🇨🇳_CN_中国->🇸🇬_SG_新加坡_1
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
+      - 🇫🇮_FI_芬兰
+      - 🇨🇳_CN_中国
+      - 🇷🇺_RU_俄罗斯
+      - 🇨🇳_CN_中国->🇹🇭_TH_泰国
+      - 🇨🇳_CN_中国->🇬🇧_GB_英国
       - 🇨🇳_CN_中国->🇯🇵_JP_日本
+      - 🇨🇳_CN_中国->🇬🇧_GB_英国_1
+      - 🇨🇳_CN_中国->🇺🇸_US_美国
+      - 🇨🇳_CN_中国_1
+      - 🇹🇭_TH_泰国
+      - 🇨🇳_CN_中国->🇮🇱_IL_以色列
+      - 🇨🇳_CN_中国->🇮🇳_IN_印度
+      - 🇨🇳_CN_中国->🇫🇷_FR_法国
+      - 🇨🇳_CN_中国->🇰🇷_KR_韩国
+      - 🇲🇾_MY_马来西亚
+      - 🇨🇳_CN_中国->🇸🇬_SG_新加坡
+      - 🇭🇰_HK_中国香港
+      - 🇨🇳_CN_中国->🇩🇪_DE_德国
       - 🇳🇴_NO_挪威
       - 🇺🇸_US_美国
-      - 🇨🇿_CZ_捷克->🇩🇪_DE_德国
-      - 🇺🇸_US_美国_1
-      - 🇳🇴_NO_挪威_1
-      - 🇪🇪_EE_爱沙尼亚
-      - 🇳🇱_NL_荷兰
-      - 🇹🇭_TH_泰国
-      - 🇨🇳_CN_中国->🇺🇸_US_美国
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_1
-      - 🇫🇮_FI_芬兰
-      - 🇫🇮_FI_芬兰_1
-      - 🇺🇸_US_美国_2
-      - 🇭🇰_HK_中国香港
-      - 🇪🇪_EE_爱沙尼亚_1
-      - 🇳🇱_NL_荷兰_1
-      - 🇭🇰_HK_中国香港_1
-      - 🇱🇻_LV_拉脱维亚
-      - 🇺🇸_US_美国_3
-      - 🇳🇱_NL_荷兰_2
-      - 🇨🇳_CN_中国->🇫🇷_FR_法国
-      - 🇨🇳_CN_中国->🇯🇵_JP_日本_1
-      - 🇳🇱_NL_荷兰_3
       - ge-20b81e.atlanta-api.com
+      - 🇨🇳_CN_中国->🇩🇪_DE_德国_1
+      - 🇨🇳_CN_中国->🇫🇷_FR_法国_1
+      - 🇸🇬_SG_新加坡
+      - 🇱🇹_LT_立陶宛
+      - 🇨🇳_CN_中国->🇰🇷_KR_韩国_1
+      - 🇨🇳_CN_中国->🇺🇸_US_美国_1
+      - 🇨🇳_CN_中国->🇸🇬_SG_新加坡_1
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
+      - 🇫🇮_FI_芬兰
+      - 🇨🇳_CN_中国
+      - 🇷🇺_RU_俄罗斯
+      - 🇨🇳_CN_中国->🇹🇭_TH_泰国
+      - 🇨🇳_CN_中国->🇬🇧_GB_英国
       - 🇨🇳_CN_中国->🇯🇵_JP_日本
+      - 🇨🇳_CN_中国->🇬🇧_GB_英国_1
+      - 🇨🇳_CN_中国->🇺🇸_US_美国
+      - 🇨🇳_CN_中国_1
+      - 🇹🇭_TH_泰国
+      - 🇨🇳_CN_中国->🇮🇱_IL_以色列
+      - 🇨🇳_CN_中国->🇮🇳_IN_印度
+      - 🇨🇳_CN_中国->🇫🇷_FR_法国
+      - 🇨🇳_CN_中国->🇰🇷_KR_韩国
+      - 🇲🇾_MY_马来西亚
+      - 🇨🇳_CN_中国->🇸🇬_SG_新加坡
+      - 🇭🇰_HK_中国香港
+      - 🇨🇳_CN_中国->🇩🇪_DE_德国
       - 🇳🇴_NO_挪威
       - 🇺🇸_US_美国
-      - 🇨🇿_CZ_捷克->🇩🇪_DE_德国
-      - 🇺🇸_US_美国_1
-      - 🇳🇴_NO_挪威_1
-      - 🇪🇪_EE_爱沙尼亚
-      - 🇳🇱_NL_荷兰
-      - 🇹🇭_TH_泰国
-      - 🇨🇳_CN_中国->🇺🇸_US_美国
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_1
-      - 🇫🇮_FI_芬兰
-      - 🇫🇮_FI_芬兰_1
-      - 🇺🇸_US_美国_2
-      - 🇭🇰_HK_中国香港
-      - 🇪🇪_EE_爱沙尼亚_1
-      - 🇳🇱_NL_荷兰_1
-      - 🇭🇰_HK_中国香港_1
-      - 🇱🇻_LV_拉脱维亚
-      - 🇺🇸_US_美国_3
-      - 🇳🇱_NL_荷兰_2
-      - 🇨🇳_CN_中国->🇫🇷_FR_法国
-      - 🇨🇳_CN_中国->🇯🇵_JP_日本_1
-      - 🇳🇱_NL_荷兰_3
       - ge-20b81e.atlanta-api.com
+      - 🇨🇳_CN_中国->🇩🇪_DE_德国_1
+      - 🇨🇳_CN_中国->🇫🇷_FR_法国_1
+      - 🇸🇬_SG_新加坡
+      - 🇱🇹_LT_立陶宛
+      - 🇨🇳_CN_中国->🇰🇷_KR_韩国_1
+      - 🇨🇳_CN_中国->🇺🇸_US_美国_1
+      - 🇨🇳_CN_中国->🇸🇬_SG_新加坡_1
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -501,31 +511,34 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - 🇫🇮_FI_芬兰
+      - 🇨🇳_CN_中国
+      - 🇷🇺_RU_俄罗斯
+      - 🇨🇳_CN_中国->🇹🇭_TH_泰国
+      - 🇨🇳_CN_中国->🇬🇧_GB_英国
       - 🇨🇳_CN_中国->🇯🇵_JP_日本
+      - 🇨🇳_CN_中国->🇬🇧_GB_英国_1
+      - 🇨🇳_CN_中国->🇺🇸_US_美国
+      - 🇨🇳_CN_中国_1
+      - 🇹🇭_TH_泰国
+      - 🇨🇳_CN_中国->🇮🇱_IL_以色列
+      - 🇨🇳_CN_中国->🇮🇳_IN_印度
+      - 🇨🇳_CN_中国->🇫🇷_FR_法国
+      - 🇨🇳_CN_中国->🇰🇷_KR_韩国
+      - 🇲🇾_MY_马来西亚
+      - 🇨🇳_CN_中国->🇸🇬_SG_新加坡
+      - 🇭🇰_HK_中国香港
+      - 🇨🇳_CN_中国->🇩🇪_DE_德国
       - 🇳🇴_NO_挪威
       - 🇺🇸_US_美国
-      - 🇨🇿_CZ_捷克->🇩🇪_DE_德国
-      - 🇺🇸_US_美国_1
-      - 🇳🇴_NO_挪威_1
-      - 🇪🇪_EE_爱沙尼亚
-      - 🇳🇱_NL_荷兰
-      - 🇹🇭_TH_泰国
-      - 🇨🇳_CN_中国->🇺🇸_US_美国
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_1
-      - 🇫🇮_FI_芬兰
-      - 🇫🇮_FI_芬兰_1
-      - 🇺🇸_US_美国_2
-      - 🇭🇰_HK_中国香港
-      - 🇪🇪_EE_爱沙尼亚_1
-      - 🇳🇱_NL_荷兰_1
-      - 🇭🇰_HK_中国香港_1
-      - 🇱🇻_LV_拉脱维亚
-      - 🇺🇸_US_美国_3
-      - 🇳🇱_NL_荷兰_2
-      - 🇨🇳_CN_中国->🇫🇷_FR_法国
-      - 🇨🇳_CN_中国->🇯🇵_JP_日本_1
-      - 🇳🇱_NL_荷兰_3
       - ge-20b81e.atlanta-api.com
+      - 🇨🇳_CN_中国->🇩🇪_DE_德国_1
+      - 🇨🇳_CN_中国->🇫🇷_FR_法国_1
+      - 🇸🇬_SG_新加坡
+      - 🇱🇹_LT_立陶宛
+      - 🇨🇳_CN_中国->🇰🇷_KR_韩国_1
+      - 🇨🇳_CN_中国->🇺🇸_US_美国_1
+      - 🇨🇳_CN_中国->🇸🇬_SG_新加坡_1
 rule-providers:
   LocalAreaNetwork:
     type: http
