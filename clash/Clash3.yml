@@ -24,20 +24,114 @@ dns:
       - https://1.1.1.1/dns-query#🚀 节点选择
       - https://8.8.8.8/dns-query#🚀 节点选择
 proxies:
-  - name: 🇫🇮_FI_芬兰
-    type: vless
-    server: 163.5.153.153
+  - name: 🇸🇬_SG_新加坡
+    type: ss
+    server: 140.245.117.116
+    port: 56927
+    cipher: 2022-blake3-chacha20-poly1305
+    password: y0lUf5WDcD0z4Vm/57XU5GWoPKS+07qwaHOhXiwQekA=
+    skip-cert-verify: true
+    udp: true
+  - name: 🇨🇳_CN_中国->🇭🇰_HK_中国香港
+    type: ss
+    server: 103.236.66.4
+    port: 10001
+    cipher: aes-256-gcm
+    password: Butterfly123@qwe9527
+    skip-cert-verify: true
+    udp: true
+  - name: 🇺🇸_US_美国
+    type: vmess
+    server: guanwang.awsno.com
     port: 443
-    uuid: 0a76a766-d141-44b8-944e-dff757d7116f
-    network: raw
-    servername: www.samsung.com
+    uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    udp: true
+  - name: 🇩🇰_DK_丹麦
+    type: vless
+    server: 46.29.235.9
+    port: 443
+    uuid: d67af820-f54c-48ab-862c-19086357f276
+    servername: telegraf.lv
     tls: true
     flow: xtls-rprx-vision
-    client-fingerprint: chrome
+    client-fingerprint: firefox
     reality-opts:
-      public-key: aB_2Tcf0A5LoiIEZHztR_l-ZOFeJKxYRH67s_OVQ9C0
-      short-id: a91045bc
+      public-key: dhLgVSqPBDrdbhyTS2j60LWZDGEZh-smkcjUNSic-WI
+      short-id: a1b2c3d4
     skip-cert-verify: true
+    udp: true
+  - name: 🇨🇳_CN_中国->🇯🇵_JP_日本
+    type: vmess
+    server: v6.hdacd.com
+    port: 30806
+    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+    alterId: 2
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    udp: true
+  - name: 🇨🇳_CN_中国->🇹🇼_TW_中国台湾
+    type: ss
+    server: 36.33.35.105
+    port: 30001
+    cipher: aes-256-gcm
+    password: Butterfly123@qwe9527
+    skip-cert-verify: true
+    udp: true
+  - name: 🇨🇳_CN_中国->🇯🇵_JP_日本_1
+    type: ss
+    server: 103.236.66.4
+    port: 40002
+    cipher: aes-256-gcm
+    password: Butterfly123@qwe9527
+    skip-cert-verify: true
+    udp: true
+  - name: 🇭🇰_HK_中国香港
+    type: vmess
+    server: v10.hdacd.com
+    port: 30807
+    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+    alterId: 2
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    udp: true
+  - name: 🇩🇪_DE_德国
+    type: vless
+    server: 89.34.90.68
+    port: 8443
+    uuid: fe8e2ffb-8796-408c-af5b-0d4774215e00
+    network: grpc
+    servername: 360.yandex.ru
+    tls: true
+    client-fingerprint: chrome
+    grpc-opts:
+      grpc-service-name: grpc
+    reality-opts:
+      public-key: dTdncizxtVTqDZDkQoYdRTkf2Mn6XuKtkzg8vZhrkzA
+      short-id: 6ba85179e30d4fc2
+    skip-cert-verify: true
+    udp: true
+  - name: 🇬🇧_GB_英国
+    type: ss
+    server: 13.135.252.176
+    port: 443
+    cipher: aes-256-cfb
+    password: amazonskr05
+    skip-cert-verify: true
+    udp: true
+  - name: 🇵🇱_PL_波兰->🇳🇴_NO_挪威
+    type: trojan
+    server: kkvlvvq-a.catcat321.com
+    port: 20085
+    password: a126f35c-e832-4115-8593-b723ade3f7be
+    sni: hk.catxstar.com
+    skip-cert-verify: true
+    tls: false
     udp: true
   - name: 🇨🇳_CN_中国
     type: vless
@@ -45,59 +139,6 @@ proxies:
     port: 12528
     uuid: f0169b08-43fd-4dc3-8195-18f6ad2fe39d
     tls: false
-    skip-cert-verify: true
-    udp: true
-  - name: 🇷🇺_RU_俄罗斯
-    type: vless
-    server: 5.42.106.111
-    port: 2200
-    uuid: 099f0859-cb81-4a57-b6d8-2c8e18030627
-    network: ws
-    tls: false
-    ws-opts:
-      path: /v1
-      headers:
-        Host: rzd.ru
-    skip-cert-verify: true
-    udp: true
-  - name: 🇨🇳_CN_中国->🇹🇭_TH_泰国
-    type: ss
-    server: 211.91.158.44
-    port: 21123
-    cipher: chacha20-ietf-poly1305
-    password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
-    skip-cert-verify: true
-    udp: true
-  - name: 🇨🇳_CN_中国->🇬🇧_GB_英国
-    type: ss
-    server: 211.91.158.44
-    port: 21117
-    cipher: chacha20-ietf-poly1305
-    password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
-    skip-cert-verify: true
-    udp: true
-  - name: 🇨🇳_CN_中国->🇯🇵_JP_日本
-    type: ss
-    server: 211.91.158.44
-    port: 21119
-    cipher: chacha20-ietf-poly1305
-    password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
-    skip-cert-verify: true
-    udp: true
-  - name: 🇨🇳_CN_中国->🇬🇧_GB_英国_1
-    type: ss
-    server: 211.91.158.44
-    port: 21104
-    cipher: chacha20-ietf-poly1305
-    password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
-    skip-cert-verify: true
-    udp: true
-  - name: 🇨🇳_CN_中国->🇺🇸_US_美国
-    type: ss
-    server: 211.91.158.44
-    port: 21105
-    cipher: chacha20-ietf-poly1305
-    password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
     skip-cert-verify: true
     udp: true
   - name: 🇨🇳_CN_中国_1
@@ -110,77 +151,10 @@ proxies:
     tls: false
     skip-cert-verify: true
     udp: true
-  - name: 🇹🇭_TH_泰国
-    type: ss
-    server: 103.169.67.34
-    port: 65443
-    cipher: aes-256-cfb
-    password: 7eadc6dbe2ae
-    skip-cert-verify: true
-    udp: true
-  - name: 🇨🇳_CN_中国->🇮🇱_IL_以色列
-    type: ss
-    server: 211.91.158.44
-    port: 21116
-    cipher: chacha20-ietf-poly1305
-    password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
-    skip-cert-verify: true
-    udp: true
-  - name: 🇨🇳_CN_中国->🇮🇳_IN_印度
-    type: ss
-    server: 211.91.158.26
-    port: 21103
-    cipher: chacha20-ietf-poly1305
-    password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
-    skip-cert-verify: true
-    udp: true
   - name: 🇨🇳_CN_中国->🇫🇷_FR_法国
-    type: ss
-    server: 211.91.158.44
-    port: 21122
-    cipher: chacha20-ietf-poly1305
-    password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
-    skip-cert-verify: true
-    udp: true
-  - name: 🇨🇳_CN_中国->🇰🇷_KR_韩国
-    type: ss
-    server: 121.46.230.138
-    port: 65443
-    cipher: aes-256-cfb
-    password: 7eadc6dbe2ae
-    skip-cert-verify: true
-    udp: true
-  - name: 🇲🇾_MY_马来西亚
-    type: trojan
-    server: 47.250.84.25
-    port: 443
-    password: 5931134d1cde66bf83a54acdfebe7ab2
-    sni: moltbot.doctoroyy.net
-    skip-cert-verify: true
-    tls: false
-    udp: true
-  - name: 🇨🇳_CN_中国->🇸🇬_SG_新加坡
-    type: ss
-    server: 211.91.158.26
-    port: 21121
-    cipher: chacha20-ietf-poly1305
-    password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
-    skip-cert-verify: true
-    udp: true
-  - name: 🇭🇰_HK_中国香港
     type: vmess
-    server: v10.zgtfqs.click
-    port: 30807
-    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-    alterId: 2
-    cipher: auto
-    tls: false
-    skip-cert-verify: true
-    udp: true
-  - name: 🇨🇳_CN_中国->🇩🇪_DE_德国
-    type: vmess
-    server: v33.hdacd.com
-    port: 30833
+    server: v35.hdacd.com
+    port: 30835
     uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
     alterId: 2
     cipher: auto
@@ -201,7 +175,33 @@ proxies:
       short-id: a7f3c91b2e6d84c0
     skip-cert-verify: true
     udp: true
-  - name: 🇺🇸_US_美国
+  - name: 🇨🇳_CN_中国->🇯🇵_JP_日本_2
+    type: ss
+    server: 103.236.66.4
+    port: 40001
+    cipher: aes-256-gcm
+    password: Butterfly123@qwe9527
+    skip-cert-verify: true
+    udp: true
+  - name: 🇨🇳_CN_中国->🇯🇵_JP_日本_3
+    type: ss
+    server: 121.46.230.136
+    port: 65443
+    cipher: aes-256-cfb
+    password: 7eadc6dbe2ae
+    skip-cert-verify: true
+    udp: true
+  - name: 🇭🇰_HK_中国香港_1
+    type: vmess
+    server: v10.zgtfqs.click
+    port: 30807
+    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+    alterId: 2
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    udp: true
+  - name: 🇺🇸_US_美国_1
     type: vmess
     server: 23.95.248.105
     port: 443
@@ -212,6 +212,83 @@ proxies:
     skip-cert-verify: true
     servername: 23.95.248.105
     udp: true
+  - name: 🇹🇭_TH_泰国
+    type: ss
+    server: 103.169.67.34
+    port: 65443
+    cipher: aes-256-cfb
+    password: 7eadc6dbe2ae
+    skip-cert-verify: true
+    udp: true
+  - name: 🇨🇳_CN_中国->🇺🇸_US_美国
+    type: vless
+    server: us22.sofast.live
+    port: 58011
+    uuid: 0afc6426-606c-48e7-bd70-3c424a416842
+    tls: false
+    skip-cert-verify: true
+    udp: true
+  - name: 🇨🇳_CN_中国->🇩🇪_DE_德国
+    type: vmess
+    server: v33.hdacd.com
+    port: 30833
+    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+    alterId: 2
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    udp: true
+  - name: 🇨🇳_CN_中国->🇭🇰_HK_中国香港_1
+    type: ss
+    server: 36.33.35.105
+    port: 10006
+    cipher: aes-256-gcm
+    password: Butterfly123@qwe9527
+    skip-cert-verify: true
+    udp: true
+  - name: 🇬🇧_GB_英国_1
+    type: ss
+    server: 13.135.73.3
+    port: 443
+    cipher: aes-256-cfb
+    password: amazonskr05
+    skip-cert-verify: true
+    udp: true
+  - name: 🇨🇳_CN_中国->🇰🇷_KR_韩国
+    type: ss
+    server: 121.46.230.138
+    port: 65443
+    cipher: aes-256-cfb
+    password: 7eadc6dbe2ae
+    skip-cert-verify: true
+    udp: true
+  - name: 🇨🇳_CN_中国->🇺🇸_US_美国_1
+    type: ss
+    server: 103.236.66.4
+    port: 50001
+    cipher: aes-256-gcm
+    password: Butterfly123@qwe9527
+    skip-cert-verify: true
+    udp: true
+  - name: 🇬🇧_GB_英国_2
+    type: ss
+    server: 18.175.227.220
+    port: 443
+    cipher: aes-256-cfb
+    password: amazonskr05
+    skip-cert-verify: true
+    udp: true
+  - name: 🇺🇸_US_美国_2
+    type: vmess
+    server: rush-6it6b.teeopp.quest
+    port: 443
+    uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    network: ws
+    udp: true
   - type: vless
     server: ge-20b81e.atlanta-api.com
     port: 443
@@ -221,133 +298,73 @@ proxies:
     skip-cert-verify: true
     udp: true
     name: ge-20b81e.atlanta-api.com
-  - name: 🇨🇳_CN_中国->🇩🇪_DE_德国_1
-    type: ss
-    server: 211.91.158.44
-    port: 21118
-    cipher: chacha20-ietf-poly1305
-    password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
-    skip-cert-verify: true
-    udp: true
-  - name: 🇨🇳_CN_中国->🇫🇷_FR_法国_1
-    type: ss
-    server: 211.91.158.44
-    port: 21126
-    cipher: chacha20-ietf-poly1305
-    password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
-    skip-cert-verify: true
-    udp: true
-  - name: 🇸🇬_SG_新加坡
-    type: vless
-    server: 66.42.62.84
-    port: 443
-    uuid: 389e0591-86d6-408f-bf24-18f611a0c94b
-    servername: www.apple.com
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: kxuW6rJkcKU88l_sgqezrcMFEy4yofrgouBoKufWASs
-      short-id: 2fadfe9a357ec21e
-    skip-cert-verify: true
-    udp: true
-  - name: 🇱🇹_LT_立陶宛
-    type: ss
-    server: 144.31.243.2
-    port: 16015
-    cipher: chacha20-ietf-poly1305
-    password: J1InuU6QRT5JOh1mQfkjU2
-    skip-cert-verify: true
-    udp: true
-  - name: 🇨🇳_CN_中国->🇰🇷_KR_韩国_1
-    type: ss
-    server: 211.91.158.44
-    port: 21107
-    cipher: chacha20-ietf-poly1305
-    password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
-    skip-cert-verify: true
-    udp: true
-  - name: 🇨🇳_CN_中国->🇺🇸_US_美国_1
-    type: vless
-    server: us22.sofast.live
-    port: 58011
-    uuid: 0afc6426-606c-48e7-bd70-3c424a416842
-    tls: false
-    skip-cert-verify: true
-    udp: true
-  - name: 🇨🇳_CN_中国->🇸🇬_SG_新加坡_1
-    type: ss
-    server: 211.91.158.44
-    port: 21121
-    cipher: chacha20-ietf-poly1305
-    password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
-    skip-cert-verify: true
-    udp: true
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇫🇮_FI_芬兰
-      - 🇨🇳_CN_中国
-      - 🇷🇺_RU_俄罗斯
-      - 🇨🇳_CN_中国->🇹🇭_TH_泰国
-      - 🇨🇳_CN_中国->🇬🇧_GB_英国
-      - 🇨🇳_CN_中国->🇯🇵_JP_日本
-      - 🇨🇳_CN_中国->🇬🇧_GB_英国_1
-      - 🇨🇳_CN_中国->🇺🇸_US_美国
-      - 🇨🇳_CN_中国_1
-      - 🇹🇭_TH_泰国
-      - 🇨🇳_CN_中国->🇮🇱_IL_以色列
-      - 🇨🇳_CN_中国->🇮🇳_IN_印度
-      - 🇨🇳_CN_中国->🇫🇷_FR_法国
-      - 🇨🇳_CN_中国->🇰🇷_KR_韩国
-      - 🇲🇾_MY_马来西亚
-      - 🇨🇳_CN_中国->🇸🇬_SG_新加坡
-      - 🇭🇰_HK_中国香港
-      - 🇨🇳_CN_中国->🇩🇪_DE_德国
-      - 🇳🇴_NO_挪威
-      - 🇺🇸_US_美国
-      - ge-20b81e.atlanta-api.com
-      - 🇨🇳_CN_中国->🇩🇪_DE_德国_1
-      - 🇨🇳_CN_中国->🇫🇷_FR_法国_1
       - 🇸🇬_SG_新加坡
-      - 🇱🇹_LT_立陶宛
-      - 🇨🇳_CN_中国->🇰🇷_KR_韩国_1
+      - 🇨🇳_CN_中国->🇭🇰_HK_中国香港
+      - 🇺🇸_US_美国
+      - 🇩🇰_DK_丹麦
+      - 🇨🇳_CN_中国->🇯🇵_JP_日本
+      - 🇨🇳_CN_中国->🇹🇼_TW_中国台湾
+      - 🇨🇳_CN_中国->🇯🇵_JP_日本_1
+      - 🇭🇰_HK_中国香港
+      - 🇩🇪_DE_德国
+      - 🇬🇧_GB_英国
+      - 🇵🇱_PL_波兰->🇳🇴_NO_挪威
+      - 🇨🇳_CN_中国
+      - 🇨🇳_CN_中国_1
+      - 🇨🇳_CN_中国->🇫🇷_FR_法国
+      - 🇳🇴_NO_挪威
+      - 🇨🇳_CN_中国->🇯🇵_JP_日本_2
+      - 🇨🇳_CN_中国->🇯🇵_JP_日本_3
+      - 🇭🇰_HK_中国香港_1
+      - 🇺🇸_US_美国_1
+      - 🇹🇭_TH_泰国
+      - 🇨🇳_CN_中国->🇺🇸_US_美国
+      - 🇨🇳_CN_中国->🇩🇪_DE_德国
+      - 🇨🇳_CN_中国->🇭🇰_HK_中国香港_1
+      - 🇬🇧_GB_英国_1
+      - 🇨🇳_CN_中国->🇰🇷_KR_韩国
       - 🇨🇳_CN_中国->🇺🇸_US_美国_1
-      - 🇨🇳_CN_中国->🇸🇬_SG_新加坡_1
+      - 🇬🇧_GB_英国_2
+      - 🇺🇸_US_美国_2
+      - ge-20b81e.atlanta-api.com
   - name: ♻️ 自动选择
     type: url-test
     proxies:
-      - 🇫🇮_FI_芬兰
-      - 🇨🇳_CN_中国
-      - 🇷🇺_RU_俄罗斯
-      - 🇨🇳_CN_中国->🇹🇭_TH_泰国
-      - 🇨🇳_CN_中国->🇬🇧_GB_英国
-      - 🇨🇳_CN_中国->🇯🇵_JP_日本
-      - 🇨🇳_CN_中国->🇬🇧_GB_英国_1
-      - 🇨🇳_CN_中国->🇺🇸_US_美国
-      - 🇨🇳_CN_中国_1
-      - 🇹🇭_TH_泰国
-      - 🇨🇳_CN_中国->🇮🇱_IL_以色列
-      - 🇨🇳_CN_中国->🇮🇳_IN_印度
-      - 🇨🇳_CN_中国->🇫🇷_FR_法国
-      - 🇨🇳_CN_中国->🇰🇷_KR_韩国
-      - 🇲🇾_MY_马来西亚
-      - 🇨🇳_CN_中国->🇸🇬_SG_新加坡
-      - 🇭🇰_HK_中国香港
-      - 🇨🇳_CN_中国->🇩🇪_DE_德国
-      - 🇳🇴_NO_挪威
-      - 🇺🇸_US_美国
-      - ge-20b81e.atlanta-api.com
-      - 🇨🇳_CN_中国->🇩🇪_DE_德国_1
-      - 🇨🇳_CN_中国->🇫🇷_FR_法国_1
       - 🇸🇬_SG_新加坡
-      - 🇱🇹_LT_立陶宛
-      - 🇨🇳_CN_中国->🇰🇷_KR_韩国_1
+      - 🇨🇳_CN_中国->🇭🇰_HK_中国香港
+      - 🇺🇸_US_美国
+      - 🇩🇰_DK_丹麦
+      - 🇨🇳_CN_中国->🇯🇵_JP_日本
+      - 🇨🇳_CN_中国->🇹🇼_TW_中国台湾
+      - 🇨🇳_CN_中国->🇯🇵_JP_日本_1
+      - 🇭🇰_HK_中国香港
+      - 🇩🇪_DE_德国
+      - 🇬🇧_GB_英国
+      - 🇵🇱_PL_波兰->🇳🇴_NO_挪威
+      - 🇨🇳_CN_中国
+      - 🇨🇳_CN_中国_1
+      - 🇨🇳_CN_中国->🇫🇷_FR_法国
+      - 🇳🇴_NO_挪威
+      - 🇨🇳_CN_中国->🇯🇵_JP_日本_2
+      - 🇨🇳_CN_中国->🇯🇵_JP_日本_3
+      - 🇭🇰_HK_中国香港_1
+      - 🇺🇸_US_美国_1
+      - 🇹🇭_TH_泰国
+      - 🇨🇳_CN_中国->🇺🇸_US_美国
+      - 🇨🇳_CN_中国->🇩🇪_DE_德国
+      - 🇨🇳_CN_中国->🇭🇰_HK_中国香港_1
+      - 🇬🇧_GB_英国_1
+      - 🇨🇳_CN_中国->🇰🇷_KR_韩国
       - 🇨🇳_CN_中国->🇺🇸_US_美国_1
-      - 🇨🇳_CN_中国->🇸🇬_SG_新加坡_1
+      - 🇬🇧_GB_英国_2
+      - 🇺🇸_US_美国_2
+      - ge-20b81e.atlanta-api.com
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
@@ -357,133 +374,137 @@ proxy-groups:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇫🇮_FI_芬兰
-      - 🇨🇳_CN_中国
-      - 🇷🇺_RU_俄罗斯
-      - 🇨🇳_CN_中国->🇹🇭_TH_泰国
-      - 🇨🇳_CN_中国->🇬🇧_GB_英国
-      - 🇨🇳_CN_中国->🇯🇵_JP_日本
-      - 🇨🇳_CN_中国->🇬🇧_GB_英国_1
-      - 🇨🇳_CN_中国->🇺🇸_US_美国
-      - 🇨🇳_CN_中国_1
-      - 🇹🇭_TH_泰国
-      - 🇨🇳_CN_中国->🇮🇱_IL_以色列
-      - 🇨🇳_CN_中国->🇮🇳_IN_印度
-      - 🇨🇳_CN_中国->🇫🇷_FR_法国
-      - 🇨🇳_CN_中国->🇰🇷_KR_韩国
-      - 🇲🇾_MY_马来西亚
-      - 🇨🇳_CN_中国->🇸🇬_SG_新加坡
-      - 🇭🇰_HK_中国香港
-      - 🇨🇳_CN_中国->🇩🇪_DE_德国
-      - 🇳🇴_NO_挪威
-      - 🇺🇸_US_美国
-      - ge-20b81e.atlanta-api.com
-      - 🇨🇳_CN_中国->🇩🇪_DE_德国_1
-      - 🇨🇳_CN_中国->🇫🇷_FR_法国_1
       - 🇸🇬_SG_新加坡
-      - 🇱🇹_LT_立陶宛
-      - 🇨🇳_CN_中国->🇰🇷_KR_韩国_1
+      - 🇨🇳_CN_中国->🇭🇰_HK_中国香港
+      - 🇺🇸_US_美国
+      - 🇩🇰_DK_丹麦
+      - 🇨🇳_CN_中国->🇯🇵_JP_日本
+      - 🇨🇳_CN_中国->🇹🇼_TW_中国台湾
+      - 🇨🇳_CN_中国->🇯🇵_JP_日本_1
+      - 🇭🇰_HK_中国香港
+      - 🇩🇪_DE_德国
+      - 🇬🇧_GB_英国
+      - 🇵🇱_PL_波兰->🇳🇴_NO_挪威
+      - 🇨🇳_CN_中国
+      - 🇨🇳_CN_中国_1
+      - 🇨🇳_CN_中国->🇫🇷_FR_法国
+      - 🇳🇴_NO_挪威
+      - 🇨🇳_CN_中国->🇯🇵_JP_日本_2
+      - 🇨🇳_CN_中国->🇯🇵_JP_日本_3
+      - 🇭🇰_HK_中国香港_1
+      - 🇺🇸_US_美国_1
+      - 🇹🇭_TH_泰国
+      - 🇨🇳_CN_中国->🇺🇸_US_美国
+      - 🇨🇳_CN_中国->🇩🇪_DE_德国
+      - 🇨🇳_CN_中国->🇭🇰_HK_中国香港_1
+      - 🇬🇧_GB_英国_1
+      - 🇨🇳_CN_中国->🇰🇷_KR_韩国
       - 🇨🇳_CN_中国->🇺🇸_US_美国_1
-      - 🇨🇳_CN_中国->🇸🇬_SG_新加坡_1
+      - 🇬🇧_GB_英国_2
+      - 🇺🇸_US_美国_2
+      - ge-20b81e.atlanta-api.com
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇫🇮_FI_芬兰
-      - 🇨🇳_CN_中国
-      - 🇷🇺_RU_俄罗斯
-      - 🇨🇳_CN_中国->🇹🇭_TH_泰国
-      - 🇨🇳_CN_中国->🇬🇧_GB_英国
-      - 🇨🇳_CN_中国->🇯🇵_JP_日本
-      - 🇨🇳_CN_中国->🇬🇧_GB_英国_1
-      - 🇨🇳_CN_中国->🇺🇸_US_美国
-      - 🇨🇳_CN_中国_1
-      - 🇹🇭_TH_泰国
-      - 🇨🇳_CN_中国->🇮🇱_IL_以色列
-      - 🇨🇳_CN_中国->🇮🇳_IN_印度
-      - 🇨🇳_CN_中国->🇫🇷_FR_法国
-      - 🇨🇳_CN_中国->🇰🇷_KR_韩国
-      - 🇲🇾_MY_马来西亚
-      - 🇨🇳_CN_中国->🇸🇬_SG_新加坡
-      - 🇭🇰_HK_中国香港
-      - 🇨🇳_CN_中国->🇩🇪_DE_德国
-      - 🇳🇴_NO_挪威
-      - 🇺🇸_US_美国
-      - ge-20b81e.atlanta-api.com
-      - 🇨🇳_CN_中国->🇩🇪_DE_德国_1
-      - 🇨🇳_CN_中国->🇫🇷_FR_法国_1
       - 🇸🇬_SG_新加坡
-      - 🇱🇹_LT_立陶宛
-      - 🇨🇳_CN_中国->🇰🇷_KR_韩国_1
+      - 🇨🇳_CN_中国->🇭🇰_HK_中国香港
+      - 🇺🇸_US_美国
+      - 🇩🇰_DK_丹麦
+      - 🇨🇳_CN_中国->🇯🇵_JP_日本
+      - 🇨🇳_CN_中国->🇹🇼_TW_中国台湾
+      - 🇨🇳_CN_中国->🇯🇵_JP_日本_1
+      - 🇭🇰_HK_中国香港
+      - 🇩🇪_DE_德国
+      - 🇬🇧_GB_英国
+      - 🇵🇱_PL_波兰->🇳🇴_NO_挪威
+      - 🇨🇳_CN_中国
+      - 🇨🇳_CN_中国_1
+      - 🇨🇳_CN_中国->🇫🇷_FR_法国
+      - 🇳🇴_NO_挪威
+      - 🇨🇳_CN_中国->🇯🇵_JP_日本_2
+      - 🇨🇳_CN_中国->🇯🇵_JP_日本_3
+      - 🇭🇰_HK_中国香港_1
+      - 🇺🇸_US_美国_1
+      - 🇹🇭_TH_泰国
+      - 🇨🇳_CN_中国->🇺🇸_US_美国
+      - 🇨🇳_CN_中国->🇩🇪_DE_德国
+      - 🇨🇳_CN_中国->🇭🇰_HK_中国香港_1
+      - 🇬🇧_GB_英国_1
+      - 🇨🇳_CN_中国->🇰🇷_KR_韩国
       - 🇨🇳_CN_中国->🇺🇸_US_美国_1
-      - 🇨🇳_CN_中国->🇸🇬_SG_新加坡_1
+      - 🇬🇧_GB_英国_2
+      - 🇺🇸_US_美国_2
+      - ge-20b81e.atlanta-api.com
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🇫🇮_FI_芬兰
-      - 🇨🇳_CN_中国
-      - 🇷🇺_RU_俄罗斯
-      - 🇨🇳_CN_中国->🇹🇭_TH_泰国
-      - 🇨🇳_CN_中国->🇬🇧_GB_英国
-      - 🇨🇳_CN_中国->🇯🇵_JP_日本
-      - 🇨🇳_CN_中国->🇬🇧_GB_英国_1
-      - 🇨🇳_CN_中国->🇺🇸_US_美国
-      - 🇨🇳_CN_中国_1
-      - 🇹🇭_TH_泰国
-      - 🇨🇳_CN_中国->🇮🇱_IL_以色列
-      - 🇨🇳_CN_中国->🇮🇳_IN_印度
-      - 🇨🇳_CN_中国->🇫🇷_FR_法国
-      - 🇨🇳_CN_中国->🇰🇷_KR_韩国
-      - 🇲🇾_MY_马来西亚
-      - 🇨🇳_CN_中国->🇸🇬_SG_新加坡
-      - 🇭🇰_HK_中国香港
-      - 🇨🇳_CN_中国->🇩🇪_DE_德国
-      - 🇳🇴_NO_挪威
-      - 🇺🇸_US_美国
-      - ge-20b81e.atlanta-api.com
-      - 🇨🇳_CN_中国->🇩🇪_DE_德国_1
-      - 🇨🇳_CN_中国->🇫🇷_FR_法国_1
       - 🇸🇬_SG_新加坡
-      - 🇱🇹_LT_立陶宛
-      - 🇨🇳_CN_中国->🇰🇷_KR_韩国_1
+      - 🇨🇳_CN_中国->🇭🇰_HK_中国香港
+      - 🇺🇸_US_美国
+      - 🇩🇰_DK_丹麦
+      - 🇨🇳_CN_中国->🇯🇵_JP_日本
+      - 🇨🇳_CN_中国->🇹🇼_TW_中国台湾
+      - 🇨🇳_CN_中国->🇯🇵_JP_日本_1
+      - 🇭🇰_HK_中国香港
+      - 🇩🇪_DE_德国
+      - 🇬🇧_GB_英国
+      - 🇵🇱_PL_波兰->🇳🇴_NO_挪威
+      - 🇨🇳_CN_中国
+      - 🇨🇳_CN_中国_1
+      - 🇨🇳_CN_中国->🇫🇷_FR_法国
+      - 🇳🇴_NO_挪威
+      - 🇨🇳_CN_中国->🇯🇵_JP_日本_2
+      - 🇨🇳_CN_中国->🇯🇵_JP_日本_3
+      - 🇭🇰_HK_中国香港_1
+      - 🇺🇸_US_美国_1
+      - 🇹🇭_TH_泰国
+      - 🇨🇳_CN_中国->🇺🇸_US_美国
+      - 🇨🇳_CN_中国->🇩🇪_DE_德国
+      - 🇨🇳_CN_中国->🇭🇰_HK_中国香港_1
+      - 🇬🇧_GB_英国_1
+      - 🇨🇳_CN_中国->🇰🇷_KR_韩国
       - 🇨🇳_CN_中国->🇺🇸_US_美国_1
-      - 🇨🇳_CN_中国->🇸🇬_SG_新加坡_1
+      - 🇬🇧_GB_英国_2
+      - 🇺🇸_US_美国_2
+      - ge-20b81e.atlanta-api.com
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇫🇮_FI_芬兰
-      - 🇨🇳_CN_中国
-      - 🇷🇺_RU_俄罗斯
-      - 🇨🇳_CN_中国->🇹🇭_TH_泰国
-      - 🇨🇳_CN_中国->🇬🇧_GB_英国
-      - 🇨🇳_CN_中国->🇯🇵_JP_日本
-      - 🇨🇳_CN_中国->🇬🇧_GB_英国_1
-      - 🇨🇳_CN_中国->🇺🇸_US_美国
-      - 🇨🇳_CN_中国_1
-      - 🇹🇭_TH_泰国
-      - 🇨🇳_CN_中国->🇮🇱_IL_以色列
-      - 🇨🇳_CN_中国->🇮🇳_IN_印度
-      - 🇨🇳_CN_中国->🇫🇷_FR_法国
-      - 🇨🇳_CN_中国->🇰🇷_KR_韩国
-      - 🇲🇾_MY_马来西亚
-      - 🇨🇳_CN_中国->🇸🇬_SG_新加坡
-      - 🇭🇰_HK_中国香港
-      - 🇨🇳_CN_中国->🇩🇪_DE_德国
-      - 🇳🇴_NO_挪威
-      - 🇺🇸_US_美国
-      - ge-20b81e.atlanta-api.com
-      - 🇨🇳_CN_中国->🇩🇪_DE_德国_1
-      - 🇨🇳_CN_中国->🇫🇷_FR_法国_1
       - 🇸🇬_SG_新加坡
-      - 🇱🇹_LT_立陶宛
-      - 🇨🇳_CN_中国->🇰🇷_KR_韩国_1
+      - 🇨🇳_CN_中国->🇭🇰_HK_中国香港
+      - 🇺🇸_US_美国
+      - 🇩🇰_DK_丹麦
+      - 🇨🇳_CN_中国->🇯🇵_JP_日本
+      - 🇨🇳_CN_中国->🇹🇼_TW_中国台湾
+      - 🇨🇳_CN_中国->🇯🇵_JP_日本_1
+      - 🇭🇰_HK_中国香港
+      - 🇩🇪_DE_德国
+      - 🇬🇧_GB_英国
+      - 🇵🇱_PL_波兰->🇳🇴_NO_挪威
+      - 🇨🇳_CN_中国
+      - 🇨🇳_CN_中国_1
+      - 🇨🇳_CN_中国->🇫🇷_FR_法国
+      - 🇳🇴_NO_挪威
+      - 🇨🇳_CN_中国->🇯🇵_JP_日本_2
+      - 🇨🇳_CN_中国->🇯🇵_JP_日本_3
+      - 🇭🇰_HK_中国香港_1
+      - 🇺🇸_US_美国_1
+      - 🇹🇭_TH_泰国
+      - 🇨🇳_CN_中国->🇺🇸_US_美国
+      - 🇨🇳_CN_中国->🇩🇪_DE_德国
+      - 🇨🇳_CN_中国->🇭🇰_HK_中国香港_1
+      - 🇬🇧_GB_英国_1
+      - 🇨🇳_CN_中国->🇰🇷_KR_韩国
       - 🇨🇳_CN_中国->🇺🇸_US_美国_1
-      - 🇨🇳_CN_中国->🇸🇬_SG_新加坡_1
+      - 🇬🇧_GB_英国_2
+      - 🇺🇸_US_美国_2
+      - ge-20b81e.atlanta-api.com
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -511,34 +532,35 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇫🇮_FI_芬兰
-      - 🇨🇳_CN_中国
-      - 🇷🇺_RU_俄罗斯
-      - 🇨🇳_CN_中国->🇹🇭_TH_泰国
-      - 🇨🇳_CN_中国->🇬🇧_GB_英国
-      - 🇨🇳_CN_中国->🇯🇵_JP_日本
-      - 🇨🇳_CN_中国->🇬🇧_GB_英国_1
-      - 🇨🇳_CN_中国->🇺🇸_US_美国
-      - 🇨🇳_CN_中国_1
-      - 🇹🇭_TH_泰国
-      - 🇨🇳_CN_中国->🇮🇱_IL_以色列
-      - 🇨🇳_CN_中国->🇮🇳_IN_印度
-      - 🇨🇳_CN_中国->🇫🇷_FR_法国
-      - 🇨🇳_CN_中国->🇰🇷_KR_韩国
-      - 🇲🇾_MY_马来西亚
-      - 🇨🇳_CN_中国->🇸🇬_SG_新加坡
-      - 🇭🇰_HK_中国香港
-      - 🇨🇳_CN_中国->🇩🇪_DE_德国
-      - 🇳🇴_NO_挪威
-      - 🇺🇸_US_美国
-      - ge-20b81e.atlanta-api.com
-      - 🇨🇳_CN_中国->🇩🇪_DE_德国_1
-      - 🇨🇳_CN_中国->🇫🇷_FR_法国_1
       - 🇸🇬_SG_新加坡
-      - 🇱🇹_LT_立陶宛
-      - 🇨🇳_CN_中国->🇰🇷_KR_韩国_1
+      - 🇨🇳_CN_中国->🇭🇰_HK_中国香港
+      - 🇺🇸_US_美国
+      - 🇩🇰_DK_丹麦
+      - 🇨🇳_CN_中国->🇯🇵_JP_日本
+      - 🇨🇳_CN_中国->🇹🇼_TW_中国台湾
+      - 🇨🇳_CN_中国->🇯🇵_JP_日本_1
+      - 🇭🇰_HK_中国香港
+      - 🇩🇪_DE_德国
+      - 🇬🇧_GB_英国
+      - 🇵🇱_PL_波兰->🇳🇴_NO_挪威
+      - 🇨🇳_CN_中国
+      - 🇨🇳_CN_中国_1
+      - 🇨🇳_CN_中国->🇫🇷_FR_法国
+      - 🇳🇴_NO_挪威
+      - 🇨🇳_CN_中国->🇯🇵_JP_日本_2
+      - 🇨🇳_CN_中国->🇯🇵_JP_日本_3
+      - 🇭🇰_HK_中国香港_1
+      - 🇺🇸_US_美国_1
+      - 🇹🇭_TH_泰国
+      - 🇨🇳_CN_中国->🇺🇸_US_美国
+      - 🇨🇳_CN_中国->🇩🇪_DE_德国
+      - 🇨🇳_CN_中国->🇭🇰_HK_中国香港_1
+      - 🇬🇧_GB_英国_1
+      - 🇨🇳_CN_中国->🇰🇷_KR_韩国
       - 🇨🇳_CN_中国->🇺🇸_US_美国_1
-      - 🇨🇳_CN_中国->🇸🇬_SG_新加坡_1
+      - 🇬🇧_GB_英国_2
+      - 🇺🇸_US_美国_2
+      - ge-20b81e.atlanta-api.com
 rule-providers:
   LocalAreaNetwork:
     type: http
