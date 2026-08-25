@@ -125,9 +125,9 @@
 | [FongMi/TV](https://github.com/FongMi/TV) | fongmi | 171a41b... | 2026-01-13 04:34:53 |
 | [q215613905/TVBoxOS](https://github.com/q215613905/TVBoxOS) | main | 2162f5d... | 2026-08-25 18:49:13 |
 | [takagen99/Box](https://github.com/takagen99/Box) | main | 258a5fe... | 2026-02-28 04:47:47 |
-| [mlabalabala/box](https://github.com/mlabalabala/box) | main | c5dc2b9... | 2026-08-25 18:48:31 |
+| [mlabalabala/box](https://github.com/mlabalabala/box) | main | c5dc2b9... | 2026-08-25 18:58:38 |
 
-*同步数据更新于: 2026-08-25 18:49:13*
+*同步数据更新于: 2026-08-25 18:58:38*
 
 ## 2. 自定义爬虫源 (Spiders)
 提供给 TVBox / FongMi 等客户端解析视频使用的爬虫规则库：
