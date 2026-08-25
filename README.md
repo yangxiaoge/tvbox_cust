@@ -122,7 +122,7 @@
 
 | 项目名称 (Repository) | 编译分支 | 最新 Commit Hash | 同步时间 (Build Time) |
 | :--- | :--- | :--- | :--- |
-| [FongMi/TV (内置源版)](https://github.com/FongMi/TV) | fongmi | 171a41b... | 2026-01-13 04:34:53 |
+| [FongMi/TV](https://github.com/FongMi/TV) | fongmi | 171a41b... | 2026-01-13 04:34:53 |
 | [q215613905/TVBoxOS](https://github.com/q215613905/TVBoxOS) | main | 02f05c8... | 2026-06-22 05:22:35 |
 | [takagen99/Box](https://github.com/takagen99/Box) | main | 258a5fe... | 2026-02-28 04:47:47 |
 | [mlabalabala/box](https://github.com/mlabalabala/box) | main | c5dc2b9... | 2026-03-18 04:44:50 |
