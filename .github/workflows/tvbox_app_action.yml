@@ -150,30 +150,20 @@ jobs:
           fi
 
           # 3. 修复 pyquery 和 cssselect 在 Chaquopy 依赖解析中的版本冲突
-          find . -name "build.gradle" -exec sed -i 's/install "pyquery"/install "pyquery<=2.0.0"/g' {} + 2>/dev/null || true
-          find . -name "build.gradle" -exec sed -i "s/install 'pyquery'/install 'pyquery<=2.0.0'/g" {} + 2>/dev/null || true
+          find . -name "build.gradle" -exec sed -i 's/install "pyquery"/install "cssselect<=1.2.0"\n            install "pyquery<=2.0.0"/g' {} + 2>/dev/null || true
+          find . -name "build.gradle" -exec sed -i "s/install 'pyquery'/install 'cssselect<=1.2.0'\n            install 'pyquery<=2.0.0'/g" {} + 2>/dev/null || true
 
           # 4. 处理 pyramid 模块
           if [ -f "pyramid/build.gradle" ]; then
             sed -i 's/\(com.chaquo.python:gradle:\)12.0.1/\115.0.1/g' build.gradle 2>/dev/null || true
             sed -i '/buildPython.*python.exe/d' pyramid/build.gradle 2>/dev/null || true
-            PYTHON_PATH=$(which python3.10 || which python3)
-            if grep -q "buildPython" pyramid/build.gradle; then
-              sed -i "s|buildPython(\".*\")|buildPython(\"$PYTHON_PATH\")|g" pyramid/build.gradle
-            else
-              sed -i "/python {/a\            buildPython \"$PYTHON_PATH\"" pyramid/build.gradle 2>/dev/null || true
-            fi
-            sed -i '/install "pyquery<=2.0.0"/i\            install "cssselect<=1.2.0"' pyramid/build.gradle 2>/dev/null || true
             sed -i 's/minSdkVersion 19/minSdkVersion 21/g' pyramid/build.gradle 2>/dev/null || true
             sed -i 's/minSdkVersion 19/minSdkVersion 21/g' app/build.gradle 2>/dev/null || true
           fi
 
           # 5. 处理 chaquo 模块
           if [ -f "chaquo/build.gradle" ]; then
-            PYTHON_PATH=$(which python3.10 || which python3)
             sed -i 's/\(com.chaquo.python:gradle:\)[0-9.]\+/\115.0.1/g' build.gradle 2>/dev/null || true
-            sed -i "/version \"3.10\"/a\            buildPython \"$PYTHON_PATH\"" chaquo/build.gradle 2>/dev/null || true
-            sed -i '/install "pyquery<=2.0.0"/i\            install "cssselect<=1.2.0"' chaquo/build.gradle 2>/dev/null || true
             sed -i 's/minSdkVersion 19/minSdkVersion 21/g' chaquo/build.gradle 2>/dev/null || true
             sed -i 's/minSdkVersion 19/minSdkVersion 21/g' app/build.gradle 2>/dev/null || true
           fi
@@ -371,19 +361,48 @@ jobs:
           git remote set-url origin "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}"
           git pull --rebase origin master
           
-          current_time=$(TZ='Asia/Shanghai' date '+%Y-%m-%d %H:%M:%S')
-          
-          # 更新表格中对应项目的 commit hash 与构建时间
-          sed -i "/\[${{ matrix.userName }}\/${{ matrix.repoName }}.*\]/s/| [a-z0-9.]* | [^|]* |$/| ${{ env.commitS }}... | ${current_time} |/" README.md 2>/dev/null || true
-          
-          # 更新底部的同步数据更新时间
-          sed -i "s/\*同步数据更新于: .*\*/\*同步数据更新于: ${current_time}\*/" README.md 2>/dev/null || true
+          # 通过 Python 精确更新 README.md 表格
+          python3 - << 'PYEOF'
+          import re, os
+          from datetime import datetime, timezone, timedelta
+
+          tz = timezone(timedelta(hours=8))
+          now = datetime.now(tz).strftime('%Y-%m-%d %H:%M:%S')
+
+          user = "${{ matrix.userName }}"
+          repo = "${{ matrix.repoName }}"
+          branch = "${{ matrix.branchName }}"
+          commit = "${{ env.commit }}"
+          short_commit = commit[:7] + "..." if len(commit) >= 7 else commit
+
+          readme_path = "README.md"
+          if os.path.exists(readme_path):
+              with open(readme_path, "r", encoding="utf-8") as f:
+                  lines = f.readlines()
+
+              new_lines = []
+              for line in lines:
+                  if f"{user}/{repo}" in line and "|" in line:
+                      parts = [p.strip() for p in line.split("|")]
+                      if len(parts) >= 5:
+                          parts[2] = branch
+                          parts[3] = short_commit
+                          parts[4] = now
+                          line = f"| {' | '.join(parts[1:5])} |\n"
+                  elif line.startswith("*同步数据更新于:"):
+                      line = f"*同步数据更新于: {now}*\n"
+                  new_lines.append(line)
+
+              with open(readme_path, "w", encoding="utf-8") as f:
+                  f.writelines(new_lines)
+              print(f"已更新 README 表格: {user}/{repo} -> {short_commit} at {now}")
+          PYEOF
           
           git add --all
           if git diff --staged --quiet; then
             echo "没有变动需要提交"
           else
-            git commit -m "Update ${{ matrix.userName }}/${{ matrix.repoName }} to ${{ env.commitS }} at ${current_time}"
+            git commit -m "Update ${{ matrix.userName }}/${{ matrix.repoName }} to ${{ env.commitS }}"
             git push origin master
           fi
 
