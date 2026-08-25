@@ -90,6 +90,18 @@
 
 ---
 
+# 音乐应用
+
+### 🎵 LX Music（洛雪音乐）
+开源多端高颜值音乐播放器，支持导入自定义源接口。
+
+- **客户端源码与下载**：
+  - 🖥️ **桌面端**（Win / Mac / Linux）：[lyswhut/lx-music-desktop](https://github.com/lyswhut/lx-music-desktop)
+  - 📱 **移动端**（Android）：[lyswhut/lx-music-mobile](https://github.com/lyswhut/lx-music-mobile)
+- **音源与订阅配置**：
+  - 🔗 **三方订阅源仓库**：[guoyue2010/lxmusic-](https://github.com/guoyue2010/lxmusic-)
+  - 🌐 **纯净直达配置页**：https://77f77.48364836.xyz/lx
+
 # 进阶玩法
 
 ## 1. 三方 TVBox 云编译
