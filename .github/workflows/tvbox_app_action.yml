@@ -40,7 +40,7 @@ jobs:
           - userName: mlabalabala
             repoName: box
             branchName: main
-            jdkVersion: 11
+            jdkVersion: 17
 
     steps:
       - name: Checkout
@@ -108,6 +108,15 @@ jobs:
             sed -i 's/minSdkVersion 19/minSdkVersion 21/g' app/build.gradle
           fi
 
+          # 处理 Python 依赖版本冲突
+          if [ -f "pyramid/build.gradle" ] || [ -f "chaquo/build.gradle" ]; then
+            # 创建 requirements.txt 以约束依赖版本
+            cat > requirements.txt <<EOF
+          cssselect<=1.2.0
+          pyquery
+          EOF
+          fi
+          
           # 处理 Chaquopy Python 配置
           if [ -f "chaquo/build.gradle" ]; then
             echo "检测到 chaquo 模块,开始配置 Python 环境"
@@ -173,65 +182,6 @@ jobs:
           sed -i '$a\RELEASE_STORE_PASSWORD=TVBoxOSC'       ./gradle.properties
           sed -i '$a\RELEASE_KEY_PASSWORD=TVBoxOSC'         ./gradle.properties
           
-      - name: Only for FongMi
-        if: ${{ matrix.userName == 'FongMi' && env.commit }}
-        working-directory: TVBoxOSC
-        run: |
-          echo "这是 FongMi 的专属定制"
-          # 包名修改
-          sed -i 's/^.*applicationId "com\.fongmi\.android.*"/    applicationId "com.fongmi.android.tv.yangxiaoge"/' app/build.gradle
-          # apk命名增加版本号
-          sed -i '/outputFileName.*\.apk"/s/\.apk"/-v${defaultConfig.versionName}.apk"/' app/build.gradle
-          # 代码修改，导包
-          sed -i '/public class App/i\
-          import java.util.LinkedHashMap;\
-          import java.util.Map;\
-          import com.fongmi.android.tv.bean.Config;\
-          ' app/src/main/java/com/fongmi/android/tv/App.java
-          # 应用名称修改
-          if [ -n "${{ github.event.inputs.fongmi_app_name }}" ]; then
-            sed -i 's|<string name="app_name">.*</string>|<string name="app_name">${{ github.event.inputs.fongmi_app_name }}</string>|' app/src/main/res/values-zh-rCN/strings.xml
-          else
-            sed -i 's|<string name="app_name">.*</string>|<string name="app_name">蜂蜜影视</string>|' app/src/main/res/values-zh-rCN/strings.xml
-          fi
-          # 代码修改，内置源
-          sed -i '/public App()/i\
-          private Map<String, String> sourceMap = new LinkedHashMap<>() {{\
-              put("自用(个人维护)", "https://cdn.jsdelivr.net/gh/yangxiaoge/tvbox_cust@master/tvbox/self_use.txt");\
-              put("饭太硬", "http://www.饭太硬.com/tv");\
-              put("ok外部", "http://ok321.top/ok");\
-              put("王二小(弹幕)", "http://tvbox.王二小放牛娃.top");\
-              put("ok内部(弹幕)", "http://ok321.top/tv");\
-          }};\
-          ' app/src/main/java/com/fongmi/android/tv/App.java
-          # manifest修改，避免与原版影视provider冲突
-          sed -i 's|android:authorities="com\.fongmi\.quickjs\.provider"|android:authorities="com.fongmi.quickjs.provider.yangxiaoge"|' app/src/main/AndroidManifest.xml
-          # 内置源写入数据库
-          sed -i '/super\.onCreate();/a\
-          // 添加默认接口\n\
-          sourceMap.forEach((name, url) -> {\n\
-              Config vodConfig = Config.find(url, 0); // 点播\n\
-              if (vodConfig.getName() == null || vodConfig.getName().isEmpty()) {\n\
-                  vodConfig.setName(name);\n\
-                  vodConfig.update();\n\
-              }\n\
-              Config liveConfig = Config.find(url, 1); // 直播\n\
-              if (liveConfig.getName() == null || liveConfig.getName().isEmpty()) {\n\
-                  liveConfig.setName(name);\n\
-                  liveConfig.update();\n\
-              }\n\
-          });' app/src/main/java/com/fongmi/android/tv/App.java
-          # 弹幕开关默认开启
-          sed -i 's|getBoolean("danmaku_load")|getBoolean("danmaku_load", true)|' app/src/main/java/com/fongmi/android/tv/Setting.java
-          sed -i 's|getBoolean("danmaku_show")|getBoolean("danmaku_show", true)|' app/src/main/java/com/fongmi/android/tv/Setting.java
-          # 移除fongmi版的更新检测代码以及toast提示
-          sed -i 's/^\(.*App\.execute.*\)/\/\/ \1/' app/src/leanback/java/com/fongmi/android/tv/Updater.java
-          sed -i 's/^\(.*Notify\.show.*\)/\/\/ \1/' app/src/leanback/java/com/fongmi/android/tv/Updater.java
-          sed -i 's/^\(.*App\.execute.*\)/\/\/ \1/' app/src/mobile/java/com/fongmi/android/tv/Updater.java
-          sed -i 's/^\(.*Notify\.show.*\)/\/\/ \1/' app/src/mobile/java/com/fongmi/android/tv/Updater.java
-          # echo "====== app/build.gradle 修改后内容预览 ======"
-          # cat app/build.gradle
-
       - name: Setup JDK
         if: ${{ env.commit }}
         uses: actions/setup-java@main
