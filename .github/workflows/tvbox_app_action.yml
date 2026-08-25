@@ -31,7 +31,7 @@ jobs:
         include:
           - userName: FongMi
             repoName: TV
-            branchName: release
+            branchName: fongmi
             jdkVersion: 17
           - userName: q215613905
             repoName: TVBoxOS
@@ -69,18 +69,21 @@ jobs:
             commit=$(curl -sL $upStream/commits/${{ matrix.branchName }} | grep -o "/${{ matrix.userName }}/${{ matrix.repoName }}/commit/[a-z0-9]\+" | head -1 | cut -d\/ -f5)
           fi
           
+          if [[ ! "${commit}" =~ ^[0-9a-f]{40}$ ]]; then
+            echo "错误: 无法获取 ${{ matrix.userName }}/${{ matrix.repoName }} 分支 ${{ matrix.branchName }} 的有效 commit!"
+            exit 1
+          fi
+          
           # 判断是否需要构建：有新 commit、手动触发 (workflow_dispatch) 或显式勾选 rebuild
           should_build="false"
-          if [[ -n "${commit}" ]]; then
-            if [ "${{ github.event_name }}" == "workflow_dispatch" ] || [ "${{ inputs.rebuild }}" == "true" ] || ! grep -q "$commit" README.md; then
-              should_build="true"
-            fi
+          if [ "${{ github.event_name }}" == "workflow_dispatch" ] || [ "${{ inputs.rebuild }}" == "true" ] || ! grep -q "${commit:0:7}" README.md; then
+            should_build="true"
           fi
           
           if [ "$should_build" == "true" ]; then
             echo "commit=$commit" >> $GITHUB_ENV
             echo "commitS=${commit:0:7}" >> $GITHUB_ENV
-            echo "触发构建，commit=$commit"
+            echo "触发构建，commit=$commit (${commit:0:7})"
           else
             echo "未检测到新提交且未指定重建，跳过构建。"
           fi
@@ -160,7 +163,6 @@ jobs:
             else
               sed -i "/python {/a\            buildPython \"$PYTHON_PATH\"" pyramid/build.gradle 2>/dev/null || true
             fi
-            # 确保声明 cssselect 约束
             sed -i '/install "pyquery<=2.0.0"/i\            install "cssselect<=1.2.0"' pyramid/build.gradle 2>/dev/null || true
             sed -i 's/minSdkVersion 19/minSdkVersion 21/g' pyramid/build.gradle 2>/dev/null || true
             sed -i 's/minSdkVersion 19/minSdkVersion 21/g' app/build.gradle 2>/dev/null || true
@@ -312,7 +314,6 @@ jobs:
         run: |
           lastCommit=$(grep "${{ matrix.userName }}\/${{ matrix.repoName }}" ${{ github.workspace }}/README.md | grep -o '[a-z0-9]\{40\}' | head -1)
           if [ -z "$lastCommit" ]; then
-            echo "Warning: Could not find last commit hash for ${{ matrix.userName }}/${{ matrix.repoName }}/${{ matrix.branchName }}"
             lastCommit=${{ env.commit }}
           fi
           
@@ -372,12 +373,11 @@ jobs:
           
           current_time=$(TZ='Asia/Shanghai' date '+%Y-%m-%d %H:%M:%S')
           
-          # 更新对应仓库的 commit hash
-          sed -i "/${{ matrix.userName }}\/${{ matrix.repoName }}/s/Updated: [a-z0-9]\{40\}/Updated: ${{ env.commit }}/" README.md 2>/dev/null || true
-          sed -i "/${{ matrix.userName }}\/${{ matrix.repoName }}/s/Updated: [a-z0-9]\{7\}/Updated: ${{ env.commit }}/" README.md 2>/dev/null || true
+          # 更新表格中对应项目的 commit hash 与构建时间
+          sed -i "/\[${{ matrix.userName }}\/${{ matrix.repoName }}.*\]/s/| [a-z0-9.]* | [^|]* |$/| ${{ env.commitS }}... | ${current_time} |/" README.md 2>/dev/null || true
           
-          # 更新 update at 时间
-          sed -i "s/update at .*/update at ${current_time} (UTC+8)/" README.md 2>/dev/null || true
+          # 更新底部的同步数据更新时间
+          sed -i "s/\*同步数据更新于: .*\*/\*同步数据更新于: ${current_time}\*/" README.md 2>/dev/null || true
           
           git add --all
           if git diff --staged --quiet; then
