@@ -9,6 +9,7 @@ on:
         description: '忽略构建记录以重新构建'
         required: false
         type: boolean
+        default: true
       donotpublish:
         description: '构建后不提交发布新版'
         required: false
@@ -43,7 +44,7 @@ jobs:
           - userName: mlabalabala
             repoName: box
             branchName: main
-            jdkVersion: 17
+            jdkVersion: 11
 
     steps:
       - name: Checkout
@@ -68,11 +69,21 @@ jobs:
             commit=$(curl -sL $upStream/commits/${{ matrix.branchName }} | grep -o "/${{ matrix.userName }}/${{ matrix.repoName }}/commit/[a-z0-9]\+" | head -1 | cut -d\/ -f5)
           fi
           
-          if [[ -n "${commit}" ]] && ( ! grep -q "$commit" README.md || [ "${{ inputs.rebuild }}" == "true" ] ); then
+          # 判断是否需要构建：有新 commit、手动触发 (workflow_dispatch) 或显式勾选 rebuild
+          should_build="false"
+          if [[ -n "${commit}" ]]; then
+            if [ "${{ github.event_name }}" == "workflow_dispatch" ] || [ "${{ inputs.rebuild }}" == "true" ] || ! grep -q "$commit" README.md; then
+              should_build="true"
+            fi
+          fi
+          
+          if [ "$should_build" == "true" ]; then
             echo "commit=$commit" >> $GITHUB_ENV
             echo "commitS=${commit:0:7}" >> $GITHUB_ENV
+            echo "触发构建，commit=$commit"
+          else
+            echo "未检测到新提交且未指定重建，跳过构建。"
           fi
-          echo "commit=$commit"
 
       - name: Checkout Source Code
         if: ${{ env.commit }}
@@ -98,7 +109,7 @@ jobs:
         if: ${{ env.commit }}
         run: |
           python -m pip install --upgrade pip
-          pip install lxml ujson pyquery requests jsonpath cachetools pycryptodome beautifulsoup4 "cssselect<=1.2.0"
+          pip install lxml ujson "pyquery<=2.0.0" requests jsonpath cachetools pycryptodome beautifulsoup4 "cssselect<=1.2.0"
 
       - name: Extra Modify
         if: ${{ env.commit }}
@@ -135,18 +146,22 @@ jobs:
             fi
           fi
 
-          # 3. 处理 pyramid / Python 依赖约束
-          if [ -f "pyramid/build.gradle" ] || [ -f "chaquo/build.gradle" ]; then
-            cat > requirements.txt <<EOF
-          cssselect<=1.2.0
-          pyquery
-          EOF
-          fi
+          # 3. 修复 pyquery 和 cssselect 在 Chaquopy 依赖解析中的版本冲突
+          find . -name "build.gradle" -exec sed -i 's/install "pyquery"/install "pyquery<=2.0.0"/g' {} + 2>/dev/null || true
+          find . -name "build.gradle" -exec sed -i "s/install 'pyquery'/install 'pyquery<=2.0.0'/g" {} + 2>/dev/null || true
 
           # 4. 处理 pyramid 模块
           if [ -f "pyramid/build.gradle" ]; then
             sed -i 's/\(com.chaquo.python:gradle:\)12.0.1/\115.0.1/g' build.gradle 2>/dev/null || true
             sed -i '/buildPython.*python.exe/d' pyramid/build.gradle 2>/dev/null || true
+            PYTHON_PATH=$(which python3.10 || which python3)
+            if grep -q "buildPython" pyramid/build.gradle; then
+              sed -i "s|buildPython(\".*\")|buildPython(\"$PYTHON_PATH\")|g" pyramid/build.gradle
+            else
+              sed -i "/python {/a\            buildPython \"$PYTHON_PATH\"" pyramid/build.gradle 2>/dev/null || true
+            fi
+            # 确保声明 cssselect 约束
+            sed -i '/install "pyquery<=2.0.0"/i\            install "cssselect<=1.2.0"' pyramid/build.gradle 2>/dev/null || true
             sed -i 's/minSdkVersion 19/minSdkVersion 21/g' pyramid/build.gradle 2>/dev/null || true
             sed -i 's/minSdkVersion 19/minSdkVersion 21/g' app/build.gradle 2>/dev/null || true
           fi
@@ -156,6 +171,7 @@ jobs:
             PYTHON_PATH=$(which python3.10 || which python3)
             sed -i 's/\(com.chaquo.python:gradle:\)[0-9.]\+/\115.0.1/g' build.gradle 2>/dev/null || true
             sed -i "/version \"3.10\"/a\            buildPython \"$PYTHON_PATH\"" chaquo/build.gradle 2>/dev/null || true
+            sed -i '/install "pyquery<=2.0.0"/i\            install "cssselect<=1.2.0"' chaquo/build.gradle 2>/dev/null || true
             sed -i 's/minSdkVersion 19/minSdkVersion 21/g' chaquo/build.gradle 2>/dev/null || true
             sed -i 's/minSdkVersion 19/minSdkVersion 21/g' app/build.gradle 2>/dev/null || true
           fi
