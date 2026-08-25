@@ -17,7 +17,7 @@
 | 应用类型 | 客户端下载 | 辅助配置 / 相关链接 |
 | :--- | :--- | :--- |
 | **TV 默认桌面** | • [EmotnUI](/apk/EmotnUI_com.oversea.aslauncher_1.0.9.0_5094.apk)（默认桌面）<br>• [当贝桌面](/apk/当贝桌面_4.1.7精简去广告版.apk)（精简去广告版） | - |
-| **影视客户端** | • [自编影视](https://github.com/yangxiaoge/tvbox_cust/releases)（自用编译版）<br>• [FongMi影视](https://github.com/FongMi/Release/tree/fongmi/apk/release)（原版）<br>• [WebHTV 二开版 (fish2018)](https://github.com/fish2018/webhtv)（自定义Web首页/增强版）<br>• [WebHTV 三开版 (Silent1566)](https://github.com/Silent1566/webhtv)（注入扩展/开发工具版） | 接口订阅源：[跳转至下方TVBox源](#tvbox-源) |
+| **影视客户端** | • [自编影视](https://github.com/yangxiaoge/tvbox_cust/releases)（自用编译版）<br>• [FongMi影视](https://github.com/FongMi/Release/tree/fongmi/apk/release)（原版）<br>• [鱼壳 (二开 / fish2018)](https://github.com/fish2018/webhtv)<br>• [默影视 (三开 / Silent1566)](https://github.com/Silent1566/webhtv) | 接口订阅源：[跳转至下方TVBox源](#tvbox-源) |
 | **IPTV / 央视直播** | • [TiviMate 2.1.5](/apk/TiviMate-2.1.5推荐-Premium付费破解版.apk)（通用直播，推荐）<br>• [WebViewTvLive](https://github.com/hxh19950701/WebViewTvLive)（WebView方式播放央视）<br>• [CCTV_Viewer](https://github.com/Eanya-Tonic/CCTV_Viewer) | • [TiviMate配置备份](https://raw.githubusercontent.com/yangxiaoge/tvbox_cust/refs/heads/master/apk/TiviMate2.1.5_backup_20240409_104306.tmb)<br>• 订阅源仓库：[fanmingming](https://github.com/fanmingming/live)<br>• IPv6直播源：https://live.fanmingming.com/tv/m3u/ipv6.m3u |
 | **开机自启** | • [开机自启 3.0](/apk/开机自启_3.0_2024-03-11.apk)（开机自动启动指定应用） | • 自用源码：[autoclick](https://gitee.com/sheepyang_study/auto-click-slide)（闭源） |
 
