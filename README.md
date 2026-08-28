@@ -12,24 +12,42 @@
 
 ---
 
+# 📑 目录导航
+
+- [📺 TVBox 影视接口源](#tvbox-影视接口源)
+  - [1. 优秀大佬仓](#1-优秀大佬仓)
+  - [2. 源解析服务](#2-源解析服务)
+  - [3. 官方及交流群](#3-官方及大佬交流群-telegram)
+- [📱 TV 客户端与配置](#tv-客户端与配置)
+  - [客户端应用矩阵](#tv-客户端与配置)
+  - [影视使用教程](#影视使用教程)
+- [🚀 云编译与进阶开发](#云编译与进阶开发)
+  - [1. 三方 TVBox 云编译](#1-三方-tvbox-云编译)
+  - [2. 自定义爬虫源 (Spiders)](#2-自定义爬虫源-spiders)
+- [🛠️ 实用工具与扩展](#实用工具与扩展)
+  - [1. Clash 代理规则](#1-clash-代理规则)
+  - [2. 跳广告工具 (推荐 GKD)](#2-跳广告工具-推荐-gkd--李跳跳存档)
+  - [3. 洛雪音乐 (LX Music)](#3--音乐应用-lx-music)
+  - [4. 节假日查询接口](#4--节假日查询接口)
+- [🌟 Star History](#star-history)
+
+---
+
 # 📺 TVBox 影视接口源
 
 > [!NOTE]
 > **如何配置？** 复制下方的接口链接，在 TVBox 客户端的 `设置 -> 点播 -> 配置地址` 处粘贴并保存。
 
-### 1. 自用多仓 (推荐)
-* **自用多仓链接**: `https://github.com/yangxiaoge/tvbox_cust/raw/refs/heads/master/tvbox/多仓.json`
-
-### 2. 优秀大佬仓
+### 1. 优秀大佬仓
 * **饭太硬**: `http://www.饭太硬.cc/tv`
 * **王二小**: `http://new.王二小放牛娃.top`
 * **嗷呜**: `http://www.英格里希嗷呜.top/tv`
 
-### 3. 源解析服务
+### 2. 源解析服务
 * [FongMi UA 解析服务](https://ua.fongmi.eu.org/) (`https://ua.fongmi.eu.org/`)
 
-### 4. 官方及大佬交流群 (Telegram)
-* [FongMi 官方频道](https://web.telegram.org/k/#@fongmi_official) | [饭太硬](https://web.telegram.org/k/#@TVBoxxoo) | [王二小放牛娃](https://web.telegram.org/k/#@wangerxiaofangniuwa) | [嗷呜交流频道](https://web.telegram.org/a/#-1003462278777) 
+### 3. 官方及大佬交流群 (Telegram)
+* [FongMi 官方频道](https://web.telegram.org/k/#@fongmi_official) | [饭太硬](https://web.telegram.org/k/#@TVBoxxoo) | [王二小放牛娃](https://web.telegram.org/k/#@wangerxiaofangniuwa) | [嗷呜交流频道](https://web.telegram.org/a/#-1003462278777) | [鱼壳交流群](https://web.telegram.org/k/#@webhtv)
 
 ---
 
@@ -37,7 +55,7 @@
 
 | 应用类型 | 客户端下载 | 辅助配置 / 相关链接 |
 | :--- | :--- | :--- |
-| **影视客户端** | • [自编影视](https://github.com/yangxiaoge/tvbox_cust/releases)（自用编译版）<br>• [FongMi影视](https://github.com/FongMi/Release)（官方原版发布）<br>• [鱼壳 (二开 / fish2018)](https://github.com/fish2018/webhtv)<br>• [默影视 (三开 / Silent1566)](https://github.com/Silent1566/webhtv) | 接口订阅源：[跳转至上方 TVBox 源](#-tvbox-影视接口源) |
+| **影视客户端** | • [FongMi影视](https://github.com/FongMi/Release)（官方原版发布）<br>• [鱼壳 (二开 / fish2018)](https://github.com/fish2018/webhtv)<br>• [默影视 (三开 / Silent1566)](https://github.com/Silent1566/webhtv) | 接口订阅源：[跳转至上方 TVBox 源](#tvbox-影视接口源) |
 | **TV 默认桌面** | • [EmotnUI](/apk/EmotnUI_com.oversea.aslauncher_1.0.9.0_5094.apk)（默认桌面）<br>• [当贝桌面](/apk/当贝桌面_4.1.7精简去广告版.apk)（精简去广告版） | - |
 | **IPTV / 央视直播** | • [TiviMate 2.1.5](/apk/TiviMate-2.1.5推荐-Premium付费破解版.apk)（通用直播，推荐）<br>• [WebViewTvLive](https://github.com/hxh19950701/WebViewTvLive)（WebView方式播放央视）<br>• [CCTV_Viewer](https://github.com/Eanya-Tonic/CCTV_Viewer) | • [TiviMate配置备份](https://raw.githubusercontent.com/yangxiaoge/tvbox_cust/refs/heads/master/apk/TiviMate2.1.5_backup_20240409_104306.tmb)<br>• 订阅源仓库：[fanmingming](https://github.com/fanmingming/live)<br>• IPv6直播源：https://live.fanmingming.com/tv/m3u/ipv6.m3u |
 | **开机自启** | • [开机自启 3.0](/apk/开机自启_3.0_2024-03-11.apk)（开机自动启动指定应用） | • 自用源码：[autoclick](https://gitee.com/sheepyang_study/auto-click-slide)（闭源） |
@@ -97,18 +115,18 @@
   - `https://raw.githubusercontent.com/yangxiaoge/tvbox_cust/refs/heads/master/clash/custRule/MihomoPro-2025-09-10.yaml`
   - 参考：`https://github.com/666OS/YYDS/tree/main/mihomo/config/legacy`
 
-### 2. GKD & 李跳跳 (广告自动跳过)
+### 2. 跳广告工具 (推荐 GKD / 李跳跳存档)
 
-#### GKD (基于无障碍的跳广告工具)
+#### GKD (基于无障碍的跳广告工具，推荐 ⭐)
 > [!NOTE]
-> GKD 是一款基于无障碍服务的跳广告工具。你可以复制下方的订阅链接导入到 GKD App 中。
+> GKD 是一款功能强大、持续活跃维护的基于无障碍跳广告工具。你可以复制下方的订阅链接导入到 GKD App 中。
 >
 > * **项目源码**: [gkd-kit/gkd](https://github.com/gkd-kit/gkd)
 > * **GKD 第三方订阅规则**: `https://raw.githubusercontent.com/yangxiaoge/tvbox_cust/refs/heads/master/gkd/GKD_subscription.json5`
 
-#### 李跳跳
+#### 李跳跳 (已停止维护，仅存档)
 > [!TIP]
-> 经典的自动跳广告工具。
+> 经典的自动跳广告工具（已停止维护，仅作历史备份归档）。
 >
 > * **客户端下载**: [李跳跳 派大星 2.2](/litiaotiao/李跳跳_派大星2.2.apk)
 > * **李跳跳规则文件**: [/litiaotiao/AllRules.json](/litiaotiao/AllRules.json)
