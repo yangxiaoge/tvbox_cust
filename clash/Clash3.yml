@@ -24,18 +24,103 @@ dns:
       - https://1.1.1.1/dns-query#🚀 节点选择
       - https://8.8.8.8/dns-query#🚀 节点选择
 proxies:
-  - name: 🇬🇧_GB_英国
-    type: vless
-    server: 109.169.37.128
+  - name: 🇭🇰_HK_中国香港
+    type: hysteria2
+    server: 31.57.248.176
+    port: 50160
+    password: b0917015b656b3dd2286b5633af0c5c1
+    sni: www.bing.com
+    skip-cert-verify: true
+    udp: true
+  - name: 🇭🇰_HK_中国香港_1
+    type: vmess
+    server: v10.zgtfqs.click
+    port: 30807
+    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+    alterId: 2
+    cipher: none
+    tls: false
+    skip-cert-verify: true
+    udp: true
+  - name: 🇨🇳_CN_中国
+    type: vmess
+    server: v6.hdacd.com
+    port: 30806
+    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+    alterId: 2
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    udp: true
+  - name: 🇺🇸_US_美国
+    type: hysteria2
+    server: 66.94.121.46
     port: 443
-    uuid: 7404c773-1eb8-40d8-b506-1284fd9befd6
-    servername: foodnetwork.com
+    password: gf1:gfhysteria2024
+    sni: www.broadcom.com
+    skip-cert-verify: true
+    udp: true
+  - name: 🇺🇸_US_美国_1
+    type: vmess
+    server: guanwang.awsno.com
+    port: 443
+    uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
+    alterId: 0
+    cipher: auto
     tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: firefox
-    reality-opts:
-      public-key: SiSky02wHz-S0TDHKFTdYhnrlT8Y3CfRsekZlcdLXDY
-      short-id: fd55b698ee8c3629
+    skip-cert-verify: true
+    udp: true
+  - name: 🇨🇳_CN_中国->🇺🇸_US_美国
+    type: vless
+    server: jp.sofast.live
+    port: 52683
+    uuid: 399b6b23-cc40-4831-a494-61948e2df133
+    tls: false
+    skip-cert-verify: true
+    udp: true
+  - name: 🇨🇳_CN_中国_1
+    type: vmess
+    server: 112.132.215.108
+    port: 50002
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    udp: true
+  - name: 🇺🇸_US_美国_2
+    type: vless
+    server: 40.160.68.72
+    port: 8080
+    uuid: 11af1c47-865a-47c6-92ff-118013655d78
+    network: ws
+    tls: false
+    skip-cert-verify: true
+    udp: true
+  - name: 🇫🇷_FR_法国
+    type: ss
+    server: 95.170.13.47
+    port: 65443
+    cipher: aes-256-cfb
+    password: 7eadc6dbe2ae
+    skip-cert-verify: true
+    udp: true
+  - name: 🇨🇳_CN_中国->🇫🇷_FR_法国
+    type: vmess
+    server: v35.hdacd.com
+    port: 30835
+    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+    alterId: 2
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    udp: true
+  - name: 🇲🇾_MY_马来西亚
+    type: ss
+    server: 118.107.222.231
+    port: 65443
+    cipher: aes-256-cfb
+    password: 7eadc6dbe2ae
     skip-cert-verify: true
     udp: true
   - name: 🇩🇰_DK_丹麦
@@ -52,276 +137,61 @@ proxies:
       short-id: a1b2c3d4
     skip-cert-verify: true
     udp: true
-  - name: 🇺🇸_US_美国
-    type: vmess
-    server: 103.179.142.158
-    port: 50269
-    uuid: 84f238f6-28eb-48df-a7bc-a9bd9cf4abba
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: true
-    network: http
-    udp: true
-  - name: 🇷🇴_RO_罗马尼亚->🇯🇵_JP_日本
-    type: vless
-    server: 82.152.132.14
-    port: 443
-    uuid: 9ce4c9e2-1dcc-abe8-9abf-9bf8bc1269f6
-    network: ws
-    servername: 8.o.8.e.t.g.7.w.8.n.e.1.l.e.us.art-us.kdns.fr
-    tls: true
-    client-fingerprint: chrome
-    ws-opts:
-      path: /pg/10086-dfc816f117c49173
-      headers:
-        Host: 8.o.8.e.t.g.7.w.8.n.e.1.l.e.us.art-us.kdns.fr
-    skip-cert-verify: true
-    udp: true
-  - name: 🇺🇸_US_美国_1
-    type: vmess
-    server: guanwang.awsno.com
-    port: 443
-    uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    udp: true
-  - name: 🇨🇳_CN_中国->🇺🇸_US_美国
-    type: vless
-    server: us22.sofast.live
-    port: 58011
-    uuid: 0afc6426-606c-48e7-bd70-3c424a416842
-    tls: false
-    skip-cert-verify: true
-    udp: true
-  - name: 🇩🇪_DE_德国
-    type: vless
-    server: 195.133.84.198
-    port: 8443
-    uuid: 263bae3e-f51c-4946-9c1f-2585347a3dd1
-    tls: false
-    skip-cert-verify: true
-    udp: true
-  - name: 🇵🇱_PL_波兰->🇺🇦_UA_乌克兰
-    type: trojan
-    server: hkdcrtc-e.catcat321.com
-    port: 20066
-    password: a126f35c-e832-4115-8593-b723ade3f7be
-    sni: hk.catxstar.com
-    skip-cert-verify: true
-    udp: true
-  - name: 🇧🇬_BG_保加利亚->🇯🇵_JP_日本
-    type: vless
-    server: 91.247.37.58
-    port: 443
-    uuid: 9ce4c9e2-1dcc-abe8-9abf-9bf8bc1269f6
-    network: ws
-    servername: j.n.i.l.6.m.7.3.o.t.e.s.j.3.us.art-us.kdns.fr
-    tls: true
-    client-fingerprint: chrome
-    ws-opts:
-      path: /pg/10086-dfc816f117c49173
-      headers:
-        Host: j.n.i.l.6.m.7.3.o.t.e.s.j.3.us.art-us.kdns.fr
-    skip-cert-verify: true
-    udp: true
-  - name: 🇺🇸_US_美国_2
-    type: vmess
-    server: rush-w1niu.teeopp.online
-    port: 443
-    uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: rush-w1niu.teeopp.online
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: rush-w1niu.teeopp.online
-    udp: true
-  - name: 🇧🇷_BR_巴西
+  - name: 🇨🇳_CN_中国->🇰🇷_KR_韩国
     type: ss
-    server: 163.176.213.34
-    port: 59319
-    cipher: 2022-blake3-chacha20-poly1305
-    password: sGdbihOb/q/EbANW26ODkZvW+bFxtL5OISohA64vCqQ=
-    skip-cert-verify: true
-    udp: true
-  - name: 🇨🇿_CZ_捷克->🇯🇵_JP_日本
-    type: vless
-    server: 188.214.35.66
-    port: 443
-    uuid: 9ce4c9e2-1dcc-abe8-9abf-9bf8bc1269f6
-    network: ws
-    servername: 8.o.8.e.t.g.7.w.8.n.e.1.l.e.us.art-us.kdns.fr
-    tls: true
-    client-fingerprint: chrome
-    ws-opts:
-      path: /pg/10086-dfc816f117c49173
-      headers:
-        Host: 8.o.8.e.t.g.7.w.8.n.e.1.l.e.us.art-us.kdns.fr
-    skip-cert-verify: true
-    udp: true
-  - name: 🇵🇱_PL_波兰->🇺🇦_UA_乌克兰_1
-    type: trojan
-    server: kkvlvvq-a.catcat321.com
-    port: 20066
-    password: a126f35c-e832-4115-8593-b723ade3f7be
-    sni: hk.catxstar.com
+    server: 121.46.230.138
+    port: 65443
+    cipher: aes-256-cfb
+    password: 7eadc6dbe2ae
     skip-cert-verify: true
     udp: true
   - name: 🇺🇸_US_美国_3
     type: vless
-    server: 2.24.124.64
-    port: 443
-    uuid: 719b9354-45e2-4718-8709-d965b64554db
+    server: 198.251.78.29
+    port: 2053
+    uuid: ba12daae-cba5-475b-9289-40a99c0d3f19
     servername: www.cloudflare.com
     tls: true
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: q-3ozCtN4ylZ-ribiIrhIYzMieCnRUvGfS34d_eWmCs
+      short-id: 063b573f23a2ee51
+    skip-cert-verify: true
+    udp: true
+  - name: 🇩🇪_DE_德国
+    type: hysteria
+    server: 5.83.129.90
+    port: 54177
+    auth_str: dongtaiwang.com
+    up: "500"
+    down: "1000"
+    sni: apple.com
+    skip-cert-verify: true
+    alpn:
+      - h3
+    udp: true
+  - name: 🇵🇱_PL_波兰
+    type: vless
+    server: 31.59.125.49
+    port: 443
+    uuid: 423b1d79-08c4-403f-9d5e-c541f791b55f
+    servername: eu-central.cendora.ru
+    tls: true
     flow: xtls-rprx-vision
     client-fingerprint: firefox
     reality-opts:
-      public-key: zpXR6Y36C8qUCIVk2p_j8C9KGeBk5xisLw66j3WFOls
-      short-id: 9f1fc5a631ef3126
+      public-key: b-Cm9hX-3UHsS1L_lnUB6AMjuKhlN1IDdBbZ506itjI
+      short-id: 00bca5982f82d083
     skip-cert-verify: true
     udp: true
-  - name: 🇳🇱_NL_荷兰
-    type: vless
-    server: 51.15.56.211
-    port: 8080
-    uuid: 11af1c47-865a-47c6-92ff-118013655d78
-    network: ws
+  - name: 🇭🇰_HK_中国香港_2
+    type: vmess
+    server: v10.hdacd.com
+    port: 30807
+    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+    alterId: 2
+    cipher: auto
     tls: false
-    skip-cert-verify: true
-    udp: true
-  - name: 🇷🇺_RU_俄罗斯->🇫🇮_FI_芬兰
-    type: vless
-    server: 178.236.240.230
-    port: 2053
-    uuid: 9b9c8f26-fe1a-43a7-b496-44ece72f7014
-    servername: fi-one.quiet-rogue.site
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: firefox
-    reality-opts:
-      public-key: AKUQO-fKsD19FFBxNq5XTFCRXWDZfes4zJjRINY1KUI
-      short-id: beff3ff061a64cfd
-    skip-cert-verify: true
-    udp: true
-  - name: 🇫🇷_FR_法国->🇯🇵_JP_日本
-    type: vless
-    server: 217.60.39.39
-    port: 8443
-    uuid: 9ce4c9e2-1dcc-abe8-9abf-9bf8bc1269f6
-    network: ws
-    servername: 8.o.8.e.t.g.7.w.8.n.e.1.l.e.us.art-us.kdns.fr
-    tls: true
-    ws-opts:
-      path: /pg/10086-dfc816f117c49173fp=chrome
-      headers:
-        Host: 8.o.8.e.t.g.7.w.8.n.e.1.l.e.us.art-us.kdns.fr
-    skip-cert-verify: true
-    udp: true
-  - name: 🇧🇷_BR_巴西_1
-    type: ss
-    server: 150.230.77.159
-    port: 59319
-    cipher: 2022-blake3-chacha20-poly1305
-    password: fQD3R706R6XGUCXh5XwMDv6IbqQO+g4iVYx5OnT/Cqs=
-    skip-cert-verify: true
-    udp: true
-  - name: 🇺🇸_US_美国_4
-    type: ss
-    server: 129.153.74.252
-    port: 50356
-    cipher: 2022-blake3-chacha20-poly1305
-    password: jpJxo3GBO0Z7kQjyDLt0HTiPuI+R5S6UQxnaxaHJUGg=
-    skip-cert-verify: true
-    udp: true
-  - name: 🇨🇭_CH_瑞士->🇯🇵_JP_日本
-    type: vless
-    server: 199.68.196.119
-    port: 443
-    uuid: 9ce4c9e2-1dcc-abe8-9abf-9bf8bc1269f6
-    network: ws
-    servername: 8.o.8.e.t.g.7.w.8.n.e.1.l.e.us.art-us.kdns.fr
-    tls: true
-    client-fingerprint: chrome
-    ws-opts:
-      path: /pg/10086-dfc816f117c49173
-      headers:
-        Host: 8.o.8.e.t.g.7.w.8.n.e.1.l.e.us.art-us.kdns.fr
-    skip-cert-verify: true
-    udp: true
-  - name: 🇱🇻_LV_拉脱维亚->🇯🇵_JP_日本
-    type: vless
-    server: 91.197.2.220
-    port: 443
-    uuid: 9ce4c9e2-1dcc-abe8-9abf-9bf8bc1269f6
-    network: ws
-    servername: j.n.i.l.6.m.7.3.o.t.e.s.j.3.us.art-us.kdns.fr
-    tls: true
-    client-fingerprint: chrome
-    ws-opts:
-      path: /pg/10086-dfc816f117c49173
-      headers:
-        Host: j.n.i.l.6.m.7.3.o.t.e.s.j.3.us.art-us.kdns.fr
-    skip-cert-verify: true
-    udp: true
-  - name: 🇦🇹_AT_奥地利->🇯🇵_JP_日本
-    type: vless
-    server: 132.243.245.221
-    port: 443
-    uuid: 9ce4c9e2-1dcc-abe8-9abf-9bf8bc1269f6
-    network: ws
-    servername: 8.o.8.e.t.g.7.w.8.n.e.1.l.e.us.art-us.kdns.fr
-    tls: true
-    client-fingerprint: chrome
-    ws-opts:
-      path: /pg/10086-dfc816f117c49173
-      headers:
-        Host: 8.o.8.e.t.g.7.w.8.n.e.1.l.e.us.art-us.kdns.fr
-    skip-cert-verify: true
-    udp: true
-  - name: 🇵🇱_PL_波兰->🇮🇹_IT_意大利
-    type: trojan
-    server: kkvlvvq-a.catcat321.com
-    port: 20065
-    password: 7e70223b-f331-41d5-9313-02b8d2df2885
-    sni: hk.catxstar.com
-    skip-cert-verify: true
-    udp: true
-  - name: "@DeltaKroneckerGithub_7578"
-    type: ss
-    server: 144.24.174.125
-    port: 59924
-    cipher: 2022-blake3-chacha20-poly1305
-    password: tmFOxyMUiiKVOqVsp4jzbeZHwYigf22m2TRLy5gEbOs=
-    skip-cert-verify: true
-    udp: true
-  - name: 🇩🇪_DE_德国_1
-    type: vless
-    server: 77.91.66.178
-    port: 443
-    uuid: dbb5075f-2ff4-4aad-a952-bcc82e4a6355
-    servername: de1.hat.onl
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: qq
-    reality-opts:
-      public-key: V3uMWEfDQAPFP6o5ED8Jtk0rJBPs7IlOLf_Wh8w_jXc
-      short-id: 76132b3b39704c44
-    skip-cert-verify: true
-    udp: true
-  - name: 🇵🇱_PL_波兰->🇳🇴_NO_挪威
-    type: trojan
-    server: hkdcrtc-e.catcat321.com
-    port: 20085
-    password: a126f35c-e832-4115-8593-b723ade3f7be
-    sni: hk.catxstar.com
     skip-cert-verify: true
     udp: true
 proxy-groups:
@@ -330,61 +200,43 @@ proxy-groups:
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇬🇧_GB_英国
-      - 🇩🇰_DK_丹麦
+      - 🇭🇰_HK_中国香港
+      - 🇭🇰_HK_中国香港_1
+      - 🇨🇳_CN_中国
       - 🇺🇸_US_美国
-      - 🇷🇴_RO_罗马尼亚->🇯🇵_JP_日本
       - 🇺🇸_US_美国_1
       - 🇨🇳_CN_中国->🇺🇸_US_美国
-      - 🇩🇪_DE_德国
-      - 🇵🇱_PL_波兰->🇺🇦_UA_乌克兰
-      - 🇧🇬_BG_保加利亚->🇯🇵_JP_日本
+      - 🇨🇳_CN_中国_1
       - 🇺🇸_US_美国_2
-      - 🇧🇷_BR_巴西
-      - 🇨🇿_CZ_捷克->🇯🇵_JP_日本
-      - 🇵🇱_PL_波兰->🇺🇦_UA_乌克兰_1
+      - 🇫🇷_FR_法国
+      - 🇨🇳_CN_中国->🇫🇷_FR_法国
+      - 🇲🇾_MY_马来西亚
+      - 🇩🇰_DK_丹麦
+      - 🇨🇳_CN_中国->🇰🇷_KR_韩国
       - 🇺🇸_US_美国_3
-      - 🇳🇱_NL_荷兰
-      - 🇷🇺_RU_俄罗斯->🇫🇮_FI_芬兰
-      - 🇫🇷_FR_法国->🇯🇵_JP_日本
-      - 🇧🇷_BR_巴西_1
-      - 🇺🇸_US_美国_4
-      - 🇨🇭_CH_瑞士->🇯🇵_JP_日本
-      - 🇱🇻_LV_拉脱维亚->🇯🇵_JP_日本
-      - 🇦🇹_AT_奥地利->🇯🇵_JP_日本
-      - 🇵🇱_PL_波兰->🇮🇹_IT_意大利
-      - "@DeltaKroneckerGithub_7578"
-      - 🇩🇪_DE_德国_1
-      - 🇵🇱_PL_波兰->🇳🇴_NO_挪威
+      - 🇩🇪_DE_德国
+      - 🇵🇱_PL_波兰
+      - 🇭🇰_HK_中国香港_2
   - name: ♻️ 自动选择
     type: url-test
     proxies:
-      - 🇬🇧_GB_英国
-      - 🇩🇰_DK_丹麦
+      - 🇭🇰_HK_中国香港
+      - 🇭🇰_HK_中国香港_1
+      - 🇨🇳_CN_中国
       - 🇺🇸_US_美国
-      - 🇷🇴_RO_罗马尼亚->🇯🇵_JP_日本
       - 🇺🇸_US_美国_1
       - 🇨🇳_CN_中国->🇺🇸_US_美国
-      - 🇩🇪_DE_德国
-      - 🇵🇱_PL_波兰->🇺🇦_UA_乌克兰
-      - 🇧🇬_BG_保加利亚->🇯🇵_JP_日本
+      - 🇨🇳_CN_中国_1
       - 🇺🇸_US_美国_2
-      - 🇧🇷_BR_巴西
-      - 🇨🇿_CZ_捷克->🇯🇵_JP_日本
-      - 🇵🇱_PL_波兰->🇺🇦_UA_乌克兰_1
+      - 🇫🇷_FR_法国
+      - 🇨🇳_CN_中国->🇫🇷_FR_法国
+      - 🇲🇾_MY_马来西亚
+      - 🇩🇰_DK_丹麦
+      - 🇨🇳_CN_中国->🇰🇷_KR_韩国
       - 🇺🇸_US_美国_3
-      - 🇳🇱_NL_荷兰
-      - 🇷🇺_RU_俄罗斯->🇫🇮_FI_芬兰
-      - 🇫🇷_FR_法国->🇯🇵_JP_日本
-      - 🇧🇷_BR_巴西_1
-      - 🇺🇸_US_美国_4
-      - 🇨🇭_CH_瑞士->🇯🇵_JP_日本
-      - 🇱🇻_LV_拉脱维亚->🇯🇵_JP_日本
-      - 🇦🇹_AT_奥地利->🇯🇵_JP_日本
-      - 🇵🇱_PL_波兰->🇮🇹_IT_意大利
-      - "@DeltaKroneckerGithub_7578"
-      - 🇩🇪_DE_德国_1
-      - 🇵🇱_PL_波兰->🇳🇴_NO_挪威
+      - 🇩🇪_DE_德国
+      - 🇵🇱_PL_波兰
+      - 🇭🇰_HK_中国香港_2
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
@@ -394,125 +246,89 @@ proxy-groups:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇬🇧_GB_英国
-      - 🇩🇰_DK_丹麦
+      - 🇭🇰_HK_中国香港
+      - 🇭🇰_HK_中国香港_1
+      - 🇨🇳_CN_中国
       - 🇺🇸_US_美国
-      - 🇷🇴_RO_罗马尼亚->🇯🇵_JP_日本
       - 🇺🇸_US_美国_1
       - 🇨🇳_CN_中国->🇺🇸_US_美国
-      - 🇩🇪_DE_德国
-      - 🇵🇱_PL_波兰->🇺🇦_UA_乌克兰
-      - 🇧🇬_BG_保加利亚->🇯🇵_JP_日本
+      - 🇨🇳_CN_中国_1
       - 🇺🇸_US_美国_2
-      - 🇧🇷_BR_巴西
-      - 🇨🇿_CZ_捷克->🇯🇵_JP_日本
-      - 🇵🇱_PL_波兰->🇺🇦_UA_乌克兰_1
+      - 🇫🇷_FR_法国
+      - 🇨🇳_CN_中国->🇫🇷_FR_法国
+      - 🇲🇾_MY_马来西亚
+      - 🇩🇰_DK_丹麦
+      - 🇨🇳_CN_中国->🇰🇷_KR_韩国
       - 🇺🇸_US_美国_3
-      - 🇳🇱_NL_荷兰
-      - 🇷🇺_RU_俄罗斯->🇫🇮_FI_芬兰
-      - 🇫🇷_FR_法国->🇯🇵_JP_日本
-      - 🇧🇷_BR_巴西_1
-      - 🇺🇸_US_美国_4
-      - 🇨🇭_CH_瑞士->🇯🇵_JP_日本
-      - 🇱🇻_LV_拉脱维亚->🇯🇵_JP_日本
-      - 🇦🇹_AT_奥地利->🇯🇵_JP_日本
-      - 🇵🇱_PL_波兰->🇮🇹_IT_意大利
-      - "@DeltaKroneckerGithub_7578"
-      - 🇩🇪_DE_德国_1
-      - 🇵🇱_PL_波兰->🇳🇴_NO_挪威
+      - 🇩🇪_DE_德国
+      - 🇵🇱_PL_波兰
+      - 🇭🇰_HK_中国香港_2
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇬🇧_GB_英国
-      - 🇩🇰_DK_丹麦
+      - 🇭🇰_HK_中国香港
+      - 🇭🇰_HK_中国香港_1
+      - 🇨🇳_CN_中国
       - 🇺🇸_US_美国
-      - 🇷🇴_RO_罗马尼亚->🇯🇵_JP_日本
       - 🇺🇸_US_美国_1
       - 🇨🇳_CN_中国->🇺🇸_US_美国
-      - 🇩🇪_DE_德国
-      - 🇵🇱_PL_波兰->🇺🇦_UA_乌克兰
-      - 🇧🇬_BG_保加利亚->🇯🇵_JP_日本
+      - 🇨🇳_CN_中国_1
       - 🇺🇸_US_美国_2
-      - 🇧🇷_BR_巴西
-      - 🇨🇿_CZ_捷克->🇯🇵_JP_日本
-      - 🇵🇱_PL_波兰->🇺🇦_UA_乌克兰_1
+      - 🇫🇷_FR_法国
+      - 🇨🇳_CN_中国->🇫🇷_FR_法国
+      - 🇲🇾_MY_马来西亚
+      - 🇩🇰_DK_丹麦
+      - 🇨🇳_CN_中国->🇰🇷_KR_韩国
       - 🇺🇸_US_美国_3
-      - 🇳🇱_NL_荷兰
-      - 🇷🇺_RU_俄罗斯->🇫🇮_FI_芬兰
-      - 🇫🇷_FR_法国->🇯🇵_JP_日本
-      - 🇧🇷_BR_巴西_1
-      - 🇺🇸_US_美国_4
-      - 🇨🇭_CH_瑞士->🇯🇵_JP_日本
-      - 🇱🇻_LV_拉脱维亚->🇯🇵_JP_日本
-      - 🇦🇹_AT_奥地利->🇯🇵_JP_日本
-      - 🇵🇱_PL_波兰->🇮🇹_IT_意大利
-      - "@DeltaKroneckerGithub_7578"
-      - 🇩🇪_DE_德国_1
-      - 🇵🇱_PL_波兰->🇳🇴_NO_挪威
+      - 🇩🇪_DE_德国
+      - 🇵🇱_PL_波兰
+      - 🇭🇰_HK_中国香港_2
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🇬🇧_GB_英国
-      - 🇩🇰_DK_丹麦
+      - 🇭🇰_HK_中国香港
+      - 🇭🇰_HK_中国香港_1
+      - 🇨🇳_CN_中国
       - 🇺🇸_US_美国
-      - 🇷🇴_RO_罗马尼亚->🇯🇵_JP_日本
       - 🇺🇸_US_美国_1
       - 🇨🇳_CN_中国->🇺🇸_US_美国
-      - 🇩🇪_DE_德国
-      - 🇵🇱_PL_波兰->🇺🇦_UA_乌克兰
-      - 🇧🇬_BG_保加利亚->🇯🇵_JP_日本
+      - 🇨🇳_CN_中国_1
       - 🇺🇸_US_美国_2
-      - 🇧🇷_BR_巴西
-      - 🇨🇿_CZ_捷克->🇯🇵_JP_日本
-      - 🇵🇱_PL_波兰->🇺🇦_UA_乌克兰_1
+      - 🇫🇷_FR_法国
+      - 🇨🇳_CN_中国->🇫🇷_FR_法国
+      - 🇲🇾_MY_马来西亚
+      - 🇩🇰_DK_丹麦
+      - 🇨🇳_CN_中国->🇰🇷_KR_韩国
       - 🇺🇸_US_美国_3
-      - 🇳🇱_NL_荷兰
-      - 🇷🇺_RU_俄罗斯->🇫🇮_FI_芬兰
-      - 🇫🇷_FR_法国->🇯🇵_JP_日本
-      - 🇧🇷_BR_巴西_1
-      - 🇺🇸_US_美国_4
-      - 🇨🇭_CH_瑞士->🇯🇵_JP_日本
-      - 🇱🇻_LV_拉脱维亚->🇯🇵_JP_日本
-      - 🇦🇹_AT_奥地利->🇯🇵_JP_日本
-      - 🇵🇱_PL_波兰->🇮🇹_IT_意大利
-      - "@DeltaKroneckerGithub_7578"
-      - 🇩🇪_DE_德国_1
-      - 🇵🇱_PL_波兰->🇳🇴_NO_挪威
+      - 🇩🇪_DE_德国
+      - 🇵🇱_PL_波兰
+      - 🇭🇰_HK_中国香港_2
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇬🇧_GB_英国
-      - 🇩🇰_DK_丹麦
+      - 🇭🇰_HK_中国香港
+      - 🇭🇰_HK_中国香港_1
+      - 🇨🇳_CN_中国
       - 🇺🇸_US_美国
-      - 🇷🇴_RO_罗马尼亚->🇯🇵_JP_日本
       - 🇺🇸_US_美国_1
       - 🇨🇳_CN_中国->🇺🇸_US_美国
-      - 🇩🇪_DE_德国
-      - 🇵🇱_PL_波兰->🇺🇦_UA_乌克兰
-      - 🇧🇬_BG_保加利亚->🇯🇵_JP_日本
+      - 🇨🇳_CN_中国_1
       - 🇺🇸_US_美国_2
-      - 🇧🇷_BR_巴西
-      - 🇨🇿_CZ_捷克->🇯🇵_JP_日本
-      - 🇵🇱_PL_波兰->🇺🇦_UA_乌克兰_1
+      - 🇫🇷_FR_法国
+      - 🇨🇳_CN_中国->🇫🇷_FR_法国
+      - 🇲🇾_MY_马来西亚
+      - 🇩🇰_DK_丹麦
+      - 🇨🇳_CN_中国->🇰🇷_KR_韩国
       - 🇺🇸_US_美国_3
-      - 🇳🇱_NL_荷兰
-      - 🇷🇺_RU_俄罗斯->🇫🇮_FI_芬兰
-      - 🇫🇷_FR_法国->🇯🇵_JP_日本
-      - 🇧🇷_BR_巴西_1
-      - 🇺🇸_US_美国_4
-      - 🇨🇭_CH_瑞士->🇯🇵_JP_日本
-      - 🇱🇻_LV_拉脱维亚->🇯🇵_JP_日本
-      - 🇦🇹_AT_奥地利->🇯🇵_JP_日本
-      - 🇵🇱_PL_波兰->🇮🇹_IT_意大利
-      - "@DeltaKroneckerGithub_7578"
-      - 🇩🇪_DE_德国_1
-      - 🇵🇱_PL_波兰->🇳🇴_NO_挪威
+      - 🇩🇪_DE_德国
+      - 🇵🇱_PL_波兰
+      - 🇭🇰_HK_中国香港_2
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -540,32 +356,23 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇬🇧_GB_英国
-      - 🇩🇰_DK_丹麦
+      - 🇭🇰_HK_中国香港
+      - 🇭🇰_HK_中国香港_1
+      - 🇨🇳_CN_中国
       - 🇺🇸_US_美国
-      - 🇷🇴_RO_罗马尼亚->🇯🇵_JP_日本
       - 🇺🇸_US_美国_1
       - 🇨🇳_CN_中国->🇺🇸_US_美国
-      - 🇩🇪_DE_德国
-      - 🇵🇱_PL_波兰->🇺🇦_UA_乌克兰
-      - 🇧🇬_BG_保加利亚->🇯🇵_JP_日本
+      - 🇨🇳_CN_中国_1
       - 🇺🇸_US_美国_2
-      - 🇧🇷_BR_巴西
-      - 🇨🇿_CZ_捷克->🇯🇵_JP_日本
-      - 🇵🇱_PL_波兰->🇺🇦_UA_乌克兰_1
+      - 🇫🇷_FR_法国
+      - 🇨🇳_CN_中国->🇫🇷_FR_法国
+      - 🇲🇾_MY_马来西亚
+      - 🇩🇰_DK_丹麦
+      - 🇨🇳_CN_中国->🇰🇷_KR_韩国
       - 🇺🇸_US_美国_3
-      - 🇳🇱_NL_荷兰
-      - 🇷🇺_RU_俄罗斯->🇫🇮_FI_芬兰
-      - 🇫🇷_FR_法国->🇯🇵_JP_日本
-      - 🇧🇷_BR_巴西_1
-      - 🇺🇸_US_美国_4
-      - 🇨🇭_CH_瑞士->🇯🇵_JP_日本
-      - 🇱🇻_LV_拉脱维亚->🇯🇵_JP_日本
-      - 🇦🇹_AT_奥地利->🇯🇵_JP_日本
-      - 🇵🇱_PL_波兰->🇮🇹_IT_意大利
-      - "@DeltaKroneckerGithub_7578"
-      - 🇩🇪_DE_德国_1
-      - 🇵🇱_PL_波兰->🇳🇴_NO_挪威
+      - 🇩🇪_DE_德国
+      - 🇵🇱_PL_波兰
+      - 🇭🇰_HK_中国香港_2
 rule-providers:
   LocalAreaNetwork:
     type: http
