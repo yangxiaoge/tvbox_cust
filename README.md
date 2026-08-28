@@ -122,7 +122,9 @@
 > GKD 是一款功能强大、持续活跃维护的基于无障碍跳广告工具。你可以复制下方的订阅链接导入到 GKD App 中。
 >
 > * **项目源码**: [gkd-kit/gkd](https://github.com/gkd-kit/gkd)
-> * **GKD 第三方订阅规则**: `https://raw.githubusercontent.com/yangxiaoge/tvbox_cust/refs/heads/master/gkd/GKD_subscription.json5`
+> * **GKD 第三方订阅规则**:
+>   - **活跃维护 (推荐)**: `https://raw.githubusercontent.com/Lin-arm/GKD_subscription/main/dist/gkd.json5`
+>   - **自用脚本自动拉取**: `https://raw.githubusercontent.com/yangxiaoge/tvbox_cust/refs/heads/master/gkd/GKD_subscription.json5`
 
 #### 李跳跳 (已停止维护，仅存档)
 > [!TIP]
