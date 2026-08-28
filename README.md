@@ -89,11 +89,11 @@
 
 | 项目名称 (Repository) | 编译分支 | 最新 Commit Hash | 同步时间 (Build Time) |
 | :--- | :--- | :--- | :--- |
-| [q215613905/TVBoxOS](https://github.com/q215613905/TVBoxOS) | main | 301b28b... | 2026-08-27 06:54:16 |
+| [q215613905/TVBoxOS](https://github.com/q215613905/TVBoxOS) | main | 301b28b... | 2026-08-28 17:35:31 |
 | [takagen99/Box](https://github.com/takagen99/Box) | main | 258a5fe... | 2026-08-26 08:46:27 |
 | [mlabalabala/box](https://github.com/mlabalabala/box) | main | c5dc2b9... | 2026-08-28 17:34:59 |
 
-*同步数据更新于: 2026-08-28 17:34:59*
+*同步数据更新于: 2026-08-28 17:35:31*
 
 ### 2. 自定义爬虫源 (Spiders)
 提供给 TVBox / FongMi 等客户端解析视频使用的爬虫规则库：
