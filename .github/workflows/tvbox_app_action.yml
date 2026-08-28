@@ -94,38 +94,35 @@ jobs:
         with:
           python-version: '3.10'
 
-      - name: Prepare Code
+      - name: Install Python dependencies
+        if: ${{ env.commit }}
+        run: |
+          python -m pip install --upgrade pip
+          pip install lxml ujson "pyquery<=2.0.0" requests jsonpath cachetools pycryptodome beautifulsoup4 "cssselect<=1.2.0"
+
+      - name: Extra Modify
         if: ${{ env.commit }}
         working-directory: TVBoxOSC
         run: |
-          # 1. 修复 jitpack 仓库配置
-          sed -i "s/maven { url 'https:\/\/jitpack.io' }/maven { url 'https:\/\/jitpack.io' \n content { includeGroupByRegex(\"com\\\\.github\\\\..*\") } }/g" settings.gradle 2>/dev/null || true
-          
-          # 2. 补全缺失类文件
-          missing_files=(
-            "app/src/main/java/com/fongmi/android/tv/api/decoder/DataDecoder.java"
-            "app/src/main/java/com/fongmi/android/tv/api/decoder/HeaderDecoder.java"
-            "app/src/main/java/com/fongmi/android/tv/api/decoder/JsonDecoder.java"
-          )
-          for file in "${missing_files[@]}"; do
-            if [ ! -f "$file" ]; then
-              mkdir -p "$(dirname "$file")"
-              touch "$file"
+          # 1. crosswalk 镜像源防挂
+          if [ -f "build.gradle" ]; then
+            if grep -q 'crosswalk' build.gradle; then
+              sed -i "/crosswalk/a\        maven { url 'https://o0halflife0o.github.io/crosswalk/releases/crosswalk/android/maven2' }" build.gradle
+            elif grep -q 'jitpack.io' build.gradle; then
+              sed -i "/jitpack.io/a\        maven { url 'https://o0halflife0o.github.io/crosswalk/releases/crosswalk/android/maven2' }" build.gradle
             fi
-          done
+          fi
 
-          # 3. 替换依赖版本以保证构建兼容性
-          if [ -f "gradle/libs.versions.toml" ]; then
-            sed -i 's/media3 = ".*"/media3 = "1.8.0"/' gradle/libs.versions.toml 2>/dev/null || true
-            sed -i 's/room = ".*"/room = "2.6.1"/' gradle/libs.versions.toml 2>/dev/null || true
-            sed -i 's/activity = ".*"/activity = "1.9.3"/' gradle/libs.versions.toml 2>/dev/null || true
-            sed -i 's/annotation = ".*"/annotation = "1.9.1"/' gradle/libs.versions.toml 2>/dev/null || true
-            sed -i 's/appcompat = ".*"/appcompat = "1.7.0"/' gradle/libs.versions.toml 2>/dev/null || true
-            sed -i 's/biometric = ".*"/biometric = "1.1.0"/' gradle/libs.versions.toml 2>/dev/null || true
-            sed -i 's/core = ".*"/core = "1.15.0"/' gradle/libs.versions.toml 2>/dev/null || true
-            sed -i 's/fragment = ".*"/fragment = "1.8.5"/' gradle/libs.versions.toml 2>/dev/null || true
-            sed -i 's/lifecycle = ".*"/lifecycle = "2.8.7"/' gradle/libs.versions.toml 2>/dev/null || true
-            sed -i 's/preference = ".*"/preference = "1.2.1"/' gradle/libs.versions.toml 2>/dev/null || true
+          # 2. 修复 pyquery 和 cssselect 在 Chaquopy 依赖解析中的版本冲突
+          find . -name "build.gradle" -exec sed -i 's/install "pyquery"/install "cssselect<=1.2.0"\n            install "pyquery<=2.0.0"/g' {} + 2>/dev/null || true
+          find . -name "build.gradle" -exec sed -i "s/install 'pyquery'/install 'cssselect<=1.2.0'\n            install 'pyquery<=2.0.0'/g" {} + 2>/dev/null || true
+
+          # 3. 处理 pyramid 模块
+          if [ -f "pyramid/build.gradle" ]; then
+            sed -i 's/\(com.chaquo.python:gradle:\)12.0.1/\115.0.1/g' build.gradle 2>/dev/null || true
+            sed -i '/buildPython.*python.exe/d' pyramid/build.gradle 2>/dev/null || true
+            sed -i 's/minSdkVersion 19/minSdkVersion 21/g' pyramid/build.gradle 2>/dev/null || true
+            sed -i 's/minSdkVersion 19/minSdkVersion 21/g' app/build.gradle 2>/dev/null || true
           fi
 
           # 4. 处理 chaquo 模块
