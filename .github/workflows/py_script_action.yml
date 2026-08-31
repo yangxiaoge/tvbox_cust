@@ -33,36 +33,40 @@ jobs:
           pip install urllib3
           pip install py-emails
           pip install pytz
-      - name: 生成clash文件
+      - name: 生成 Clash 文件
+        continue-on-error: true
         run: |
-          # secrets读取
-          telegram_bot_token='${{secrets.TELEGRAM_BOT_TOKEN}}'
-          telegram_bot_id='${{secrets.TELEGRAM_CHAT_ID}}'
-          email_sender='${{secrets.EMAIL_SENDER}}'
-          email_pass='${{secrets.EMAIL_PASS}}'
-          email_receive='${{secrets.EMAIL_RECEIVE}}'
-          
           export TZ='Asia/Shanghai'
-          python ./scripts/clashScript.py --telegram_bot_token ${telegram_bot_token} --telegram_bot_id ${telegram_bot_id} --email_sender ${email_sender} --email_pass ${email_pass} --email_receive ${email_receive}
+          python ./scripts/clashScript.py \
+            --telegram_bot_token '${{ secrets.TELEGRAM_BOT_TOKEN }}' \
+            --telegram_bot_id '${{ secrets.TELEGRAM_CHAT_ID }}' \
+            --email_sender '${{ secrets.EMAIL_SENDER }}' \
+            --email_pass '${{ secrets.EMAIL_PASS }}' \
+            --email_receive '${{ secrets.EMAIL_RECEIVE }}'
+
+      - name: 生成 TVBox 接口文件
+        continue-on-error: true
+        run: |
+          export TZ='Asia/Shanghai'
           python ./scripts/tvboxSourceScript.py
-          python ./scripts/holiday_cn.py
-          echo "gitStatus<<EOF" >> $GITHUB_ENV
-          echo "$(git status)" >> $GITHUB_ENV
-          echo "111" >> $GITHUB_ENV
-          echo "EOF" >> $GITHUB_ENV
-          # echo ${{ env.status }}
-      - name: 暂存提交
-        # 是否有文件状态发生变化，判断部分字符串"git add <file>..."
-        if: contains(env.gitStatus, 'git add <file>...')
+
+
+      - name: 检查变动并提交
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email '41898282+github-actions[bot]@users.noreply.github.com'
           export TZ='Asia/Shanghai'
           git add .
-          git commit -m "update" -a
-      - name: 推送到github
-        # 是否有文件状态发生变化，判断部分字符串"git add <file>..."
-        if: contains(env.gitStatus, 'git add <file>...')
+          if ! git diff --staged --quiet; then
+            git commit -m "update"
+            echo "has_changes=true" >> $GITHUB_ENV
+          else
+            echo "has_changes=false" >> $GITHUB_ENV
+          fi
+
+      - name: 推送到 GitHub
+        if: env.has_changes == 'true'
         uses: ad-m/github-push-action@master
         with:
           github_token: ${{ secrets.GIT_TOKEN }}
+

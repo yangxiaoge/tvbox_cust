@@ -1,0 +1,48 @@
+name: 节假日数据更新
+
+on:
+  schedule:
+    # 每天北京时间 00:05 (UTC 16:05) 自动运行，错开整点高峰
+    - cron: '5 16 * * *'
+  workflow_dispatch:
+
+jobs:
+  update-holiday:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 检查分支
+        uses: actions/checkout@v3
+
+      - name: 安装 Python 3.10
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: 安装依赖
+        run: |
+          pip install requests pytz
+
+      - name: 生成节假日文件
+        run: |
+          export TZ='Asia/Shanghai'
+          python ./scripts/holiday_cn.py
+
+      - name: 检查变动并提交
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          export TZ='Asia/Shanghai'
+          git add holiday/isHoliday.json
+          if ! git diff --staged --quiet; then
+            git commit -m "update holiday"
+            echo "has_changes=true" >> $GITHUB_ENV
+          else
+            echo "has_changes=false" >> $GITHUB_ENV
+          fi
+
+      - name: 推送到 GitHub
+        if: env.has_changes == 'true'
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GIT_TOKEN }}
