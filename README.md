@@ -152,4 +152,4 @@
 
 # 🌟 Star History
 
-[![Star History Chart](https://star-history.dera.page/svg?repos=yangxiaoge/tvbox_cust&type=Date)](https://star-history.dera.page/#yangxiaoge/tvbox_cust&type=Date)
+[![Star History Chart](https://starhistory.link/yangxiaoge/tvbox_cust.svg?theme=rose&style=glass)](https://starhistory.link/yangxiaoge/tvbox_cust)
