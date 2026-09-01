@@ -43,6 +43,9 @@ jobs:
 
       - name: 推送到 GitHub
         if: env.has_changes == 'true'
-        uses: ad-m/github-push-action@master
-        with:
-          github_token: ${{ secrets.GIT_TOKEN }}
+        run: |
+          git fetch origin master
+          git rebase origin/master
+          git push origin master
+        env:
+          GITHUB_TOKEN: ${{ secrets.GIT_TOKEN }}
